@@ -1,0 +1,31 @@
+{
+  "bundle": {
+    "commonSourceDirectory": "../src",
+    "sourceFiles": [
+      "../src/PhaserPlugin.ts",
+      "../src/core/DocEntry.ts",
+      "../src/core/IJSDocEntry.ts",
+      "../src/core/IJSDocFile.ts",
+      "../src/core/PhaserFile.ts"
+    ],
+    "js": {
+      "sections": [
+        {
+          "pos": 0,
+          "end": 6252,
+          "kind": "text"
+        }
+      ]
+    },
+    "dts": {
+      "sections": [
+        {
+          "pos": 0,
+          "end": 2134,
+          "kind": "text"
+        }
+      ]
+    }
+  },
+  "version": "4.1.2"
+}

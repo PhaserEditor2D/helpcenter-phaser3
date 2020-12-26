@@ -1,0 +1,712 @@
+/// <reference path="../controls/Controls.ts"/>
+
+namespace colibri.ui.ide {
+
+    export class Workbench {
+
+        private static _workbench: Workbench;
+
+        static getWorkbench() {
+
+            if (!Workbench._workbench) {
+
+                Workbench._workbench = new Workbench();
+            }
+
+            return this._workbench;
+        }
+
+
+        public eventPartDeactivated = new controls.ListenerList<Part>();
+        public eventPartActivated = new controls.ListenerList<Part>();
+        public eventEditorDeactivated = new controls.ListenerList<EditorPart>();
+        public eventEditorActivated = new controls.ListenerList<EditorPart>();
+        public eventBeforeOpenProject = new controls.ListenerList();
+        public eventProjectOpened = new controls.ListenerList();
+        public eventThemeChanged = new controls.ListenerList<ui.controls.ITheme>();
+
+        private _fileStringCache: core.io.FileStringCache;
+        private _fileImageCache: ImageFileCache;
+        private _fileImageSizeCache: ImageSizeFileCache;
+        private _activeWindow: ide.WorkbenchWindow;
+        private _contentType_icon_Map: Map<string, controls.IconDescriptor>;
+        private _fileStorage: core.io.IFileStorage;
+        private _contentTypeRegistry: core.ContentTypeRegistry;
+        private _activePart: Part;
+        private _activeEditor: EditorPart;
+        private _activeElement: HTMLElement;
+        private _editorRegistry: EditorRegistry;
+        private _commandManager: commands.CommandManager;
+        private _windows: WorkbenchWindow[];
+        private _globalPreferences: core.preferences.Preferences;
+        private _projectPreferences: core.preferences.Preferences;
+        private _editorSessionStateRegistry: Map<string, any>;
+
+        private constructor() {
+
+            this._editorRegistry = new EditorRegistry();
+
+            this._windows = [];
+
+            this._activePart = null;
+            this._activeEditor = null;
+            this._activeElement = null;
+
+            this._fileImageCache = new ImageFileCache();
+
+            this._fileImageSizeCache = new ImageSizeFileCache();
+
+            this._fileStorage = new core.io.FileStorage_HTTPServer();
+
+            this._fileStringCache = new core.io.FileStringCache(this._fileStorage);
+
+            this._globalPreferences = new core.preferences.Preferences("__global__");
+
+            this._projectPreferences = null;
+
+            this._editorSessionStateRegistry = new Map();
+        }
+
+        getEditorSessionStateRegistry() {
+            return this._editorSessionStateRegistry;
+        }
+
+        getGlobalPreferences() {
+            return this._globalPreferences;
+        }
+
+        getProjectPreferences() {
+            return this._projectPreferences;
+        }
+
+        showNotification(text: string) {
+
+            const element = document.createElement("div");
+            element.classList.add("Notification");
+            element.innerHTML = text;
+
+            document.body.appendChild(element);
+
+            element.classList.add("FadeInEffect");
+
+            element.addEventListener("click", () => element.remove());
+
+            setTimeout(() => {
+
+                element.classList.add("FadeOutEffect");
+
+                setTimeout(() => element.remove(), 4000);
+
+            }, 4000);
+        }
+
+        async launch() {
+
+            console.log("Workbench: starting.");
+
+            controls.Controls.initEvents();
+
+            controls.Controls.preloadTheme();
+
+            {
+                const plugins = Platform.getPlugins();
+
+                for (const plugin of plugins) {
+
+                    plugin.registerExtensions(Platform.getExtensionRegistry());
+                }
+
+                for (const plugin of plugins) {
+
+                    console.log(`\tPlugin: starting %c${plugin.getId()}`, "color:blue");
+
+                    await plugin.starting();
+                }
+            }
+
+            controls.Controls.restoreTheme();
+
+            console.log("Workbench: fetching UI icons.");
+
+            await this.preloadPluginResources();
+
+            console.log("Workbench: hide splash");
+
+            this.hideSplash();
+
+            console.log("Workbench: registering content types.");
+
+            this.registerContentTypes();
+
+            this.registerContentTypeIcons();
+
+            console.log("Workbench: initializing UI.");
+
+            this.initCommands();
+
+            this.registerEditors();
+
+            this.registerWindows();
+
+            this.initEvents();
+
+            console.log("%cWorkbench: started.", "color:green");
+
+            for (const plugin of Platform.getPlugins()) {
+
+                await plugin.started();
+            }
+        }
+
+        private hideSplash() {
+
+            const splashElement = document.getElementById("splash-container");
+
+            if (splashElement) {
+
+                splashElement.remove();
+            }
+        }
+
+        private resetCache() {
+
+            this._fileStringCache.reset();
+            this._fileImageCache.reset();
+            this._fileImageSizeCache.reset();
+            this._contentTypeRegistry.resetCache();
+
+            this._editorSessionStateRegistry.clear();
+        }
+
+        async openProject(projectName: string, workspacePath: string, monitor: controls.IProgressMonitor) {
+
+            this.eventBeforeOpenProject.fire(projectName);
+
+            this._projectPreferences = new core.preferences.Preferences("__project__" + projectName);
+
+            this.resetCache();
+
+            console.log(`Workbench: opening project ${projectName}.`);
+
+            if (workspacePath) {
+
+                await this._fileStorage.changeWorkspace(workspacePath);
+            }
+
+            await this._fileStorage.openProject(projectName);
+
+            console.log("Workbench: fetching required project resources.");
+
+            await this.preloadProjectResources(monitor);
+
+            this.eventProjectOpened.fire(projectName);
+        }
+
+        private async preloadProjectResources(monitor: controls.IProgressMonitor) {
+
+            const extensions = Platform
+                .getExtensions<PreloadProjectResourcesExtension>(PreloadProjectResourcesExtension.POINT_ID);
+
+            let total = 0;
+
+            for (const extension of extensions) {
+
+                const n = await extension.computeTotal();
+
+                total += n;
+            }
+
+            monitor.addTotal(total);
+
+            for (const extension of extensions) {
+
+                await extension.preload(monitor);
+            }
+        }
+
+        private registerWindows() {
+
+            const extensions = Platform.getExtensions<WindowExtension>(WindowExtension.POINT_ID);
+
+            this._windows = extensions.map(extension => extension.createWindow());
+
+            if (this._windows.length === 0) {
+
+                alert("No workbench window provided.");
+
+            } else {
+
+                for (const win of this._windows) {
+
+                    win.style.display = "none";
+
+                    document.body.appendChild(win.getElement());
+                }
+            }
+        }
+
+        getWindows() {
+            return this._windows;
+        }
+
+        public activateWindow(id: string): WorkbenchWindow {
+
+            const win = this._windows.find(w => w.getId() === id);
+
+            if (win) {
+
+                if (this._activeWindow) {
+                    this._activeWindow.style.display = "none";
+                }
+
+                this._activeWindow = win;
+
+                win.create();
+
+                win.style.display = "initial";
+
+                return win;
+            }
+
+            alert(`Window ${id} not found.`);
+
+            return null;
+        }
+
+        private async preloadPluginResources() {
+
+            const dlg = new controls.dialogs.ProgressDialog();
+            dlg.create();
+            dlg.setTitle("Loading Workbench");
+            dlg.setCloseWithEscapeKey(false);
+            dlg.setProgress(0);
+
+            let resCount = 0;
+
+            // count icon extensions
+
+            const icons: controls.IconImage[] = [];
+            {
+                const extensions = Platform
+                    .getExtensions<IconLoaderExtension>(IconLoaderExtension.POINT_ID);
+
+                for (const extension of extensions) {
+
+                    icons.push(...extension.getIcons());
+                }
+
+                resCount = icons.length;
+            }
+
+            // count resource extensions
+            const resExtensions = Platform
+                .getExtensions<PluginResourceLoaderExtension>(PluginResourceLoaderExtension.POINT_ID);
+
+            resCount += resExtensions.length;
+
+
+            let i = 0;
+
+            for (const icon of icons) {
+
+                await icon.preload();
+
+                i++;
+
+                dlg.setProgress(i / resCount);
+            }
+
+            for (const resExt of resExtensions) {
+
+                await resExt.preload();
+
+                i++;
+
+                dlg.setProgress(i / resCount);
+            }
+
+            // resources
+
+            dlg.close();
+        }
+
+        private registerContentTypeIcons() {
+
+            this._contentType_icon_Map = new Map();
+
+            const extensions = Platform.getExtensions<ContentTypeIconExtension>(ContentTypeIconExtension.POINT_ID);
+
+            for (const extension of extensions) {
+
+                for (const item of extension.getConfig()) {
+
+                    this._contentType_icon_Map.set(item.contentType, item.iconDescriptor);
+                }
+            }
+        }
+
+        private initCommands() {
+            this._commandManager = new commands.CommandManager();
+
+            const extensions = Platform.getExtensions<commands.CommandExtension>(commands.CommandExtension.POINT_ID);
+
+            for (const extension of extensions) {
+                extension.getConfigurer()(this._commandManager);
+            }
+        }
+
+        private initEvents() {
+
+            window.addEventListener("mousedown", e => {
+
+                this._activeElement = e.target as HTMLElement;
+
+                const part = this.findPart(e.target as any);
+
+                if (part) {
+
+                    this.setActivePart(part);
+                }
+            });
+
+            window.addEventListener("beforeunload", e => {
+
+                const dirty = this.getEditors().find(editor => editor.isDirty());
+
+                if (dirty) {
+
+                    e.preventDefault();
+                    e.returnValue = "";
+
+                    Platform.onElectron(electron => {
+
+                        electron.sendMessage({
+                            method: "ask-close-window"
+                        });
+                    });
+                }
+            });
+        }
+
+        private registerEditors(): void {
+
+            const extensions = Platform.getExtensions<EditorExtension>(EditorExtension.POINT_ID);
+
+            for (const extension of extensions) {
+
+                for (const factory of extension.getFactories()) {
+                    this._editorRegistry.registerFactory(factory);
+                }
+            }
+        }
+
+        getFileStringCache() {
+            return this._fileStringCache;
+        }
+
+        getFileStorage() {
+            return this._fileStorage;
+        }
+
+        getCommandManager() {
+            return this._commandManager;
+        }
+
+        getActiveDialog() {
+            return controls.dialogs.Dialog.getActiveDialog();
+        }
+
+        getActiveWindow() {
+            return this._activeWindow;
+        }
+
+        getActiveElement() {
+            return this._activeElement;
+        }
+
+        getActivePart() {
+            return this._activePart;
+        }
+
+        getActiveEditor() {
+            return this._activeEditor;
+        }
+
+        setActiveEditor(editor: EditorPart) {
+
+            if (editor === this._activeEditor) {
+                return;
+            }
+
+            this._activeEditor = editor;
+
+            this.eventEditorActivated.fire(editor);
+        }
+
+        /**
+         * Users may not call this method. This is public only for convenience.
+         */
+        setActivePart(part: Part): void {
+
+            if (part !== this._activePart) {
+
+                const old = this._activePart;
+
+                this._activePart = part;
+
+                if (old) {
+
+                    this.toggleActivePartClass(old);
+
+                    old.onPartDeactivated();
+
+                    this.eventPartDeactivated.fire(old);
+                }
+
+                if (part) {
+
+                    this.toggleActivePartClass(part);
+
+                    part.onPartActivated();
+                }
+
+                this.eventPartActivated.fire(part);
+            }
+
+            if (part instanceof EditorPart) {
+
+                this.setActiveEditor(part as EditorPart);
+            }
+        }
+
+        private toggleActivePartClass(part: Part) {
+
+            const tabPane = this.findTabPane(part.getElement());
+
+            if (!tabPane) {
+                // maybe the clicked part was closed
+                return;
+            }
+
+            if (part.containsClass("activePart")) {
+
+                part.removeClass("activePart");
+                tabPane.removeClass("activePart");
+
+            } else {
+
+                part.addClass("activePart");
+                tabPane.addClass("activePart");
+            }
+        }
+
+        private findTabPane(element: HTMLElement) {
+
+            if (element) {
+
+                const control = controls.Control.getControlOf(element);
+
+                if (control && control instanceof controls.TabPane) {
+                    return control;
+                }
+
+                return this.findTabPane(element.parentElement);
+            }
+
+            return null;
+        }
+
+        private registerContentTypes() {
+
+            const extensions = Platform.getExtensions<core.ContentTypeExtension>(core.ContentTypeExtension.POINT_ID);
+
+            this._contentTypeRegistry = new core.ContentTypeRegistry();
+
+            for (const extension of extensions) {
+
+                for (const resolver of extension.getResolvers()) {
+                    this._contentTypeRegistry.registerResolver(resolver);
+                }
+            }
+        }
+
+        findPart(element: HTMLElement): Part {
+
+            if (controls.TabPane.isTabCloseIcon(element)) {
+                return null;
+            }
+
+            if (controls.TabPane.isTabLabel(element)) {
+                element = controls.TabPane.getContentFromLabel(element).getElement();
+            }
+
+            if (element["__part"]) {
+                return element["__part"];
+            }
+
+            const control = controls.Control.getControlOf(element);
+
+            if (control && control instanceof controls.TabPane) {
+
+                const tabPane = control as controls.TabPane;
+                const content = tabPane.getSelectedTabContent();
+
+                if (content) {
+
+                    const elem2 = content.getElement();
+
+                    if (elem2["__part"]) {
+                        return elem2["__part"];
+                    }
+                }
+            }
+
+            if (element.parentElement) {
+                return this.findPart(element.parentElement);
+            }
+
+            return null;
+        }
+
+        getContentTypeRegistry() {
+            return this._contentTypeRegistry;
+        }
+
+        getProjectRoot(): core.io.FilePath {
+            return this._fileStorage.getRoot();
+        }
+
+        getContentTypeIcon(contentType: string): controls.IImage {
+
+            if (this._contentType_icon_Map.has(contentType)) {
+
+                const iconDesc = this._contentType_icon_Map.get(contentType);
+
+                if (iconDesc) {
+
+                    const icon = iconDesc.getIcon();
+
+                    return icon;
+                }
+            }
+
+            return null;
+        }
+
+        getFileImage(file: core.io.FilePath) {
+
+            if (file === null) {
+                return null;
+            }
+
+            return this._fileImageCache.getContent(file);
+        }
+
+        getFileImageSizeCache() {
+            return this._fileImageSizeCache;
+        }
+
+        getWorkbenchIcon(name: string) {
+            return ColibriPlugin.getInstance().getIcon(name);
+        }
+
+        getEditorRegistry() {
+            return this._editorRegistry;
+        }
+
+        getEditors(): EditorPart[] {
+            return this.getActiveWindow().getEditorArea().getEditors();
+        }
+
+        getOpenEditorsWithInput(input: ui.ide.IEditorInput) {
+
+            return this.getEditors().filter(editor => editor.getInput() === input);
+        }
+
+        makeEditor(input: IEditorInput, editorFactory?: EditorFactory): EditorPart {
+
+            const factory = editorFactory || this._editorRegistry.getFactoryForInput(input);
+
+            if (factory) {
+
+                const editor = factory.createEditor();
+
+                editor.setInput(input);
+
+                return editor;
+
+            } else {
+
+                console.error("No editor available for :" + input);
+
+                alert("No editor available for the given input.");
+            }
+
+            return null;
+        }
+
+        createEditor(input: IEditorInput, editorFactory?: EditorFactory): EditorPart {
+
+            const editorArea = this.getActiveWindow().getEditorArea();
+
+            const editor = this.makeEditor(input, editorFactory);
+
+            if (editor) {
+
+                editorArea.addPart(editor, true, false);
+            }
+
+            return editor;
+        }
+
+        getEditorInputExtension(input: IEditorInput) {
+
+            return this.getEditorInputExtensionWithId(input.getEditorInputExtension());
+        }
+
+        getEditorInputExtensionWithId(id: string) {
+
+            return Platform.getExtensions<EditorInputExtension>(EditorInputExtension.POINT_ID)
+
+                .find(e => e.getId() === id);
+        }
+
+        openEditor(input: IEditorInput, editorFactory?: EditorFactory): EditorPart {
+
+            const editorArea = this.getActiveWindow().getEditorArea();
+
+            {
+                const editors = this.getEditors();
+
+                // tslint:disable-next-line:no-shadowed-variable
+                for (const editor of editors) {
+
+                    if (editor.getInput() === input) {
+
+                        if (editorFactory && editorFactory !== editor.getEditorFactory()) {
+
+                            continue;
+                        }
+
+                        editorArea.activateEditor(editor);
+
+                        this.setActivePart(editor);
+
+                        return editor;
+                    }
+                }
+            }
+
+            const editor = this.createEditor(input, editorFactory);
+
+            if (editor) {
+
+                editorArea.activateEditor(editor);
+
+                this.setActivePart(editor);
+            }
+
+            return editor;
+        }
+    }
+}

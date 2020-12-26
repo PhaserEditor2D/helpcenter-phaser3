@@ -1,0 +1,40 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "linterOptions": {
+        "exclude": [
+            "plugins/phasereditor2d.phaser/src/phaser/*.ts",
+            "node_modules/**",
+            "*.d.ts"
+        ]
+    },
+    "rules": {
+        "array-type": [true, "array-simple"],
+        "no-namespace": false,
+        "variable-name": {
+            "options": [
+                "allow-leading-underscore",
+                "allow-snake-case"
+            ]
+        },
+        "max-classes-per-file": false,
+        "class-name": false,
+        "trailing-comma": false,
+        "eofline": false,
+        "member-access": false,
+        "member-ordering": false,
+        "object-literal-sort-keys": false,
+        "no-reference": false,
+        "no-console": false,
+        "arrow-parens": false,
+        "no-string-literal": false,
+        "interface-over-type-literal": false,
+        "object-literal-shorthand": false,
+        "interface-name": true,
+        "no-empty-interface": false
+    },
+    "rulesDirectory": []
+}

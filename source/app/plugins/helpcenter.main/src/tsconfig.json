@@ -1,0 +1,17 @@
+{
+    "extends": "../../../tsconfig-base.json",
+    "compilerOptions": {
+        "outFile": "../_out/helpcenter.main.js"
+    },
+    "references": [
+        {
+            "path": "../../colibri/src"
+        },
+        {
+            "path": "../../helpcenter.phaser/src"
+        },        
+    ],
+    "exclude": [
+        "../_out/"
+    ]
+}

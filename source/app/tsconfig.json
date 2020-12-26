@@ -1,0 +1,14 @@
+{
+    "references": [        
+        {
+            "path": "./plugins/colibri/src"
+        },
+        {
+            "path": "./plugins/helpcenter.phaser/src"
+        },
+        {
+            "path": "./plugins/helpcenter.main/src"
+        }        
+    ],
+    "files": []
+}

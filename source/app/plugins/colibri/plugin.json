@@ -1,0 +1,14 @@
+{
+    "id": "colibri",
+    "styles": [
+        "styles/controls.css",
+        "styles/dark.css",
+        "styles/light.css",
+        "styles/workbench.css"
+    ],
+    "scripts": [
+        "scripts/vanilla-picker/vanilla-picker.js",
+        "scripts/expr-eval/expr-eval.js",
+        "_out/colibri.js"
+    ]
+}
