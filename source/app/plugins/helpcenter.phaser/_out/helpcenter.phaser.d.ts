@@ -29,17 +29,42 @@ declare namespace helpcenter.phaser.core {
         getChildren(): DocEntry[];
         hasChildren(): boolean;
         getRawEntry(): IJSDocEntry;
+        getKind(): JSDocEntryKind;
+        getNameSignature(): string;
+        getMethodSignature(): string;
+        getReturnsTypeSignature(): string;
+        getTypeSignature(): string;
     }
 }
 declare namespace helpcenter.phaser.core {
     type JSDocEntryKind = "member" | "function" | "namespace" | "typedef" | "class" | "event" | "constant" | "package";
-    export interface IJSDocEntry {
+    type IParamData = {
+        type: {
+            names: string[];
+        } | string;
+        description: string;
+        name: string;
+        optional: boolean;
+    };
+    type IReturnData = {
+        type: {
+            names: string[];
+        };
+        description: string;
+    };
+    type IMemberTypeData = {
+        names: string[];
+    };
+    interface IJSDocEntry {
         comment: string;
         longname: string;
         name: string;
         memberof: string;
         kind: JSDocEntryKind;
         scope: "global";
+        params?: IParamData[];
+        returns?: IReturnData[];
+        type?: IMemberTypeData;
         meta: {
             filename: string;
             lineno: number;
@@ -48,7 +73,6 @@ declare namespace helpcenter.phaser.core {
             name: string;
         };
     }
-    export {};
 }
 declare namespace helpcenter.phaser.core {
     interface IJSDocFile {

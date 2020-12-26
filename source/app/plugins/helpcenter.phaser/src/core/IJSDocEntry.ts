@@ -1,8 +1,23 @@
 namespace helpcenter.phaser.core {
 
-    declare type JSDocEntryKind = "member" | "function" |
+    export declare type JSDocEntryKind = "member" | "function" |
         "namespace" | "typedef" | "class" | "event" | "constant" | "package";
-    declare type JSDocEntryScope = "global" | "static" | "instance";
+
+    export declare type IParamData = {
+        type: { names: string[] } | string;
+        description: string;
+        name: string;
+        optional: boolean;
+    };
+
+    export declare type IReturnData = {
+        type: { names: string[] };
+        description: string;
+    }
+
+    export declare type IMemberTypeData = {
+        names: string[];
+    }
 
     export interface IJSDocEntry {
         comment: string;
@@ -11,6 +26,9 @@ namespace helpcenter.phaser.core {
         memberof: string;
         kind: JSDocEntryKind;
         scope: "global";
+        params?: IParamData[],
+        returns?: IReturnData[];
+        type?: IMemberTypeData;
         meta: {
             filename: string;
             lineno: number;

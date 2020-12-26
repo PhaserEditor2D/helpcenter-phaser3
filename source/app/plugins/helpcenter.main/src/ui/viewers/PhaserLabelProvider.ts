@@ -13,7 +13,8 @@ namespace helpcenter.main.ui.viewers {
 
             if (obj instanceof phaser.core.DocEntry) {
 
-                return obj.getRawEntry().name;
+                return obj.getNameSignature() + obj.getMethodSignature()
+                    + obj.getReturnsTypeSignature() + obj.getTypeSignature();
             }
 
             return "";

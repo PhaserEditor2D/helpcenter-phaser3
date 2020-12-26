@@ -24,7 +24,7 @@ namespace helpcenter.phaser.core {
 
         isFileRootElement() {
 
-            return !this._parent|| this._parent.getRawEntry().kind === "namespace";
+            return !this._parent || this._parent.getRawEntry().kind === "namespace";
         }
 
         getChildren() {
@@ -40,6 +40,48 @@ namespace helpcenter.phaser.core {
         getRawEntry() {
 
             return this._rawEntry;
+        }
+
+        getKind() {
+
+            return this._rawEntry.kind;
+        }
+
+        getNameSignature() {
+
+            return this._rawEntry.name;
+        }
+
+        getMethodSignature() {
+
+            if (this._rawEntry.kind === "function") {
+
+                const params = this._rawEntry.params || [];
+
+                return `(${params.map(p => p.name).join(",")})`;
+            }
+
+            return "";
+        }
+
+        getReturnsTypeSignature() {
+
+            if (this._rawEntry.returns) {
+
+                return ": " + this._rawEntry.returns.flatMap(r => r.type.names).join("|");
+            }
+
+            return "";
+        }
+
+        getTypeSignature() {
+
+            if (this._rawEntry.type) {
+
+                return ": " + this._rawEntry.type.names.join("|");
+            }
+
+            return "";
         }
     }
 }

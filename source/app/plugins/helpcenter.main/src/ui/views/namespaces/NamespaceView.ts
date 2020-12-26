@@ -18,6 +18,7 @@ namespace helpcenter.main.ui.views.namespaces {
             viewer.setContentProvider(new NamespaceContentViewer());
             viewer.setCellRendererProvider(new ui.viewers.PhaserCellRendererProvider());
             viewer.setLabelProvider(new ui.viewers.PhaserLabelProvider());
+            viewer.setStyledLabelProvider(new ui.viewers.PhaserStyledLabelProvider());
             viewer.setInput([]);
 
             return viewer;

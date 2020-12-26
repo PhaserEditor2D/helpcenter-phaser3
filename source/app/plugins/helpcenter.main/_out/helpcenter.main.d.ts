@@ -44,6 +44,14 @@ declare namespace helpcenter.main.ui.viewers {
         getLabel(obj: any): string;
     }
 }
+declare namespace helpcenter.main.ui.viewers {
+    import controls = colibri.ui.controls;
+    class PhaserStyledLabelProvider implements controls.viewers.IStyledLabelProvider {
+        private _labelProvider;
+        constructor();
+        getStyledTexts(obj: any, dark: boolean): controls.viewers.IStyledText[];
+    }
+}
 declare namespace helpcenter.main.ui.views.files {
     import controls = colibri.ui.controls;
     class FilesView extends colibri.ui.ide.ViewerView {

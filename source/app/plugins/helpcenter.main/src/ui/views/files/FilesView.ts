@@ -18,6 +18,7 @@ namespace helpcenter.main.ui.views.files {
             viewer.setContentProvider(new FolderContentViewer());
             viewer.setCellRendererProvider(new ui.viewers.PhaserCellRendererProvider());
             viewer.setLabelProvider(new ui.viewers.PhaserLabelProvider());
+            viewer.setStyledLabelProvider(new ui.viewers.PhaserStyledLabelProvider());
             viewer.setInput(helpcenter.phaser.PhaserPlugin.getInstance().getDocsFolder());
 
             return viewer;
@@ -42,7 +43,7 @@ namespace helpcenter.main.ui.views.files {
                     return parent.getChildren();
                 }
 
-                return parent.getDocsEntries().filter(entry => entry.isFileRootElement());
+                return parent.getDocsEntries().filter(entry => entry.isFileRootElement() && entry.getKind() !== "namespace");
             }
 
             if (parent instanceof phaser.core.DocEntry) {

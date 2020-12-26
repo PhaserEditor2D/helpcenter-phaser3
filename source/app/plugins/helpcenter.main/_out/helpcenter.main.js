@@ -123,12 +123,54 @@ var helpcenter;
                             return obj.getName();
                         }
                         if (obj instanceof helpcenter.phaser.core.DocEntry) {
-                            return obj.getRawEntry().name;
+                            return obj.getNameSignature() + obj.getMethodSignature()
+                                + obj.getReturnsTypeSignature() + obj.getTypeSignature();
                         }
                         return "";
                     }
                 }
                 viewers.PhaserLabelProvider = PhaserLabelProvider;
+            })(viewers = ui.viewers || (ui.viewers = {}));
+        })(ui = main.ui || (main.ui = {}));
+    })(main = helpcenter.main || (helpcenter.main = {}));
+})(helpcenter || (helpcenter = {}));
+var helpcenter;
+(function (helpcenter) {
+    var main;
+    (function (main) {
+        var ui;
+        (function (ui) {
+            var viewers;
+            (function (viewers) {
+                var controls = colibri.ui.controls;
+                class PhaserStyledLabelProvider {
+                    constructor() {
+                        this._labelProvider = new viewers.PhaserLabelProvider();
+                    }
+                    getStyledTexts(obj, dark) {
+                        const theme = controls.Controls.getTheme();
+                        if (obj instanceof helpcenter.phaser.core.DocEntry) {
+                            return [{
+                                    color: theme.viewerForeground,
+                                    text: obj.getNameSignature()
+                                }, {
+                                    color: dark ? "gray" : "brown",
+                                    text: obj.getMethodSignature()
+                                }, {
+                                    color: dark ? "gray" : "darkCyan",
+                                    text: obj.getReturnsTypeSignature()
+                                }, {
+                                    color: dark ? "gray" : "darkCyan",
+                                    text: obj.getTypeSignature()
+                                }];
+                        }
+                        return [{
+                                color: theme.viewerForeground,
+                                text: this._labelProvider.getLabel(obj)
+                            }];
+                    }
+                }
+                viewers.PhaserStyledLabelProvider = PhaserStyledLabelProvider;
             })(viewers = ui.viewers || (ui.viewers = {}));
         })(ui = main.ui || (main.ui = {}));
     })(main = helpcenter.main || (helpcenter.main = {}));
@@ -155,6 +197,7 @@ var helpcenter;
                             viewer.setContentProvider(new FolderContentViewer());
                             viewer.setCellRendererProvider(new ui.viewers.PhaserCellRendererProvider());
                             viewer.setLabelProvider(new ui.viewers.PhaserLabelProvider());
+                            viewer.setStyledLabelProvider(new ui.viewers.PhaserStyledLabelProvider());
                             viewer.setInput(helpcenter.phaser.PhaserPlugin.getInstance().getDocsFolder());
                             return viewer;
                         }
@@ -171,7 +214,7 @@ var helpcenter;
                                 if (parent.isFolder()) {
                                     return parent.getChildren();
                                 }
-                                return parent.getDocsEntries().filter(entry => entry.isFileRootElement());
+                                return parent.getDocsEntries().filter(entry => entry.isFileRootElement() && entry.getKind() !== "namespace");
                             }
                             if (parent instanceof helpcenter.phaser.core.DocEntry) {
                                 return parent.getChildren();
@@ -206,6 +249,7 @@ var helpcenter;
                             viewer.setContentProvider(new NamespaceContentViewer());
                             viewer.setCellRendererProvider(new ui.viewers.PhaserCellRendererProvider());
                             viewer.setLabelProvider(new ui.viewers.PhaserLabelProvider());
+                            viewer.setStyledLabelProvider(new ui.viewers.PhaserStyledLabelProvider());
                             viewer.setInput([]);
                             return viewer;
                         }
