@@ -2,7 +2,6 @@ var helpcenter;
 (function (helpcenter) {
     var main;
     (function (main_1) {
-        main_1.DOC_ENTRY_KIND_LIST = ["member", "function", "namespace", "typedef", "class", "event", "constant"];
         main_1.DOC_ENTRY_KIND_ICON_NAME = {
             "member": "symbol-variable",
             "function": "symbol-method",
@@ -24,7 +23,7 @@ var helpcenter;
             registerExtensions(reg) {
                 // icons
                 reg.addExtension(colibri.ui.ide.IconLoaderExtension
-                    .withPluginFiles(this, main_1.DOC_ENTRY_KIND_LIST.map(kind => main_1.DOC_ENTRY_KIND_ICON_NAME[kind])));
+                    .withPluginFiles(this, helpcenter.phaser.DOC_ENTRY_KIND_LIST.map(kind => main_1.DOC_ENTRY_KIND_ICON_NAME[kind])));
                 reg.addExtension(colibri.ui.ide.IconLoaderExtension
                     .withPluginFiles(this, [main_1.ICON_FILE_SCRIPT], true));
                 // windows
@@ -63,8 +62,9 @@ var helpcenter;
                 }
                 createParts() {
                     this._editorArea = new colibri.ui.ide.EditorArea();
-                    this._navigatorView = new ui.views.types.NavigatorView();
-                    this._split1 = new controls.SplitPanel(this.createViewFolder(this._navigatorView), this._editorArea);
+                    this._filesView = new ui.views.files.FilesView();
+                    this._namespaceView = new ui.views.namespaces.NamespaceView();
+                    this._split1 = new controls.SplitPanel(this.createViewFolder(this._namespaceView, this._filesView), this._editorArea);
                     this.getClientArea().add(this._split1);
                     this._split1.setSplitFactor(0.2);
                     this.layout();
@@ -84,44 +84,83 @@ var helpcenter;
     (function (main) {
         var ui;
         (function (ui) {
+            var viewers;
+            (function (viewers) {
+                var controls = colibri.ui.controls;
+                class PhaserCellRendererProvider {
+                    getCellRenderer(element) {
+                        if (element instanceof helpcenter.phaser.core.PhaserFile) {
+                            if (element.isFolder()) {
+                                return new controls.viewers.IconImageCellRenderer(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_FOLDER));
+                            }
+                        }
+                        if (element instanceof helpcenter.phaser.core.DocEntry) {
+                            const kind = element.getRawEntry().kind;
+                            return new controls.viewers.IconImageCellRenderer(main.MainPlugin.getInstance().getDocEntryKindIcon(kind));
+                        }
+                        return new controls.viewers.IconImageCellRenderer(main.MainPlugin.getInstance().getIcon(main.ICON_FILE_SCRIPT));
+                    }
+                    async preload(args) {
+                        return controls.PreloadResult.NOTHING_LOADED;
+                    }
+                }
+                viewers.PhaserCellRendererProvider = PhaserCellRendererProvider;
+            })(viewers = ui.viewers || (ui.viewers = {}));
+        })(ui = main.ui || (main.ui = {}));
+    })(main = helpcenter.main || (helpcenter.main = {}));
+})(helpcenter || (helpcenter = {}));
+var helpcenter;
+(function (helpcenter) {
+    var main;
+    (function (main) {
+        var ui;
+        (function (ui) {
+            var viewers;
+            (function (viewers) {
+                class PhaserLabelProvider {
+                    getLabel(obj) {
+                        if (obj instanceof helpcenter.phaser.core.PhaserFile) {
+                            return obj.getName();
+                        }
+                        if (obj instanceof helpcenter.phaser.core.DocEntry) {
+                            return obj.getRawEntry().name;
+                        }
+                        return "";
+                    }
+                }
+                viewers.PhaserLabelProvider = PhaserLabelProvider;
+            })(viewers = ui.viewers || (ui.viewers = {}));
+        })(ui = main.ui || (main.ui = {}));
+    })(main = helpcenter.main || (helpcenter.main = {}));
+})(helpcenter || (helpcenter = {}));
+var helpcenter;
+(function (helpcenter) {
+    var main;
+    (function (main) {
+        var ui;
+        (function (ui) {
             var views;
             (function (views) {
-                var types;
-                (function (types) {
+                var files;
+                (function (files) {
                     var controls = colibri.ui.controls;
-                    class NavigatorView extends colibri.ui.ide.ViewerView {
+                    class FilesView extends colibri.ui.ide.ViewerView {
                         constructor() {
-                            super(NavigatorView.ID);
-                            this.setTitle("Navigator");
+                            super(FilesView.ID);
+                            this.setTitle("Files");
+                            this.setIcon(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_FOLDER));
                         }
                         createViewer() {
                             const viewer = new controls.viewers.TreeViewer(this.getId());
                             viewer.setContentProvider(new FolderContentViewer());
-                            viewer.setLabelProvider(new NavigatorLabelProvider());
+                            viewer.setCellRendererProvider(new ui.viewers.PhaserCellRendererProvider());
+                            viewer.setLabelProvider(new ui.viewers.PhaserLabelProvider());
                             viewer.setInput(helpcenter.phaser.PhaserPlugin.getInstance().getDocsFolder());
-                            viewer.setCellRendererProvider(new PhaserFileRendererProvider());
                             return viewer;
                         }
                     }
-                    NavigatorView.ID = "helpcenter.main.ui.views.types.NavigatorView";
-                    types.NavigatorView = NavigatorView;
-                    class PhaserFileRendererProvider {
-                        getCellRenderer(element) {
-                            if (element instanceof helpcenter.phaser.core.PhaserFile) {
-                                if (element.isFolder()) {
-                                    return new controls.viewers.IconImageCellRenderer(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_FOLDER));
-                                }
-                            }
-                            if (element instanceof helpcenter.phaser.core.DocEntry) {
-                                const kind = element.getRawEntry().kind;
-                                return new controls.viewers.IconImageCellRenderer(main.MainPlugin.getInstance().getDocEntryKindIcon(kind));
-                            }
-                            return new controls.viewers.IconImageCellRenderer(main.MainPlugin.getInstance().getIcon(main.ICON_FILE_SCRIPT));
-                        }
-                        async preload(args) {
-                            return controls.PreloadResult.NOTHING_LOADED;
-                        }
-                    }
+                    FilesView.ID = "helpcenter.main.ui.views.files.NavigatorView";
+                    files.FilesView = FilesView;
                     class FolderContentViewer {
                         getRoots(input) {
                             const root = input;
@@ -132,23 +171,59 @@ var helpcenter;
                                 if (parent.isFolder()) {
                                     return parent.getChildren();
                                 }
-                                return parent.getDocsEntries();
+                                return parent.getDocsEntries().filter(entry => entry.isFileRootElement());
+                            }
+                            if (parent instanceof helpcenter.phaser.core.DocEntry) {
+                                return parent.getChildren();
                             }
                             return [];
                         }
                     }
-                    class NavigatorLabelProvider {
-                        getLabel(obj) {
-                            if (obj instanceof helpcenter.phaser.core.PhaserFile) {
-                                return obj.getName();
-                            }
-                            if (obj instanceof helpcenter.phaser.core.DocEntry) {
-                                return obj.getRawEntry().longname;
-                            }
-                            return "";
+                })(files = views.files || (views.files = {}));
+            })(views = ui.views || (ui.views = {}));
+        })(ui = main.ui || (main.ui = {}));
+    })(main = helpcenter.main || (helpcenter.main = {}));
+})(helpcenter || (helpcenter = {}));
+var helpcenter;
+(function (helpcenter) {
+    var main;
+    (function (main) {
+        var ui;
+        (function (ui) {
+            var views;
+            (function (views) {
+                var namespaces;
+                (function (namespaces) {
+                    var controls = colibri.ui.controls;
+                    class NamespaceView extends colibri.ui.ide.ViewerView {
+                        constructor() {
+                            super(NamespaceView.ID);
+                            this.setTitle("Namespace");
+                            this.setIcon(main.MainPlugin.getInstance().getDocEntryKindIcon("namespace"));
+                        }
+                        createViewer() {
+                            const viewer = new controls.viewers.TreeViewer(this.getId());
+                            viewer.setContentProvider(new NamespaceContentViewer());
+                            viewer.setCellRendererProvider(new ui.viewers.PhaserCellRendererProvider());
+                            viewer.setLabelProvider(new ui.viewers.PhaserLabelProvider());
+                            viewer.setInput([]);
+                            return viewer;
                         }
                     }
-                })(types = views.types || (views.types = {}));
+                    NamespaceView.ID = "helpcenter.main.ui.views.classes.NamespaceView";
+                    namespaces.NamespaceView = NamespaceView;
+                    class NamespaceContentViewer {
+                        getRoots(input) {
+                            return [helpcenter.phaser.PhaserPlugin.getInstance().getDocEntry("Phaser")];
+                        }
+                        getChildren(parent) {
+                            if (parent instanceof helpcenter.phaser.core.DocEntry) {
+                                return parent.getChildren();
+                            }
+                            return [];
+                        }
+                    }
+                })(namespaces = views.namespaces || (views.namespaces = {}));
             })(views = ui.views || (ui.views = {}));
         })(ui = main.ui || (main.ui = {}));
     })(main = helpcenter.main || (helpcenter.main = {}));

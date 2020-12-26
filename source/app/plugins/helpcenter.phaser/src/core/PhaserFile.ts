@@ -10,11 +10,11 @@ namespace helpcenter.phaser.core {
         private _parent: PhaserFile;
         private _docEntry: DocEntry;
 
-        constructor(name: string, isFolder: boolean, docEntry: IJSDocEntry) {
+        constructor(name: string, isFolder: boolean, docEntry: DocEntry) {
 
             this._name = name;
             this._isFolder = isFolder;
-            this._docEntry = new DocEntry(docEntry);
+            this._docEntry = docEntry;
             this._docsEntries = [];
             this._children = [];
             this._childrenMap = new Map();
@@ -35,7 +35,7 @@ namespace helpcenter.phaser.core {
             return this._children;
         }
 
-        getOrMakeChild(name: string, isFolder: boolean, entry: IJSDocEntry) {
+        getOrMakeChild(name: string, isFolder: boolean, entry: DocEntry) {
 
             let folder = this._childrenMap.get(name);
 

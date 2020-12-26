@@ -1,6 +1,5 @@
 namespace helpcenter.main {
 
-    export const DOC_ENTRY_KIND_LIST = ["member", "function", "namespace", "typedef", "class", "event", "constant"];
     export const DOC_ENTRY_KIND_ICON_NAME = {
         "member": "symbol-variable",
         "function": "symbol-method",
@@ -31,7 +30,7 @@ namespace helpcenter.main {
             // icons
 
             reg.addExtension(colibri.ui.ide.IconLoaderExtension
-                .withPluginFiles(this, DOC_ENTRY_KIND_LIST.map(kind => DOC_ENTRY_KIND_ICON_NAME[kind])));
+                .withPluginFiles(this, phaser.DOC_ENTRY_KIND_LIST.map(kind => DOC_ENTRY_KIND_ICON_NAME[kind])));
 
                 reg.addExtension(colibri.ui.ide.IconLoaderExtension
                     .withPluginFiles(this, [ICON_FILE_SCRIPT], true));

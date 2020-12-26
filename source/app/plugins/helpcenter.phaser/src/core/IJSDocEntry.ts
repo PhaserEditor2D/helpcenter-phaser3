@@ -7,6 +7,7 @@ namespace helpcenter.phaser.core {
     export interface IJSDocEntry {
         comment: string;
         longname: string;
+        name: string;
         memberof: string;
         kind: JSDocEntryKind;
         scope: "global";
@@ -17,10 +18,5 @@ namespace helpcenter.phaser.core {
             path: string;
             name: string;
         }
-
-        // computed
-        children: IJSDocEntry[];
-        parent: IJSDocEntry;
-        folder: PhaserFile;
     }
 }

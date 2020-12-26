@@ -7,8 +7,9 @@ namespace helpcenter.main.ui {
         static ID = "helpcenter.main.MainWindow"
 
         private _editorArea: colibri.ui.ide.EditorArea;
-        private _navigatorView: views.types.NavigatorView;
+        private _filesView: views.files.FilesView;
         private _split1: controls.SplitPanel;
+        private _namespaceView: views.namespaces.NamespaceView;
 
         constructor() {
             super(MainWindow.ID);
@@ -17,9 +18,12 @@ namespace helpcenter.main.ui {
         protected createParts() {
 
             this._editorArea = new colibri.ui.ide.EditorArea();
-            this._navigatorView = new views.types.NavigatorView();
+            this._filesView = new views.files.FilesView();
+            this._namespaceView = new views.namespaces.NamespaceView();
 
-            this._split1 = new controls.SplitPanel(this.createViewFolder(this._navigatorView), this._editorArea);
+            this._split1 = new controls.SplitPanel(
+                this.createViewFolder(this._namespaceView, this._filesView),
+                this._editorArea);
 
             this.getClientArea().add(this._split1);
 

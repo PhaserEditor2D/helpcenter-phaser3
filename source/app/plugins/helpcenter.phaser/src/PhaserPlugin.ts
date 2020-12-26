@@ -2,11 +2,13 @@ namespace helpcenter.phaser {
 
     export const PHASER_VER = "3.24.1";
 
+    export const DOC_ENTRY_KIND_LIST = ["namespace", "class", "typedef", "constant", "event", "member", "function"];
+
     export class PhaserPlugin extends colibri.Plugin {
 
         private static _instance;
         private _docsFile: core.IJSDocFile;
-        private _docsNameMap: Map<string, core.IJSDocEntry>;
+        private _docsNameMap: Map<string, core.DocEntry>;
         private _docsFolder: core.PhaserFile;
 
         static getInstance() {
@@ -38,15 +40,6 @@ namespace helpcenter.phaser {
 
         async started() {
 
-            const data = await this.getJSON("data/phaser.json");
-
-            const list = new Set();
-
-            for (const entry of data.docs) {
-
-                list.add(entry.kind);
-            }
-
             this.buildModel();
         }
 
@@ -54,29 +47,44 @@ namespace helpcenter.phaser {
 
             const entries = this._docsFile.docs;
 
+            entries.sort((a: core.IJSDocEntry, b: core.IJSDocEntry) => {
+
+                const aa = DOC_ENTRY_KIND_LIST.indexOf(a.kind);
+                const bb = DOC_ENTRY_KIND_LIST.indexOf(b.kind);
+
+                return aa - bb;
+            });
+
+            const docEntries: core.DocEntry[] = [];
+
             // build map
 
             this._docsNameMap = new Map();
 
             for (const entry of entries) {
 
-                this._docsNameMap.set(entry.longname, entry);
+                const docEntry = new core.DocEntry(entry);
+
+                this._docsNameMap.set(entry.longname, docEntry);
+
+                docEntries.push(docEntry);
             }
 
             // build hierarchy
 
-            for (const entry of entries) {
+            for (const entry of docEntries) {
+
+                const memberof = entry.getRawEntry().memberof;
 
                 // there are entries with scope global that are not member of any other entry
-                if (entry.memberof) {
+                if (memberof) {
 
-                    const parent = this._docsNameMap.get(entry.memberof);
+                    const parent = this._docsNameMap.get(memberof);
 
                     if (parent) {
 
-                        parent.children = parent.children ?? [];
-                        parent.children.push(entry);
-                        entry.parent = parent;
+                        parent.getChildren().push(entry);
+                        entry.setParent(parent);
                     }
                 }
             }
@@ -85,11 +93,14 @@ namespace helpcenter.phaser {
 
             const root = new core.PhaserFile("", true, null);
 
-            const set = new Set();
+            for (const docEntry of docEntries) {
 
-            for (const entry of entries) {
+                const entry = docEntry.getRawEntry();
 
-                set.add(entry.kind);
+                if (entry.meta.filename === "phaser.js" || entry.meta.filename === "index.js") {
+
+                    continue;
+                }
 
                 const names = entry.meta.path.split("/");
 
@@ -101,26 +112,21 @@ namespace helpcenter.phaser {
 
                     for (const name of names) {
 
-                        folder = folder.getOrMakeChild(name, true, entry);
+                        folder = folder.getOrMakeChild(name, true, docEntry);
                     }
                 }
 
-                const file = folder.getOrMakeChild(entry.meta.filename, false, entry);
+                const file = folder.getOrMakeChild(entry.meta.filename, false, docEntry);
 
-                file.getDocsEntries().push(new core.DocEntry(entry));
-
-                entry.folder = folder;
-                //folder.getDocsEntries().push(new core.DocEntry(entry));
+                file.getDocsEntries().push(docEntry);
             }
 
-            this.sort(root);
+            this.sortFile(root);
 
             this._docsFolder = root;
-
-            console.log([...set]);
         }
 
-        private sort(folder: core.PhaserFile) {
+        private sortFile(folder: core.PhaserFile) {
 
             folder.getChildren().sort((a, b) => {
 
@@ -134,9 +140,14 @@ namespace helpcenter.phaser {
 
                 if (c.isFolder()) {
 
-                    this.sort(c);
+                    this.sortFile(c);
                 }
             }
+        }
+
+        getDocEntry(name: string) {
+
+            return this._docsNameMap.get(name);
         }
     }
 

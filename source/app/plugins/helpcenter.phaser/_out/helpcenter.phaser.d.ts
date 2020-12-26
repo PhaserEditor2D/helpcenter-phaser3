@@ -1,5 +1,6 @@
 declare namespace helpcenter.phaser {
     const PHASER_VER = "3.24.1";
+    const DOC_ENTRY_KIND_LIST: string[];
     class PhaserPlugin extends colibri.Plugin {
         private static _instance;
         private _docsFile;
@@ -12,13 +13,21 @@ declare namespace helpcenter.phaser {
         getDocsFolder(): core.PhaserFile;
         started(): Promise<void>;
         private buildModel;
-        private sort;
+        private sortFile;
+        getDocEntry(name: string): core.DocEntry;
     }
 }
 declare namespace helpcenter.phaser.core {
     class DocEntry {
         private _rawEntry;
+        private _children;
+        private _parent;
         constructor(rawEntry: IJSDocEntry);
+        getParent(): DocEntry;
+        setParent(parent: DocEntry): void;
+        isFileRootElement(): boolean;
+        getChildren(): DocEntry[];
+        hasChildren(): boolean;
         getRawEntry(): IJSDocEntry;
     }
 }
@@ -27,6 +36,7 @@ declare namespace helpcenter.phaser.core {
     export interface IJSDocEntry {
         comment: string;
         longname: string;
+        name: string;
         memberof: string;
         kind: JSDocEntryKind;
         scope: "global";
@@ -37,9 +47,6 @@ declare namespace helpcenter.phaser.core {
             path: string;
             name: string;
         };
-        children: IJSDocEntry[];
-        parent: IJSDocEntry;
-        folder: PhaserFile;
     }
     export {};
 }
@@ -57,11 +64,11 @@ declare namespace helpcenter.phaser.core {
         private _childrenMap;
         private _parent;
         private _docEntry;
-        constructor(name: string, isFolder: boolean, docEntry: IJSDocEntry);
+        constructor(name: string, isFolder: boolean, docEntry: DocEntry);
         getDocEntry(): DocEntry;
         getChild(name: string): PhaserFile;
         getChildren(): PhaserFile[];
-        getOrMakeChild(name: string, isFolder: boolean, entry: IJSDocEntry): PhaserFile;
+        getOrMakeChild(name: string, isFolder: boolean, entry: DocEntry): PhaserFile;
         getParent(): PhaserFile;
         getDocsEntries(): DocEntry[];
         getName(): string;
