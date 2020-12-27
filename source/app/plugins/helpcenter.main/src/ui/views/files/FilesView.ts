@@ -50,7 +50,8 @@ namespace helpcenter.main.ui.views.files {
 
             if (parent instanceof phaser.core.DocEntry) {
 
-                return parent.getChildren();
+                // get only doc entries in the same file
+                return parent.getChildren().filter(entry => entry.getFile() === parent.getFile());
             }
 
             return [];
