@@ -32,8 +32,8 @@ namespace helpcenter.main {
             reg.addExtension(colibri.ui.ide.IconLoaderExtension
                 .withPluginFiles(this, phaser.DOC_ENTRY_KIND_LIST.map(kind => DOC_ENTRY_KIND_ICON_NAME[kind])));
 
-                reg.addExtension(colibri.ui.ide.IconLoaderExtension
-                    .withPluginFiles(this, [ICON_FILE_SCRIPT], true));
+            reg.addExtension(colibri.ui.ide.IconLoaderExtension
+                .withPluginFiles(this, [ICON_FILE_SCRIPT], true));
 
             // windows
 
@@ -42,6 +42,14 @@ namespace helpcenter.main {
                     () => new ui.MainWindow()
                 )
             );
+
+            // editor input
+
+            reg.addExtension(new phaser.core.PhaserFileEditorInputExtension());
+
+            // editor
+
+            reg.addExtension(new colibri.ui.ide.EditorExtension([ui.editors.PhaserFileEditor.getFactory()]));
         }
 
         getDocEntryKindIcon(kind: string) {

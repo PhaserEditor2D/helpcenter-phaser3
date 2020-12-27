@@ -21,6 +21,19 @@ namespace helpcenter.main.ui.views.files {
             viewer.setStyledLabelProvider(new ui.viewers.PhaserStyledLabelProvider());
             viewer.setInput(helpcenter.phaser.PhaserPlugin.getInstance().getDocsFolder());
 
+            viewer.eventOpenItem.addListener(e => {
+
+                const element = viewer.getSelectionFirstElement();
+
+                if (element) {
+
+                    if (element instanceof phaser.core.PhaserFile && element.isFile()) {
+
+                        colibri.Platform.getWorkbench().openEditor(element);
+                    }
+                }
+            });
+
             return viewer;
         }
     }

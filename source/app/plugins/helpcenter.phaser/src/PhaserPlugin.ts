@@ -6,7 +6,7 @@ namespace helpcenter.phaser {
 
     export class PhaserPlugin extends colibri.Plugin {
 
-        private static _instance;
+        private static _instance: PhaserPlugin;
         private _docsFile: core.IJSDocFile;
         private _docsNameMap: Map<string, core.DocEntry>;
         private _docsFolder: core.PhaserFile;
@@ -36,6 +36,25 @@ namespace helpcenter.phaser {
         getDocsFolder() {
 
             return this._docsFolder;
+        }
+
+        getPhaserFile(filePath: string) {
+
+            const names = filePath.split("/");
+
+            let file = this._docsFolder;
+
+            for (const name of names) {
+
+                file = file.getChild(name);
+
+                if (!file) {
+
+                    return null;
+                }
+            }
+
+            return file;
         }
 
         async started() {

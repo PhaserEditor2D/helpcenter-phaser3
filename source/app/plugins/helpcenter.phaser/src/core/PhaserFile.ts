@@ -1,6 +1,6 @@
 namespace helpcenter.phaser.core {
 
-    export class PhaserFile {
+    export class PhaserFile implements colibri.ui.ide.IEditorInput {
 
         private _isFolder: boolean;
         private _name: string;
@@ -18,6 +18,28 @@ namespace helpcenter.phaser.core {
             this._docsEntries = [];
             this._children = [];
             this._childrenMap = new Map();
+        }
+
+        getPath() {
+
+            if (this._parent) {
+
+                const parentPath = this._parent.getPath();
+
+                if (parentPath === "") {
+
+                    return this._name;
+                }
+
+                return parentPath + "/" + this._name;
+            }
+
+            return "";
+        }
+
+        getEditorInputExtension(): string {
+
+            return "helpcenter.main.ui.editors.PhaserFileEditorInputExtension";
         }
 
         getDocEntry() {
