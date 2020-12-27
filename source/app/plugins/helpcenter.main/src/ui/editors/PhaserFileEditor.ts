@@ -25,6 +25,8 @@ namespace helpcenter.main.ui.editors {
         static ID = "helpcenter.main.ui.editors.PhaserFileEditor";
 
         private static _factory: colibri.ui.ide.EditorFactory;
+        private _codeEditor: CodeMirror.Editor;
+        private _scrollTo: { line: number, ch: number };
 
         static getFactory() {
 
@@ -39,10 +41,61 @@ namespace helpcenter.main.ui.editors {
 
         protected createPart(): void {
 
-            const element = document.createElement("div");
-            element.innerHTML = "Hello here!!!";
+            this._codeEditor = CodeMirror(this.getElement(), {
+                mode: "javascript",
+                readOnly: true,
+                lineNumbers: true
+            });
 
-            this.getElement().appendChild(element);
+            this.updateContent();
+        }
+
+        scrollToLine(line: number, ch: number) {
+
+            this._scrollTo = { line, ch };
+
+            if (this._codeEditor) {
+
+                this.doScrollToLine();
+            }
+        }
+
+        private doScrollToLine() {
+
+            if (this._scrollTo) {
+
+                this._codeEditor.scrollIntoView({
+                    line: this._scrollTo.line,
+                    ch: this._scrollTo.ch
+                }, this.getElement().getBoundingClientRect().height / 2);
+
+                this._codeEditor.setSelection({
+                    line: this._scrollTo.line - 1,
+                    ch: 0,
+                }, {
+                    line: this._scrollTo.line,
+                    ch: 0,
+                });
+
+                this._scrollTo = null;
+            }
+        }
+
+        layout() {
+
+            super.layout();
+
+            if (this._codeEditor) {
+
+                const element = this._codeEditor.getWrapperElement();
+
+                const b = this.getElement().getBoundingClientRect();
+
+                element.style.width = b.width + "px";
+                element.style.height = b.height + "px";
+
+                this._codeEditor.refresh();
+            }
         }
 
         setInput(input: phaser.core.PhaserFile) {
@@ -50,6 +103,30 @@ namespace helpcenter.main.ui.editors {
             super.setInput(input);
 
             this.setTitle(input.getName());
+        }
+
+        getInput(): phaser.core.PhaserFile {
+
+            return super.getInput() as phaser.core.PhaserFile;
+        }
+
+        private updateContent() {
+
+            const input = this.getInput();
+
+            let source = "";
+
+            if (input) {
+
+                source = phaser.PhaserPlugin.getInstance().getFileSource(input);
+            }
+
+            if (this._codeEditor) {
+
+                this._codeEditor.setValue(source);
+
+                this.doScrollToLine();
+            }
         }
     }
 }

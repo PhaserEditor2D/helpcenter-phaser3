@@ -7,6 +7,9 @@
             "path": "./plugins/helpcenter.phaser/src"
         },
         {
+            "path": "./plugins/helpcenter.codemirror/src"
+        },
+        {
             "path": "./plugins/helpcenter.main/src"
         }        
     ],

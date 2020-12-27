@@ -5,11 +5,22 @@ namespace helpcenter.phaser.core {
         private _rawEntry: IJSDocEntry;
         private _children: DocEntry[];
         private _parent: DocEntry;
+        private _file: PhaserFile;
 
         constructor(rawEntry: IJSDocEntry) {
 
             this._rawEntry = rawEntry;
             this._children = [];
+        }
+
+        getFile() {
+
+            return this._file;
+        }
+
+        setFile(file: PhaserFile) {
+
+            this._file = file;
         }
 
         getParent() {

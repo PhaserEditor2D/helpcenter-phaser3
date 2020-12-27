@@ -2,7 +2,7 @@ namespace helpcenter.main.ui.views.namespaces {
 
     import controls = colibri.ui.controls;
 
-    export class NamespaceView extends colibri.ui.ide.ViewerView {
+    export class NamespaceView extends AbstractPhaserView {
         static ID = "helpcenter.main.ui.views.classes.NamespaceView";
 
         constructor() {

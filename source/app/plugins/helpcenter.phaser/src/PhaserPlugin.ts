@@ -10,6 +10,7 @@ namespace helpcenter.phaser {
         private _docsFile: core.IJSDocFile;
         private _docsNameMap: Map<string, core.DocEntry>;
         private _docsFolder: core.PhaserFile;
+        private _sourceMap: Map<string, string>;
 
         static getInstance() {
 
@@ -24,9 +25,30 @@ namespace helpcenter.phaser {
 
             reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
 
-                this._docsFile = await this.getJSON("data/phaser.json");
+                this._docsFile = await this.getJSON("data/phaser-docs.json");
+            }));
+
+            reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
+
+                const data = await this.getJSON("data/phaser-code.json");
+
+                this._sourceMap = new Map();
+
+                // tslint:disable-next-line:forin
+                for (const key in data) {
+
+                    this._sourceMap.set(key, data[key]);
+                }
             }));
         }
+
+        getFileSource(file: string | phaser.core.PhaserFile) {
+
+            const filePath = file instanceof phaser.core.PhaserFile ? file.getPath() : file;
+
+            return this._sourceMap.get(filePath);
+        }
+
 
         getDocsJSONFile() {
 
@@ -137,7 +159,7 @@ namespace helpcenter.phaser {
 
                 const file = folder.getOrMakeChild(entry.meta.filename, false, docEntry);
 
-                file.getDocsEntries().push(docEntry);
+                file.addDocEntry(docEntry);
             }
 
             this.sortFile(root);

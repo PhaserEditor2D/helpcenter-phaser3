@@ -78,7 +78,14 @@ namespace helpcenter.phaser.core {
             return this._parent;
         }
 
-        getDocsEntries() {
+        addDocEntry(docEntry: DocEntry) {
+
+            this._docsEntries.push(docEntry);
+
+            docEntry.setFile(this);
+        }
+
+        getDocEntries() {
 
             return this._docsEntries;
         }

@@ -9,6 +9,9 @@
         },
         {
             "path": "../../helpcenter.phaser/src"
+        },
+        {
+            "path": "../../helpcenter.codemirror/src"
         },        
     ],
     "exclude": [

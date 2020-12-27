@@ -1,8 +1,10 @@
+/// <reference path="../AbstractPhaserView.ts"/>
+
 namespace helpcenter.main.ui.views.files {
 
     import controls = colibri.ui.controls;
 
-    export class FilesView extends colibri.ui.ide.ViewerView {
+    export class FilesView extends AbstractPhaserView {
         static ID = "helpcenter.main.ui.views.files.NavigatorView";
 
         constructor() {
@@ -20,19 +22,6 @@ namespace helpcenter.main.ui.views.files {
             viewer.setLabelProvider(new ui.viewers.PhaserLabelProvider());
             viewer.setStyledLabelProvider(new ui.viewers.PhaserStyledLabelProvider());
             viewer.setInput(helpcenter.phaser.PhaserPlugin.getInstance().getDocsFolder());
-
-            viewer.eventOpenItem.addListener(e => {
-
-                const element = viewer.getSelectionFirstElement();
-
-                if (element) {
-
-                    if (element instanceof phaser.core.PhaserFile && element.isFile()) {
-
-                        colibri.Platform.getWorkbench().openEditor(element);
-                    }
-                }
-            });
 
             return viewer;
         }
@@ -56,7 +45,7 @@ namespace helpcenter.main.ui.views.files {
                     return parent.getChildren();
                 }
 
-                return parent.getDocsEntries().filter(entry => entry.isFileRootElement() && entry.getKind() !== "namespace");
+                return parent.getDocEntries().filter(entry => entry.isFileRootElement() && entry.getKind() !== "namespace");
             }
 
             if (parent instanceof phaser.core.DocEntry) {

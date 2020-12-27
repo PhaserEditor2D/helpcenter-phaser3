@@ -1,0 +1,12 @@
+{
+    "id": "helpcenter.codemirror",
+    "styles": [
+        "codemirror-5.59.0/lib/codemirror.css"
+    ],
+    "scripts": [
+        "codemirror-5.59.0/lib/codemirror.js",
+        "codemirror-5.59.0/mode/javascript/javascript.js",
+        "codemirror-5.59.0/mode/markdown/markdown.js",
+        "_out/helpcenter.codemirror.js"
+    ]
+}

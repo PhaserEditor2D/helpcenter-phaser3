@@ -33,6 +33,7 @@ namespace helpcenter.phaser.core {
             filename: string;
             lineno: number;
             columnno: number;
+            commentLines: number;
             path: string;
             name: string;
         }
