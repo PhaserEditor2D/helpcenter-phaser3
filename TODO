@@ -1,0 +1,9 @@
+- Implement missing sections in the Inspector view for the doc entries.
+- Implement File section for doc entries and files.
+- Implement an editor to show the documentation.
+- Improve filtering performance in API and Files views.
+- API view: allow hide/show inherited members.
+- Implement Chains view.
+- Implement all related the examples.
+- Use better icons (from vscode?) for folders and files.
+- Use the lightBlue color theme.

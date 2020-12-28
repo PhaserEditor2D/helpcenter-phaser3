@@ -58,6 +58,11 @@ namespace helpcenter.phaser.core {
             return this._rawEntry.kind;
         }
 
+        getDescription() {
+
+            return this._rawEntry.description || "";
+        }
+
         getNameSignature() {
 
             return this._rawEntry.name;

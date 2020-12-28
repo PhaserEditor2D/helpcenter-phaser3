@@ -5,7 +5,7 @@ namespace helpcenter.main.ui.views.files {
     import controls = colibri.ui.controls;
 
     export class FilesView extends AbstractPhaserView {
-        static ID = "helpcenter.main.ui.views.files.NavigatorView";
+        static ID = "helpcenter.main.ui.views.files.FilesView";
 
         constructor() {
             super(FilesView.ID);

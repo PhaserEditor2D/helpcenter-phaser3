@@ -15,6 +15,9 @@
         },
         {
             "path": "../../helpcenter.codemirror/src"
+        },
+        {
+            "path": "../../helpcenter.showdown/src"
         },        
     ],
     "exclude": [

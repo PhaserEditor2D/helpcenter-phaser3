@@ -1,0 +1,12 @@
+{
+    "id": "helpcenter.showdown",
+    "styles": [
+        "highlight/styles/vs.css",
+        "highlight/custom.css"
+    ],
+    "scripts": [
+        "showdown/showdown.min.js",
+        "highlight/highlight.pack.js",
+        "_out/helpcenter.showdown.js"
+    ]
+}

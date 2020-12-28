@@ -2,6 +2,8 @@ namespace helpcenter.main.ui.views {
 
     export abstract class AbstractPhaserView extends colibri.ui.ide.ViewerView {
 
+        private _propertySectionProvider = new properties.PhaserSectionProvider();
+
         createPart() {
 
             super.createPart();
@@ -35,6 +37,11 @@ namespace helpcenter.main.ui.views {
                     }
                 }
             });
+        }
+
+        getPropertyProvider() {
+
+            return this._propertySectionProvider;
         }
     }
 }

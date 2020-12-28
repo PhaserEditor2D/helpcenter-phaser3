@@ -20,7 +20,7 @@ namespace helpcenter.phaser.core {
     }
 
     export interface IJSDocEntry {
-        comment: string;
+        description: string;
         longname: string;
         name: string;
         memberof: string;
