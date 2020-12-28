@@ -7,3 +7,6 @@
 - Implement all related the examples.
 - Use better icons (from vscode?) for folders and files.
 - Use the lightBlue color theme.
+- Enable search in all files.
+- Enable search in a source file editor.
+- Enable minimap in the source file editor.

@@ -1,6 +1,8 @@
 {
     "id": "helpcenter.main",
-    "styles": [],
+    "styles": [
+        "styles/lightBlue.css"
+    ],
     "scripts": [        
         "_out/helpcenter.main.js"
     ]
