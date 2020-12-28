@@ -8,6 +8,9 @@
             "path": "../../colibri/src"
         },
         {
+            "path": "../../colibri.inspector/src"
+        },
+        {
             "path": "../../helpcenter.phaser/src"
         },
         {

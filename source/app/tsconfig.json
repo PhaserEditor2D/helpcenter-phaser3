@@ -4,6 +4,9 @@
             "path": "./plugins/colibri/src"
         },
         {
+            "path": "./plugins/colibri.inspector/src"
+        },
+        {
             "path": "./plugins/helpcenter.phaser/src"
         },
         {

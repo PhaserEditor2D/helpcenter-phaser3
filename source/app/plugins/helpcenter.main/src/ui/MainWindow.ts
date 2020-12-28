@@ -8,8 +8,8 @@ namespace helpcenter.main.ui {
 
         private _editorArea: colibri.ui.ide.EditorArea;
         private _filesView: views.files.FilesView;
-        private _split1: controls.SplitPanel;
         private _namespaceView: views.namespaces.NamespaceView;
+        private _inspectorView: colibri.inspector.ui.views.InspectorView;
 
         constructor() {
             super(MainWindow.ID);
@@ -20,14 +20,19 @@ namespace helpcenter.main.ui {
             this._editorArea = new colibri.ui.ide.EditorArea();
             this._filesView = new views.files.FilesView();
             this._namespaceView = new views.namespaces.NamespaceView();
+            this._inspectorView = new colibri.inspector.ui.views.InspectorView();
 
-            this._split1 = new controls.SplitPanel(
+            const splitLeftAndEditorArea = new controls.SplitPanel(
                 this.createViewFolder(this._namespaceView, this._filesView),
                 this._editorArea);
 
-            this.getClientArea().add(this._split1);
+            splitLeftAndEditorArea.setSplitFactor(0.2);
 
-            this._split1.setSplitFactor(0.2);
+            const splitAllLeftAndInspector = new controls.SplitPanel(splitLeftAndEditorArea, this.createViewFolder(this._inspectorView));
+
+            splitAllLeftAndInspector.setSplitFactor(0.8);
+
+            this.getClientArea().add(splitAllLeftAndInspector);
 
             this.layout();
         }
