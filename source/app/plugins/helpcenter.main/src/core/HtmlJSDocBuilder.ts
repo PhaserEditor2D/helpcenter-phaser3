@@ -25,6 +25,8 @@ namespace helpcenter.main.core {
 
             html += this.renderSince();
 
+            html += this.renderReturns();
+
             html += this.renderFires();
 
             html += this.renderFunctionParams();
@@ -32,6 +34,31 @@ namespace helpcenter.main.core {
             html += this.renderSubtypes();
 
             return `<div class='jsdocArea'>${html}</div>`;
+        }
+
+        private renderReturns() {
+
+            let html = "";
+
+            const vars = this._docEntry.getRawEntry().returns || [];
+
+            if (vars.length > 0) {
+
+                html += "<p><b>Returns:</b></p>";
+
+                for (const variable of vars) {
+
+                    html += " {" + variable.type.names.map(name => this.renderLinkToApi(name)).join("|") + "}";
+
+                    if (variable.description) {
+
+                        html += `<dd>${showdown.markdownToHtml(variable.description)}</dd>`;
+                    }
+                }
+
+            }
+
+            return html;
         }
 
         private renderExtends() {
@@ -102,11 +129,10 @@ namespace helpcenter.main.core {
                         html += " [=" + showdown.javascriptToHtml(param.defaultvalue + "") + "]";
                     }
 
-                    html += " " + param.type.names.map(name => this.renderLinkToApi(name)).join("|");
+                    html += " {" + param.type.names.map(name => this.renderLinkToApi(name)).join("|") + "}";
 
                     html += `<dd>${showdown.markdownToHtml(param.description)}</dd>`;
                 }
-
             }
 
             return html;

@@ -45,16 +45,21 @@ namespace helpcenter.main.ui.views.files {
                     return parent.getChildren();
                 }
 
-                return parent.getDocEntries().filter(entry => entry.isFileRootElement() && entry.getKind() !== "namespace");
-            }
+                return parent.getDocEntries().filter(entry => {
 
-            if (parent instanceof phaser.core.DocEntry) {
-
-                // get only doc entries in the same file
-                return parent.getChildren().filter(entry => entry.getFile() === parent.getFile());
-            }
-
-            return [];
+                    return entry.getKind() !== "namespace"
+                        && entry.getFile() === parent
+                        && (!entry.getParent() || entry.getParent().getFile() !== parent);
+            });
         }
+
+        if(parent instanceof phaser.core.DocEntry) {
+
+        // get only doc entries in the same file
+        return parent.getChildren().filter(entry => entry.getFile() === parent.getFile());
+    }
+
+    return [];
+}
     }
 }

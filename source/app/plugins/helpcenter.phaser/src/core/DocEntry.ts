@@ -33,11 +33,6 @@ namespace helpcenter.phaser.core {
             this._parent = parent;
         }
 
-        isFileRootElement() {
-
-            return !this._parent || this._parent.getRawEntry().kind === "namespace";
-        }
-
         getChildren() {
 
             return this._children;
