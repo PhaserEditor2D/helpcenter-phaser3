@@ -50,16 +50,16 @@ namespace helpcenter.main.ui.views.files {
                     return entry.getKind() !== "namespace"
                         && entry.getFile() === parent
                         && (!entry.getParent() || entry.getParent().getFile() !== parent);
-            });
+                });
+            }
+
+            if (parent instanceof phaser.core.DocEntry) {
+
+                // get only doc entries in the same file
+                return parent.getChildren().filter(entry => entry.getFile() === parent.getFile());
+            }
+
+            return [];
         }
-
-        if(parent instanceof phaser.core.DocEntry) {
-
-        // get only doc entries in the same file
-        return parent.getChildren().filter(entry => entry.getFile() === parent.getFile());
-    }
-
-    return [];
-}
     }
 }
