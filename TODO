@@ -1,3 +1,10 @@
+- Parse {@link http://some.url}
+- The .image() method of the ImageFile.js file is not shown in the Files view.
+- HtmlJSDocBuilder.renderLinkToApi() should handle the click and navigate.
+- In the main toolbar we can show buttons for history navigation:
+    - go back button.
+    - history button (show the current selection and open a menu with all the history).
+    - go next button.
 - Implement missing sections in the Inspector view for the doc entries.
 - Implement File section for doc entries and files.
 - Implement an editor to show the documentation.

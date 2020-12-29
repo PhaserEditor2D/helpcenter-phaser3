@@ -4,24 +4,24 @@ namespace helpcenter.main.ui.properties {
 
     export class DescriptionPropertySection extends controls.properties.PropertySection<phaser.core.DocEntry> {
 
+        private _labelProvider: viewers.PhaserStyledLabelProvider;
+
         constructor(page: controls.properties.PropertyPage) {
-            super(page, "helpcenter.main.ui.properties.DescriptionPropertySection", "Description", false, false);
+            super(page, "helpcenter.main.ui.properties.DescriptionPropertySection", "Description", true, false);
+
+            this._labelProvider = new ui.viewers.PhaserStyledLabelProvider();
         }
 
         createForm(parent: HTMLDivElement) {
 
-            const element = document.createElement("div");
-
             this.addUpdater(() => {
 
-                const desc = this.getSelectionFirstElement().getDescription();
+                const docEntry = this.getSelectionFirstElement();
 
-                const html = showdown.markdownToHtml(desc);
+                const builder = new core.HtmlJSDocBuilder(docEntry);
 
-                element.innerHTML = html;
+                parent.innerHTML = builder.build();
             });
-
-            parent.appendChild(element);
         }
 
         canEdit(obj: any, n: number): boolean {

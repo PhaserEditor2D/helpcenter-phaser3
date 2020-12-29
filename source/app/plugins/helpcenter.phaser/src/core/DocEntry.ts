@@ -68,13 +68,18 @@ namespace helpcenter.phaser.core {
             return this._rawEntry.name;
         }
 
+        getFullName() {
+
+            return this._rawEntry.longname.replace("#", ".");
+        }
+
         getMethodSignature() {
 
             if (this._rawEntry.kind === "function") {
 
                 const params = this._rawEntry.params || [];
 
-                return `(${params.map(p => p.name).join(",")})`;
+                return `(${params.map(p => p.name).join(", ")})`;
             }
 
             return "";

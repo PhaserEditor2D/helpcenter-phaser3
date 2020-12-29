@@ -4,10 +4,11 @@ namespace helpcenter.phaser.core {
         "namespace" | "typedef" | "class" | "event" | "constant" | "package";
 
     export declare type IParamData = {
-        type: { names: string[] } | string;
+        type: { names: string[] };
         description: string;
         name: string;
         optional: boolean;
+        defaultvalue: any;
     };
 
     export declare type IReturnData = {
@@ -29,6 +30,9 @@ namespace helpcenter.phaser.core {
         params?: IParamData[],
         returns?: IReturnData[];
         type?: IMemberTypeData;
+        since: string;
+        fires:string[],
+        augments: string[],
         meta: {
             filename: string;
             lineno: number;

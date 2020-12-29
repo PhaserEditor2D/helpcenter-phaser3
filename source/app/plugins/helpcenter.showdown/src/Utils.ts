@@ -13,10 +13,16 @@ namespace helpcenter.showdown {
 
         list.forEach(element => {
 
-            const result = hljs.highlight("javascript", element.innerHTML);
-            element.innerHTML = result.value;
+            const html2 = this.javascriptToHtml(element.innerHTML);
+
+            element.innerHTML = html2;
         });
 
         return dom.body.innerHTML;
+    }
+
+    export function javascriptToHtml(text: string) {
+
+        return hljs.highlight("javascript", text).value;
     }
 }

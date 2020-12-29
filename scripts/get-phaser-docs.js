@@ -47,6 +47,8 @@ for (const entry of inputData.docs) {
         meta.path = meta.filename;
     }
 
+    entry.description = entry.description || entry.classdesc;
+
     meta.commentLines = countCommentLines;
 
     outputData.docs.push(entry);

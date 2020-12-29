@@ -11,6 +11,7 @@ namespace helpcenter.phaser {
         private _docsNameMap: Map<string, core.DocEntry>;
         private _docsFolder: core.PhaserFile;
         private _sourceMap: Map<string, string>;
+        private _docEntries: core.DocEntry[];
 
         static getInstance() {
 
@@ -165,6 +166,29 @@ namespace helpcenter.phaser {
             this.sortFile(root);
 
             this._docsFolder = root;
+
+            this._docEntries = docEntries;
+        }
+
+        findSubtypes(typeName: string) {
+
+            const result: string[] = [];
+
+            for (const entry of this._docEntries) {
+
+                const augments = entry.getRawEntry().augments || [];
+
+                for (const name of augments) {
+
+                    if (name === typeName) {
+
+                        result.push(entry.getFullName());
+                    }
+                }
+
+            }
+
+            return result;
         }
 
         private sortFile(folder: core.PhaserFile) {
