@@ -10,7 +10,7 @@ namespace helpcenter.main.ui.views.files {
         constructor() {
             super(FilesView.ID);
 
-            this.setTitle("Files");
+            this.setTitle("Source Files");
             this.setIcon(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_FOLDER));
         }
 

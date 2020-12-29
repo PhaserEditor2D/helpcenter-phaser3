@@ -17,12 +17,17 @@ namespace helpcenter.main.ui.viewers {
 
             if (element instanceof phaser.core.DocEntry) {
 
-                const kind = element.getRawEntry().kind;
-
-                return new controls.viewers.IconImageCellRenderer(MainPlugin.getInstance().getDocEntryKindIcon(kind));
+                return PhaserCellRendererProvider.getDocEntryCellRenderer(element);
             }
 
             return new controls.viewers.IconImageCellRenderer(MainPlugin.getInstance().getIcon(ICON_FILE_SCRIPT));
+        }
+
+        static getDocEntryCellRenderer(docEntry: phaser.core.DocEntry) {
+
+            const kind = docEntry.getRawEntry().kind;
+
+            return new controls.viewers.IconImageCellRenderer(MainPlugin.getInstance().getDocEntryKindIcon(kind));
         }
 
         async preload(args: controls.viewers.PreloadCellArgs): Promise<controls.PreloadResult> {

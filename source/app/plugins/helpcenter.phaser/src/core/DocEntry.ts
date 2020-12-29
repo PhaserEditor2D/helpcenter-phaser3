@@ -48,6 +48,11 @@ namespace helpcenter.phaser.core {
             return this._rawEntry;
         }
 
+        getType() {
+
+            return this._rawEntry.type;
+        }
+
         getKind() {
 
             return this._rawEntry.kind;
@@ -58,7 +63,7 @@ namespace helpcenter.phaser.core {
             return this._rawEntry.description || "";
         }
 
-        getNameSignature() {
+        getName() {
 
             return this._rawEntry.name;
         }

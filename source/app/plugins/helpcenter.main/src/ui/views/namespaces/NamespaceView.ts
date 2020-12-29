@@ -8,7 +8,7 @@ namespace helpcenter.main.ui.views.namespaces {
         constructor() {
             super(NamespaceView.ID);
 
-            this.setTitle("API");
+            this.setTitle("API Reference");
             this.setIcon(MainPlugin.getInstance().getDocEntryKindIcon("namespace"));
         }
 

@@ -1,12 +1,12 @@
 - A KeyworkdProvider for the viewers, to use for filtering the elements.
 - Parse {@link http://some.url}
 - HtmlJSDocBuilder.renderLinkToApi() should handle the click and navigate.
+- The open editors are not remembered after a page reload.
 - In the main toolbar we can show buttons for history navigation:
     - go back button.
     - history button (show the current selection and open a menu with all the history).
     - go next button.
-- Implement missing sections in the Inspector view for the doc entries.
-- Implement File section for doc entries and files.
+- Implement a context menu for open the File editor and the Documentation editor.
 - Implement an editor to show the documentation.
 - Improve filtering performance in API and Files views.
 - API view: allow hide/show inherited members.
@@ -17,7 +17,10 @@
 - Enable search in all files.
 - Enable search in a source file editor.
 - Enable minimap in the source file editor.
+- A welcome editor.
 
 ---DONE ---
 
+x- Implement missing sections in the Inspector view for the doc entries.
 x- The .image() method of the ImageFile.js file is not shown in the Files view.
+x- Implement File section for doc entries and files.

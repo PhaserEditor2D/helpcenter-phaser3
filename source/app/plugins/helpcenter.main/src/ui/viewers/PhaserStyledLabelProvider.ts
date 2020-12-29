@@ -19,7 +19,7 @@ namespace helpcenter.main.ui.viewers {
 
                 return [{
                     color: theme.viewerForeground,
-                    text: obj.getNameSignature()
+                    text: obj.getName()
                 }, {
                     color: dark ? "gray" : "brown",
                     text: obj.getMethodSignature()
