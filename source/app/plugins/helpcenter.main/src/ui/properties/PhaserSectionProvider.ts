@@ -7,7 +7,9 @@ namespace helpcenter.main.ui.properties {
         addSections(page: controls.properties.PropertyPage, sections: Array<controls.properties.PropertySection<any>>): void {
 
             sections.push(
-                new DescriptionPropertySection(page)
+                new DocEntryFileSection(page),
+                new FileSection(page),
+                new DescriptionSection(page)
             );
         }
     }

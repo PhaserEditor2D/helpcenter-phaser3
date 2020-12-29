@@ -2,14 +2,10 @@ namespace helpcenter.main.ui.properties {
 
     import controls = colibri.ui.controls;
 
-    export class DescriptionPropertySection extends controls.properties.PropertySection<phaser.core.DocEntry> {
-
-        private _labelProvider: viewers.PhaserStyledLabelProvider;
+    export class DescriptionSection extends controls.properties.PropertySection<phaser.core.DocEntry> {
 
         constructor(page: controls.properties.PropertyPage) {
             super(page, "helpcenter.main.ui.properties.DescriptionPropertySection", "Description", true, false);
-
-            this._labelProvider = new ui.viewers.PhaserStyledLabelProvider();
         }
 
         createForm(parent: HTMLDivElement) {
