@@ -1,5 +1,7 @@
 namespace helpcenter.main.ui.views {
 
+    import controls = colibri.ui.controls;
+
     export abstract class AbstractPhaserView extends colibri.ui.ide.ViewerView {
 
         private _propertySectionProvider = new properties.PhaserSectionProvider();
@@ -24,18 +26,7 @@ namespace helpcenter.main.ui.views {
 
                         const docEntry = phaser.core.DocEntry.getDocEntry(element);
 
-                        const file = docEntry.getFile();
-
-                        const editor = colibri.Platform.getWorkbench().openEditor(file);
-
-                        if (editor) {
-
-                            const phaserEditor = editor as ui.editors.PhaserFileEditor;
-
-                            const entry = docEntry.getRawEntry();
-
-                            phaserEditor.scrollToLine(entry.meta.lineno + entry.meta.commentLines, entry.meta.columnno);
-                        }
+                        MainPlugin.getInstance().openPhaserFileEditor(docEntry);
                     }
                 }
             });
@@ -44,6 +35,20 @@ namespace helpcenter.main.ui.views {
         getPropertyProvider() {
 
             return this._propertySectionProvider;
+        }
+
+        fillContextMenu(menu: controls.Menu) {
+
+            super.fillContextMenu(menu);
+
+            const element = this.getViewer().getSelectionFirstElement();
+
+            if (phaser.core.DocEntry.canAdapt(element)) {
+
+                const entry = phaser.core.DocEntry.getDocEntry(element);
+
+                new DocEntryMenuCreator(entry).createMenu(menu);
+            }
         }
     }
 }

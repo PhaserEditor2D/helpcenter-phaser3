@@ -75,6 +75,22 @@ namespace helpcenter.main {
 
             colibri.Platform.getWorkbench().activateWindow(ui.MainWindow.ID);
         }
+
+        openPhaserFileEditor(docEntry: phaser.core.DocEntry) {
+
+            const file = docEntry.getFile();
+
+            const editor = colibri.Platform.getWorkbench().openEditor(file);
+
+            if (editor) {
+
+                const phaserEditor = editor as ui.editors.PhaserFileEditor;
+
+                const entry = docEntry.getRawEntry();
+
+                phaserEditor.scrollToLine(entry.meta.lineno + entry.meta.commentLines, entry.meta.columnno);
+            }
+        }
     }
 
     colibri.Platform.addPlugin(MainPlugin.getInstance());

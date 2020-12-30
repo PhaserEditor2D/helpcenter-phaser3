@@ -12,12 +12,25 @@ namespace helpcenter.main.ui.properties {
 
             this.addUpdater(() => {
 
-                const docEntry = phaser.core.DocEntry.getDocEntry(this.getSelectionFirstElement());
-
-                const builder = new core.HtmlJSDocBuilder(docEntry);
+                const builder = new core.HtmlJSDocBuilder(this.getDocEntry());
 
                 parent.innerHTML = builder.build();
             });
+        }
+
+        hasMenu() {
+
+            return true;
+        }
+
+        createMenu(menu: controls.Menu) {
+
+            new DocEntryMenuCreator(this.getDocEntry()).createMenu(menu);
+        }
+
+        getDocEntry() {
+
+            return phaser.core.DocEntry.getDocEntry(this.getSelectionFirstElement());
         }
 
         canEdit(obj: any, n: number): boolean {
