@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "version": "0.6.6"
+  },
+  "savePath": "/home/arian/Documents/PhaserEditor-3/helpcenter/source/app/plugins/helpcenter.phaser/data/phaser3-examples/atlas/",
+  "images": [],
+  "folders": [
+    "/home/arian/Documents/PhaserEditor-3/helpcenter/source/app/plugins/helpcenter.phaser/data/phaser3-examples/screenshots"
+  ],
+  "packOptions": {
+    "textureName": "texture",
+    "textureFormat": "jpg",
+    "removeFileExtension": false,
+    "prependFolderName": true,
+    "base64Export": false,
+    "tinify": false,
+    "tinifyKey": "",
+    "scale": 1,
+    "disableSmoothing": false,
+    "filter": "none",
+    "exporter": "JSON (hash)",
+    "fileName": "pack-result",
+    "savePath": "/home/arian/Documents/PhaserEditor-3/helpcenter/source/app/plugins/helpcenter.phaser/data/phaser3-examples/atlas/",
+    "width": 2048,
+    "height": 2048,
+    "fixedSize": false,
+    "powerOfTwo": false,
+    "padding": 0,
+    "extrude": 0,
+    "allowRotation": false,
+    "allowTrim": false,
+    "trimMode": "trim",
+    "alphaThreshold": "0",
+    "detectIdentical": true,
+    "packer": "MaxRectsBin",
+    "packerMethod": "BestShortSideFit"
+  }
+}
