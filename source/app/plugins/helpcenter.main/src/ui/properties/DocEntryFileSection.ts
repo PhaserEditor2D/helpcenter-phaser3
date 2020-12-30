@@ -12,12 +12,12 @@ namespace helpcenter.main.ui.properties {
 
         getFileInfo(): { filename: string; path: string; } {
 
-            return (this.getSelectionFirstElement() as phaser.core.DocEntry).getRawEntry().meta;
+            return phaser.core.DocEntry.getDocEntry(this.getSelectionFirstElement()).getRawEntry().meta;
         }
 
         canEdit(obj: any, n: number): boolean {
 
-            return obj instanceof phaser.core.DocEntry;
+            return phaser.core.DocEntry.canAdapt(obj);
         }
     }
 }

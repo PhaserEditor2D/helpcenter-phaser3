@@ -21,13 +21,13 @@ namespace helpcenter.main.ui.viewers {
                     color: theme.viewerForeground,
                     text: obj.getName()
                 }, {
-                    color: dark ? "gray" : "brown",
+                    color: "brown",
                     text: obj.getMethodSignature()
                 }, {
-                    color: dark ? "gray" : "darkCyan",
+                    color: "darkCyan",
                     text: obj.getReturnsTypeSignature()
                 }, {
-                    color: dark ? "gray" : "darkCyan",
+                    color: "darkCyan",
                     text: obj.getTypeSignature()
                 }];
             }

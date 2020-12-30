@@ -17,7 +17,9 @@ namespace helpcenter.main.ui.views.chains {
             const viewer = new controls.viewers.TreeViewer(this.getId());
             viewer.setCellRendererProvider(new ChainsCellRendererProvider());
             viewer.setLabelProvider(new ChainsLabelProvider());
+            viewer.setStyledLabelProvider(new ChainsStyledLabelProvider());
             viewer.setContentProvider(new controls.viewers.ArrayTreeContentProvider());
+            viewer.setTreeRenderer(new ChainsTreeRenderer(viewer));
 
             const model = new ChainsModel();
             model.build();
@@ -25,6 +27,35 @@ namespace helpcenter.main.ui.views.chains {
             viewer.setInput(model.getChains());
 
             return viewer;
+        }
+    }
+
+    class ChainsTreeRenderer extends controls.viewers.TreeViewerRenderer {
+
+        prepareContextForText(args: controls.viewers.RenderCellArgs) {
+
+            super.prepareContextForText(args);
+
+            args.canvasContext.font = controls.FONT_HEIGHT + "px Monospace";
+        }
+
+    }
+
+    class ChainsStyledLabelProvider implements controls.viewers.IStyledLabelProvider {
+
+        private _labelProvider = new ChainsLabelProvider();
+
+        getStyledTexts(obj: any, dark: boolean): controls.viewers.IStyledText[] {
+
+            if (obj instanceof Chain) {
+
+                return obj.styledLabel;
+            }
+
+            return [{
+                text: this._labelProvider.getLabel(obj),
+                color: controls.Controls.getTheme().viewerForeground
+            }]
         }
     }
 
@@ -61,9 +92,18 @@ namespace helpcenter.main.ui.views.chains {
 
     class Chain {
 
-        public docEntry;
+        public docEntry: phaser.core.DocEntry;
 
-        public label;
+        public label: string;
+
+        public styledLabel: controls.viewers.IStyledText[];
+
+        public countDots: number;
+
+        adaptToDocEntry() {
+
+            return this.docEntry;
+        }
     }
 
     class ChainsModel {
@@ -77,6 +117,11 @@ namespace helpcenter.main.ui.views.chains {
             const root = phaser.PhaserPlugin.getInstance().getDocEntry("Phaser");
 
             this.buildAll(root, "Phaser", 1);
+
+            this._chains.sort((a, b) => {
+
+                return a.countDots - b.countDots;
+            });
         }
 
         getChains() {
@@ -113,7 +158,29 @@ namespace helpcenter.main.ui.views.chains {
                         + child.getMethodSignature()
                         + child.getReturnsTypeSignature();
 
+
                     chain.label = child.getKind() + " " + baseLabel;
+                    chain.countDots = chain.label.split("").filter(c => c === ".").length;
+
+                    chain.styledLabel = [{
+                        text: child.getKind() + " ",
+                        color: "blue"
+                    }, {
+                        text: entryFullName,
+                        color: controls.Controls.getTheme().viewerForeground
+                    },
+                    {
+                        text: child.getTypeSignature(),
+                        color: "darkCyan"
+                    }, {
+                        text: child.getMethodSignature(),
+                        color: "brown"
+                    }, {
+                        text: child.getReturnsTypeSignature(),
+                        color: "darkCyan"
+                    }];
+
+                    chain.styledLabel = chain.styledLabel.filter(s => s.text.length > 0);
 
                     chain.docEntry = child;
 
@@ -126,6 +193,11 @@ namespace helpcenter.main.ui.views.chains {
                     if (type) {
 
                         for (const name of type.names) {
+
+                            if (name === "Phaser.Scene" || name === "Phaser.Game" || name === "Phaser.GameObjects.GameObject") {
+
+                                continue;
+                            }
 
                             const typeEntry = phaser.PhaserPlugin.getInstance().getDocEntry(name);
 

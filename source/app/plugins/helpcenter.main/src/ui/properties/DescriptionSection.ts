@@ -12,7 +12,7 @@ namespace helpcenter.main.ui.properties {
 
             this.addUpdater(() => {
 
-                const docEntry = this.getSelectionFirstElement();
+                const docEntry = phaser.core.DocEntry.getDocEntry(this.getSelectionFirstElement());
 
                 const builder = new core.HtmlJSDocBuilder(docEntry);
 
@@ -22,7 +22,7 @@ namespace helpcenter.main.ui.properties {
 
         canEdit(obj: any, n: number): boolean {
 
-            return obj instanceof phaser.core.DocEntry;
+            return phaser.core.DocEntry.canAdapt(obj);
         }
 
         canEditNumber(n: number): boolean {

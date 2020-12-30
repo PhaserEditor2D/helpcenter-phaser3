@@ -13,6 +13,31 @@ namespace helpcenter.phaser.core {
             this._children = [];
         }
 
+        static canAdapt(obj: any) {
+
+            return this.getDocEntry(obj) instanceof DocEntry;
+        }
+
+        static getDocEntry(obj: any) {
+
+            if (obj instanceof DocEntry) {
+
+                return obj;
+            }
+
+            if ("adaptToDocEntry" in obj) {
+
+                const entry = obj["adaptToDocEntry"]();
+
+                if (entry instanceof DocEntry) {
+
+                    return entry;
+                }
+            }
+
+            return null;
+        }
+
         getFile() {
 
             return this._file;

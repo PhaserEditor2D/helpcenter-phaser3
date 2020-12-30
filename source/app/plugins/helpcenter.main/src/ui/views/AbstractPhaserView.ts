@@ -20,9 +20,11 @@ namespace helpcenter.main.ui.views {
 
                         colibri.Platform.getWorkbench().openEditor(element);
 
-                    } else if (element instanceof phaser.core.DocEntry) {
+                    } else if (phaser.core.DocEntry.canAdapt(element)) {
 
-                        const file = element.getFile();
+                        const docEntry = phaser.core.DocEntry.getDocEntry(element);
+
+                        const file = docEntry.getFile();
 
                         const editor = colibri.Platform.getWorkbench().openEditor(file);
 
@@ -30,7 +32,7 @@ namespace helpcenter.main.ui.views {
 
                             const phaserEditor = editor as ui.editors.PhaserFileEditor;
 
-                            const entry = element.getRawEntry();
+                            const entry = docEntry.getRawEntry();
 
                             phaserEditor.scrollToLine(entry.meta.lineno + entry.meta.commentLines, entry.meta.columnno);
                         }
