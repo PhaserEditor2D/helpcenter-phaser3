@@ -139,10 +139,10 @@ namespace helpcenter.phaser {
 
                 const entry = docEntry.getRawEntry();
 
-                if (entry.meta.filename === "phaser.js" || entry.meta.filename === "index.js") {
+                // if (entry.meta.filename === "phaser.js" || entry.meta.filename === "index.js") {
 
-                    continue;
-                }
+                //     continue;
+                // }
 
                 const names = entry.meta.path.split("/");
 
