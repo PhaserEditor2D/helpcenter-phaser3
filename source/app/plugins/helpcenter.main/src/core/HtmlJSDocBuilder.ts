@@ -13,7 +13,7 @@ namespace helpcenter.main.core {
             this._labelProvider = new main.ui.viewers.PhaserStyledLabelProvider();
         }
 
-        build() {
+        build(element: HTMLElement) {
 
             let html = "";
 
@@ -33,7 +33,33 @@ namespace helpcenter.main.core {
 
             html += this.renderSubtypes();
 
-            return `<div class='jsdocArea'>${html}</div>`;
+            html = `<div class='jsdocArea'>${html}</div>`;
+
+            element.innerHTML = html;
+
+            const links = element.querySelectorAll("a");
+
+            links.forEach((link: HTMLAnchorElement) => {
+
+                if (link.classList.contains("LinkToApi")) {
+
+                    link.addEventListener("click", e => {
+
+                        const name = link.getAttribute("apiName");
+
+                        const entry = phaser.PhaserPlugin.getInstance().getDocEntry(name);
+
+                        if (entry) {
+
+                            colibri.Platform.getWorkbench().openEditor(entry);
+                        }
+                    });
+
+                } else {
+
+                    link.setAttribute("target", "_blank");
+                }
+            });
         }
 
         private renderReturns() {
@@ -142,7 +168,7 @@ namespace helpcenter.main.core {
 
             name = name.replace("#event:", "#").replace("#", ".");
 
-            return `<a href="#">${name}</a>`;
+            return `<a href="#" apiName='${name}' class='LinkToApi'>${name}</a>`;
         }
 
         private renderDescription() {

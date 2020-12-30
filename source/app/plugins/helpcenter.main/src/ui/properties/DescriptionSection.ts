@@ -14,7 +14,7 @@ namespace helpcenter.main.ui.properties {
 
                 const builder = new core.HtmlJSDocBuilder(this.getDocEntry());
 
-                parent.innerHTML = builder.build();
+                builder.build(parent);
             });
         }
 

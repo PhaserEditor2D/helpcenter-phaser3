@@ -19,7 +19,8 @@ namespace helpcenter.main.ui {
             });
 
             menu.addAction({
-                text: "Open In Documentation Editor"
+                text: "Open In Documentation Editor",
+                callback: e => colibri.Platform.getWorkbench().openEditor(this._docEntry)
             });
         }
     }

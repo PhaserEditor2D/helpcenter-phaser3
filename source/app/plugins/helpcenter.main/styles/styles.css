@@ -17,3 +17,13 @@
     -moz-user-select: text !important;
     -ms-user-select: text !important;    
 }
+
+.JSDocEntryEditorArea .jsdocArea {
+    border-radius: 0px !important;
+    background: transparent !important;
+}
+
+.JSDocEntryEditorArea {
+    background: #ffffcf90;   
+    overflow: auto; 
+}

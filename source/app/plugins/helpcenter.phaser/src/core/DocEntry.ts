@@ -1,6 +1,6 @@
 namespace helpcenter.phaser.core {
 
-    export class DocEntry {
+    export class DocEntry implements colibri.ui.ide.IEditorInput {
 
         private _rawEntry: IJSDocEntry;
         private _children: DocEntry[];
@@ -11,6 +11,11 @@ namespace helpcenter.phaser.core {
 
             this._rawEntry = rawEntry;
             this._children = [];
+        }
+
+        getEditorInputExtension(): string {
+
+            return JSDocEntryEditorInputExtension.ID;
         }
 
         static canAdapt(obj: any) {

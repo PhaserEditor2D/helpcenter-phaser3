@@ -1,7 +1,5 @@
 namespace helpcenter.main.ui.editors {
 
-    import controls = colibri.ui.controls;
-
     class PhaserFileEditorFactory implements colibri.ui.ide.EditorFactory {
 
         acceptInput(input: any): boolean {
@@ -123,7 +121,7 @@ namespace helpcenter.main.ui.editors {
 
             if (this._codeEditor) {
 
-                this._codeEditor.setValue(source);
+                this._codeEditor.setValue(source || "");
 
                 this.doScrollToLine();
             }
