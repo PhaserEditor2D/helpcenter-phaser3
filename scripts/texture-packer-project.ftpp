@@ -2,7 +2,7 @@
   "meta": {
     "version": "0.6.6"
   },
-  "savePath": "/home/arian/Documents/PhaserEditor-3/helpcenter/source/app/plugins/helpcenter.phaser/data/phaser3-examples/atlas/",
+  "savePath": "/home/arian/Documents/PhaserEditor-3/helpcenter/source/app/plugins/helpcenter.phaser/data/examples-screenshots-atlas",
   "images": [],
   "folders": [
     "/home/arian/Documents/PhaserEditor-3/helpcenter/source/app/plugins/helpcenter.phaser/data/phaser3-examples/screenshots"
@@ -20,7 +20,7 @@
     "filter": "none",
     "exporter": "JSON (hash)",
     "fileName": "pack-result",
-    "savePath": "/home/arian/Documents/PhaserEditor-3/helpcenter/source/app/plugins/helpcenter.phaser/data/phaser3-examples/atlas/",
+    "savePath": "/home/arian/Documents/PhaserEditor-3/helpcenter/source/app/plugins/helpcenter.phaser/data/examples-screenshots-atlas",
     "width": 2048,
     "height": 2048,
     "fixedSize": false,
