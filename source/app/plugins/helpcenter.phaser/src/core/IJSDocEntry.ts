@@ -33,6 +33,8 @@ namespace helpcenter.phaser.core {
         since: string;
         fires:string[],
         augments: string[],
+        inherited?:boolean;
+        inherits?:string;
         meta: {
             filename: string;
             lineno: number;

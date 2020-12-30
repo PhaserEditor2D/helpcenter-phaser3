@@ -76,7 +76,7 @@ namespace helpcenter.main.ui.views.chains {
 
             const root = phaser.PhaserPlugin.getInstance().getDocEntry("Phaser");
 
-            this.buildAll(root, "", 1);
+            this.buildAll(root, "Phaser", 1);
         }
 
         getChains() {
@@ -93,27 +93,33 @@ namespace helpcenter.main.ui.views.chains {
 
             for (const child of parent.getChildren()) {
 
+                if (child.isInherited()) {
+
+                    continue;
+                }
+
+                const entryFullName = parentLabel + "." + child.getName();
+
                 if (child.getKind() === "namespace") {
 
-                    this.buildAll(child, child.getName(), depth);
+                    this.buildAll(child, entryFullName, depth);
 
                 } else {
 
                     const chain = new Chain();
 
-
-                    const entryFullName = (parentLabel === "" ? "" : parentLabel + ".") + child.getName();
-
-                    chain.label = entryFullName
+                    const baseLabel = entryFullName
                         + child.getTypeSignature()
                         + child.getMethodSignature()
                         + child.getReturnsTypeSignature();
+
+                    chain.label = child.getKind() + " " + baseLabel;
 
                     chain.docEntry = child;
 
                     this._chains.push(chain);
 
-                    this.buildAll(child, chain.label, depth);
+                    this.buildAll(child, baseLabel, depth);
 
                     const type = child.getType();
 

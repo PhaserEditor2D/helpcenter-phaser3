@@ -48,6 +48,11 @@ namespace helpcenter.phaser.core {
             return this._rawEntry;
         }
 
+        isInherited() {
+
+            return this._rawEntry.inherited === true;
+        }
+
         getType() {
 
             return this._rawEntry.type;
