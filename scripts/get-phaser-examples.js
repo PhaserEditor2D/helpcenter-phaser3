@@ -6,7 +6,7 @@ const fs = require("fs");
 
 const phaserHome = process.env["PHASER_PATH"];
 const plugin = "../source/app/plugins/helpcenter.phaser/data";
-/*
+
 child_process.execSync(`rm -Rf ${path.join(plugin, "phaser3-examples/")}`)
 child_process.execSync(`mkdir -p ${path.join(plugin, "phaser3-examples/")}`)
 
@@ -49,7 +49,7 @@ function resizeImage(dir) {
 }
 
 resizeImage(path.join(plugin, "phaser3-examples/screenshots"));
-*/
+
 child_process.execSync("mkdir -p " + path.join(plugin, "phaser3-examples/atlas/"));
 child_process.execSync("npm run build-examples-atlas");
 child_process.execSync("rm -Rf " + path.join(plugin, "phaser3-examples/screenshots"));
