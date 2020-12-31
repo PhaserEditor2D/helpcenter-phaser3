@@ -12,7 +12,9 @@ namespace helpcenter.phaser.core {
         constructor(parent: ExampleInfo, data: IExamplesData) {
 
             this._parent = parent;
-            this._path = data.path.replaceAll("\\", "/");
+            this._data = data;
+
+            this._path = data.path.replaceAll("\\", "/").substring(4);
 
             {
                 let name = data.name;

@@ -13,6 +13,7 @@ namespace helpcenter.phaser {
         private _sourceMap: Map<string, string>;
         private _docEntries: core.DocEntry[];
         private _examples: core.ExampleInfo[];
+        private _exampleImageReader: ui.ExampleImageReader;
 
         static getInstance() {
 
@@ -49,11 +50,23 @@ namespace helpcenter.phaser {
 
                 this._examples = data.children.map(child => new core.ExampleInfo(null, child));
             }));
+
+            reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
+
+                this._exampleImageReader = new ui.ExampleImageReader();
+
+                await this._exampleImageReader.preload();
+            }));
         }
 
         getExamples() {
 
             return this._examples;
+        }
+
+        getExampleImageReader() {
+
+            return this._exampleImageReader;
         }
 
         getFileSource(file: string | phaser.core.PhaserFile) {

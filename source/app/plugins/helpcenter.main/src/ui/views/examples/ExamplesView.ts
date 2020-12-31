@@ -16,10 +16,35 @@ namespace helpcenter.main.ui.views.examples {
             const viewer = new controls.viewers.TreeViewer(this.getId());
             viewer.setLabelProvider(new ExampleLabelProvider());
             viewer.setContentProvider(new ExampleContentProvider());
-            viewer.setCellRendererProvider(new controls.viewers.EmptyCellRendererProvider());
+            viewer.setCellRendererProvider(new ExampleCellRendererProvider());
             viewer.setInput([]);
 
             return viewer;
+        }
+    }
+
+    class ExampleCellRendererProvider implements controls.viewers.ICellRendererProvider {
+
+        getCellRenderer(element: phaser.core.ExampleInfo): controls.viewers.ICellRenderer {
+
+            const img = phaser.PhaserPlugin.getInstance().getExampleImageReader().getImage(element.getPath());
+
+            if (img) {
+
+                return new controls.viewers.ImageCellRenderer(img);
+            }
+
+            if (element.getData().type === "file") {
+
+                return new controls.viewers.IconImageCellRenderer(MainPlugin.getInstance().getIcon(ICON_FILE_SCRIPT));
+            }
+
+            return new controls.viewers.IconImageCellRenderer(MainPlugin.getInstance().getIcon(ICON_LABS));
+        }
+
+        async preload(args: controls.viewers.PreloadCellArgs): Promise<controls.PreloadResult> {
+
+            return controls.PreloadResult.NOTHING_LOADED;
         }
     }
 

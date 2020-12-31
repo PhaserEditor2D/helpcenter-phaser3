@@ -1,3 +1,4 @@
+- Use the lightBlue color theme by default.
 - A KeyworkdProvider for the viewers, to use for filtering the elements.
 - Parse {@link http://some.url}
 - HtmlJSDocBuilder.renderLinkToApi() should handle the click and navigate.
@@ -14,7 +15,6 @@
 - Implement Chains view.
 - Implement all related the examples.
 - Use better icons (from vscode?) for folders and files.
-- Use the lightBlue color theme.
 - Enable search in all files.
 - Enable search in a source file editor.
 - Enable minimap in the source file editor.
