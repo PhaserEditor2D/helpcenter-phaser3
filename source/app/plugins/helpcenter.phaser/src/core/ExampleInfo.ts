@@ -37,6 +37,9 @@ namespace helpcenter.phaser.core {
                     this._children.push(new ExampleInfo(this, child));
                 }
             }
+
+            this._children.sort((a, b) => a.getData().type.localeCompare(b.getData().type));
+
         }
 
         getChildren() {

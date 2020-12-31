@@ -17,7 +17,7 @@ namespace helpcenter.phaser.ui {
 
     export class ExampleImageReader {
 
-        private _textureCount = 4;
+        private _textureCount = 5;
         private _imageMap: Map<string, controls.IImage>;
 
         async preload() {

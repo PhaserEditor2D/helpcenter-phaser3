@@ -39,7 +39,7 @@ namespace helpcenter.main.ui.views.examples {
                 return new controls.viewers.IconImageCellRenderer(MainPlugin.getInstance().getIcon(ICON_FILE_SCRIPT));
             }
 
-            return new controls.viewers.IconImageCellRenderer(MainPlugin.getInstance().getIcon(ICON_LABS));
+            return new controls.viewers.IconImageCellRenderer(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_FOLDER));
         }
 
         async preload(args: controls.viewers.PreloadCellArgs): Promise<controls.PreloadResult> {
