@@ -12,6 +12,7 @@ namespace helpcenter.phaser {
         private _docsFolder: core.PhaserFile;
         private _sourceMap: Map<string, string>;
         private _docEntries: core.DocEntry[];
+        private _examples: core.ExampleInfo[];
 
         static getInstance() {
 
@@ -41,6 +42,18 @@ namespace helpcenter.phaser {
                     this._sourceMap.set(key, data[key]);
                 }
             }));
+
+            reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
+
+                const data = await this.getJSON("data/phaser-examples.json") as core.IExamplesData;
+
+                this._examples = data.children.map(child => new core.ExampleInfo(null, child));
+            }));
+        }
+
+        getExamples() {
+
+            return this._examples;
         }
 
         getFileSource(file: string | phaser.core.PhaserFile) {
@@ -49,7 +62,6 @@ namespace helpcenter.phaser {
 
             return this._sourceMap.get(filePath);
         }
-
 
         getDocsJSONFile() {
 
