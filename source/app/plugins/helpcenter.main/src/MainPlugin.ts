@@ -58,15 +58,11 @@ namespace helpcenter.main {
                 )
             );
 
-            // editor input
-
-            reg.addExtension(new phaser.core.PhaserFileEditorInputExtension());
-            reg.addExtension(new phaser.core.JSDocEntryEditorInputExtension());
-
             // editor
 
             reg.addExtension(new colibri.ui.ide.EditorExtension([ui.editors.PhaserFileEditor.getFactory()]));
             reg.addExtension(new colibri.ui.ide.EditorExtension([ui.editors.JSDocEntryEditor.getFactory()]));
+            reg.addExtension(new colibri.ui.ide.EditorExtension([ui.editors.ExampleEditor.getFactory()]));
         }
 
         getDocEntryKindIcon(kind: string) {

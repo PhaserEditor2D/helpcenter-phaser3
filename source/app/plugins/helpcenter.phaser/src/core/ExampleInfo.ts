@@ -1,6 +1,6 @@
 namespace helpcenter.phaser.core {
 
-    export class ExampleInfo {
+    export class ExampleInfo implements colibri.ui.ide.IEditorInput {
 
         private _data: IExamplesData;
         private _name: string;
@@ -45,6 +45,11 @@ namespace helpcenter.phaser.core {
 
             this._children.sort((a, b) => a.getData().type.localeCompare(b.getData().type));
 
+        }
+
+        getEditorInputExtension(): string {
+
+            return ExampleEditorInputExtension.ID;
         }
 
         getChildren() {

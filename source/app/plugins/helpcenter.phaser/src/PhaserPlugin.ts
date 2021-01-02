@@ -14,6 +14,7 @@ namespace helpcenter.phaser {
         private _docEntries: core.DocEntry[];
         private _examples: core.ExampleInfo[];
         private _exampleImageReader: ui.ExampleImageReader;
+        private _exampleMap: Map<string, core.ExampleInfo>;
 
         static getInstance() {
 
@@ -25,6 +26,8 @@ namespace helpcenter.phaser {
         }
 
         registerExtensions(reg: colibri.ExtensionRegistry) {
+
+            // resource loaders
 
             reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
 
@@ -49,7 +52,35 @@ namespace helpcenter.phaser {
                 const data = await this.getJSON("data/phaser-examples.json") as core.IExamplesData;
 
                 this._examples = data.children.map(child => new core.ExampleInfo(null, child));
+
+                this._exampleMap = new Map();
+
+                this.buildExamplesMap(this._examples);
+
             }));
+
+            reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
+
+                const data = await this.getJSON("data/phaser-examples-code.json");
+
+                // tslint:disable-next-line:forin
+                for (const path in data) {
+
+                    const code = data[path] as string;
+
+                    const example = this._exampleMap.get(path) || this._exampleMap.get(path.toLowerCase());
+
+                    if (example) {
+
+                        example.setSource(code);
+
+                    } else {
+
+                        console.error("Missing example for " + path);
+                    }
+                }
+            }));
+
 
             reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
 
@@ -57,6 +88,23 @@ namespace helpcenter.phaser {
 
                 await this._exampleImageReader.preload();
             }));
+
+
+            // editor input
+
+            reg.addExtension(new core.PhaserFileEditorInputExtension());
+            reg.addExtension(new core.JSDocEntryEditorInputExtension());
+            reg.addExtension(new core.ExampleEditorInputExtension());
+        }
+
+        private buildExamplesMap(examples: core.ExampleInfo[]) {
+
+            for (const e of examples) {
+
+                this._exampleMap.set(e.getPath(), e);
+
+                this.buildExamplesMap(e.getChildren());
+            }
         }
 
         getExamples() {
@@ -64,12 +112,17 @@ namespace helpcenter.phaser {
             return this._examples;
         }
 
+        getExampleByPath(path: string): colibri.ui.ide.IEditorInput {
+
+            return this._exampleMap.get(path);
+        }
+
         getExampleImageReader() {
 
             return this._exampleImageReader;
         }
 
-        getFileSource(file: string | phaser.core.PhaserFile) {
+        getPhaserFileSource(file: string | phaser.core.PhaserFile) {
 
             const filePath = file instanceof phaser.core.PhaserFile ? file.getPath() : file;
 

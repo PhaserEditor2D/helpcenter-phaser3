@@ -74,7 +74,7 @@ function processCode() {
                 continue;
             }
 
-            if (file.startsWith(".")) {
+            if (file.startsWith(".") || file.startsWith("_")) {
 
                 continue;
             }

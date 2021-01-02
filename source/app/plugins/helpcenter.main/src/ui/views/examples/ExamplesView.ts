@@ -19,6 +19,16 @@ namespace helpcenter.main.ui.views.examples {
             viewer.setCellRendererProvider(new ExampleCellRendererProvider());
             viewer.setInput([]);
 
+            viewer.eventOpenItem.addListener(e => {
+
+                const example = viewer.getSelectionFirstElement() as phaser.core.ExampleInfo;
+
+                if (example && example.getData().type === "file") {
+
+                    colibri.Platform.getWorkbench().openEditor(example);
+                }
+            });
+
             return viewer;
         }
     }
@@ -36,7 +46,7 @@ namespace helpcenter.main.ui.views.examples {
 
             if (element.getData().type === "file") {
 
-                return new controls.viewers.IconImageCellRenderer(MainPlugin.getInstance().getIcon(ICON_FILE_SCRIPT));
+                return new controls.viewers.IconImageCellRenderer(MainPlugin.getInstance().getIcon(ICON_LABS));
             }
 
             return new controls.viewers.IconImageCellRenderer(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_FOLDER));
