@@ -16,7 +16,7 @@ namespace helpcenter.main.ui.editors {
 
         getName() {
 
-            return "Phaser File Editor";
+            return "Example Editor";
         }
     }
 

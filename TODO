@@ -1,3 +1,4 @@
+- Check example Camera > Multi Camera > Boot. It is a json file I guess is used to say it is an example with multiple files.
 - Missing getting source from "/phaser/plugins/". For example, Phaser.FacebookInstantGamesPlugin code is missing.
 - An examples folder editor, to focus on a set of examples.
 - Use the lightBlue color theme by default.

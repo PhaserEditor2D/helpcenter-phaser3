@@ -60,9 +60,12 @@ namespace helpcenter.main {
 
             // editor
 
-            reg.addExtension(new colibri.ui.ide.EditorExtension([ui.editors.PhaserFileEditor.getFactory()]));
-            reg.addExtension(new colibri.ui.ide.EditorExtension([ui.editors.JSDocEntryEditor.getFactory()]));
-            reg.addExtension(new colibri.ui.ide.EditorExtension([ui.editors.ExampleEditor.getFactory()]));
+            reg.addExtension(new colibri.ui.ide.EditorExtension([
+                ui.editors.PhaserFileEditor.getFactory(),
+                ui.editors.JSDocEntryEditor.getFactory(),
+                ui.editors.ExampleEditor.getFactory(),
+                ui.editors.ExampleFolderEditor.getFactory()
+            ]));
         }
 
         getDocEntryKindIcon(kind: string) {
