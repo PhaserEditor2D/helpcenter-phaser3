@@ -34,6 +34,11 @@ namespace helpcenter.phaser.core {
 
                 for (const child of data.children) {
 
+                    if (child.name.startsWith("_")) {
+
+                        continue;
+                    }
+
                     this._children.push(new ExampleInfo(this, child));
                 }
             }

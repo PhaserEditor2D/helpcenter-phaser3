@@ -45,8 +45,6 @@ namespace helpcenter.phaser.ui {
 
                     const img = new controls.ImageFrame(frameName, texImage as controls.DefaultImage, fd);
 
-                    console.log(f);
-
                     const key = frameName.replaceAll(".jpg", ".js").substring("screenshots/".length);
 
                     this._imageMap.set(key, img);
