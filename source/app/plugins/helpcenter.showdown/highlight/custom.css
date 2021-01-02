@@ -1,3 +1,12 @@
 .hljs-attr {
     color: teal;
 }
+
+.SmallScrollBar::-webkit-scrollbar {
+    width: 5px !important;
+    height: 5px !important;
+}
+
+.SmallScrollBar {
+    scrollbar-width: thin;
+}
