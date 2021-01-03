@@ -107,6 +107,15 @@ namespace helpcenter.phaser {
             }
         }
 
+        getPhaserLabsUrl(path?: string) {
+
+            //const baseUrl= "http://labs.phaser.io";
+
+            const baseUrl = "http://127.0.0.1:8080/";
+
+            return baseUrl + (path || "");
+        }
+
         getExamples() {
 
             return this._examples;
@@ -163,6 +172,11 @@ namespace helpcenter.phaser {
             this.buildModel();
         }
 
+        static cleanApiName(name: string) {
+
+            return name.replace("#event:", "#").replace("#", ".");
+        }
+
         private buildModel() {
 
             const entries = this._docsFile.docs;
@@ -186,6 +200,7 @@ namespace helpcenter.phaser {
                 const docEntry = new core.DocEntry(entry);
 
                 this._docsNameMap.set(entry.longname, docEntry);
+                this._docsNameMap.set(PhaserPlugin.cleanApiName(entry.longname), docEntry);
 
                 docEntries.push(docEntry);
             }

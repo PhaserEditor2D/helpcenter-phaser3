@@ -79,7 +79,7 @@ namespace helpcenter.main.ui.editors {
 
                 if (example) {
 
-                    colibri.Platform.getWorkbench().openEditor(example);
+                    MainPlugin.getInstance().openExampleInWebsite(example);
                 }
             });
 
@@ -105,7 +105,13 @@ namespace helpcenter.main.ui.editors {
         }
 
         protected fillContextMenu(menu: controls.Menu) {
-            // nothing
+
+            const example = this._viewer.getSelectionFirstElement() as phaser.core.ExampleInfo;
+
+            if (example) {
+
+                new ExampleMenuCreator(example).build(menu);
+            }
         }
 
         getViewer() {

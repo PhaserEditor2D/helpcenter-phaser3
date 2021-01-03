@@ -47,7 +47,11 @@ namespace helpcenter.main.core {
 
                         const name = link.getAttribute("apiName");
 
+                        console.log("Click on " + name);
+
                         const entry = phaser.PhaserPlugin.getInstance().getDocEntry(name);
+
+                        console.log(entry);
 
                         if (entry) {
 
@@ -166,7 +170,7 @@ namespace helpcenter.main.core {
 
         private renderLinkToApi(name: string) {
 
-            name = name.replace("#event:", "#").replace("#", ".");
+            name = phaser.PhaserPlugin.cleanApiName(name);
 
             return `<a href="#" apiName='${name}' class='LinkToApi'>${name}</a>`;
         }

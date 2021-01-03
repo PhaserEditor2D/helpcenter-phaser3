@@ -2,8 +2,6 @@
 
 namespace helpcenter.main.ui.views.examples {
 
-    import controls = colibri.ui.controls;
-
     export class ExamplesView extends AbstractExampleView {
 
         constructor() {

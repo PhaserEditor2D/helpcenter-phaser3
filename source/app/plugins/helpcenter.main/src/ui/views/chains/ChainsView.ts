@@ -8,7 +8,7 @@ namespace helpcenter.main.ui.views.chains {
         constructor() {
             super(ChainsView.ID);
 
-            this.setTitle("API Chains");
+            this.setTitle("API Search");
             this.setIcon(MainPlugin.getInstance().getDocEntryKindIcon("namespace"));
         }
 

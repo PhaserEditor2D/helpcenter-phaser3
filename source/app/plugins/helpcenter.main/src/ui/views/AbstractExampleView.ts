@@ -16,6 +16,16 @@ namespace helpcenter.main.ui.views {
             return this._propertyProvider;
         }
 
+        fillContextMenu(menu: controls.Menu) {
+
+            const example = this.getViewer().getSelectionFirstElement();
+
+            if (example instanceof phaser.core.ExampleInfo) {
+
+                new ExampleMenuCreator(example).build(menu);
+            }
+        }
+
         createViewer() {
 
             const viewer = new controls.viewers.TreeViewer(this.getId());
@@ -31,7 +41,14 @@ namespace helpcenter.main.ui.views {
 
                 if (example) {
 
-                    colibri.Platform.getWorkbench().openEditor(example);
+                    if (example.getData().type === "file") {
+
+                        MainPlugin.getInstance().openExampleInWebsite(example);
+
+                    } else {
+
+                        colibri.Platform.getWorkbench().openEditor(example);
+                    }
                 }
             });
 
