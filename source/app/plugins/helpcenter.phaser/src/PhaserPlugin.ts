@@ -15,6 +15,7 @@ namespace helpcenter.phaser {
         private _examples: core.ExampleInfo[];
         private _exampleImageReader: ui.ExampleImageReader;
         private _exampleMap: Map<string, core.ExampleInfo>;
+        private _exampleChains: core.ExampleChain[];
 
         static getInstance() {
 
@@ -79,6 +80,31 @@ namespace helpcenter.phaser {
                         console.error("Missing example for " + path);
                     }
                 }
+
+                this._exampleChains = [];
+
+                for (const example of this._exampleMap.values()) {
+
+                    if (example.getData().type === "file" && example.getSource()) {
+
+                        const lines = example.getSource().split("\n");
+
+                        let n = 1;
+
+                        for (const line of lines) {
+
+                            const line2 = line.trim();
+
+                            // TODO: just check the line has a letter
+                            if (line2.length > 0 && line2 !== "{" && line2 !== "}" && line2 !== "};" && line2 !== "});") {
+
+                                this._exampleChains.push(new core.ExampleChain(line2, n, example));
+                            }
+                        }
+
+                        n++;
+                    }
+                }
             }));
 
 
@@ -114,6 +140,11 @@ namespace helpcenter.phaser {
             const baseUrl = "http://127.0.0.1:8080/";
 
             return baseUrl + (path || "");
+        }
+
+        getExampleChains() {
+
+            return this._exampleChains;
         }
 
         getExamples() {
