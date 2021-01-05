@@ -25,4 +25,38 @@ namespace helpcenter.showdown {
 
         return hljs.highlight("javascript", text).value;
     }
+
+    export interface IToken {
+        kind: string;
+        value: string;
+    }
+
+    function walk(node, kind, tokens: IToken[]) {
+
+        if (node.children) {
+
+            for (const child of node.children) {
+
+                walk(child, child.kind || kind, tokens);
+            }
+        }
+
+        if (typeof node === "string") {
+
+            tokens.push({ kind, value: node });
+        }
+    }
+
+    export function javascriptToTokens(text: string) {
+
+        const result = hljs.highlight("javascript", text);
+
+        const root = result.emitter["rootNode"];
+
+        const tokens: IToken[] = [];
+
+        walk(root, root.kind, tokens);
+
+        return tokens;
+    }
 }
