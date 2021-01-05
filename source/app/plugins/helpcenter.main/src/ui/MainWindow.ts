@@ -8,7 +8,7 @@ namespace helpcenter.main.ui {
 
         private _editorArea: colibri.ui.ide.EditorArea;
         private _filesView: views.files.FilesView;
-        private _namespaceView: views.namespaces.NamespaceView;
+        private _namespaceView: views.api.ApiView;
         private _inspectorView: colibri.inspector.ui.views.InspectorView;
         private _chainsView: views.chains.ChainsView;
         private _examplesView: views.examples.ExamplesView;
@@ -22,7 +22,7 @@ namespace helpcenter.main.ui {
 
             this._editorArea = new colibri.ui.ide.EditorArea();
             this._filesView = new views.files.FilesView();
-            this._namespaceView = new views.namespaces.NamespaceView();
+            this._namespaceView = new views.api.ApiView();
             this._examplesView = new views.examples.ExamplesView();
             this._inspectorView = new colibri.inspector.ui.views.InspectorView();
             this._chainsView = new views.chains.ChainsView();

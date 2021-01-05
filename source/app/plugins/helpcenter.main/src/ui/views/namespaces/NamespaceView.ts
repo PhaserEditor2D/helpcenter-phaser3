@@ -1,14 +1,14 @@
-namespace helpcenter.main.ui.views.namespaces {
+namespace helpcenter.main.ui.views.api {
 
     import controls = colibri.ui.controls;
 
-    export class NamespaceView extends AbstractPhaserView {
+    export class ApiView extends AbstractPhaserView {
         static ID = "helpcenter.main.ui.views.classes.NamespaceView";
 
         constructor() {
-            super(NamespaceView.ID);
+            super(ApiView.ID);
 
-            this.setTitle("API Reference");
+            this.setTitle("API");
             this.setIcon(MainPlugin.getInstance().getDocEntryKindIcon("namespace"));
         }
 
