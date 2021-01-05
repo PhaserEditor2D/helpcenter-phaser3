@@ -47,15 +47,43 @@ namespace helpcenter.showdown {
         }
     }
 
-    export function javascriptToTokens(text: string) {
+    export function javascriptToTokens(text: string, compact = true) {
 
         const result = hljs.highlight("javascript", text);
 
         const root = result.emitter["rootNode"];
 
-        const tokens: IToken[] = [];
+        let tokens: IToken[] = [];
 
         walk(root, root.kind, tokens);
+
+        if (compact) {
+
+            const compactTokens = [];
+
+            let lastToken: IToken;
+
+            for (const token of tokens) {
+
+                if (lastToken) {
+
+                    if (lastToken.kind === token.kind) {
+
+                        lastToken.value += token.value;
+
+                    } else {
+
+                        compactTokens.push(lastToken = { kind: token.kind, value: token.value });
+                    }
+
+                } else {
+
+                    compactTokens.push(lastToken = { kind: token.kind, value: token.value });
+                }
+            }
+
+            tokens = compactTokens;
+        }
 
         return tokens;
     }

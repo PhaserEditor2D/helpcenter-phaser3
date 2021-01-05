@@ -224,12 +224,17 @@ namespace colibri.ui.controls.viewers {
 
                 ctx.fillText(part.text, cursor, y);
 
-                const metrics = ctx.measureText(part.text);
+                const width = this.measureText(args, part.text);
 
-                cursor += metrics.width;
+                cursor += width;
             }
 
             ctx.restore();
+        }
+
+        protected measureText(args: RenderCellArgs, text: string): number {
+
+            return args.canvasContext.measureText(text).width;
         }
 
         protected prepareContextForRenderCell(args: RenderCellArgs) {

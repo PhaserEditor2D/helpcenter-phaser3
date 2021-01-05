@@ -8,6 +8,7 @@ namespace helpcenter.phaser.core {
             public example: ExampleInfo
         ) {
 
+            this.line = this.line.replaceAll("\t", " ").substring(0, 300);
         }
     }
 }
