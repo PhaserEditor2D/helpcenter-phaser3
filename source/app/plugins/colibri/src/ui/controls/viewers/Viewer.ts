@@ -205,10 +205,13 @@ namespace colibri.ui.controls.viewers {
             return this._filterText;
         }
 
-        protected prepareFiltering() {
+        protected prepareFiltering(updateScroll: boolean) {
 
-            this.setScrollY(0);
-            
+            if (updateScroll) {
+
+                this.setScrollY(0);
+            }
+
             this._filterIncludeSet.clear();
 
             this.buildFilterIncludeMap();
@@ -514,7 +517,7 @@ namespace colibri.ui.controls.viewers {
 
             if (this._filterOnRepaintEnabled) {
 
-                this.prepareFiltering();
+                this.prepareFiltering(false);
             }
 
             this.repaint2();

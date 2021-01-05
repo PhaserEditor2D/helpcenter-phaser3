@@ -30,6 +30,9 @@ namespace helpcenter.main.ui.views {
 
             const viewer = new controls.viewers.TreeViewer(this.getId());
 
+            //viewer.setFilterOnRepaintDisabled();
+            //viewer.setPreloadDisabled();
+
             viewer.setLabelProvider(new ui.viewers.ExampleLabelProvider());
             viewer.setContentProvider(new ui.viewers.ExampleContentProvider());
             viewer.setCellRendererProvider(new ui.viewers.ExampleCellRendererProvider());

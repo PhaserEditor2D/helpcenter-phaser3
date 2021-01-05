@@ -299,7 +299,7 @@ namespace colibri.ui.controls.viewers {
 
         private filterNow() {
 
-            this.prepareFiltering();
+            this.prepareFiltering(true);
 
             this.expandFilteredParents(this.getContentProvider().getRoots(this.getInput()));
 
