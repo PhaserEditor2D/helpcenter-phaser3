@@ -83,6 +83,8 @@ namespace helpcenter.phaser {
 
                 this._exampleChains = [];
 
+                const re = /[a-zA-Z]/;
+
                 for (const example of this._exampleMap.values()) {
 
                     if (example.getData().type === "file" && example.getSource()) {
@@ -96,7 +98,7 @@ namespace helpcenter.phaser {
                             const line2 = line.trim();
 
                             // TODO: just check the line has a letter
-                            if (line2.length > 0 && line2 !== "{" && line2 !== "}" && line2 !== "};" && line2 !== "});") {
+                            if (re.test(line2)) {
 
                                 this._exampleChains.push(new core.ExampleChain(line2, n, example));
                             }
