@@ -24,8 +24,9 @@ namespace colibri.ui.controls.viewers {
         protected _contentHeight: number = 0;
         private _filterText: string;
         protected _filterIncludeSet: Set<any>;
-        private _menu: controls.Menu;
         private _viewerId: string;
+        private _preloadEnabled = true;
+        private _filterOnRepaintEnabled = true;
 
         constructor(id: string, ...classList: string[]) {
             super("canvas", "Viewer");
@@ -42,6 +43,7 @@ namespace colibri.ui.controls.viewers {
             this._input = null;
             this._expandedObjects = new Set();
             this._selectedObjects = new Set();
+            this._filterIncludeSet = new Set();
 
             this.initListeners();
 
@@ -205,14 +207,16 @@ namespace colibri.ui.controls.viewers {
 
         protected prepareFiltering() {
 
-            this._filterIncludeSet = new Set();
+            this.setScrollY(0);
+            
+            this._filterIncludeSet.clear();
 
             this.buildFilterIncludeMap();
         }
 
         isFilterIncluded(obj: any) {
 
-            return this._filterIncludeSet.has(obj);
+            return this._filterIncludeSet.has(obj) || this._filterText.length === 0;
         }
 
         protected abstract buildFilterIncludeMap();
@@ -482,6 +486,16 @@ namespace colibri.ui.controls.viewers {
             return this._selectedObjects.has(obj);
         }
 
+        setFilterOnRepaintDisabled() {
+
+            this._filterOnRepaintEnabled = false;
+        }
+
+        setPreloadDisabled() {
+
+            this._preloadEnabled = false;
+        }
+
         protected paintTreeHandler(x: number, y: number, collapsed: boolean): void {
 
             if (collapsed) {
@@ -498,17 +512,23 @@ namespace colibri.ui.controls.viewers {
 
         async repaint() {
 
-            this.prepareFiltering();
+            if (this._filterOnRepaintEnabled) {
+
+                this.prepareFiltering();
+            }
 
             this.repaint2();
 
-            this.preload(this._paintItems).then(result => {
+            if (this._preloadEnabled) {
 
-                if (result === PreloadResult.RESOURCES_LOADED) {
+                this.preload(this._paintItems).then(result => {
 
-                    this.repaint2();
-                }
-            });
+                    if (result === PreloadResult.RESOURCES_LOADED) {
+
+                        this.repaint2();
+                    }
+                });
+            }
 
             this.updateScrollPane();
         }

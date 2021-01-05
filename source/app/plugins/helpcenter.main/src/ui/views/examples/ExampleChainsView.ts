@@ -15,6 +15,9 @@ namespace helpcenter.main.ui.views.examples {
 
             const viewer = new controls.viewers.TreeViewer(this.getId());
 
+            viewer.setPreloadDisabled();
+            viewer.setFilterOnRepaintDisabled();
+
             viewer.setLabelProvider(new ExampleChainLabelProvider());
             viewer.setStyledLabelProvider(new ExampleChainStyledLabelProvider());
             viewer.setContentProvider(new controls.viewers.ArrayTreeContentProvider());

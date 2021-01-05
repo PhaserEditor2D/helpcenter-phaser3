@@ -12,6 +12,9 @@ namespace helpcenter.main.ui.views {
 
             const viewer = this.getViewer();
 
+            viewer.setFilterOnRepaintDisabled();
+            viewer.setPreloadDisabled();
+
             viewer.eventOpenItem.addListener(e => {
 
                 const element = viewer.getSelectionFirstElement();

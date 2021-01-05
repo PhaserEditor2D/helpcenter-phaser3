@@ -15,6 +15,9 @@ namespace helpcenter.main.ui.views.namespaces {
         protected createViewer(): controls.viewers.TreeViewer {
 
             const viewer = new controls.viewers.TreeViewer(this.getId());
+
+            viewer.setFilterOnRepaintDisabled();
+            viewer.setPreloadDisabled();
             viewer.setContentProvider(new NamespaceContentViewer());
             viewer.setCellRendererProvider(new ui.viewers.PhaserCellRendererProvider());
             viewer.setLabelProvider(new ui.viewers.PhaserLabelProvider());

@@ -261,14 +261,49 @@ namespace colibri.ui.controls.viewers {
 
             super.setFilterText(filter);
 
-            if (filter !== "") {
+            if (filter.length > 0) {
 
-                this.prepareFiltering();
-
-                this.expandFilteredParents(this.getContentProvider().getRoots(this.getInput()));
-
-                this.repaint();
+                this.maybeFilter();
             }
+        }
+
+        private _filterTime = 0;
+        private _token = 0;
+
+
+        private maybeFilter() {
+
+            const now = Date.now();
+
+            if (now - this._filterTime > 500) {
+
+                this._filterTime = now;
+
+                this._token++;
+
+                this.filterNow();
+
+            } else {
+
+                const token = this._token;
+
+                requestAnimationFrame(() => {
+
+                    if (token === this._token) {
+
+                        this.maybeFilter();
+                    }
+                });
+            }
+        }
+
+        private filterNow() {
+
+            this.prepareFiltering();
+
+            this.expandFilteredParents(this.getContentProvider().getRoots(this.getInput()));
+
+            this.repaint();
         }
 
         private expandFilteredParents(objects: any[]): void {
