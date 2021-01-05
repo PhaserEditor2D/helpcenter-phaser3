@@ -2,10 +2,10 @@ namespace helpcenter.main.ui.views {
 
     import controls = colibri.ui.controls;
 
-    export class ExampleChainsView extends colibri.ui.ide.ViewerView {
+    export class ExamplesSearchView extends colibri.ui.ide.ViewerView {
 
         constructor() {
-            super("helpcenter.main.ui.views.examples.ExampleChainsView");
+            super("helpcenter.main.ui.views.examples.ExamplesSearchView");
 
             this.setTitle("Examples Search");
             this.setIcon(MainPlugin.getInstance().getIcon(ICON_LABS));

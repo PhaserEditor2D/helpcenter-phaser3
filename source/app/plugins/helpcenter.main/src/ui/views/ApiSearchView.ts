@@ -2,11 +2,11 @@ namespace helpcenter.main.ui.views {
 
     import controls = colibri.ui.controls;
 
-    export class ChainsView extends AbstractPhaserView {
-        static ID = "helpcenter.main.ui.views.classes.ChainsView";
+    export class ApiSearchView extends AbstractPhaserView {
+        static ID = "helpcenter.main.ui.views.classes.ExamplesSearchView";
 
         constructor() {
-            super(ChainsView.ID);
+            super(ApiSearchView.ID);
 
             this.setTitle("API Search");
             this.setIcon(MainPlugin.getInstance().getDocEntryKindIcon("namespace"));
