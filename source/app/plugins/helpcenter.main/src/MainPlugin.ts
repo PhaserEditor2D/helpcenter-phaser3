@@ -111,7 +111,9 @@ namespace helpcenter.main {
 
     export const VER = "1.0.0"
 
-    console.log("Phaser Editor 2D - Help Center")
+    document.title = "Help Center v" + VER;
+
+    console.log("Phaser Editor 2D - Help Center - v" + VER);
 
     document.getElementById("splash-container").remove();
 
