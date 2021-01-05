@@ -17,6 +17,7 @@ namespace helpcenter.main.ui.views {
 
             viewer.setPreloadDisabled();
             viewer.setFilterOnRepaintDisabled();
+            viewer.setHighlightMatches(true);
 
             viewer.setLabelProvider(new ExampleChainLabelProvider());
             viewer.setStyledLabelProvider(new ExampleChainStyledLabelProvider());
@@ -33,7 +34,7 @@ namespace helpcenter.main.ui.views {
     const LANG_STYLES = {
         keyword: "blue",
         built_in: "darkBlue",
-        literal: "red",
+        literal: "blue",
         number: "brown",
         string: "darkGreen",
         title: "darkCyan",
