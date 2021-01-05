@@ -1,6 +1,6 @@
-/// <reference path="../AbstractPhaserView.ts"/>
+/// <reference path="./AbstractPhaserView.ts"/>
 
-namespace helpcenter.main.ui.views.files {
+namespace helpcenter.main.ui.views {
 
     import controls = colibri.ui.controls;
 

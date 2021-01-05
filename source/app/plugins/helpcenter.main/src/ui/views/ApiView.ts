@@ -1,4 +1,4 @@
-namespace helpcenter.main.ui.views.api {
+namespace helpcenter.main.ui.views {
 
     import controls = colibri.ui.controls;
 

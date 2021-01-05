@@ -22,6 +22,8 @@
 - Enable search in a source file editor.
 - Enable minimap in the source file editor.
 - A welcome editor.
+- The Versions view.
+- Use a vertical tabpane like that one in VS Code, to fold the API, Files, Examples, and Versions views. 
 
 ---DONE ---
 

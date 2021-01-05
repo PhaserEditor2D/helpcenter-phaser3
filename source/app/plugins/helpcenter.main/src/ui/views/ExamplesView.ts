@@ -1,6 +1,6 @@
-/// <reference path="../AbstractExampleView.ts"/>
+/// <reference path="./AbstractExampleView.ts"/>
 
-namespace helpcenter.main.ui.views.examples {
+namespace helpcenter.main.ui.views {
 
     export class ExamplesView extends AbstractExampleView {
 
