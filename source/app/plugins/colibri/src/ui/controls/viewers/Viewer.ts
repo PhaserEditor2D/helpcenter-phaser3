@@ -50,7 +50,7 @@ namespace colibri.ui.controls.viewers {
             this._filterMatches = new Map();
 
             this._highlightMatches = false;
-            this._searchEngine = new DefaultSearchEngine();
+            this._searchEngine = new MultiWordSearchEngine();
 
             this.initListeners();
 

@@ -1,6 +1,6 @@
 namespace colibri.ui.controls.viewers {
 
-    export class DefaultSearchEngine implements ISearchEngine {
+    export class SingleWordSearchEngine implements ISearchEngine {
 
         private _pattern: string;
 
