@@ -49,7 +49,7 @@ namespace colibri.ui.controls.viewers {
             this._filterIncludeSet = new Set();
             this._filterMatches = new Map();
 
-            this._highlightMatches = false;
+            this._highlightMatches = true;
             this._searchEngine = new MultiWordSearchEngine();
 
             this.initListeners();

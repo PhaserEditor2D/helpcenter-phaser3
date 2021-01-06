@@ -17,7 +17,6 @@ namespace helpcenter.main.ui.views {
 
             viewer.setPreloadDisabled();
             viewer.setFilterOnRepaintDisabled();
-            viewer.setHighlightMatches(true);
             viewer.setFilterDelay(200, 500, 3);
 
             viewer.setLabelProvider(new ExampleChainLabelProvider());
