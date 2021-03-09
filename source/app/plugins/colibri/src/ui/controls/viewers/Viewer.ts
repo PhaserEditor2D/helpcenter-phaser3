@@ -219,6 +219,11 @@ namespace colibri.ui.controls.viewers {
         setStyledLabelProvider(styledLabelProvider: IStyledLabelProvider) {
 
             this._styledLabelProvider = styledLabelProvider;
+
+            if (!this._labelProvider && styledLabelProvider) {
+
+                this._labelProvider = new LabelProviderFromStyledLabelProvider(styledLabelProvider);
+            }
         }
 
         setFilterText(filterText: string) {
@@ -503,24 +508,8 @@ namespace colibri.ui.controls.viewers {
         collapseAll() {
 
             this._expandedObjects = new Set();
-        }
 
-        expandCollapseBranch(obj: any) {
-
-            const parents = [];
-
-            const item = this._paintItems.find(i => i.data === obj);
-
-            if (item && item.parent) {
-
-                const parentObj = item.parent.data;
-
-                this.setExpanded(parentObj, !this.isExpanded(parentObj));
-
-                parents.push(parentObj);
-            }
-
-            return parents;
+            this.setScrollY(0);
         }
 
         isSelected(obj: any) {
@@ -577,7 +566,7 @@ namespace colibri.ui.controls.viewers {
 
         private updateScrollPane() {
 
-            const pane = this.getContainer().getContainer();
+            const pane = this.getContainer()?.getContainer();
 
             if (pane instanceof ScrollPane) {
 

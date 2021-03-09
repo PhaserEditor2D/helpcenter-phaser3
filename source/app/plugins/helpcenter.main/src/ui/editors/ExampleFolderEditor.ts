@@ -152,7 +152,7 @@ namespace helpcenter.main.ui.editors {
                     const examples: phaser.core.ExampleInfo[] = [];
                     this.getAllExamples(input, examples);
 
-                    this._gridRenderer.setSections(sections);
+                    this._gridRenderer.setSectionCriteria(s => sections.indexOf(s) >= 0);
                     this._viewer.setContentProvider(new ExampleFolderContentProvider(examples));
                     this._viewer.setInput([]);
 
