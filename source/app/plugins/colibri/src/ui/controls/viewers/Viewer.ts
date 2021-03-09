@@ -24,7 +24,6 @@ namespace colibri.ui.controls.viewers {
         protected _contentHeight: number = 0;
         private _filterText: string;
         protected _filterIncludeSet: Set<any>;
-        protected _filterMatches: Map<string, IMatchResult>;
         private _highlightMatches: boolean;
         private _viewerId: string;
         private _preloadEnabled = true;
@@ -47,7 +46,6 @@ namespace colibri.ui.controls.viewers {
             this._expandedObjects = new Set();
             this._selectedObjects = new Set();
             this._filterIncludeSet = new Set();
-            this._filterMatches = new Map();
 
             this._highlightMatches = true;
             this._searchEngine = new MultiWordSearchEngine();
@@ -244,11 +242,12 @@ namespace colibri.ui.controls.viewers {
             }
 
             this._filterIncludeSet.clear();
-            this._filterMatches.clear();
 
             this._searchEngine.prepare(this.getFilterText());
 
             this.buildFilterIncludeMap();
+
+            this._searchEngine.done();
         }
 
         isFilterIncluded(obj: any) {
@@ -271,24 +270,12 @@ namespace colibri.ui.controls.viewers {
 
             const result = this._searchEngine.matches(label);
 
-            if (this._highlightMatches) {
-
-                if (result.matches) {
-
-                    this._filterMatches.set(label, result);
-
-                } else {
-
-                    this._filterMatches.delete(label);
-                }
-            }
-
             return result.matches;
         }
 
         getMatchesResult(label: string) {
 
-            return this._filterMatches.get(label);
+            return this._searchEngine.matches(label);
         }
 
         protected getPaintItemAt(e: MouseEvent): PaintItem {
