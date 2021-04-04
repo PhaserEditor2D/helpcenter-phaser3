@@ -13,7 +13,5 @@ namespace colibri.ui.controls.viewers {
         prepare(pattern: string): void;
 
         matches(text: string): IMatchResult;
-
-        done(): void;
     }
 }

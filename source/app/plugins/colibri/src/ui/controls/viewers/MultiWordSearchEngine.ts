@@ -3,19 +3,10 @@ namespace colibri.ui.controls.viewers {
     export class MultiWordSearchEngine implements ISearchEngine {
 
         private _words: string[];
-        private _time: number;
-        private _pattern: string;
 
         prepare(pattern: string): void {
 
-            this._pattern = pattern.toLowerCase();
-
             this._words = pattern.split(" ").map(w => w.trim().toLowerCase()).filter(w => w.length > 0);
-            this._time = Date.now();
-        }
-
-        done(): void {
-            console.log("delay " + (Date.now() - this._time) + "ms");
         }
 
         matches(text: string): IMatchResult {

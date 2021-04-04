@@ -28,6 +28,7 @@ namespace colibri.core.io {
                 this._files = [];
 
                 for (const child of fileData.children) {
+
                     this._files.push(new FilePath(this, child));
                 }
 
@@ -36,8 +37,28 @@ namespace colibri.core.io {
             } else {
 
                 this._files = [];
-
             }
+        }
+
+        static join(path1: string, path2: string) {
+
+            let result = path1;
+
+            if (!path1.endsWith("/")) {
+
+                result += "/"
+            }
+
+            if (path2.startsWith("/")) {
+
+                result += path2.substring(1);
+
+            } else {
+
+                result += path2;
+            }
+
+            return result;
         }
 
         _sort() {
@@ -114,6 +135,7 @@ namespace colibri.core.io {
         getFullName(): string {
 
             if (this._parent) {
+
                 return this._parent.getFullName() + "/" + this._name;
             }
 
@@ -197,6 +219,11 @@ namespace colibri.core.io {
             return !this.isFile();
         }
 
+        isRoot() {
+
+            return this._parent === null || this._parent === undefined;
+        }
+
         getFiles() {
             return this._files;
         }
@@ -216,6 +243,16 @@ namespace colibri.core.io {
             for (const file of this._files) {
 
                 file.visit(visitor);
+            }
+        }
+
+        async visitAsync(visitor: (file: FilePath) => Promise<void>) {
+
+            await visitor(this);
+
+            for (const file of this._files) {
+
+                await file.visitAsync(visitor);
             }
         }
 

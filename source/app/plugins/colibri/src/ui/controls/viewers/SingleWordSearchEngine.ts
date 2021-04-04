@@ -9,10 +9,6 @@ namespace colibri.ui.controls.viewers {
             this._pattern = pattern.toLowerCase();
         }
 
-        done(): void {
-            // nothing
-        }
-
         matches(text: string): IMatchResult {
 
             if (this._pattern.length === 0) {
