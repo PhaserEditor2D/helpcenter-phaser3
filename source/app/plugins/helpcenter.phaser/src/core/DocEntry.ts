@@ -30,7 +30,7 @@ namespace helpcenter.phaser.core {
                 return obj;
             }
 
-            if ("adaptToDocEntry" in obj) {
+            if (obj && "adaptToDocEntry" in obj) {
 
                 const entry = obj["adaptToDocEntry"]();
 

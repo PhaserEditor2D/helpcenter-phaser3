@@ -138,10 +138,10 @@ namespace helpcenter.main.ui.views {
 
             for (const child of parent.getChildren()) {
 
-                if (child.isInherited()) {
+                // if (child.isInherited()) {
 
-                    continue;
-                }
+                //     continue;
+                // }
 
                 const entryFullName = parentLabel + "." + child.getName();
 
