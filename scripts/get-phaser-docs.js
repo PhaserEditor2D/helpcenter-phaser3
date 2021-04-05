@@ -25,6 +25,11 @@ for (const entry of inputData.docs) {
         continue;
     }
 
+    if (entry.access === "private") {
+
+        continue;
+    }
+
     const comment = entry.comment || "";
     const countCommentLines = comment.split("\n").length;
 
