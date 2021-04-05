@@ -4,6 +4,8 @@ namespace helpcenter.main.ui.views {
 
     export class ApiSearchView extends AbstractPhaserView {
         static ID = "helpcenter.main.ui.views.classes.ExamplesSearchView";
+        private _model: ChainsModel;
+
 
         constructor() {
             super(ApiSearchView.ID);
@@ -14,19 +16,68 @@ namespace helpcenter.main.ui.views {
 
         protected createViewer(): controls.viewers.TreeViewer {
 
-            const viewer = new controls.viewers.TreeViewer(this.getId());
+            // TODO: there private fileds! just sarch this ._temp
+
+            this._model = new ChainsModel();
+            this._model.build();
+
+            const viewer = new ChainsViewer(this._model);
+            viewer.setPreloadDisabled();
+            viewer.setFilterOnRepaintDisabled();
+
             viewer.setCellRendererProvider(new ChainsCellRendererProvider());
             viewer.setLabelProvider(new ChainsLabelProvider());
             viewer.setStyledLabelProvider(new ChainsStyledLabelProvider());
             viewer.setContentProvider(new controls.viewers.ArrayTreeContentProvider());
             viewer.setTreeRenderer(new ChainsTreeRenderer(viewer));
 
-            const model = new ChainsModel();
-            model.build();
-
-            viewer.setInput(model.getChains());
+            viewer.setInput(this._model.getChains());
 
             return viewer;
+        }
+    }
+
+    class ChainsViewer extends controls.viewers.TreeViewer {
+
+        _model: ChainsModel;
+
+        constructor(model: ChainsModel) {
+            super(ApiSearchView.ID + ".viewer");
+
+            this._model = model;
+
+            this.eventSelectionChanged.addListener(() => {
+
+                const elem = this.getSelectionFirstElement();
+                console.log(elem);
+            });
+        }
+
+        setFilterText(text: string) {
+
+            controls.viewers.Viewer.prototype.setFilterText.call(this, text);
+
+            let chains: Chain[] = [];
+
+            if (text.trim().length > 0) {
+
+                this.getSearchEngine().prepare(text);
+
+                chains = this._model.getChains().filter(c => this.matches(c));
+
+            } else {
+
+                chains = this._model.getChains();
+            }
+
+            this.setInput(chains);
+
+            this.setScrollY(0);
+        }
+
+        isFilterIncluded(obj: any) {
+
+            return true;
         }
     }
 
@@ -38,7 +89,6 @@ namespace helpcenter.main.ui.views {
 
             args.canvasContext.font = controls.FONT_HEIGHT + "px Monospace";
         }
-
     }
 
     class ChainsStyledLabelProvider implements controls.viewers.IStyledLabelProvider {

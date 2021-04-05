@@ -71,7 +71,12 @@ namespace helpcenter.main.ui.editors {
                 this.setSelection(sel as any);
             });
 
-            this._viewer.getElement().addEventListener("contextmenu", e => this.onMenu(e));
+            this._filteredViewer.setMenuProvider(new controls.viewers.DefaultViewerMenuProvider((viewer, menu) => {
+
+                this.fillContextMenu(menu);
+            }))
+
+            // this._viewer.getElement().addEventListener("contextmenu", e => this.onMenu(e));
 
             this._viewer.eventOpenItem.addListener(e => {
 
@@ -89,19 +94,6 @@ namespace helpcenter.main.ui.editors {
         protected createFilteredViewer(viewer: controls.viewers.TreeViewer) {
 
             return new controls.viewers.FilteredViewer(viewer, true);
-        }
-
-        private onMenu(e: MouseEvent) {
-
-            e.preventDefault();
-
-            this._viewer.onMouseUp(e);
-
-            const menu = new controls.Menu();
-
-            this.fillContextMenu(menu);
-
-            menu.createWithEvent(e);
         }
 
         protected fillContextMenu(menu: controls.Menu) {
