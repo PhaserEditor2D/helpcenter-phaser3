@@ -251,7 +251,7 @@ namespace colibri.ui.controls.viewers {
 
             this._viewer.setFilterText(value);
 
-            this._viewer.repaint();
+            // this._viewer.repaint();
         }
 
         filterText(value: string) {
