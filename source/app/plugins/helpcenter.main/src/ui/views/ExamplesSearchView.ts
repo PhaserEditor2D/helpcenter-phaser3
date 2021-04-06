@@ -4,8 +4,10 @@ namespace helpcenter.main.ui.views {
 
     export class ExamplesSearchView extends colibri.ui.ide.ViewerView {
 
+        static ID = "helpcenter.main.ui.views.examples.ExamplesSearchView";
+
         constructor() {
-            super("helpcenter.main.ui.views.examples.ExamplesSearchView");
+            super(ExamplesSearchView.ID);
 
             this.setTitle("Examples Search");
             this.setIcon(MainPlugin.getInstance().getIcon(ICON_LABS));
@@ -13,11 +15,10 @@ namespace helpcenter.main.ui.views {
 
         protected createViewer(): colibri.ui.controls.viewers.TreeViewer {
 
-            const viewer = new controls.viewers.TreeViewer(this.getId());
+            const viewer = new ExampleChainsViewer();
 
             viewer.setPreloadDisabled();
             viewer.setFilterOnRepaintDisabled();
-            viewer.setFilterDelay(500, 1000, 3);
 
             viewer.setLabelProvider(new ExampleChainLabelProvider());
             viewer.setStyledLabelProvider(new ExampleChainStyledLabelProvider());
@@ -28,6 +29,36 @@ namespace helpcenter.main.ui.views {
             viewer.setInput(phaser.PhaserPlugin.getInstance().getExampleChains());
 
             return viewer;
+        }
+    }
+
+    class ExampleChainsViewer extends controls.viewers.TreeViewer {
+
+        constructor() {
+            super(ExamplesSearchView.ID + ".viewer");
+        }
+
+        setFilterText(text: string) {
+
+            let chains = phaser.PhaserPlugin.getInstance().getExampleChains();
+
+            controls.viewers.Viewer.prototype.setFilterText.call(this, text);
+
+            if (text.trim().length > 0) {
+
+                this.getSearchEngine().prepare(text);
+
+                chains = chains.filter(c => this.matches(c));
+            }
+
+            this.setInput(chains);
+
+            this.setScrollY(0);
+        }
+
+        isFilterIncluded(obj: any) {
+
+            return true;
         }
     }
 
@@ -42,29 +73,21 @@ namespace helpcenter.main.ui.views {
         comment: "green"
     };
 
-    const stylesCache = {};
-
     class ExampleChainStyledLabelProvider implements controls.viewers.IStyledLabelProvider {
 
         getStyledTexts(obj: phaser.core.ExampleChain, dark: boolean): controls.viewers.IStyledText[] {
 
-            let styles = stylesCache[obj.line];
 
-            if (!styles) {
+            const tokens = showdown.javascriptToTokens(obj.line);
 
-                const tokens = showdown.javascriptToTokens(obj.line);
+            const codeStyles = tokens.map(token => {
+                return {
+                    text: token.value,
+                    color: LANG_STYLES[token.kind] || "black"
+                };
+            });
 
-                styles = tokens.map(token => {
-                    return {
-                        text: token.value,
-                        color: LANG_STYLES[token.kind] || "black"
-                    };
-                });
-
-                stylesCache[obj.line] = styles;
-            }
-
-            return [...styles, {
+            return [...codeStyles, {
                 text: " " + obj.example.getPath(),
                 color: "rgba(0, 0, 0, 0.3)"
             }];

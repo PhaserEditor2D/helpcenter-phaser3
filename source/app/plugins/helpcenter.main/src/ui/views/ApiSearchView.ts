@@ -45,12 +45,6 @@ namespace helpcenter.main.ui.views {
             super(ApiSearchView.ID + ".viewer");
 
             this._model = model;
-
-            this.eventSelectionChanged.addListener(() => {
-
-                const elem = this.getSelectionFirstElement();
-                console.log(elem);
-            });
         }
 
         setFilterText(text: string) {
