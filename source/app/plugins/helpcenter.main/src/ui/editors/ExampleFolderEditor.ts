@@ -76,8 +76,6 @@ namespace helpcenter.main.ui.editors {
                 this.fillContextMenu(menu);
             }))
 
-            // this._viewer.getElement().addEventListener("contextmenu", e => this.onMenu(e));
-
             this._viewer.eventOpenItem.addListener(e => {
 
                 const example = this._viewer.getSelectionFirstElement() as phaser.core.ExampleInfo;

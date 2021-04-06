@@ -10,6 +10,8 @@ namespace helpcenter.main.ui.properties {
 
         createForm(parent: HTMLDivElement) {
 
+            parent.style.padding = "5px";
+
             this.addUpdater(() => {
 
                 const builder = new core.HtmlJSDocBuilder(this.getDocEntry());

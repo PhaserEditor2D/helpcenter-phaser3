@@ -39,8 +39,6 @@ namespace helpcenter.main.ui {
                     callback: () => MainPlugin.getInstance().openExampleInWebsite(this._example)
                 });
 
-                menu.addSeparator();
-
                 menu.addAction({
                     text: "Open In Source Editor",
                     callback: () => colibri.Platform.getWorkbench().openEditor(this._example)
