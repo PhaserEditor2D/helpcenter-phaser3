@@ -16,8 +16,6 @@ namespace helpcenter.main.ui.views {
 
         protected createViewer(): controls.viewers.TreeViewer {
 
-            // TODO: there private fileds! just sarch this ._temp
-
             this._model = new ChainsModel();
             this._model.build();
 
@@ -30,7 +28,6 @@ namespace helpcenter.main.ui.views {
             viewer.setStyledLabelProvider(new ChainsStyledLabelProvider());
             viewer.setContentProvider(new controls.viewers.ArrayTreeContentProvider());
             viewer.setTreeRenderer(new ChainsTreeRenderer(viewer));
-
             viewer.setInput(this._model.getChains());
 
             return viewer;

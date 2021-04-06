@@ -23,9 +23,9 @@ namespace helpcenter.main.ui.views {
             viewer.setLabelProvider(new ExampleChainLabelProvider());
             viewer.setStyledLabelProvider(new ExampleChainStyledLabelProvider());
             viewer.setContentProvider(new controls.viewers.ArrayTreeContentProvider());
-            viewer.setCellRendererProvider(
-                new controls.viewers.EmptyCellRendererProvider(e => controls.viewers.EmptyCellRenderer.instance));
+            viewer.setCellRendererProvider(new ExampleChainCellRendererProvider());
             viewer.setTreeRenderer(new ExampleChainTreeRenderer(viewer));
+            viewer.setCellSize(32, true);
             viewer.setInput(phaser.PhaserPlugin.getInstance().getExampleChains());
 
             return viewer;
@@ -59,6 +59,26 @@ namespace helpcenter.main.ui.views {
         isFilterIncluded(obj: any) {
 
             return true;
+        }
+    }
+
+    export class ExampleChainCellRendererProvider implements controls.viewers.ICellRendererProvider {
+
+        private _provider: viewers.ExampleCellRendererProvider;
+
+        constructor() {
+
+            this._provider = new viewers.ExampleCellRendererProvider();
+        }
+
+        getCellRenderer(obj: phaser.core.ExampleChain): controls.viewers.ICellRenderer {
+
+            return this._provider.getCellRenderer(obj.example);
+        }
+
+        async preload(args: controls.viewers.PreloadCellArgs): Promise<controls.PreloadResult> {
+
+            return controls.PreloadResult.NOTHING_LOADED;
         }
     }
 
