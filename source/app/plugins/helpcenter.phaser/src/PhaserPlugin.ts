@@ -16,6 +16,7 @@ namespace helpcenter.phaser {
         private _exampleImageReader: ui.ExampleImageReader;
         private _exampleMap: Map<string, core.ExampleInfo>;
         private _exampleChains: core.ExampleChain[];
+        private _flatNamespaces: core.DocEntry[];
 
         static getInstance() {
 
@@ -257,6 +258,26 @@ namespace helpcenter.phaser {
                 }
             }
 
+            // build flat
+            this._flatNamespaces = [];
+
+            for (const entry of docEntries) {
+
+                if (entry.getKind() === "namespace" || entry.getKind() === "package") {
+
+                    const isFlat = entry.getChildren()
+                        .filter(c => !c.isNamespace())
+                        .length > 0;
+
+                    if (isFlat) {
+
+                        this._flatNamespaces.push(entry);
+                    }
+                }
+            }
+
+            this._flatNamespaces.sort((a, b) => a.getFullName().localeCompare(b.getFullName()));
+
             // build folders
 
             const root = new core.PhaserFile("", true, null);
@@ -294,6 +315,11 @@ namespace helpcenter.phaser {
             this._docsFolder = root;
 
             this._docEntries = docEntries;
+        }
+
+        getFlatNamespaces() {
+
+            return this._flatNamespaces;
         }
 
         findSubtypes(typeName: string) {
@@ -339,6 +365,11 @@ namespace helpcenter.phaser {
         getDocEntry(name: string) {
 
             return this._docsNameMap.get(name);
+        }
+
+        getPhaserDocEntry() {
+
+            return this.getDocEntry("Phaser");
         }
     }
 

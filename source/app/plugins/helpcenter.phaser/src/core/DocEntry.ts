@@ -43,6 +43,16 @@ namespace helpcenter.phaser.core {
             return null;
         }
 
+        visit(visitor: (entry: DocEntry) => void) {
+
+            for (const c of this.getChildren()) {
+
+                c.visit(visitor);
+            }
+
+            visitor(this);
+        }
+
         getFile() {
 
             return this._file;
@@ -76,6 +86,11 @@ namespace helpcenter.phaser.core {
         getRawEntry() {
 
             return this._rawEntry;
+        }
+
+        isNamespace() {
+
+            return this.getKind() === "namespace" || this.getKind() === "package";
         }
 
         isInherited() {

@@ -8,7 +8,7 @@ namespace helpcenter.main.ui {
 
         private _editorArea: colibri.ui.ide.EditorArea;
         private _filesView: views.FilesView;
-        private _namespaceView: views.ApiView;
+        private _apiView: views.ApiView;
         private _inspectorView: colibri.inspector.ui.views.InspectorView;
         private _chainsView: views.ApiSearchView;
         private _examplesView: views.ExamplesView;
@@ -22,7 +22,7 @@ namespace helpcenter.main.ui {
 
             this._editorArea = new colibri.ui.ide.EditorArea();
             this._filesView = new views.FilesView();
-            this._namespaceView = new views.ApiView();
+            this._apiView = new views.ApiView();
             this._examplesView = new views.ExamplesView();
             this._inspectorView = new colibri.inspector.ui.views.InspectorView();
             this._chainsView = new views.ApiSearchView();
@@ -35,13 +35,15 @@ namespace helpcenter.main.ui {
 
             editorChains.setSplitFactor(0.5);
 
-            const splitLeftAndEditorArea = new controls.SplitPanel(
+            const splitLeftTopDown = new controls.SplitPanel(
                 this.createViewFolder(
-                    this._namespaceView,
+                    this._apiView,
                     this._filesView,
+                ), this.createViewFolder(
                     this._examplesView
-                ),
-                editorChains);
+                ), false);
+
+            const splitLeftAndEditorArea = new controls.SplitPanel(splitLeftTopDown, editorChains);
 
             splitLeftAndEditorArea.setSplitFactor(0.3);
 

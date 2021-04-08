@@ -159,6 +159,9 @@ namespace colibri.ui.controls.viewers {
 
                 return (e: MouseEvent) => {
 
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+
                     if (!this._menuProvider) {
 
                         return;
