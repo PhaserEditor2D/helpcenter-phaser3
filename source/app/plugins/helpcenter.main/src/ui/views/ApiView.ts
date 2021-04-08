@@ -5,7 +5,7 @@ namespace helpcenter.main.ui.views {
     export class ApiView extends AbstractPhaserView {
         static ID = "helpcenter.main.ui.views.classes.NamespaceView";
         private _flatLayout: boolean;
-        private _section: "Types" | "Events";
+        private _section: "Type" | "Event" | "Constant";
 
         constructor() {
             super(ApiView.ID);
@@ -65,8 +65,9 @@ namespace helpcenter.main.ui.views {
 
             const label = folder.getLabelFromContent(this);
 
-            folder.addTabSection(label, "Types");
-            folder.addTabSection(label, "Events");
+            folder.addTabSection(label, "Type");
+            folder.addTabSection(label, "Constant");
+            folder.addTabSection(label, "Event");
 
             folder.eventTabSectionSelected.addListener(section => {
 
@@ -117,10 +118,10 @@ namespace helpcenter.main.ui.views {
 
     class ApiContentViewer implements controls.viewers.ITreeContentProvider {
 
-        private _section: "Types" | "Events";
+        private _section: "Type" | "Event" | "Constant";
         private _flat: boolean;
 
-        constructor(flat: boolean, section?: "Types" | "Events") {
+        constructor(flat: boolean, section?: "Type" | "Event" | "Constant") {
 
             this._flat = flat;
             this._section = section;
@@ -159,7 +160,7 @@ namespace helpcenter.main.ui.views {
 
                 switch (this._section) {
 
-                    case "Types":
+                    case "Type":
 
                         result = result.filter(c => {
 
@@ -170,9 +171,15 @@ namespace helpcenter.main.ui.views {
 
                         break;
 
-                    case "Events":
+                    case "Event":
 
                         result = result.filter(c => c.getKind() === "event" || c.isNamespace());
+
+                        break;
+
+                    case "Constant":
+
+                        result = result.filter(c => c.getKind() === "constant" || c.isNamespace());
 
                         break;
                 }
