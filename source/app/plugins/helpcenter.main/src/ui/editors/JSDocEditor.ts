@@ -34,7 +34,7 @@ namespace helpcenter.main.ui.editors {
         constructor() {
             super("helpcenter.main.ui.editors.JSDocEntryEditor", JSDocEntryEditor.getFactory());
 
-            this.setIcon(MainPlugin.getInstance().getIcon(ICON_FILE_SCRIPT));
+            this.setIcon(MainPlugin.getInstance().getIcon(ICON_HELP));
         }
 
         protected createPart(): void {

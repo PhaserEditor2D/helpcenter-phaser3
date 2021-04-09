@@ -2,11 +2,16 @@
     "id": "helpcenter.codemirror",
     "styles": [
         "codemirror-5.59.0/lib/codemirror.css",
-        "codemirror-5.59.0/themes/darcula.css"
+        "codemirror-5.59.0/themes/darcula.css",
+        "codemirror-5.59.0/addon/dialog/dialog.css"
     ],
     "scripts": [
         "codemirror-5.59.0/lib/codemirror.js",
         "codemirror-5.59.0/mode/javascript/javascript.js",
+        "codemirror-5.59.0/addon/dialog/dialog.js",
+        "codemirror-5.59.0/addon/search/search.js",
+        "codemirror-5.59.0/addon/search/searchcursor.js",
+        "codemirror-5.59.0/addon/search/jump-to-line.js",
         "_out/helpcenter.codemirror.js"
     ]
 }

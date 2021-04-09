@@ -14,6 +14,7 @@ namespace helpcenter.main {
 
     export const ICON_FILE_SCRIPT = "file-script";
     export const ICON_LABS = "experimental";
+    export const ICON_HELP = "help";
 
     export class MainPlugin extends colibri.Plugin {
 
@@ -36,7 +37,11 @@ namespace helpcenter.main {
                 .withPluginFiles(this, phaser.DOC_ENTRY_KIND_LIST.map(kind => DOC_ENTRY_KIND_ICON_NAME[kind])));
 
             reg.addExtension(colibri.ui.ide.IconLoaderExtension
-                .withPluginFiles(this, [ICON_FILE_SCRIPT, ICON_LABS], false));
+                .withPluginFiles(this, [
+                    ICON_FILE_SCRIPT,
+                    ICON_LABS,
+                    ICON_HELP
+                ], false));
 
             // windows
 
