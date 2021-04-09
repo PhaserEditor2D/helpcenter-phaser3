@@ -14,6 +14,7 @@ namespace helpcenter.main.ui.viewers {
         getStyledTexts(obj: any, dark: boolean): controls.viewers.IStyledText[] {
 
             const theme = controls.Controls.getTheme();
+            const styles = dark? DARK_SYNTAX_COLOR : LIGHT_SYNTAX_COLOR;
 
             if (obj instanceof phaser.core.DocEntry) {
 
@@ -21,13 +22,13 @@ namespace helpcenter.main.ui.viewers {
                     color: theme.viewerForeground,
                     text: obj.getName()
                 }, {
-                    color: "brown",
+                    color: styles.methodSignature,
                     text: obj.getMethodSignature()
                 }, {
-                    color: "darkCyan",
+                    color: styles.returnTypeSignature,
                     text: obj.getReturnsTypeSignature()
                 }, {
-                    color: "darkCyan",
+                    color: styles.typeSignature,
                     text: obj.getTypeSignature()
                 }];
             }

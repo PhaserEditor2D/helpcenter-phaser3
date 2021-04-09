@@ -8,7 +8,10 @@ namespace helpcenter.main.ui {
         string: "darkGreen",
         title: "darkCyan",
         attr: "olive",
-        comment: "green"
+        comment: "green",
+        methodSignature: "brown",
+        returnTypeSignature: "darkCyan",
+        typeSignature: "darkCyan"
     }
 
     export const DARK_SYNTAX_COLOR = {
@@ -19,6 +22,9 @@ namespace helpcenter.main.ui {
         string: "chartreuse",
         title: "cyan",
         attr: "olive",
-        comment: "red"
+        comment: "red",
+        methodSignature: "lightGreen",
+        returnTypeSignature: "cyan",
+        typeSignature: "cyan"
     }
 }

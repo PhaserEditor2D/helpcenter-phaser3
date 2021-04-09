@@ -214,13 +214,13 @@ namespace helpcenter.main.ui.views {
                     },
                     {
                         text: child.getTypeSignature(),
-                        color: "darkCyan"
+                        color: LIGHT_SYNTAX_COLOR.typeSignature
                     }, {
                         text: child.getMethodSignature(),
-                        color: "brown"
+                        color: LIGHT_SYNTAX_COLOR.methodSignature
                     }, {
                         text: child.getReturnsTypeSignature(),
-                        color: "darkCyan"
+                        color: LIGHT_SYNTAX_COLOR.returnTypeSignature
                     }];
 
                     chain.darkStyledLabel = [{
@@ -232,13 +232,13 @@ namespace helpcenter.main.ui.views {
                     },
                     {
                         text: child.getTypeSignature(),
-                        color: "cyan"
+                        color: DARK_SYNTAX_COLOR.typeSignature
                     }, {
                         text: child.getMethodSignature(),
-                        color: "lightGreen"
+                        color: DARK_SYNTAX_COLOR.methodSignature
                     }, {
                         text: child.getReturnsTypeSignature(),
-                        color: "cyan"
+                        color: DARK_SYNTAX_COLOR.returnTypeSignature
                     }];
 
                     chain.lightStyledLabel = chain.lightStyledLabel.filter(s => s.text.length > 0);
