@@ -34,6 +34,19 @@ namespace helpcenter.main.ui.views {
         }
     }
 
+    class ChainsSearchEngine extends controls.viewers.MultiWordSearchEngine {
+
+        prepare(pattern: string) {
+
+            if (pattern.startsWith("this")) {
+
+                pattern = "Phaser.Scene" + pattern.substring(4);
+            }
+
+            super.prepare(pattern)
+        }
+    }
+
     class ChainsViewer extends controls.viewers.TreeViewer {
 
         _model: ChainsModel;
@@ -42,6 +55,8 @@ namespace helpcenter.main.ui.views {
             super(ApiSearchView.ID + ".viewer");
 
             this._model = model;
+
+            this.setSearchEngine(new ChainsSearchEngine());
         }
 
         setFilterText(text: string) {
