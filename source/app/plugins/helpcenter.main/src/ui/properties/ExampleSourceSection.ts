@@ -18,6 +18,7 @@ namespace helpcenter.main.ui.properties {
             comp.style.fontFamily = "monospace";
             comp.style.overflow = "auto";
             comp.style.maxHeight = "400px";
+            comp.style.padding = "5px";
 
             parent.appendChild(comp);
 
