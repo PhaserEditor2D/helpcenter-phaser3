@@ -24,6 +24,7 @@ namespace helpcenter.main.ui.editors {
 
         static _factory: JSDocEntryEditorFactory;
         private _contentElement: HTMLDivElement;
+        private _themeListener: () => void;
 
         static getFactory() {
 
@@ -44,6 +45,22 @@ namespace helpcenter.main.ui.editors {
             this.getElement().appendChild(this._contentElement);
 
             this.updateContent();
+
+            this._themeListener = () => this.updateContent();
+
+            colibri.Platform.getWorkbench().eventThemeChanged.addListener(this._themeListener);
+        }
+
+        onPartClosed() {
+
+            const result = super.onPartClosed();
+
+            if (result) {
+
+                colibri.Platform.getWorkbench().eventThemeChanged.removeListener(this._themeListener);
+            }
+
+            return result;
         }
 
         layout() {

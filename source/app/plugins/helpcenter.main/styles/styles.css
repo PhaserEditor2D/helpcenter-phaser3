@@ -3,7 +3,6 @@
     padding-left: 0.5em;
     overflow: auto;
     user-select: text !important;
-    background: #ffffcf90;
     border-radius: 5px;
     padding: 1em;
 }
@@ -24,7 +23,6 @@
 }
 
 .JSDocEntryEditorArea {
-    background: #ffffcf90;
     overflow: auto;
 }
 
