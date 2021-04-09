@@ -40,3 +40,8 @@
 .SmallScrollBar {
     scrollbar-width: thin;
 }
+
+.MarkCodeLine {
+    display: inline;
+    background: rgba(0, 0, 255, 0.2);
+}

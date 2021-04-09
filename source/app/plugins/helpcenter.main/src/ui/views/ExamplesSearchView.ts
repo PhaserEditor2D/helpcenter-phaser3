@@ -5,12 +5,15 @@ namespace helpcenter.main.ui.views {
     export class ExamplesSearchView extends colibri.ui.ide.ViewerView {
 
         static ID = "helpcenter.main.ui.views.examples.ExamplesSearchView";
+        private _propertyProvider: ui.properties.ExampleSectionProvider;
 
         constructor() {
             super(ExamplesSearchView.ID);
 
             this.setTitle("Examples Lines");
             this.setIcon(MainPlugin.getInstance().getIcon(ICON_LABS));
+
+            this._propertyProvider = new ui.properties.ExampleSectionProvider();
         }
 
         protected createViewer(): colibri.ui.controls.viewers.TreeViewer {
@@ -29,6 +32,11 @@ namespace helpcenter.main.ui.views {
             viewer.setInput(phaser.PhaserPlugin.getInstance().getExampleChains());
 
             return viewer;
+        }
+
+        getPropertyProvider() {
+
+            return this._propertyProvider;
         }
     }
 

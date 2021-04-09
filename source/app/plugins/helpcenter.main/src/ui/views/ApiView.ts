@@ -8,7 +8,7 @@ namespace helpcenter.main.ui.views {
         private _section: "Type" | "Event" | "Constant";
 
         constructor() {
-            super(ApiView.ID);
+            super(ApiView.ID, false);
 
             this.setTitle("API");
             this.setIcon(MainPlugin.getInstance().getDocEntryKindIcon("namespace"));

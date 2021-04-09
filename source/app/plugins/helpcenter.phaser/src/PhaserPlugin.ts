@@ -103,9 +103,9 @@ namespace helpcenter.phaser {
 
                                 this._exampleChains.push(new core.ExampleChain(line2, n, example));
                             }
-                        }
 
-                        n++;
+                            n++;
+                        }
                     }
                 }
             }));
