@@ -22,7 +22,7 @@ namespace helpcenter.main.ui {
         string: "chartreuse",
         title: "cyan",
         attr: "olive",
-        comment: "red",
+        comment: "cornsilk",
         methodSignature: "lightGreen",
         returnTypeSignature: "cyan",
         typeSignature: "cyan"
