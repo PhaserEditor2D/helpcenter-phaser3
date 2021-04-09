@@ -99,7 +99,7 @@ namespace helpcenter.phaser {
                             const line2 = line.trim();
 
                             // TODO: just check the line has a letter
-                            if (re.test(line2)) {
+                            if (re.test(line2) && !line2.startsWith("//") && !line2.startsWith("*")) {
 
                                 this._exampleChains.push(new core.ExampleChain(line2, n, example));
                             }
