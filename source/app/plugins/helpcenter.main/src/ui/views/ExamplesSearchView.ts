@@ -10,7 +10,7 @@ namespace helpcenter.main.ui.views {
         constructor() {
             super(ExamplesSearchView.ID);
 
-            this.setTitle("Examples Lines");
+            this.setTitle("Examples Chains");
             this.setIcon(MainPlugin.getInstance().getIcon(ICON_LABS));
 
             this._propertyProvider = new ui.properties.ExampleSectionProvider();
