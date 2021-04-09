@@ -82,34 +82,26 @@ namespace helpcenter.main.ui.views {
         }
     }
 
-    const LANG_STYLES = {
-        keyword: "blue",
-        built_in: "darkBlue",
-        literal: "blue",
-        number: "brown",
-        string: "darkGreen",
-        title: "darkCyan",
-        attr: "olive",
-        comment: "green"
-    };
 
     class ExampleChainStyledLabelProvider implements controls.viewers.IStyledLabelProvider {
 
         getStyledTexts(obj: phaser.core.ExampleChain, dark: boolean): controls.viewers.IStyledText[] {
 
-
             const tokens = showdown.javascriptToTokens(obj.line);
+
+            const styles = dark? DARK_SYNTAX_COLOR : LIGHT_SYNTAX_COLOR;
+            const theme = controls.Controls.getTheme();
 
             const codeStyles = tokens.map(token => {
                 return {
                     text: token.value,
-                    color: LANG_STYLES[token.kind] || "black"
+                    color: styles[token.kind] || theme.viewerForeground
                 };
             });
 
             return [...codeStyles, {
                 text: " " + obj.example.getPath(),
-                color: "rgba(0, 0, 0, 0.3)"
+                color: dark? "gray" : "gray"
             }];
         }
     }

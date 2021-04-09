@@ -90,7 +90,7 @@ namespace helpcenter.main.ui.views {
 
             if (obj instanceof Chain) {
 
-                return obj.styledLabel;
+                return dark ? obj.darkStyledLabel : obj.lightStyledLabel;
             }
 
             return [{
@@ -137,7 +137,9 @@ namespace helpcenter.main.ui.views {
 
         public label: string;
 
-        public styledLabel: controls.viewers.IStyledText[];
+        public lightStyledLabel: controls.viewers.IStyledText[];
+
+        public darkStyledLabel: controls.viewers.IStyledText[];
 
         public countDots: number;
 
@@ -203,12 +205,12 @@ namespace helpcenter.main.ui.views {
                     chain.label = child.getKind() + " " + baseLabel;
                     chain.countDots = chain.label.split("").filter(c => c === ".").length;
 
-                    chain.styledLabel = [{
+                    chain.lightStyledLabel = [{
                         text: child.getKind() + " ",
-                        color: "blue"
+                        color: LIGHT_SYNTAX_COLOR.keyword
                     }, {
                         text: entryFullName,
-                        color: controls.Controls.getTheme().viewerForeground
+                        color: controls.Controls.LIGHT_THEME.viewerForeground
                     },
                     {
                         text: child.getTypeSignature(),
@@ -221,7 +223,26 @@ namespace helpcenter.main.ui.views {
                         color: "darkCyan"
                     }];
 
-                    chain.styledLabel = chain.styledLabel.filter(s => s.text.length > 0);
+                    chain.darkStyledLabel = [{
+                        text: child.getKind() + " ",
+                        color: DARK_SYNTAX_COLOR.keyword
+                    }, {
+                        text: entryFullName,
+                        color: controls.Controls.DARK_THEME.viewerForeground
+                    },
+                    {
+                        text: child.getTypeSignature(),
+                        color: "cyan"
+                    }, {
+                        text: child.getMethodSignature(),
+                        color: "lightGreen"
+                    }, {
+                        text: child.getReturnsTypeSignature(),
+                        color: "cyan"
+                    }];
+
+                    chain.lightStyledLabel = chain.lightStyledLabel.filter(s => s.text.length > 0);
+                    chain.darkStyledLabel = chain.darkStyledLabel.filter(s => s.text.length > 0);
 
                     chain.docEntry = child;
 
