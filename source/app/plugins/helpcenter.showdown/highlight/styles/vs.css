@@ -3,7 +3,7 @@
 Visual Studio-like style based on original C# coloring by Jason Diamond <jason@diamond.name>
 
 */
-.hljs {
+.light .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
@@ -11,58 +11,58 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
   color: black;
 }
 
-.hljs-comment,
-.hljs-quote,
-.hljs-variable {
+.light .hljs-comment,
+.light .hljs-quote,
+.light .hljs-variable {
   color: #008000;
 }
 
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-built_in,
-.hljs-name,
-.hljs-tag {
+.light .hljs-keyword,
+.light .hljs-selector-tag,
+.light .hljs-built_in,
+.light .hljs-name,
+.light .hljs-tag {
   color: #00f;
 }
 
-.hljs-string,
-.hljs-title,
-.hljs-section,
-.hljs-attribute,
-.hljs-literal,
-.hljs-template-tag,
-.hljs-template-variable,
-.hljs-type,
-.hljs-addition {
+.light .hljs-string,
+.light .hljs-title,
+.light .hljs-section,
+.light .hljs-attribute,
+.light .hljs-literal,
+.light .hljs-template-tag,
+.light .hljs-template-variable,
+.light .hljs-type,
+.light .hljs-addition {
   color: #a31515;
 }
 
-.hljs-deletion,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-meta {
+.light .hljs-deletion,
+.light .hljs-selector-attr,
+.light .hljs-selector-pseudo,
+.light .hljs-meta {
   color: #2b91af;
 }
 
-.hljs-doctag {
+.light .hljs-doctag {
   color: #808080;
 }
 
-.hljs-attr {
+.light .hljs-attr {
   color: #f00;
 }
 
-.hljs-symbol,
-.hljs-bullet,
-.hljs-link {
+.light .hljs-symbol,
+.light .hljs-bullet,
+.light .hljs-link {
   color: #00b0e8;
 }
 
 
-.hljs-emphasis {
+.light .hljs-emphasis {
   font-style: italic;
 }
 
-.hljs-strong {
+.light .hljs-strong {
   font-weight: bold;
 }

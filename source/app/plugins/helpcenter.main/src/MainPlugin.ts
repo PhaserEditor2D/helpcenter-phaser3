@@ -38,18 +38,6 @@ namespace helpcenter.main {
             reg.addExtension(colibri.ui.ide.IconLoaderExtension
                 .withPluginFiles(this, [ICON_FILE_SCRIPT, ICON_LABS], true));
 
-            // themes
-
-            reg.addExtension(new colibri.ui.ide.themes.ThemeExtension({
-                dark: false,
-                id: "lightBlue",
-                classList: ["lightBlue"],
-                displayName: "Light Blue",
-                viewerForeground: controls.Controls.LIGHT_THEME.viewerForeground,
-                viewerSelectionForeground: controls.Controls.LIGHT_THEME.viewerSelectionForeground,
-                viewerSelectionBackground: controls.Controls.LIGHT_THEME.viewerSelectionBackground,
-            }));
-
             // windows
 
             reg.addExtension(

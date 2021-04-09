@@ -2,6 +2,7 @@
     "id": "helpcenter.showdown",
     "styles": [
         "highlight/styles/vs.css",
+        "highlight/styles/darcula.css",
         "highlight/custom.css"
     ],
     "scripts": [

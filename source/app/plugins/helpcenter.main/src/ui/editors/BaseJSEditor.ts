@@ -1,9 +1,12 @@
 namespace helpcenter.main.ui.editors {
 
+    import controls = colibri.ui.controls;
+
     export abstract class BaseJSEditor extends colibri.ui.ide.EditorPart {
 
         private _codeEditor: CodeMirror.Editor;
         private _scrollTo: { line: number, ch: number };
+        private _themeListener: () => void;
 
         protected abstract getInputContent(): string;
 
@@ -12,10 +15,35 @@ namespace helpcenter.main.ui.editors {
             this._codeEditor = CodeMirror(this.getElement(), {
                 mode: "javascript",
                 readOnly: true,
-                lineNumbers: true
+                lineNumbers: true,
             });
 
+            this.updateEditorWithTheme();
+
             this.updateContent();
+
+            this._themeListener = () => this.updateEditorWithTheme();
+
+            colibri.Platform.getWorkbench().eventThemeChanged.addListener(this._themeListener);
+        }
+
+        onPartClosed() {
+
+            const result = super.onPartClosed();
+
+            if (result) {
+
+                colibri.Platform.getWorkbench().eventThemeChanged.removeListener(this._themeListener);
+            }
+
+            return result;
+        }
+
+        private updateEditorWithTheme() {
+
+            const theme = controls.Controls.getTheme();
+
+            this._codeEditor.setOption("theme", theme.dark ? "darcula" : "default");
         }
 
         scrollToLine(line: number, ch: number) {
