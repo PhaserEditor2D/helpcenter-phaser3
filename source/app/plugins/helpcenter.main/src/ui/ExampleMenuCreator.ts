@@ -37,7 +37,7 @@ namespace helpcenter.main.ui {
                 menu.addAction({
                     text: "Play Example",
                     icon: MainPlugin.getInstance().getIcon(ICON_PLAY),
-                    callback: () => MainPlugin.getInstance().openExampleInWebsite(this._example)
+                    callback: () => MainPlugin.getInstance().runExample(this._example)
                 });
 
                 menu.addAction({
@@ -58,7 +58,7 @@ namespace helpcenter.main.ui {
 
                 menu.addAction({
                     text: "Open In Phaser Website",
-                    callback: () => MainPlugin.getInstance().openExampleInWebsite(this._example)
+                    callback: () => MainPlugin.getInstance().runExample(this._example)
                 });
             }
         }

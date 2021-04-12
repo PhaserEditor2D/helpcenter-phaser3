@@ -71,7 +71,7 @@ namespace helpcenter.main {
             colibri.Platform.getWorkbench().activateWindow(ui.MainWindow.ID);
         }
 
-        openExampleInWebsite(example: phaser.core.ExampleInfo) {
+        runExample(example: phaser.core.ExampleInfo) {
 
             if (example.getData().type === "file") {
 
@@ -81,6 +81,13 @@ namespace helpcenter.main {
 
                 window.open(phaser.PhaserPlugin.getInstance().getPhaserLabsUrl("/index.html?dir=" + example.getPath()));
             }
+        }
+
+        runExampleInPhaserWebsite(example: phaser.core.ExampleInfo) {
+
+            const url = phaser.PhaserPlugin.getInstance().getPhaserLabsPlayExampleUrl(example);
+
+            window.open(url);
         }
 
         openPhaserFileEditor(docEntry: phaser.core.DocEntry) {

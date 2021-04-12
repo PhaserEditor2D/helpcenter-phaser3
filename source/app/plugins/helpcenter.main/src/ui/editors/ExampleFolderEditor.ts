@@ -82,7 +82,7 @@ namespace helpcenter.main.ui.editors {
 
                 if (example) {
 
-                    MainPlugin.getInstance().openExampleInWebsite(example);
+                    MainPlugin.getInstance().runExample(example);
                 }
             });
 

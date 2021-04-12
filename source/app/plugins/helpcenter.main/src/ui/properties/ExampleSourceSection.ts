@@ -11,14 +11,15 @@ namespace helpcenter.main.ui.properties {
         createForm(parent: HTMLDivElement) {
 
             parent.classList.add("UserSelectText");
+            parent.style.rowGap = "5px";
 
             const comp = document.createElement("pre");
             comp.classList.add("SmallScrollBar");
             comp.style.whiteSpace = "pre";
             comp.style.fontFamily = "monospace";
             comp.style.overflow = "auto";
-            comp.style.maxHeight = "400px";
-            comp.style.padding = "5px";
+            comp.style.maxHeight = Math.floor(window.innerHeight / 4) + "px";
+            comp.style.margin = "5px";
 
             parent.appendChild(comp);
 
@@ -26,18 +27,7 @@ namespace helpcenter.main.ui.properties {
 
                 const obj = this.getSelectionFirstElement();
 
-                let example: phaser.core.ExampleInfo;
-
-                if (obj instanceof phaser.core.ExampleChain) {
-
-                    example = obj.example;
-
-                } else {
-
-                    example = obj;
-                }
-
-                const html = helpcenter.showdown.javascriptToHtml(example.getSource());
+                const html = helpcenter.showdown.javascriptToHtml(obj.example.getSource());
 
                 let html2 = html;
                 let scrollToId: string;

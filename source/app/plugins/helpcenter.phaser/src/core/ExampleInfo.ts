@@ -47,6 +47,11 @@ namespace helpcenter.phaser.core {
 
         }
 
+        get example() {
+
+            return this;
+        }
+
         getEditorInputExtension(): string {
 
             return ExampleEditorInputExtension.ID;

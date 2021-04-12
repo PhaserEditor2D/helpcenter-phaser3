@@ -6,6 +6,7 @@ namespace helpcenter.main.ui.properties {
 
         addSections(page: controls.properties.PropertyPage, sections: Array<controls.properties.PropertySection<any>>): void {
             sections.push(
+                new ExampleInfoSection(page),
                 new ExampleSourceSection(page),
                 new ExampleImageSection(page),
             );

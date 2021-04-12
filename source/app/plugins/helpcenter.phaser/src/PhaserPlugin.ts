@@ -138,11 +138,20 @@ namespace helpcenter.phaser {
 
         getPhaserLabsUrl(path?: string) {
 
-            //const baseUrl= "http://labs.phaser.io";
-
-            const baseUrl = "http://127.0.0.1:8080/";
+            const baseUrl = "https://labs.phaser.io";
 
             return baseUrl + (path || "");
+        }
+
+        getPhaserLabsPlayExampleUrl(example: core.ExampleInfo) {
+
+            if (example.getData().type === "file") {
+
+                return this.getPhaserLabsUrl("/view.html?src=src/" + example.getPath());
+
+            }
+
+            return this.getPhaserLabsUrl("/index.html?dir=" + example.getPath());
         }
 
         getExampleChains() {
