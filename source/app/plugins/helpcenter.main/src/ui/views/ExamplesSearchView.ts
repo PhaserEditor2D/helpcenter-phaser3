@@ -16,6 +16,16 @@ namespace helpcenter.main.ui.views {
             this._propertyProvider = new ui.properties.ExampleSectionProvider();
         }
 
+        fillContextMenu(menu: controls.Menu) {
+
+            const chain = this.getViewer().getSelectionFirstElement() as phaser.core.ExampleChain;
+
+            if (chain) {
+
+                new ExampleMenuCreator(chain.example).build(menu);
+            }
+        }
+
         protected createViewer(): colibri.ui.controls.viewers.TreeViewer {
 
             const viewer = new ExampleChainsViewer();
@@ -97,7 +107,7 @@ namespace helpcenter.main.ui.views {
 
             const tokens = showdown.javascriptToTokens(obj.line);
 
-            const styles = dark? DARK_SYNTAX_COLOR : LIGHT_SYNTAX_COLOR;
+            const styles = dark ? DARK_SYNTAX_COLOR : LIGHT_SYNTAX_COLOR;
             const theme = controls.Controls.getTheme();
 
             const codeStyles = tokens.map(token => {
@@ -109,7 +119,7 @@ namespace helpcenter.main.ui.views {
 
             return [...codeStyles, {
                 text: " " + obj.example.getPath(),
-                color: dark? "gray" : "gray"
+                color: dark ? "gray" : "gray"
             }];
         }
     }

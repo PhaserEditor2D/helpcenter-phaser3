@@ -1,7 +1,5 @@
 namespace helpcenter.main {
 
-    import controls = colibri.ui.controls;
-
     export const DOC_ENTRY_KIND_ICON_NAME = {
         "member": "symbol-variable",
         "function": "symbol-method",
@@ -15,6 +13,7 @@ namespace helpcenter.main {
     export const ICON_FILE_SCRIPT = "file-script";
     export const ICON_LABS = "experimental";
     export const ICON_HELP = "help";
+    export const ICON_PLAY = "play";
 
     export class MainPlugin extends colibri.Plugin {
 
@@ -40,7 +39,8 @@ namespace helpcenter.main {
                 .withPluginFiles(this, [
                     ICON_FILE_SCRIPT,
                     ICON_LABS,
-                    ICON_HELP
+                    ICON_HELP,
+                    ICON_PLAY
                 ], false));
 
             // windows

@@ -36,6 +36,7 @@ namespace helpcenter.main.ui {
 
                 menu.addAction({
                     text: "Play Example",
+                    icon: MainPlugin.getInstance().getIcon(ICON_PLAY),
                     callback: () => MainPlugin.getInstance().openExampleInWebsite(this._example)
                 });
 
