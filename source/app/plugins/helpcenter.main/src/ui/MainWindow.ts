@@ -53,7 +53,74 @@ namespace helpcenter.main.ui {
 
             this.getClientArea().add(splitAllLeftAndInspector);
 
+            this.initToolbar();
+
             this.layout();
+        }
+
+        private initToolbar() {
+
+            const toolbar = this.getToolbar();
+            {
+                // right area
+
+                const area = toolbar.getRightArea();
+
+                const manager = new controls.ToolbarManager(area);
+
+                manager.addAction({
+                    text: "Start",
+                    icon: colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_MENU),
+                    showText: false,
+                    callback: e => {
+
+                        const menu = new controls.Menu();
+
+                        menu.addAction({
+                            text: "Official Phaser Help",
+                            callback: () => window.open("https://newdocs.phaser.io")
+                        });
+
+                        menu.addAction({
+                            text: "Official Phaser Examples",
+                            callback: () => window.open("https://phaser.io/examples")
+                        });
+
+                        menu.addAction({
+                            text: "Phaser Website",
+                            callback: () => window.open("https://phaser.io")
+                        });
+
+                        menu.addSeparator();
+
+                        menu.addAction({
+                            text: "Light",
+                            selected: !controls.Controls.getTheme().dark,
+                            callback: () => {
+
+                                controls.Controls.setTheme(controls.Controls.LIGHT_THEME);
+                            }
+                        });
+
+                        menu.addAction({
+                            text: "Dark",
+                            selected: controls.Controls.getTheme().dark,
+                            callback: () => {
+
+                                controls.Controls.setTheme(controls.Controls.DARK_THEME);
+                            }
+                        });
+
+                        menu.addSeparator();
+
+                        menu.addAction({
+                            text: "About"
+                        });
+
+                        menu.createWithEvent(e);
+                    }
+                });
+            }
         }
 
         getEditorArea(): colibri.ui.ide.EditorArea {

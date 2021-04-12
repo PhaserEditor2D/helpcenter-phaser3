@@ -4,8 +4,8 @@ namespace helpcenter.main.ui.properties {
 
     export class ExampleInfoSection extends controls.properties.PropertySection<phaser.core.ExampleInfo | phaser.core.ExampleChain> {
 
-        constructor(page: controls.properties.PropertyPage) {
-            super(page, "helpcenter.main.ui.properties.ExampleInfoSection", "Example Info", false, false);
+        constructor(page: controls.properties.PropertyPage, id = "helpcenter.main.ui.properties.ExampleInfoSection") {
+            super(page, id, "Example Info", false, false);
         }
 
         createForm(parent: HTMLDivElement) {
@@ -14,6 +14,8 @@ namespace helpcenter.main.ui.properties {
             comp.style.gridTemplateColumns = "auto 1fr auto";
 
             {
+                // File Path
+
                 this.createLabel(comp, "File Path", "Relative path in the Phaser repository.");
 
                 const text = this.createText(comp, true);
@@ -24,12 +26,14 @@ namespace helpcenter.main.ui.properties {
                 });
 
                 this.createButton(comp, "Open", () => {
-                    
+
                     colibri.Platform.getWorkbench().openEditor(this.getSelectionFirstElement().example);
                 });
             }
 
             {
+                // Official URL
+
                 this.createLabel(comp, "Official URL", "Address to the example in the Phaser website.");
 
                 const text = this.createText(comp, true);
@@ -45,12 +49,21 @@ namespace helpcenter.main.ui.properties {
                     MainPlugin.getInstance().runExampleInPhaserWebsite(this.getSelectionFirstElement().example);
                 });
             }
+
+            {
+                // Play here
+
+                const btn = this.createButton(comp, "Play", () => {
+                    // TODO
+                });
+
+                btn.style.gridColumn = "1 / span 3";
+            }
         }
 
         canEdit(obj: any, n: number): boolean {
 
-            return obj instanceof phaser.core.ExampleChain
-                || obj instanceof phaser.core.ExampleInfo && obj.getData().type === "file";
+            return obj instanceof phaser.core.ExampleChain || obj instanceof phaser.core.ExampleInfo;
         }
 
         canEditNumber(n: number): boolean {
