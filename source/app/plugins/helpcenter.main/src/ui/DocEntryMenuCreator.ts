@@ -15,11 +15,13 @@ namespace helpcenter.main.ui {
 
             menu.addAction({
                 text: "Open In Source Editor",
+                icon: MainPlugin.getInstance().getIcon(ICON_FILE_SCRIPT),
                 callback: e => MainPlugin.getInstance().openPhaserFileEditor(this._docEntry)
             });
 
             menu.addAction({
                 text: "Open In Documentation Editor",
+                icon: MainPlugin.getInstance().getIcon(ICON_HELP),
                 callback: e => colibri.Platform.getWorkbench().openEditor(this._docEntry)
             });
         }

@@ -41,6 +41,7 @@ namespace helpcenter.main.ui {
 
                 menu.addAction({
                     text: "Open In Source Editor",
+                    icon: MainPlugin.getInstance().getIcon(ICON_FILE_SCRIPT),
                     callback: () => colibri.Platform.getWorkbench().openEditor(this._example)
                 });
 
@@ -48,6 +49,7 @@ namespace helpcenter.main.ui {
 
                 menu.addAction({
                     text: "Open In Category Editor",
+                    icon: MainPlugin.getInstance().getIcon(ICON_HELP),
                     callback: () => colibri.Platform.getWorkbench().openEditor(this._example)
                 });
 

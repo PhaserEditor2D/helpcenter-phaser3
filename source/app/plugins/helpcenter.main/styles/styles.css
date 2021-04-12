@@ -4,7 +4,7 @@
     overflow: auto;
     user-select: text !important;
     border-radius: 5px;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .jsdocArea * {

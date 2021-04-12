@@ -83,14 +83,27 @@ namespace helpcenter.main.core {
 
             for (const child of this._docEntry.getChildren()) {
 
-                const icon = MainPlugin.getInstance().getDocEntryKindIcon(child.getKind());
-                html += `<span class='IconDiv' icon-name='${icon.getName()}' style='margin-right:5px'></span>`;
+                html += this.renderMemberIcon(child);
                 html += this.renderLinkToApi(child.getFullName(), false) + "<br>";
             }
 
             if (html.length > 0) {
 
                 html = "<p><b>Members:</b></p>" + html;
+            }
+
+            return html;
+        }
+
+        private renderMemberIcon(child: phaser.core.DocEntry, rowContent?: string) {
+
+            const icon = MainPlugin.getInstance().getDocEntryKindIcon(child.getKind());
+
+            const html = `<span class='IconDiv' icon-name='${icon.getName()}' style='margin-right:5px'></span>`;
+
+            if (rowContent) {
+
+                return `<div style='display:flex'>${html}${rowContent}</div>`;
             }
 
             return html;
@@ -202,7 +215,7 @@ namespace helpcenter.main.core {
 
             name = phaser.PhaserPlugin.cleanApiName(name);
 
-            const label = fullName? name : name.split(".").pop();
+            const label = fullName ? name : name.split(".").pop();
 
             return `<a href="#" apiName='${name}' class='LinkToApi'>${label}</a>`;
         }
@@ -228,7 +241,7 @@ namespace helpcenter.main.core {
 
             name = `<span class='hljs-keyword'>${this._docEntry.getKind()}</span> ${name}`;
 
-            return `<small><b>${name}</b></small>`;
+            return this.renderMemberIcon(this._docEntry, `<small><b>${name}</b></small>`);
         }
     }
 }
