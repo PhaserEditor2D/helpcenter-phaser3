@@ -125,7 +125,9 @@ namespace helpcenter.phaser.core {
 
         getMethodSignature() {
 
-            if (this._rawEntry.kind === "function") {
+            const kind = this._rawEntry.kind;
+
+            if (kind === "function" || kind === "class") {
 
                 const params = this._rawEntry.params || [];
 

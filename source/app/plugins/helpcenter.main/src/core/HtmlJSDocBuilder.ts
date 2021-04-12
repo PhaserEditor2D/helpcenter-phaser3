@@ -33,9 +33,20 @@ namespace helpcenter.main.core {
 
             html += this.renderSubtypes();
 
+            html += this.renderMembers();
+
             html = `<div class='jsdocArea'>${html}</div>`;
 
             element.innerHTML = html;
+
+            const iconDivList = element.querySelectorAll(".IconDiv");
+
+            iconDivList.forEach((div: HTMLDivElement) => {
+
+                const iconName = div.getAttribute("icon-name");
+                const iconControl = new controls.IconControl(MainPlugin.getInstance().getIcon(iconName));
+                div.appendChild(iconControl.getCanvas());
+            });
 
             const links = element.querySelectorAll("a");
 
@@ -64,6 +75,25 @@ namespace helpcenter.main.core {
                     link.setAttribute("target", "_blank");
                 }
             });
+        }
+
+        private renderMembers() {
+
+            let html = "";
+
+            for (const child of this._docEntry.getChildren()) {
+
+                const icon = MainPlugin.getInstance().getDocEntryKindIcon(child.getKind());
+                html += `<span class='IconDiv' icon-name='${icon.getName()}' style='margin-right:5px'></span>`;
+                html += this.renderLinkToApi(child.getFullName(), false) + "<br>";
+            }
+
+            if (html.length > 0) {
+
+                html = "<p><b>Members:</b></p>" + html;
+            }
+
+            return html;
         }
 
         private renderReturns() {
@@ -168,11 +198,13 @@ namespace helpcenter.main.core {
             return html;
         }
 
-        private renderLinkToApi(name: string) {
+        private renderLinkToApi(name: string, fullName = true) {
 
             name = phaser.PhaserPlugin.cleanApiName(name);
 
-            return `<a href="#" apiName='${name}' class='LinkToApi'>${name}</a>`;
+            const label = fullName? name : name.split(".").pop();
+
+            return `<a href="#" apiName='${name}' class='LinkToApi'>${label}</a>`;
         }
 
         private renderDescription() {
