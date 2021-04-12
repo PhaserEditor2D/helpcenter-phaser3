@@ -8,7 +8,7 @@ namespace helpcenter.main.ui.views {
         static ID = "helpcenter.main.ui.views.files.FilesView";
 
         constructor() {
-            super(FilesView.ID);
+            super(FilesView.ID, false);
 
             this.setTitle("Files");
             this.setIcon(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_FOLDER));
