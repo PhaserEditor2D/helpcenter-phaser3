@@ -111,9 +111,9 @@ namespace helpcenter.main {
 
     export const VER = "1.0.0"
 
-    document.title = "Help Center v" + VER;
+    document.title = "Unofficial Phaser Help v" + VER + " - Phaser Editor 2D";
 
-    console.log("Phaser Editor 2D - Help Center - v" + VER);
+    console.log("Phaser Editor 2D - Unofficial Phaser Help - v" + VER);
 
     document.getElementById("splash-container").remove();
 
