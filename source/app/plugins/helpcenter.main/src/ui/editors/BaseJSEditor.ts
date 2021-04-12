@@ -25,6 +25,27 @@ namespace helpcenter.main.ui.editors {
             this._themeListener = () => this.updateEditorWithTheme();
 
             colibri.Platform.getWorkbench().eventThemeChanged.addListener(this._themeListener);
+
+            this._codeEditor.getWrapperElement().addEventListener("contextmenu", e => {
+
+                const menu = new controls.Menu();
+
+                this.fillContextMenu(menu);
+
+                if (!menu.isEmpty()) {
+
+                    menu.createWithEvent(e);
+                }
+            });
+        }
+
+        protected fillContextMenu(menu: controls.Menu): void {
+            // nothing
+        }
+
+        getCodeEditor() {
+
+            return this._codeEditor;
         }
 
         onPartClosed() {

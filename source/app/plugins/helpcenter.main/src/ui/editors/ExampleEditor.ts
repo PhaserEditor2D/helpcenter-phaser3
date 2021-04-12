@@ -67,6 +67,11 @@ namespace helpcenter.main.ui.editors {
             return super.getInput() as phaser.core.ExampleInfo;
         }
 
+        fillContextMenu(menu: controls.Menu) {
+
+            new ExampleMenuCreator(this.getInput().example).build(menu);
+        }
+
         createPart() {
 
             super.createPart();

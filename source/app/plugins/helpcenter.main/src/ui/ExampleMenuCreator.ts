@@ -35,16 +35,19 @@ namespace helpcenter.main.ui {
             if (this._example.getData().type === "file") {
 
                 menu.addAction({
-                    text: "Play Example",
+                    text: "Play",
                     icon: MainPlugin.getInstance().getIcon(ICON_PLAY),
                     callback: () => MainPlugin.getInstance().runExample(this._example)
                 });
 
-                menu.addAction({
-                    text: "Open In Source Editor",
-                    icon: MainPlugin.getInstance().getIcon(ICON_FILE_SCRIPT),
-                    callback: () => colibri.Platform.getWorkbench().openEditor(this._example)
-                });
+                if (!(colibri.Platform.getWorkbench().getActivePart() instanceof editors.ExampleEditor)) {
+
+                    menu.addAction({
+                        text: "Open In Source Editor",
+                        icon: MainPlugin.getInstance().getIcon(ICON_FILE_SCRIPT),
+                        callback: () => colibri.Platform.getWorkbench().openEditor(this._example)
+                    });
+                }
 
             } else {
 
@@ -55,12 +58,12 @@ namespace helpcenter.main.ui {
                 });
 
                 menu.addSeparator();
-
-                menu.addAction({
-                    text: "Open In Phaser Website",
-                    callback: () => MainPlugin.getInstance().runExample(this._example)
-                });
             }
+
+            menu.addAction({
+                text: "Play In Phaser Website",
+                callback: () => MainPlugin.getInstance().runExampleInPhaserWebsite(this._example)
+            });
         }
     }
 }
