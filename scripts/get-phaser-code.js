@@ -7,7 +7,6 @@ const phaserHome = process.env["PHASER_PATH"];
 
 console.log("Phaser Home: " + phaserHome)
 
-const root = path.join(phaserHome, "phaser/src");
 
 const data = {};
 
@@ -26,11 +25,13 @@ function readDir(folder) {
 
         const stat = fs.statSync(fullPath);
 
-        const relPath = path.relative(root, fullPath);
+        const relPath = path.relative(phaserHome, fullPath);
 
         if (stat.isFile()) {
 
             const source = fs.readFileSync(fullPath).toString();
+
+            console.log("Store " + relPath);
 
             data[relPath] = source;
 
@@ -41,6 +42,7 @@ function readDir(folder) {
     }
 }
 
-readDir(root);
+readDir(path.join(phaserHome, "phaser/src"));
+readDir(path.join(phaserHome, "phaser/plugins/fbinstant/src"));
 
 fs.writeFileSync(path.join("../source/app/plugins/helpcenter.phaser/data/phaser-code.json"), JSON.stringify(data, null, 2));

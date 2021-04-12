@@ -44,8 +44,8 @@ for (const entry of inputData.docs) {
     delete meta.code;
 
     meta.path = meta.path.split("\\").join("/");
-    const i = meta.path.indexOf("/src");
-    meta.path = meta.path.substring(i + 5);
+    const i = meta.path.indexOf("/phaser");
+    meta.path = meta.path.substring(i + 1);
 
     if (meta.path.trim() === "") {
 
