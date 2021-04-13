@@ -54,7 +54,8 @@ namespace helpcenter.main.ui.properties {
                 // Play here
 
                 const btn = this.createButton(comp, "Play", () => {
-                    // TODO
+
+                    MainPlugin.getInstance().runExample(this.getSelectionFirstElement().example);
                 });
 
                 btn.style.gridColumn = "1 / span 3";

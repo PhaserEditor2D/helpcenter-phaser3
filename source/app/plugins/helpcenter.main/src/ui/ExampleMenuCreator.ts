@@ -32,6 +32,8 @@ namespace helpcenter.main.ui {
 
         build(menu: controls.Menu) {
 
+            const wb = colibri.Platform.getWorkbench();
+
             if (this._example.getData().type === "file") {
 
                 menu.addAction({
@@ -40,7 +42,7 @@ namespace helpcenter.main.ui {
                     callback: () => MainPlugin.getInstance().runExample(this._example)
                 });
 
-                if (!(colibri.Platform.getWorkbench().getActivePart() instanceof editors.ExampleEditor)) {
+                if (!(wb.getActivePart() instanceof editors.ExampleEditor)) {
 
                     menu.addAction({
                         text: "Open In Source Editor",
@@ -49,15 +51,25 @@ namespace helpcenter.main.ui {
                     });
                 }
 
+                if (!(wb.getActivePart() instanceof editors.ExampleFolderEditor)) {
+
+                    menu.addAction({
+                        text: "Open In Examples Folder Editor",
+                        callback: () => {
+
+                            const editor = wb.openEditor(this._example.getParent()) as editors.ExampleFolderEditor;
+                            editor.getViewer().setSelection([this._example]);
+                            editor.getViewer().reveal(this._example);
+                        }
+                    });
+                }
+
             } else {
 
                 menu.addAction({
-                    text: "Open In Category Editor",
-                    icon: MainPlugin.getInstance().getIcon(ICON_HELP),
+                    text: "Open In Examples Folder Editor",
                     callback: () => colibri.Platform.getWorkbench().openEditor(this._example)
                 });
-
-                menu.addSeparator();
             }
 
             menu.addAction({

@@ -41,6 +41,12 @@ namespace helpcenter.main.ui.views {
             viewer.setCellSize(32, true);
             viewer.setInput(phaser.PhaserPlugin.getInstance().getExampleChains());
 
+            viewer.eventOpenItem.addListener((chain: phaser.core.ExampleChain) => {
+
+                const editor = colibri.Platform.getWorkbench().openEditor(chain.example) as editors.ExampleEditor;
+                editor.scrollToLine(chain.lineNumber, 0);
+            });
+
             return viewer;
         }
 
