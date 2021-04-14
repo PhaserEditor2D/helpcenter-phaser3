@@ -22,7 +22,7 @@ namespace helpcenter.main.ui.dialogs {
                 // Phaser Labs URL
 
                 const infoLabel = document.createElement("i");
-                infoLabel.innerHTML = "Write a custom URL, like <code>http://localhost:8080</code>. "
+                infoLabel.innerHTML = "Write a custom URL, like <code>http://127.0.0.1:8080</code>. "
                     + "Leave a blank value to restore the default URL.";
                 infoLabel.style.gridColumn = "1 / span 2";
                 infoLabel.style.marginTop = "10px";
