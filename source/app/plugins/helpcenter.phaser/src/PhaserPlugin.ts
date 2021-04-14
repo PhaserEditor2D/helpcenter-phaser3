@@ -2,6 +2,8 @@ namespace helpcenter.phaser {
 
     export const PHASER_VER = "3.24.1";
 
+    export const DEFAULT_PHASER_LABS_URL = "https://labs.phaser.io";
+
     export const DOC_ENTRY_KIND_LIST = ["namespace", "class", "typedef", "constant", "event", "member", "function"];
 
     export class PhaserPlugin extends colibri.Plugin {
@@ -138,9 +140,28 @@ namespace helpcenter.phaser {
 
         getPhaserLabsUrl(path?: string) {
 
-            const baseUrl = "https://labs.phaser.io";
+            let storeUrl = window.localStorage.getItem("phaser-labs-url") || DEFAULT_PHASER_LABS_URL;
+
+            if (storeUrl && storeUrl.trim().length === 0) {
+
+                storeUrl = DEFAULT_PHASER_LABS_URL;
+            }
+
+            const baseUrl = storeUrl || DEFAULT_PHASER_LABS_URL;
 
             return baseUrl + (path || "");
+        }
+
+        setPhaserLabsUrl(url: string) {
+
+            url = url.trim();
+
+            if (url.endsWith("/")) {
+
+                url = url.substring(0, url.length - 2);
+            }
+
+            window.localStorage.setItem("phaser-labs-url", url);
         }
 
         getPhaserLabsPlayExampleUrl(example: core.ExampleInfo) {

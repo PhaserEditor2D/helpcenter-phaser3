@@ -71,21 +71,20 @@ namespace helpcenter.main {
             colibri.Platform.getWorkbench().activateWindow(ui.MainWindow.ID);
         }
 
-        runExample(example: phaser.core.ExampleInfo) {
+        playExample(example: phaser.core.ExampleInfo) {
+
+            let url: string;
 
             if (example.getData().type === "file") {
 
-                window.open(phaser.PhaserPlugin.getInstance().getPhaserLabsUrl("/view.html?src=src/" + example.getPath()));
+                url = phaser.PhaserPlugin.getInstance().getPhaserLabsUrl("/view.html?src=src/" + example.getPath());
 
             } else {
 
-                window.open(phaser.PhaserPlugin.getInstance().getPhaserLabsUrl("/index.html?dir=" + example.getPath()));
+                url = phaser.PhaserPlugin.getInstance().getPhaserLabsUrl("/index.html?dir=" + example.getPath());
             }
-        }
 
-        runExampleInPhaserWebsite(example: phaser.core.ExampleInfo) {
-
-            const url = phaser.PhaserPlugin.getInstance().getPhaserLabsPlayExampleUrl(example);
+            console.log("Opening " + url);
 
             window.open(url);
         }

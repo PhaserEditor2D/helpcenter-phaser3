@@ -88,7 +88,7 @@ namespace helpcenter.main.ui.editors {
                 icon: MainPlugin.getInstance().getIcon(ICON_PLAY),
                 callback: () => {
 
-                    MainPlugin.getInstance().runExample(this.getInput().example);
+                    MainPlugin.getInstance().playExample(this.getInput().example);
                 }
             });
 

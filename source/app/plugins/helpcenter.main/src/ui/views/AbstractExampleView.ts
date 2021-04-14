@@ -46,7 +46,7 @@ namespace helpcenter.main.ui.views {
 
                     if (example.getData().type === "file") {
 
-                        MainPlugin.getInstance().runExample(example);
+                        MainPlugin.getInstance().playExample(example);
 
                     } else {
 

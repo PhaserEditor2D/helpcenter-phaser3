@@ -32,30 +32,11 @@ namespace helpcenter.main.ui.properties {
             }
 
             {
-                // Official URL
-
-                this.createLabel(comp, "Official URL", "Address to the example in the Phaser website.");
-
-                const text = this.createText(comp, true);
-
-                this.addUpdater(() => {
-
-                    text.value = phaser.PhaserPlugin.getInstance()
-                        .getPhaserLabsPlayExampleUrl(this.getSelectionFirstElement().example);
-                });
-
-                this.createButton(comp, "Open", () => {
-
-                    MainPlugin.getInstance().runExampleInPhaserWebsite(this.getSelectionFirstElement().example);
-                });
-            }
-
-            {
                 // Play here
 
                 const btn = this.createButton(comp, "Play", () => {
 
-                    MainPlugin.getInstance().runExample(this.getSelectionFirstElement().example);
+                    MainPlugin.getInstance().playExample(this.getSelectionFirstElement().example);
                 });
 
                 btn.style.gridColumn = "1 / span 3";

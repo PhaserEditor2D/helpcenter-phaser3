@@ -34,13 +34,13 @@ namespace helpcenter.main.ui {
 
             const wb = colibri.Platform.getWorkbench();
 
-            if (this._example.getData().type === "file") {
+            menu.addAction({
+                text: "Play",
+                icon: MainPlugin.getInstance().getIcon(ICON_PLAY),
+                callback: () => MainPlugin.getInstance().playExample(this._example)
+            });
 
-                menu.addAction({
-                    text: "Play",
-                    icon: MainPlugin.getInstance().getIcon(ICON_PLAY),
-                    callback: () => MainPlugin.getInstance().runExample(this._example)
-                });
+            if (this._example.getData().type === "file") {
 
                 if (!(wb.getActivePart() instanceof editors.ExampleEditor)) {
 
@@ -71,11 +71,6 @@ namespace helpcenter.main.ui {
                     callback: () => colibri.Platform.getWorkbench().openEditor(this._example)
                 });
             }
-
-            menu.addAction({
-                text: "Play In Phaser Website",
-                callback: () => MainPlugin.getInstance().runExampleInPhaserWebsite(this._example)
-            });
         }
     }
 }

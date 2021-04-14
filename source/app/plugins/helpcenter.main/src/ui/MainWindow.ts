@@ -114,6 +114,11 @@ namespace helpcenter.main.ui {
                         menu.addSeparator();
 
                         menu.addAction({
+                            text: "Settings",
+                            callback: () => new dialogs.SettingsDialog().create()
+                        });
+
+                        menu.addAction({
                             text: "About"
                         });
 
