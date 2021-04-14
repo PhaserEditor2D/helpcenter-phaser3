@@ -13,7 +13,7 @@ namespace helpcenter.main.ui.views {
             this.setTitle("API");
             this.setIcon(MainPlugin.getInstance().getDocEntryKindIcon("namespace"));
 
-            this._flatLayout = false;
+            this._flatLayout = window.localStorage.getItem("helper.main.ui.views.ApiView.layout") === "flat";
         }
 
         protected createViewer(): controls.viewers.TreeViewer {
@@ -38,6 +38,9 @@ namespace helpcenter.main.ui.views {
                 callback: () => {
 
                     this._flatLayout = true;
+
+                    window.localStorage.setItem("helper.main.ui.views.ApiView.layout", "flat");
+
                     this.updateViewer();
                 }
             });
@@ -48,6 +51,9 @@ namespace helpcenter.main.ui.views {
                 callback: () => {
 
                     this._flatLayout = false;
+
+                    window.localStorage.setItem("helper.main.ui.views.ApiView.layout", "tree");
+
                     this.updateViewer();
                 }
             });
