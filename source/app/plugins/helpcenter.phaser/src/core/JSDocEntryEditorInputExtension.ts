@@ -10,12 +10,12 @@ namespace helpcenter.phaser.core {
         static ID = "helpcenter.main.ui.editors.DocEntryEditorInputExtension";
 
         constructor() {
-            super(PhaserFileEditorInputExtension.ID);
+            super(JSDocEntryEditorInputExtension.ID);
         }
 
         createEditorInput(state: IDocEntryEditorInputState): colibri.ui.ide.IEditorInput {
 
-            return PhaserPlugin.getInstance().getPhaserFile(state.fullName);
+            return PhaserPlugin.getInstance().getDocEntry(state.fullName);
         }
 
         getEditorInputState(input: DocEntry): IDocEntryEditorInputState {

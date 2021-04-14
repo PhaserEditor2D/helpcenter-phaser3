@@ -81,8 +81,6 @@ namespace helpcenter.main.ui {
 
             colibri.Platform.getWorkbench().eventPartActivated.addListener(() => {
 
-                console.log("saving here");
-                console.log(this._editorArea.getEditors().length);
                 this.saveWindowState();
             });
 

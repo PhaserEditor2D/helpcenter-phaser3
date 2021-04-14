@@ -16,7 +16,7 @@ namespace helpcenter.main.ui.editors {
 
         getName() {
 
-            return "Phaser File Editor";
+            return "JSDoc Editor";
         }
     }
 
@@ -49,6 +49,8 @@ namespace helpcenter.main.ui.editors {
             this._themeListener = () => this.updateContent();
 
             colibri.Platform.getWorkbench().eventThemeChanged.addListener(this._themeListener);
+
+            requestAnimationFrame(() => this.layout());
         }
 
         onPartClosed() {
