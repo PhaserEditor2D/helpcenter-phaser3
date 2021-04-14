@@ -127,7 +127,7 @@ namespace helpcenter.phaser.core {
 
             const kind = this._rawEntry.kind;
 
-            if (kind === "function" || kind === "class") {
+            if (kind === "function") {
 
                 const params = this._rawEntry.params || [];
 
