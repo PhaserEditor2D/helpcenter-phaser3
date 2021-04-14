@@ -216,8 +216,11 @@ namespace helpcenter.main.ui.views {
                         + child.getMethodSignature()
                         + child.getReturnsTypeSignature();
 
+                    const classMember = ["member", "function"].indexOf(child.getKind()) >= 0;
 
-                    chain.label = child.getKind() + " " + baseLabel;
+                    const inheritedState = classMember ? (child.getRawEntry().inherited ? "#i" : "#d") : "";
+
+                    chain.label = child.getKind() + " " + baseLabel + " " + inheritedState;
                     chain.countDots = chain.label.split("").filter(c => c === ".").length;
 
                     chain.lightStyledLabel = [{
@@ -236,6 +239,9 @@ namespace helpcenter.main.ui.views {
                     }, {
                         text: child.getReturnsTypeSignature(),
                         color: LIGHT_SYNTAX_COLOR.returnTypeSignature
+                    }, {
+                        text: " " + inheritedState,
+                        color: "cadetBlue"
                     }];
 
                     chain.darkStyledLabel = [{
@@ -254,6 +260,9 @@ namespace helpcenter.main.ui.views {
                     }, {
                         text: child.getReturnsTypeSignature(),
                         color: DARK_SYNTAX_COLOR.returnTypeSignature
+                    }, {
+                        text: " " + inheritedState,
+                        color: "bisque"
                     }];
 
                     chain.lightStyledLabel = chain.lightStyledLabel.filter(s => s.text.length > 0);
