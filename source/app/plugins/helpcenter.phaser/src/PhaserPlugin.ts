@@ -164,12 +164,11 @@ namespace helpcenter.phaser {
             window.localStorage.setItem("phaser-labs-url", url);
         }
 
-        getPhaserLabsPlayExampleUrl(example: core.ExampleInfo) {
+        getPhaserLabsPlayExampleUrl(example: core.ExampleInfo, page: "view"|"mobile"|"edit" = "view") {
 
             if (example.getData().type === "file") {
 
-                return this.getPhaserLabsUrl("/view.html?src=src/" + example.getPath());
-
+                return this.getPhaserLabsUrl(`/${page}.html?src=src/${example.getPath()}`);
             }
 
             return this.getPhaserLabsUrl("/index.html?dir=" + example.getPath());

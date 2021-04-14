@@ -86,7 +86,10 @@ namespace helpcenter.main {
 
             console.log("Opening " + url);
 
-            window.open(url);
+            // window.open(url);
+
+            const dlg = new ui.dialogs.PlayDialog(example);
+            dlg.create();
         }
 
         openPhaserFileEditor(docEntry: phaser.core.DocEntry) {
