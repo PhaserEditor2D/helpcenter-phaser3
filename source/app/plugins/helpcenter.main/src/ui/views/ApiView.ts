@@ -13,7 +13,8 @@ namespace helpcenter.main.ui.views {
             this.setTitle("API");
             this.setIcon(MainPlugin.getInstance().getDocEntryKindIcon("namespace"));
 
-            this._flatLayout = window.localStorage.getItem("helper.main.ui.views.ApiView.layout") === "flat";
+            const layout = window.localStorage.getItem("helper.main.ui.views.ApiView.layout");
+            this._flatLayout = !layout || layout === "flat";
         }
 
         protected createViewer(): controls.viewers.TreeViewer {
