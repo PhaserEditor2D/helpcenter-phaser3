@@ -104,6 +104,41 @@ namespace helpcenter.main.ui.editors {
             }
         }
 
+        createEditorToolbar(parent: HTMLElement) {
+
+            const toolbar = new controls.ToolbarManager(parent);
+
+            toolbar.addAction({
+                text: "Play",
+                icon: MainPlugin.getInstance().getIcon(ICON_PLAY),
+                callback: () => {
+
+                    const example = this.getViewer().getSelectionFirstElement() as phaser.core.ExampleInfo;
+
+                    if (example) {
+
+                        MainPlugin.getInstance().playExample(example);
+                    }
+                }
+            });
+
+            toolbar.addAction({
+                text: "Source",
+                icon: MainPlugin.getInstance().getIcon(ICON_FILE_SCRIPT),
+                callback: () => {
+
+                    const example = this.getViewer().getSelectionFirstElement() as phaser.core.ExampleInfo;
+
+                    if (example) {
+
+                        colibri.Platform.getWorkbench().openEditor(example);
+                    }
+                }
+            });
+
+            return toolbar;
+        }
+
         getViewer() {
             return this._viewer;
         }
