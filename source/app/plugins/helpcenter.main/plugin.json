@@ -1,7 +1,6 @@
 {
     "id": "helpcenter.main",
     "styles": [
-        "styles/lightBlue.css",
         "styles/styles.css"
     ],
     "scripts": [        

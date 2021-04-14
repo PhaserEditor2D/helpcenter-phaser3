@@ -1,5 +1,7 @@
 namespace helpcenter.main {
 
+    import controls = colibri.ui.controls;
+
     export const DOC_ENTRY_KIND_ICON_NAME = {
         "member": "symbol-variable",
         "function": "symbol-method",

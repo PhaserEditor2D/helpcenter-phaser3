@@ -54,7 +54,7 @@ namespace helpcenter.phaser.core {
 
         getEditorInputExtension(): string {
 
-            return ExampleEditorInputExtension.ID;
+            return ExampleFolderEditorInputExtension.ID;
         }
 
         getChildren() {

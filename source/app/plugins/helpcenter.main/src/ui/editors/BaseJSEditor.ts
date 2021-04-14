@@ -37,6 +37,8 @@ namespace helpcenter.main.ui.editors {
                     menu.createWithEvent(e);
                 }
             });
+
+            requestAnimationFrame(() => this.layout());
         }
 
         protected fillContextMenu(menu: controls.Menu): void {

@@ -169,36 +169,36 @@ namespace helpcenter.main.ui.editors {
 
             if (input) {
 
+                const examples: phaser.core.ExampleInfo[] = [];
+                this.getAllExamples(input, examples);
+
+                let images = examples
+                    .map(e => phaser.PhaserPlugin.getInstance().getExampleImageReader().getImage(e.getPath()))
+                    .filter(e => e !== undefined)
+
+                if (images.length > 0) {
+
+                    images = [
+                        images[0],
+                        images[Math.floor(images.length * 0.25)],
+                        images[Math.floor(images.length * 0.75)],
+                        images[Math.floor(images.length - 1)]
+                    ];
+                }
+
+                this.setIcon(new controls.MultiImage(images, 128, 128));
+
+                this.setTitle(input.getName());
+
                 if (this._viewer) {
 
                     const sections = [];
                     this.buildSections(input, sections);
 
-                    const examples: phaser.core.ExampleInfo[] = [];
-                    this.getAllExamples(input, examples);
-
                     this._gridRenderer.setSectionCriteria(s => sections.indexOf(s) >= 0);
                     this._viewer.setContentProvider(new ExampleFolderContentProvider(examples));
                     this._viewer.setInput([]);
-
-                    let images = examples
-                        .map(e => phaser.PhaserPlugin.getInstance().getExampleImageReader().getImage(e.getPath()))
-                        .filter(e => e !== undefined)
-
-                    if (images.length > 0) {
-
-                        images = [
-                            images[0],
-                            images[Math.floor(images.length * 0.25)],
-                            images[Math.floor(images.length * 0.75)],
-                            images[Math.floor(images.length - 1)]
-                        ];
-                    }
-
-                    this.setIcon(new controls.MultiImage(images, 128, 128));
                 }
-
-                this.setTitle(input.getName());
             }
         }
 

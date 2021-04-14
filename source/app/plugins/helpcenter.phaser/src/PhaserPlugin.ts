@@ -125,7 +125,7 @@ namespace helpcenter.phaser {
 
             reg.addExtension(new core.PhaserFileEditorInputExtension());
             reg.addExtension(new core.JSDocEntryEditorInputExtension());
-            reg.addExtension(new core.ExampleEditorInputExtension());
+            reg.addExtension(new core.ExampleFolderEditorInputExtension());
         }
 
         private buildExamplesMap(examples: core.ExampleInfo[]) {

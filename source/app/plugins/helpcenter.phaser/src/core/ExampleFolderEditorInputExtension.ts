@@ -5,12 +5,12 @@ namespace helpcenter.phaser.core {
         path: string;
     }
 
-    export class ExampleEditorInputExtension extends colibri.ui.ide.EditorInputExtension {
+    export class ExampleFolderEditorInputExtension extends colibri.ui.ide.EditorInputExtension {
 
-        static ID = "helpcenter.main.ui.editors.ExampleEditorInputExtension";
+        static ID = "helpcenter.main.ui.editors.ExampleFolderEditorInputExtension";
 
         constructor() {
-            super(PhaserFileEditorInputExtension.ID);
+            super(ExampleFolderEditorInputExtension.ID);
         }
 
         createEditorInput(state: IExampleEditorInputState): colibri.ui.ide.IEditorInput {

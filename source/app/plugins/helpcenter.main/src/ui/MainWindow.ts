@@ -18,6 +18,21 @@ namespace helpcenter.main.ui {
             super(MainWindow.ID);
         }
 
+        private saveWindowState() {
+
+            this.saveState(colibri.Platform.getWorkbench().getGlobalPreferences());
+        }
+
+        saveState(prefs: colibri.core.preferences.Preferences) {
+
+            this.saveEditorsState(prefs);
+        }
+
+        restoreState(prefs: colibri.core.preferences.Preferences) {
+
+            this.restoreEditors(prefs);
+        }
+
         protected createParts() {
 
             this._editorArea = new colibri.ui.ide.EditorArea();
@@ -56,6 +71,25 @@ namespace helpcenter.main.ui {
             this.initToolbar();
 
             this.layout();
+
+            this.initStateEvents();
+        }
+
+        private initStateEvents() {
+
+            this.restoreState(colibri.Platform.getWorkbench().getGlobalPreferences());
+
+            colibri.Platform.getWorkbench().eventPartActivated.addListener(() => {
+
+                console.log("saving here");
+                console.log(this._editorArea.getEditors().length);
+                this.saveWindowState();
+            });
+
+            window.addEventListener("beforeunload", e => {
+
+                this.saveWindowState();
+            });
         }
 
         private initToolbar() {
