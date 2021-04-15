@@ -1,5 +1,8 @@
-- About dialog.
-- Context menu for Reveal examples and Api items.
+- Context menu for reveal examples and Api items.
+- Social header tags.
+- PWA support.
+- Script for getting the examples icons as texture atlas.
+- Script for create the build.
 - Check example Camera > Multi Camera > Boot. It is a json file I guess is used to say it is an example with multiple files.
 - Parse {@link http://some.url}
 - The Versions view.
