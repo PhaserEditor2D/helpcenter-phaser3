@@ -24,6 +24,16 @@ namespace helpcenter.main.ui {
                 icon: MainPlugin.getInstance().getIcon(ICON_HELP),
                 callback: e => colibri.Platform.getWorkbench().openEditor(this._docEntry)
             });
+
+            if (!(colibri.Platform.getWorkbench().getActivePart() instanceof views.ApiView)) {
+
+                menu.addAction({
+                    text: "Reveal In API View",
+                    icon: MainPlugin.getInstance().getDocEntryKindIcon("namespace"),
+                    callback: () => (colibri.Platform.getWorkbench().getActiveWindow() as ui.MainWindow)
+                        .getApiView().getViewer().revealAndSelect(this._docEntry)
+                });
+            }
         }
     }
 }

@@ -77,6 +77,7 @@ namespace helpcenter.main.ui {
 
                 menu.addAction({
                     text: "Reveal In Examples View",
+                    icon: MainPlugin.getInstance().getIcon(ICON_LABS),
                     callback: () => {
 
                         const win = wb.getActiveWindow() as ui.MainWindow;
