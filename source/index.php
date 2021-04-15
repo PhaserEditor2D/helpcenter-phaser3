@@ -1,5 +1,7 @@
 <?php
 
+$EDITOR_VER = "1.0.0";
+
 $renderInfoArray = array();
 
 // read plugins config

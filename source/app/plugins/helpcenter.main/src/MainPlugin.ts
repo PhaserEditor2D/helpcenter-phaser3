@@ -119,8 +119,6 @@ namespace helpcenter.main {
 
     console.log("Phaser Editor 2D - Unofficial Phaser Help - v" + VER);
 
-    document.getElementById("splash-container").remove();
-
     async function main() {
 
         colibri.ui.controls.dialogs.AlertDialog.replaceConsoleAlert();

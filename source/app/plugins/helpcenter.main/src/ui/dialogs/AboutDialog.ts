@@ -4,7 +4,9 @@ namespace helpcenter.main.ui.dialogs {
 
     export class AboutDialog extends controls.dialogs.Dialog {
 
-
+        constructor() {
+            super();
+        }
         createDialogArea() {
 
             const clientArea = document.createElement("div");
@@ -13,10 +15,14 @@ namespace helpcenter.main.ui.dialogs {
             clientArea.style.height = "min-content";
             clientArea.style.width = "auto";
             clientArea.innerHTML = `
-            <h3><center>Unofficial Phaser Help Center</center></h3>
-            <p>A tool for browsing the Phaser docs and examples.</p>
-            <p>Developed by the <a href="https://phasereditor2d.com">Phaser Editor 2D team</a></p>
-            <p>GitHub: <a href="https://github.com/PhaserEditor2D/helpcenter-phaser3">helpcenter-phaser3</a></p>
+            <center>
+                <img src="app/favicon.png">
+                <h4>Unofficial Phaser Help Center</h4>
+                A tool for browsing the <a https://phaser.io>Phaser</a> docs and examples.
+                Developed by the <a href="https://phasereditor2d.com">Phaser Editor 2D team</a>
+                <p>GitHub: <a href="https://github.com/PhaserEditor2D/helpcenter-phaser3">helpcenter-phaser3</a></p>
+                <small>*The examples and docs data are taken from the Phaser repositories</small>
+            </center>
             `;
 
             this.getElement().appendChild(clientArea);

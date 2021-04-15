@@ -3,9 +3,9 @@
 - Script for getting the examples icons as texture atlas.
 - Script for create the build.
 - Check example Camera > Multi Camera > Boot. It is a json file I guess is used to say it is an example with multiple files.
+
 - Parse {@link http://some.url}
 - The Versions view.
-
 - A welcome editor.
 - The JSDocEditor inspector should show links to open the doc entry in editors, views and websites.
 - API view: allow hide/show inherited members.
