@@ -33,6 +33,7 @@ namespace helpcenter.main.ui {
         build(menu: controls.Menu) {
 
             const wb = colibri.Platform.getWorkbench();
+            const activePart = wb.getActivePart();
 
             menu.addAction({
                 text: "Play",
@@ -42,7 +43,7 @@ namespace helpcenter.main.ui {
 
             if (this._example.getData().type === "file") {
 
-                if (!(wb.getActivePart() instanceof editors.ExampleEditor)) {
+                if (!(activePart instanceof editors.ExampleEditor)) {
 
                     menu.addAction({
                         text: "Open In Source Editor",
@@ -51,7 +52,7 @@ namespace helpcenter.main.ui {
                     });
                 }
 
-                if (!(wb.getActivePart() instanceof editors.ExampleFolderEditor)) {
+                if (!(activePart instanceof editors.ExampleFolderEditor)) {
 
                     menu.addAction({
                         text: "Open In Examples Folder Editor",
@@ -69,6 +70,19 @@ namespace helpcenter.main.ui {
                 menu.addAction({
                     text: "Open In Examples Folder Editor",
                     callback: () => colibri.Platform.getWorkbench().openEditor(this._example)
+                });
+            }
+
+            if (!(activePart instanceof views.ExamplesView)) {
+
+                menu.addAction({
+                    text: "Reveal In Examples View",
+                    callback: () => {
+
+                        const win = wb.getActiveWindow() as ui.MainWindow;
+
+                        win.getExamplesView().getViewer().revealAndSelect(this._example);
+                    }
                 });
             }
         }

@@ -18,6 +18,16 @@ namespace helpcenter.main.ui {
             super(MainWindow.ID);
         }
 
+        getApiView() {
+
+            return this._apiView;
+        }
+
+        getExamplesView() {
+
+            return this._examplesView;
+        }
+
         private saveWindowState() {
 
             this.saveState(colibri.Platform.getWorkbench().getGlobalPreferences());

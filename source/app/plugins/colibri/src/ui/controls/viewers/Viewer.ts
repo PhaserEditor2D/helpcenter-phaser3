@@ -338,7 +338,9 @@ namespace colibri.ui.controls.viewers {
             }
         }
 
-        abstract reveal(...objects: any[]): void;
+        abstract reveal(...objects: any[]): Promise<void>;
+
+        abstract revealAndSelect(...objects: any[]): Promise<void>;
 
         private fireSelectionChanged() {
 

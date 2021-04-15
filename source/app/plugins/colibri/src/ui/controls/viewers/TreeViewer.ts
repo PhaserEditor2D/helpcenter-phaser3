@@ -109,6 +109,13 @@ namespace colibri.ui.controls.viewers {
             return icon === null;
         }
 
+        async revealAndSelect(...objects: any[]): Promise<void> {
+
+            await this.reveal(...objects);
+
+            this.setSelection(objects);
+        }
+
         async reveal(...objects: any[]): Promise<void> {
 
             for (const obj of objects) {
