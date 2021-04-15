@@ -103,9 +103,9 @@ namespace colibri.ui.controls.viewers {
             return this._flat;
         }
 
-        paint() {
+        paint(fullPaint: boolean) {
 
-            const result = super.paint();
+            const result = super.paint(fullPaint);
 
             result.contentHeight += 10;
 
@@ -115,6 +115,7 @@ namespace colibri.ui.controls.viewers {
         protected paintItems(
             objects: any[], treeIconList: TreeIconInfo[], paintItems: PaintItem[],
             parentPaintItem: PaintItem, x: number, y: number) {
+
             const viewer = this.getViewer();
 
             let cellSize = viewer.getCellSize();
@@ -300,7 +301,7 @@ namespace colibri.ui.controls.viewers {
                             }
                         }
 
-                        if (isItemVisible) {
+                        if (isItemVisible || this._fullPaint) {
 
                             const item = new PaintItem(paintItems.length, obj, parentPaintItem, isItemVisible);
 

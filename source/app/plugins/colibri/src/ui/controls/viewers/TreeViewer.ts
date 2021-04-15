@@ -128,7 +128,7 @@ namespace colibri.ui.controls.viewers {
 
             const scrollPane = this.getContainer().getContainer() as ScrollPane;
 
-            await this.repaint();
+            await this.repaint(true);
 
             const objSet = new Set(objects);
 
@@ -296,9 +296,9 @@ namespace colibri.ui.controls.viewers {
             }
         }
 
-        protected paint(): void {
+        protected paint(fullPaint: boolean): void {
 
-            const result = this._treeRenderer.paint();
+            const result = this._treeRenderer.paint(fullPaint);
 
             this._contentHeight = result.contentHeight;
             this._paintItems = result.paintItems;
