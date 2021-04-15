@@ -402,8 +402,6 @@ namespace colibri.ui.controls.viewers {
                 return;
             }
 
-            this.repaintNow(true);
-
             const item = this.getPaintItemAt(e);
 
             let selChanged = false;
@@ -444,6 +442,8 @@ namespace colibri.ui.controls.viewers {
                             const start = Math.min(this._lastSelectedItemIndex, item.index);
                             const end = Math.max(this._lastSelectedItemIndex, item.index);
 
+                            this.repaintNow(true);
+
                             for (let i = start; i <= end; i++) {
 
                                 const obj = this._paintItems[i].data;
@@ -463,7 +463,7 @@ namespace colibri.ui.controls.viewers {
 
             if (selChanged) {
 
-                this.repaint(true);
+                this.repaint();
 
                 this.fireSelectionChanged();
 
