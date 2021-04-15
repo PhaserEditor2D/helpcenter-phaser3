@@ -151,7 +151,11 @@ namespace helpcenter.main.ui {
                         });
 
                         menu.addAction({
-                            text: "About"
+                            text: "About",
+                            callback: () => {
+
+                                new dialogs.AboutDialog().create();
+                            }
                         });
 
                         menu.createWithEvent(e);
