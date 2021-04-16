@@ -5,6 +5,7 @@ namespace helpcenter.main.ui.views {
     export class ApiView extends AbstractPhaserView {
         static ID = "helpcenter.main.ui.views.classes.NamespaceView";
         private _flatLayout: boolean;
+        private _showInherited: boolean;
         private _section: "Type" | "Event" | "Constant";
 
         constructor() {
@@ -15,6 +16,9 @@ namespace helpcenter.main.ui.views {
 
             const layout = window.localStorage.getItem("helper.main.ui.views.ApiView.layout");
             this._flatLayout = !layout || layout === "flat";
+
+            const showInherited = window.localStorage.getItem("helper.main.ui.views.ApiView.showInherited");
+            this._showInherited = !showInherited || showInherited === "true";
         }
 
         protected createViewer(): controls.viewers.TreeViewer {
@@ -23,7 +27,7 @@ namespace helpcenter.main.ui.views {
 
             viewer.setFilterOnRepaintDisabled();
             viewer.setPreloadDisabled();
-            viewer.setContentProvider(new ApiContentViewer(this._flatLayout));
+            viewer.setContentProvider(new ApiContentProvider(this._showInherited, this._flatLayout));
             viewer.setCellRendererProvider(new ui.viewers.PhaserCellRendererProvider());
             viewer.setStyledLabelProvider(new StyledLabelProvider(this._flatLayout));
             viewer.setInput([]);
@@ -61,6 +65,19 @@ namespace helpcenter.main.ui.views {
 
             menu.addSeparator();
 
+            menu.addAction({
+                text: "Show Inherited Members",
+                selected: this._showInherited,
+                callback: () => {
+
+                    this._showInherited = !this._showInherited;
+
+                    window.localStorage.setItem("helper.main.ui.views.ApiView.showInherited", this._showInherited + "");
+
+                    this.updateViewer();
+                }
+            })
+
             super.fillContextMenu(menu);
         }
 
@@ -86,7 +103,9 @@ namespace helpcenter.main.ui.views {
 
         updateViewer() {
 
-            this._viewer.setContentProvider(new ApiContentViewer(this._flatLayout, this._section));
+            const sel = this._viewer.getSelection();
+
+            this._viewer.setContentProvider(new ApiContentProvider(this._showInherited, this._flatLayout, this._section));
             this._viewer.setLabelProvider(null);
             this._viewer.setStyledLabelProvider(new StyledLabelProvider(this._flatLayout));
             this._viewer.setScrollY(0);
@@ -95,6 +114,8 @@ namespace helpcenter.main.ui.views {
 
                 this._viewer.setFilterText(this._viewer.getFilterText());
             }
+
+            this._viewer.revealAndSelect(...sel);
         }
     }
 
@@ -123,15 +144,17 @@ namespace helpcenter.main.ui.views {
         }
     }
 
-    class ApiContentViewer implements controls.viewers.ITreeContentProvider {
+    class ApiContentProvider implements controls.viewers.ITreeContentProvider {
 
         private _section: "Type" | "Event" | "Constant";
         private _flat: boolean;
+        private _showInherited: boolean;
 
-        constructor(flat: boolean, section?: "Type" | "Event" | "Constant") {
+        constructor(showInherited: boolean, flat: boolean, section?: "Type" | "Event" | "Constant") {
 
             this._flat = flat;
             this._section = section;
+            this._showInherited = showInherited;
         }
 
         setSection(section: any) {
@@ -164,6 +187,11 @@ namespace helpcenter.main.ui.views {
             if (parent instanceof phaser.core.DocEntry) {
 
                 let result = parent.getChildren();
+
+                if (!this._showInherited) {
+
+                    result = result.filter(c => !c.isInherited());
+                }
 
                 switch (this._section) {
 
