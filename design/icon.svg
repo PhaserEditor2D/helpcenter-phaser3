@@ -10,13 +10,16 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="800"
+   height="800"
+   viewBox="0 0 211.66667 211.66667"
    version="1.1"
    id="svg1511"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="icon.svg">
+   sodipodi:docname="icon.svg"
+   inkscape:export-filename="./icon-512.png"
+   inkscape:export-xdpi="61.439999"
+   inkscape:export-ydpi="61.439999">
   <defs
      id="defs1505">
     <linearGradient
@@ -67,12 +70,12 @@
        inkscape:collect="always"
        xlink:href="#linearGradient3681"
        id="radialGradient3683"
-       cx="426.73537"
+       cx="426.73538"
        cy="150.34534"
-       fx="426.73537"
+       fx="426.73538"
        fy="150.34534"
        r="103.23803"
-       gradientTransform="matrix(0.97547852,0,0,0.97547852,322.96043,28.731364)"
+       gradientTransform="matrix(0.97547852,0,0,0.97547852,323.49723,47.107212)"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -82,17 +85,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="508.79533"
-     inkscape:cy="804.55855"
-     inkscape:document-units="mm"
+     inkscape:zoom="0.087499999"
+     inkscape:cx="-1457.8483"
+     inkscape:cy="937.26909"
+     inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1864"
      inkscape:window-height="1016"
      inkscape:window-x="56"
      inkscape:window-y="27"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     units="px" />
   <metadata
      id="metadata1508">
     <rdf:RDF>
@@ -108,10 +112,11 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-85.333342)">
     <g
        id="g3774"
-       transform="matrix(1.028905,0,0,1.028905,9.333922,-17.112531)"
+       transform="matrix(1.028905,0,0,1.028905,8.7836321,49.383039)"
        style="stroke-width:0.97190708"
        inkscape:export-filename="./icon.png"
        inkscape:export-xdpi="7.6799998"

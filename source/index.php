@@ -51,11 +51,11 @@ foreach ($folders as $pluginName) {
         }
 
         if (isset($pluginData->priority)) {
-            
+
             $renderInfo["priority"] = $pluginData->priority * 1000 /* a hack to get a stable sorting */;
         }
 
-        array_push($renderInfoArray, $renderInfo);        
+        array_push($renderInfoArray, $renderInfo);
     }
 }
 
@@ -69,7 +69,7 @@ usort($renderInfoArray, function ($a, $b) {
         return 0;
     }
 
-    return $a1 < $b1? -1 : 1;
+    return $a1 < $b1 ? -1 : 1;
 });
 
 header("Content-Type: text/html; charset=UTF-8");
@@ -90,6 +90,19 @@ header("Content-Type: text/html; charset=UTF-8");
 
     <link rel="icon" type="image/png" href="app/favicon.png">
 
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="icons/icon-72.png" />
+    <link rel="apple-touch-icon" href="icons/icon-96.png" />
+    <link rel="apple-touch-icon" href="icons/icon-128.png" />
+    <link rel="apple-touch-icon" href="icons/icon-144.png" />
+    <link rel="apple-touch-icon" href="icons/icon-152.png" />
+    <link rel="apple-touch-icon" href="icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="icons/icon-384.png" />
+    <link rel="apple-touch-icon" href="icons/icon-512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#242424" />
+    <meta name="theme-color" content="#242424" />
+    
     <?php
 
     foreach ($renderInfoArray as $renderInfo) {

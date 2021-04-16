@@ -2,13 +2,13 @@ namespace helpcenter.main.ui.views {
 
     import controls = colibri.ui.controls;
 
-    export class ApiSearchView extends AbstractPhaserView {
-        static ID = "helpcenter.main.ui.views.classes.ExamplesSearchView";
+    export class ChainsView extends AbstractPhaserView {
+        static ID = "helpcenter.main.ui.views.classes.ChainsView";
         private _model: ChainsModel;
 
 
         constructor() {
-            super(ApiSearchView.ID, false);
+            super(ChainsView.ID, false);
 
             this.setTitle("API Chains");
             this.setIcon(MainPlugin.getInstance().getDocEntryKindIcon("namespace"));
@@ -52,7 +52,7 @@ namespace helpcenter.main.ui.views {
         _model: ChainsModel;
 
         constructor(model: ChainsModel) {
-            super(ApiSearchView.ID + ".viewer");
+            super(ChainsView.ID + ".viewer");
 
             this._model = model;
 
@@ -158,6 +158,8 @@ namespace helpcenter.main.ui.views {
 
         public countDots: number;
 
+        public chained: boolean;
+
         adaptToDocEntry() {
 
             return this.docEntry;
@@ -178,7 +180,10 @@ namespace helpcenter.main.ui.views {
 
             this._chains.sort((a, b) => {
 
-                return a.countDots - b.countDots;
+                const aa = a.countDots * (a.chained? 2 : 1);
+                const bb = b.countDots * (b.chained? 2 : 1)
+
+                return aa - bb;
             });
         }
 
@@ -210,17 +215,28 @@ namespace helpcenter.main.ui.views {
                 } else {
 
                     const chain = new Chain();
+                    chain.chained = depth !== 1;
 
                     const baseLabel = entryFullName
                         + child.getTypeSignature()
                         + child.getMethodSignature()
                         + child.getReturnsTypeSignature();
 
+
+                    const tags = [];
+
                     const classMember = ["member", "function"].indexOf(child.getKind()) >= 0;
 
-                    const inheritedState = classMember ? (child.getRawEntry().inherited ? "#i" : "#d") : "";
+                    if (classMember) {
 
-                    chain.label = child.getKind() + " " + baseLabel + " " + inheritedState;
+                        tags.push(child.isInherited() ? "#i" : "#d");
+                    }
+
+                    tags.push(chain.chained ? "#c" : "#u");
+
+                    const tagsLabel = tags.join(" ");
+
+                    chain.label = child.getKind() + " " + baseLabel + " " + tagsLabel;
                     chain.countDots = chain.label.split("").filter(c => c === ".").length;
 
                     chain.lightStyledLabel = [{
@@ -228,7 +244,7 @@ namespace helpcenter.main.ui.views {
                         color: LIGHT_SYNTAX_COLOR.keyword
                     }, {
                         text: entryFullName,
-                        color: controls.Controls.LIGHT_THEME.viewerForeground
+                        color: controls.Controls.LIGHT_THEME.viewerForeground + (chain.chained? "a0" : "")
                     },
                     {
                         text: child.getTypeSignature(),
@@ -240,7 +256,7 @@ namespace helpcenter.main.ui.views {
                         text: child.getReturnsTypeSignature(),
                         color: LIGHT_SYNTAX_COLOR.returnTypeSignature
                     }, {
-                        text: " " + inheritedState,
+                        text: " " + tagsLabel,
                         color: "cadetBlue"
                     }];
 
@@ -249,7 +265,7 @@ namespace helpcenter.main.ui.views {
                         color: DARK_SYNTAX_COLOR.keyword
                     }, {
                         text: entryFullName,
-                        color: controls.Controls.DARK_THEME.viewerForeground
+                        color: controls.Controls.DARK_THEME.viewerForeground + (chain.chained? "a0" : "")
                     },
                     {
                         text: child.getTypeSignature(),
@@ -261,7 +277,7 @@ namespace helpcenter.main.ui.views {
                         text: child.getReturnsTypeSignature(),
                         color: DARK_SYNTAX_COLOR.returnTypeSignature
                     }, {
-                        text: " " + inheritedState,
+                        text: " " + tagsLabel,
                         color: "bisque"
                     }];
 

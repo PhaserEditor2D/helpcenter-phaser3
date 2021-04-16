@@ -10,7 +10,7 @@ namespace helpcenter.main.ui {
         private _filesView: views.FilesView;
         private _apiView: views.ApiView;
         private _inspectorView: colibri.inspector.ui.views.InspectorView;
-        private _chainsView: views.ApiSearchView;
+        private _chainsView: views.ChainsView;
         private _examplesView: views.ExamplesView;
         private _exampleChainsView: views.ExamplesSearchView;
 
@@ -50,7 +50,7 @@ namespace helpcenter.main.ui {
             this._apiView = new views.ApiView();
             this._examplesView = new views.ExamplesView();
             this._inspectorView = new colibri.inspector.ui.views.InspectorView();
-            this._chainsView = new views.ApiSearchView();
+            this._chainsView = new views.ChainsView();
             this._exampleChainsView = new views.ExamplesSearchView();
 
             const editorChains = new controls.SplitPanel(this._editorArea, this.createViewFolder(
