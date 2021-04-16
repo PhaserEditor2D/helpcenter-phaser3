@@ -79,20 +79,43 @@ namespace helpcenter.main.core {
 
         private renderMembers() {
 
-            let html = "";
+            let all = "";
 
-            for (const child of this._docEntry.getChildren()) {
+            {
+                let html = "";
 
-                html += this.renderMemberIcon(child);
-                html += this.renderLinkToApi(child.getFullName(), false) + "<br>";
+                for (const child of this._docEntry.getChildren().filter(c => !c.isInherited())) {
+
+                    html += this.renderMemberIcon(child);
+                    html += this.renderLinkToApi(child.getFullName(), false) + "<br>";
+                }
+
+                if (html.length > 0) {
+
+                    html = "<p><b>Members:</b></p>" + html;
+                }
+
+                all += html;
             }
 
-            if (html.length > 0) {
+            {
+                let html = "";
 
-                html = "<p><b>Members:</b></p>" + html;
+                for (const child of this._docEntry.getChildren().filter(c => c.isInherited())) {
+
+                    html += this.renderMemberIcon(child);
+                    html += this.renderLinkToApi(child.getFullName(), false) + "<br>";
+                }
+
+                if (html.length > 0) {
+
+                    html = "<p><b>Inherited:</b></p>" + html;
+                }
+
+                all += html;
             }
 
-            return html;
+            return all;
         }
 
         private renderMemberIcon(child: phaser.core.DocEntry, rowContent?: string) {
