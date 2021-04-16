@@ -164,7 +164,7 @@ namespace helpcenter.phaser {
             window.localStorage.setItem("phaser-labs-url", url);
         }
 
-        getPhaserLabsPlayExampleUrl(example: core.ExampleInfo, page: "view"|"mobile"|"edit" = "view") {
+        getPhaserLabsPlayExampleUrl(example: core.ExampleInfo, page: "view" | "mobile" | "edit" = "view") {
 
             if (example.getData().type === "file") {
 
@@ -284,6 +284,15 @@ namespace helpcenter.phaser {
                         parent.getChildren().push(entry);
                         entry.setParent(parent);
                     }
+                }
+            }
+
+            // sends inherited members to the end
+            for (const entry of docEntries) {
+
+                if (entry.getKind() === "class") {
+
+                    entry.getChildren().sort((a, b) => (a.isInherited() ? 1 : 0) - (b.isInherited() ? 1 : 0));
                 }
             }
 

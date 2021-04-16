@@ -19,7 +19,7 @@ namespace helpcenter.main.ui.viewers {
             if (obj instanceof phaser.core.DocEntry) {
 
                 return [{
-                    color: theme.viewerForeground,
+                    color: theme.viewerForeground + (obj.isInherited()? "a0": ""),
                     text: obj.getName()
                 }, {
                     color: styles.methodSignature,
