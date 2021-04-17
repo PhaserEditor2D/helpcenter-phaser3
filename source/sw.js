@@ -1,4 +1,4 @@
-const VER = "1.0.0";
+const VER = "1.0.22";
 
 const CACHE_KEY = "phasereditor2d.helpcenter-" + VER;
 
@@ -215,21 +215,54 @@ const assets = [
 ];
 
 self.addEventListener('install', function (event) {
+
+    self.skipWaiting();
+
     // Perform install steps
     event.waitUntil(
 
         caches.open(CACHE_KEY)
 
-            .then(function (cache) {
+            .then(cache => {
 
-                console.log('Opened cache');
+                console.log('Opened cache ' + CACHE_KEY);
 
                 return cache.addAll(assets);
             })
     );
 });
 
+const channel = new BroadcastChannel('sw-messages');
+
+self.addEventListener('activate', event => {
+
+    event.waitUntil(
+        caches.keys().then(cacheNames => {
+
+            console.log("Current cache version " + CACHE_KEY);
+
+            for (const cacheName of cacheNames) {
+
+                console.log("Testing cache version " + cacheName);
+
+                if (cacheName !== CACHE_KEY) {
+
+                    console.log("Deleting cache version " + cacheName);
+
+                    channel.postMessage({
+                        method: "update-installed",
+                        ver: VER
+                    });
+
+                    return caches.delete(cacheName);
+                }
+            }
+        })
+    )
+});
+
 self.addEventListener('fetch', function (event) {
+
     event.respondWith(
 
         caches.match(event.request)

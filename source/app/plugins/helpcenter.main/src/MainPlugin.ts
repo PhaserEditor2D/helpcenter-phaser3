@@ -1,7 +1,5 @@
 namespace helpcenter.main {
 
-    import controls = colibri.ui.controls;
-
     export const DOC_ENTRY_KIND_ICON_NAME = {
         "member": "symbol-variable",
         "function": "symbol-method",
@@ -111,13 +109,15 @@ namespace helpcenter.main {
         }
     }
 
-    export const VER = "1.0.0"
+    export const VER = "1.0.22"
 
     colibri.CACHE_VERSION = VER;
 
     colibri.Platform.addPlugin(MainPlugin.getInstance());
 
     document.title = "Unofficial Phaser Help v" + VER + " - Phaser Editor 2D";
+
+    alert("version " + VER);
 
     console.log("Phaser Editor 2D - Unofficial Phaser Help - v" + VER);
 
@@ -130,6 +130,15 @@ namespace helpcenter.main {
                 await navigator.serviceWorker.register("/sw.js");
 
                 console.log("Service worker registered");
+
+                const channel = new BroadcastChannel('sw-messages');
+                channel.addEventListener('message', event => {
+
+                    if (event.data.method === "update-installed") {
+
+                        alert(`An update (${event.data.ver}) was installed. Please, refresh the page.`);
+                    }
+                });
 
             } catch (e) {
 
