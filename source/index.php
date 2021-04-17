@@ -90,7 +90,7 @@ header("Content-Type: text/html; charset=UTF-8");
 
     <link rel="icon" type="image/png" href="app/favicon.png">
 
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="/manifest.json" />
     <!-- ios support -->
     <link rel="apple-touch-icon" href="icons/icon-72.png" />
     <link rel="apple-touch-icon" href="icons/icon-96.png" />

@@ -1,6 +1,6 @@
 x- Chains: use #u tab for un-chained items.
 x- Chains: show chained items with a different color?
-- Api view: allow hiding inherited members. Maybe using the #i and #d tags.
+x- Api view: allow hiding inherited members. Maybe using the #i and #d tags.
 - Social header tags.
 - PWA support.
 - Script for getting the examples icons as texture atlas.

@@ -111,15 +111,31 @@ namespace helpcenter.main {
         }
     }
 
-    colibri.Platform.addPlugin(MainPlugin.getInstance());
-
     export const VER = "1.0.0"
+
+    colibri.CACHE_VERSION = VER;
+
+    colibri.Platform.addPlugin(MainPlugin.getInstance());
 
     document.title = "Unofficial Phaser Help v" + VER + " - Phaser Editor 2D";
 
     console.log("Phaser Editor 2D - Unofficial Phaser Help - v" + VER);
 
     async function main() {
+
+        if ("serviceWorker" in navigator) {
+
+            try {
+
+                await navigator.serviceWorker.register("/sw.js");
+
+                console.log("Service worker registered");
+
+            } catch (e) {
+
+                console.log(e);
+            }
+        }
 
         colibri.ui.controls.dialogs.AlertDialog.replaceConsoleAlert();
 
