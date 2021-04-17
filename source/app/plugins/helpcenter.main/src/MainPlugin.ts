@@ -109,15 +109,13 @@ namespace helpcenter.main {
         }
     }
 
-    export const VER = "1.0.22"
+    export const VER = "1.0.24"
 
     colibri.CACHE_VERSION = VER;
 
     colibri.Platform.addPlugin(MainPlugin.getInstance());
 
     document.title = "Unofficial Phaser Help v" + VER + " - Phaser Editor 2D";
-
-    alert("version " + VER);
 
     console.log("Phaser Editor 2D - Unofficial Phaser Help - v" + VER);
 

@@ -1,4 +1,4 @@
-const VER = "1.0.22";
+const VER = "1.0.24";
 
 const CACHE_KEY = "phasereditor2d.helpcenter-" + VER;
 

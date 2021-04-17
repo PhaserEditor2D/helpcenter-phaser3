@@ -1,6 +1,6 @@
 <?php
 
-$EDITOR_VER = "1.0.22";
+$EDITOR_VER = "1.0.24";
 
 $renderInfoArray = array();
 
