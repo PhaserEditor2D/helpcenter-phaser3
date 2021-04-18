@@ -5,7 +5,7 @@
   "savePath": "/home/arian/Documents/PhaserEditor-3/helpcenter/source/app/plugins/helpcenter.phaser/data/examples-screenshots-atlas",
   "images": [],
   "folders": [
-    "/home/arian/Documents/PhaserEditor-3/helpcenter/source/app/plugins/helpcenter.phaser/data/phaser3-examples/screenshots"
+    "/home/arian/Documents/Phaser/phaser3-examples/public/screenshots/"
   ],
   "packOptions": {
     "textureName": "texture",

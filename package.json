@@ -1,0 +1,22 @@
+{
+  "name": "helpcenter",
+  "version": "1.0.0",
+  "description": "Help center for Phaser Editor 2D and Phaser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ts-build": "cd source/app/; tsc -b",
+    "ts-clean": "cd source/app/; tsc -b -clean",
+    "dist": "cd scripts/; ./dist.sh",
+    "watch": "cd source/app/; tsc -b -w",
+    "build-examples-atlas": "free-tex-packer-cli --project scripts/texture-packer-project.ftpp --output source/app/plugins/helpcenter.phaser/data/examples-screenshots-atlas",
+    "get-phaser": "cd scripts/; ./get-all-metadata.sh"
+  },
+  "author": "Arian Fornaris <developers@phasereditor2d.com> (https://phasereditor2d.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "free-tex-packer-cli": "^0.2.8",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.2"
+  }
+}
