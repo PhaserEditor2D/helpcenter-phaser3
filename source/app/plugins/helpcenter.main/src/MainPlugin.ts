@@ -140,7 +140,14 @@ namespace helpcenter.main {
 
         await initVersion();
 
-        await registerServiceWorker();
+        if (window.location.search === "?dev") {
+
+            console.log("Development mode activated.");
+
+        } else {
+
+            await registerServiceWorker();
+        }
 
         colibri.ui.controls.dialogs.AlertDialog.replaceConsoleAlert();
 
