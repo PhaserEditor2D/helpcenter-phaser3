@@ -582,6 +582,22 @@ div.TabPaneTitleBar::-webkit-scrollbar {
     margin-right: 5px;
 }
 
+.MenuItemIcon:hover {
+    display: none;
+}
+
+.NegativeMenuItemIcon {
+    display: none;
+}
+
+.MenuItem:hover .NegativeMenuItemIcon {
+    display: block;
+}
+
+.MenuItem:hover .ThemeMenuItemIcon {
+    display: none;
+}
+
 .MenuItemText {
     grid-column-start: 3;
 }
