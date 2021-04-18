@@ -124,10 +124,7 @@ namespace helpcenter.main {
         console.log("Phaser Editor 2D - Unofficial Phaser Help - v" + VER);
     }
 
-
-    async function main() {
-
-        await initVersion();
+    async function registerServiceWorker() {
 
         if ("serviceWorker" in navigator) {
 
@@ -151,6 +148,14 @@ namespace helpcenter.main {
                 console.log(e);
             }
         }
+    }
+
+
+    async function main() {
+
+        await initVersion();
+
+        // await registerServiceWorker();
 
         colibri.ui.controls.dialogs.AlertDialog.replaceConsoleAlert();
 

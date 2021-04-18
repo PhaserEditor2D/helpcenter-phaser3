@@ -72,7 +72,7 @@ namespace helpcenter.phaser {
 
                     const code = data[path] as string;
 
-                    const example = this._exampleMap.get(path) || this._exampleMap.get(path.toLowerCase());
+                    const example = this.getExampleByPath(path);
 
                     if (example) {
 
@@ -132,7 +132,7 @@ namespace helpcenter.phaser {
 
             for (const e of examples) {
 
-                this._exampleMap.set(e.getPath(), e);
+                this._exampleMap.set(e.getPath().toLocaleLowerCase(), e);
 
                 this.buildExamplesMap(e.getChildren());
             }
@@ -184,9 +184,9 @@ namespace helpcenter.phaser {
             return this._examples;
         }
 
-        getExampleByPath(path: string): colibri.ui.ide.IEditorInput {
+        getExampleByPath(path: string) {
 
-            return this._exampleMap.get(path);
+            return this._exampleMap.get(path.toLocaleLowerCase());
         }
 
         getExampleImageReader() {

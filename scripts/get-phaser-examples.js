@@ -7,8 +7,9 @@ const fs = require("fs");
 const phaserHome = process.env["PHASER_PATH"];
 const plugin = "../source/app/plugins/helpcenter.phaser/data";
 
-child_process.execSync(`rm -Rf ${path.join(plugin, "phaser3-examples/")}`)
-child_process.execSync(`mkdir -p ${path.join(plugin, "phaser3-examples/")}`)
+child_process.execSync(`cp -r ${path.join(phaserHome, "phaser3-examples/public/examples.json")} ${path.join(plugin, "phaser-examples.json")}`);
+child_process.execSync(`rm -Rf ${path.join(plugin, "phaser3-examples/")}`);
+child_process.execSync(`mkdir -p ${path.join(plugin, "phaser3-examples/")}`);
 
 child_process.execSync("cp -R "
     + path.join(phaserHome, "phaser3-examples/public/screenshots/") + " "
