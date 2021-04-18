@@ -6,62 +6,69 @@ const CACHE_KEY = "phasereditor2d.helpcenter-" + VER;
 
 self.addEventListener('install', async (event) => {
 
-    self.skipWaiting();
+	self.skipWaiting();
 
-    event.waitUntil(
-        caches.open(CACHE_KEY)
-            .then(cache => {
+	event.waitUntil(
+		caches.open(CACHE_KEY)
+			.then(cache => {
 
-                console.log('Opened cache ' + CACHE_KEY);
+				console.log('Opened cache ' + CACHE_KEY);
 
-                return cache.addAll(assets);
-            }));
+				return cache.addAll(assets);
+			}));
 });
 
 const channel = new BroadcastChannel('sw-messages');
 
 self.addEventListener('activate', event => {
 
-    event.waitUntil(
-        caches.keys().then(cacheNames => {
+	event.waitUntil(
+		caches.keys().then(cacheNames => {
 
-            console.log("Current cache version " + CACHE_KEY);
+			console.log("Current cache version " + CACHE_KEY);
 
-            for (const cacheName of cacheNames) {
+			const promises = [];
+			
+			for (const cacheName of cacheNames) {
 
-                console.log("Testing cache version " + cacheName);
+				console.log("Testing cache version " + cacheName);
 
-                if (cacheName !== CACHE_KEY) {
+				if (cacheName !== CACHE_KEY) {
 
-                    console.log("Deleting cache version " + cacheName);
+					console.log("Deleting cache version " + cacheName);
 
-                    channel.postMessage({
-                        method: "update-installed",
-                        ver: VER
-                    });
+					promises.push(caches.delete(cacheName));
+				}
+			}
 
-                    return caches.delete(cacheName);
-                }
-            }
-        })
-    )
+			if (promises.length > 0) {
+
+				channel.postMessage({
+					method: "update-installed",
+					ver: VER
+				});
+			}
+
+			return Promise.all(promises);
+		})
+	)
 });
 
 self.addEventListener('fetch', function (event) {
 
-    event.respondWith(
+	event.respondWith(
 
-        caches.match(event.request)
-            .then(function (response) {
+		caches.match(event.request)
+			.then(function (response) {
 
-                if (response) {
+				if (response) {
 
-                    return response;
-                }
+					return response;
+				}
 
-                console.log("fetch from network: " + event.request.url);
+				console.log("fetch from network: " + event.request.url);
 
-                return fetch(event.request);
-            })
-    );
+				return fetch(event.request);
+			})
+	);
 });

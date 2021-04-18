@@ -6,8 +6,8 @@ cd ..
 
 rm -Rf dist/
 mkdir dist/
-#npm run ts-clean
-#npm run ts-build
+npm run ts-clean
+npm run ts-build
 
 cp -R source/* dist/
 
