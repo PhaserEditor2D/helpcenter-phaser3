@@ -83,6 +83,13 @@ namespace helpcenter.main.ui.editors {
             return super.getInput() as phaser.core.DocEntry;
         }
 
+        setInput(entry: phaser.core.DocEntry) {
+
+            super.setInput(entry);
+
+            this.setTitle(entry.getName() + (entry.getParent() ? " - " + entry.getParent().getFullName() : ""));
+        }
+
         private updateContent() {
 
             const entry = this.getInput();
