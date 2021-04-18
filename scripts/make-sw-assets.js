@@ -3,7 +3,9 @@
 const { execSync } = require("child_process");
 const { readFileSync, writeFileSync } = require("fs");
 
-let version = readFileSync("../source/ver").toString();
+const version = JSON.parse(readFileSync("../package.json")).version;
+
+writeFileSync("../source/ver", version);
 
 const pluginResources = execSync("cd ../source;find app").toString()
     .split("\n")
