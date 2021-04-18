@@ -1,6 +1,6 @@
 {
   "frames": {
-    "screenshots/scalemanager/fit running game.jpg": {
+    "/scalemanager/fit running game.jpg": {
       "frame": {
         "x": 0,
         "y": 0,
@@ -24,7 +24,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/full screen game.jpg": {
+    "/scalemanager/full screen game.jpg": {
       "frame": {
         "x": 128,
         "y": 0,
@@ -48,7 +48,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/manually resize with zoom.jpg": {
+    "/scalemanager/manually resize with zoom.jpg": {
       "frame": {
         "x": 256,
         "y": 0,
@@ -72,7 +72,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/manually resize.jpg": {
+    "/scalemanager/manually resize.jpg": {
       "frame": {
         "x": 384,
         "y": 0,
@@ -96,7 +96,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/mobile game example.jpg": {
+    "/scalemanager/mobile game example.jpg": {
       "frame": {
         "x": 512,
         "y": 0,
@@ -120,7 +120,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/orientation check.jpg": {
+    "/scalemanager/orientation check.jpg": {
       "frame": {
         "x": 640,
         "y": 0,
@@ -144,7 +144,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/resize and fit.jpg": {
+    "/scalemanager/resize and fit.jpg": {
       "frame": {
         "x": 768,
         "y": 0,
@@ -168,7 +168,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/resize on click.jpg": {
+    "/scalemanager/resize on click.jpg": {
       "frame": {
         "x": 896,
         "y": 0,
@@ -192,7 +192,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/world input.jpg": {
+    "/scalemanager/world input.jpg": {
       "frame": {
         "x": 1024,
         "y": 0,
@@ -216,7 +216,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/zoom manual resize.jpg": {
+    "/scalemanager/zoom manual resize.jpg": {
       "frame": {
         "x": 1152,
         "y": 0,
@@ -240,7 +240,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/zoom with fit.jpg": {
+    "/scalemanager/zoom with fit.jpg": {
       "frame": {
         "x": 1280,
         "y": 0,
@@ -264,7 +264,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/add scene after game.jpg": {
+    "/scenes/add scene after game.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -288,7 +288,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/boot data.jpg": {
+    "/scenes/boot data.jpg": {
       "frame": {
         "x": 1536,
         "y": 0,
@@ -312,7 +312,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/bring to top.jpg": {
+    "/scenes/bring to top.jpg": {
       "frame": {
         "x": 1664,
         "y": 0,
@@ -336,7 +336,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/call function in another scene es6.jpg": {
+    "/scenes/call function in another scene es6.jpg": {
       "frame": {
         "x": 1792,
         "y": 0,
@@ -360,7 +360,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/call function in another scene.jpg": {
+    "/scenes/call function in another scene.jpg": {
       "frame": {
         "x": 1920,
         "y": 0,
@@ -384,7 +384,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/change scene from create es6.jpg": {
+    "/scenes/change scene from create es6.jpg": {
       "frame": {
         "x": 0,
         "y": 96,
@@ -408,7 +408,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/change scene from create.jpg": {
+    "/scenes/change scene from create.jpg": {
       "frame": {
         "x": 0,
         "y": 192,
@@ -432,7 +432,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/changing large scene.jpg": {
+    "/scenes/changing large scene.jpg": {
       "frame": {
         "x": 0,
         "y": 288,
@@ -456,7 +456,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/changing scene.jpg": {
+    "/scenes/changing scene.jpg": {
       "frame": {
         "x": 0,
         "y": 384,
@@ -480,7 +480,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/copies of the same scene.jpg": {
+    "/scenes/copies of the same scene.jpg": {
       "frame": {
         "x": 0,
         "y": 480,
@@ -504,7 +504,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/drag scenes demo.jpg": {
+    "/scenes/drag scenes demo.jpg": {
       "frame": {
         "x": 0,
         "y": 576,
@@ -528,7 +528,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/extend scene from object.jpg": {
+    "/scenes/extend scene from object.jpg": {
       "frame": {
         "x": 0,
         "y": 672,
@@ -552,7 +552,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/external scene/boot.jpg": {
+    "/scenes/external scene/boot.jpg": {
       "frame": {
         "x": 0,
         "y": 768,
@@ -576,7 +576,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/launch parallel scene.jpg": {
+    "/scenes/launch parallel scene.jpg": {
       "frame": {
         "x": 0,
         "y": 864,
@@ -600,7 +600,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/move down list.jpg": {
+    "/scenes/move down list.jpg": {
       "frame": {
         "x": 0,
         "y": 960,
@@ -624,7 +624,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/move up list.jpg": {
+    "/scenes/move up list.jpg": {
       "frame": {
         "x": 0,
         "y": 1056,
@@ -648,7 +648,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/moving scenes demo/boot.jpg": {
+    "/scenes/moving scenes demo/boot.jpg": {
       "frame": {
         "x": 0,
         "y": 1152,
@@ -672,7 +672,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/multi demo/boot.jpg": {
+    "/scenes/multi demo/boot.jpg": {
       "frame": {
         "x": 0,
         "y": 1248,
@@ -696,7 +696,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/multiple scenes from instances.jpg": {
+    "/scenes/multiple scenes from instances.jpg": {
       "frame": {
         "x": 0,
         "y": 1344,
@@ -720,7 +720,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/multiple scenes from objects.jpg": {
+    "/scenes/multiple scenes from objects.jpg": {
       "frame": {
         "x": 0,
         "y": 1440,
@@ -744,7 +744,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/multiple scenes with multiple cameras.jpg": {
+    "/scenes/multiple scenes with multiple cameras.jpg": {
       "frame": {
         "x": 0,
         "y": 1536,
@@ -768,7 +768,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/parallel scenes.jpg": {
+    "/scenes/parallel scenes.jpg": {
       "frame": {
         "x": 0,
         "y": 1632,
@@ -792,7 +792,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/passing data to a scene.jpg": {
+    "/scenes/passing data to a scene.jpg": {
       "frame": {
         "x": 0,
         "y": 1728,
@@ -816,7 +816,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/pause and resume.jpg": {
+    "/scenes/pause and resume.jpg": {
       "frame": {
         "x": 0,
         "y": 1824,
@@ -840,7 +840,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/registry data exchange es6.jpg": {
+    "/scenes/registry data exchange es6.jpg": {
       "frame": {
         "x": 0,
         "y": 1920,
@@ -864,7 +864,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/registry data exchange.jpg": {
+    "/scenes/registry data exchange.jpg": {
       "frame": {
         "x": 128,
         "y": 96,
@@ -888,7 +888,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/restart a scene.jpg": {
+    "/scenes/restart a scene.jpg": {
       "frame": {
         "x": 256,
         "y": 96,
@@ -912,7 +912,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/scene config object.jpg": {
+    "/scenes/scene config object.jpg": {
       "frame": {
         "x": 384,
         "y": 96,
@@ -936,7 +936,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/scene files payload.jpg": {
+    "/scenes/scene files payload.jpg": {
       "frame": {
         "x": 512,
         "y": 96,
@@ -960,7 +960,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/sleep and wake.jpg": {
+    "/scenes/sleep and wake.jpg": {
       "frame": {
         "x": 640,
         "y": 96,
@@ -984,7 +984,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/sub game demo/boot.jpg": {
+    "/scenes/sub game demo/boot.jpg": {
       "frame": {
         "x": 768,
         "y": 96,
@@ -1008,7 +1008,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/swap position.jpg": {
+    "/scenes/swap position.jpg": {
       "frame": {
         "x": 896,
         "y": 96,
@@ -1032,7 +1032,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/swapping scenes.jpg": {
+    "/scenes/swapping scenes.jpg": {
       "frame": {
         "x": 1024,
         "y": 96,
@@ -1056,7 +1056,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/transition test 2.jpg": {
+    "/scenes/transition test 2.jpg": {
       "frame": {
         "x": 1152,
         "y": 96,
@@ -1080,7 +1080,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/tutorial/change scene order.jpg": {
+    "/scenes/tutorial/change scene order.jpg": {
       "frame": {
         "x": 1280,
         "y": 96,
@@ -1104,7 +1104,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/tutorial/scene controller.jpg": {
+    "/scenes/tutorial/scene controller.jpg": {
       "frame": {
         "x": 1408,
         "y": 96,
@@ -1128,7 +1128,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/tutorial/scene order.jpg": {
+    "/scenes/tutorial/scene order.jpg": {
       "frame": {
         "x": 1536,
         "y": 96,
@@ -1152,7 +1152,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/ui scene es6.jpg": {
+    "/scenes/ui scene es6.jpg": {
       "frame": {
         "x": 1664,
         "y": 96,
@@ -1176,7 +1176,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/ui scene.jpg": {
+    "/scenes/ui scene.jpg": {
       "frame": {
         "x": 1792,
         "y": 96,
@@ -1200,7 +1200,7 @@
         "y": 0.5
       }
     },
-    "screenshots/snapshot/snapshot area.jpg": {
+    "/snapshot/snapshot area.jpg": {
       "frame": {
         "x": 1920,
         "y": 96,
@@ -1224,7 +1224,7 @@
         "y": 0.5
       }
     },
-    "screenshots/snapshot/snapshot game.jpg": {
+    "/snapshot/snapshot game.jpg": {
       "frame": {
         "x": 128,
         "y": 192,
@@ -1248,7 +1248,7 @@
         "y": 0.5
       }
     },
-    "screenshots/snapshot/snapshot pixel.jpg": {
+    "/snapshot/snapshot pixel.jpg": {
       "frame": {
         "x": 256,
         "y": 192,
@@ -1272,7 +1272,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/add hit area.jpg": {
+    "/spine/add hit area.jpg": {
       "frame": {
         "x": 384,
         "y": 192,
@@ -1296,7 +1296,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/add spine object to group.jpg": {
+    "/spine/add spine object to group.jpg": {
       "frame": {
         "x": 512,
         "y": 192,
@@ -1320,7 +1320,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/alpha test.jpg": {
+    "/spine/alpha test.jpg": {
       "frame": {
         "x": 640,
         "y": 192,
@@ -1344,7 +1344,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/arcade physics spine body.jpg": {
+    "/spine/arcade physics spine body.jpg": {
       "frame": {
         "x": 768,
         "y": 192,
@@ -1368,7 +1368,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/basic spineboy.jpg": {
+    "/spine/basic spineboy.jpg": {
       "frame": {
         "x": 896,
         "y": 192,
@@ -1392,7 +1392,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/batch test.jpg": {
+    "/spine/batch test.jpg": {
       "frame": {
         "x": 1024,
         "y": 192,
@@ -1416,7 +1416,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/blend mode test.jpg": {
+    "/spine/blend mode test.jpg": {
       "frame": {
         "x": 1152,
         "y": 192,
@@ -1440,7 +1440,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/camera pipeline test.jpg": {
+    "/spine/camera pipeline test.jpg": {
       "frame": {
         "x": 1280,
         "y": 192,
@@ -1464,7 +1464,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/canvas test 1.jpg": {
+    "/spine/canvas test 1.jpg": {
       "frame": {
         "x": 1408,
         "y": 192,
@@ -1488,7 +1488,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/container batch test pre35.jpg": {
+    "/spine/container batch test pre35.jpg": {
       "frame": {
         "x": 1536,
         "y": 192,
@@ -1512,7 +1512,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/container batch test.jpg": {
+    "/spine/container batch test.jpg": {
       "frame": {
         "x": 1664,
         "y": 192,
@@ -1536,7 +1536,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/control bones.jpg": {
+    "/spine/control bones.jpg": {
       "frame": {
         "x": 1792,
         "y": 192,
@@ -1560,7 +1560,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/destroy test.jpg": {
+    "/spine/destroy test.jpg": {
       "frame": {
         "x": 1920,
         "y": 192,
@@ -1584,7 +1584,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/draw debug bounds.jpg": {
+    "/spine/draw debug bounds.jpg": {
       "frame": {
         "x": 128,
         "y": 288,
@@ -1608,7 +1608,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/extended class.jpg": {
+    "/spine/extended class.jpg": {
       "frame": {
         "x": 128,
         "y": 384,
@@ -1632,7 +1632,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/image changes.jpg": {
+    "/spine/image changes.jpg": {
       "frame": {
         "x": 128,
         "y": 480,
@@ -1656,7 +1656,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/invisible test with spine containers.jpg": {
+    "/spine/invisible test with spine containers.jpg": {
       "frame": {
         "x": 128,
         "y": 576,
@@ -1680,7 +1680,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/invisible test.jpg": {
+    "/spine/invisible test.jpg": {
       "frame": {
         "x": 128,
         "y": 672,
@@ -1704,7 +1704,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/last visible.jpg": {
+    "/spine/last visible.jpg": {
       "frame": {
         "x": 128,
         "y": 768,
@@ -1728,7 +1728,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/owl.jpg": {
+    "/spine/owl.jpg": {
       "frame": {
         "x": 128,
         "y": 864,
@@ -1752,7 +1752,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/spine inside container.jpg": {
+    "/spine/spine inside container.jpg": {
       "frame": {
         "x": 128,
         "y": 960,
@@ -1776,7 +1776,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/spine parallel scene test.jpg": {
+    "/spine/spine parallel scene test.jpg": {
       "frame": {
         "x": 128,
         "y": 1056,
@@ -1800,7 +1800,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/spine preloader test.jpg": {
+    "/spine/spine preloader test.jpg": {
       "frame": {
         "x": 128,
         "y": 1152,
@@ -1824,7 +1824,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/spine rotation test.jpg": {
+    "/spine/spine rotation test.jpg": {
       "frame": {
         "x": 128,
         "y": 1248,
@@ -1848,7 +1848,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/spine scene test.jpg": {
+    "/spine/spine scene test.jpg": {
       "frame": {
         "x": 128,
         "y": 1344,
@@ -1872,7 +1872,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/spine set depth test.jpg": {
+    "/spine/spine set depth test.jpg": {
       "frame": {
         "x": 128,
         "y": 1440,
@@ -1896,7 +1896,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/spine to render texture.jpg": {
+    "/spine/spine to render texture.jpg": {
       "frame": {
         "x": 128,
         "y": 1536,
@@ -1920,7 +1920,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/webgl test 1.jpg": {
+    "/spine/webgl test 1.jpg": {
       "frame": {
         "x": 128,
         "y": 1632,
@@ -1944,7 +1944,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/webgl test 2.jpg": {
+    "/spine/webgl test 2.jpg": {
       "frame": {
         "x": 128,
         "y": 1728,
@@ -1968,7 +1968,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/webgl test 3.jpg": {
+    "/spine/webgl test 3.jpg": {
       "frame": {
         "x": 128,
         "y": 1824,
@@ -1992,7 +1992,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/webgl test 4.jpg": {
+    "/spine/webgl test 4.jpg": {
       "frame": {
         "x": 128,
         "y": 1920,
@@ -2016,7 +2016,7 @@
         "y": 0.5
       }
     },
-    "screenshots/spine/webgl test 5.jpg": {
+    "/spine/webgl test 5.jpg": {
       "frame": {
         "x": 256,
         "y": 288,
@@ -2040,7 +2040,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/avif test.jpg": {
+    "/textures/avif test.jpg": {
       "frame": {
         "x": 384,
         "y": 288,
@@ -2064,7 +2064,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/batch texture.jpg": {
+    "/textures/batch texture.jpg": {
       "frame": {
         "x": 512,
         "y": 288,
@@ -2088,7 +2088,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/canvas texture composite op.jpg": {
+    "/textures/canvas texture composite op.jpg": {
       "frame": {
         "x": 640,
         "y": 288,
@@ -2112,7 +2112,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/canvas texture rotation.jpg": {
+    "/textures/canvas texture rotation.jpg": {
       "frame": {
         "x": 768,
         "y": 288,
@@ -2136,7 +2136,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/create canvas.jpg": {
+    "/textures/create canvas.jpg": {
       "frame": {
         "x": 896,
         "y": 288,
@@ -2160,7 +2160,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/crop animated sprite.jpg": {
+    "/textures/crop animated sprite.jpg": {
       "frame": {
         "x": 1024,
         "y": 288,
@@ -2184,7 +2184,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/crop multi frames.jpg": {
+    "/textures/crop multi frames.jpg": {
       "frame": {
         "x": 1152,
         "y": 288,
@@ -2208,7 +2208,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/crop render texture.jpg": {
+    "/textures/crop render texture.jpg": {
       "frame": {
         "x": 1280,
         "y": 288,
@@ -2232,7 +2232,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/crop text.jpg": {
+    "/textures/crop text.jpg": {
       "frame": {
         "x": 1408,
         "y": 288,
@@ -2256,7 +2256,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/crop texture atlas frame flip.jpg": {
+    "/textures/crop texture atlas frame flip.jpg": {
       "frame": {
         "x": 1536,
         "y": 288,
@@ -2280,7 +2280,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/crop texture atlas frame trimmed flip.jpg": {
+    "/textures/crop texture atlas frame trimmed flip.jpg": {
       "frame": {
         "x": 1664,
         "y": 288,
@@ -2304,7 +2304,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/crop texture atlas frame trimmed.jpg": {
+    "/textures/crop texture atlas frame trimmed.jpg": {
       "frame": {
         "x": 1792,
         "y": 288,
@@ -2328,7 +2328,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/crop texture atlas frame.jpg": {
+    "/textures/crop texture atlas frame.jpg": {
       "frame": {
         "x": 1920,
         "y": 288,
@@ -2352,7 +2352,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/crop texture image flip.jpg": {
+    "/textures/crop texture image flip.jpg": {
       "frame": {
         "x": 256,
         "y": 384,
@@ -2376,7 +2376,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/crop texture image scaled.jpg": {
+    "/textures/crop texture image scaled.jpg": {
       "frame": {
         "x": 256,
         "y": 480,
@@ -2400,7 +2400,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/crop texture image.jpg": {
+    "/textures/crop texture image.jpg": {
       "frame": {
         "x": 256,
         "y": 576,
@@ -2424,7 +2424,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/crop tilesprite.jpg": {
+    "/textures/crop tilesprite.jpg": {
       "frame": {
         "x": 256,
         "y": 672,
@@ -2448,7 +2448,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/edit texture hue shift.jpg": {
+    "/textures/edit texture hue shift.jpg": {
       "frame": {
         "x": 256,
         "y": 768,
@@ -2472,7 +2472,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/edit texture silhouette.jpg": {
+    "/textures/edit texture silhouette.jpg": {
       "frame": {
         "x": 256,
         "y": 864,
@@ -2496,7 +2496,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/frames from single atlas.jpg": {
+    "/textures/frames from single atlas.jpg": {
       "frame": {
         "x": 256,
         "y": 960,
@@ -2520,7 +2520,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/generate more textures.jpg": {
+    "/textures/generate more textures.jpg": {
       "frame": {
         "x": 256,
         "y": 1056,
@@ -2544,7 +2544,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/generate texture.jpg": {
+    "/textures/generate texture.jpg": {
       "frame": {
         "x": 256,
         "y": 1152,
@@ -2568,7 +2568,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/get pixel dynamic.jpg": {
+    "/textures/get pixel dynamic.jpg": {
       "frame": {
         "x": 256,
         "y": 1248,
@@ -2592,7 +2592,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/get pixels.jpg": {
+    "/textures/get pixels.jpg": {
       "frame": {
         "x": 256,
         "y": 1344,
@@ -2616,7 +2616,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/multi atlas.jpg": {
+    "/textures/multi atlas.jpg": {
       "frame": {
         "x": 256,
         "y": 1440,
@@ -2640,7 +2640,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/set mipmap filter.jpg": {
+    "/textures/set mipmap filter.jpg": {
       "frame": {
         "x": 256,
         "y": 1536,
@@ -2664,7 +2664,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/sprite sheet from atlas.jpg": {
+    "/textures/sprite sheet from atlas.jpg": {
       "frame": {
         "x": 256,
         "y": 1632,
@@ -2688,7 +2688,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/sprite sheet.jpg": {
+    "/textures/sprite sheet.jpg": {
       "frame": {
         "x": 256,
         "y": 1728,
@@ -2712,7 +2712,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/text texture.jpg": {
+    "/textures/text texture.jpg": {
       "frame": {
         "x": 256,
         "y": 1824,
@@ -2736,7 +2736,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/texture from base64.jpg": {
+    "/textures/texture from base64.jpg": {
       "frame": {
         "x": 256,
         "y": 1920,
@@ -2760,7 +2760,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/texture packer atlas.jpg": {
+    "/textures/texture packer atlas.jpg": {
       "frame": {
         "x": 384,
         "y": 384,
@@ -2784,7 +2784,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/trimmed frame from multi atlas.jpg": {
+    "/textures/trimmed frame from multi atlas.jpg": {
       "frame": {
         "x": 512,
         "y": 384,
@@ -2808,7 +2808,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/base tile size.jpg": {
+    "/tilemap/base tile size.jpg": {
       "frame": {
         "x": 640,
         "y": 384,
@@ -2832,7 +2832,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/collision/csv map arcade physics.jpg": {
+    "/tilemap/collision/csv map arcade physics.jpg": {
       "frame": {
         "x": 768,
         "y": 384,
@@ -2856,7 +2856,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/collision/matter destroy tile bodies.jpg": {
+    "/tilemap/collision/matter destroy tile bodies.jpg": {
       "frame": {
         "x": 896,
         "y": 384,
@@ -2880,7 +2880,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/collision/matter detect collision with tile.jpg": {
+    "/tilemap/collision/matter detect collision with tile.jpg": {
       "frame": {
         "x": 1024,
         "y": 384,
@@ -2904,7 +2904,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/collision/matter ghost collisions.jpg": {
+    "/tilemap/collision/matter ghost collisions.jpg": {
       "frame": {
         "x": 1152,
         "y": 384,
@@ -2928,7 +2928,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/collision/matter platformer modify map.jpg": {
+    "/tilemap/collision/matter platformer modify map.jpg": {
       "frame": {
         "x": 1280,
         "y": 384,
@@ -2952,7 +2952,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/collision/matter platformer with wall jumping.jpg": {
+    "/tilemap/collision/matter platformer with wall jumping.jpg": {
       "frame": {
         "x": 1408,
         "y": 384,
@@ -2976,7 +2976,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/collision/matter.jpg": {
+    "/tilemap/collision/matter.jpg": {
       "frame": {
         "x": 1536,
         "y": 384,
@@ -3000,7 +3000,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/collision/multiple tile sizes.jpg": {
+    "/tilemap/collision/multiple tile sizes.jpg": {
       "frame": {
         "x": 1664,
         "y": 384,
@@ -3024,7 +3024,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/collision/simple map.jpg": {
+    "/tilemap/collision/simple map.jpg": {
       "frame": {
         "x": 1792,
         "y": 384,
@@ -3048,7 +3048,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/collision/tile callbacks.jpg": {
+    "/tilemap/collision/tile callbacks.jpg": {
       "frame": {
         "x": 1920,
         "y": 384,
@@ -3072,7 +3072,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/copy tiles.jpg": {
+    "/tilemap/copy tiles.jpg": {
       "frame": {
         "x": 384,
         "y": 480,
@@ -3096,7 +3096,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/create from array.jpg": {
+    "/tilemap/create from array.jpg": {
       "frame": {
         "x": 384,
         "y": 576,
@@ -3120,7 +3120,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/create from objects.jpg": {
+    "/tilemap/create from objects.jpg": {
       "frame": {
         "x": 384,
         "y": 672,
@@ -3144,7 +3144,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/creating blank layers.jpg": {
+    "/tilemap/creating blank layers.jpg": {
       "frame": {
         "x": 384,
         "y": 768,
@@ -3168,7 +3168,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/csv map.jpg": {
+    "/tilemap/csv map.jpg": {
       "frame": {
         "x": 384,
         "y": 864,
@@ -3192,7 +3192,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/danger.jpg": {
+    "/tilemap/danger.jpg": {
       "frame": {
         "x": 384,
         "y": 960,
@@ -3216,7 +3216,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/debug colliding tiles.jpg": {
+    "/tilemap/debug colliding tiles.jpg": {
       "frame": {
         "x": 384,
         "y": 1056,
@@ -3240,7 +3240,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/dungeon generator.jpg": {
+    "/tilemap/dungeon generator.jpg": {
       "frame": {
         "x": 384,
         "y": 1152,
@@ -3264,7 +3264,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/endless map.jpg": {
+    "/tilemap/endless map.jpg": {
       "frame": {
         "x": 384,
         "y": 1248,
@@ -3288,7 +3288,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/fill tiles.jpg": {
+    "/tilemap/fill tiles.jpg": {
       "frame": {
         "x": 384,
         "y": 1344,
@@ -3312,7 +3312,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/get chebyshev distance.jpg": {
+    "/tilemap/get chebyshev distance.jpg": {
       "frame": {
         "x": 384,
         "y": 1440,
@@ -3336,7 +3336,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/get tiles in shape.jpg": {
+    "/tilemap/get tiles in shape.jpg": {
       "frame": {
         "x": 384,
         "y": 1536,
@@ -3360,7 +3360,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/grid movement.jpg": {
+    "/tilemap/grid movement.jpg": {
       "frame": {
         "x": 384,
         "y": 1632,
@@ -3384,7 +3384,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/isometric/hexagonal test.jpg": {
+    "/tilemap/isometric/hexagonal test.jpg": {
       "frame": {
         "x": 384,
         "y": 1728,
@@ -3408,7 +3408,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/isometric/isometric test.jpg": {
+    "/tilemap/isometric/isometric test.jpg": {
       "frame": {
         "x": 384,
         "y": 1824,
@@ -3432,7 +3432,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/layer size.jpg": {
+    "/tilemap/layer size.jpg": {
       "frame": {
         "x": 384,
         "y": 1920,
@@ -3456,7 +3456,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/light map.jpg": {
+    "/tilemap/light map.jpg": {
       "frame": {
         "x": 512,
         "y": 480,
@@ -3480,7 +3480,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/map vs layer with multiple layers.jpg": {
+    "/tilemap/map vs layer with multiple layers.jpg": {
       "frame": {
         "x": 640,
         "y": 480,
@@ -3504,7 +3504,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/map vs layer with one layer.jpg": {
+    "/tilemap/map vs layer with one layer.jpg": {
       "frame": {
         "x": 768,
         "y": 480,
@@ -3528,7 +3528,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/mario map scroller.jpg": {
+    "/tilemap/mario map scroller.jpg": {
       "frame": {
         "x": 896,
         "y": 480,
@@ -3552,7 +3552,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/multi camera map.jpg": {
+    "/tilemap/multi camera map.jpg": {
       "frame": {
         "x": 1024,
         "y": 480,
@@ -3576,7 +3576,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/multiple tilesets.jpg": {
+    "/tilemap/multiple tilesets.jpg": {
       "frame": {
         "x": 1152,
         "y": 480,
@@ -3600,7 +3600,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/paint tiles.jpg": {
+    "/tilemap/paint tiles.jpg": {
       "frame": {
         "x": 1280,
         "y": 480,
@@ -3624,7 +3624,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/pixel art test.jpg": {
+    "/tilemap/pixel art test.jpg": {
       "frame": {
         "x": 1408,
         "y": 480,
@@ -3648,7 +3648,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/put tiles.jpg": {
+    "/tilemap/put tiles.jpg": {
       "frame": {
         "x": 1536,
         "y": 480,
@@ -3672,7 +3672,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/randomize tiles.jpg": {
+    "/tilemap/randomize tiles.jpg": {
       "frame": {
         "x": 1664,
         "y": 480,
@@ -3696,7 +3696,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/replace tiles.jpg": {
+    "/tilemap/replace tiles.jpg": {
       "frame": {
         "x": 1792,
         "y": 480,
@@ -3720,7 +3720,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/set colliding by collision data.jpg": {
+    "/tilemap/set colliding by collision data.jpg": {
       "frame": {
         "x": 1920,
         "y": 480,
@@ -3744,7 +3744,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/set colliding by property.jpg": {
+    "/tilemap/set colliding by property.jpg": {
       "frame": {
         "x": 512,
         "y": 576,
@@ -3768,7 +3768,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/set colliding tiles.jpg": {
+    "/tilemap/set colliding tiles.jpg": {
       "frame": {
         "x": 640,
         "y": 576,
@@ -3792,7 +3792,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/set map size.jpg": {
+    "/tilemap/set map size.jpg": {
       "frame": {
         "x": 768,
         "y": 576,
@@ -3816,7 +3816,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/shuffle tiles.jpg": {
+    "/tilemap/shuffle tiles.jpg": {
       "frame": {
         "x": 896,
         "y": 576,
@@ -3840,7 +3840,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/snake distance.jpg": {
+    "/tilemap/snake distance.jpg": {
       "frame": {
         "x": 1024,
         "y": 576,
@@ -3864,7 +3864,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/swap tiles.jpg": {
+    "/tilemap/swap tiles.jpg": {
       "frame": {
         "x": 1152,
         "y": 576,
@@ -3888,7 +3888,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/switching tilesets.jpg": {
+    "/tilemap/switching tilesets.jpg": {
       "frame": {
         "x": 1280,
         "y": 576,
@@ -3912,7 +3912,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/tests/semi automated tests.jpg": {
+    "/tilemap/tests/semi automated tests.jpg": {
       "frame": {
         "x": 1408,
         "y": 576,
@@ -3936,7 +3936,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/tests/visual culling check.jpg": {
+    "/tilemap/tests/visual culling check.jpg": {
       "frame": {
         "x": 1536,
         "y": 576,
@@ -3960,7 +3960,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/tests/visual face test.jpg": {
+    "/tilemap/tests/visual face test.jpg": {
       "frame": {
         "x": 1664,
         "y": 576,
@@ -3984,7 +3984,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/tests/visual flipping test.jpg": {
+    "/tilemap/tests/visual flipping test.jpg": {
       "frame": {
         "x": 1792,
         "y": 576,
@@ -4008,7 +4008,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/tests/visual tile bleed test.jpg": {
+    "/tilemap/tests/visual tile bleed test.jpg": {
       "frame": {
         "x": 1920,
         "y": 576,
@@ -4032,7 +4032,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/tests/visual tile coords test.jpg": {
+    "/tilemap/tests/visual tile coords test.jpg": {
       "frame": {
         "x": 512,
         "y": 672,
@@ -4056,7 +4056,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/tests/visual worldxy test.jpg": {
+    "/tilemap/tests/visual worldxy test.jpg": {
       "frame": {
         "x": 512,
         "y": 768,
@@ -4080,7 +4080,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/tile draw order.jpg": {
+    "/tilemap/tile draw order.jpg": {
       "frame": {
         "x": 512,
         "y": 864,
@@ -4104,7 +4104,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/tile properties.jpg": {
+    "/tilemap/tile properties.jpg": {
       "frame": {
         "x": 512,
         "y": 960,
@@ -4128,7 +4128,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/tiled  multi tileset.jpg": {
+    "/tilemap/tiled  multi tileset.jpg": {
       "frame": {
         "x": 512,
         "y": 1056,
@@ -4152,7 +4152,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/tiled json map.jpg": {
+    "/tilemap/tiled json map.jpg": {
       "frame": {
         "x": 512,
         "y": 1152,
@@ -4176,7 +4176,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/tilelayer pipeline.jpg": {
+    "/tilemap/tilelayer pipeline.jpg": {
       "frame": {
         "x": 512,
         "y": 1248,
@@ -4200,7 +4200,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/tileset collision shapes.jpg": {
+    "/tilemap/tileset collision shapes.jpg": {
       "frame": {
         "x": 512,
         "y": 1344,
@@ -4224,7 +4224,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/tileset with spacing.jpg": {
+    "/tilemap/tileset with spacing.jpg": {
       "frame": {
         "x": 512,
         "y": 1440,
@@ -4248,7 +4248,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/weighted randomize.jpg": {
+    "/tilemap/weighted randomize.jpg": {
       "frame": {
         "x": 512,
         "y": 1536,
@@ -4272,7 +4272,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/zoom.jpg": {
+    "/tilemap/zoom.jpg": {
       "frame": {
         "x": 512,
         "y": 1632,
@@ -4296,7 +4296,7 @@
         "y": 0.5
       }
     },
-    "screenshots/time/clock.jpg": {
+    "/time/clock.jpg": {
       "frame": {
         "x": 512,
         "y": 1728,
@@ -4320,7 +4320,7 @@
         "y": 0.5
       }
     },
-    "screenshots/time/draw clocks.jpg": {
+    "/time/draw clocks.jpg": {
       "frame": {
         "x": 512,
         "y": 1824,
@@ -4344,7 +4344,7 @@
         "y": 0.5
       }
     },
-    "screenshots/time/looped event.jpg": {
+    "/time/looped event.jpg": {
       "frame": {
         "x": 512,
         "y": 1920,
@@ -4368,7 +4368,7 @@
         "y": 0.5
       }
     },
-    "screenshots/time/multiple timers.jpg": {
+    "/time/multiple timers.jpg": {
       "frame": {
         "x": 640,
         "y": 672,
@@ -4392,7 +4392,7 @@
         "y": 0.5
       }
     },
-    "screenshots/time/pause and resume.jpg": {
+    "/time/pause and resume.jpg": {
       "frame": {
         "x": 768,
         "y": 672,
@@ -4416,7 +4416,7 @@
         "y": 0.5
       }
     },
-    "screenshots/time/remove timer event.jpg": {
+    "/time/remove timer event.jpg": {
       "frame": {
         "x": 896,
         "y": 672,
@@ -4440,7 +4440,7 @@
         "y": 0.5
       }
     },
-    "screenshots/time/repeat count.jpg": {
+    "/time/repeat count.jpg": {
       "frame": {
         "x": 1024,
         "y": 672,
@@ -4464,7 +4464,7 @@
         "y": 0.5
       }
     },
-    "screenshots/time/reuse a timer event.jpg": {
+    "/time/reuse a timer event.jpg": {
       "frame": {
         "x": 1152,
         "y": 672,
@@ -4488,7 +4488,7 @@
         "y": 0.5
       }
     },
-    "screenshots/time/start at.jpg": {
+    "/time/start at.jpg": {
       "frame": {
         "x": 1280,
         "y": 672,
@@ -4512,7 +4512,7 @@
         "y": 0.5
       }
     },
-    "screenshots/time/time scale.jpg": {
+    "/time/time scale.jpg": {
       "frame": {
         "x": 1408,
         "y": 672,
@@ -4536,7 +4536,7 @@
         "y": 0.5
       }
     },
-    "screenshots/time/timer event.jpg": {
+    "/time/timer event.jpg": {
       "frame": {
         "x": 1536,
         "y": 672,
@@ -4560,7 +4560,7 @@
         "y": 0.5
       }
     },
-    "screenshots/timestep/delta history.jpg": {
+    "/timestep/delta history.jpg": {
       "frame": {
         "x": 1664,
         "y": 672,
@@ -4584,7 +4584,7 @@
         "y": 0.5
       }
     },
-    "screenshots/timestep/ticker loop.jpg": {
+    "/timestep/ticker loop.jpg": {
       "frame": {
         "x": 1792,
         "y": 672,
@@ -4608,7 +4608,7 @@
         "y": 0.5
       }
     },
-    "screenshots/timestep/variable smooth step.jpg": {
+    "/timestep/variable smooth step.jpg": {
       "frame": {
         "x": 1920,
         "y": 672,
@@ -4632,7 +4632,7 @@
         "y": 0.5
       }
     },
-    "screenshots/timestep/world time.jpg": {
+    "/timestep/world time.jpg": {
       "frame": {
         "x": 640,
         "y": 768,
@@ -4656,7 +4656,7 @@
         "y": 0.5
       }
     },
-    "screenshots/transform/angle.jpg": {
+    "/transform/angle.jpg": {
       "frame": {
         "x": 640,
         "y": 864,
@@ -4680,7 +4680,7 @@
         "y": 0.5
       }
     },
-    "screenshots/transform/display size.jpg": {
+    "/transform/display size.jpg": {
       "frame": {
         "x": 640,
         "y": 960,
@@ -4704,7 +4704,7 @@
         "y": 0.5
       }
     },
-    "screenshots/transform/flip x.jpg": {
+    "/transform/flip x.jpg": {
       "frame": {
         "x": 640,
         "y": 1056,
@@ -4728,7 +4728,7 @@
         "y": 0.5
       }
     },
-    "screenshots/transform/flip y.jpg": {
+    "/transform/flip y.jpg": {
       "frame": {
         "x": 640,
         "y": 1152,
@@ -4752,7 +4752,7 @@
         "y": 0.5
       }
     },
-    "screenshots/transform/originx.jpg": {
+    "/transform/originx.jpg": {
       "frame": {
         "x": 640,
         "y": 1248,
@@ -4776,7 +4776,7 @@
         "y": 0.5
       }
     },
-    "screenshots/transform/originxy.jpg": {
+    "/transform/originxy.jpg": {
       "frame": {
         "x": 640,
         "y": 1344,
@@ -4800,7 +4800,7 @@
         "y": 0.5
       }
     },
-    "screenshots/transform/originy.jpg": {
+    "/transform/originy.jpg": {
       "frame": {
         "x": 640,
         "y": 1440,
@@ -4824,7 +4824,7 @@
         "y": 0.5
       }
     },
-    "screenshots/transform/position.jpg": {
+    "/transform/position.jpg": {
       "frame": {
         "x": 640,
         "y": 1536,
@@ -4848,7 +4848,7 @@
         "y": 0.5
       }
     },
-    "screenshots/transform/rotation and origin.jpg": {
+    "/transform/rotation and origin.jpg": {
       "frame": {
         "x": 640,
         "y": 1632,
@@ -4872,7 +4872,7 @@
         "y": 0.5
       }
     },
-    "screenshots/transform/rotation.jpg": {
+    "/transform/rotation.jpg": {
       "frame": {
         "x": 640,
         "y": 1728,
@@ -4896,7 +4896,7 @@
         "y": 0.5
       }
     },
-    "screenshots/transform/scalex.jpg": {
+    "/transform/scalex.jpg": {
       "frame": {
         "x": 640,
         "y": 1824,
@@ -4920,7 +4920,7 @@
         "y": 0.5
       }
     },
-    "screenshots/transform/scalexy.jpg": {
+    "/transform/scalexy.jpg": {
       "frame": {
         "x": 640,
         "y": 1920,
@@ -4944,7 +4944,7 @@
         "y": 0.5
       }
     },
-    "screenshots/transform/scaley.jpg": {
+    "/transform/scaley.jpg": {
       "frame": {
         "x": 768,
         "y": 768,
@@ -4968,7 +4968,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/callbacks.jpg": {
+    "/tweens/callbacks.jpg": {
       "frame": {
         "x": 896,
         "y": 768,
@@ -4992,7 +4992,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/checkerboard 2.jpg": {
+    "/tweens/checkerboard 2.jpg": {
       "frame": {
         "x": 1024,
         "y": 768,
@@ -5016,7 +5016,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/checkerboard 3.jpg": {
+    "/tweens/checkerboard 3.jpg": {
       "frame": {
         "x": 1152,
         "y": 768,
@@ -5040,7 +5040,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/checkerboard 4.jpg": {
+    "/tweens/checkerboard 4.jpg": {
       "frame": {
         "x": 1280,
         "y": 768,
@@ -5064,7 +5064,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/checkerboard rotate.jpg": {
+    "/tweens/checkerboard rotate.jpg": {
       "frame": {
         "x": 1408,
         "y": 768,
@@ -5088,7 +5088,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/checkerboard.jpg": {
+    "/tweens/checkerboard.jpg": {
       "frame": {
         "x": 1536,
         "y": 768,
@@ -5112,7 +5112,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/complete delay.jpg": {
+    "/tweens/complete delay.jpg": {
       "frame": {
         "x": 1664,
         "y": 768,
@@ -5136,7 +5136,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/custom ease.jpg": {
+    "/tweens/custom ease.jpg": {
       "frame": {
         "x": 1792,
         "y": 768,
@@ -5160,7 +5160,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/delay.jpg": {
+    "/tweens/delay.jpg": {
       "frame": {
         "x": 1920,
         "y": 768,
@@ -5184,7 +5184,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/destroy a tween.jpg": {
+    "/tweens/destroy a tween.jpg": {
       "frame": {
         "x": 768,
         "y": 864,
@@ -5208,7 +5208,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/dynamic end property.jpg": {
+    "/tweens/dynamic end property.jpg": {
       "frame": {
         "x": 768,
         "y": 960,
@@ -5232,7 +5232,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/dynamic properties multiple.jpg": {
+    "/tweens/dynamic properties multiple.jpg": {
       "frame": {
         "x": 768,
         "y": 1056,
@@ -5256,7 +5256,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/dynamic properties.jpg": {
+    "/tweens/dynamic properties.jpg": {
       "frame": {
         "x": 768,
         "y": 1152,
@@ -5280,7 +5280,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/ease equations.jpg": {
+    "/tweens/ease equations.jpg": {
       "frame": {
         "x": 768,
         "y": 1248,
@@ -5304,7 +5304,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/ease params.jpg": {
+    "/tweens/ease params.jpg": {
       "frame": {
         "x": 768,
         "y": 1344,
@@ -5328,7 +5328,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/elasticity.jpg": {
+    "/tweens/elasticity.jpg": {
       "frame": {
         "x": 768,
         "y": 1440,
@@ -5352,7 +5352,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/flipx.jpg": {
+    "/tweens/flipx.jpg": {
       "frame": {
         "x": 768,
         "y": 1536,
@@ -5376,7 +5376,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/flipy.jpg": {
+    "/tweens/flipy.jpg": {
       "frame": {
         "x": 768,
         "y": 1632,
@@ -5400,7 +5400,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/from and to.jpg": {
+    "/tweens/from and to.jpg": {
       "frame": {
         "x": 768,
         "y": 1728,
@@ -5424,7 +5424,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/global time scale.jpg": {
+    "/tweens/global time scale.jpg": {
       "frame": {
         "x": 768,
         "y": 1824,
@@ -5448,7 +5448,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/immediate stop a tween.jpg": {
+    "/tweens/immediate stop a tween.jpg": {
       "frame": {
         "x": 768,
         "y": 1920,
@@ -5472,7 +5472,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/linear bounce.jpg": {
+    "/tweens/linear bounce.jpg": {
       "frame": {
         "x": 896,
         "y": 864,
@@ -5496,7 +5496,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/loop delay.jpg": {
+    "/tweens/loop delay.jpg": {
       "frame": {
         "x": 1024,
         "y": 864,
@@ -5520,7 +5520,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/loop.jpg": {
+    "/tweens/loop.jpg": {
       "frame": {
         "x": 1152,
         "y": 864,
@@ -5544,7 +5544,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/multiple delayed properties.jpg": {
+    "/tweens/multiple delayed properties.jpg": {
       "frame": {
         "x": 1280,
         "y": 864,
@@ -5568,7 +5568,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/multiple properties yoyo.jpg": {
+    "/tweens/multiple properties yoyo.jpg": {
       "frame": {
         "x": 1408,
         "y": 864,
@@ -5592,7 +5592,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/multiple properties.jpg": {
+    "/tweens/multiple properties.jpg": {
       "frame": {
         "x": 1536,
         "y": 864,
@@ -5616,7 +5616,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/multiple targets multiple properties.jpg": {
+    "/tweens/multiple targets multiple properties.jpg": {
       "frame": {
         "x": 1664,
         "y": 864,
@@ -5640,7 +5640,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/multiple targets.jpg": {
+    "/tweens/multiple targets.jpg": {
       "frame": {
         "x": 1792,
         "y": 864,
@@ -5664,7 +5664,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/number tween with yoyo.jpg": {
+    "/tweens/number tween with yoyo.jpg": {
       "frame": {
         "x": 1920,
         "y": 864,
@@ -5688,7 +5688,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/number tween.jpg": {
+    "/tweens/number tween.jpg": {
       "frame": {
         "x": 896,
         "y": 960,
@@ -5712,7 +5712,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/on complete callback.jpg": {
+    "/tweens/on complete callback.jpg": {
       "frame": {
         "x": 1024,
         "y": 960,
@@ -5736,7 +5736,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/on start callback.jpg": {
+    "/tweens/on start callback.jpg": {
       "frame": {
         "x": 1152,
         "y": 960,
@@ -5760,7 +5760,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/on yoyo callback.jpg": {
+    "/tweens/on yoyo callback.jpg": {
       "frame": {
         "x": 1280,
         "y": 960,
@@ -5784,7 +5784,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/pause and resume all.jpg": {
+    "/tweens/pause and resume all.jpg": {
       "frame": {
         "x": 1408,
         "y": 960,
@@ -5808,7 +5808,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/pause and resume.jpg": {
+    "/tweens/pause and resume.jpg": {
       "frame": {
         "x": 1536,
         "y": 960,
@@ -5832,7 +5832,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/paused tween.jpg": {
+    "/tweens/paused tween.jpg": {
       "frame": {
         "x": 1664,
         "y": 960,
@@ -5856,7 +5856,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/performance test 1.jpg": {
+    "/tweens/performance test 1.jpg": {
       "frame": {
         "x": 1792,
         "y": 960,
@@ -5880,7 +5880,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/performance test 2.jpg": {
+    "/tweens/performance test 2.jpg": {
       "frame": {
         "x": 1920,
         "y": 960,
@@ -5904,7 +5904,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/relative value repeating.jpg": {
+    "/tweens/relative value repeating.jpg": {
       "frame": {
         "x": 896,
         "y": 1056,
@@ -5928,7 +5928,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/relative value.jpg": {
+    "/tweens/relative value.jpg": {
       "frame": {
         "x": 896,
         "y": 1152,
@@ -5952,7 +5952,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/repeat and hold.jpg": {
+    "/tweens/repeat and hold.jpg": {
       "frame": {
         "x": 896,
         "y": 1248,
@@ -5976,7 +5976,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/repeat and yoyo.jpg": {
+    "/tweens/repeat and yoyo.jpg": {
       "frame": {
         "x": 896,
         "y": 1344,
@@ -6000,7 +6000,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/repeat delay and hold.jpg": {
+    "/tweens/repeat delay and hold.jpg": {
       "frame": {
         "x": 896,
         "y": 1440,
@@ -6024,7 +6024,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/repeat delay.jpg": {
+    "/tweens/repeat delay.jpg": {
       "frame": {
         "x": 896,
         "y": 1536,
@@ -6048,7 +6048,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/repeat tween.jpg": {
+    "/tweens/repeat tween.jpg": {
       "frame": {
         "x": 896,
         "y": 1632,
@@ -6072,7 +6072,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/restart.jpg": {
+    "/tweens/restart.jpg": {
       "frame": {
         "x": 896,
         "y": 1728,
@@ -6096,7 +6096,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/seek.jpg": {
+    "/tweens/seek.jpg": {
       "frame": {
         "x": 896,
         "y": 1824,
@@ -6120,7 +6120,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/shape morph.jpg": {
+    "/tweens/shape morph.jpg": {
       "frame": {
         "x": 896,
         "y": 1920,
@@ -6144,7 +6144,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/single property.jpg": {
+    "/tweens/single property.jpg": {
       "frame": {
         "x": 1024,
         "y": 1056,
@@ -6168,7 +6168,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/stagger compare.jpg": {
+    "/tweens/stagger compare.jpg": {
       "frame": {
         "x": 1152,
         "y": 1056,
@@ -6192,7 +6192,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/stagger delay.jpg": {
+    "/tweens/stagger delay.jpg": {
       "frame": {
         "x": 1280,
         "y": 1056,
@@ -6216,7 +6216,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/stagger.jpg": {
+    "/tweens/stagger.jpg": {
       "frame": {
         "x": 1408,
         "y": 1056,
@@ -6240,7 +6240,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/star circle.jpg": {
+    "/tweens/star circle.jpg": {
       "frame": {
         "x": 1536,
         "y": 1056,
@@ -6264,7 +6264,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/stepped ease.jpg": {
+    "/tweens/stepped ease.jpg": {
       "frame": {
         "x": 1664,
         "y": 1056,
@@ -6288,7 +6288,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/timelines/absolute offsets.jpg": {
+    "/tweens/timelines/absolute offsets.jpg": {
       "frame": {
         "x": 1792,
         "y": 1056,
@@ -6312,7 +6312,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/timelines/create timeline.jpg": {
+    "/tweens/timelines/create timeline.jpg": {
       "frame": {
         "x": 1920,
         "y": 1056,
@@ -6336,7 +6336,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/timelines/default properties.jpg": {
+    "/tweens/timelines/default properties.jpg": {
       "frame": {
         "x": 1024,
         "y": 1152,
@@ -6360,7 +6360,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/timelines/loop timeline.jpg": {
+    "/tweens/timelines/loop timeline.jpg": {
       "frame": {
         "x": 1024,
         "y": 1248,
@@ -6384,7 +6384,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/timelines/relative offsets 2.jpg": {
+    "/tweens/timelines/relative offsets 2.jpg": {
       "frame": {
         "x": 1024,
         "y": 1344,
@@ -6408,7 +6408,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/timelines/relative offsets.jpg": {
+    "/tweens/timelines/relative offsets.jpg": {
       "frame": {
         "x": 1024,
         "y": 1440,
@@ -6432,7 +6432,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/timelines/simple timeline 1.jpg": {
+    "/tweens/timelines/simple timeline 1.jpg": {
       "frame": {
         "x": 1024,
         "y": 1536,
@@ -6456,7 +6456,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/timelines/simple timeline 6.jpg": {
+    "/tweens/timelines/simple timeline 6.jpg": {
       "frame": {
         "x": 1024,
         "y": 1632,
@@ -6480,7 +6480,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/timelines/simple timeline 7.jpg": {
+    "/tweens/timelines/simple timeline 7.jpg": {
       "frame": {
         "x": 1024,
         "y": 1728,
@@ -6504,7 +6504,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/timelines/simple timeline 8.jpg": {
+    "/tweens/timelines/simple timeline 8.jpg": {
       "frame": {
         "x": 1024,
         "y": 1824,
@@ -6528,7 +6528,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/timelines/simple timeline 9.jpg": {
+    "/tweens/timelines/simple timeline 9.jpg": {
       "frame": {
         "x": 1024,
         "y": 1920,
@@ -6552,7 +6552,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/timelines/total duration.jpg": {
+    "/tweens/timelines/total duration.jpg": {
       "frame": {
         "x": 1152,
         "y": 1152,
@@ -6576,7 +6576,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/tint tween.jpg": {
+    "/tweens/tint tween.jpg": {
       "frame": {
         "x": 1280,
         "y": 1152,
@@ -6600,7 +6600,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/total duration.jpg": {
+    "/tweens/total duration.jpg": {
       "frame": {
         "x": 1408,
         "y": 1152,
@@ -6624,7 +6624,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/tween angle from range 0 to 360.jpg": {
+    "/tweens/tween angle from range 0 to 360.jpg": {
       "frame": {
         "x": 1536,
         "y": 1152,
@@ -6648,7 +6648,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/tween sampler.jpg": {
+    "/tweens/tween sampler.jpg": {
       "frame": {
         "x": 1664,
         "y": 1152,
@@ -6672,7 +6672,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/tween time scale.jpg": {
+    "/tweens/tween time scale.jpg": {
       "frame": {
         "x": 1792,
         "y": 1152,
@@ -6696,7 +6696,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/update to.jpg": {
+    "/tweens/update to.jpg": {
       "frame": {
         "x": 1920,
         "y": 1152,
@@ -6720,7 +6720,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/yoyo delay.jpg": {
+    "/tweens/yoyo delay.jpg": {
       "frame": {
         "x": 1152,
         "y": 1248,
@@ -6744,7 +6744,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tweens/yoyo tween.jpg": {
+    "/tweens/yoyo tween.jpg": {
       "frame": {
         "x": 1152,
         "y": 1344,
@@ -6768,7 +6768,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/array/bring to top.jpg": {
+    "/utils/array/bring to top.jpg": {
       "frame": {
         "x": 1152,
         "y": 1440,
@@ -6792,7 +6792,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/array/reverse matrix columns.jpg": {
+    "/utils/array/reverse matrix columns.jpg": {
       "frame": {
         "x": 1152,
         "y": 1536,
@@ -6816,7 +6816,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/array/reverse matrix rows.jpg": {
+    "/utils/array/reverse matrix rows.jpg": {
       "frame": {
         "x": 1152,
         "y": 1632,
@@ -6840,7 +6840,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/array/rotate matrix 180.jpg": {
+    "/utils/array/rotate matrix 180.jpg": {
       "frame": {
         "x": 1152,
         "y": 1728,
@@ -6864,7 +6864,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/array/rotate matrix left.jpg": {
+    "/utils/array/rotate matrix left.jpg": {
       "frame": {
         "x": 1152,
         "y": 1824,
@@ -6888,7 +6888,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/array/rotate matrix right.jpg": {
+    "/utils/array/rotate matrix right.jpg": {
       "frame": {
         "x": 1152,
         "y": 1920,
@@ -6912,7 +6912,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/array/rotate matrix.jpg": {
+    "/utils/array/rotate matrix.jpg": {
       "frame": {
         "x": 1280,
         "y": 1248,
@@ -6936,7 +6936,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/array/translate matrix.jpg": {
+    "/utils/array/translate matrix.jpg": {
       "frame": {
         "x": 1408,
         "y": 1248,
@@ -6960,7 +6960,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/array/transpose matrix.jpg": {
+    "/utils/array/transpose matrix.jpg": {
       "frame": {
         "x": 1536,
         "y": 1248,
@@ -6984,7 +6984,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/rbush/rbush 1.jpg": {
+    "/utils/rbush/rbush 1.jpg": {
       "frame": {
         "x": 1664,
         "y": 1248,
@@ -7008,7 +7008,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/rbush/rbush 2.jpg": {
+    "/utils/rbush/rbush 2.jpg": {
       "frame": {
         "x": 1792,
         "y": 1248,
@@ -7032,7 +7032,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/size/aspect mode envelop.jpg": {
+    "/utils/size/aspect mode envelop.jpg": {
       "frame": {
         "x": 1920,
         "y": 1248,
@@ -7056,7 +7056,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/size/aspect mode fit.jpg": {
+    "/utils/size/aspect mode fit.jpg": {
       "frame": {
         "x": 1280,
         "y": 1344,
@@ -7080,7 +7080,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/size/aspect mode height controls width.jpg": {
+    "/utils/size/aspect mode height controls width.jpg": {
       "frame": {
         "x": 1408,
         "y": 1344,
@@ -7104,7 +7104,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/size/aspect mode none.jpg": {
+    "/utils/size/aspect mode none.jpg": {
       "frame": {
         "x": 1536,
         "y": 1344,
@@ -7128,7 +7128,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/size/aspect mode width controls height.jpg": {
+    "/utils/size/aspect mode width controls height.jpg": {
       "frame": {
         "x": 1664,
         "y": 1344,
@@ -7152,7 +7152,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/size/max size.jpg": {
+    "/utils/size/max size.jpg": {
       "frame": {
         "x": 1792,
         "y": 1344,
@@ -7176,7 +7176,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/size/min max size.jpg": {
+    "/utils/size/min max size.jpg": {
       "frame": {
         "x": 1920,
         "y": 1344,
@@ -7200,7 +7200,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/size/min size.jpg": {
+    "/utils/size/min size.jpg": {
       "frame": {
         "x": 1280,
         "y": 1440,
@@ -7224,7 +7224,7 @@
         "y": 0.5
       }
     },
-    "screenshots/utils/size/snap child.jpg": {
+    "/utils/size/snap child.jpg": {
       "frame": {
         "x": 1280,
         "y": 1536,
@@ -7248,7 +7248,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/resize min max.jpg": {
+    "/scalemanager/resize min max.jpg": {
       "frame": {
         "x": 384,
         "y": 0,
@@ -7272,7 +7272,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/resize.jpg": {
+    "/scalemanager/resize.jpg": {
       "frame": {
         "x": 384,
         "y": 0,
@@ -7296,7 +7296,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/zoom with no scale.jpg": {
+    "/scalemanager/zoom with no scale.jpg": {
       "frame": {
         "x": 1280,
         "y": 0,
@@ -7320,7 +7320,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/add scene from another scene.jpg": {
+    "/scenes/add scene from another scene.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -7344,7 +7344,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/changing scene es6.jpg": {
+    "/scenes/changing scene es6.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -7368,7 +7368,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/scene add manual start.jpg": {
+    "/scenes/scene add manual start.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -7392,7 +7392,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/scene add.jpg": {
+    "/scenes/scene add.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -7416,7 +7416,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/scene from class.jpg": {
+    "/scenes/scene from class.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -7440,7 +7440,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/scene from es6 class.jpg": {
+    "/scenes/scene from es6 class.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -7464,7 +7464,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/scene from function.jpg": {
+    "/scenes/scene from function.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -7488,7 +7488,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/scene from instance.jpg": {
+    "/scenes/scene from instance.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -7512,7 +7512,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/scene from object.jpg": {
+    "/scenes/scene from object.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -7536,7 +7536,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/scene injection map utf8.jpg": {
+    "/scenes/scene injection map utf8.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -7560,7 +7560,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/scene injection map.jpg": {
+    "/scenes/scene injection map.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -7584,7 +7584,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/test plugin.jpg": {
+    "/scenes/test plugin.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -7608,7 +7608,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/transition test 1.jpg": {
+    "/scenes/transition test 1.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -7632,7 +7632,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/multiple scenes from classes.jpg": {
+    "/scenes/multiple scenes from classes.jpg": {
       "frame": {
         "x": 0,
         "y": 96,
@@ -7656,7 +7656,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scenes/send to back.jpg": {
+    "/scenes/send to back.jpg": {
       "frame": {
         "x": 0,
         "y": 960,
@@ -7680,7 +7680,7 @@
         "y": 0.5
       }
     },
-    "screenshots/textures/trimmed frame from single atlas.jpg": {
+    "/textures/trimmed frame from single atlas.jpg": {
       "frame": {
         "x": 512,
         "y": 384,
@@ -7704,7 +7704,7 @@
         "y": 0.5
       }
     },
-    "screenshots/tilemap/layer transform.jpg": {
+    "/tilemap/layer transform.jpg": {
       "frame": {
         "x": 384,
         "y": 1920,

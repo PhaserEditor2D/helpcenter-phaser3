@@ -1,6 +1,6 @@
 {
   "frames": {
-    "screenshots/input/mouse/circle hit area.jpg": {
+    "/input/mouse/circle hit area.jpg": {
       "frame": {
         "x": 0,
         "y": 0,
@@ -24,7 +24,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/ellipse hit area.jpg": {
+    "/input/mouse/ellipse hit area.jpg": {
       "frame": {
         "x": 128,
         "y": 0,
@@ -48,7 +48,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/mass scrolling sprite test no cull.jpg": {
+    "/input/mouse/mass scrolling sprite test no cull.jpg": {
       "frame": {
         "x": 256,
         "y": 0,
@@ -72,7 +72,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/mass scrolling sprite test.jpg": {
+    "/input/mouse/mass scrolling sprite test.jpg": {
       "frame": {
         "x": 384,
         "y": 0,
@@ -96,7 +96,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/mass sprite test.jpg": {
+    "/input/mouse/mass sprite test.jpg": {
       "frame": {
         "x": 512,
         "y": 0,
@@ -120,7 +120,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/mouse down.jpg": {
+    "/input/mouse/mouse down.jpg": {
       "frame": {
         "x": 640,
         "y": 0,
@@ -144,7 +144,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/mouse wheel over gameobject.jpg": {
+    "/input/mouse/mouse wheel over gameobject.jpg": {
       "frame": {
         "x": 768,
         "y": 0,
@@ -168,7 +168,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/mouse wheel.jpg": {
+    "/input/mouse/mouse wheel.jpg": {
       "frame": {
         "x": 896,
         "y": 0,
@@ -192,7 +192,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/move event.jpg": {
+    "/input/mouse/move event.jpg": {
       "frame": {
         "x": 1024,
         "y": 0,
@@ -216,7 +216,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/origin tests.jpg": {
+    "/input/mouse/origin tests.jpg": {
       "frame": {
         "x": 1152,
         "y": 0,
@@ -240,7 +240,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/over and out events.jpg": {
+    "/input/mouse/over and out events.jpg": {
       "frame": {
         "x": 1280,
         "y": 0,
@@ -264,7 +264,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/pointer lock.jpg": {
+    "/input/mouse/pointer lock.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -288,7 +288,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/poll always.jpg": {
+    "/input/mouse/poll always.jpg": {
       "frame": {
         "x": 1536,
         "y": 0,
@@ -312,7 +312,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/poll only on move.jpg": {
+    "/input/mouse/poll only on move.jpg": {
       "frame": {
         "x": 1664,
         "y": 0,
@@ -336,7 +336,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/polygon hit area.jpg": {
+    "/input/mouse/polygon hit area.jpg": {
       "frame": {
         "x": 1792,
         "y": 0,
@@ -360,7 +360,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/right mouse button.jpg": {
+    "/input/mouse/right mouse button.jpg": {
       "frame": {
         "x": 1920,
         "y": 0,
@@ -384,7 +384,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/shape hit tests.jpg": {
+    "/input/mouse/shape hit tests.jpg": {
       "frame": {
         "x": 0,
         "y": 96,
@@ -408,7 +408,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/single sprite.jpg": {
+    "/input/mouse/single sprite.jpg": {
       "frame": {
         "x": 0,
         "y": 192,
@@ -432,7 +432,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/text input test.jpg": {
+    "/input/mouse/text input test.jpg": {
       "frame": {
         "x": 0,
         "y": 288,
@@ -456,7 +456,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/top only.jpg": {
+    "/input/mouse/top only.jpg": {
       "frame": {
         "x": 0,
         "y": 384,
@@ -480,7 +480,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/triangle hit area.jpg": {
+    "/input/mouse/triangle hit area.jpg": {
       "frame": {
         "x": 0,
         "y": 480,
@@ -504,7 +504,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/multitouch/multi down test.jpg": {
+    "/input/multitouch/multi down test.jpg": {
       "frame": {
         "x": 0,
         "y": 576,
@@ -528,7 +528,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/multitouch/multi drag.jpg": {
+    "/input/multitouch/multi drag.jpg": {
       "frame": {
         "x": 0,
         "y": 672,
@@ -552,7 +552,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/multitouch/multi over test.jpg": {
+    "/input/multitouch/multi over test.jpg": {
       "frame": {
         "x": 0,
         "y": 768,
@@ -576,7 +576,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/multitouch/multi touch test.jpg": {
+    "/input/multitouch/multi touch test.jpg": {
       "frame": {
         "x": 0,
         "y": 864,
@@ -600,7 +600,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/multitouch/two touch inputs.jpg": {
+    "/input/multitouch/two touch inputs.jpg": {
       "frame": {
         "x": 0,
         "y": 960,
@@ -624,7 +624,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pixel perfect/atlas frame.jpg": {
+    "/input/pixel perfect/atlas frame.jpg": {
       "frame": {
         "x": 0,
         "y": 1056,
@@ -648,7 +648,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pixel perfect/image with lots of alpha.jpg": {
+    "/input/pixel perfect/image with lots of alpha.jpg": {
       "frame": {
         "x": 0,
         "y": 1152,
@@ -672,7 +672,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pixel perfect/on down.jpg": {
+    "/input/pixel perfect/on down.jpg": {
       "frame": {
         "x": 0,
         "y": 1248,
@@ -696,7 +696,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pixel perfect/on drag.jpg": {
+    "/input/pixel perfect/on drag.jpg": {
       "frame": {
         "x": 0,
         "y": 1344,
@@ -720,7 +720,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pixel perfect/transformed.jpg": {
+    "/input/pixel perfect/transformed.jpg": {
       "frame": {
         "x": 0,
         "y": 1440,
@@ -744,7 +744,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pointer/cards.jpg": {
+    "/input/pointer/cards.jpg": {
       "frame": {
         "x": 0,
         "y": 1536,
@@ -768,7 +768,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pointer/down event.jpg": {
+    "/input/pointer/down event.jpg": {
       "frame": {
         "x": 0,
         "y": 1632,
@@ -792,7 +792,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pointer/drag rectangle.jpg": {
+    "/input/pointer/drag rectangle.jpg": {
       "frame": {
         "x": 0,
         "y": 1728,
@@ -816,7 +816,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pointer/draw sprites.jpg": {
+    "/input/pointer/draw sprites.jpg": {
       "frame": {
         "x": 0,
         "y": 1824,
@@ -840,7 +840,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pointer/event list.jpg": {
+    "/input/pointer/event list.jpg": {
       "frame": {
         "x": 0,
         "y": 1920,
@@ -864,7 +864,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pointer/external link.jpg": {
+    "/input/pointer/external link.jpg": {
       "frame": {
         "x": 128,
         "y": 96,
@@ -888,7 +888,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pointer/move event.jpg": {
+    "/input/pointer/move event.jpg": {
       "frame": {
         "x": 256,
         "y": 96,
@@ -912,7 +912,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pointer/multi camera cards.jpg": {
+    "/input/pointer/multi camera cards.jpg": {
       "frame": {
         "x": 384,
         "y": 96,
@@ -936,7 +936,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pointer/multiple scene down event.jpg": {
+    "/input/pointer/multiple scene down event.jpg": {
       "frame": {
         "x": 512,
         "y": 96,
@@ -960,7 +960,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pointer/pointer buttons debug.jpg": {
+    "/input/pointer/pointer buttons debug.jpg": {
       "frame": {
         "x": 640,
         "y": 96,
@@ -984,7 +984,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pointer/pointer buttons.jpg": {
+    "/input/pointer/pointer buttons.jpg": {
       "frame": {
         "x": 768,
         "y": 96,
@@ -1008,7 +1008,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pointer/pointer debug.jpg": {
+    "/input/pointer/pointer debug.jpg": {
       "frame": {
         "x": 896,
         "y": 96,
@@ -1032,7 +1032,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/zones/basic input zone.jpg": {
+    "/input/zones/basic input zone.jpg": {
       "frame": {
         "x": 1024,
         "y": 96,
@@ -1056,7 +1056,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/zones/circular drop zone.jpg": {
+    "/input/zones/circular drop zone.jpg": {
       "frame": {
         "x": 1152,
         "y": 96,
@@ -1080,7 +1080,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/zones/drop zone.jpg": {
+    "/input/zones/drop zone.jpg": {
       "frame": {
         "x": 1280,
         "y": 96,
@@ -1104,7 +1104,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/zones/resize zone.jpg": {
+    "/input/zones/resize zone.jpg": {
       "frame": {
         "x": 1408,
         "y": 96,
@@ -1128,7 +1128,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/zones/sprite drop zone.jpg": {
+    "/input/zones/sprite drop zone.jpg": {
       "frame": {
         "x": 1536,
         "y": 96,
@@ -1152,7 +1152,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/animation json/load animation json.jpg": {
+    "/loader/animation json/load animation json.jpg": {
       "frame": {
         "x": 1664,
         "y": 96,
@@ -1176,7 +1176,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/audio/load audio stream.jpg": {
+    "/loader/audio/load audio stream.jpg": {
       "frame": {
         "x": 1792,
         "y": 96,
@@ -1200,7 +1200,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/audio/load html5 audio.jpg": {
+    "/loader/audio/load html5 audio.jpg": {
       "frame": {
         "x": 1920,
         "y": 96,
@@ -1224,7 +1224,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/base64/bitmap text.jpg": {
+    "/loader/base64/bitmap text.jpg": {
       "frame": {
         "x": 128,
         "y": 192,
@@ -1248,7 +1248,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/binary/load binary data from object.jpg": {
+    "/loader/binary/load binary data from object.jpg": {
       "frame": {
         "x": 256,
         "y": 192,
@@ -1272,7 +1272,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/binary/load binary data parse after load.jpg": {
+    "/loader/binary/load binary data parse after load.jpg": {
       "frame": {
         "x": 384,
         "y": 192,
@@ -1296,7 +1296,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/binary/load binary data.jpg": {
+    "/loader/binary/load binary data.jpg": {
       "frame": {
         "x": 512,
         "y": 192,
@@ -1320,7 +1320,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/bitmap text/load bitmap text from pack.jpg": {
+    "/loader/bitmap text/load bitmap text from pack.jpg": {
       "frame": {
         "x": 640,
         "y": 192,
@@ -1344,7 +1344,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/bitmap text/load bitmap text.jpg": {
+    "/loader/bitmap text/load bitmap text.jpg": {
       "frame": {
         "x": 768,
         "y": 192,
@@ -1368,7 +1368,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/file pack/load file pack from json.jpg": {
+    "/loader/file pack/load file pack from json.jpg": {
       "frame": {
         "x": 896,
         "y": 192,
@@ -1392,7 +1392,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/file pack/load file pack test 2.jpg": {
+    "/loader/file pack/load file pack test 2.jpg": {
       "frame": {
         "x": 1024,
         "y": 192,
@@ -1416,7 +1416,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/file pack/load file pack test 3.jpg": {
+    "/loader/file pack/load file pack test 3.jpg": {
       "frame": {
         "x": 1152,
         "y": 192,
@@ -1440,7 +1440,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/file pack/load file pack test 4.jpg": {
+    "/loader/file pack/load file pack test 4.jpg": {
       "frame": {
         "x": 1280,
         "y": 192,
@@ -1464,7 +1464,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/file pack/load file pack test 5.jpg": {
+    "/loader/file pack/load file pack test 5.jpg": {
       "frame": {
         "x": 1408,
         "y": 192,
@@ -1488,7 +1488,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/game load config.jpg": {
+    "/loader/game load config.jpg": {
       "frame": {
         "x": 1536,
         "y": 192,
@@ -1512,7 +1512,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/html/load html to texture.jpg": {
+    "/loader/html/load html to texture.jpg": {
       "frame": {
         "x": 1664,
         "y": 192,
@@ -1536,7 +1536,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/image/load image from object.jpg": {
+    "/loader/image/load image from object.jpg": {
       "frame": {
         "x": 1792,
         "y": 192,
@@ -1560,7 +1560,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/image/load image on click.jpg": {
+    "/loader/image/load image on click.jpg": {
       "frame": {
         "x": 1920,
         "y": 192,
@@ -1584,7 +1584,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/image/load normal map from object.jpg": {
+    "/loader/image/load normal map from object.jpg": {
       "frame": {
         "x": 128,
         "y": 288,
@@ -1608,7 +1608,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/image/load normal map with light.jpg": {
+    "/loader/image/load normal map with light.jpg": {
       "frame": {
         "x": 128,
         "y": 384,
@@ -1632,7 +1632,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/load config tests.jpg": {
+    "/loader/load config tests.jpg": {
       "frame": {
         "x": 128,
         "y": 480,
@@ -1656,7 +1656,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/load from 404.jpg": {
+    "/loader/load from 404.jpg": {
       "frame": {
         "x": 128,
         "y": 576,
@@ -1680,7 +1680,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/loader events/add files during load.jpg": {
+    "/loader/loader events/add files during load.jpg": {
       "frame": {
         "x": 128,
         "y": 672,
@@ -1704,7 +1704,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/loader events/destroy game during load.jpg": {
+    "/loader/loader events/destroy game during load.jpg": {
       "frame": {
         "x": 128,
         "y": 768,
@@ -1728,7 +1728,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/loader events/display file as loaded.jpg": {
+    "/loader/loader events/display file as loaded.jpg": {
       "frame": {
         "x": 128,
         "y": 864,
@@ -1752,7 +1752,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/loader events/file complete event.jpg": {
+    "/loader/loader events/file complete event.jpg": {
       "frame": {
         "x": 128,
         "y": 960,
@@ -1776,7 +1776,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/loader events/file progress event.jpg": {
+    "/loader/loader events/file progress event.jpg": {
       "frame": {
         "x": 128,
         "y": 1056,
@@ -1800,7 +1800,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/loader events/load 200 image files.jpg": {
+    "/loader/loader events/load 200 image files.jpg": {
       "frame": {
         "x": 128,
         "y": 1152,
@@ -1824,7 +1824,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/loader events/load progress.jpg": {
+    "/loader/loader events/load progress.jpg": {
       "frame": {
         "x": 128,
         "y": 1248,
@@ -1848,7 +1848,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/loader events/multi file progress event.jpg": {
+    "/loader/loader events/multi file progress event.jpg": {
       "frame": {
         "x": 128,
         "y": 1344,
@@ -1872,7 +1872,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/loader events/play animation during load.jpg": {
+    "/loader/loader events/play animation during load.jpg": {
       "frame": {
         "x": 128,
         "y": 1440,
@@ -1896,7 +1896,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/loader events/start loader manually.jpg": {
+    "/loader/loader events/start loader manually.jpg": {
       "frame": {
         "x": 128,
         "y": 1536,
@@ -1920,7 +1920,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/loader events/test loading files already loaded.jpg": {
+    "/loader/loader events/test loading files already loaded.jpg": {
       "frame": {
         "x": 128,
         "y": 1632,
@@ -1944,7 +1944,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/plugin/load plugin.jpg": {
+    "/loader/plugin/load plugin.jpg": {
       "frame": {
         "x": 128,
         "y": 1728,
@@ -1968,7 +1968,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/scene payload/scene files payload.jpg": {
+    "/loader/scene payload/scene files payload.jpg": {
       "frame": {
         "x": 128,
         "y": 1824,
@@ -1992,7 +1992,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/scene/load scene.jpg": {
+    "/loader/scene/load scene.jpg": {
       "frame": {
         "x": 128,
         "y": 1920,
@@ -2016,7 +2016,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/script/load script.jpg": {
+    "/loader/script/load script.jpg": {
       "frame": {
         "x": 256,
         "y": 288,
@@ -2040,7 +2040,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/sprite sheet/load sprite sheet from object array.jpg": {
+    "/loader/sprite sheet/load sprite sheet from object array.jpg": {
       "frame": {
         "x": 384,
         "y": 288,
@@ -2064,7 +2064,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/sprite sheet/load sprite sheet from object.jpg": {
+    "/loader/sprite sheet/load sprite sheet from object.jpg": {
       "frame": {
         "x": 512,
         "y": 288,
@@ -2088,7 +2088,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/sprite sheet/load sprite sheet from scene payload.jpg": {
+    "/loader/sprite sheet/load sprite sheet from scene payload.jpg": {
       "frame": {
         "x": 640,
         "y": 288,
@@ -2112,7 +2112,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/sprite sheet/load sprite sheet.jpg": {
+    "/loader/sprite sheet/load sprite sheet.jpg": {
       "frame": {
         "x": 768,
         "y": 288,
@@ -2136,7 +2136,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/svg/load svg with fixed size.jpg": {
+    "/loader/svg/load svg with fixed size.jpg": {
       "frame": {
         "x": 896,
         "y": 288,
@@ -2160,7 +2160,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/svg/load svg with scale.jpg": {
+    "/loader/svg/load svg with scale.jpg": {
       "frame": {
         "x": 1024,
         "y": 288,
@@ -2184,7 +2184,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/svg/load svg.jpg": {
+    "/loader/svg/load svg.jpg": {
       "frame": {
         "x": 1152,
         "y": 288,
@@ -2208,7 +2208,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas json/get atlas custom frame data.jpg": {
+    "/loader/texture atlas json/get atlas custom frame data.jpg": {
       "frame": {
         "x": 1280,
         "y": 288,
@@ -2232,7 +2232,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas json/get atlas meta data.jpg": {
+    "/loader/texture atlas json/get atlas meta data.jpg": {
       "frame": {
         "x": 1408,
         "y": 288,
@@ -2256,7 +2256,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas json/load atlas with local json.jpg": {
+    "/loader/texture atlas json/load atlas with local json.jpg": {
       "frame": {
         "x": 1536,
         "y": 288,
@@ -2280,7 +2280,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas json/load remove and reload atlas.jpg": {
+    "/loader/texture atlas json/load remove and reload atlas.jpg": {
       "frame": {
         "x": 1664,
         "y": 288,
@@ -2304,7 +2304,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas json/load texture atlas from object.jpg": {
+    "/loader/texture atlas json/load texture atlas from object.jpg": {
       "frame": {
         "x": 1792,
         "y": 288,
@@ -2328,7 +2328,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas json/load texture atlas from pack.jpg": {
+    "/loader/texture atlas json/load texture atlas from pack.jpg": {
       "frame": {
         "x": 1920,
         "y": 288,
@@ -2352,7 +2352,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas json/load texture atlas from payload.jpg": {
+    "/loader/texture atlas json/load texture atlas from payload.jpg": {
       "frame": {
         "x": 256,
         "y": 384,
@@ -2376,7 +2376,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas json/load texture atlas with normal map from object.jpg": {
+    "/loader/texture atlas json/load texture atlas with normal map from object.jpg": {
       "frame": {
         "x": 256,
         "y": 480,
@@ -2400,7 +2400,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas json/load texture atlas with normal map.jpg": {
+    "/loader/texture atlas json/load texture atlas with normal map.jpg": {
       "frame": {
         "x": 256,
         "y": 576,
@@ -2424,7 +2424,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas json/load texture atlas.jpg": {
+    "/loader/texture atlas json/load texture atlas.jpg": {
       "frame": {
         "x": 256,
         "y": 672,
@@ -2448,7 +2448,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas json/mixed json test.jpg": {
+    "/loader/texture atlas json/mixed json test.jpg": {
       "frame": {
         "x": 256,
         "y": 768,
@@ -2472,7 +2472,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas multi/load multi texture atlas with normal maps.jpg": {
+    "/loader/texture atlas multi/load multi texture atlas with normal maps.jpg": {
       "frame": {
         "x": 256,
         "y": 864,
@@ -2496,7 +2496,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas multi/load multi texture atlas.jpg": {
+    "/loader/texture atlas multi/load multi texture atlas.jpg": {
       "frame": {
         "x": 256,
         "y": 960,
@@ -2520,7 +2520,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas unity/load unity spritesheet animation.jpg": {
+    "/loader/texture atlas unity/load unity spritesheet animation.jpg": {
       "frame": {
         "x": 256,
         "y": 1056,
@@ -2544,7 +2544,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas unity/load unity spritesheet.jpg": {
+    "/loader/texture atlas unity/load unity spritesheet.jpg": {
       "frame": {
         "x": 256,
         "y": 1152,
@@ -2568,7 +2568,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/texture atlas xml/load xml texture atlas.jpg": {
+    "/loader/texture atlas xml/load xml texture atlas.jpg": {
       "frame": {
         "x": 256,
         "y": 1248,
@@ -2592,7 +2592,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/tile maps/load tile map json with normal map.jpg": {
+    "/loader/tile maps/load tile map json with normal map.jpg": {
       "frame": {
         "x": 256,
         "y": 1344,
@@ -2616,7 +2616,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loading.jpg": {
+    "/loading.jpg": {
       "frame": {
         "x": 256,
         "y": 1440,
@@ -2640,7 +2640,7 @@
         "y": 0.5
       }
     },
-    "screenshots/math/distance/distance between points.jpg": {
+    "/math/distance/distance between points.jpg": {
       "frame": {
         "x": 256,
         "y": 1536,
@@ -2664,7 +2664,7 @@
         "y": 0.5
       }
     },
-    "screenshots/math/distance/get chebyshev distance.jpg": {
+    "/math/distance/get chebyshev distance.jpg": {
       "frame": {
         "x": 256,
         "y": 1632,
@@ -2688,7 +2688,7 @@
         "y": 0.5
       }
     },
-    "screenshots/math/distance/snake distance.jpg": {
+    "/math/distance/snake distance.jpg": {
       "frame": {
         "x": 256,
         "y": 1728,
@@ -2712,7 +2712,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/all types.jpg": {
+    "/paths/all types.jpg": {
       "frame": {
         "x": 256,
         "y": 1824,
@@ -2736,7 +2736,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/circle loop path.jpg": {
+    "/paths/circle loop path.jpg": {
       "frame": {
         "x": 256,
         "y": 1920,
@@ -2760,7 +2760,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/circle path.jpg": {
+    "/paths/circle path.jpg": {
       "frame": {
         "x": 384,
         "y": 384,
@@ -2784,7 +2784,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/complex path bounds.jpg": {
+    "/paths/complex path bounds.jpg": {
       "frame": {
         "x": 512,
         "y": 384,
@@ -2808,7 +2808,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/cubic bezier bounds.jpg": {
+    "/paths/curves/cubic bezier bounds.jpg": {
       "frame": {
         "x": 640,
         "y": 384,
@@ -2832,7 +2832,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/cubic bezier curve debug.jpg": {
+    "/paths/curves/cubic bezier curve debug.jpg": {
       "frame": {
         "x": 768,
         "y": 384,
@@ -2856,7 +2856,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/cubic bezier curve.jpg": {
+    "/paths/curves/cubic bezier curve.jpg": {
       "frame": {
         "x": 896,
         "y": 384,
@@ -2880,7 +2880,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/drag cubic bezier curve.jpg": {
+    "/paths/curves/drag cubic bezier curve.jpg": {
       "frame": {
         "x": 1024,
         "y": 384,
@@ -2904,7 +2904,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/drag ellipse curve.jpg": {
+    "/paths/curves/drag ellipse curve.jpg": {
       "frame": {
         "x": 1152,
         "y": 384,
@@ -2928,7 +2928,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/drag line curve.jpg": {
+    "/paths/curves/drag line curve.jpg": {
       "frame": {
         "x": 1280,
         "y": 384,
@@ -2952,7 +2952,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/drag quadratic bezier curve.jpg": {
+    "/paths/curves/drag quadratic bezier curve.jpg": {
       "frame": {
         "x": 1408,
         "y": 384,
@@ -2976,7 +2976,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/drag spline curve.jpg": {
+    "/paths/curves/drag spline curve.jpg": {
       "frame": {
         "x": 1536,
         "y": 384,
@@ -3000,7 +3000,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/ellipse curve bounds.jpg": {
+    "/paths/curves/ellipse curve bounds.jpg": {
       "frame": {
         "x": 1664,
         "y": 384,
@@ -3024,7 +3024,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/ellipse curve.jpg": {
+    "/paths/curves/ellipse curve.jpg": {
       "frame": {
         "x": 1792,
         "y": 384,
@@ -3048,7 +3048,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/get distance on line curve.jpg": {
+    "/paths/curves/get distance on line curve.jpg": {
       "frame": {
         "x": 1920,
         "y": 384,
@@ -3072,7 +3072,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/get points on cubic bezier curve.jpg": {
+    "/paths/curves/get points on cubic bezier curve.jpg": {
       "frame": {
         "x": 384,
         "y": 480,
@@ -3096,7 +3096,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/get points on line curve.jpg": {
+    "/paths/curves/get points on line curve.jpg": {
       "frame": {
         "x": 384,
         "y": 576,
@@ -3120,7 +3120,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/get spaced points on cubic bezier curve.jpg": {
+    "/paths/curves/get spaced points on cubic bezier curve.jpg": {
       "frame": {
         "x": 384,
         "y": 672,
@@ -3144,7 +3144,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/get tangent vectors on cubic bezier curve.jpg": {
+    "/paths/curves/get tangent vectors on cubic bezier curve.jpg": {
       "frame": {
         "x": 384,
         "y": 768,
@@ -3168,7 +3168,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/line curve bounds.jpg": {
+    "/paths/curves/line curve bounds.jpg": {
       "frame": {
         "x": 384,
         "y": 864,
@@ -3192,7 +3192,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/line curve.jpg": {
+    "/paths/curves/line curve.jpg": {
       "frame": {
         "x": 384,
         "y": 960,
@@ -3216,7 +3216,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/point types.jpg": {
+    "/paths/curves/point types.jpg": {
       "frame": {
         "x": 384,
         "y": 1056,
@@ -3240,7 +3240,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/quadratic bezier curve.jpg": {
+    "/paths/curves/quadratic bezier curve.jpg": {
       "frame": {
         "x": 384,
         "y": 1152,
@@ -3264,7 +3264,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/rectangle spline intersection.jpg": {
+    "/paths/curves/rectangle spline intersection.jpg": {
       "frame": {
         "x": 384,
         "y": 1248,
@@ -3288,7 +3288,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/spline between points.jpg": {
+    "/paths/curves/spline between points.jpg": {
       "frame": {
         "x": 384,
         "y": 1344,
@@ -3312,7 +3312,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/spline builder.jpg": {
+    "/paths/curves/spline builder.jpg": {
       "frame": {
         "x": 384,
         "y": 1440,
@@ -3336,7 +3336,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/spline curve bounds.jpg": {
+    "/paths/curves/spline curve bounds.jpg": {
       "frame": {
         "x": 384,
         "y": 1536,
@@ -3360,7 +3360,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/spline curve distance points.jpg": {
+    "/paths/curves/spline curve distance points.jpg": {
       "frame": {
         "x": 384,
         "y": 1632,
@@ -3384,7 +3384,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/spline curve from array.jpg": {
+    "/paths/curves/spline curve from array.jpg": {
       "frame": {
         "x": 384,
         "y": 1728,
@@ -3408,7 +3408,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/spline curve.jpg": {
+    "/paths/curves/spline curve.jpg": {
       "frame": {
         "x": 384,
         "y": 1824,
@@ -3432,7 +3432,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/followers/basic follower.jpg": {
+    "/paths/followers/basic follower.jpg": {
       "frame": {
         "x": 384,
         "y": 1920,
@@ -3456,7 +3456,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/followers/change path.jpg": {
+    "/paths/followers/change path.jpg": {
       "frame": {
         "x": 512,
         "y": 480,
@@ -3480,7 +3480,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/followers/mass followers.jpg": {
+    "/paths/followers/mass followers.jpg": {
       "frame": {
         "x": 640,
         "y": 480,
@@ -3504,7 +3504,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/followers/multi curve path.jpg": {
+    "/paths/followers/multi curve path.jpg": {
       "frame": {
         "x": 768,
         "y": 480,
@@ -3528,7 +3528,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/followers/path from json all types.jpg": {
+    "/paths/followers/path from json all types.jpg": {
       "frame": {
         "x": 896,
         "y": 480,
@@ -3552,7 +3552,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/followers/path from json.jpg": {
+    "/paths/followers/path from json.jpg": {
       "frame": {
         "x": 1024,
         "y": 480,
@@ -3576,7 +3576,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/followers/pause and resume.jpg": {
+    "/paths/followers/pause and resume.jpg": {
       "frame": {
         "x": 1152,
         "y": 480,
@@ -3600,7 +3600,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/followers/rotate to path.jpg": {
+    "/paths/followers/rotate to path.jpg": {
       "frame": {
         "x": 1280,
         "y": 480,
@@ -3624,7 +3624,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/followers/rotation offset.jpg": {
+    "/paths/followers/rotation offset.jpg": {
       "frame": {
         "x": 1408,
         "y": 480,
@@ -3648,7 +3648,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/followers/sparkle trail.jpg": {
+    "/paths/followers/sparkle trail.jpg": {
       "frame": {
         "x": 1536,
         "y": 480,
@@ -3672,7 +3672,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/followers/start at.jpg": {
+    "/paths/followers/start at.jpg": {
       "frame": {
         "x": 1664,
         "y": 480,
@@ -3696,7 +3696,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/followers/wave path.jpg": {
+    "/paths/followers/wave path.jpg": {
       "frame": {
         "x": 1792,
         "y": 480,
@@ -3720,7 +3720,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/followers/yoyo follower.jpg": {
+    "/paths/followers/yoyo follower.jpg": {
       "frame": {
         "x": 1920,
         "y": 480,
@@ -3744,7 +3744,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/line to ellipse.jpg": {
+    "/paths/line to ellipse.jpg": {
       "frame": {
         "x": 512,
         "y": 576,
@@ -3768,7 +3768,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/move to.jpg": {
+    "/paths/move to.jpg": {
       "frame": {
         "x": 640,
         "y": 576,
@@ -3792,7 +3792,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/path add line curve.jpg": {
+    "/paths/path add line curve.jpg": {
       "frame": {
         "x": 768,
         "y": 576,
@@ -3816,7 +3816,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/path bounds.jpg": {
+    "/paths/path bounds.jpg": {
       "frame": {
         "x": 896,
         "y": 576,
@@ -3840,7 +3840,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/path editor/boot.jpg": {
+    "/paths/path editor/boot.jpg": {
       "frame": {
         "x": 1024,
         "y": 576,
@@ -3864,7 +3864,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/path line and bezier.jpg": {
+    "/paths/path line and bezier.jpg": {
       "frame": {
         "x": 1152,
         "y": 576,
@@ -3888,7 +3888,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/simple path.jpg": {
+    "/paths/simple path.jpg": {
       "frame": {
         "x": 1280,
         "y": 576,
@@ -3912,7 +3912,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/velocity from tangent vectors.jpg": {
+    "/paths/velocity from tangent vectors.jpg": {
       "frame": {
         "x": 1408,
         "y": 576,
@@ -3936,7 +3936,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/zig zag path.jpg": {
+    "/paths/zig zag path.jpg": {
       "frame": {
         "x": 1536,
         "y": 576,
@@ -3960,7 +3960,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/100 world bodies.jpg": {
+    "/physics/arcade/100 world bodies.jpg": {
       "frame": {
         "x": 1664,
         "y": 576,
@@ -3984,7 +3984,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/1000 world bodies.jpg": {
+    "/physics/arcade/1000 world bodies.jpg": {
       "frame": {
         "x": 1792,
         "y": 576,
@@ -4008,7 +4008,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/10000 world bodies.jpg": {
+    "/physics/arcade/10000 world bodies.jpg": {
       "frame": {
         "x": 1920,
         "y": 576,
@@ -4032,7 +4032,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/40000 world bodies.jpg": {
+    "/physics/arcade/40000 world bodies.jpg": {
       "frame": {
         "x": 512,
         "y": 672,
@@ -4056,7 +4056,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/accelerate to.jpg": {
+    "/physics/arcade/accelerate to.jpg": {
       "frame": {
         "x": 512,
         "y": 768,
@@ -4080,7 +4080,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/add body to shape.jpg": {
+    "/physics/arcade/add body to shape.jpg": {
       "frame": {
         "x": 512,
         "y": 864,
@@ -4104,7 +4104,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/add body to tilesprite.jpg": {
+    "/physics/arcade/add body to tilesprite.jpg": {
       "frame": {
         "x": 512,
         "y": 960,
@@ -4128,7 +4128,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/angular acceleration.jpg": {
+    "/physics/arcade/angular acceleration.jpg": {
       "frame": {
         "x": 512,
         "y": 1056,
@@ -4152,7 +4152,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/angular velocity.jpg": {
+    "/physics/arcade/angular velocity.jpg": {
       "frame": {
         "x": 512,
         "y": 1152,
@@ -4176,7 +4176,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/asteroids movement.jpg": {
+    "/physics/arcade/asteroids movement.jpg": {
       "frame": {
         "x": 512,
         "y": 1248,
@@ -4200,7 +4200,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/basic platform.jpg": {
+    "/physics/arcade/basic platform.jpg": {
       "frame": {
         "x": 512,
         "y": 1344,
@@ -4224,7 +4224,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/blocked faces.jpg": {
+    "/physics/arcade/blocked faces.jpg": {
       "frame": {
         "x": 512,
         "y": 1440,
@@ -4248,7 +4248,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/blocked touching and embedded.jpg": {
+    "/physics/arcade/blocked touching and embedded.jpg": {
       "frame": {
         "x": 512,
         "y": 1536,
@@ -4272,7 +4272,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/body controls.jpg": {
+    "/physics/arcade/body controls.jpg": {
       "frame": {
         "x": 512,
         "y": 1632,
@@ -4296,7 +4296,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/body on a path.jpg": {
+    "/physics/arcade/body on a path.jpg": {
       "frame": {
         "x": 512,
         "y": 1728,
@@ -4320,7 +4320,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/bounce test.jpg": {
+    "/physics/arcade/bounce test.jpg": {
       "frame": {
         "x": 512,
         "y": 1824,
@@ -4344,7 +4344,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/bullets group.jpg": {
+    "/physics/arcade/bullets group.jpg": {
       "frame": {
         "x": 512,
         "y": 1920,
@@ -4368,7 +4368,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/circular body.jpg": {
+    "/physics/arcade/circular body.jpg": {
       "frame": {
         "x": 640,
         "y": 672,
@@ -4392,7 +4392,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/circular collisions 2.jpg": {
+    "/physics/arcade/circular collisions 2.jpg": {
       "frame": {
         "x": 768,
         "y": 672,
@@ -4416,7 +4416,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/circular collisions.jpg": {
+    "/physics/arcade/circular collisions.jpg": {
       "frame": {
         "x": 896,
         "y": 672,
@@ -4440,7 +4440,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/closest furthest.jpg": {
+    "/physics/arcade/closest furthest.jpg": {
       "frame": {
         "x": 1024,
         "y": 672,
@@ -4464,7 +4464,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/collider 1.jpg": {
+    "/physics/arcade/collider 1.jpg": {
       "frame": {
         "x": 1152,
         "y": 672,
@@ -4488,7 +4488,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/collision direction.jpg": {
+    "/physics/arcade/collision direction.jpg": {
       "frame": {
         "x": 1280,
         "y": 672,
@@ -4512,7 +4512,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/custom bounds.jpg": {
+    "/physics/arcade/custom bounds.jpg": {
       "frame": {
         "x": 1408,
         "y": 672,
@@ -4536,7 +4536,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/custom debug colors.jpg": {
+    "/physics/arcade/custom debug colors.jpg": {
       "frame": {
         "x": 1536,
         "y": 672,
@@ -4560,7 +4560,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/custom separate.jpg": {
+    "/physics/arcade/custom separate.jpg": {
       "frame": {
         "x": 1664,
         "y": 672,
@@ -4584,7 +4584,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/custom world bounds.jpg": {
+    "/physics/arcade/custom world bounds.jpg": {
       "frame": {
         "x": 1792,
         "y": 672,
@@ -4608,7 +4608,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/destroy body.jpg": {
+    "/physics/arcade/destroy body.jpg": {
       "frame": {
         "x": 1920,
         "y": 672,
@@ -4632,7 +4632,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/draggable body.jpg": {
+    "/physics/arcade/draggable body.jpg": {
       "frame": {
         "x": 640,
         "y": 768,
@@ -4656,7 +4656,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/extending arcade sprite.jpg": {
+    "/physics/arcade/extending arcade sprite.jpg": {
       "frame": {
         "x": 640,
         "y": 864,
@@ -4680,7 +4680,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/fps test.jpg": {
+    "/physics/arcade/fps test.jpg": {
       "frame": {
         "x": 640,
         "y": 960,
@@ -4704,7 +4704,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/friction.jpg": {
+    "/physics/arcade/friction.jpg": {
       "frame": {
         "x": 640,
         "y": 1056,
@@ -4728,7 +4728,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/get bodies within circle.jpg": {
+    "/physics/arcade/get bodies within circle.jpg": {
       "frame": {
         "x": 640,
         "y": 1152,
@@ -4752,7 +4752,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/get bodies within rectangle.jpg": {
+    "/physics/arcade/get bodies within rectangle.jpg": {
       "frame": {
         "x": 640,
         "y": 1248,
@@ -4776,7 +4776,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/gravity.jpg": {
+    "/physics/arcade/gravity.jpg": {
       "frame": {
         "x": 640,
         "y": 1344,
@@ -4800,7 +4800,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/group set velocity x.jpg": {
+    "/physics/arcade/group set velocity x.jpg": {
       "frame": {
         "x": 640,
         "y": 1440,
@@ -4824,7 +4824,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/group set velocity y.jpg": {
+    "/physics/arcade/group set velocity y.jpg": {
       "frame": {
         "x": 640,
         "y": 1536,
@@ -4848,7 +4848,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/group vs group.jpg": {
+    "/physics/arcade/group vs group.jpg": {
       "frame": {
         "x": 640,
         "y": 1632,
@@ -4872,7 +4872,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/group vs self.jpg": {
+    "/physics/arcade/group vs self.jpg": {
       "frame": {
         "x": 640,
         "y": 1728,
@@ -4896,7 +4896,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/larger bounding box.jpg": {
+    "/physics/arcade/larger bounding box.jpg": {
       "frame": {
         "x": 640,
         "y": 1824,
@@ -4920,7 +4920,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/mass collision test.jpg": {
+    "/physics/arcade/mass collision test.jpg": {
       "frame": {
         "x": 640,
         "y": 1920,
@@ -4944,7 +4944,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/mass debug 2.jpg": {
+    "/physics/arcade/mass debug 2.jpg": {
       "frame": {
         "x": 768,
         "y": 768,
@@ -4968,7 +4968,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/mass debug.jpg": {
+    "/physics/arcade/mass debug.jpg": {
       "frame": {
         "x": 896,
         "y": 768,
@@ -4992,7 +4992,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/mass.jpg": {
+    "/physics/arcade/mass.jpg": {
       "frame": {
         "x": 1024,
         "y": 768,
@@ -5016,7 +5016,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/max speed.jpg": {
+    "/physics/arcade/max speed.jpg": {
       "frame": {
         "x": 1152,
         "y": 768,
@@ -5040,7 +5040,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/move and stop at position.jpg": {
+    "/physics/arcade/move and stop at position.jpg": {
       "frame": {
         "x": 1280,
         "y": 768,
@@ -5064,7 +5064,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/move to pointer.jpg": {
+    "/physics/arcade/move to pointer.jpg": {
       "frame": {
         "x": 1408,
         "y": 768,
@@ -5088,7 +5088,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/move to.jpg": {
+    "/physics/arcade/move to.jpg": {
       "frame": {
         "x": 1536,
         "y": 768,
@@ -5112,7 +5112,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/non pushable bodies.jpg": {
+    "/physics/arcade/non pushable bodies.jpg": {
       "frame": {
         "x": 1664,
         "y": 768,
@@ -5136,7 +5136,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/overlap collider.jpg": {
+    "/physics/arcade/overlap collider.jpg": {
       "frame": {
         "x": 1792,
         "y": 768,
@@ -5160,7 +5160,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/overlap zone.jpg": {
+    "/physics/arcade/overlap zone.jpg": {
       "frame": {
         "x": 1920,
         "y": 768,
@@ -5184,7 +5184,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/pushable body debug 1.jpg": {
+    "/physics/arcade/pushable body debug 1.jpg": {
       "frame": {
         "x": 768,
         "y": 864,
@@ -5208,7 +5208,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/pushable body debug 2.jpg": {
+    "/physics/arcade/pushable body debug 2.jpg": {
       "frame": {
         "x": 768,
         "y": 960,
@@ -5232,7 +5232,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/remove collider.jpg": {
+    "/physics/arcade/remove collider.jpg": {
       "frame": {
         "x": 768,
         "y": 1056,
@@ -5256,7 +5256,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/rtree test.jpg": {
+    "/physics/arcade/rtree test.jpg": {
       "frame": {
         "x": 768,
         "y": 1152,
@@ -5280,7 +5280,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/simple body.jpg": {
+    "/physics/arcade/simple body.jpg": {
       "frame": {
         "x": 768,
         "y": 1248,
@@ -5304,7 +5304,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/simple group.jpg": {
+    "/physics/arcade/simple group.jpg": {
       "frame": {
         "x": 768,
         "y": 1344,
@@ -5328,7 +5328,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/smaller bounding box.jpg": {
+    "/physics/arcade/smaller bounding box.jpg": {
       "frame": {
         "x": 768,
         "y": 1440,
@@ -5352,7 +5352,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/space.jpg": {
+    "/physics/arcade/space.jpg": {
       "frame": {
         "x": 768,
         "y": 1536,
@@ -5376,7 +5376,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/sprite overlap group.jpg": {
+    "/physics/arcade/sprite overlap group.jpg": {
       "frame": {
         "x": 768,
         "y": 1632,
@@ -5400,7 +5400,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/sprite vs group.jpg": {
+    "/physics/arcade/sprite vs group.jpg": {
       "frame": {
         "x": 768,
         "y": 1728,
@@ -5424,7 +5424,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/sprite vs immovable.jpg": {
+    "/physics/arcade/sprite vs immovable.jpg": {
       "frame": {
         "x": 768,
         "y": 1824,
@@ -5448,7 +5448,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/sprite vs multiple groups.jpg": {
+    "/physics/arcade/sprite vs multiple groups.jpg": {
       "frame": {
         "x": 768,
         "y": 1920,
@@ -5472,7 +5472,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/sprite vs sprite.jpg": {
+    "/physics/arcade/sprite vs sprite.jpg": {
       "frame": {
         "x": 896,
         "y": 864,
@@ -5496,7 +5496,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/static body update.jpg": {
+    "/physics/arcade/static body update.jpg": {
       "frame": {
         "x": 1024,
         "y": 864,
@@ -5520,7 +5520,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/static body.jpg": {
+    "/physics/arcade/static body.jpg": {
       "frame": {
         "x": 1152,
         "y": 864,
@@ -5544,7 +5544,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/static group.jpg": {
+    "/physics/arcade/static group.jpg": {
       "frame": {
         "x": 1280,
         "y": 864,
@@ -5568,7 +5568,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/touching faces.jpg": {
+    "/physics/arcade/touching faces.jpg": {
       "frame": {
         "x": 1408,
         "y": 864,
@@ -5592,7 +5592,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/tween body.jpg": {
+    "/physics/arcade/tween body.jpg": {
       "frame": {
         "x": 1536,
         "y": 864,
@@ -5616,7 +5616,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/tween velocity.jpg": {
+    "/physics/arcade/tween velocity.jpg": {
       "frame": {
         "x": 1664,
         "y": 864,
@@ -5640,7 +5640,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/velocity from angle.jpg": {
+    "/physics/arcade/velocity from angle.jpg": {
       "frame": {
         "x": 1792,
         "y": 864,
@@ -5664,7 +5664,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/vertical friction.jpg": {
+    "/physics/arcade/vertical friction.jpg": {
       "frame": {
         "x": 1920,
         "y": 864,
@@ -5688,7 +5688,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/world bounds event.jpg": {
+    "/physics/arcade/world bounds event.jpg": {
       "frame": {
         "x": 896,
         "y": 960,
@@ -5712,7 +5712,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/world controls.jpg": {
+    "/physics/arcade/world controls.jpg": {
       "frame": {
         "x": 1024,
         "y": 960,
@@ -5736,7 +5736,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/wrap group.jpg": {
+    "/physics/arcade/wrap group.jpg": {
       "frame": {
         "x": 1152,
         "y": 960,
@@ -5760,7 +5760,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/wrap sprite.jpg": {
+    "/physics/arcade/wrap sprite.jpg": {
       "frame": {
         "x": 1280,
         "y": 960,
@@ -5784,7 +5784,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/100 world bodies.jpg": {
+    "/physics/matterjs/100 world bodies.jpg": {
       "frame": {
         "x": 1408,
         "y": 960,
@@ -5808,7 +5808,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/add body to bitmap text.jpg": {
+    "/physics/matterjs/add body to bitmap text.jpg": {
       "frame": {
         "x": 1536,
         "y": 960,
@@ -5832,7 +5832,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/add body to text.jpg": {
+    "/physics/matterjs/add body to text.jpg": {
       "frame": {
         "x": 1664,
         "y": 960,
@@ -5856,7 +5856,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/add body to tilesprite.jpg": {
+    "/physics/matterjs/add body to tilesprite.jpg": {
       "frame": {
         "x": 1792,
         "y": 960,
@@ -5880,7 +5880,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/add body to world.jpg": {
+    "/physics/matterjs/add body to world.jpg": {
       "frame": {
         "x": 1920,
         "y": 960,
@@ -5904,7 +5904,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/advanced shape creation.jpg": {
+    "/physics/matterjs/advanced shape creation.jpg": {
       "frame": {
         "x": 896,
         "y": 1056,
@@ -5928,7 +5928,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/attractors.jpg": {
+    "/physics/matterjs/attractors.jpg": {
       "frame": {
         "x": 896,
         "y": 1152,
@@ -5952,7 +5952,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/balls.jpg": {
+    "/physics/matterjs/balls.jpg": {
       "frame": {
         "x": 896,
         "y": 1248,
@@ -5976,7 +5976,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/basic constraint.jpg": {
+    "/physics/matterjs/basic constraint.jpg": {
       "frame": {
         "x": 896,
         "y": 1344,
@@ -6000,7 +6000,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/body follow path.jpg": {
+    "/physics/matterjs/body follow path.jpg": {
       "frame": {
         "x": 896,
         "y": 1440,
@@ -6024,7 +6024,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/body scale.jpg": {
+    "/physics/matterjs/body scale.jpg": {
       "frame": {
         "x": 896,
         "y": 1536,
@@ -6048,7 +6048,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/body to json.jpg": {
+    "/physics/matterjs/body to json.jpg": {
       "frame": {
         "x": 896,
         "y": 1632,
@@ -6072,7 +6072,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/body velocity.jpg": {
+    "/physics/matterjs/body velocity.jpg": {
       "frame": {
         "x": 896,
         "y": 1728,
@@ -6096,7 +6096,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/bridge.jpg": {
+    "/physics/matterjs/bridge.jpg": {
       "frame": {
         "x": 896,
         "y": 1824,
@@ -6120,7 +6120,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/chain.jpg": {
+    "/physics/matterjs/chain.jpg": {
       "frame": {
         "x": 896,
         "y": 1920,
@@ -6144,7 +6144,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/chamfer body.jpg": {
+    "/physics/matterjs/chamfer body.jpg": {
       "frame": {
         "x": 1024,
         "y": 1056,
@@ -6168,7 +6168,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/circle body.jpg": {
+    "/physics/matterjs/circle body.jpg": {
       "frame": {
         "x": 1152,
         "y": 1056,
@@ -6192,7 +6192,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/circle stack.jpg": {
+    "/physics/matterjs/circle stack.jpg": {
       "frame": {
         "x": 1280,
         "y": 1056,
@@ -6216,7 +6216,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/circular body.jpg": {
+    "/physics/matterjs/circular body.jpg": {
       "frame": {
         "x": 1408,
         "y": 1056,
@@ -6240,7 +6240,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/cloth.jpg": {
+    "/physics/matterjs/cloth.jpg": {
       "frame": {
         "x": 1536,
         "y": 1056,
@@ -6264,7 +6264,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/collision event.jpg": {
+    "/physics/matterjs/collision event.jpg": {
       "frame": {
         "x": 1664,
         "y": 1056,
@@ -6288,7 +6288,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/collision filter.jpg": {
+    "/physics/matterjs/collision filter.jpg": {
       "frame": {
         "x": 1792,
         "y": 1056,
@@ -6312,7 +6312,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/collision group.jpg": {
+    "/physics/matterjs/collision group.jpg": {
       "frame": {
         "x": 1920,
         "y": 1056,
@@ -6336,7 +6336,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/compound body from physics editor.jpg": {
+    "/physics/matterjs/compound body from physics editor.jpg": {
       "frame": {
         "x": 1024,
         "y": 1152,
@@ -6360,7 +6360,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/compound body.jpg": {
+    "/physics/matterjs/compound body.jpg": {
       "frame": {
         "x": 1024,
         "y": 1248,
@@ -6384,7 +6384,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/compound sensors.jpg": {
+    "/physics/matterjs/compound sensors.jpg": {
       "frame": {
         "x": 1024,
         "y": 1344,
@@ -6408,7 +6408,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/debug options.jpg": {
+    "/physics/matterjs/debug options.jpg": {
       "frame": {
         "x": 1024,
         "y": 1440,
@@ -6432,7 +6432,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/destroy body.jpg": {
+    "/physics/matterjs/destroy body.jpg": {
       "frame": {
         "x": 1024,
         "y": 1536,
@@ -6456,7 +6456,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/drag filter with pointer.jpg": {
+    "/physics/matterjs/drag filter with pointer.jpg": {
       "frame": {
         "x": 1024,
         "y": 1632,
@@ -6480,7 +6480,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/drag through balls.jpg": {
+    "/physics/matterjs/drag through balls.jpg": {
       "frame": {
         "x": 1024,
         "y": 1728,
@@ -6504,7 +6504,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/drag with pointer.jpg": {
+    "/physics/matterjs/drag with pointer.jpg": {
       "frame": {
         "x": 1024,
         "y": 1824,
@@ -6528,7 +6528,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/draw chain.jpg": {
+    "/physics/matterjs/draw chain.jpg": {
       "frame": {
         "x": 1024,
         "y": 1920,
@@ -6552,7 +6552,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/draw smoother stiff line.jpg": {
+    "/physics/matterjs/draw smoother stiff line.jpg": {
       "frame": {
         "x": 1152,
         "y": 1152,
@@ -6576,7 +6576,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/draw stiff line.jpg": {
+    "/physics/matterjs/draw stiff line.jpg": {
       "frame": {
         "x": 1280,
         "y": 1152,
@@ -6600,7 +6600,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/draw triangles.jpg": {
+    "/physics/matterjs/draw triangles.jpg": {
       "frame": {
         "x": 1408,
         "y": 1152,
@@ -6624,7 +6624,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/fixed rotation.jpg": {
+    "/physics/matterjs/fixed rotation.jpg": {
       "frame": {
         "x": 1536,
         "y": 1152,
@@ -6648,7 +6648,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/get bodies below point.jpg": {
+    "/physics/matterjs/get bodies below point.jpg": {
       "frame": {
         "x": 1664,
         "y": 1152,
@@ -6672,7 +6672,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/get shape bounds.jpg": {
+    "/physics/matterjs/get shape bounds.jpg": {
       "frame": {
         "x": 1792,
         "y": 1152,
@@ -6696,7 +6696,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/ignore gravity.jpg": {
+    "/physics/matterjs/ignore gravity.jpg": {
       "frame": {
         "x": 1920,
         "y": 1152,
@@ -6720,7 +6720,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/increase body scale.jpg": {
+    "/physics/matterjs/increase body scale.jpg": {
       "frame": {
         "x": 1152,
         "y": 1248,
@@ -6744,7 +6744,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/is point within body.jpg": {
+    "/physics/matterjs/is point within body.jpg": {
       "frame": {
         "x": 1152,
         "y": 1344,
@@ -6768,7 +6768,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/mixed bodies.jpg": {
+    "/physics/matterjs/mixed bodies.jpg": {
       "frame": {
         "x": 1152,
         "y": 1440,
@@ -6792,7 +6792,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/move body with cursors.jpg": {
+    "/physics/matterjs/move body with cursors.jpg": {
       "frame": {
         "x": 1152,
         "y": 1536,
@@ -6816,7 +6816,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/multiple physics scenes.jpg": {
+    "/physics/matterjs/multiple physics scenes.jpg": {
       "frame": {
         "x": 1152,
         "y": 1632,
@@ -6840,7 +6840,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/offset body.jpg": {
+    "/physics/matterjs/offset body.jpg": {
       "frame": {
         "x": 1152,
         "y": 1728,
@@ -6864,7 +6864,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/particles follow body.jpg": {
+    "/physics/matterjs/particles follow body.jpg": {
       "frame": {
         "x": 1152,
         "y": 1824,
@@ -6888,7 +6888,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/polygon body.jpg": {
+    "/physics/matterjs/polygon body.jpg": {
       "frame": {
         "x": 1152,
         "y": 1920,
@@ -6912,7 +6912,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/rectangle body.jpg": {
+    "/physics/matterjs/rectangle body.jpg": {
       "frame": {
         "x": 1280,
         "y": 1248,
@@ -6936,7 +6936,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/rotate body with cursors.jpg": {
+    "/physics/matterjs/rotate body with cursors.jpg": {
       "frame": {
         "x": 1408,
         "y": 1248,
@@ -6960,7 +6960,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/scene restart.jpg": {
+    "/physics/matterjs/scene restart.jpg": {
       "frame": {
         "x": 1536,
         "y": 1248,
@@ -6984,7 +6984,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/scene transition.jpg": {
+    "/physics/matterjs/scene transition.jpg": {
       "frame": {
         "x": 1664,
         "y": 1248,
@@ -7008,7 +7008,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/simple body.jpg": {
+    "/physics/matterjs/simple body.jpg": {
       "frame": {
         "x": 1792,
         "y": 1248,
@@ -7032,7 +7032,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/sleep events.jpg": {
+    "/physics/matterjs/sleep events.jpg": {
       "frame": {
         "x": 1920,
         "y": 1248,
@@ -7056,7 +7056,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/thrust.jpg": {
+    "/physics/matterjs/thrust.jpg": {
       "frame": {
         "x": 1280,
         "y": 1344,
@@ -7080,7 +7080,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/top down car body.jpg": {
+    "/physics/matterjs/top down car body.jpg": {
       "frame": {
         "x": 1408,
         "y": 1344,
@@ -7104,7 +7104,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/trapezoid body.jpg": {
+    "/physics/matterjs/trapezoid body.jpg": {
       "frame": {
         "x": 1536,
         "y": 1344,
@@ -7128,7 +7128,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/vertices body.jpg": {
+    "/physics/matterjs/vertices body.jpg": {
       "frame": {
         "x": 1664,
         "y": 1344,
@@ -7152,7 +7152,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/wrap plugin.jpg": {
+    "/physics/matterjs/wrap plugin.jpg": {
       "frame": {
         "x": 1792,
         "y": 1344,
@@ -7176,7 +7176,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/wrecking ball.jpg": {
+    "/physics/matterjs/wrecking ball.jpg": {
       "frame": {
         "x": 1920,
         "y": 1344,
@@ -7200,7 +7200,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/multi/arcade and matter.jpg": {
+    "/physics/multi/arcade and matter.jpg": {
       "frame": {
         "x": 1280,
         "y": 1440,
@@ -7224,7 +7224,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/add global plugin.jpg": {
+    "/plugins/add global plugin.jpg": {
       "frame": {
         "x": 1280,
         "y": 1536,
@@ -7248,7 +7248,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/add scene plugin in config.jpg": {
+    "/plugins/add scene plugin in config.jpg": {
       "frame": {
         "x": 1280,
         "y": 1632,
@@ -7272,7 +7272,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/custom file type.jpg": {
+    "/plugins/custom file type.jpg": {
       "frame": {
         "x": 1280,
         "y": 1728,
@@ -7296,7 +7296,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/custom game object.jpg": {
+    "/plugins/custom game object.jpg": {
       "frame": {
         "x": 1280,
         "y": 1824,
@@ -7320,7 +7320,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/destroy game with plugin.jpg": {
+    "/plugins/destroy game with plugin.jpg": {
       "frame": {
         "x": 1280,
         "y": 1920,
@@ -7344,7 +7344,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/global plugin test 1.jpg": {
+    "/plugins/global plugin test 1.jpg": {
       "frame": {
         "x": 1408,
         "y": 1440,
@@ -7368,7 +7368,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/install global plugin at runtime.jpg": {
+    "/plugins/install global plugin at runtime.jpg": {
       "frame": {
         "x": 1536,
         "y": 1440,
@@ -7392,7 +7392,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/load plugin test 1.jpg": {
+    "/plugins/load plugin test 1.jpg": {
       "frame": {
         "x": 1664,
         "y": 1440,
@@ -7416,7 +7416,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/load plugin test 2.jpg": {
+    "/plugins/load plugin test 2.jpg": {
       "frame": {
         "x": 1792,
         "y": 1440,
@@ -7440,7 +7440,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/load scene plugin test 1.jpg": {
+    "/plugins/load scene plugin test 1.jpg": {
       "frame": {
         "x": 1920,
         "y": 1440,
@@ -7464,7 +7464,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/load scene plugin test 2.jpg": {
+    "/plugins/load scene plugin test 2.jpg": {
       "frame": {
         "x": 1408,
         "y": 1536,
@@ -7488,7 +7488,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/multiple global plugin instances.jpg": {
+    "/plugins/multiple global plugin instances.jpg": {
       "frame": {
         "x": 1408,
         "y": 1632,
@@ -7512,7 +7512,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/scene plugin test 1.jpg": {
+    "/plugins/scene plugin test 1.jpg": {
       "frame": {
         "x": 1408,
         "y": 1728,
@@ -7536,7 +7536,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/scene plugin test 3.jpg": {
+    "/plugins/scene plugin test 3.jpg": {
       "frame": {
         "x": 1408,
         "y": 1824,
@@ -7560,7 +7560,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/start and stop a plugin.jpg": {
+    "/plugins/start and stop a plugin.jpg": {
       "frame": {
         "x": 1408,
         "y": 1920,
@@ -7584,7 +7584,7 @@
         "y": 0.5
       }
     },
-    "screenshots/pools/bullets.jpg": {
+    "/pools/bullets.jpg": {
       "frame": {
         "x": 1536,
         "y": 1536,
@@ -7608,7 +7608,7 @@
         "y": 0.5
       }
     },
-    "screenshots/pools/create pool.jpg": {
+    "/pools/create pool.jpg": {
       "frame": {
         "x": 1664,
         "y": 1536,
@@ -7632,7 +7632,7 @@
         "y": 0.5
       }
     },
-    "screenshots/pools/multi pools.jpg": {
+    "/pools/multi pools.jpg": {
       "frame": {
         "x": 1792,
         "y": 1536,
@@ -7656,7 +7656,7 @@
         "y": 0.5
       }
     },
-    "screenshots/pools/pool using a custom class.jpg": {
+    "/pools/pool using a custom class.jpg": {
       "frame": {
         "x": 1920,
         "y": 1536,
@@ -7680,7 +7680,7 @@
         "y": 0.5
       }
     },
-    "screenshots/renderer/32 texture test.jpg": {
+    "/renderer/32 texture test.jpg": {
       "frame": {
         "x": 1536,
         "y": 1632,
@@ -7704,7 +7704,7 @@
         "y": 0.5
       }
     },
-    "screenshots/renderer/batch size.jpg": {
+    "/renderer/batch size.jpg": {
       "frame": {
         "x": 1536,
         "y": 1728,
@@ -7728,7 +7728,7 @@
         "y": 0.5
       }
     },
-    "screenshots/renderer/batch test.jpg": {
+    "/renderer/batch test.jpg": {
       "frame": {
         "x": 1536,
         "y": 1824,
@@ -7752,7 +7752,7 @@
         "y": 0.5
       }
     },
-    "screenshots/renderer/bend pipeline.jpg": {
+    "/renderer/bend pipeline.jpg": {
       "frame": {
         "x": 1536,
         "y": 1920,
@@ -7776,7 +7776,7 @@
         "y": 0.5
       }
     },
-    "screenshots/renderer/color post fx pipeline.jpg": {
+    "/renderer/color post fx pipeline.jpg": {
       "frame": {
         "x": 1664,
         "y": 1632,
@@ -7800,7 +7800,7 @@
         "y": 0.5
       }
     },
-    "screenshots/renderer/container pipeline.jpg": {
+    "/renderer/container pipeline.jpg": {
       "frame": {
         "x": 1792,
         "y": 1632,
@@ -7824,7 +7824,7 @@
         "y": 0.5
       }
     },
-    "screenshots/renderer/custom pipeline multi texture es6.jpg": {
+    "/renderer/custom pipeline multi texture es6.jpg": {
       "frame": {
         "x": 1920,
         "y": 1632,
@@ -7848,7 +7848,7 @@
         "y": 0.5
       }
     },
-    "screenshots/renderer/custom pipeline multi texture.jpg": {
+    "/renderer/custom pipeline multi texture.jpg": {
       "frame": {
         "x": 1664,
         "y": 1728,
@@ -7872,7 +7872,7 @@
         "y": 0.5
       }
     },
-    "screenshots/renderer/custom pipeline single texture es6.jpg": {
+    "/renderer/custom pipeline single texture es6.jpg": {
       "frame": {
         "x": 1792,
         "y": 1728,
@@ -7896,7 +7896,7 @@
         "y": 0.5
       }
     },
-    "screenshots/renderer/custom pipeline single texture.jpg": {
+    "/renderer/custom pipeline single texture.jpg": {
       "frame": {
         "x": 1920,
         "y": 1728,
@@ -7920,7 +7920,7 @@
         "y": 0.5
       }
     },
-    "screenshots/renderer/grayscale pipeline.jpg": {
+    "/renderer/grayscale pipeline.jpg": {
       "frame": {
         "x": 1664,
         "y": 1824,
@@ -7944,7 +7944,7 @@
         "y": 0.5
       }
     },
-    "screenshots/renderer/hue rotation pipeline.jpg": {
+    "/renderer/hue rotation pipeline.jpg": {
       "frame": {
         "x": 1664,
         "y": 1920,
@@ -7968,7 +7968,7 @@
         "y": 0.5
       }
     },
-    "screenshots/renderer/multi color pipeline.jpg": {
+    "/renderer/multi color pipeline.jpg": {
       "frame": {
         "x": 1792,
         "y": 1824,
@@ -7992,7 +7992,7 @@
         "y": 0.5
       }
     },
-    "screenshots/renderer/set pipeline data.jpg": {
+    "/renderer/set pipeline data.jpg": {
       "frame": {
         "x": 1920,
         "y": 1824,
@@ -8016,7 +8016,7 @@
         "y": 0.5
       }
     },
-    "screenshots/renderer/webgl info.jpg": {
+    "/renderer/webgl info.jpg": {
       "frame": {
         "x": 1792,
         "y": 1920,
@@ -8040,7 +8040,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/envelop min max.jpg": {
+    "/scalemanager/envelop min max.jpg": {
       "frame": {
         "x": 1920,
         "y": 1920,
@@ -8064,7 +8064,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/top only over and out events.jpg": {
+    "/input/mouse/top only over and out events.jpg": {
       "frame": {
         "x": 1024,
         "y": 0,
@@ -8088,7 +8088,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/mouse/top only up and down events.jpg": {
+    "/input/mouse/top only up and down events.jpg": {
       "frame": {
         "x": 1024,
         "y": 0,
@@ -8112,7 +8112,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pixel perfect/large trimmed atlas frame.jpg": {
+    "/input/pixel perfect/large trimmed atlas frame.jpg": {
       "frame": {
         "x": 0,
         "y": 1152,
@@ -8136,7 +8136,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/pixel perfect/on move.jpg": {
+    "/input/pixel perfect/on move.jpg": {
       "frame": {
         "x": 0,
         "y": 1248,
@@ -8160,7 +8160,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/audio/load audio.jpg": {
+    "/loader/audio/load audio.jpg": {
       "frame": {
         "x": 1792,
         "y": 96,
@@ -8184,7 +8184,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/file pack/load file pack.jpg": {
+    "/loader/file pack/load file pack.jpg": {
       "frame": {
         "x": 896,
         "y": 192,
@@ -8208,7 +8208,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/image/load image.jpg": {
+    "/loader/image/load image.jpg": {
       "frame": {
         "x": 896,
         "y": 192,
@@ -8232,7 +8232,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/arcade/restart physics scene.jpg": {
+    "/physics/arcade/restart physics scene.jpg": {
       "frame": {
         "x": 1920,
         "y": 192,
@@ -8256,7 +8256,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/restart physics scene.jpg": {
+    "/physics/matterjs/restart physics scene.jpg": {
       "frame": {
         "x": 1920,
         "y": 192,
@@ -8280,7 +8280,7 @@
         "y": 0.5
       }
     },
-    "screenshots/loader/image/load normal map.jpg": {
+    "/loader/image/load normal map.jpg": {
       "frame": {
         "x": 128,
         "y": 288,
@@ -8304,7 +8304,7 @@
         "y": 0.5
       }
     },
-    "screenshots/plugins/scene plugin test 2.jpg": {
+    "/plugins/scene plugin test 2.jpg": {
       "frame": {
         "x": 256,
         "y": 288,
@@ -8328,7 +8328,7 @@
         "y": 0.5
       }
     },
-    "screenshots/math/distance/distance.jpg": {
+    "/math/distance/distance.jpg": {
       "frame": {
         "x": 256,
         "y": 1536,
@@ -8352,7 +8352,7 @@
         "y": 0.5
       }
     },
-    "screenshots/paths/curves/get spaced points on line curve.jpg": {
+    "/paths/curves/get spaced points on line curve.jpg": {
       "frame": {
         "x": 384,
         "y": 576,
@@ -8376,7 +8376,7 @@
         "y": 0.5
       }
     },
-    "screenshots/physics/matterjs/no gravity.jpg": {
+    "/physics/matterjs/no gravity.jpg": {
       "frame": {
         "x": 896,
         "y": 1632,
@@ -8400,7 +8400,7 @@
         "y": 0.5
       }
     },
-    "screenshots/pools/max size.jpg": {
+    "/pools/max size.jpg": {
       "frame": {
         "x": 1536,
         "y": 1536,
@@ -8424,7 +8424,7 @@
         "y": 0.5
       }
     },
-    "screenshots/pools/seeded pool.jpg": {
+    "/pools/seeded pool.jpg": {
       "frame": {
         "x": 1536,
         "y": 1536,
@@ -8448,7 +8448,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/envelop.jpg": {
+    "/scalemanager/envelop.jpg": {
       "frame": {
         "x": 1920,
         "y": 1920,
@@ -8472,7 +8472,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/fit min max.jpg": {
+    "/scalemanager/fit min max.jpg": {
       "frame": {
         "x": 1920,
         "y": 1920,
@@ -8496,7 +8496,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/fit with auto center.jpg": {
+    "/scalemanager/fit with auto center.jpg": {
       "frame": {
         "x": 1920,
         "y": 1920,
@@ -8520,7 +8520,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/fit.jpg": {
+    "/scalemanager/fit.jpg": {
       "frame": {
         "x": 1920,
         "y": 1920,
@@ -8544,7 +8544,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/height controls width.jpg": {
+    "/scalemanager/height controls width.jpg": {
       "frame": {
         "x": 1920,
         "y": 1920,
@@ -8568,7 +8568,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/no scale with auto center.jpg": {
+    "/scalemanager/no scale with auto center.jpg": {
       "frame": {
         "x": 1920,
         "y": 1920,
@@ -8592,7 +8592,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/no scale.jpg": {
+    "/scalemanager/no scale.jpg": {
       "frame": {
         "x": 1920,
         "y": 1920,
@@ -8616,7 +8616,7 @@
         "y": 0.5
       }
     },
-    "screenshots/scalemanager/width controls height.jpg": {
+    "/scalemanager/width controls height.jpg": {
       "frame": {
         "x": 1920,
         "y": 1920,

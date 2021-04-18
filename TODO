@@ -1,10 +1,4 @@
-x- Chains: use #u tab for un-chained items.
-x- Chains: show chained items with a different color?
-x- Api view: allow hiding inherited members. Maybe using the #i and #d tags.
 - Social header tags.
-- PWA support.
-- Script for getting the examples icons as texture atlas.
-- Script for create the build.
 - Check example Camera > Multi Camera > Boot. It is a json file I guess is used to say it is an example with multiple files.
 
 - Parse {@link http://some.url}

@@ -1,6 +1,6 @@
 {
   "frames": {
-    "screenshots/game objects/blitter/bob frame object.jpg": {
+    "/game objects/blitter/bob frame object.jpg": {
       "frame": {
         "x": 0,
         "y": 0,
@@ -24,7 +24,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/blitter/bobs using a multi atlas.jpg": {
+    "/game objects/blitter/bobs using a multi atlas.jpg": {
       "frame": {
         "x": 128,
         "y": 0,
@@ -48,7 +48,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/blitter/canvas benchmark 1.jpg": {
+    "/game objects/blitter/canvas benchmark 1.jpg": {
       "frame": {
         "x": 256,
         "y": 0,
@@ -72,7 +72,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/blitter/create from callback.jpg": {
+    "/game objects/blitter/create from callback.jpg": {
       "frame": {
         "x": 384,
         "y": 0,
@@ -96,7 +96,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/blitter/multiple bobs.jpg": {
+    "/game objects/blitter/multiple bobs.jpg": {
       "frame": {
         "x": 512,
         "y": 0,
@@ -120,7 +120,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/blitter/single atlas frame bob.jpg": {
+    "/game objects/blitter/single atlas frame bob.jpg": {
       "frame": {
         "x": 640,
         "y": 0,
@@ -144,7 +144,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/blitter/single image bob.jpg": {
+    "/game objects/blitter/single image bob.jpg": {
       "frame": {
         "x": 768,
         "y": 0,
@@ -168,7 +168,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/blitter/tween test 1.jpg": {
+    "/game objects/blitter/tween test 1.jpg": {
       "frame": {
         "x": 896,
         "y": 0,
@@ -192,7 +192,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/blitter/twist scroller.jpg": {
+    "/game objects/blitter/twist scroller.jpg": {
       "frame": {
         "x": 1024,
         "y": 0,
@@ -216,7 +216,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/add array of sprites at index.jpg": {
+    "/game objects/container/add array of sprites at index.jpg": {
       "frame": {
         "x": 1152,
         "y": 0,
@@ -240,7 +240,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/add array of sprites to container.jpg": {
+    "/game objects/container/add array of sprites to container.jpg": {
       "frame": {
         "x": 1280,
         "y": 0,
@@ -264,7 +264,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/add emitter to container.jpg": {
+    "/game objects/container/add emitter to container.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -288,7 +288,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/add sprite to container.jpg": {
+    "/game objects/container/add sprite to container.jpg": {
       "frame": {
         "x": 1536,
         "y": 0,
@@ -312,7 +312,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/add tilesprite to container.jpg": {
+    "/game objects/container/add tilesprite to container.jpg": {
       "frame": {
         "x": 1664,
         "y": 0,
@@ -336,7 +336,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/animation test.jpg": {
+    "/game objects/container/animation test.jpg": {
       "frame": {
         "x": 1792,
         "y": 0,
@@ -360,7 +360,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/arcade physics body test.jpg": {
+    "/game objects/container/arcade physics body test.jpg": {
       "frame": {
         "x": 1920,
         "y": 0,
@@ -384,7 +384,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/arcade physics sprite test.jpg": {
+    "/game objects/container/arcade physics sprite test.jpg": {
       "frame": {
         "x": 0,
         "y": 96,
@@ -408,7 +408,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/camera transform test.jpg": {
+    "/game objects/container/camera transform test.jpg": {
       "frame": {
         "x": 0,
         "y": 192,
@@ -432,7 +432,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/child blend mode.jpg": {
+    "/game objects/container/child blend mode.jpg": {
       "frame": {
         "x": 0,
         "y": 288,
@@ -456,7 +456,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/child order.jpg": {
+    "/game objects/container/child order.jpg": {
       "frame": {
         "x": 0,
         "y": 384,
@@ -480,7 +480,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/container alpha.jpg": {
+    "/game objects/container/container alpha.jpg": {
       "frame": {
         "x": 0,
         "y": 480,
@@ -504,7 +504,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/container and camera zoom.jpg": {
+    "/game objects/container/container and camera zoom.jpg": {
       "frame": {
         "x": 0,
         "y": 576,
@@ -528,7 +528,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/container and child input.jpg": {
+    "/game objects/container/container and child input.jpg": {
       "frame": {
         "x": 0,
         "y": 672,
@@ -552,7 +552,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/container as mask.jpg": {
+    "/game objects/container/container as mask.jpg": {
       "frame": {
         "x": 0,
         "y": 768,
@@ -576,7 +576,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/container depth.jpg": {
+    "/game objects/container/container depth.jpg": {
       "frame": {
         "x": 0,
         "y": 864,
@@ -600,7 +600,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/container hitarea from size.jpg": {
+    "/game objects/container/container hitarea from size.jpg": {
       "frame": {
         "x": 0,
         "y": 960,
@@ -624,7 +624,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/container hitarea.jpg": {
+    "/game objects/container/container hitarea.jpg": {
       "frame": {
         "x": 0,
         "y": 1056,
@@ -648,7 +648,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/container ik.jpg": {
+    "/game objects/container/container ik.jpg": {
       "frame": {
         "x": 0,
         "y": 1152,
@@ -672,7 +672,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/container input test.jpg": {
+    "/game objects/container/container input test.jpg": {
       "frame": {
         "x": 0,
         "y": 1248,
@@ -696,7 +696,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/container mask.jpg": {
+    "/game objects/container/container mask.jpg": {
       "frame": {
         "x": 0,
         "y": 1344,
@@ -720,7 +720,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/container scrollfactor.jpg": {
+    "/game objects/container/container scrollfactor.jpg": {
       "frame": {
         "x": 0,
         "y": 1440,
@@ -744,7 +744,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/create container.jpg": {
+    "/game objects/container/create container.jpg": {
       "frame": {
         "x": 0,
         "y": 1536,
@@ -768,7 +768,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/get bounds test 1.jpg": {
+    "/game objects/container/get bounds test 1.jpg": {
       "frame": {
         "x": 0,
         "y": 1632,
@@ -792,7 +792,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/input overlap test.jpg": {
+    "/game objects/container/input overlap test.jpg": {
       "frame": {
         "x": 0,
         "y": 1728,
@@ -816,7 +816,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/matter physics body test camera.jpg": {
+    "/game objects/container/matter physics body test camera.jpg": {
       "frame": {
         "x": 0,
         "y": 1824,
@@ -840,7 +840,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/matter physics body test.jpg": {
+    "/game objects/container/matter physics body test.jpg": {
       "frame": {
         "x": 0,
         "y": 1920,
@@ -864,7 +864,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/matter physics sprite test.jpg": {
+    "/game objects/container/matter physics sprite test.jpg": {
       "frame": {
         "x": 128,
         "y": 96,
@@ -888,7 +888,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/multi camera input test.jpg": {
+    "/game objects/container/multi camera input test.jpg": {
       "frame": {
         "x": 256,
         "y": 96,
@@ -912,7 +912,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/multi container depth test.jpg": {
+    "/game objects/container/multi container depth test.jpg": {
       "frame": {
         "x": 384,
         "y": 96,
@@ -936,7 +936,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/multiple non exclusive containers.jpg": {
+    "/game objects/container/multiple non exclusive containers.jpg": {
       "frame": {
         "x": 512,
         "y": 96,
@@ -960,7 +960,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/nested container input test.jpg": {
+    "/game objects/container/nested container input test.jpg": {
       "frame": {
         "x": 640,
         "y": 96,
@@ -984,7 +984,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/nested container visibility.jpg": {
+    "/game objects/container/nested container visibility.jpg": {
       "frame": {
         "x": 768,
         "y": 96,
@@ -1008,7 +1008,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/nested get bounds test.jpg": {
+    "/game objects/container/nested get bounds test.jpg": {
       "frame": {
         "x": 896,
         "y": 96,
@@ -1032,7 +1032,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/nested input test.jpg": {
+    "/game objects/container/nested input test.jpg": {
       "frame": {
         "x": 1024,
         "y": 96,
@@ -1056,7 +1056,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/non exclusive containers.jpg": {
+    "/game objects/container/non exclusive containers.jpg": {
       "frame": {
         "x": 1152,
         "y": 96,
@@ -1080,7 +1080,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/parent matrix.jpg": {
+    "/game objects/container/parent matrix.jpg": {
       "frame": {
         "x": 1280,
         "y": 96,
@@ -1104,7 +1104,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/rotated input test.jpg": {
+    "/game objects/container/rotated input test.jpg": {
       "frame": {
         "x": 1408,
         "y": 96,
@@ -1128,7 +1128,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/rotation.jpg": {
+    "/game objects/container/rotation.jpg": {
       "frame": {
         "x": 1536,
         "y": 96,
@@ -1152,7 +1152,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/scaled input test.jpg": {
+    "/game objects/container/scaled input test.jpg": {
       "frame": {
         "x": 1664,
         "y": 96,
@@ -1176,7 +1176,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/text and sprite test.jpg": {
+    "/game objects/container/text and sprite test.jpg": {
       "frame": {
         "x": 1792,
         "y": 96,
@@ -1200,7 +1200,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/twirl 1.jpg": {
+    "/game objects/container/twirl 1.jpg": {
       "frame": {
         "x": 1920,
         "y": 96,
@@ -1224,7 +1224,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/twirl 2.jpg": {
+    "/game objects/container/twirl 2.jpg": {
       "frame": {
         "x": 128,
         "y": 192,
@@ -1248,7 +1248,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/twirl 3.jpg": {
+    "/game objects/container/twirl 3.jpg": {
       "frame": {
         "x": 256,
         "y": 192,
@@ -1272,7 +1272,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/twirl 4.jpg": {
+    "/game objects/container/twirl 4.jpg": {
       "frame": {
         "x": 384,
         "y": 192,
@@ -1296,7 +1296,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/twirl 5.jpg": {
+    "/game objects/container/twirl 5.jpg": {
       "frame": {
         "x": 512,
         "y": 192,
@@ -1320,7 +1320,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/twirl 6.jpg": {
+    "/game objects/container/twirl 6.jpg": {
       "frame": {
         "x": 640,
         "y": 192,
@@ -1344,7 +1344,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/blend mode.jpg": {
+    "/game objects/dom element/blend mode.jpg": {
       "frame": {
         "x": 768,
         "y": 192,
@@ -1368,7 +1368,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/css style object.jpg": {
+    "/game objects/dom element/css style object.jpg": {
       "frame": {
         "x": 896,
         "y": 192,
@@ -1392,7 +1392,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/css text.jpg": {
+    "/game objects/dom element/css text.jpg": {
       "frame": {
         "x": 1024,
         "y": 192,
@@ -1416,7 +1416,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/cursors test.jpg": {
+    "/game objects/dom element/cursors test.jpg": {
       "frame": {
         "x": 1152,
         "y": 192,
@@ -1440,7 +1440,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/div depth.jpg": {
+    "/game objects/dom element/div depth.jpg": {
       "frame": {
         "x": 1280,
         "y": 192,
@@ -1464,7 +1464,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/div position test 1.jpg": {
+    "/game objects/dom element/div position test 1.jpg": {
       "frame": {
         "x": 1408,
         "y": 192,
@@ -1488,7 +1488,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/div position test 2.jpg": {
+    "/game objects/dom element/div position test 2.jpg": {
       "frame": {
         "x": 1536,
         "y": 192,
@@ -1512,7 +1512,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/div position test 3.jpg": {
+    "/game objects/dom element/div position test 3.jpg": {
       "frame": {
         "x": 1664,
         "y": 192,
@@ -1536,7 +1536,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/div position test 4.jpg": {
+    "/game objects/dom element/div position test 4.jpg": {
       "frame": {
         "x": 1792,
         "y": 192,
@@ -1560,7 +1560,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/div position test 5.jpg": {
+    "/game objects/dom element/div position test 5.jpg": {
       "frame": {
         "x": 1920,
         "y": 192,
@@ -1584,7 +1584,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/form input.jpg": {
+    "/game objects/dom element/form input.jpg": {
       "frame": {
         "x": 128,
         "y": 288,
@@ -1608,7 +1608,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/input test.jpg": {
+    "/game objects/dom element/input test.jpg": {
       "frame": {
         "x": 128,
         "y": 384,
@@ -1632,7 +1632,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/move camera.jpg": {
+    "/game objects/dom element/move camera.jpg": {
       "frame": {
         "x": 128,
         "y": 480,
@@ -1656,7 +1656,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/physics element.jpg": {
+    "/game objects/dom element/physics element.jpg": {
       "frame": {
         "x": 128,
         "y": 576,
@@ -1680,7 +1680,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/rotate3d.jpg": {
+    "/game objects/dom element/rotate3d.jpg": {
       "frame": {
         "x": 128,
         "y": 672,
@@ -1704,7 +1704,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/skew.jpg": {
+    "/game objects/dom element/skew.jpg": {
       "frame": {
         "x": 128,
         "y": 768,
@@ -1728,7 +1728,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/sleeping scene test.jpg": {
+    "/game objects/dom element/sleeping scene test.jpg": {
       "frame": {
         "x": 128,
         "y": 864,
@@ -1752,7 +1752,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/dom element/using a div.jpg": {
+    "/game objects/dom element/using a div.jpg": {
       "frame": {
         "x": 128,
         "y": 960,
@@ -1776,7 +1776,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/arc stroke.jpg": {
+    "/game objects/graphics/arc stroke.jpg": {
       "frame": {
         "x": 128,
         "y": 1056,
@@ -1800,7 +1800,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/arc.jpg": {
+    "/game objects/graphics/arc.jpg": {
       "frame": {
         "x": 128,
         "y": 1152,
@@ -1824,7 +1824,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/atari lines.jpg": {
+    "/game objects/graphics/atari lines.jpg": {
       "frame": {
         "x": 128,
         "y": 1248,
@@ -1848,7 +1848,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/circle overlap.jpg": {
+    "/game objects/graphics/circle overlap.jpg": {
       "frame": {
         "x": 128,
         "y": 1344,
@@ -1872,7 +1872,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/circle spin.jpg": {
+    "/game objects/graphics/circle spin.jpg": {
       "frame": {
         "x": 128,
         "y": 1440,
@@ -1896,7 +1896,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/circles test.jpg": {
+    "/game objects/graphics/circles test.jpg": {
       "frame": {
         "x": 128,
         "y": 1536,
@@ -1920,7 +1920,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/draw triangles.jpg": {
+    "/game objects/graphics/draw triangles.jpg": {
       "frame": {
         "x": 128,
         "y": 1632,
@@ -1944,7 +1944,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/fill rect.jpg": {
+    "/game objects/graphics/fill rect.jpg": {
       "frame": {
         "x": 128,
         "y": 1728,
@@ -1968,7 +1968,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/fill rounded rectangle.jpg": {
+    "/game objects/graphics/fill rounded rectangle.jpg": {
       "frame": {
         "x": 128,
         "y": 1824,
@@ -1992,7 +1992,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/generate texture test.jpg": {
+    "/game objects/graphics/generate texture test.jpg": {
       "frame": {
         "x": 128,
         "y": 1920,
@@ -2016,7 +2016,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/generate texture to blitter.jpg": {
+    "/game objects/graphics/generate texture to blitter.jpg": {
       "frame": {
         "x": 256,
         "y": 288,
@@ -2040,7 +2040,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/generate texture to sprite.jpg": {
+    "/game objects/graphics/generate texture to sprite.jpg": {
       "frame": {
         "x": 384,
         "y": 288,
@@ -2064,7 +2064,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/generate texture to tilesprite.jpg": {
+    "/game objects/graphics/generate texture to tilesprite.jpg": {
       "frame": {
         "x": 512,
         "y": 288,
@@ -2088,7 +2088,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/graphics rendering.jpg": {
+    "/game objects/graphics/graphics rendering.jpg": {
       "frame": {
         "x": 640,
         "y": 288,
@@ -2112,7 +2112,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/graphics styles.jpg": {
+    "/game objects/graphics/graphics styles.jpg": {
       "frame": {
         "x": 768,
         "y": 288,
@@ -2136,7 +2136,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/health bars demo.jpg": {
+    "/game objects/graphics/health bars demo.jpg": {
       "frame": {
         "x": 896,
         "y": 288,
@@ -2160,7 +2160,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/line rendering.jpg": {
+    "/game objects/graphics/line rendering.jpg": {
       "frame": {
         "x": 1024,
         "y": 288,
@@ -2184,7 +2184,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/line thickness.jpg": {
+    "/game objects/graphics/line thickness.jpg": {
       "frame": {
         "x": 1152,
         "y": 288,
@@ -2208,7 +2208,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/many line stars.jpg": {
+    "/game objects/graphics/many line stars.jpg": {
       "frame": {
         "x": 1280,
         "y": 288,
@@ -2232,7 +2232,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/multiple cameras.jpg": {
+    "/game objects/graphics/multiple cameras.jpg": {
       "frame": {
         "x": 1408,
         "y": 288,
@@ -2256,7 +2256,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/multiple graphic objects.jpg": {
+    "/game objects/graphics/multiple graphic objects.jpg": {
       "frame": {
         "x": 1536,
         "y": 288,
@@ -2280,7 +2280,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/multiple stroke rects.jpg": {
+    "/game objects/graphics/multiple stroke rects.jpg": {
       "frame": {
         "x": 1664,
         "y": 288,
@@ -2304,7 +2304,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/obj scene.jpg": {
+    "/game objects/graphics/obj scene.jpg": {
       "frame": {
         "x": 1792,
         "y": 288,
@@ -2328,7 +2328,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/obj viewer.jpg": {
+    "/game objects/graphics/obj viewer.jpg": {
       "frame": {
         "x": 1920,
         "y": 288,
@@ -2352,7 +2352,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/obj world cam.jpg": {
+    "/game objects/graphics/obj world cam.jpg": {
       "frame": {
         "x": 256,
         "y": 384,
@@ -2376,7 +2376,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/obj world.jpg": {
+    "/game objects/graphics/obj world.jpg": {
       "frame": {
         "x": 256,
         "y": 480,
@@ -2400,7 +2400,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/pacman arc chomp chomp.jpg": {
+    "/game objects/graphics/pacman arc chomp chomp.jpg": {
       "frame": {
         "x": 256,
         "y": 576,
@@ -2424,7 +2424,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/pacman arc.jpg": {
+    "/game objects/graphics/pacman arc.jpg": {
       "frame": {
         "x": 256,
         "y": 672,
@@ -2448,7 +2448,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/phaser logo 3d.jpg": {
+    "/game objects/graphics/phaser logo 3d.jpg": {
       "frame": {
         "x": 256,
         "y": 768,
@@ -2472,7 +2472,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/phaser logo shift.jpg": {
+    "/game objects/graphics/phaser logo shift.jpg": {
       "frame": {
         "x": 256,
         "y": 864,
@@ -2496,7 +2496,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/phaser logo.jpg": {
+    "/game objects/graphics/phaser logo.jpg": {
       "frame": {
         "x": 256,
         "y": 960,
@@ -2520,7 +2520,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/primitive types.jpg": {
+    "/game objects/graphics/primitive types.jpg": {
       "frame": {
         "x": 256,
         "y": 1056,
@@ -2544,7 +2544,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/primitives/arc filled.jpg": {
+    "/game objects/graphics/primitives/arc filled.jpg": {
       "frame": {
         "x": 256,
         "y": 1152,
@@ -2568,7 +2568,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/primitives/arc gradient filled.jpg": {
+    "/game objects/graphics/primitives/arc gradient filled.jpg": {
       "frame": {
         "x": 256,
         "y": 1248,
@@ -2592,7 +2592,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/primitives/arc stroked.jpg": {
+    "/game objects/graphics/primitives/arc stroked.jpg": {
       "frame": {
         "x": 256,
         "y": 1344,
@@ -2616,7 +2616,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/primitives/line between.jpg": {
+    "/game objects/graphics/primitives/line between.jpg": {
       "frame": {
         "x": 256,
         "y": 1440,
@@ -2640,7 +2640,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/primitives/line gradient stroked.jpg": {
+    "/game objects/graphics/primitives/line gradient stroked.jpg": {
       "frame": {
         "x": 256,
         "y": 1536,
@@ -2664,7 +2664,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/primitives/path gradient filled.jpg": {
+    "/game objects/graphics/primitives/path gradient filled.jpg": {
       "frame": {
         "x": 256,
         "y": 1632,
@@ -2688,7 +2688,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/primitives/path stroked.jpg": {
+    "/game objects/graphics/primitives/path stroked.jpg": {
       "frame": {
         "x": 256,
         "y": 1728,
@@ -2712,7 +2712,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/primitives/rectangle filled.jpg": {
+    "/game objects/graphics/primitives/rectangle filled.jpg": {
       "frame": {
         "x": 256,
         "y": 1824,
@@ -2736,7 +2736,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/primitives/rectangle gradient filled.jpg": {
+    "/game objects/graphics/primitives/rectangle gradient filled.jpg": {
       "frame": {
         "x": 256,
         "y": 1920,
@@ -2760,7 +2760,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/primitives/scene stack test.jpg": {
+    "/game objects/graphics/primitives/scene stack test.jpg": {
       "frame": {
         "x": 384,
         "y": 384,
@@ -2784,7 +2784,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/primitives/split path filled.jpg": {
+    "/game objects/graphics/primitives/split path filled.jpg": {
       "frame": {
         "x": 512,
         "y": 384,
@@ -2808,7 +2808,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/primitives/triangle gradient filled.jpg": {
+    "/game objects/graphics/primitives/triangle gradient filled.jpg": {
       "frame": {
         "x": 640,
         "y": 384,
@@ -2832,7 +2832,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/primitives/triangle gradient stroked.jpg": {
+    "/game objects/graphics/primitives/triangle gradient stroked.jpg": {
       "frame": {
         "x": 768,
         "y": 384,
@@ -2856,7 +2856,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/primitives/triangle stroked.jpg": {
+    "/game objects/graphics/primitives/triangle stroked.jpg": {
       "frame": {
         "x": 896,
         "y": 384,
@@ -2880,7 +2880,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/rect test.jpg": {
+    "/game objects/graphics/rect test.jpg": {
       "frame": {
         "x": 1024,
         "y": 384,
@@ -2904,7 +2904,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/single obj viewer.jpg": {
+    "/game objects/graphics/single obj viewer.jpg": {
       "frame": {
         "x": 1152,
         "y": 384,
@@ -2928,7 +2928,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/spinning cube.jpg": {
+    "/game objects/graphics/spinning cube.jpg": {
       "frame": {
         "x": 1280,
         "y": 384,
@@ -2952,7 +2952,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/star shape.jpg": {
+    "/game objects/graphics/star shape.jpg": {
       "frame": {
         "x": 1408,
         "y": 384,
@@ -2976,7 +2976,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/stroke circle.jpg": {
+    "/game objects/graphics/stroke circle.jpg": {
       "frame": {
         "x": 1536,
         "y": 384,
@@ -3000,7 +3000,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/stroke path.jpg": {
+    "/game objects/graphics/stroke path.jpg": {
       "frame": {
         "x": 1664,
         "y": 384,
@@ -3024,7 +3024,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/stroke rect.jpg": {
+    "/game objects/graphics/stroke rect.jpg": {
       "frame": {
         "x": 1792,
         "y": 384,
@@ -3048,7 +3048,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/stroke rounded rectangle.jpg": {
+    "/game objects/graphics/stroke rounded rectangle.jpg": {
       "frame": {
         "x": 1920,
         "y": 384,
@@ -3072,7 +3072,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/stroke triangle.jpg": {
+    "/game objects/graphics/stroke triangle.jpg": {
       "frame": {
         "x": 384,
         "y": 480,
@@ -3096,7 +3096,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/teapot.jpg": {
+    "/game objects/graphics/teapot.jpg": {
       "frame": {
         "x": 384,
         "y": 576,
@@ -3120,7 +3120,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/trace.jpg": {
+    "/game objects/graphics/trace.jpg": {
       "frame": {
         "x": 384,
         "y": 672,
@@ -3144,7 +3144,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/graphics/transform.jpg": {
+    "/game objects/graphics/transform.jpg": {
       "frame": {
         "x": 384,
         "y": 768,
@@ -3168,7 +3168,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/group/create invaders.jpg": {
+    "/game objects/group/create invaders.jpg": {
       "frame": {
         "x": 384,
         "y": 864,
@@ -3192,7 +3192,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/group/create multiple keys.jpg": {
+    "/game objects/group/create multiple keys.jpg": {
       "frame": {
         "x": 384,
         "y": 960,
@@ -3216,7 +3216,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/group/create multiple.jpg": {
+    "/game objects/group/create multiple.jpg": {
       "frame": {
         "x": 384,
         "y": 1056,
@@ -3240,7 +3240,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/group/destroy child.jpg": {
+    "/game objects/group/destroy child.jpg": {
       "frame": {
         "x": 384,
         "y": 1152,
@@ -3264,7 +3264,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/group/multiple adds.jpg": {
+    "/game objects/group/multiple adds.jpg": {
       "frame": {
         "x": 384,
         "y": 1248,
@@ -3288,7 +3288,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/group/random frame.jpg": {
+    "/game objects/group/random frame.jpg": {
       "frame": {
         "x": 384,
         "y": 1344,
@@ -3312,7 +3312,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/group/set rotation.jpg": {
+    "/game objects/group/set rotation.jpg": {
       "frame": {
         "x": 384,
         "y": 1440,
@@ -3336,7 +3336,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/group/set scale.jpg": {
+    "/game objects/group/set scale.jpg": {
       "frame": {
         "x": 384,
         "y": 1536,
@@ -3360,7 +3360,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/group/set x.jpg": {
+    "/game objects/group/set x.jpg": {
       "frame": {
         "x": 384,
         "y": 1632,
@@ -3384,7 +3384,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/group/set xy.jpg": {
+    "/game objects/group/set xy.jpg": {
       "frame": {
         "x": 384,
         "y": 1728,
@@ -3408,7 +3408,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/group/set y.jpg": {
+    "/game objects/group/set y.jpg": {
       "frame": {
         "x": 384,
         "y": 1824,
@@ -3432,7 +3432,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/group/shuffle.jpg": {
+    "/game objects/group/shuffle.jpg": {
       "frame": {
         "x": 384,
         "y": 1920,
@@ -3456,7 +3456,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/group/sprite pool.jpg": {
+    "/game objects/group/sprite pool.jpg": {
       "frame": {
         "x": 512,
         "y": 480,
@@ -3480,7 +3480,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/group/swirl.jpg": {
+    "/game objects/group/swirl.jpg": {
       "frame": {
         "x": 640,
         "y": 480,
@@ -3504,7 +3504,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/blend test.jpg": {
+    "/game objects/images/blend test.jpg": {
       "frame": {
         "x": 768,
         "y": 480,
@@ -3528,7 +3528,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/custom game object.jpg": {
+    "/game objects/images/custom game object.jpg": {
       "frame": {
         "x": 896,
         "y": 480,
@@ -3552,7 +3552,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/custom image class es6.jpg": {
+    "/game objects/images/custom image class es6.jpg": {
       "frame": {
         "x": 1024,
         "y": 480,
@@ -3576,7 +3576,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/flip.jpg": {
+    "/game objects/images/flip.jpg": {
       "frame": {
         "x": 1152,
         "y": 480,
@@ -3600,7 +3600,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/get bounds.jpg": {
+    "/game objects/images/get bounds.jpg": {
       "frame": {
         "x": 1280,
         "y": 480,
@@ -3624,7 +3624,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/image alpha.jpg": {
+    "/game objects/images/image alpha.jpg": {
       "frame": {
         "x": 1408,
         "y": 480,
@@ -3648,7 +3648,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/image bounds.jpg": {
+    "/game objects/images/image bounds.jpg": {
       "frame": {
         "x": 1536,
         "y": 480,
@@ -3672,7 +3672,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/image edge points.jpg": {
+    "/game objects/images/image edge points.jpg": {
       "frame": {
         "x": 1664,
         "y": 480,
@@ -3696,7 +3696,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/image offset.jpg": {
+    "/game objects/images/image offset.jpg": {
       "frame": {
         "x": 1792,
         "y": 480,
@@ -3720,7 +3720,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/image rotation.jpg": {
+    "/game objects/images/image rotation.jpg": {
       "frame": {
         "x": 1920,
         "y": 480,
@@ -3744,7 +3744,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/make image from config.jpg": {
+    "/game objects/images/make image from config.jpg": {
       "frame": {
         "x": 512,
         "y": 576,
@@ -3768,7 +3768,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/multiple alpha.jpg": {
+    "/game objects/images/multiple alpha.jpg": {
       "frame": {
         "x": 640,
         "y": 576,
@@ -3792,7 +3792,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/multiple image rotation.jpg": {
+    "/game objects/images/multiple image rotation.jpg": {
       "frame": {
         "x": 768,
         "y": 576,
@@ -3816,7 +3816,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/single image.jpg": {
+    "/game objects/images/single image.jpg": {
       "frame": {
         "x": 896,
         "y": 576,
@@ -3840,7 +3840,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/layer/add sprite to layer.jpg": {
+    "/game objects/layer/add sprite to layer.jpg": {
       "frame": {
         "x": 1024,
         "y": 576,
@@ -3864,7 +3864,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/layer/depth sort layer children.jpg": {
+    "/game objects/layer/depth sort layer children.jpg": {
       "frame": {
         "x": 1152,
         "y": 576,
@@ -3888,7 +3888,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/layer/layer post pipeline.jpg": {
+    "/game objects/layer/layer post pipeline.jpg": {
       "frame": {
         "x": 1280,
         "y": 576,
@@ -3912,7 +3912,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/layer/layer with bitmap mask.jpg": {
+    "/game objects/layer/layer with bitmap mask.jpg": {
       "frame": {
         "x": 1408,
         "y": 576,
@@ -3936,7 +3936,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/layer/layer with geometry mask.jpg": {
+    "/game objects/layer/layer with geometry mask.jpg": {
       "frame": {
         "x": 1536,
         "y": 576,
@@ -3960,7 +3960,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/layer/move between layers.jpg": {
+    "/game objects/layer/move between layers.jpg": {
       "frame": {
         "x": 1664,
         "y": 576,
@@ -3984,7 +3984,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/layer/nested layers.jpg": {
+    "/game objects/layer/nested layers.jpg": {
       "frame": {
         "x": 1792,
         "y": 576,
@@ -4008,7 +4008,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/bitmap text light.jpg": {
+    "/game objects/lights/bitmap text light.jpg": {
       "frame": {
         "x": 1920,
         "y": 576,
@@ -4032,7 +4032,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/blitter light.jpg": {
+    "/game objects/lights/blitter light.jpg": {
       "frame": {
         "x": 512,
         "y": 672,
@@ -4056,7 +4056,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/change max lights.jpg": {
+    "/game objects/lights/change max lights.jpg": {
       "frame": {
         "x": 512,
         "y": 768,
@@ -4080,7 +4080,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/change scene.jpg": {
+    "/game objects/lights/change scene.jpg": {
       "frame": {
         "x": 512,
         "y": 864,
@@ -4104,7 +4104,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/create point light.jpg": {
+    "/game objects/lights/create point light.jpg": {
       "frame": {
         "x": 512,
         "y": 960,
@@ -4128,7 +4128,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/draw light.jpg": {
+    "/game objects/lights/draw light.jpg": {
       "frame": {
         "x": 512,
         "y": 1056,
@@ -4152,7 +4152,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/graveyard.jpg": {
+    "/game objects/lights/graveyard.jpg": {
       "frame": {
         "x": 512,
         "y": 1152,
@@ -4176,7 +4176,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/light culling.jpg": {
+    "/game objects/lights/light culling.jpg": {
       "frame": {
         "x": 512,
         "y": 1248,
@@ -4200,7 +4200,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/light follow pointer.jpg": {
+    "/game objects/lights/light follow pointer.jpg": {
       "frame": {
         "x": 512,
         "y": 1344,
@@ -4224,7 +4224,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/mesh light.jpg": {
+    "/game objects/lights/mesh light.jpg": {
       "frame": {
         "x": 512,
         "y": 1440,
@@ -4248,7 +4248,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/particles light.jpg": {
+    "/game objects/lights/particles light.jpg": {
       "frame": {
         "x": 512,
         "y": 1536,
@@ -4272,7 +4272,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/point lights.jpg": {
+    "/game objects/lights/point lights.jpg": {
       "frame": {
         "x": 512,
         "y": 1632,
@@ -4296,7 +4296,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/render texture light.jpg": {
+    "/game objects/lights/render texture light.jpg": {
       "frame": {
         "x": 512,
         "y": 1728,
@@ -4320,7 +4320,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/rotated sprite.jpg": {
+    "/game objects/lights/rotated sprite.jpg": {
       "frame": {
         "x": 512,
         "y": 1824,
@@ -4344,7 +4344,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/single light.jpg": {
+    "/game objects/lights/single light.jpg": {
       "frame": {
         "x": 512,
         "y": 1920,
@@ -4368,7 +4368,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/spotlight.jpg": {
+    "/game objects/lights/spotlight.jpg": {
       "frame": {
         "x": 640,
         "y": 672,
@@ -4392,7 +4392,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/sprite sheet light.jpg": {
+    "/game objects/lights/sprite sheet light.jpg": {
       "frame": {
         "x": 768,
         "y": 672,
@@ -4416,7 +4416,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/text light.jpg": {
+    "/game objects/lights/text light.jpg": {
       "frame": {
         "x": 896,
         "y": 672,
@@ -4440,7 +4440,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/tilemap layer.jpg": {
+    "/game objects/lights/tilemap layer.jpg": {
       "frame": {
         "x": 1024,
         "y": 672,
@@ -4464,7 +4464,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/lights/tilesprite light.jpg": {
+    "/game objects/lights/tilesprite light.jpg": {
       "frame": {
         "x": 1152,
         "y": 672,
@@ -4488,7 +4488,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/mesh/mesh from array.jpg": {
+    "/game objects/mesh/mesh from array.jpg": {
       "frame": {
         "x": 1280,
         "y": 672,
@@ -4512,7 +4512,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/mesh/mesh from generate grid.jpg": {
+    "/game objects/mesh/mesh from generate grid.jpg": {
       "frame": {
         "x": 1408,
         "y": 672,
@@ -4536,7 +4536,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/mesh/mesh from obj.jpg": {
+    "/game objects/mesh/mesh from obj.jpg": {
       "frame": {
         "x": 1536,
         "y": 672,
@@ -4560,7 +4560,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/mesh/race track.jpg": {
+    "/game objects/mesh/race track.jpg": {
       "frame": {
         "x": 1664,
         "y": 672,
@@ -4584,7 +4584,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/acceleration.jpg": {
+    "/game objects/particle emitter/acceleration.jpg": {
       "frame": {
         "x": 1792,
         "y": 672,
@@ -4608,7 +4608,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/angled emitter.jpg": {
+    "/game objects/particle emitter/angled emitter.jpg": {
       "frame": {
         "x": 1920,
         "y": 672,
@@ -4632,7 +4632,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/camera test.jpg": {
+    "/game objects/particle emitter/camera test.jpg": {
       "frame": {
         "x": 640,
         "y": 768,
@@ -4656,7 +4656,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/change emitter order.jpg": {
+    "/game objects/particle emitter/change emitter order.jpg": {
       "frame": {
         "x": 640,
         "y": 864,
@@ -4680,7 +4680,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/christmas tree.jpg": {
+    "/game objects/particle emitter/christmas tree.jpg": {
       "frame": {
         "x": 640,
         "y": 960,
@@ -4704,7 +4704,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/collide emitter bounds sides.jpg": {
+    "/game objects/particle emitter/collide emitter bounds sides.jpg": {
       "frame": {
         "x": 640,
         "y": 1056,
@@ -4728,7 +4728,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/create emitter from config 2.jpg": {
+    "/game objects/particle emitter/create emitter from config 2.jpg": {
       "frame": {
         "x": 640,
         "y": 1152,
@@ -4752,7 +4752,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/create emitter from config 3.jpg": {
+    "/game objects/particle emitter/create emitter from config 3.jpg": {
       "frame": {
         "x": 640,
         "y": 1248,
@@ -4776,7 +4776,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/create emitter from config 4.jpg": {
+    "/game objects/particle emitter/create emitter from config 4.jpg": {
       "frame": {
         "x": 640,
         "y": 1344,
@@ -4800,7 +4800,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/create emitter from config 5.jpg": {
+    "/game objects/particle emitter/create emitter from config 5.jpg": {
       "frame": {
         "x": 640,
         "y": 1440,
@@ -4824,7 +4824,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/create emitter from config.jpg": {
+    "/game objects/particle emitter/create emitter from config.jpg": {
       "frame": {
         "x": 640,
         "y": 1536,
@@ -4848,7 +4848,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/create emitter from json.jpg": {
+    "/game objects/particle emitter/create emitter from json.jpg": {
       "frame": {
         "x": 640,
         "y": 1632,
@@ -4872,7 +4872,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/create emitter.jpg": {
+    "/game objects/particle emitter/create emitter.jpg": {
       "frame": {
         "x": 640,
         "y": 1728,
@@ -4896,7 +4896,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/custom particles.jpg": {
+    "/game objects/particle emitter/custom particles.jpg": {
       "frame": {
         "x": 640,
         "y": 1824,
@@ -4920,7 +4920,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/death zone custom.jpg": {
+    "/game objects/particle emitter/death zone custom.jpg": {
       "frame": {
         "x": 640,
         "y": 1920,
@@ -4944,7 +4944,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/death zone follow mouse.jpg": {
+    "/game objects/particle emitter/death zone follow mouse.jpg": {
       "frame": {
         "x": 768,
         "y": 768,
@@ -4968,7 +4968,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/death zone from arcade body.jpg": {
+    "/game objects/particle emitter/death zone from arcade body.jpg": {
       "frame": {
         "x": 896,
         "y": 768,
@@ -4992,7 +4992,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/death zone on enter.jpg": {
+    "/game objects/particle emitter/death zone on enter.jpg": {
       "frame": {
         "x": 1024,
         "y": 768,
@@ -5016,7 +5016,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/death zone on leave.jpg": {
+    "/game objects/particle emitter/death zone on leave.jpg": {
       "frame": {
         "x": 1152,
         "y": 768,
@@ -5040,7 +5040,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/digital rain.jpg": {
+    "/game objects/particle emitter/digital rain.jpg": {
       "frame": {
         "x": 1280,
         "y": 768,
@@ -5064,7 +5064,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/double acceleration.jpg": {
+    "/game objects/particle emitter/double acceleration.jpg": {
       "frame": {
         "x": 1408,
         "y": 768,
@@ -5088,7 +5088,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/dynamic emitter config property.jpg": {
+    "/game objects/particle emitter/dynamic emitter config property.jpg": {
       "frame": {
         "x": 1536,
         "y": 768,
@@ -5112,7 +5112,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/edge zone custom.jpg": {
+    "/game objects/particle emitter/edge zone custom.jpg": {
       "frame": {
         "x": 1664,
         "y": 768,
@@ -5136,7 +5136,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/edge zone from curve.jpg": {
+    "/game objects/particle emitter/edge zone from curve.jpg": {
       "frame": {
         "x": 1792,
         "y": 768,
@@ -5160,7 +5160,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/edge zone speed.jpg": {
+    "/game objects/particle emitter/edge zone speed.jpg": {
       "frame": {
         "x": 1920,
         "y": 768,
@@ -5184,7 +5184,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/edge zone.jpg": {
+    "/game objects/particle emitter/edge zone.jpg": {
       "frame": {
         "x": 768,
         "y": 864,
@@ -5208,7 +5208,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/electric 2.jpg": {
+    "/game objects/particle emitter/electric 2.jpg": {
       "frame": {
         "x": 768,
         "y": 960,
@@ -5232,7 +5232,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/electric.jpg": {
+    "/game objects/particle emitter/electric.jpg": {
       "frame": {
         "x": 768,
         "y": 1056,
@@ -5256,7 +5256,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/emit from manager.jpg": {
+    "/game objects/particle emitter/emit from manager.jpg": {
       "frame": {
         "x": 768,
         "y": 1152,
@@ -5280,7 +5280,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/emit from sprites.jpg": {
+    "/game objects/particle emitter/emit from sprites.jpg": {
       "frame": {
         "x": 768,
         "y": 1248,
@@ -5304,7 +5304,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/emit from texture.jpg": {
+    "/game objects/particle emitter/emit from texture.jpg": {
       "frame": {
         "x": 768,
         "y": 1344,
@@ -5328,7 +5328,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/emitter bounds.jpg": {
+    "/game objects/particle emitter/emitter bounds.jpg": {
       "frame": {
         "x": 768,
         "y": 1440,
@@ -5352,7 +5352,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/emitter follow sprite.jpg": {
+    "/game objects/particle emitter/emitter follow sprite.jpg": {
       "frame": {
         "x": 768,
         "y": 1536,
@@ -5376,7 +5376,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/explode test.jpg": {
+    "/game objects/particle emitter/explode test.jpg": {
       "frame": {
         "x": 768,
         "y": 1632,
@@ -5400,7 +5400,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/fire max 10 particles.jpg": {
+    "/game objects/particle emitter/fire max 10 particles.jpg": {
       "frame": {
         "x": 768,
         "y": 1728,
@@ -5424,7 +5424,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/fireballs.jpg": {
+    "/game objects/particle emitter/fireballs.jpg": {
       "frame": {
         "x": 768,
         "y": 1824,
@@ -5448,7 +5448,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/fireworks.jpg": {
+    "/game objects/particle emitter/fireworks.jpg": {
       "frame": {
         "x": 768,
         "y": 1920,
@@ -5472,7 +5472,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/follow sprite.jpg": {
+    "/game objects/particle emitter/follow sprite.jpg": {
       "frame": {
         "x": 896,
         "y": 864,
@@ -5496,7 +5496,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/frame cycle.jpg": {
+    "/game objects/particle emitter/frame cycle.jpg": {
       "frame": {
         "x": 1024,
         "y": 864,
@@ -5520,7 +5520,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/gravity well.jpg": {
+    "/game objects/particle emitter/gravity well.jpg": {
       "frame": {
         "x": 1152,
         "y": 864,
@@ -5544,7 +5544,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/manager transform.jpg": {
+    "/game objects/particle emitter/manager transform.jpg": {
       "frame": {
         "x": 1280,
         "y": 864,
@@ -5568,7 +5568,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/mouse trail.jpg": {
+    "/game objects/particle emitter/mouse trail.jpg": {
       "frame": {
         "x": 1408,
         "y": 864,
@@ -5592,7 +5592,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/move to center.jpg": {
+    "/game objects/particle emitter/move to center.jpg": {
       "frame": {
         "x": 1536,
         "y": 864,
@@ -5616,7 +5616,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/move to.jpg": {
+    "/game objects/particle emitter/move to.jpg": {
       "frame": {
         "x": 1664,
         "y": 864,
@@ -5640,7 +5640,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/multiple emitters.jpg": {
+    "/game objects/particle emitter/multiple emitters.jpg": {
       "frame": {
         "x": 1792,
         "y": 864,
@@ -5664,7 +5664,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/parallax.jpg": {
+    "/game objects/particle emitter/parallax.jpg": {
       "frame": {
         "x": 1920,
         "y": 864,
@@ -5688,7 +5688,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/particle editor.jpg": {
+    "/game objects/particle emitter/particle editor.jpg": {
       "frame": {
         "x": 896,
         "y": 960,
@@ -5712,7 +5712,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/particle processor.jpg": {
+    "/game objects/particle emitter/particle processor.jpg": {
       "frame": {
         "x": 1024,
         "y": 960,
@@ -5736,7 +5736,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/particles on a moving curve.jpg": {
+    "/game objects/particle emitter/particles on a moving curve.jpg": {
       "frame": {
         "x": 1152,
         "y": 960,
@@ -5760,7 +5760,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/particles on a path.jpg": {
+    "/game objects/particle emitter/particles on a path.jpg": {
       "frame": {
         "x": 1280,
         "y": 960,
@@ -5784,7 +5784,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/random emit zone custom.jpg": {
+    "/game objects/particle emitter/random emit zone custom.jpg": {
       "frame": {
         "x": 1408,
         "y": 960,
@@ -5808,7 +5808,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/random emit zone.jpg": {
+    "/game objects/particle emitter/random emit zone.jpg": {
       "frame": {
         "x": 1536,
         "y": 960,
@@ -5832,7 +5832,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/rotating line.jpg": {
+    "/game objects/particle emitter/rotating line.jpg": {
       "frame": {
         "x": 1664,
         "y": 960,
@@ -5856,7 +5856,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/scale emitter.jpg": {
+    "/game objects/particle emitter/scale emitter.jpg": {
       "frame": {
         "x": 1792,
         "y": 960,
@@ -5880,7 +5880,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/stepped angle.jpg": {
+    "/game objects/particle emitter/stepped angle.jpg": {
       "frame": {
         "x": 1920,
         "y": 960,
@@ -5904,7 +5904,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/stepped lifespan.jpg": {
+    "/game objects/particle emitter/stepped lifespan.jpg": {
       "frame": {
         "x": 896,
         "y": 1056,
@@ -5928,7 +5928,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/stepped position and speed.jpg": {
+    "/game objects/particle emitter/stepped position and speed.jpg": {
       "frame": {
         "x": 896,
         "y": 1152,
@@ -5952,7 +5952,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/stepped position.jpg": {
+    "/game objects/particle emitter/stepped position.jpg": {
       "frame": {
         "x": 896,
         "y": 1248,
@@ -5976,7 +5976,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/stepped speed.jpg": {
+    "/game objects/particle emitter/stepped speed.jpg": {
       "frame": {
         "x": 896,
         "y": 1344,
@@ -6000,7 +6000,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/test new ops.jpg": {
+    "/game objects/particle emitter/test new ops.jpg": {
       "frame": {
         "x": 896,
         "y": 1440,
@@ -6024,7 +6024,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/tint.jpg": {
+    "/game objects/particle emitter/tint.jpg": {
       "frame": {
         "x": 896,
         "y": 1536,
@@ -6048,7 +6048,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/particle emitter/y position range.jpg": {
+    "/game objects/particle emitter/y position range.jpg": {
       "frame": {
         "x": 896,
         "y": 1632,
@@ -6072,7 +6072,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/atlas frame to render texture.jpg": {
+    "/game objects/render texture/atlas frame to render texture.jpg": {
       "frame": {
         "x": 896,
         "y": 1728,
@@ -6096,7 +6096,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/batch draw frame.jpg": {
+    "/game objects/render texture/batch draw frame.jpg": {
       "frame": {
         "x": 896,
         "y": 1824,
@@ -6120,7 +6120,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/batch draw sprite.jpg": {
+    "/game objects/render texture/batch draw sprite.jpg": {
       "frame": {
         "x": 896,
         "y": 1920,
@@ -6144,7 +6144,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/blitter to render texture.jpg": {
+    "/game objects/render texture/blitter to render texture.jpg": {
       "frame": {
         "x": 1024,
         "y": 1056,
@@ -6168,7 +6168,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/brute force.jpg": {
+    "/game objects/render texture/brute force.jpg": {
       "frame": {
         "x": 1152,
         "y": 1056,
@@ -6192,7 +6192,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/change frame.jpg": {
+    "/game objects/render texture/change frame.jpg": {
       "frame": {
         "x": 1280,
         "y": 1056,
@@ -6216,7 +6216,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/container to render texture.jpg": {
+    "/game objects/render texture/container to render texture.jpg": {
       "frame": {
         "x": 1408,
         "y": 1056,
@@ -6240,7 +6240,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/destroy game with render texture.jpg": {
+    "/game objects/render texture/destroy game with render texture.jpg": {
       "frame": {
         "x": 1536,
         "y": 1056,
@@ -6264,7 +6264,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/destroy render texture.jpg": {
+    "/game objects/render texture/destroy render texture.jpg": {
       "frame": {
         "x": 1664,
         "y": 1056,
@@ -6288,7 +6288,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/draw game objects to render texture.jpg": {
+    "/game objects/render texture/draw game objects to render texture.jpg": {
       "frame": {
         "x": 1792,
         "y": 1056,
@@ -6312,7 +6312,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/draw on texture.jpg": {
+    "/game objects/render texture/draw on texture.jpg": {
       "frame": {
         "x": 1920,
         "y": 1056,
@@ -6336,7 +6336,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/dynamic bitmap text to render texture.jpg": {
+    "/game objects/render texture/dynamic bitmap text to render texture.jpg": {
       "frame": {
         "x": 1024,
         "y": 1152,
@@ -6360,7 +6360,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/dynamic tilemap to render texture.jpg": {
+    "/game objects/render texture/dynamic tilemap to render texture.jpg": {
       "frame": {
         "x": 1024,
         "y": 1248,
@@ -6384,7 +6384,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/erase part of render texture canvas.jpg": {
+    "/game objects/render texture/erase part of render texture canvas.jpg": {
       "frame": {
         "x": 1024,
         "y": 1344,
@@ -6408,7 +6408,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/erase part of render texture.jpg": {
+    "/game objects/render texture/erase part of render texture.jpg": {
       "frame": {
         "x": 1024,
         "y": 1440,
@@ -6432,7 +6432,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/explosion.jpg": {
+    "/game objects/render texture/explosion.jpg": {
       "frame": {
         "x": 1024,
         "y": 1536,
@@ -6456,7 +6456,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/fireball.jpg": {
+    "/game objects/render texture/fireball.jpg": {
       "frame": {
         "x": 1024,
         "y": 1632,
@@ -6480,7 +6480,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/graphics to render texture.jpg": {
+    "/game objects/render texture/graphics to render texture.jpg": {
       "frame": {
         "x": 1024,
         "y": 1728,
@@ -6504,7 +6504,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/paint interpolated shadow.jpg": {
+    "/game objects/render texture/paint interpolated shadow.jpg": {
       "frame": {
         "x": 1024,
         "y": 1824,
@@ -6528,7 +6528,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/paint interpolated.jpg": {
+    "/game objects/render texture/paint interpolated.jpg": {
       "frame": {
         "x": 1024,
         "y": 1920,
@@ -6552,7 +6552,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/paint tinted.jpg": {
+    "/game objects/render texture/paint tinted.jpg": {
       "frame": {
         "x": 1152,
         "y": 1152,
@@ -6576,7 +6576,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/paint.jpg": {
+    "/game objects/render texture/paint.jpg": {
       "frame": {
         "x": 1280,
         "y": 1152,
@@ -6600,7 +6600,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/particle emitter to render texture.jpg": {
+    "/game objects/render texture/particle emitter to render texture.jpg": {
       "frame": {
         "x": 1408,
         "y": 1152,
@@ -6624,7 +6624,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/pixel art test.jpg": {
+    "/game objects/render texture/pixel art test.jpg": {
       "frame": {
         "x": 1536,
         "y": 1152,
@@ -6648,7 +6648,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/render texture as a mask.jpg": {
+    "/game objects/render texture/render texture as a mask.jpg": {
       "frame": {
         "x": 1664,
         "y": 1152,
@@ -6672,7 +6672,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/render texture larger than camera.jpg": {
+    "/game objects/render texture/render texture larger than camera.jpg": {
       "frame": {
         "x": 1792,
         "y": 1152,
@@ -6696,7 +6696,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/render texture to render texture.jpg": {
+    "/game objects/render texture/render texture to render texture.jpg": {
       "frame": {
         "x": 1920,
         "y": 1152,
@@ -6720,7 +6720,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/resize render texture.jpg": {
+    "/game objects/render texture/resize render texture.jpg": {
       "frame": {
         "x": 1152,
         "y": 1248,
@@ -6744,7 +6744,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/resize rendertexture.jpg": {
+    "/game objects/render texture/resize rendertexture.jpg": {
       "frame": {
         "x": 1152,
         "y": 1344,
@@ -6768,7 +6768,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/save texture.jpg": {
+    "/game objects/render texture/save texture.jpg": {
       "frame": {
         "x": 1152,
         "y": 1440,
@@ -6792,7 +6792,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/scene to render texture quad.jpg": {
+    "/game objects/render texture/scene to render texture quad.jpg": {
       "frame": {
         "x": 1152,
         "y": 1536,
@@ -6816,7 +6816,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/scene to render texture with crop.jpg": {
+    "/game objects/render texture/scene to render texture with crop.jpg": {
       "frame": {
         "x": 1152,
         "y": 1632,
@@ -6840,7 +6840,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/scene to render texture.jpg": {
+    "/game objects/render texture/scene to render texture.jpg": {
       "frame": {
         "x": 1152,
         "y": 1728,
@@ -6864,7 +6864,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/scratch.jpg": {
+    "/game objects/render texture/scratch.jpg": {
       "frame": {
         "x": 1152,
         "y": 1824,
@@ -6888,7 +6888,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/shape to render texture.jpg": {
+    "/game objects/render texture/shape to render texture.jpg": {
       "frame": {
         "x": 1152,
         "y": 1920,
@@ -6912,7 +6912,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/sparks.jpg": {
+    "/game objects/render texture/sparks.jpg": {
       "frame": {
         "x": 1280,
         "y": 1248,
@@ -6936,7 +6936,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/sprite to render texture.jpg": {
+    "/game objects/render texture/sprite to render texture.jpg": {
       "frame": {
         "x": 1408,
         "y": 1248,
@@ -6960,7 +6960,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/static bitmap text to render texture.jpg": {
+    "/game objects/render texture/static bitmap text to render texture.jpg": {
       "frame": {
         "x": 1536,
         "y": 1248,
@@ -6984,7 +6984,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/static tilemap to render texture.jpg": {
+    "/game objects/render texture/static tilemap to render texture.jpg": {
       "frame": {
         "x": 1664,
         "y": 1248,
@@ -7008,7 +7008,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/text to render texture.jpg": {
+    "/game objects/render texture/text to render texture.jpg": {
       "frame": {
         "x": 1792,
         "y": 1248,
@@ -7032,7 +7032,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/texture key to render texture.jpg": {
+    "/game objects/render texture/texture key to render texture.jpg": {
       "frame": {
         "x": 1920,
         "y": 1248,
@@ -7056,7 +7056,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/trail.jpg": {
+    "/game objects/render texture/trail.jpg": {
       "frame": {
         "x": 1280,
         "y": 1344,
@@ -7080,7 +7080,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/trail2.jpg": {
+    "/game objects/render texture/trail2.jpg": {
       "frame": {
         "x": 1408,
         "y": 1344,
@@ -7104,7 +7104,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/transform draw.jpg": {
+    "/game objects/render texture/transform draw.jpg": {
       "frame": {
         "x": 1536,
         "y": 1344,
@@ -7128,7 +7128,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/rope/animated rope.jpg": {
+    "/game objects/rope/animated rope.jpg": {
       "frame": {
         "x": 1664,
         "y": 1344,
@@ -7152,7 +7152,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/rope/draw rope gradient.jpg": {
+    "/game objects/rope/draw rope gradient.jpg": {
       "frame": {
         "x": 1792,
         "y": 1344,
@@ -7176,7 +7176,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/rope/draw rope.jpg": {
+    "/game objects/rope/draw rope.jpg": {
       "frame": {
         "x": 1920,
         "y": 1344,
@@ -7200,7 +7200,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/rope/flip rope xy.jpg": {
+    "/game objects/rope/flip rope xy.jpg": {
       "frame": {
         "x": 1280,
         "y": 1440,
@@ -7224,7 +7224,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/rope/horizontal rope.jpg": {
+    "/game objects/rope/horizontal rope.jpg": {
       "frame": {
         "x": 1280,
         "y": 1536,
@@ -7248,7 +7248,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/rope/rope as a mask.jpg": {
+    "/game objects/rope/rope as a mask.jpg": {
       "frame": {
         "x": 1280,
         "y": 1632,
@@ -7272,7 +7272,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/rope/rope with a mask.jpg": {
+    "/game objects/rope/rope with a mask.jpg": {
       "frame": {
         "x": 1280,
         "y": 1728,
@@ -7296,7 +7296,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/rope/rope with shader texture.jpg": {
+    "/game objects/rope/rope with shader texture.jpg": {
       "frame": {
         "x": 1280,
         "y": 1824,
@@ -7320,7 +7320,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/rope/single alpha rope.jpg": {
+    "/game objects/rope/single alpha rope.jpg": {
       "frame": {
         "x": 1280,
         "y": 1920,
@@ -7344,7 +7344,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/rope/split alpha rope.jpg": {
+    "/game objects/rope/split alpha rope.jpg": {
       "frame": {
         "x": 1408,
         "y": 1440,
@@ -7368,7 +7368,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/rope/vertex tint rope.jpg": {
+    "/game objects/rope/vertex tint rope.jpg": {
       "frame": {
         "x": 1536,
         "y": 1440,
@@ -7392,7 +7392,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/rope/vertical rope.jpg": {
+    "/game objects/rope/vertical rope.jpg": {
       "frame": {
         "x": 1664,
         "y": 1440,
@@ -7416,7 +7416,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shaders/buffer a.jpg": {
+    "/game objects/shaders/buffer a.jpg": {
       "frame": {
         "x": 1792,
         "y": 1440,
@@ -7440,7 +7440,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shaders/buffer b.jpg": {
+    "/game objects/shaders/buffer b.jpg": {
       "frame": {
         "x": 1920,
         "y": 1440,
@@ -7464,7 +7464,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shaders/change shader texture.jpg": {
+    "/game objects/shaders/change shader texture.jpg": {
       "frame": {
         "x": 1408,
         "y": 1536,
@@ -7488,7 +7488,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shaders/load shader.jpg": {
+    "/game objects/shaders/load shader.jpg": {
       "frame": {
         "x": 1408,
         "y": 1632,
@@ -7512,7 +7512,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shaders/save shader as texture.jpg": {
+    "/game objects/shaders/save shader as texture.jpg": {
       "frame": {
         "x": 1408,
         "y": 1728,
@@ -7536,7 +7536,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shaders/shader arcade physics.jpg": {
+    "/game objects/shaders/shader arcade physics.jpg": {
       "frame": {
         "x": 1408,
         "y": 1824,
@@ -7560,7 +7560,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shaders/shader as a mask.jpg": {
+    "/game objects/shaders/shader as a mask.jpg": {
       "frame": {
         "x": 1408,
         "y": 1920,
@@ -7584,7 +7584,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shaders/shader bundle.jpg": {
+    "/game objects/shaders/shader bundle.jpg": {
       "frame": {
         "x": 1536,
         "y": 1536,
@@ -7608,7 +7608,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shaders/shader mass texture test.jpg": {
+    "/game objects/shaders/shader mass texture test.jpg": {
       "frame": {
         "x": 1664,
         "y": 1536,
@@ -7632,7 +7632,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shaders/shader transforms.jpg": {
+    "/game objects/shaders/shader transforms.jpg": {
       "frame": {
         "x": 1792,
         "y": 1536,
@@ -7656,7 +7656,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shaders/shader using a render texture.jpg": {
+    "/game objects/shaders/shader using a render texture.jpg": {
       "frame": {
         "x": 1920,
         "y": 1536,
@@ -7680,7 +7680,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shaders/using a shader as a buffer.jpg": {
+    "/game objects/shaders/using a shader as a buffer.jpg": {
       "frame": {
         "x": 1536,
         "y": 1632,
@@ -7704,7 +7704,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/arc.jpg": {
+    "/game objects/shapes/arc.jpg": {
       "frame": {
         "x": 1536,
         "y": 1728,
@@ -7728,7 +7728,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/blend modes.jpg": {
+    "/game objects/shapes/blend modes.jpg": {
       "frame": {
         "x": 1536,
         "y": 1824,
@@ -7752,7 +7752,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/circle.jpg": {
+    "/game objects/shapes/circle.jpg": {
       "frame": {
         "x": 1536,
         "y": 1920,
@@ -7776,7 +7776,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/curve.jpg": {
+    "/game objects/shapes/curve.jpg": {
       "frame": {
         "x": 1664,
         "y": 1632,
@@ -7800,7 +7800,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/draw.jpg": {
+    "/game objects/shapes/draw.jpg": {
       "frame": {
         "x": 1792,
         "y": 1632,
@@ -7824,7 +7824,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/ellipse.jpg": {
+    "/game objects/shapes/ellipse.jpg": {
       "frame": {
         "x": 1920,
         "y": 1632,
@@ -7848,7 +7848,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/grid.jpg": {
+    "/game objects/shapes/grid.jpg": {
       "frame": {
         "x": 1664,
         "y": 1728,
@@ -7872,7 +7872,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/iso birdie.jpg": {
+    "/game objects/shapes/iso birdie.jpg": {
       "frame": {
         "x": 1792,
         "y": 1728,
@@ -7896,7 +7896,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/iso box.jpg": {
+    "/game objects/shapes/iso box.jpg": {
       "frame": {
         "x": 1920,
         "y": 1728,
@@ -7920,7 +7920,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/iso image.jpg": {
+    "/game objects/shapes/iso image.jpg": {
       "frame": {
         "x": 1664,
         "y": 1824,
@@ -7944,7 +7944,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/iso landscape.jpg": {
+    "/game objects/shapes/iso landscape.jpg": {
       "frame": {
         "x": 1664,
         "y": 1920,
@@ -7968,7 +7968,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/iso triangle.jpg": {
+    "/game objects/shapes/iso triangle.jpg": {
       "frame": {
         "x": 1792,
         "y": 1824,
@@ -7992,7 +7992,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/line.jpg": {
+    "/game objects/shapes/line.jpg": {
       "frame": {
         "x": 1920,
         "y": 1824,
@@ -8016,7 +8016,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/polygon with matter physics.jpg": {
+    "/game objects/shapes/polygon with matter physics.jpg": {
       "frame": {
         "x": 1792,
         "y": 1920,
@@ -8040,7 +8040,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/polygon.jpg": {
+    "/game objects/shapes/polygon.jpg": {
       "frame": {
         "x": 1920,
         "y": 1920,
@@ -8064,7 +8064,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/blitter/multiple atlas frame bobs.jpg": {
+    "/game objects/blitter/multiple atlas frame bobs.jpg": {
       "frame": {
         "x": 0,
         "y": 0,
@@ -8088,7 +8088,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/container/draggable container.jpg": {
+    "/game objects/container/draggable container.jpg": {
       "frame": {
         "x": 0,
         "y": 960,
@@ -8112,7 +8112,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/destroy an image.jpg": {
+    "/game objects/images/destroy an image.jpg": {
       "frame": {
         "x": 1792,
         "y": 96,
@@ -8136,7 +8136,7 @@
         "y": 0.5
       }
     },
-    "screenshots/input/game object/graphics object example.jpg": {
+    "/input/game object/graphics object example.jpg": {
       "frame": {
         "x": 256,
         "y": 672,
@@ -8160,7 +8160,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/render texture/group to render texture.jpg": {
+    "/game objects/render texture/group to render texture.jpg": {
       "frame": {
         "x": 384,
         "y": 864,
@@ -8184,7 +8184,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/images/custom image class.jpg": {
+    "/game objects/images/custom image class.jpg": {
       "frame": {
         "x": 1024,
         "y": 480,
@@ -8208,7 +8208,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/sprites/sprite alpha.jpg": {
+    "/game objects/sprites/sprite alpha.jpg": {
       "frame": {
         "x": 1408,
         "y": 480,
@@ -8232,7 +8232,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/layer/create layer.jpg": {
+    "/game objects/layer/create layer.jpg": {
       "frame": {
         "x": 1024,
         "y": 576,
@@ -8256,7 +8256,7 @@
         "y": 0.5
       }
     },
-    "screenshots/game objects/shapes/iso draw.jpg": {
+    "/game objects/shapes/iso draw.jpg": {
       "frame": {
         "x": 1792,
         "y": 1632,

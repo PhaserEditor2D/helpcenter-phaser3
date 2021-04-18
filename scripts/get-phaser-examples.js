@@ -53,7 +53,7 @@ function processScreenshots() {
     resizeImage(path.join(plugin, "phaser3-examples/screenshots"));
 
     child_process.execSync("mkdir -p " + path.join(plugin, "examples-screenshots-atlas/"));
-    child_process.execSync("npm run build-examples-atlas");
+    child_process.execSync("cd ..; npm run build-examples-atlas");
     child_process.execSync("rm -Rf " + path.join(plugin, "phaser3-examples/"));
 }
 
