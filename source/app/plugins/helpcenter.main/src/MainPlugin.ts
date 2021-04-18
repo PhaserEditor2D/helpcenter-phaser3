@@ -73,8 +73,6 @@ namespace helpcenter.main {
 
         playExample(example: phaser.core.ExampleInfo) {
 
-            // window.open(url);
-
             const dlg = new ui.dialogs.PlayDialog(example);
             dlg.create();
         }
@@ -142,7 +140,7 @@ namespace helpcenter.main {
 
         await initVersion();
 
-        // await registerServiceWorker();
+        await registerServiceWorker();
 
         colibri.ui.controls.dialogs.AlertDialog.replaceConsoleAlert();
 
