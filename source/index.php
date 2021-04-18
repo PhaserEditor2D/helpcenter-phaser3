@@ -102,6 +102,14 @@ header("Content-Type: text/html; charset=UTF-8");
     <link rel="apple-touch-icon" href="icons/icon-512.png" />
     <meta name="apple-mobile-web-app-status-bar" content="#242424" />
     <meta name="theme-color" content="#242424" />
+
+    <!-- open-graph card -->
+    <meta name="og:title" content="Unofficial Phaser Help Center | Phaser Editor 2D">
+    <meta name="og:description" content="Integrated tool for browsing the Phaser docs and examples.">
+    <meta name="og:image" content="https://helpcenter.phasereditor2d.com/app/screenshot.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@PhaserEditor2D">
+    <meta name="twitter:creator" content="@PhaserEditor2D">
     
     <?php
 
