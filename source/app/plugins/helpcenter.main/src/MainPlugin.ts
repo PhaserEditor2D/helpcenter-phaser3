@@ -104,7 +104,8 @@ namespace helpcenter.main {
 
         colibri.Platform.addPlugin(MainPlugin.getInstance());
 
-        document.title = "Unofficial Phaser Help Center v" + VER + " - Phaser Editor 2D";
+        document.title = `Unofficial Phaser Help Center v${VER} - Phaser v${phaser.PHASER_VER} - Phaser Editor 2D`;
+
 
         console.log("Phaser Editor 2D - Unofficial Phaser Help - v" + VER);
     }

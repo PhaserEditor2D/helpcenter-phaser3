@@ -6,20 +6,24 @@ namespace helpcenter.main.ui.dialogs {
 
         constructor() {
             super();
+
+            this.setSize(undefined, 300);
         }
         createDialogArea() {
 
             const clientArea = document.createElement("div");
             clientArea.classList.add("DialogClientArea");
             clientArea.style.padding = "10px";
-            clientArea.style.height = "min-content";
+            clientArea.style.height = "auto";
             clientArea.style.width = "auto";
+            clientArea.style.overflowY = "scroll";
             clientArea.innerHTML = `
             <center>
                 <img src="app/favicon.png">
                 <h4>Unofficial Phaser Help Center</h4>
-                A tool for browsing the <a https://phaser.io>Phaser</a> docs and examples.
-                Developed by the <a href="https://phasereditor2d.com">Phaser Editor 2D team</a>
+                <small><b>v${VER} - Phaser ${phaser.PHASER_VER}</small></b>
+                <p>Developed by the <a href="https://phasereditor2d.com">Phaser Editor 2D team</a></p>
+                Advanced tool for browsing the Phaser docs and examples*.
                 <p>GitHub: <a href="https://github.com/PhaserEditor2D/helpcenter-phaser3">helpcenter-phaser3</a></p>
                 <small>*The examples and docs data are taken from the Phaser repositories</small>
             </center>
