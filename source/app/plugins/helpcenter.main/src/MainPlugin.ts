@@ -109,17 +109,25 @@ namespace helpcenter.main {
         }
     }
 
-    export const VER = "1.0.24"
+    export let VER: string;
 
-    colibri.CACHE_VERSION = VER;
+    async function initVersion() {
 
-    colibri.Platform.addPlugin(MainPlugin.getInstance());
+        VER = await (await fetch("/ver")).text();
 
-    document.title = "Unofficial Phaser Help v" + VER + " - Phaser Editor 2D";
+        colibri.CACHE_VERSION = VER;
 
-    console.log("Phaser Editor 2D - Unofficial Phaser Help - v" + VER);
+        colibri.Platform.addPlugin(MainPlugin.getInstance());
+
+        document.title = "Unofficial Phaser Help Center v" + VER + " - Phaser Editor 2D";
+
+        console.log("Phaser Editor 2D - Unofficial Phaser Help - v" + VER);
+    }
+
 
     async function main() {
+
+        await initVersion();
 
         if ("serviceWorker" in navigator) {
 
