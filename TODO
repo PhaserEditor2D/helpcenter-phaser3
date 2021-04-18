@@ -1,6 +1,3 @@
-- Social header tags.
-- Check example Camera > Multi Camera > Boot. It is a json file I guess is used to say it is an example with multiple files.
-
 - Parse {@link http://some.url}
 - The Versions view.
 - A welcome editor.
