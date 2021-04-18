@@ -2,6 +2,5 @@
 - The Versions view.
 - A welcome editor.
 - The JSDocEditor inspector should show links to open the doc entry in editors, views and websites.
-- API view: allow hide/show inherited members.
 - Enable search in all files.
 - Enable minimap in the source file editor.
