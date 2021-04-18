@@ -12,7 +12,7 @@ namespace helpcenter.main.ui.properties {
 
         protected getSelectedImage(): colibri.ui.controls.IImage {
 
-            return phaser.PhaserPlugin.getInstance().getExampleImageReader().getImage(this.getExample().getPath());
+            return phaser.PhaserPlugin.getInstance().getExampleImageReader().getImage(this.getExample());
         }
 
         createForm(parent: HTMLDivElement) {

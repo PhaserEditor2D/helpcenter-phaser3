@@ -9,7 +9,7 @@ namespace helpcenter.main.ui.editors {
 
         acceptInput(input: any): boolean {
 
-            return input instanceof phaser.core.ExampleInfo && input.getData().type === "file";
+            return input instanceof phaser.core.ExampleInfo && input.isPlayable();
         }
 
         createEditor(): colibri.ui.ide.EditorPart {
@@ -48,7 +48,20 @@ namespace helpcenter.main.ui.editors {
 
         protected getInputContent(): string {
 
-            return this.getInput().getSource();
+            const input = this.getInput();
+
+            if (input.isMultiFile()) {
+
+                const src = input.getChildren()
+                    .filter(c => !c.getPath().endsWith("boot.json"))
+                    .map(c => "//\n// Example: " + c.getPath() + "\n//\n\n"
+                        + c.getSource() + "\n")
+                    .join("");
+
+                return src;
+            }
+
+            return input.getSource();
         }
 
         setInput(input: phaser.core.ExampleInfo) {
@@ -57,7 +70,7 @@ namespace helpcenter.main.ui.editors {
 
             this.setTitle(input.getName());
 
-            const icon = phaser.PhaserPlugin.getInstance().getExampleImageReader().getImage(input.getPath());
+            const icon = phaser.PhaserPlugin.getInstance().getExampleImageReader().getImage(input);
 
             this.setIcon(icon || MainPlugin.getInstance().getIcon(ICON_LABS));
         }

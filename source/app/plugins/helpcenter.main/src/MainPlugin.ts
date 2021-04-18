@@ -73,19 +73,6 @@ namespace helpcenter.main {
 
         playExample(example: phaser.core.ExampleInfo) {
 
-            let url: string;
-
-            if (example.getData().type === "file") {
-
-                url = phaser.PhaserPlugin.getInstance().getPhaserLabsUrl("/view.html?src=src/" + example.getPath());
-
-            } else {
-
-                url = phaser.PhaserPlugin.getInstance().getPhaserLabsUrl("/index.html?dir=" + example.getPath());
-            }
-
-            console.log("Opening " + url);
-
             // window.open(url);
 
             const dlg = new ui.dialogs.PlayDialog(example);

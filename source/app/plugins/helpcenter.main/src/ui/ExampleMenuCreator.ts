@@ -41,7 +41,7 @@ namespace helpcenter.main.ui {
                 callback: () => MainPlugin.getInstance().playExample(this._example)
             });
 
-            if (this._example.getData().type === "file") {
+            if (this._example.isPlayable()) {
 
                 if (!(activePart instanceof editors.ExampleEditor)) {
 
@@ -58,9 +58,16 @@ namespace helpcenter.main.ui {
                         text: "Open In Examples Folder Editor",
                         callback: () => {
 
-                            const editor = wb.openEditor(this._example.getParent()) as editors.ExampleFolderEditor;
-                            editor.getViewer().setSelection([this._example]);
-                            editor.getViewer().reveal(this._example);
+                            let example = this._example;
+
+                            if (example.isMultiFileChild()) {
+
+                                example = example.getParent();
+                            }
+
+                            const editor = wb.openEditor(example.getParent()) as editors.ExampleFolderEditor;
+                            editor.getViewer().setSelection([example]);
+                            editor.getViewer().reveal(example);
                         }
                     });
                 }
@@ -82,7 +89,14 @@ namespace helpcenter.main.ui {
 
                         const win = wb.getActiveWindow() as ui.MainWindow;
 
-                        win.getExamplesView().getViewer().revealAndSelect(this._example);
+                        let example = this._example;
+
+                        if (example.isMultiFileChild()) {
+
+                            example = example.getParent();
+                        }
+
+                        win.getExamplesView().getViewer().revealAndSelect(example);
                     }
                 });
             }

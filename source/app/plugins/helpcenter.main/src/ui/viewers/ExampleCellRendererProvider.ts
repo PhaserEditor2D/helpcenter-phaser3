@@ -6,7 +6,7 @@ namespace helpcenter.main.ui.viewers {
 
         getCellRenderer(element: phaser.core.ExampleInfo): controls.viewers.ICellRenderer {
 
-            const img = phaser.PhaserPlugin.getInstance().getExampleImageReader().getImage(element.getPath());
+            const img = phaser.PhaserPlugin.getInstance().getExampleImageReader().getImage(element);
 
             if (img) {
 

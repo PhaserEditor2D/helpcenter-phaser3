@@ -54,7 +54,22 @@ namespace helpcenter.phaser.ui {
             }
         }
 
-        getImage(examplePath: string) {
+        getImage(example: core.ExampleInfo) {
+
+            if (example.isMultiFile()) {
+
+                return this.getImageFromPath(example.getPath() + "/boot.js");
+            }
+
+            if (example.isMultiFileChild()) {
+
+                return this.getImage(example.getParent());
+            }
+
+            return this.getImageFromPath(example.getPath());
+        }
+
+        getImageFromPath(examplePath: string) {
 
             return this._imageMap.get(examplePath);
         }

@@ -166,12 +166,22 @@ namespace helpcenter.phaser {
 
         getPhaserLabsPlayExampleUrl(example: core.ExampleInfo, page: "view" | "mobile" | "edit" = "view") {
 
-            if (example.getData().type === "file") {
+            if (example.isMultiFileChild()) {
 
-                return this.getPhaserLabsUrl(`/${page}.html?src=src/${example.getPath()}`);
+                example = example.getParent();
             }
 
-            return this.getPhaserLabsUrl("/index.html?dir=" + example.getPath());
+            if (example.getData().type === "file") {
+
+                return phaser.PhaserPlugin.getInstance().getPhaserLabsUrl("/view.html?src=src/" + example.getPath());
+
+            } else if (example.isMultiFile()) {
+
+                return phaser.PhaserPlugin.getInstance().getPhaserLabsUrl(
+                    "/boot.html?src=src/" + example.getPath() + "/boot.json");
+            }
+
+            return phaser.PhaserPlugin.getInstance().getPhaserLabsUrl("/index.html?dir=" + example.getPath());
         }
 
         getExampleChains() {

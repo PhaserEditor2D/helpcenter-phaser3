@@ -11,6 +11,11 @@ namespace helpcenter.main.ui.viewers {
 
         getChildren(parent: phaser.core.ExampleInfo): any[] {
 
+            if (parent.isMultiFile()) {
+
+                return [];
+            }
+
             return parent.getChildren();
         }
     }

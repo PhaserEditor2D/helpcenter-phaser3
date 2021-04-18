@@ -8,6 +8,7 @@ namespace helpcenter.phaser.core {
         private _parent: ExampleInfo;
         private _source: string;
         private _children: ExampleInfo[];
+        private _isMultiFile: boolean;
 
         constructor(parent: ExampleInfo, data: IExamplesData) {
 
@@ -45,6 +46,24 @@ namespace helpcenter.phaser.core {
 
             this._children.sort((a, b) => a.getData().type.localeCompare(b.getData().type));
 
+            const bootFile = this._children.find(c => c.getPath().endsWith("/boot.json"));
+
+            this._isMultiFile = bootFile !== undefined;
+        }
+
+        isPlayable() {
+
+            return this.getData().type === "file" || this.isMultiFile();
+        }
+
+        isMultiFile() {
+
+            return this._isMultiFile;
+        }
+
+        isMultiFileChild() {
+
+            return this.getParent() && this.getParent().isMultiFile();
         }
 
         get example() {

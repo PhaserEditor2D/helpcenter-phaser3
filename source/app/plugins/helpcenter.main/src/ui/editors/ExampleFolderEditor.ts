@@ -170,10 +170,11 @@ namespace helpcenter.main.ui.editors {
             if (input) {
 
                 const examples: phaser.core.ExampleInfo[] = [];
+
                 this.getAllExamples(input, examples);
 
                 let images = examples
-                    .map(e => phaser.PhaserPlugin.getInstance().getExampleImageReader().getImage(e.getPath()))
+                    .map(e => phaser.PhaserPlugin.getInstance().getExampleImageReader().getImage(e))
                     .filter(e => e !== undefined)
 
                 if (images.length > 0) {
@@ -217,7 +218,7 @@ namespace helpcenter.main.ui.editors {
 
         private getAllExamples(example: phaser.core.ExampleInfo, list: any[]) {
 
-            if (example.getData().type === "file") {
+            if (example.isPlayable()) {
 
                 list.push(example);
 

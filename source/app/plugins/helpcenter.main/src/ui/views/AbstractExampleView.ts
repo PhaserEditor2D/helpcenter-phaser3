@@ -44,7 +44,7 @@ namespace helpcenter.main.ui.views {
 
                 if (example) {
 
-                    if (example.getData().type === "file") {
+                    if (example.isPlayable()) {
 
                         MainPlugin.getInstance().playExample(example);
 
