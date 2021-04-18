@@ -1,3 +1,6 @@
+- Add .htaccess:
+    - enable gzip for json, js, css, etc...
+    - enable cache based on ETag.
 - Parse {@link http://some.url}
 - The Versions view.
 - A welcome editor.

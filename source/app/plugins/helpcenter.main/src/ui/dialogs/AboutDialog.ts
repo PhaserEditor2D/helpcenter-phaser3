@@ -22,9 +22,10 @@ namespace helpcenter.main.ui.dialogs {
                 <img src="app/favicon.png">
                 <h4>Unofficial Phaser Help Center</h4>
                 <small><b>v${VER} - Phaser ${phaser.PHASER_VER}</small></b>
-                <p>Developed by the <a href="https://phasereditor2d.com">Phaser Editor 2D team</a></p>
+                <p>Developed by the <a href="https://phasereditor2d.com" target="_blank">Phaser Editor 2D team</a></p>
                 Advanced tool for browsing the Phaser docs and examples*.
-                <p>GitHub: <a href="https://github.com/PhaserEditor2D/helpcenter-phaser3">helpcenter-phaser3</a></p>
+                <p>GitHub: <a href="https://github.com/PhaserEditor2D/helpcenter-phaser3" target="_blank">helpcenter-phaser3</a></p>
+                <p>Thanks: <a href="https://twitter.com/trashcanuseful" target="_blank">@trashcanuseful</a> (banner illustrations).</p>
                 <small>*The examples and docs data are taken from the Phaser repositories</small>
             </center>
             `;
