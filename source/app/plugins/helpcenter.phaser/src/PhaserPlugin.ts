@@ -173,7 +173,7 @@ namespace helpcenter.phaser {
 
             if (example.getData().type === "file") {
 
-                return phaser.PhaserPlugin.getInstance().getPhaserLabsUrl("/view.html?src=src/" + example.getPath());
+                return phaser.PhaserPlugin.getInstance().getPhaserLabsUrl("/" + page +".html?src=src/" + example.getPath());
 
             } else if (example.isMultiFile()) {
 
