@@ -98,7 +98,7 @@ namespace helpcenter.main {
 
     async function initVersion() {
 
-        VER = await (await fetch("/ver")).text();
+        VER = await (await fetch("/ver?" + Date.now())).text();
 
         colibri.CACHE_VERSION = VER;
 

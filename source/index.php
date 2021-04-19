@@ -86,7 +86,7 @@ header("Content-Type: text/html; charset=UTF-8");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Help Center</title>
+    <title>Unofficial Phaser Help Center | Phaser Editor 2D</title>
 
     <link rel="icon" type="image/png" href="app/favicon.png">
 
@@ -104,7 +104,7 @@ header("Content-Type: text/html; charset=UTF-8");
     <meta name="theme-color" content="#242424" />
 
     <!-- open-graph card -->
-    <meta name="og:title" content="Unofficial Phaser Help Center | Phaser Editor 2D">
+    <meta name="og:title" content="Unofficial Phaser Help Center v<? echo $EDITOR_VER ?> | Phaser Editor 2D">
     <meta name="og:description" content="Integrated tool for browsing the Phaser docs and examples.">
     <meta name="og:image" content="https://helpcenter.phasereditor2d.com/app/screenshot.png">
     <meta name="twitter:card" content="summary_large_image">

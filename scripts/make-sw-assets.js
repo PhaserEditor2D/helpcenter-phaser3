@@ -15,6 +15,7 @@ const pluginResources = execSync("cd ../source;find app").toString()
     .filter(l => l.endsWith(".js")
         || l.endsWith(".png")
         || l.endsWith(".jpg")
+        || l.endsWith(".webp")
         || l.endsWith(".css")
         || l.endsWith(".json"));
 

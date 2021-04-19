@@ -1,6 +1,6 @@
 {
   "name": "helpcenter-phaser3",
-  "version": "1.0.0-beta2",
+  "version": "1.0.0-beta1_3",
   "description": "Integrated tool for browsing the Phaser docs and examples.",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
     "dist": "cd scripts/; ./dist.sh",
     "watch": "cd source/app/; tsc -b -w",
     "build-examples-atlas": "free-tex-packer-cli --project scripts/texture-packer-project.ftpp --output source/app/plugins/helpcenter.phaser/data/examples-screenshots-atlas",
+    "get-phaser-examples": "cd scripts; ./get-phaser-examples.js",
     "update-pwa": "cd scripts/; ./make-sw-assets.js",
     "get-phaser": "cd scripts/; ./get-all-metadata.sh",
     "dev-server": "php -S localhost:9090 -t source",

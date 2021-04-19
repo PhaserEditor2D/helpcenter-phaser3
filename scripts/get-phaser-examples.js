@@ -53,9 +53,12 @@ function processScreenshots() {
 
     resizeImage(path.join(plugin, "phaser3-examples/screenshots"));
 
-    child_process.execSync("mkdir -p " + path.join(plugin, "examples-screenshots-atlas/"));
+    const atlasFolder = path.join(plugin, "examples-screenshots-atlas/");
+
+    child_process.execSync("mkdir -p " + atlasFolder);
     child_process.execSync("cd ..; npm run build-examples-atlas");
     child_process.execSync("rm -Rf " + path.join(plugin, "phaser3-examples/"));
+    child_process.execSync('cd ' + atlasFolder + '; for i in *.jpg; do ffmpeg -i "$i" "${i%.*}.webp"; done; rm *.jpg');
 }
 
 function processCode() {

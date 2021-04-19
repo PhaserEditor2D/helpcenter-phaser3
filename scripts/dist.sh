@@ -10,6 +10,7 @@ npm run ts-clean
 npm run ts-build
 
 cp -R source/* dist/
+cp source/.htaccess dist/
 
 rm -R dist/app/node_modules dist/app/*.sh dist/app/*.json
 rm -R dist/app/plugins/**/src/

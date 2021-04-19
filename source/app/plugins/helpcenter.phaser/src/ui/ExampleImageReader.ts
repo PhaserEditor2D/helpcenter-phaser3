@@ -26,7 +26,7 @@ namespace helpcenter.phaser.ui {
 
             for (let i = 0; i < this._textureCount; i++) {
 
-                const texUrl = PhaserPlugin.getInstance().getResourceURL(`data/examples-screenshots-atlas/texture-${i}.jpg`);
+                const texUrl = PhaserPlugin.getInstance().getResourceURL(`data/examples-screenshots-atlas/texture-${i}.webp`);
 
                 const texImage = controls.Controls.getImage(texUrl, texUrl, false);
 
