@@ -98,7 +98,7 @@ namespace helpcenter.main {
 
     async function initVersion() {
 
-        VER = await (await fetch("/ver?" + Date.now())).text();
+        VER = await (await fetch("/ver")).text();
 
         colibri.CACHE_VERSION = VER;
 
@@ -123,9 +123,9 @@ namespace helpcenter.main {
                 const channel = new BroadcastChannel('sw-messages');
                 channel.addEventListener('message', event => {
 
-                    if (event.data.method === "update-installed") {
+                    if (event.data.method === "update-available") {
 
-                        alert(`An update (${event.data.ver}) was installed. Please, refresh the page.`);
+                        alert(`A new version ${event.data.ver} is available. Please, refresh the page.`);
                     }
                 });
 
