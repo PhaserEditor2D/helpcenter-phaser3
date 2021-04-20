@@ -1,4 +1,4 @@
-const VER = "1.0.0-beta1_23";
+const VER = "1.0.0-beta1_25";
 
 // -- start here -- //
 
@@ -19,51 +19,46 @@ self.addEventListener("activate", event => {
 
 	console.log("SW: activating...");
 
-	event.waitUntil(
-
-		checkNewVersions().then(deleteOldCaches).then(() => clients.claim())
-	);
+	event.waitUntil(handleActivate());
 });
 
 self.addEventListener("fetch", function (event) {
-	
-	const req = event.request;
-	const url = req.url;
 
-	event.respondWith(
-
-		caches
-			.match(event.request, { cacheName: CACHE_KEY })
-			.then(resp => {
-
-				if (resp) {
-
-					// console.log("SW: responds from cache " + url);
-
-					return resp;
-				}
-
-				// console.log("SW: fetch " + url);
-
-				return fetch(req)
-
-					.then(resp => {
-
-						if (resp.status === 200) {
-
-							// console.log("SW: cache put " + url);
-
-							return caches
-								.open(CACHE_KEY)
-								.then(cache => cache.put(url, resp.clone()))
-								.then(() => resp);
-						}
-
-						return resp;
-					});
-			})
-	);
+	event.respondWith(handleFetch(event));
 });
+
+async function handleActivate() {
+
+	await checkNewVersions();
+
+	await deleteOldCaches();
+
+	await clients.claim();
+}
+
+async function handleFetch(event) {
+
+	const request = event.request;
+	const url = request.url;
+
+	const cache = await caches.open(CACHE_KEY);
+
+	const resp = await cache.match(url);
+
+	if (resp) {
+
+		return resp;
+	}
+
+	const resp2 = await fetch(url);
+
+	if (resp2.status === 200) {
+
+		await cache.put(url, resp2.clone());
+	}
+
+	return resp2;
+}
 
 async function checkNewVersions() {
 

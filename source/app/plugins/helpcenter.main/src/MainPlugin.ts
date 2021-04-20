@@ -116,9 +116,13 @@ namespace helpcenter.main {
 
             try {
 
-                await navigator.serviceWorker.register("/sw.js");
+                navigator.serviceWorker.register("/sw.js").then(() => {
 
-                console.log("Service worker registered");
+                    console.log("Service worker registered");
+                }, () => {
+
+                    console.log("Cannot install service worker.");
+                });
 
                 const channel = new BroadcastChannel('sw-messages');
                 channel.addEventListener('message', event => {
@@ -147,7 +151,7 @@ namespace helpcenter.main {
 
         } else {
 
-            await registerServiceWorker();
+            registerServiceWorker();
         }
 
         colibri.ui.controls.dialogs.AlertDialog.replaceConsoleAlert();
