@@ -1,4 +1,7 @@
 const VER = "1.0.0-beta1_23";
+
+// -- start here -- //
+
 const CACHE_KEY = "helpcenter-static-" + VER;
 
 const channel = new BroadcastChannel('sw-messages');
