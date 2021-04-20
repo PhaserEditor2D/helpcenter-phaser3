@@ -36,7 +36,12 @@ The **editor area** allows opening certain content in a tab. So you can open man
 
 ## API view
 
-The API view shows the Phaser API with a hierarchical layout. 
+The API view shows the Phaser API with a hierarchical layout.
+
+You can open an API element in a Documentation editor by double-clicking on it. Also, with the context menu you can select opening an element's source code in an editor.
+
+When you select an element, the **Inspector** view shows the its documentation.
+
 
 ### Layout
 
@@ -52,7 +57,7 @@ Inherited members are shown with a gray color:
 
 ![Inherited members](github/api-view-inherited-members.png)
 
-## Category filter
+### Category filter
 
 You can filter the content by category.
 
@@ -66,12 +71,24 @@ You can select only one category at the same time. To clear the "category filter
 
 ![Filtering by category](github/api-view-category-filtering.png)
 
-## Text filter
+### Text filter
 
 You can perform text queries for matching the signature of the elements:
 
 ![API view filtering](github/api-view-filtering.png)
 
+
+## API Chains view
+
+TODO
+
+## Examples view
+
+TODO
+
+## Examples Code view
+
+TODO
 
 ## License
 
