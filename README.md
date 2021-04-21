@@ -155,16 +155,27 @@ For example, if you want to know all the classes with a `scaleX` property, you q
 
 Like the other API related views, the context menu shows the options for opening the selected element in the documentation editor or the source editor. Or reveal it in the **API** view.
 
-
 ## Examples view
 
-TODO
+The **Examples** view shows all the content in a hierarchy of categories (or folders). It follows the same structure of the [Phaser official examples](https://phaser.io/examples), but shown as a tree.
+
+This allows performing quick queries on the examples, by the example's name or the category's name.
+
+Each example shows a small screenshot image of the example.
+
+![Examples view](github/examples-view.png)
+
+## Example Player
 
 ## Examples Code view
 
 TODO
 
 ## Documentation editor
+
+TODO
+
+## Examples Folder editor
 
 TODO
 
