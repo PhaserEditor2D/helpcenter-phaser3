@@ -78,15 +78,97 @@ You can perform text queries for matching the signature of the elements:
 ![API view filtering](github/api-view-filtering.png)
 
 
+## Phaser Files
+
+The **Phaser Files** shows all the Phaser source files. It follows the same structure of the Phaser repository, but under each file, it shows the API elements defined in it.
+
+This view helps you on finding the relation between the Phaser API and the source files structure.
+
+In Phaser it is common to find API elements belonging to the same namespace, but are defined in separate files. It is the case of the `Phaser.Loader.LoaderPlugin.spritesheet()` method. In the **API** view it is shown in the `Phaser.Loader.LoaderPlugin` class. However, like many other "loader methods", it is defined in its own file, the `SpriteSheetFile.js`, in the `src/loader/filetypes/` folder.
+
+This view helps you understand how the Phaser 3 code is structured.
+
+![Phaser Files view](github/phaser-files-comparison.png)
+
+### Phaser Files view's context menu
+
+The context menu shows the options to open the selected API element in a documentation editor, a source editor, or reveal it in the **API** view.
+
 ## API Chains view
 
-TODO
+If you follow the Phaser community since the Phaser 2 days, maybe you remember the [Phaser Chains](https://chains-phaser2.phasereditor2d.com/) tool we did for Phaser 2. It also was included in the Phaser Editor v1 and Phaser Editor v2.
+
+It had certain popularity, because its particular way for browsing the Phaser API.
+
+Now, we include it the Unofficial Phaser Help Center.
+
+### API chains
+
+The particularity of this view is that it shows all the elements of the Phaser API in a list. It renders the member with its full name and signature. But also, and this is the key point, it shows chains elements.
+
+In Phaser games, you can write lot of code that with a chain of property/method class. For example, you load the assets this way:
+
+```
+this.load.spritesheet(...)
+this.load.atlas(...)
+```
+
+You chain the scene's `load` property with the `spritesheet()` method.
+
+You follow the same style for adding new objects to the scene:
+
+```
+this.add.sprite(...)
+this.add.text(...)
+```
+
+You chain the scene's `add` property with the `sprite()` method.
+
+The **API Chains** takes advantage of this syntax and shows these chains. This means, you can search for idiomatic constructions like `this.add.sprite` and it will show all chains matching it:
+
+![Chains](github/chains-result-1.png)
+
+### Query syntax
+
+You can use different "tricks" for making more accurate filters.
+
+To allow writing idiomatic code and matching the right chains, the `this` word at the beginning of the query matches with the `Phaser.Scene` text. We call it expansion. You write `this pause(` and it expands to `Phaser.Scene pause(`. The expanded form, or pattern, is the one used for the search.
+
+The query does not allow special symbols or wildcards. Each word is separated by a space and the matching chains should contain all the words in the same order.
+
+### Chains syntax
+
+A chain syntax is very similar to the JavaScript syntax. It shows the full name of an API element with its signature and kind (member, function, class, etc...).
+
+At the end of a chain, there are especial "tags". These tags help narrow the resulting chains. These are the current supported tags and what it means:
+
+* `#i`: the API member is inherited.
+* `#d`: the API member is declared (not inherited).
+* `#c`: the row is a chain of property/method calls.
+* `#u`: the row is just a member (un-chained).
+
+For example, if you want to know all the classes with a `scaleX` property, you query for `.scaleX: #u`. Those are a lot. So you want to know only the classes where a `scaleX` property is declared. Then you query for `.scaleX: #d #u`:
+
+![Chains syntax](github/chains-syntax-1.png)
+
+### Chains context menu
+
+Like the other API related views, the context menu shows the options for opening the selected element in the documentation editor or the source editor. Or reveal it in the **API** view.
+
 
 ## Examples view
 
 TODO
 
 ## Examples Code view
+
+TODO
+
+## Documentation editor
+
+TODO
+
+## Code editor
 
 TODO
 

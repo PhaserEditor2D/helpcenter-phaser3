@@ -1,10 +1,12 @@
-- Instead of convert images examples to jpg, convert it to webp.
-x- Add .htaccess:
-    x- enable gzip for json, js, css, etc...
-    x- enable cache based on ETag.
+- When select the "Reveal in the API view" option in the context menu
+of the Phaser Files view, it has to show select API view's tab.
+- Context menu: Reveal in Files view.
+
 - Parse {@link http://some.url}
 - The Versions view.
 - A welcome editor.
+- An Examples Assets view, for showing all the assets. It can help on creating new examples.
+And may help finding the examples associated with a particular asset?
 - The JSDocEditor inspector should show links to open the doc entry in editors, views and websites.
 - Enable search in all files.
 - Enable minimap in the source file editor.
