@@ -31,7 +31,7 @@ This is not an official Phaser product. It is developed and maintained by the [P
 * [Documentation editor](#documentation-editor)
 * [Examples Folder editor](#examples-folder-editor)
 * [Code editor](#code-editor)
-* [Build](#build)
+* [Development](#development)
 * [License](#license)
 
 ## Launching
@@ -278,7 +278,7 @@ The JavaScript code editor is used for showing the source code of the Phaser API
 
 ![Source editor](github/source-editor.png)
 
-## Build
+## Development
 
 TODO
 
