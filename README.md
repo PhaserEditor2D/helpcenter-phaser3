@@ -2,26 +2,13 @@
 
 # Unofficial Phaser Help Center
 
-The [Unofficial Phaser Help](https://helpcenter.phasereditor2d.com) is an integrated, desktop-like tool for browsing the [Phaser.io](https://phaser.io) documentation and examples. Phaser is a popular HTML5 game framework.
+The [Unofficial Phaser Help Center](https://helpcenter.phasereditor2d.com) is an integrated, desktop-like, online/offline tool, for browsing the [Phaser.io](https://phaser.io) documentation and examples. Phaser is a popular HTML5 game framework.
 
 This is not an official Phaser product. It is developed and maintained by the [Phaser Editor 2D team](https://phasereditor2d.com).
 
-## Launching
+## Index
 
-This tool is online at [helpcenter.phasereditor2d.com](https://phasereditor2d.com). It requires a modern, updated browser. 
-
-It uses Progressive Web Application (PWA) techniques, so you can install it in your OS and open it offline.
-
-Our recommendation is using Google Chrome. This browser provides the best PWA support for the desktop.
-
-Also, you can download this repository and launch it locally. Just copy the content of the `source/` folder in a directory served by Apache or any other PHP-compatible web server.
-
-If you have PHP installed in your system, you can run:
-
-```
-php -S localhost:9090 -t source
-```
-
+* [Launching](#launching)
 * [Overview](#overview)
 * [API view](#api-view)
     * [Layout](#layout)
@@ -41,15 +28,29 @@ php -S localhost:9090 -t source
 * [Inspector view](#inspector-view)
     * [Inspecting the Phaser API elements](#inspecting-the-phaser-api-elements)
     * [Inspecting a Phaser example](#inspecting-a-phaser-example)
-* [Documentation editor][#documentation-editor]
+* [Documentation editor](#documentation-editor)
 * [Examples Folder editor](#examples-folder-editor)
 * [Code editor](#code-editor)
 * [Build](#build)
 * [License](#license)
 
+## Launching
 
+This tool is online at [helpcenter.phasereditor2d.com](https://helpcenter.phasereditor2d.com). It requires a modern, updated browser. 
 
+It uses Progressive Web Application (PWA) techniques, so you can install it in your OS and open it offline.
 
+Our recommendation is using Google Chrome. This browser provides the best PWA support for the desktop.
+
+Also, you can download this repository and launch it locally. Just copy the content of the `dist/` folder in a directory served by Apache or any other PHP-compatible web server.
+
+If you have PHP installed in your system, you can run:
+
+```
+php -S localhost:9090 -t dist
+```
+
+if you wat to avoid registering a service worker (for offline support), append the `?dev` query to the URL: `http://localhost:9090?dev`.
 
 ## Overview
 
