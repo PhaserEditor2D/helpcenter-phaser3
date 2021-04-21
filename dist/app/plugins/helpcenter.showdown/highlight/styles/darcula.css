@@ -1,0 +1,73 @@
+/*
+
+Darcula color scheme from the JetBrains family of IDEs
+
+*/
+
+
+.dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #2b2b2b;
+  color: #bababa;
+}
+
+.dark .hljs-strong,
+.dark .hljs-emphasis {
+  color: #a8a8a2;
+}
+
+.dark .hljs-bullet,
+.dark .hljs-quote,
+.dark .hljs-link,
+.dark .hljs-number,
+.dark .hljs-regexp,
+.dark .hljs-literal {
+  color: #6896ba;
+}
+
+.dark .hljs-code,
+.dark .hljs-selector-class {
+  color: #a6e22e;
+}
+
+.dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.dark .hljs-keyword,
+.dark .hljs-selector-tag,
+.dark .hljs-section,
+.dark .hljs-attribute,
+.dark .hljs-name,
+.dark .hljs-variable {
+  color: #cb7832;
+}
+
+.dark .hljs-params {
+  color: #b9b9b9;
+}
+
+.dark .hljs-string {
+  color: #6a8759;
+}
+
+.dark .hljs-subst,
+.dark .hljs-type,
+.dark .hljs-built_in,
+.dark .hljs-symbol,
+.dark .hljs-selector-id,
+.dark .hljs-selector-attr,
+.dark .hljs-selector-pseudo,
+.dark .hljs-template-tag,
+.dark .hljs-template-variable,
+.dark .hljs-addition {
+  color: #e0c46c;
+}
+
+.dark .hljs-comment,
+.dark .hljs-deletion,
+.dark .hljs-meta {
+  color: #7f7f7f;
+}
