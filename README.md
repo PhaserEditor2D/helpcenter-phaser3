@@ -22,6 +22,35 @@ If you have PHP installed in your system, you can run:
 php -S localhost:9090 -t source
 ```
 
+* [Overview](#overview)
+* [API view](#api-view)
+    * [Layout](#layout)
+    * [Inherited members](#inherited-members)
+    * [Category filter](#category-filter)
+    * [Text filter](#text-filter)
+* [Phaser Files](#phaser-files)
+    * [Phaser Files view's context menu](#phaser-files-views-context-menu)
+* [API Chains view](#api-chains-view)
+    * [API chains](#api-chains)
+    * [Query syntax](#query-syntax)
+    * [Chains syntax](#chains-syntax)
+    * [Chains context menu](#chains-context-menu)
+* [Examples view](#examples-view)
+* [Example Player](#example-player)
+* [Examples Code view](#examples-code-view)
+* [Inspector view](#inspector-view)
+    * [Inspecting the Phaser API elements](#inspecting-the-phaser-api-elements)
+    * [Inspecting a Phaser example](#inspecting-a-phaser-example)
+* [Documentation editor][#documentation-editor]
+* [Examples Folder editor](#examples-folder-editor)
+* [Code editor](#code-editor)
+* [Build](#build)
+* [License](#license)
+
+
+
+
+
 ## Overview
 
 This tool provides different views of the Phaser documentation and examples.
@@ -195,20 +224,60 @@ These are the steps:
 
     ![Settings](github/settings.png)
 
-
 ## Examples Code view
 
-TODO
+This view shows the source code of every Phaser example, so you can search for pieces of code. Like in the **Examples** view, the context menu show options for playing the example or opening it in the source editor.
+
+![Examples code view](github/examples-code-view.png)
+
+If you double click an item (example's line), it opens the source editor and scroll to the line.
+
+## Inspector view
+
+The Inspector view is a general purpose view. It shows information about the element selected in the active view or editor.
+
+### Inspecting the Phaser API elements
+
+When you select an API element in the **API** or **API Chains** view, the Inspector view shows:
+
+* The documentation (JSDoc).
+* Some information about the file where the element is defined.
+
+![API element in Inspector](github/inspector-api-element.png)
+
+### Inspecting a Phaser example
+
+When you select an example in any part, the Inspector view shows the information related to that example:
+
+* The example file info. It shows a button for opening the file in the source editor. And a button for play the example.
+* The source code of the example. In case you select an example's line in the **Examples Code** view, the line is highlighted in the Inspector view.
+* The screenshot image of the example.
+
+![Example in Inspector view](github/inspector-example.png)
 
 ## Documentation editor
 
-TODO
+You can open the Phaser API elements in the Documentation editor. It allows you open multiple documentation in different tabs. This editor shows the documentation with HTML format:
+
+![Documentation editor](github/docs-editor.png)
+
+When you click on an API element inside the editor, it opens a new editor.
 
 ## Examples Folder editor
 
-TODO
+The Phaser examples are grouped in folders or categories. You can open a category in the **Examples Folder** editor. It shows a grid of the examples belonging to that category.
+
+When you select an example, the main toolbar shows two buttons, for playing the example or opening it in the source editor. Also, the Inspector view shows the properties of the selected example.
+
+![Examples Folder editor](github/examples-folder-editor.png)
 
 ## Code editor
+
+The JavaScript code editor is used for showing the source code of the Phaser API or the Phaser examples.
+
+![Source editor](github/source-editor.png)
+
+## Build
 
 TODO
 
