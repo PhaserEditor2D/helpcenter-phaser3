@@ -165,7 +165,36 @@ Each example shows a small screenshot image of the example.
 
 ![Examples view](github/examples-view.png)
 
+A main function of this view is that you can select an example and run it. When you double-click an example, it opens the **Example Player** and runs it. Check the next section.
+
+The context menu provides other option, like open the example in the source editor or the examples folder editor. 
+
 ## Example Player
+
+The **Example Player** is a dialog that runs an example. You can open it by double-clicking in an example item of the **Examples** view. Or by selecting the **Play** option in the context menu in other parts.
+
+![Example player](github/example-player.png)
+
+The dialog contains buttons with different functions:
+
+* **Open In Phaser Labs**: it opens the example in a new tab of the browser. The examples are hosted in the official Phaser Labs website. Later we explain how to change it and host them locally.
+* **Open In Sandbox**: it opens the example in the Sandbox of the Phaser Labs website. This sandbox allows you changing the code of the example and run it with the modifications. It is an amazing resource for learning the Phaser.
+* **View Source**: it opens the example's code in the source editor of the Help Center.
+* **Refresh**: it reloads the example.
+* **Close**: it closes the dialog.
+
+As we mentioned before, the examples are hosted in the Phaser Labs website (http://labs.phaser.io). However, if your internet connection is slow, or you are not connected at all, you can download the Phaser examples and run them locally.
+
+These are the steps:
+
+* Download the Phaser examples from the repository: https://github.com/photonstorm/phaser3-examples
+
+* Follow the instructions in the README file to run the examples locally. By default, it runs in the `http://127.0.0.1:8080` address.
+
+* Open the Help Center Settings (main menu, right corner, the Settings option), and enter the new address for the Phaser Labs:
+
+    ![Settings](github/settings.png)
+
 
 ## Examples Code view
 

@@ -160,6 +160,13 @@ namespace helpcenter.main.ui {
                             callback: () => new dialogs.SettingsDialog().create()
                         });
 
+                        menu.addSeparator();
+
+                        menu.addAction({
+                            text: "Help",
+                            callback: () => window.open("https://github.com/PhaserEditor2D/helpcenter-phaser3")
+                        });
+
                         menu.addAction({
                             text: "About",
                             callback: () => {
