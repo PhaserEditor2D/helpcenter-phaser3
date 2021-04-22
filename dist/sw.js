@@ -1,4 +1,4 @@
-const VER = "1.0.0-beta1_25";
+const VER = "1.0.0";
 
 // -- start here -- //
 
