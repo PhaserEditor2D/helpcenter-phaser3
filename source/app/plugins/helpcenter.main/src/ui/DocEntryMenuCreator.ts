@@ -30,8 +30,12 @@ namespace helpcenter.main.ui {
                 menu.addAction({
                     text: "Reveal In API View",
                     icon: MainPlugin.getInstance().getDocEntryKindIcon("namespace"),
-                    callback: () => (colibri.Platform.getWorkbench().getActiveWindow() as ui.MainWindow)
-                        .getApiView().getViewer().revealAndSelect(this._docEntry)
+                    callback: () => {
+                        const view = (colibri.Platform.getWorkbench().getActiveWindow() as ui.MainWindow)
+                            .getApiView();
+                        view.getViewer().revealAndSelect(this._docEntry);
+                        view.getPartFolder().selectTabWithContent(view);
+                    }
                 });
             }
         }
