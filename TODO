@@ -1,5 +1,3 @@
-- When select the "Reveal in the API view" option in the context menu
-of the Phaser Files view, it has to show select API view's tab.
 - Context menu: Reveal in Files view.
 
 - Parse {@link http://some.url}

@@ -28,6 +28,11 @@ namespace helpcenter.main.ui {
             return this._examplesView;
         }
 
+        getPhaserFilesView() {
+
+            return this._filesView;
+        }
+
         private saveWindowState() {
 
             this.saveState(colibri.Platform.getWorkbench().getGlobalPreferences());

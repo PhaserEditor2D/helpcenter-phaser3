@@ -33,8 +33,22 @@ namespace helpcenter.main.ui {
                     callback: () => {
                         const view = (colibri.Platform.getWorkbench().getActiveWindow() as ui.MainWindow)
                             .getApiView();
-                        view.getViewer().revealAndSelect(this._docEntry);
                         view.getPartFolder().selectTabWithContent(view);
+                        view.getViewer().revealAndSelect(this._docEntry);
+                    }
+                });
+            }
+
+            if (!(colibri.Platform.getWorkbench().getActivePart() instanceof views.FilesView)) {
+
+                menu.addAction({
+                    text: "Reveal In Phaser Files View",
+                    icon: colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_FOLDER),
+                    callback: () => {
+                        const view = (colibri.Platform.getWorkbench().getActiveWindow() as ui.MainWindow)
+                            .getPhaserFilesView();
+                        view.getPartFolder().selectTabWithContent(view);
+                        view.getViewer().revealAndSelect(this._docEntry);
                     }
                 });
             }
