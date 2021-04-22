@@ -135,7 +135,7 @@ namespace colibri.ui.controls.viewers {
 
             const scrollPane = this.getContainer().getContainer() as ScrollPane;
 
-            await this.repaint(true);
+            const paintResult = this.getTreeRenderer().paint(true);
 
             const objSet = new Set(objects);
 
@@ -145,7 +145,7 @@ namespace colibri.ui.controls.viewers {
 
             const b = this.getBounds();
 
-            const items = [...this._paintItems];
+            const items = paintResult.paintItems;
 
             items.sort((i1, i2) => i1.y - i2.y);
 
