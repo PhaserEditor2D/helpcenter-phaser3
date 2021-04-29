@@ -152,7 +152,7 @@ Important:
 
 .dark .ScrollBar,
 .dark ::-webkit-scrollbar-track {
-    background: #ffffff08;
+    /*background: #ffffff08;*/
 }
 
 .dark .ScrollHandler,
@@ -198,14 +198,10 @@ Important:
     border-color: #858585;
 }
 
+/* Icon buttons */
+
 .dark .IconButton:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
-
-/* Zoom controls */
-
-.ZoomControl {
-    opacity: 0.2;
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 /* ProgressBar */

@@ -5,6 +5,7 @@ namespace colibri.ui.controls.viewers {
         private _filterElement: HTMLInputElement;
         private _menuIcon: IconControl;
         private _filteredViewer: FilteredViewer<any>;
+        private _inputIcon: IconControl;
 
         constructor(filterViewer: FilteredViewer<any>) {
             super("div", "FilterControl");
@@ -16,8 +17,27 @@ namespace colibri.ui.controls.viewers {
             this._filterElement = document.createElement("input");
             this.getElement().appendChild(this._filterElement);
 
+            this._inputIcon = new IconControl(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_CONTROL_CLOSE));
+            this._inputIcon.getCanvas().classList.add("FilterControlInputIcon");
+            this._filterElement.addEventListener("keyup", () => this.updateInputIcon());
+            this._filterElement.addEventListener("change", () => this.updateInputIcon());
+            this._inputIcon.getCanvas().addEventListener("click", () => this.clearFilter());
+            this.getElement().appendChild(this._inputIcon.getCanvas());
+
             this._menuIcon = new IconControl(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_SMALL_MENU));
+            this._menuIcon.getCanvas().classList.add("IconButton");
             this.getElement().appendChild(this._menuIcon.getCanvas());
+        }
+
+        private clearFilter() {
+
+            this.getFilteredViewer().clearFilter();
+            this.updateInputIcon();
+        }
+
+        private updateInputIcon() {
+
+            this._inputIcon.getCanvas().style.display = this._filterElement.value === "" ? "none" : "block";
         }
 
         getFilteredViewer() {
@@ -40,7 +60,6 @@ namespace colibri.ui.controls.viewers {
         private _viewer: Viewer;
         private _zoomControl: ZoomControl;
         private _filteredViewer: FilteredViewer<any>;
-        private _mouseOverZoomControl: boolean;
 
         constructor(filteredViewer: FilteredViewer<any>, zoom = true) {
             super("div", "ViewerContainer");
@@ -75,18 +94,6 @@ namespace colibri.ui.controls.viewers {
 
                 viewer.repaint();
             });
-
-            this._zoomControl.getElement().addEventListener("mouseenter", e => {
-
-                this._mouseOverZoomControl = true;
-            });
-
-            this._zoomControl.getElement().addEventListener("mouseleave", e => {
-
-                this._mouseOverZoomControl = false;
-
-                this.layoutZoomControl();
-            });
         }
 
         getViewer() {
@@ -99,26 +106,6 @@ namespace colibri.ui.controls.viewers {
             const b = this.getElement().getBoundingClientRect();
 
             this._viewer.setBoundsValues(b.left, b.top, b.width, b.height);
-
-            this.layoutZoomControl();
-        }
-
-        private layoutZoomControl() {
-
-            if (this._zoomControl) {
-
-                if (!this._mouseOverZoomControl) {
-
-                    if (this._filteredViewer.getScrollPane().containsClass("hideScrollBar")) {
-
-                        this._zoomControl.getElement().style.right = "5px";
-
-                    } else {
-
-                        this._zoomControl.getElement().style.right = "20px";
-                    }
-                }
-            }
         }
     }
 
@@ -246,6 +233,15 @@ namespace colibri.ui.controls.viewers {
                     }
                 }
             });
+        }
+
+        clearFilter() {
+
+            this._filterControl.getFilterElement().value = "";
+
+            this.onFilterInput();
+
+            this.getViewer().reveal(...this.getViewer().getSelection());
         }
 
         private onFilterInput(e?: Event) {
