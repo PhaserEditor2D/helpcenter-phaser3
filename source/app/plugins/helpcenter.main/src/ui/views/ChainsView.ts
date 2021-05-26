@@ -180,8 +180,8 @@ namespace helpcenter.main.ui.views {
 
             this._chains.sort((a, b) => {
 
-                const aa = a.countDots * (a.chained? 2 : 1);
-                const bb = b.countDots * (b.chained? 2 : 1)
+                const aa = a.countDots * (a.chained ? 2 : 1);
+                const bb = b.countDots * (b.chained ? 2 : 1)
 
                 return aa - bb;
             });
@@ -234,9 +234,13 @@ namespace helpcenter.main.ui.views {
 
                     tags.push(chain.chained ? "#c" : "#u");
 
+                    const since = child.getRawEntry().since;
+
+                    const version = since ? " v" + since : "";
+
                     const tagsLabel = tags.join(" ");
 
-                    chain.label = child.getKind() + " " + baseLabel + " " + tagsLabel;
+                    chain.label = child.getKind() + " " + baseLabel + " " + tagsLabel + version;
                     chain.countDots = chain.label.split("").filter(c => c === ".").length;
 
                     chain.lightStyledLabel = [{
@@ -244,7 +248,7 @@ namespace helpcenter.main.ui.views {
                         color: LIGHT_SYNTAX_COLOR.keyword
                     }, {
                         text: entryFullName,
-                        color: controls.Controls.LIGHT_THEME.viewerForeground + (chain.chained? "a0" : "")
+                        color: controls.Controls.LIGHT_THEME.viewerForeground + (chain.chained ? "a0" : "")
                     },
                     {
                         text: child.getTypeSignature(),
@@ -258,6 +262,9 @@ namespace helpcenter.main.ui.views {
                     }, {
                         text: " " + tagsLabel,
                         color: "cadetBlue"
+                    }, {
+                        text: version,
+                        color: "gray"
                     }];
 
                     chain.darkStyledLabel = [{
@@ -265,7 +272,7 @@ namespace helpcenter.main.ui.views {
                         color: DARK_SYNTAX_COLOR.keyword
                     }, {
                         text: entryFullName,
-                        color: controls.Controls.DARK_THEME.viewerForeground + (chain.chained? "a0" : "")
+                        color: controls.Controls.DARK_THEME.viewerForeground + (chain.chained ? "a0" : "")
                     },
                     {
                         text: child.getTypeSignature(),
@@ -279,6 +286,9 @@ namespace helpcenter.main.ui.views {
                     }, {
                         text: " " + tagsLabel,
                         color: "bisque"
+                    }, {
+                        text: version,
+                        color: "gray"
                     }];
 
                     chain.lightStyledLabel = chain.lightStyledLabel.filter(s => s.text.length > 0);
