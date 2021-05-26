@@ -6,6 +6,7 @@
 
 * Versions view: group API elements by versions.
 * API Chains: shows the versions of elements.
+* Docs Editor: shows context menu.
 
 ## v1.0.1 - Apr 29, 2021
 
