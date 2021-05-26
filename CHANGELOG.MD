@@ -2,7 +2,9 @@
 
 ## v1.2.0 - May 26, 2021
 
+### Added
 
+* API Chains: shows the versions of elements.
 
 ## v1.0.1 - Apr 29, 2021
 
