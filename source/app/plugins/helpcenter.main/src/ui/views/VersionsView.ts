@@ -36,8 +36,7 @@ namespace helpcenter.main.ui.views {
             const viewer = new controls.viewers.TreeViewer(this.getId());
             viewer.setContentProvider(new VersionsContentProvider());
             viewer.setCellRendererProvider(new ui.viewers.PhaserCellRendererProvider());
-            viewer.setLabelProvider(new ui.viewers.PhaserLabelProvider());
-            viewer.setStyledLabelProvider(new ui.viewers.PhaserStyledLabelProvider());
+            viewer.setStyledLabelProvider(new ui.viewers.PhaserStyledLabelProvider(true));
             viewer.setInput(versions);
 
             return viewer;

@@ -5,9 +5,11 @@ namespace helpcenter.main.ui.viewers {
     export class PhaserStyledLabelProvider implements controls.viewers.IStyledLabelProvider {
 
         private _labelProvider: controls.viewers.ILabelProvider;
+        private _showFullName: boolean;
 
-        constructor() {
+        constructor(showFullName = false) {
 
+            this._showFullName = showFullName;
             this._labelProvider = new PhaserLabelProvider();
         }
 
@@ -20,7 +22,7 @@ namespace helpcenter.main.ui.viewers {
 
                 return [{
                     color: theme.viewerForeground + (obj.isInherited()? "a0": ""),
-                    text: obj.getName()
+                    text: this._showFullName? obj.getFullName() : obj.getName()
                 }, {
                     color: styles.methodSignature,
                     text: obj.getMethodSignature()
