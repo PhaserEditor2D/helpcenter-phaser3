@@ -14,6 +14,7 @@ namespace helpcenter.main {
     export const ICON_LABS = "experimental";
     export const ICON_HELP = "help";
     export const ICON_PLAY = "play";
+    export const ICON_TIME = "time";
 
     export class MainPlugin extends colibri.Plugin {
 
@@ -40,7 +41,8 @@ namespace helpcenter.main {
                     ICON_FILE_SCRIPT,
                     ICON_LABS,
                     ICON_HELP,
-                    ICON_PLAY
+                    ICON_PLAY,
+                    ICON_TIME
                 ], false));
 
             // windows

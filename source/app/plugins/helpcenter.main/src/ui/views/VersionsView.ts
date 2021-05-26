@@ -11,7 +11,7 @@ namespace helpcenter.main.ui.views {
             super(FilesView.ID, false);
 
             this.setTitle("Versions");
-            this.setIcon(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_FOLDER));
+            this.setIcon(MainPlugin.getInstance().getIcon(ICON_TIME));
         }
 
         protected createViewer(): controls.viewers.TreeViewer {
@@ -59,8 +59,8 @@ namespace helpcenter.main.ui.views {
             if (typeof parent === "string") {
 
                 return phaser.PhaserPlugin.getInstance().getDocsEntries()
-                .filter(e => !e.isInherited())
-                .filter(e => e.getRawEntry().since === parent);
+                    .filter(e => !e.isInherited())
+                    .filter(e => e.getRawEntry().since === parent);
             }
 
             return [];

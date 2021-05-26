@@ -6,6 +6,12 @@ namespace helpcenter.main.ui.viewers {
 
         getCellRenderer(element: any): controls.viewers.ICellRenderer {
 
+            if (typeof element === "string") {
+
+                return new controls.viewers.IconImageCellRenderer(
+                    MainPlugin.getInstance().getIcon(ICON_TIME));
+            }
+
             if (element instanceof phaser.core.PhaserFile) {
 
                 if (element.isFolder()) {
