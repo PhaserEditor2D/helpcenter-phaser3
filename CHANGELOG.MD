@@ -4,6 +4,7 @@
 
 ### Added
 
+* Versions view: group API elements by versions.
 * API Chains: shows the versions of elements.
 
 ## v1.0.1 - Apr 29, 2021
