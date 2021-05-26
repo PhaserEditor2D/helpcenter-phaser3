@@ -1,8 +1,15 @@
+- The JSDocEditor inspector should show links to open the doc entry in: 
+	- editors
+	- views 
+	- Phaser website.
+	- Github.
+- A doc-entry landing page? It is a page used for sharing doc links. So it shows the element without distractions. And it shows the links to the Phaser website and Github.
+	Nah! I think the official Phaser website is good enough: https://newdocs.phaser.io/docs/3.54.0/focus/Phaser.GameObjects.Blitter-alpha
+	But well, the Phaser website does not show meta tags for social networks. So maybe what I can do is a "doc card" service.
 - Parse {@link http://some.url}
 - The Versions view.
 - A welcome editor.
 - An Examples Assets view, for showing all the assets. It can help on creating new examples.
 And may help finding the examples associated with a particular asset?
-- The JSDocEditor inspector should show links to open the doc entry in editors, views and websites.
 - Enable search in all files.
 - Enable minimap in the source file editor.
