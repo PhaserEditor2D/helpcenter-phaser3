@@ -17,6 +17,7 @@ This is not an official Phaser product. It is developed and maintained by the [P
     * [Text filter](#text-filter)
 * [Phaser Files](#phaser-files)
     * [Phaser Files view's context menu](#phaser-files-views-context-menu)
+* [Versions](#versions)
 * [API Chains view](#api-chains-view)
     * [API chains](#api-chains)
     * [Query syntax](#query-syntax)
@@ -120,15 +121,16 @@ This view helps you understand how the Phaser 3 code is structured.
 
 ![Phaser Files view](github/phaser-files-comparison.png)
 
+
+### Phaser Files view's context menu
+
+The context menu shows the options to open the selected API element in a documentation editor, a source editor, or reveal it in the **API** view.
+
 ## Versions
 
 The **Versions** view shows all Phaser API members grouped by versions. This is other way to track progress in Phaser and get information about the latest releases.
 
 ![Versions view](github/versions-view.png)
-
-### Phaser Files view's context menu
-
-The context menu shows the options to open the selected API element in a documentation editor, a source editor, or reveal it in the **API** view.
 
 ## API Chains view
 
