@@ -882,6 +882,13 @@
           "type": "file"
         },
         {
+          "path": "src\\bugs\\5570 mesh.js",
+          "name": "5570 mesh.js",
+          "size": 2353,
+          "extension": ".js",
+          "type": "file"
+        },
+        {
           "path": "src\\bugs\\5571 line to line.js",
           "name": "5571 line to line.js",
           "size": 451,
@@ -903,7 +910,7 @@
           "type": "file"
         }
       ],
-      "size": 24054,
+      "size": 26407,
       "type": "directory"
     },
     {
@@ -4560,9 +4567,16 @@
               "size": 1414,
               "extension": ".js",
               "type": "file"
+            },
+            {
+              "path": "src\\game objects\\lights\\zoom point light.js",
+              "name": "zoom point light.js",
+              "size": 2751,
+              "extension": ".js",
+              "type": "file"
             }
           ],
-          "size": 39903,
+          "size": 42654,
           "type": "directory"
         },
         {
@@ -4586,7 +4600,7 @@
             {
               "path": "src\\game objects\\mesh\\mesh from obj.js",
               "name": "mesh from obj.js",
-              "size": 2000,
+              "size": 2090,
               "extension": ".js",
               "type": "file"
             },
@@ -4598,7 +4612,7 @@
               "type": "file"
             }
           ],
-          "size": 13117,
+          "size": 13207,
           "type": "directory"
         },
         {
@@ -6174,7 +6188,7 @@
           "type": "directory"
         }
       ],
-      "size": 820236,
+      "size": 823077,
       "type": "directory"
     },
     {
@@ -10043,6 +10057,13 @@
               "type": "file"
             },
             {
+              "path": "src\\paths\\curves\\get point from spline curve.js",
+              "name": "get point from spline curve.js",
+              "size": 1530,
+              "extension": ".js",
+              "type": "file"
+            },
+            {
               "path": "src\\paths\\curves\\get points on cubic bezier curve.js",
               "name": "get points on cubic bezier curve.js",
               "size": 895,
@@ -10162,7 +10183,7 @@
               "type": "file"
             }
           ],
-          "size": 55352,
+          "size": 56882,
           "type": "directory"
         },
         {
@@ -10350,7 +10371,7 @@
           "type": "file"
         }
       ],
-      "size": 86982,
+      "size": 88512,
       "type": "directory"
     },
     {
@@ -13509,9 +13530,16 @@
           "type": "file"
         },
         {
+          "path": "src\\timestep\\split timestep.js",
+          "name": "split timestep.js",
+          "size": 1570,
+          "extension": ".js",
+          "type": "file"
+        },
+        {
           "path": "src\\timestep\\ticker loop.js",
           "name": "ticker loop.js",
-          "size": 1068,
+          "size": 1002,
           "extension": ".js",
           "type": "file"
         },
@@ -13530,7 +13558,7 @@
           "type": "file"
         }
       ],
-      "size": 4962,
+      "size": 6466,
       "type": "directory"
     },
     {
@@ -14185,6 +14213,13 @@
           "type": "file"
         },
         {
+          "path": "src\\tweens\\tweenable gameobject.js",
+          "name": "tweenable gameobject.js",
+          "size": 663,
+          "extension": ".js",
+          "type": "file"
+        },
+        {
           "path": "src\\tweens\\update to.js",
           "name": "update to.js",
           "size": 1205,
@@ -14206,7 +14241,7 @@
           "type": "file"
         }
       ],
-      "size": 93597,
+      "size": 94260,
       "type": "directory"
     },
     {
@@ -14389,6 +14424,6 @@
       "type": "directory"
     }
   ],
-  "size": 3976963,
+  "size": 3985854,
   "type": "directory"
 }

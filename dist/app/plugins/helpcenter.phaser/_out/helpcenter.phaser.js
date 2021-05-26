@@ -2,7 +2,7 @@ var helpcenter;
 (function (helpcenter) {
     var phaser;
     (function (phaser) {
-        phaser.PHASER_VER = "3.54.0";
+        phaser.PHASER_VER = "3.55.0";
         phaser.DEFAULT_PHASER_LABS_URL = "https://labs.phaser.io";
         phaser.DOC_ENTRY_KIND_LIST = ["namespace", "class", "typedef", "constant", "event", "member", "function"];
         class PhaserPlugin extends colibri.Plugin {
@@ -124,6 +124,9 @@ var helpcenter;
             }
             getDocsFolder() {
                 return this._docsFolder;
+            }
+            getDocsEntries() {
+                return this._docEntries;
             }
             getPhaserFile(filePath) {
                 const names = filePath.split("/");

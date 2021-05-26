@@ -15,6 +15,7 @@ var helpcenter;
         main_1.ICON_LABS = "experimental";
         main_1.ICON_HELP = "help";
         main_1.ICON_PLAY = "play";
+        main_1.ICON_TIME = "time";
         class MainPlugin extends colibri.Plugin {
             constructor() {
                 super("helpcenter.main");
@@ -32,7 +33,8 @@ var helpcenter;
                     main_1.ICON_FILE_SCRIPT,
                     main_1.ICON_LABS,
                     main_1.ICON_HELP,
-                    main_1.ICON_PLAY
+                    main_1.ICON_PLAY,
+                    main_1.ICON_TIME
                 ], false));
                 // windows
                 reg.addExtension(new colibri.ui.ide.WindowExtension(() => new main_1.ui.MainWindow()));
@@ -317,6 +319,14 @@ var helpcenter;
                             }
                         });
                     }
+                    menu.addSeparator();
+                    menu.addAction({
+                        text: "Open In Official Phaser Docs",
+                        callback: () => {
+                            const name = this._docEntry.getRawEntry().longname.replace("#event:", ".").replace("#", "-");
+                            window.open("https://newdocs.phaser.io/docs/" + helpcenter.phaser.PHASER_VER + "/focus/" + name);
+                        }
+                    });
                 }
             }
             ui.DocEntryMenuCreator = DocEntryMenuCreator;
@@ -434,6 +444,7 @@ var helpcenter;
                 createParts() {
                     this._editorArea = new colibri.ui.ide.EditorArea();
                     this._filesView = new ui.views.FilesView();
+                    this._versionsView = new ui.views.VersionsView();
                     this._apiView = new ui.views.ApiView();
                     this._examplesView = new ui.views.ExamplesView();
                     this._inspectorView = new colibri.inspector.ui.views.InspectorView();
@@ -441,7 +452,7 @@ var helpcenter;
                     this._exampleChainsView = new ui.views.ExamplesSearchView();
                     const editorChains = new controls.SplitPanel(this._editorArea, this.createViewFolder(this._chainsView, this._exampleChainsView), false);
                     editorChains.setSplitFactor(0.5);
-                    const splitLeftTopDown = new controls.SplitPanel(this.createViewFolder(this._apiView, this._filesView), this.createViewFolder(this._examplesView), false);
+                    const splitLeftTopDown = new controls.SplitPanel(this.createViewFolder(this._apiView, this._filesView, this._versionsView), this.createViewFolder(this._examplesView), false);
                     const splitLeftAndEditorArea = new controls.SplitPanel(splitLeftTopDown, editorChains);
                     splitLeftAndEditorArea.setSplitFactor(0.3);
                     const splitAllLeftAndInspector = new controls.SplitPanel(splitLeftAndEditorArea, this.createViewFolder(this._inspectorView));
@@ -1138,6 +1149,7 @@ var helpcenter;
         (function (ui) {
             var editors;
             (function (editors) {
+                var controls = colibri.ui.controls;
                 class JSDocEntryEditorFactory {
                     acceptInput(input) {
                         return input instanceof helpcenter.phaser.core.DocEntry;
@@ -1165,6 +1177,11 @@ var helpcenter;
                         this._themeListener = () => this.updateContent();
                         colibri.Platform.getWorkbench().eventThemeChanged.addListener(this._themeListener);
                         requestAnimationFrame(() => this.layout());
+                        this._contentElement.addEventListener("contextmenu", e => {
+                            const menu = new controls.Menu();
+                            new ui.DocEntryMenuCreator(this.getInput()).createMenu(menu);
+                            menu.createWithEvent(e);
+                        });
                     }
                     onPartClosed() {
                         const result = super.onPartClosed();
@@ -1615,6 +1632,9 @@ var helpcenter;
                 var controls = colibri.ui.controls;
                 class PhaserCellRendererProvider {
                     getCellRenderer(element) {
+                        if (typeof element === "string") {
+                            return new controls.viewers.IconImageCellRenderer(main.MainPlugin.getInstance().getIcon(main.ICON_TIME));
+                        }
                         if (element instanceof helpcenter.phaser.core.PhaserFile) {
                             if (element.isFolder()) {
                                 return new controls.viewers.IconImageCellRenderer(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_FOLDER));
@@ -1648,6 +1668,9 @@ var helpcenter;
             (function (viewers) {
                 class PhaserLabelProvider {
                     getLabel(obj) {
+                        if (typeof obj === "string") {
+                            return obj;
+                        }
                         if (obj instanceof helpcenter.phaser.core.PhaserFile) {
                             return obj.getName();
                         }
@@ -1673,7 +1696,8 @@ var helpcenter;
             (function (viewers) {
                 var controls = colibri.ui.controls;
                 class PhaserStyledLabelProvider {
-                    constructor() {
+                    constructor(showFullName = false) {
+                        this._showFullName = showFullName;
                         this._labelProvider = new viewers.PhaserLabelProvider();
                     }
                     getStyledTexts(obj, dark) {
@@ -1682,7 +1706,7 @@ var helpcenter;
                         if (obj instanceof helpcenter.phaser.core.DocEntry) {
                             return [{
                                     color: theme.viewerForeground + (obj.isInherited() ? "a0" : ""),
-                                    text: obj.getName()
+                                    text: this._showFullName ? obj.getFullName() : obj.getName()
                                 }, {
                                     color: styles.methodSignature,
                                     text: obj.getMethodSignature()
@@ -1960,6 +1984,7 @@ var helpcenter;
                         return [];
                     }
                 }
+                views.ApiContentProvider = ApiContentProvider;
             })(views = ui.views || (ui.views = {}));
         })(ui = main.ui || (main.ui = {}));
     })(main = helpcenter.main || (helpcenter.main = {}));
@@ -2110,8 +2135,10 @@ var helpcenter;
                                     tags.push(child.isInherited() ? "#i" : "#d");
                                 }
                                 tags.push(chain.chained ? "#c" : "#u");
+                                const since = child.getRawEntry().since;
+                                const version = since ? " v" + since : "";
                                 const tagsLabel = tags.join(" ");
-                                chain.label = child.getKind() + " " + baseLabel + " " + tagsLabel;
+                                chain.label = child.getKind() + " " + baseLabel + " " + tagsLabel + version;
                                 chain.countDots = chain.label.split("").filter(c => c === ".").length;
                                 chain.lightStyledLabel = [{
                                         text: child.getKind() + " ",
@@ -2132,6 +2159,9 @@ var helpcenter;
                                     }, {
                                         text: " " + tagsLabel,
                                         color: "cadetBlue"
+                                    }, {
+                                        text: version,
+                                        color: "gray"
                                     }];
                                 chain.darkStyledLabel = [{
                                         text: child.getKind() + " ",
@@ -2152,6 +2182,9 @@ var helpcenter;
                                     }, {
                                         text: " " + tagsLabel,
                                         color: "bisque"
+                                    }, {
+                                        text: version,
+                                        color: "gray"
                                     }];
                                 chain.lightStyledLabel = chain.lightStyledLabel.filter(s => s.text.length > 0);
                                 chain.darkStyledLabel = chain.darkStyledLabel.filter(s => s.text.length > 0);
@@ -2354,6 +2387,64 @@ var helpcenter;
                         if (parent instanceof helpcenter.phaser.core.DocEntry) {
                             // get only doc entries in the same file
                             return parent.getChildren().filter(entry => entry.getFile() === parent.getFile());
+                        }
+                        return [];
+                    }
+                }
+            })(views = ui.views || (ui.views = {}));
+        })(ui = main.ui || (main.ui = {}));
+    })(main = helpcenter.main || (helpcenter.main = {}));
+})(helpcenter || (helpcenter = {}));
+/// <reference path="./AbstractPhaserView.ts"/>
+var helpcenter;
+(function (helpcenter) {
+    var main;
+    (function (main) {
+        var ui;
+        (function (ui) {
+            var views;
+            (function (views) {
+                var controls = colibri.ui.controls;
+                class VersionsView extends views.AbstractPhaserView {
+                    constructor() {
+                        super(views.FilesView.ID, false);
+                        this.setTitle("Versions");
+                        this.setIcon(main.MainPlugin.getInstance().getIcon(main.ICON_TIME));
+                    }
+                    createViewer() {
+                        const set = new Set(helpcenter.phaser.PhaserPlugin.getInstance().getDocsEntries()
+                            .map(e => e.getRawEntry().since)
+                            .filter(since => since));
+                        const versions = [...set].sort((a, b) => {
+                            try {
+                                return -(Number.parseInt(a.replace(".", ""), 10) - Number.parseInt(b.replace(".", ""), 10));
+                            }
+                            catch (e) {
+                                return -a.localeCompare(b);
+                            }
+                        });
+                        const viewer = new controls.viewers.TreeViewer(this.getId());
+                        viewer.setContentProvider(new VersionsContentProvider());
+                        viewer.setCellRendererProvider(new ui.viewers.PhaserCellRendererProvider());
+                        viewer.setStyledLabelProvider(new ui.viewers.PhaserStyledLabelProvider(true));
+                        viewer.setInput(versions);
+                        return viewer;
+                    }
+                }
+                VersionsView.ID = "helpcenter.main.ui.views.files.VersionsView";
+                views.VersionsView = VersionsView;
+                class VersionsContentProvider extends views.ApiContentProvider {
+                    constructor() {
+                        super(false, true);
+                    }
+                    getRoots(input) {
+                        return input;
+                    }
+                    getChildren(parent) {
+                        if (typeof parent === "string") {
+                            return helpcenter.phaser.PhaserPlugin.getInstance().getDocsEntries()
+                                .filter(e => !e.isInherited())
+                                .filter(e => e.getRawEntry().since === parent);
                         }
                         return [];
                     }
