@@ -120,6 +120,12 @@ This view helps you understand how the Phaser 3 code is structured.
 
 ![Phaser Files view](github/phaser-files-comparison.png)
 
+## Versions
+
+The **Versions** view shows all Phaser API members grouped by versions. This is other way to track progress in Phaser and get information about the latest releases.
+
+![Versions view](github/versions-view.png)
+
 ### Phaser Files view's context menu
 
 The context menu shows the options to open the selected API element in a documentation editor, a source editor, or reveal it in the **API** view.
