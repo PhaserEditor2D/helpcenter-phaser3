@@ -144,7 +144,7 @@ namespace helpcenter.main.ui.views {
         }
     }
 
-    class ApiContentProvider implements controls.viewers.ITreeContentProvider {
+    export class ApiContentProvider implements controls.viewers.ITreeContentProvider {
 
         private _section: "Type" | "Event" | "Constant";
         private _flat: boolean;

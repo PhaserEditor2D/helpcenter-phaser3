@@ -6,6 +6,11 @@ namespace helpcenter.main.ui.viewers {
 
         getLabel(obj: any): string {
 
+            if (typeof obj === "string") {
+
+                return obj;
+            }
+
             if (obj instanceof helpcenter.phaser.core.PhaserFile) {
 
                 return obj.getName();

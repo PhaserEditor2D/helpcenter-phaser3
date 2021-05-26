@@ -221,6 +221,11 @@ namespace helpcenter.phaser {
             return this._docsFolder;
         }
 
+        getDocsEntries() {
+
+            return this._docEntries;
+        }
+
         getPhaserFile(filePath: string) {
 
             const names = filePath.split("/");

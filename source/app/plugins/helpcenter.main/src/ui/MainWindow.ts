@@ -13,6 +13,7 @@ namespace helpcenter.main.ui {
         private _chainsView: views.ChainsView;
         private _examplesView: views.ExamplesView;
         private _exampleChainsView: views.ExamplesSearchView;
+        private _versionsView: views.VersionsView;
 
         constructor() {
             super(MainWindow.ID);
@@ -52,6 +53,7 @@ namespace helpcenter.main.ui {
 
             this._editorArea = new colibri.ui.ide.EditorArea();
             this._filesView = new views.FilesView();
+            this._versionsView = new views.VersionsView();
             this._apiView = new views.ApiView();
             this._examplesView = new views.ExamplesView();
             this._inspectorView = new colibri.inspector.ui.views.InspectorView();
@@ -69,6 +71,7 @@ namespace helpcenter.main.ui {
                 this.createViewFolder(
                     this._apiView,
                     this._filesView,
+                    this._versionsView
                 ), this.createViewFolder(
                     this._examplesView
                 ), false);
