@@ -1,5 +1,9 @@
 # Change Log
 
+## v1.2.0 - May 26, 2021
+
+
+
 ## v1.0.1 - Apr 29, 2021
 
 ### Added
