@@ -52,6 +52,17 @@ namespace helpcenter.main.ui {
                     }
                 });
             }
+
+            menu.addSeparator();
+
+            menu.addAction({
+                text: "Open In Official Phaser Docs",
+                callback: () => {
+
+                    const name = this._docEntry.getRawEntry().longname.replace("#event:", ".").replace("#", "-");
+                    window.open("https://newdocs.phaser.io/docs/" + phaser.PHASER_VER +"/focus/" + name);
+                }
+            });
         }
     }
 }

@@ -1,6 +1,6 @@
 namespace helpcenter.phaser {
 
-    export const PHASER_VER = "3.54.0";
+    export const PHASER_VER = "3.55.0";
 
     export const DEFAULT_PHASER_LABS_URL = "https://labs.phaser.io";
 
