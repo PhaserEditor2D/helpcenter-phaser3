@@ -51,6 +51,15 @@ namespace helpcenter.main.ui.editors {
             colibri.Platform.getWorkbench().eventThemeChanged.addListener(this._themeListener);
 
             requestAnimationFrame(() => this.layout());
+
+            this._contentElement.addEventListener("contextmenu", e => {
+
+                const menu = new controls.Menu();
+
+                new DocEntryMenuCreator(this.getInput()).createMenu(menu);
+
+                menu.createWithEvent(e);
+            });
         }
 
         onPartClosed() {
