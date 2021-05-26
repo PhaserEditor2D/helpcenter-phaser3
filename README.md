@@ -187,6 +187,10 @@ For example, if you want to know all the classes with a `scaleX` property, you q
 
 ![Chains syntax](github/chains-syntax-1.png)
 
+Also, you can query for the versions of the API elements. Note at the end of every element there is a `v3.55.0`-like text:
+
+![Chains versions](github/chains-versions.png)
+
 ### Chains context menu
 
 Like the other API-related views, the context menu shows the options for opening the selected element in the documentation editor or the source editor. Or reveal it in the **API** view.
