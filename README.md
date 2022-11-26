@@ -15,8 +15,8 @@ This is not an official Phaser product. It is developed and maintained by the [P
     * [Inherited members](#inherited-members)
     * [Category filter](#category-filter)
     * [Text filter](#text-filter)
-* [Phaser Files](#phaser-files)
-    * [Phaser Files view's context menu](#phaser-files-views-context-menu)
+* [API Files](#phaser-files)
+    * [API Files view's context menu](#phaser-files-views-context-menu)
 * [Versions](#versions)
 * [API Chains view](#api-chains-view)
     * [API chains](#api-chains)
@@ -57,7 +57,7 @@ if you want to avoid registering a service worker (for offline support), append 
 
 This tool provides different views of the Phaser documentation and examples.
 
-The **API**, **Phaser Files**, and **API Chains** views show the Phaser documentation content but with different layouts and syntax.
+The **API**, **API Files**, and **API Chains** views show the Phaser documentation content but with different layouts and syntax.
 
 The **Examples** and **Examples Code** views show the content of the Phaser examples.
 
@@ -109,9 +109,9 @@ You can perform text queries for matching the signature of the elements:
 ![API view filtering](github/api-view-filtering.png)
 
 
-## Phaser Files
+## API Files
 
-The **Phaser Files** shows all the Phaser source files. It follows the same structure of the Phaser repository, but under each file, it shows the API elements defined in it.
+The **API Files** shows all the Phaser source files. It follows the same structure of the Phaser repository, but under each file, it shows the API elements defined in it.
 
 This view helps you on finding the relation between the Phaser API and the source file structure.
 
@@ -119,10 +119,10 @@ In Phaser, it is common to find API elements belonging to the same namespace but
 
 This view helps you understand how the Phaser 3 code is structured.
 
-![Phaser Files view](github/phaser-files-comparison.png)
+![API Files view](github/phaser-files-comparison.png)
 
 
-### Phaser Files view's context menu
+### API Files view's context menu
 
 The context menu shows the options to open the selected API element in a documentation editor, a source editor, or reveal it in the **API** view.
 

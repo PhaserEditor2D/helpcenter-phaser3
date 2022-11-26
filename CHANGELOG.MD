@@ -1,5 +1,10 @@
 # Change Log
 
+## dev
+
+* Get latest version of Colibri framework.
+
+
 ## v1.1.0 - May 26, 2021
 
 ### Added

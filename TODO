@@ -1,3 +1,7 @@
+- When focus on the app, it reauest for files changes. This is a feature from Phaser Editor I should remove from the Phaser Help Center.
+
+---
+
 - The JSDocEditor inspector should show links to open the doc entry in: 
 	- editors
 	- views 
