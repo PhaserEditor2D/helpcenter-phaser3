@@ -1,6 +1,6 @@
 include:
   - app
-  - app/plugins/colibri/_out
+  - app/plugins/colibri/_out/colibri.js
   - app/plugins/colibri.inspector/_out
   - app/plugins/helpcenter.codemirror/_out
   - app/plugins/helpcenter.main/_out
