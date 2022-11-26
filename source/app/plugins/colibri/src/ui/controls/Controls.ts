@@ -11,18 +11,39 @@ namespace colibri.ui.controls {
     export const ICON_SIZE = DEVICE_PIXEL_RATIO > 1 ? 32 : 16;
     export const RENDER_ICON_SIZE = 16;
 
+    export type IImageOrCanvas = HTMLImageElement|HTMLCanvasElement;
+
     export class Controls {
 
         private static _images: Map<string, IImage> = new Map();
         private static _applicationDragData: any[] = null;
         private static _mouseDownElement: HTMLElement;
+        private static _dragCanvas: HTMLCanvasElement;
 
-        static initEvents() {
+        static init() {
 
             window.addEventListener("mousedown", e => {
 
                 this._mouseDownElement = e.target as any;
             });
+
+            this.initDragCanvas();
+        }
+
+        static addTabStop() {
+
+            // this prevents Safari to include the address bar in the tab order.
+
+            const tabStop = document.createElement("input");
+            tabStop.style.position = "fixed";
+            tabStop.style.left = "-1000px";
+            tabStop.onfocus = () => {
+
+                console.log("catch last tabIndex, focus first element");
+                (document.getElementsByTagName("input")[0] as HTMLElement).focus();
+            };
+
+            document.body.appendChild(tabStop);
         }
 
         static getMouseDownElement() {
@@ -59,7 +80,7 @@ namespace colibri.ui.controls {
 
         static measureTextWidth(context: CanvasRenderingContext2D, label: string) {
 
-            const font = FONT_FAMILY + FONT_HEIGHT;
+            const font = FONT_FAMILY + controls.getCanvasFontHeight();
 
             const textKey = font + "@" + label;
 
@@ -98,20 +119,7 @@ namespace colibri.ui.controls {
 
         static setDragEventImage(e: DragEvent, render: (ctx: CanvasRenderingContext2D, w: number, h: number) => void) {
 
-            let canvas = document.getElementById("__drag__canvas") as HTMLCanvasElement;
-
-            if (!canvas) {
-                canvas = document.createElement("canvas");
-                canvas.setAttribute("id", "__drag__canvas");
-                canvas.style.imageRendering = "crisp-edges";
-                canvas.width = 64;
-                canvas.height = 64;
-                canvas.style.width = canvas.width + "px";
-                canvas.style.height = canvas.height + "px";
-                canvas.style.position = "fixed";
-                canvas.style.left = -100 + "px";
-                document.body.appendChild(canvas);
-            }
+            const canvas = this._dragCanvas;
 
             const ctx = canvas.getContext("2d");
 
@@ -120,6 +128,29 @@ namespace colibri.ui.controls {
             render(ctx, canvas.width, canvas.height);
 
             e.dataTransfer.setDragImage(canvas, 10, 10);
+        }
+
+        private static initDragCanvas() {
+
+            const canvas = document.createElement("canvas");
+            canvas.setAttribute("id", "__drag__canvas");
+            canvas.style.imageRendering = "crisp-edges";
+            canvas.width = 64;
+            canvas.height = 64;
+            canvas.style.width = canvas.width + "px";
+            canvas.style.height = canvas.height + "px";
+            canvas.style.position = "fixed";
+            canvas.style.left = "0px";
+            document.body.appendChild(canvas);
+
+            this._dragCanvas = canvas;
+        }
+
+        private static _isSafari = navigator.vendor.toLowerCase().indexOf("apple") >= 0;
+
+        static isSafariBrowser() {
+
+            return this._isSafari;
         }
 
         static getApplicationDragData() {
@@ -133,6 +164,7 @@ namespace colibri.ui.controls {
         }
 
         static setApplicationDragData(data: any[]) {
+
             this._applicationDragData = data;
         }
 
@@ -200,7 +232,7 @@ namespace colibri.ui.controls {
             dark: false,
             viewerSelectionBackground: "#4242ff",
             viewerSelectionForeground: "#f0f0f0",
-            viewerForeground: "#000000",
+            viewerForeground: "#2f2f2f",
         };
 
         static DARK_THEME: ITheme = {

@@ -56,9 +56,12 @@ namespace colibri.ui.ide {
 
             this._fileImageSizeCache = new ImageSizeFileCache();
 
-            this._fileStorage = new core.io.FileStorage_HTTPServer();
+            if (CAPABILITY_FILE_STORAGE) {
 
-            this._fileStringCache = new core.io.FileStringCache(this._fileStorage);
+                this._fileStorage = new core.io.FileStorage_HTTPServer();
+
+                this._fileStringCache = new core.io.FileStringCache(this._fileStorage);
+            }
 
             this._globalPreferences = new core.preferences.Preferences("__global__");
 
@@ -79,7 +82,7 @@ namespace colibri.ui.ide {
             return this._projectPreferences;
         }
 
-        showNotification(text: string) {
+        showNotification(text: string, clickCallback?: () => void) {
 
             const element = document.createElement("div");
             element.classList.add("Notification");
@@ -91,20 +94,27 @@ namespace colibri.ui.ide {
 
             element.addEventListener("click", () => element.remove());
 
+            const duration = 4000;
+
             setTimeout(() => {
 
                 element.classList.add("FadeOutEffect");
 
-                setTimeout(() => element.remove(), 4000);
+                setTimeout(() => element.remove(), duration);
 
-            }, 4000);
+            }, duration);
+
+            if (clickCallback) {
+
+                element.addEventListener("click", clickCallback);
+            }
         }
 
         async launch() {
 
             console.log("Workbench: starting.");
 
-            controls.Controls.initEvents();
+            controls.Controls.init();
 
             controls.Controls.preloadTheme();
 
@@ -150,6 +160,8 @@ namespace colibri.ui.ide {
 
             this.initEvents();
 
+            ui.controls.Controls.addTabStop();
+
             console.log("%cWorkbench: started.", "color:green");
 
             for (const plugin of Platform.getPlugins()) {
@@ -178,28 +190,36 @@ namespace colibri.ui.ide {
             this._editorSessionStateRegistry.clear();
         }
 
-        async openProject(projectName: string, workspacePath: string, monitor: controls.IProgressMonitor) {
+        async openProject(monitor: controls.IProgressMonitor) {
 
-            this.eventBeforeOpenProject.fire(projectName);
-
-            this._projectPreferences = new core.preferences.Preferences("__project__" + projectName);
+            this.eventBeforeOpenProject.fire("");
 
             this.resetCache();
 
-            console.log(`Workbench: opening project ${projectName}.`);
+            console.log(`Workbench: opening project.`);
 
-            if (workspacePath) {
+            await this._fileStorage.openProject();
 
-                await this._fileStorage.changeWorkspace(workspacePath);
-            }
+            const projectName = this._fileStorage.getRoot().getName();
 
-            await this._fileStorage.openProject(projectName);
+            console.log(`Workbench: project ${projectName} loaded.`);
+
+            this._projectPreferences = new core.preferences.Preferences("__project__" + projectName);
 
             console.log("Workbench: fetching required project resources.");
 
-            await this.preloadProjectResources(monitor);
+            try {
 
-            this.eventProjectOpened.fire(projectName);
+                await this.preloadProjectResources(monitor);
+
+                this.eventProjectOpened.fire(projectName);
+
+            } catch (e) {
+
+                console.log("Error loading project resources");
+                alert("Error: loading project resources. " + e.message);
+                console.log(e.message);
+            }
         }
 
         private async preloadProjectResources(monitor: controls.IProgressMonitor) {
@@ -220,7 +240,17 @@ namespace colibri.ui.ide {
 
             for (const extension of extensions) {
 
-                await extension.preload(monitor);
+                try {
+
+                    await extension.preload(monitor);
+
+                } catch (e) {
+
+                    console.log("Error with extension:")
+                    console.log(extension);
+                    console.error(e);
+                    alert(`[${extension.constructor.name}] Preload error: ${(e.message || e)}`);
+                }
             }
         }
 

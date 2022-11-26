@@ -10,7 +10,7 @@ namespace helpcenter.main.ui.views {
         constructor() {
             super(FilesView.ID, false);
 
-            this.setTitle("Phaser Files");
+            this.setTitle("API Files");
             this.setIcon(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_FOLDER));
         }
 

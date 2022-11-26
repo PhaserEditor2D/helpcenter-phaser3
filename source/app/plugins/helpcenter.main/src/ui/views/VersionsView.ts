@@ -9,7 +9,6 @@ namespace helpcenter.main.ui.views {
 
         constructor() {
             super(FilesView.ID, false);
-
             this.setTitle("Versions");
             this.setIcon(MainPlugin.getInstance().getIcon(ICON_TIME));
         }

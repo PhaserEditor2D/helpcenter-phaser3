@@ -38,6 +38,13 @@ var colibri;
                         this.setTitle("Inspector");
                         this.setIcon(inspector.InspectorPlugin.getInstance().getIcon(inspector.ICON_INSPECTOR));
                     }
+                    static updateInspectorView(selection) {
+                        const win = colibri.Platform.getWorkbench().getActiveWindow();
+                        const view = win.getView(InspectorView.VIEW_ID);
+                        if (view) {
+                            view.getPropertyPage().setSelection(selection);
+                        }
+                    }
                     layout() {
                         this._propertyPage.dispatchLayoutEvent();
                     }
@@ -50,18 +57,6 @@ var colibri;
                         this._selectionListener = (e) => this.onPartSelection();
                         ide.Workbench.getWorkbench()
                             .eventPartActivated.addListener(() => this.onWorkbenchPartActivate());
-                    }
-                    onPartAdded() {
-                        super.onPartAdded();
-                        this.getPartFolder().eventTabSectionSelected.addListener((tabSection) => {
-                            if (this._propertyPage) {
-                                const provider = this._propertyPage.getSectionProvider();
-                                if (provider) {
-                                    provider.setSelectedTabSection(tabSection);
-                                    this._propertyPage.updateWithSelection();
-                                }
-                            }
-                        });
                     }
                     onWorkbenchPartActivate() {
                         const part = ide.Workbench.getWorkbench().getActivePart();
@@ -81,30 +76,18 @@ var colibri;
                             else {
                                 this._propertyPage.setSectionProvider(null);
                             }
-                            this.updateUpdateTabSections();
                         }
                     }
                     onPartSelection() {
                         const sel = this._currentPart.getSelection();
                         const provider = this._currentPart.getPropertyProvider();
+                        this._propertyPage.setSelection(sel, false);
                         this._propertyPage.setSectionProvider(provider);
-                        this._propertyPage.setSelection(sel);
-                    }
-                    updateUpdateTabSections() {
-                        const partFolder = this.getPartFolder();
-                        const tabLabel = partFolder.getLabelFromContent(this);
-                        partFolder.removeAllSections(tabLabel, false);
-                        if (this._currentPart) {
-                            const provider = this._currentPart.getPropertyProvider();
-                            if (provider) {
-                                const tabSections = provider.getTabSections();
-                                for (const tabSection of tabSections) {
-                                    partFolder.addTabSection(tabLabel, tabSection, this.getId());
-                                }
-                                const selected = provider.getSelectedTabSection();
-                                partFolder.selectTabSection(tabLabel, selected);
-                            }
-                        }
+                        // Commented on Sept 28, 2022. 
+                        // The page.updateWithSelection() is always called
+                        // the page.setSectionProvider(provider)
+                        //
+                        // this._propertyPage.setSelection(sel);
                     }
                     getUndoManager() {
                         if (this._currentPart) {
@@ -119,7 +102,7 @@ var colibri;
                         return this._propertyPage;
                     }
                 }
-                InspectorView.VIEW_ID = "colibri.inspector.ui.views.InspectorView";
+                InspectorView.VIEW_ID = "InspectorView";
                 views.InspectorView = InspectorView;
             })(views = ui.views || (ui.views = {}));
         })(ui = inspector.ui || (inspector.ui = {}));

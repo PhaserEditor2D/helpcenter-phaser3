@@ -1,6 +1,3 @@
-#!/usr/bin/node
-
-const { execSync } = require("child_process");
 const { readFileSync, writeFileSync } = require("fs");
 
 const version = JSON.parse(readFileSync("../package.json")).version;

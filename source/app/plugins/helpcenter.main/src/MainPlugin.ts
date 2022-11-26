@@ -145,6 +145,9 @@ namespace helpcenter.main {
 
     async function main() {
 
+        // disable file access layer
+        colibri.CAPABILITY_FILE_STORAGE = false;
+
         await initVersion();
 
         if (window.location.search === "?dev") {

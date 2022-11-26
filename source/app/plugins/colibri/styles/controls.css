@@ -29,7 +29,7 @@
     }
 
     label {
-        min-width: 0px;
+        /* min-width: 0px; */
     }
 
     * {
@@ -54,7 +54,7 @@
         overflow-y: hidden;
     }
 
-    input {
+    input, textarea {
         -webkit-user-select: text !important;
         -khtml-user-select: text !important;
         -moz-user-select: text !important;
@@ -141,6 +141,7 @@
     .TabPaneLabel span {
         margin: 3px 0px 0px 3px;
         align-self: center;
+        cursor: default;
     }
 
     .TabPaneLabelSections {
@@ -342,7 +343,7 @@
 
     .PropertyFormArea {
         display: grid;
-        padding: 10px 0px 10px 0px;
+        padding: 2px 0px 10px 0px;
     }
 
     .PropertyButtonPanel {
@@ -359,7 +360,7 @@
     .PropertySubTitlePanel {
         display: grid;
         grid-template-columns: auto 1fr auto;
-        grid-column: 1 / span 2;
+        grid-column: 1 / span 4;
         align-items: center;
         background: rgba(0, 0, 0, 0.1);
         padding: 3px;
@@ -375,7 +376,15 @@
     }
 
     .formLabel {
-        justify-self: self-end;
+        justify-self: self-start;
+    }
+
+    .formSeparator {
+        opacity: 0.5;
+        font-size: smaller;
+        justify-self: start;
+        text-transform: uppercase;
+        margin: 5px;
     }
 
     .StringDialogField {
@@ -436,6 +445,7 @@
         right: 30px;
         padding: 20px;
         border-radius: 3px;
+        background: inherit;
     }
 
     .Dialog,

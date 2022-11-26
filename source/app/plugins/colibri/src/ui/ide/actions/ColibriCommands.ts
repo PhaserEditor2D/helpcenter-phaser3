@@ -26,6 +26,9 @@ namespace colibri.ui.ide.actions {
     export const CMD_PASTE = "colibri.ui.ide.actions.Paste";
     export const CMD_SHOW_COMMENT_DIALOG = "colibri.ui.ide.actions.ShowCommentDialog";
     export const CMD_CHANGE_THEME = "phasereditor2d.ide.ui.actions.SwitchTheme";
+    export const CMD_INCR_CANVAS_FONT_HEIGHT = "phasereditor2d.ide.ui.actions.IncrementCanvasFontHeight";
+    export const CMD_DECR_CANVAS_FONT_HEIGHT = "phasereditor2d.ide.ui.actions.DecrementCanvasFontHeight";
+    export const CMD_RESET_CANVAS_FONT_HEIGHT = "phasereditor2d.ide.ui.actions.ResetCanvasFontHeight";
 
     function isViewerScope(args: colibri.ui.ide.commands.HandlerArgs) {
 
@@ -79,6 +82,56 @@ namespace colibri.ui.ide.actions {
             ColibriCommands.initCommentDialog(manager);
 
             ColibriCommands.initTheme(manager);
+
+            ColibriCommands.initFontSize(manager);
+        }
+
+        static initFontSize(manager: commands.CommandManager) {
+
+            manager.add({
+                command: {
+                    id: CMD_INCR_CANVAS_FONT_HEIGHT,
+                    category: CAT_GENERAL,
+                    name: "Increment Viewer Font Size",
+                    tooltip: "Increments the font size of viewers"
+                },
+                handler: {
+                    executeFunc: args => {
+
+                        controls.incrementFontHeight(1);
+                    }
+                }
+            });
+
+            manager.add({
+                command: {
+                    id: CMD_DECR_CANVAS_FONT_HEIGHT,
+                    category: CAT_GENERAL,
+                    name: "Decrement Viewer Font Size",
+                    tooltip: "Decrement the font size of viewers"
+                },
+                handler: {
+                    executeFunc: args => {
+
+                        controls.incrementFontHeight(-1);
+                    }
+                }
+            });
+
+            manager.add({
+                command: {
+                    id: CMD_RESET_CANVAS_FONT_HEIGHT,
+                    category: CAT_GENERAL,
+                    name: "Reset Viewer Font Size",
+                    tooltip: "Reset the font size of viewers"
+                },
+                handler: {
+                    executeFunc: args => {
+
+                        controls.resetFontHeight();
+                    }
+                }
+            });
         }
 
         private static initTheme(manager: commands.CommandManager) {
@@ -162,7 +215,7 @@ namespace colibri.ui.ide.actions {
                 },
                 keys: {
                     control: true,
-                    key: "K"
+                    key: "KeyK"
                 }
             });
         }
@@ -199,12 +252,14 @@ namespace colibri.ui.ide.actions {
 
             manager.addKeyBinding(CMD_EDITOR_TABS_SIZE_DOWN, new commands.KeyMatcher({
                 control: true,
-                key: "3"
+                key: "Digit3",
+                keyLabel: "3",
             }));
 
             manager.addKeyBinding(CMD_EDITOR_TABS_SIZE_UP, new commands.KeyMatcher({
                 control: true,
-                key: "4"
+                key: "Digit4",
+                keyLabel: "4",
             }));
 
             // close editor
@@ -222,7 +277,7 @@ namespace colibri.ui.ide.actions {
 
             manager.addKeyBinding(CMD_EDITOR_CLOSE, new KeyMatcher({
                 control: true,
-                key: "Q"
+                key: "KeyQ"
             }));
 
             // close all editors
@@ -241,7 +296,7 @@ namespace colibri.ui.ide.actions {
             manager.addKeyBinding(CMD_EDITOR_CLOSE_ALL, new KeyMatcher({
                 control: true,
                 shift: true,
-                key: "Q"
+                key: "KeyQ"
             }));
         }
 
@@ -265,7 +320,7 @@ namespace colibri.ui.ide.actions {
                     }
                 },
                 keys: {
-                    key: "C"
+                    key: "KeyC"
                 }
             })
 
@@ -289,7 +344,7 @@ namespace colibri.ui.ide.actions {
 
             manager.addKeyBinding(CMD_SELECT_ALL, new KeyMatcher({
                 control: true,
-                key: "A"
+                key: "KeyA"
             }));
 
             // collapse expand branch
@@ -364,7 +419,7 @@ namespace colibri.ui.ide.actions {
 
             manager.addKeyBinding(CMD_UNDO, new KeyMatcher({
                 control: true,
-                key: "Z"
+                key: "KeyZ"
             }));
 
             // redo
@@ -385,7 +440,7 @@ namespace colibri.ui.ide.actions {
             manager.addKeyBinding(CMD_REDO, new KeyMatcher({
                 control: true,
                 shift: true,
-                key: "Z"
+                key: "KeyZ"
             }));
 
             // update current editor
@@ -396,12 +451,6 @@ namespace colibri.ui.ide.actions {
                 tooltip: "Refresh the current editor's content.",
                 category: CAT_EDIT
             });
-
-            manager.addKeyBinding(CMD_UPDATE_CURRENT_EDITOR, new KeyMatcher({
-                control: true,
-                alt: true,
-                key: "U"
-            }));
         }
 
         private static initEdit(manager: commands.CommandManager) {
@@ -430,7 +479,7 @@ namespace colibri.ui.ide.actions {
                 },
                 keys: {
                     control: true,
-                    key: "S",
+                    key: "KeyS",
                     filterInputElements: false
                 }
             });
@@ -476,7 +525,7 @@ namespace colibri.ui.ide.actions {
                 },
                 keys: {
                     control: true,
-                    key: "C"
+                    key: "KeyC"
                 }
             });
 
@@ -489,7 +538,7 @@ namespace colibri.ui.ide.actions {
                 },
                 keys: {
                     control: true,
-                    key: "X"
+                    key: "KeyX"
                 }
             });
 
@@ -502,7 +551,7 @@ namespace colibri.ui.ide.actions {
                 },
                 keys: {
                     control: true,
-                    key: "V"
+                    key: "KeyV"
                 }
             });
         }

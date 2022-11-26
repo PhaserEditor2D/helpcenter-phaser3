@@ -1,3 +1,10 @@
+x- When focus on the app, it reauest for files changes. This is a feature from Phaser Editor I should remove from the Phaser Help Center.
+- Open in Official Phaser docs is not working.
+- A script for generating the index.html file.
+- Update to the latest Phaser 3.55.2.
+
+---
+
 - The JSDocEditor inspector should show links to open the doc entry in: 
 	- editors
 	- views 

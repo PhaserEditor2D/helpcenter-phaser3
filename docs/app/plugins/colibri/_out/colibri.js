@@ -34,7 +34,7 @@ var colibri;
             return image;
         }
         getResourceURL(pathInPlugin) {
-            return `app/plugins/${this.getId()}/${pathInPlugin}?v=${colibri.CACHE_VERSION}`;
+            return `app/plugins/${this.getId()}/${pathInPlugin}?v=${Date.now()}`;
         }
         async getJSON(pathInPlugin) {
             const result = await fetch(this.getResourceURL(pathInPlugin));
@@ -262,10 +262,22 @@ var colibri;
             controls.ICON_SIZE = controls.DEVICE_PIXEL_RATIO > 1 ? 32 : 16;
             controls.RENDER_ICON_SIZE = 16;
             class Controls {
-                static initEvents() {
+                static init() {
                     window.addEventListener("mousedown", e => {
                         this._mouseDownElement = e.target;
                     });
+                    this.initDragCanvas();
+                }
+                static addTabStop() {
+                    // this prevents Safari to include the address bar in the tab order.
+                    const tabStop = document.createElement("input");
+                    tabStop.style.position = "fixed";
+                    tabStop.style.left = "-1000px";
+                    tabStop.onfocus = () => {
+                        console.log("catch last tabIndex, focus first element");
+                        document.getElementsByTagName("input")[0].focus();
+                    };
+                    document.body.appendChild(tabStop);
                 }
                 static getMouseDownElement() {
                     return this._mouseDownElement;
@@ -285,7 +297,7 @@ var colibri;
                     return ctx;
                 }
                 static measureTextWidth(context, label) {
-                    const font = controls.FONT_FAMILY + controls.FONT_HEIGHT;
+                    const font = controls.FONT_FAMILY + controls.getCanvasFontHeight();
                     const textKey = font + "@" + label;
                     let width = 0;
                     if (this._textWidthMap.has(textKey)) {
@@ -309,23 +321,27 @@ var colibri;
                     return width;
                 }
                 static setDragEventImage(e, render) {
-                    let canvas = document.getElementById("__drag__canvas");
-                    if (!canvas) {
-                        canvas = document.createElement("canvas");
-                        canvas.setAttribute("id", "__drag__canvas");
-                        canvas.style.imageRendering = "crisp-edges";
-                        canvas.width = 64;
-                        canvas.height = 64;
-                        canvas.style.width = canvas.width + "px";
-                        canvas.style.height = canvas.height + "px";
-                        canvas.style.position = "fixed";
-                        canvas.style.left = -100 + "px";
-                        document.body.appendChild(canvas);
-                    }
+                    const canvas = this._dragCanvas;
                     const ctx = canvas.getContext("2d");
                     ctx.clearRect(0, 0, canvas.width, canvas.height);
                     render(ctx, canvas.width, canvas.height);
                     e.dataTransfer.setDragImage(canvas, 10, 10);
+                }
+                static initDragCanvas() {
+                    const canvas = document.createElement("canvas");
+                    canvas.setAttribute("id", "__drag__canvas");
+                    canvas.style.imageRendering = "crisp-edges";
+                    canvas.width = 64;
+                    canvas.height = 64;
+                    canvas.style.width = canvas.width + "px";
+                    canvas.style.height = canvas.height + "px";
+                    canvas.style.position = "fixed";
+                    canvas.style.left = "0px";
+                    document.body.appendChild(canvas);
+                    this._dragCanvas = canvas;
+                }
+                static isSafariBrowser() {
+                    return this._isSafari;
                 }
                 static getApplicationDragData() {
                     return this._applicationDragData;
@@ -437,6 +453,7 @@ var colibri;
             Controls._applicationDragData = null;
             Controls._charWidthMap = new Map();
             Controls._textWidthMap = new Map();
+            Controls._isSafari = navigator.vendor.toLowerCase().indexOf("apple") >= 0;
             Controls.LIGHT_THEME = {
                 id: "light",
                 displayName: "Light",
@@ -444,7 +461,7 @@ var colibri;
                 dark: false,
                 viewerSelectionBackground: "#4242ff",
                 viewerSelectionForeground: "#f0f0f0",
-                viewerForeground: "#000000",
+                viewerForeground: "#2f2f2f",
             };
             Controls.DARK_THEME = {
                 id: "dark",
@@ -484,8 +501,10 @@ var colibri;
                     this._activeElement = null;
                     this._fileImageCache = new ide.ImageFileCache();
                     this._fileImageSizeCache = new ide.ImageSizeFileCache();
-                    this._fileStorage = new colibri.core.io.FileStorage_HTTPServer();
-                    this._fileStringCache = new colibri.core.io.FileStringCache(this._fileStorage);
+                    if (colibri.CAPABILITY_FILE_STORAGE) {
+                        this._fileStorage = new colibri.core.io.FileStorage_HTTPServer();
+                        this._fileStringCache = new colibri.core.io.FileStringCache(this._fileStorage);
+                    }
                     this._globalPreferences = new colibri.core.preferences.Preferences("__global__");
                     this._projectPreferences = null;
                     this._editorSessionStateRegistry = new Map();
@@ -505,21 +524,25 @@ var colibri;
                 getProjectPreferences() {
                     return this._projectPreferences;
                 }
-                showNotification(text) {
+                showNotification(text, clickCallback) {
                     const element = document.createElement("div");
                     element.classList.add("Notification");
                     element.innerHTML = text;
                     document.body.appendChild(element);
                     element.classList.add("FadeInEffect");
                     element.addEventListener("click", () => element.remove());
+                    const duration = 4000;
                     setTimeout(() => {
                         element.classList.add("FadeOutEffect");
-                        setTimeout(() => element.remove(), 4000);
-                    }, 4000);
+                        setTimeout(() => element.remove(), duration);
+                    }, duration);
+                    if (clickCallback) {
+                        element.addEventListener("click", clickCallback);
+                    }
                 }
                 async launch() {
                     console.log("Workbench: starting.");
-                    ui.controls.Controls.initEvents();
+                    ui.controls.Controls.init();
                     ui.controls.Controls.preloadTheme();
                     {
                         const plugins = colibri.Platform.getPlugins();
@@ -544,6 +567,7 @@ var colibri;
                     this.registerEditors();
                     this.registerWindows();
                     this.initEvents();
+                    ui.controls.Controls.addTabStop();
                     console.log("%cWorkbench: started.", "color:green");
                     for (const plugin of colibri.Platform.getPlugins()) {
                         await plugin.started();
@@ -562,18 +586,24 @@ var colibri;
                     this._contentTypeRegistry.resetCache();
                     this._editorSessionStateRegistry.clear();
                 }
-                async openProject(projectName, workspacePath, monitor) {
-                    this.eventBeforeOpenProject.fire(projectName);
-                    this._projectPreferences = new colibri.core.preferences.Preferences("__project__" + projectName);
+                async openProject(monitor) {
+                    this.eventBeforeOpenProject.fire("");
                     this.resetCache();
-                    console.log(`Workbench: opening project ${projectName}.`);
-                    if (workspacePath) {
-                        await this._fileStorage.changeWorkspace(workspacePath);
-                    }
-                    await this._fileStorage.openProject(projectName);
+                    console.log(`Workbench: opening project.`);
+                    await this._fileStorage.openProject();
+                    const projectName = this._fileStorage.getRoot().getName();
+                    console.log(`Workbench: project ${projectName} loaded.`);
+                    this._projectPreferences = new colibri.core.preferences.Preferences("__project__" + projectName);
                     console.log("Workbench: fetching required project resources.");
-                    await this.preloadProjectResources(monitor);
-                    this.eventProjectOpened.fire(projectName);
+                    try {
+                        await this.preloadProjectResources(monitor);
+                        this.eventProjectOpened.fire(projectName);
+                    }
+                    catch (e) {
+                        console.log("Error loading project resources");
+                        alert("Error: loading project resources. " + e.message);
+                        console.log(e.message);
+                    }
                 }
                 async preloadProjectResources(monitor) {
                     const extensions = colibri.Platform
@@ -585,7 +615,15 @@ var colibri;
                     }
                     monitor.addTotal(total);
                     for (const extension of extensions) {
-                        await extension.preload(monitor);
+                        try {
+                            await extension.preload(monitor);
+                        }
+                        catch (e) {
+                            console.log("Error with extension:");
+                            console.log(extension);
+                            console.error(e);
+                            alert(`[${extension.constructor.name}] Preload error: ${(e.message || e)}`);
+                        }
                     }
                 }
                 registerWindows() {
@@ -909,6 +947,7 @@ var colibri;
 /// <reference path="./ui/ide/Workbench.ts" />
 var colibri;
 (function (colibri) {
+    colibri.CAPABILITY_FILE_STORAGE = true;
     colibri.ICON_FILE = "file";
     colibri.ICON_FOLDER = "folder";
     colibri.ICON_PLUS = "plus";
@@ -1251,6 +1290,28 @@ var colibri;
 })(colibri || (colibri = {}));
 var colibri;
 (function (colibri) {
+    var debug;
+    (function (debug) {
+        function getEditorSelectedObject() {
+            return getEditorSelection()[0];
+        }
+        debug.getEditorSelectedObject = getEditorSelectedObject;
+        function getEditorSelection() {
+            return colibri.Platform.getWorkbench().getActiveEditor().getSelection();
+        }
+        debug.getEditorSelection = getEditorSelection;
+        function getPartSelection() {
+            return colibri.Platform.getWorkbench().getActivePart().getSelection();
+        }
+        debug.getPartSelection = getPartSelection;
+        function getPartSelectedObject() {
+            return getPartSelection()[0];
+        }
+        debug.getPartSelectedObject = getPartSelectedObject;
+    })(debug = colibri.debug || (colibri.debug = {}));
+})(colibri || (colibri = {}));
+var colibri;
+(function (colibri) {
     var core;
     (function (core) {
         var io;
@@ -1350,22 +1411,14 @@ var colibri;
                     return "";
                 }
                 getUrl() {
-                    if (this._parent) {
-                        const url = this._parent.getUrl() + "/" + this._name;
-                        if (this.isFile()) {
-                            return url + "?m=" + this._modTime;
-                        }
-                        return url;
+                    let relName = this.getProjectRelativeName();
+                    if (this.isFile()) {
+                        relName += "?m=" + this.getModTime();
                     }
-                    const projectName = this.getProject().getName();
-                    return `./project/${projectName}`;
+                    return `./project${relName}`;
                 }
                 getExternalUrl() {
-                    if (this._parent) {
-                        return this._parent.getExternalUrl() + "/" + this._name;
-                    }
-                    const projectName = this.getProject().getName();
-                    return `./external/${projectName}`;
+                    return `./external${this.getProjectRelativeName()}`;
                 }
                 getProject() {
                     if (this._parent) {
@@ -1623,12 +1676,7 @@ var colibri;
                     });
                 }
                 async updateWithServerChanges() {
-                    if (!this._projectName) {
-                        return;
-                    }
-                    const hashData = await apiRequest("GetProjectFilesHash", {
-                        project: this._projectName
-                    });
+                    const hashData = await apiRequest("GetProjectFilesHash", {});
                     if (hashData.error) {
                         alert(hashData.error);
                         return;
@@ -1640,15 +1688,13 @@ var colibri;
                         return;
                     }
                     this._hash = hash;
-                    const data = await apiRequest("GetProjectFiles", {
-                        project: this._projectName
-                    });
+                    const data = await apiRequest("GetProjectFiles", {});
                     if (data.error) {
                         alert(data.error);
                         return;
                     }
                     if (data.projectNumberOfFiles > data.maxNumberOfFiles) {
-                        alert(`Your project exceeded the maximum number of files allowed (${data.projectNumberOfFiles} > ${data.maxNumberOfFiles})`);
+                        this.showMaxNumberOfFilesDialog(data.projectNumberOfFiles, data.maxNumberOfFiles);
                         return;
                     }
                     const change = new io.FileStorageChange();
@@ -1732,6 +1778,14 @@ var colibri;
                     }
                     this.fireChange(change);
                 }
+                showMaxNumberOfFilesDialog(projectNumberOfFiles, maxNumberOfFiles) {
+                    alert(`
+                    Your project exceeded the maximum number of files allowed (${projectNumberOfFiles} > ${maxNumberOfFiles}).
+                    Please, check the
+                    <a href="https://help.phasereditor2d.com/v3/misc/resources-filtering.html" target="_blank">Resources Filtering</a>
+                    documentation.
+                `);
+                }
                 addChangeListener(listener) {
                     this._changeListeners.push(listener);
                 }
@@ -1745,9 +1799,8 @@ var colibri;
                 getRoot() {
                     return this._root;
                 }
-                async openProject(projectName) {
+                async openProject() {
                     this._root = null;
-                    this._projectName = projectName;
                     this._hash = "";
                     await this.reload();
                     const root = this.getRoot();
@@ -1755,20 +1808,6 @@ var colibri;
                     change.fullProjectLoaded();
                     this.fireChange(change);
                     return root;
-                }
-                async isValidAccount() {
-                    const data = await apiRequest("GetIsValidAccount", {});
-                    return data.message;
-                }
-                async getProjectTemplates() {
-                    const data = await apiRequest("GetProjectTemplates", {});
-                    if (data.error) {
-                        alert("Cannot get the project templates");
-                        return {
-                            providers: []
-                        };
-                    }
-                    return data["templatesData"];
                 }
                 async createProject(templatePath, projectName) {
                     const data = await apiRequest("CreateProject", {
@@ -1782,19 +1821,17 @@ var colibri;
                     return true;
                 }
                 async reload() {
-                    const data = await apiRequest("GetProjectFiles", {
-                        project: this._projectName
-                    });
+                    const data = await apiRequest("GetProjectFiles", {});
                     let newRoot;
                     if (data.projectNumberOfFiles > data.maxNumberOfFiles) {
                         newRoot = new io.FilePath(null, {
-                            name: this._projectName,
+                            name: "Unavailable",
                             modTime: 0,
                             size: 0,
                             children: [],
                             isFile: false
                         });
-                        alert(`Your project exceeded the maximum number of files allowed (${data.projectNumberOfFiles} > ${data.maxNumberOfFiles})`);
+                        this.showMaxNumberOfFilesDialog(data.projectNumberOfFiles, data.maxNumberOfFiles);
                     }
                     else {
                         newRoot = new io.FilePath(null, data.rootFile);
@@ -1814,23 +1851,6 @@ var colibri;
                             console.error(e);
                         }
                     }
-                }
-                async changeWorkspace(path) {
-                    const data = await apiRequest("ChangeWorkspace", { path });
-                    if (data.error) {
-                        alert(`Cannot get the projects list`);
-                        throw new Error(data.error);
-                    }
-                }
-                async getProjects(workspacePath) {
-                    const data = await apiRequest("GetProjects", {
-                        workspace: workspacePath
-                    });
-                    if (data.error) {
-                        alert(`Cannot get the projects list`);
-                        throw new Error(data.error);
-                    }
-                    return { projects: data.projects, workspacePath: data.workspace };
                 }
                 async createFile(folder, fileName, content) {
                     const file = new io.FilePath(folder, {
@@ -2122,6 +2142,10 @@ var colibri;
                 return defaultValue;
             }
             json.read = read;
+            function copy(data) {
+                return JSON.parse(JSON.stringify(data));
+            }
+            json.copy = copy;
             function getDataValue(data, key) {
                 let result = data;
                 const keys = key.split(".");
@@ -2261,7 +2285,7 @@ var colibri;
                 }
                 run(e) {
                     if (this._callback) {
-                        this._callback(e);
+                        this._callback(e, this);
                         return;
                     }
                     if (this._commandId) {
@@ -2318,7 +2342,7 @@ var colibri;
                 initContext() {
                     this._context = this.getCanvas().getContext("2d");
                     this._context.imageSmoothingEnabled = false;
-                    this._context.font = `${controls.FONT_HEIGHT}px sans-serif`;
+                    this._context.font = `${controls.getCanvasFontHeight()}px sans-serif`;
                 }
             }
             controls.CanvasControl = CanvasControl;
@@ -2348,8 +2372,8 @@ var colibri;
                 }
                 render() {
                     const ctx = this._ctx;
-                    const w = this._canvas.width;
-                    const h = this._canvas.height;
+                    const w = this._canvas.width / (window.devicePixelRatio || 1);
+                    const h = this._canvas.height / (window.devicePixelRatio || 1);
                     const margin = w * 0.4;
                     const y = h * 0.5;
                     const f = Math.min(1, this._progress / this._total);
@@ -2517,8 +2541,8 @@ var colibri;
                     }
                 }
                 static paintImageElement(context, image, x, y, w, h, center) {
-                    const naturalWidth = image.naturalWidth;
-                    const naturalHeight = image.naturalHeight;
+                    const naturalWidth = image instanceof HTMLImageElement ? image.naturalWidth : image.width;
+                    const naturalHeight = image instanceof HTMLImageElement ? image.naturalHeight : image.height;
                     const renderHeight = h;
                     const renderWidth = w;
                     let imgW = naturalWidth;
@@ -2934,13 +2958,19 @@ var colibri;
                 }
                 getWidth() {
                     if (this._imageElement) {
-                        return this._imageElement.naturalWidth;
+                        if (this._imageElement instanceof HTMLImageElement) {
+                            return this._imageElement.naturalWidth;
+                        }
+                        return this._imageElement.width;
                     }
                     return 0;
                 }
                 getHeight() {
                     if (this._imageElement) {
-                        return this._imageElement.naturalHeight;
+                        if (this._imageElement instanceof HTMLImageElement) {
+                            return this._imageElement.naturalHeight;
+                        }
+                        return this._imageElement.height;
                     }
                     return 0;
                 }
@@ -3076,7 +3106,11 @@ var colibri;
                                     itemElement.appendChild(iconControl.getCanvas());
                                 }
                                 {
-                                    const iconControl = new controls.IconControl(item.getIcon().getNegativeThemeImage());
+                                    let icon = item.getIcon();
+                                    if (icon instanceof controls.IconImage) {
+                                        icon = icon.getNegativeThemeImage();
+                                    }
+                                    const iconControl = new controls.IconControl(icon);
                                     iconControl.getCanvas().classList.add("MenuItemIcon", "NegativeMenuItemIcon");
                                     itemElement.appendChild(iconControl.getCanvas());
                                 }
@@ -3201,7 +3235,13 @@ var colibri;
                             this._element.style.left = targetRect.right - menuRect.width + "px";
                         }
                         if (menuRect.height > window.innerHeight - y) {
-                            this._element.style.top = targetRect.top - menuRect.height - 2 + "px";
+                            y = targetRect.top - menuRect.height;
+                            if (y < 0) {
+                                y = 10;
+                                this._element.style.maxHeight = targetRect.top - y - 4 + "px";
+                                this._element.style.overflowY = "auto";
+                            }
+                            this._element.style.top = y - 2 + "px";
                         }
                     }
                 }
@@ -3449,7 +3489,7 @@ var colibri;
                         return;
                     }
                     let y = this.getViewer().getScrollY();
-                    y += e.deltaY < 0 ? 30 : -30;
+                    y -= e.deltaY;
                     this.setClientScrollY(y);
                 }
                 setClientScrollY(y) {
@@ -4136,7 +4176,9 @@ var colibri;
                     this.add(new controls.Action(config));
                 }
                 addAction(config) {
-                    this.add(new controls.Action(config));
+                    const action = new controls.Action(config);
+                    this.add(action);
+                    return action;
                 }
                 add(action) {
                     const btnElement = document.createElement("div");
@@ -4205,6 +4247,7 @@ var colibri;
                 constructor(element, tooltip) {
                     this._element = element;
                     this._tooltip = tooltip;
+                    this._element["__TooltipManager"] = this;
                     this._token = 0;
                     this._element.addEventListener("mouseenter", e => {
                         this.start();
@@ -4223,6 +4266,15 @@ var colibri;
                             this.start();
                         }
                     });
+                }
+                getTooltipMessage() {
+                    return this._tooltip;
+                }
+                setTooltipMessage(tooltip) {
+                    this._tooltip = tooltip;
+                }
+                static getTooltipManager(element) {
+                    return element["__TooltipManager"];
                 }
                 start() {
                     this._enterTime = Date.now();
@@ -4266,6 +4318,11 @@ var colibri;
             }
             class Tooltip {
                 static tooltip(element, tooltip) {
+                    const manager = TooltipManager.getTooltipManager(element);
+                    if (manager) {
+                        manager.setTooltipMessage(tooltip);
+                        return;
+                    }
                     // tslint:disable-next-line:no-unused-expression
                     new TooltipManager(element, tooltip);
                 }
@@ -4339,8 +4396,6 @@ var colibri;
         (function (controls) {
             controls.CONTROL_PADDING = 3;
             controls.ROW_HEIGHT = 20;
-            controls.FONT_HEIGHT = 14;
-            controls.FONT_WITH = 12;
             controls.FONT_OFFSET = 2;
             controls.FONT_FAMILY = "Arial, Helvetica, sans-serif";
             controls.ACTION_WIDTH = 20;
@@ -4348,6 +4403,30 @@ var colibri;
             controls.PANEL_TITLE_HEIGHT = 22;
             controls.FILTERED_VIEWER_FILTER_HEIGHT = 30;
             controls.SPLIT_OVER_ZONE_WIDTH = 6;
+            const DEFAULT_FONT_HEIGHT = 14;
+            let fontHeight = (() => {
+                const size = Number.parseInt(window.localStorage.getItem("canvasFontSize"), 10);
+                if (isNaN(size)) {
+                    return DEFAULT_FONT_HEIGHT;
+                }
+                return size;
+            })();
+            function getCanvasFontHeight() {
+                return fontHeight;
+            }
+            controls.getCanvasFontHeight = getCanvasFontHeight;
+            function incrementFontHeight(delta) {
+                fontHeight = Math.max(DEFAULT_FONT_HEIGHT, fontHeight + delta);
+                localStorage.setItem("canvasFontSize", fontHeight.toString());
+                colibri.Platform.getWorkbench().eventThemeChanged.fire(controls.Controls.getTheme());
+            }
+            controls.incrementFontHeight = incrementFontHeight;
+            function resetFontHeight() {
+                fontHeight = DEFAULT_FONT_HEIGHT;
+                localStorage.setItem("canvasFontSize", fontHeight.toString());
+                colibri.Platform.getWorkbench().eventThemeChanged.fire(controls.Controls.getTheme());
+            }
+            controls.resetFontHeight = resetFontHeight;
             function setElementBounds(elem, bounds) {
                 if (bounds.x !== undefined) {
                     elem.style.left = bounds.x + "px";
@@ -4388,7 +4467,7 @@ var colibri;
                         super("div", "Dialog", ...classList);
                         this.eventDialogClose = new controls.ListenerList();
                         this._closeWithEscapeKey = true;
-                        this.setSize(400 * controls.DEVICE_PIXEL_RATIO, 300 * controls.DEVICE_PIXEL_RATIO);
+                        this.setSize(400, 300, true);
                         this._parentDialog = Dialog._dialogs.length === 0 ?
                             null : Dialog._dialogs[Dialog._dialogs.length - 1];
                         if (Dialog._firstTime) {
@@ -4505,12 +4584,22 @@ var colibri;
                             height: this._height
                         });
                     }
-                    setSize(width, height, adjustToDPR = false) {
+                    setSize(width, height, keep1080pRatio = false) {
                         if (width !== undefined) {
-                            this._width = Math.floor(width * (adjustToDPR ? controls.DEVICE_PIXEL_RATIO : 1));
+                            if (keep1080pRatio) {
+                                this._width = Math.max(width, Math.floor(width / 1920 * window.innerWidth));
+                            }
+                            else {
+                                this._width = width;
+                            }
                         }
                         if (height !== undefined) {
-                            this._height = Math.floor(height * (adjustToDPR ? controls.DEVICE_PIXEL_RATIO : 1));
+                            if (keep1080pRatio) {
+                                this._height = Math.max(height, Math.floor(height / 1080 * window.innerHeight));
+                            }
+                            else {
+                                this._height = height;
+                            }
                         }
                         const margin = window.innerHeight * 0.2;
                         if (this._width > window.innerWidth) {
@@ -4891,6 +4980,47 @@ var colibri;
                     }
                 }
                 dialogs.ConfirmDialog = ConfirmDialog;
+            })(dialogs = controls.dialogs || (controls.dialogs = {}));
+        })(controls = ui.controls || (ui.controls = {}));
+    })(ui = colibri.ui || (colibri.ui = {}));
+})(colibri || (colibri = {}));
+var colibri;
+(function (colibri) {
+    var ui;
+    (function (ui) {
+        var controls;
+        (function (controls) {
+            var dialogs;
+            (function (dialogs) {
+                class FormDialog extends dialogs.Dialog {
+                    constructor() {
+                        super();
+                    }
+                    createDialogArea() {
+                        const clientArea = document.createElement("div");
+                        clientArea.classList.add("DialogClientArea");
+                        clientArea.style.display = "grid";
+                        clientArea.style.alignItems = "center";
+                        clientArea.style.gridTemplateColumns = "auto 1fr";
+                        clientArea.style.gridRowGap = "5px";
+                        clientArea.style.gridColumnGap = "5px";
+                        clientArea.style.height = "min-content";
+                        this.getElement().appendChild(clientArea);
+                        this._formElement = clientArea;
+                        this._formBuilder = new controls.properties.EasyFormBuilder(this._formElement);
+                    }
+                    layout() {
+                        super.layout();
+                        this.getElement().style.height = "auto";
+                    }
+                    getBuilder() {
+                        return this._formBuilder;
+                    }
+                    getFormElement() {
+                        return this._formElement;
+                    }
+                }
+                dialogs.FormDialog = FormDialog;
             })(dialogs = controls.dialogs || (controls.dialogs = {}));
         })(controls = ui.controls || (ui.controls = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -5328,15 +5458,16 @@ var colibri;
                         }
                     }
                     onWheel(e) {
+                        e.preventDefault();
                         if (!e.shiftKey) {
                             return;
                         }
-                        if (e.deltaY < 0) {
-                            this.setCellSize(this.getCellSize() + controls.ROW_HEIGHT);
-                        }
-                        else if (this._cellSize > controls.ICON_SIZE) {
-                            this.setCellSize(this.getCellSize() - controls.ROW_HEIGHT);
-                        }
+                        this.setCellSize(this.getCellSize() - e.deltaY / 2);
+                        // if (e.deltaY < 0) {
+                        //    this.setCellSize(this.getCellSize() + ROW_HEIGHT);
+                        // } else if (this._cellSize > ICON_SIZE) {
+                        //     this.setCellSize(this.getCellSize() - ROW_HEIGHT);
+                        // }
                         this.saveCellSize();
                         this.repaint();
                     }
@@ -5364,12 +5495,16 @@ var colibri;
                         }
                         else {
                             const data = item.data;
-                            if (e.button === 2) {
+                            if (e.button === 2 && this._selectedObjects.size === 1) {
                                 this._selectedObjects = new Set([data]);
                                 selChanged = true;
                             }
                             else {
-                                if (e.ctrlKey || e.metaKey) {
+                                if (e.button === 2) {
+                                    this._selectedObjects.add(data);
+                                    selChanged = true;
+                                }
+                                else if (e.ctrlKey || e.metaKey) {
                                     if (this._selectedObjects.has(data)) {
                                         this._selectedObjects.delete(data);
                                     }
@@ -5406,7 +5541,7 @@ var colibri;
                     initContext() {
                         this._context = this.getCanvas().getContext("2d");
                         this._context.imageSmoothingEnabled = false;
-                        this._context.font = `${controls.FONT_HEIGHT}px sans-serif`;
+                        this._context.font = `${controls.getCanvasFontHeight()}px sans-serif`;
                         controls.Controls.adjustCanvasDPI(this.getCanvas());
                     }
                     setExpanded(obj, expanded) {
@@ -5593,8 +5728,12 @@ var colibri;
                     setState(state) {
                         this._expandedObjects = state.expandedObjects;
                         this._selectedObjects = state.selectedObjects;
-                        this.setFilterText(state.filterText);
-                        this.setCellSize(state.cellSize);
+                        if (state.filterText !== this.getFilterText()) {
+                            this.setFilterText(state.filterText);
+                        }
+                        if (state.cellSize !== this.getCellSize()) {
+                            this.setCellSize(state.cellSize);
+                        }
                     }
                     selectAll() {
                         // first, compute all paintItems
@@ -5954,7 +6093,7 @@ var colibri;
                 class ThemesDialog extends controls.dialogs.ViewerDialog {
                     constructor() {
                         super(new ThemeViewer(), false);
-                        this.setSize(200, 300, true);
+                        this.setSize(400, 400, true);
                     }
                     create() {
                         super.create();
@@ -6203,6 +6342,274 @@ var colibri;
         (function (controls) {
             var properties;
             (function (properties) {
+                class EasyFormBuilder {
+                    constructor(parent) {
+                        this._formBuilder = new properties.FormBuilder();
+                        this._parent = parent;
+                    }
+                    createLabel(text, tooltip) {
+                        return this._formBuilder.createLabel(this._parent, text, tooltip);
+                    }
+                    createButton(text, callback) {
+                        return this._formBuilder.createButton(this._parent, text, callback);
+                    }
+                    createMenuButton(text, getItems, callback) {
+                        return this._formBuilder.createMenuButton(this._parent, text, getItems, callback);
+                    }
+                    createText(readOnly) {
+                        return this._formBuilder.createText(this._parent, readOnly);
+                    }
+                    createTextDialog(dialogTitle, readOnly) {
+                        return this._formBuilder.createTextDialog(this._parent, dialogTitle, readOnly);
+                    }
+                    createColor(readOnly, allowAlpha) {
+                        return this._formBuilder.createColor(this._parent, readOnly, allowAlpha);
+                    }
+                    createTextArea(readOnly) {
+                        return this._formBuilder.createTextArea(this._parent, readOnly);
+                    }
+                }
+                properties.EasyFormBuilder = EasyFormBuilder;
+            })(properties = controls.properties || (controls.properties = {}));
+        })(controls = ui.controls || (ui.controls = {}));
+    })(ui = colibri.ui || (colibri.ui = {}));
+})(colibri || (colibri = {}));
+var colibri;
+(function (colibri) {
+    var ui;
+    (function (ui) {
+        var controls;
+        (function (controls) {
+            var properties;
+            (function (properties) {
+                class FormBuilder {
+                    createSeparator(parent, text) {
+                        const label = document.createElement("label");
+                        label.classList.add("formSeparator");
+                        label.innerText = text;
+                        parent.appendChild(label);
+                        return label;
+                    }
+                    createLabel(parent, text = "", tooltip = "") {
+                        const label = document.createElement("label");
+                        label.classList.add("formLabel");
+                        label.innerText = text;
+                        if (tooltip) {
+                            controls.Tooltip.tooltip(label, tooltip);
+                        }
+                        parent.appendChild(label);
+                        return label;
+                    }
+                    createButton(parent, text, callback) {
+                        const btn = document.createElement("button");
+                        btn.innerText = text;
+                        btn.addEventListener("click", e => callback(e));
+                        parent.appendChild(btn);
+                        return btn;
+                    }
+                    createMenuButton(parent, text, getItems, callback) {
+                        const btn = this.createButton(parent, text, e => {
+                            const menu = new controls.Menu();
+                            for (const item of getItems()) {
+                                menu.add(new controls.Action({
+                                    text: item.name,
+                                    icon: item.icon,
+                                    callback: () => {
+                                        callback(item.value);
+                                    }
+                                }));
+                            }
+                            menu.createWithEvent(e);
+                        });
+                        return btn;
+                    }
+                    createText(parent, readOnly = false) {
+                        const text = document.createElement("input");
+                        text.type = "text";
+                        text.classList.add("formText");
+                        text.readOnly = readOnly;
+                        parent.appendChild(text);
+                        return text;
+                    }
+                    createButtonDialog(args) {
+                        const iconControl = new controls.IconControl(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_FOLDER));
+                        const buttonElement = document.createElement("button");
+                        buttonElement.appendChild(iconControl.getCanvas());
+                        buttonElement.addEventListener("click", async (e) => {
+                            const value = args.getValue();
+                            const viewer = await args.createDialogViewer(value);
+                            const dlg = new controls.dialogs.ViewerDialog(viewer, true);
+                            dlg.setSize(undefined, window.innerHeight * 2 / 3);
+                            dlg.create();
+                            dlg.setTitle(args.dialogTittle);
+                            dlg.enableButtonOnlyWhenOneElementIsSelected(dlg.addOpenButton("Select", sel => {
+                                const obj = sel[0];
+                                const value = args.dialogElementToString(viewer, obj);
+                                args.onValueSelected(value);
+                                if (args.updateIconCallback) {
+                                    args.updateIconCallback(iconControl, value);
+                                }
+                            }));
+                            dlg.addCancelButton();
+                            controls.viewers.GridTreeViewerRenderer.expandSections(viewer);
+                        });
+                        const updateDialogButtonIcon = () => {
+                            if (args.updateIconCallback) {
+                                const value = args.getValue();
+                                args.updateIconCallback(iconControl, value);
+                            }
+                        };
+                        updateDialogButtonIcon();
+                        return { buttonElement, updateDialogButtonIcon };
+                    }
+                    createTextDialog(parent, dialogTitle, readOnly = false) {
+                        const text = this.createTextArea(parent, false);
+                        text.rows = 1;
+                        const btn = document.createElement("button");
+                        btn.textContent = "...";
+                        btn.addEventListener("click", () => {
+                            const dlg = new properties.StringDialog();
+                            dlg.create();
+                            dlg.setTitle(dialogTitle);
+                            dlg.addButton("Accept", () => {
+                                text.value = dlg.getValue();
+                                text.dispatchEvent(new Event("change"));
+                                dlg.close();
+                            });
+                            dlg.addCancelButton();
+                            dlg.setValue(text.value);
+                        });
+                        const container = document.createElement("div");
+                        container.classList.add("StringDialogField");
+                        container.appendChild(text);
+                        container.appendChild(btn);
+                        parent.appendChild(container);
+                        return { container, text, btn };
+                    }
+                    createColor(parent, readOnly = false, allowAlpha = true) {
+                        const text = document.createElement("input");
+                        text.type = "text";
+                        text.classList.add("formText");
+                        text.readOnly = readOnly;
+                        const btn = document.createElement("button");
+                        // btn.textContent = "...";
+                        btn.classList.add("ColorButton");
+                        btn.appendChild(new controls.IconControl(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_COLOR)).getCanvas());
+                        const colorElement = document.createElement("div");
+                        colorElement.style.display = "grid";
+                        colorElement.style.gridTemplateColumns = "1fr auto";
+                        colorElement.style.gap = "5px";
+                        colorElement.style.alignItems = "center";
+                        colorElement.appendChild(text);
+                        colorElement.appendChild(btn);
+                        if (parent) {
+                            parent.appendChild(colorElement);
+                        }
+                        btn.addEventListener("mousedown", e => {
+                            if (text.readOnly) {
+                                return;
+                            }
+                            e.preventDefault();
+                            e.stopImmediatePropagation();
+                            if (controls.ColorPickerManager.isActivePicker()) {
+                                controls.ColorPickerManager.closeActive();
+                                return;
+                            }
+                            const picker = controls.ColorPickerManager.createPicker();
+                            btn["__picker"] = picker;
+                            picker.setOptions({
+                                popup: "left",
+                                editor: false,
+                                alpha: allowAlpha,
+                                onClose: () => {
+                                    controls.ColorPickerManager.closeActive();
+                                },
+                                onDone: (color) => {
+                                    text.value = allowAlpha ? color.hex : color.hex.substring(0, 7);
+                                    btn.style.background = text.value;
+                                    text.dispatchEvent(new CustomEvent("change"));
+                                }
+                            });
+                            try {
+                                picker.setColour(text.value, false);
+                            }
+                            catch (e) {
+                                picker.setColour("#fff", false);
+                            }
+                            picker.show();
+                            const pickerElement = picker.domElement;
+                            const pickerBounds = pickerElement.getBoundingClientRect();
+                            const textBounds = text.getBoundingClientRect();
+                            pickerElement.getElementsByClassName("picker_arrow")[0].remove();
+                            let top = textBounds.top - pickerBounds.height;
+                            if (top + pickerBounds.height > window.innerHeight) {
+                                top = window.innerHeight - pickerBounds.height;
+                            }
+                            if (top < 0) {
+                                top = textBounds.bottom;
+                            }
+                            let left = textBounds.left;
+                            if (left + pickerBounds.width > window.innerWidth) {
+                                left = window.innerWidth - pickerBounds.width;
+                            }
+                            pickerElement.style.top = top + "px";
+                            pickerElement.style.left = left + "px";
+                        });
+                        return {
+                            element: colorElement,
+                            text: text,
+                            btn: btn
+                        };
+                    }
+                    createTextArea(parent, readOnly = false) {
+                        const text = document.createElement("textarea");
+                        text.classList.add("formText");
+                        text.readOnly = readOnly;
+                        parent.appendChild(text);
+                        return text;
+                    }
+                    createCheckbox(parent, label) {
+                        const check = document.createElement("input");
+                        if (label) {
+                            const id = (properties.PropertySection.NEXT_ID++).toString();
+                            label.htmlFor = id;
+                            check.setAttribute("id", id);
+                        }
+                        check.type = "checkbox";
+                        check.classList.add("formCheckbox");
+                        parent.appendChild(check);
+                        return check;
+                    }
+                    createMenuIcon(parent, menuProvider) {
+                        const icon = new controls.IconControl(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_SMALL_MENU));
+                        icon.getCanvas().classList.add("IconButton");
+                        parent.appendChild(icon.getCanvas());
+                        icon.getCanvas().addEventListener("click", e => {
+                            const menu = menuProvider();
+                            menu.createWithEvent(e);
+                        });
+                        return icon;
+                    }
+                    createIcon(parent, iconImage) {
+                        const icon = new controls.IconControl(iconImage);
+                        parent.appendChild(icon.getCanvas());
+                        return icon;
+                    }
+                }
+                FormBuilder.NEXT_ID = 0;
+                properties.FormBuilder = FormBuilder;
+            })(properties = controls.properties || (controls.properties = {}));
+        })(controls = ui.controls || (ui.controls = {}));
+    })(ui = colibri.ui || (colibri.ui = {}));
+})(colibri || (colibri = {}));
+var colibri;
+(function (colibri) {
+    var ui;
+    (function (ui) {
+        var controls;
+        (function (controls) {
+            var properties;
+            (function (properties) {
                 class PropertySectionPane extends controls.Control {
                     constructor(page, section) {
                         super();
@@ -6214,10 +6621,10 @@ var colibri;
                         if (!this._formArea) {
                             this._titleArea = document.createElement("div");
                             this._titleArea.classList.add("PropertyTitleArea");
-                            this._titleArea.addEventListener("mouseup", () => this.toggleSection());
+                            this._titleArea.addEventListener("click", () => this.toggleSection());
                             this._expandIconControl = new controls.IconControl(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_CONTROL_TREE_COLLAPSE));
                             this._expandIconControl.getCanvas().classList.add("expanded");
-                            this._expandIconControl.getCanvas().addEventListener("mouseup", e => {
+                            this._expandIconControl.getCanvas().addEventListener("click", e => {
                                 e.stopImmediatePropagation();
                                 this.toggleSection();
                             });
@@ -6228,7 +6635,8 @@ var colibri;
                             this._menuIcon = new controls.IconControl(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_SMALL_MENU));
                             this._menuIcon.getCanvas().classList.add("IconButton");
                             this._menuIcon.getCanvas().style.visibility = this._section.hasMenu() ? "visible" : "hidden";
-                            this._menuIcon.getCanvas().addEventListener("mouseup", e => {
+                            this._menuIcon.getCanvas().addEventListener("click", e => {
+                                e.stopPropagation();
                                 e.stopImmediatePropagation();
                                 if (this._section.hasMenu()) {
                                     const menu = new controls.Menu();
@@ -6357,16 +6765,18 @@ var colibri;
                             }
                         }
                         this._selection = selection;
-                        const tabSection = this._sectionProvider.getSelectedTabSection();
                         for (const pane of this._sectionPanes) {
                             const section = pane.getSection();
-                            let show = section.canShowInTabSection(tabSection) && section.canEditNumber(n);
+                            let show = section.canEditNumber(n);
                             if (show) {
                                 for (const obj of selection) {
                                     if (!section.canEdit(obj, n)) {
                                         show = false;
                                         break;
                                     }
+                                }
+                                if (show && !section.canEditAll(selection)) {
+                                    show = false;
                                 }
                             }
                             show = show && sectionIdSet.has(section.getId());
@@ -6405,9 +6815,11 @@ var colibri;
                     getSelection() {
                         return this._selection;
                     }
-                    setSelection(sel) {
+                    setSelection(sel, update = true) {
                         this._selection = sel;
-                        this.updateWithSelection();
+                        if (update) {
+                            this.updateWithSelection();
+                        }
                     }
                     setSectionProvider(provider) {
                         this._sectionProvider = provider;
@@ -6422,6 +6834,7 @@ var colibri;
         })(controls = ui.controls || (ui.controls = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
 })(colibri || (colibri = {}));
+/// <reference path="./FormBuilder.ts" />
 var colibri;
 (function (colibri) {
     var ui;
@@ -6430,8 +6843,9 @@ var colibri;
         (function (controls) {
             var properties;
             (function (properties) {
-                class PropertySection {
+                class PropertySection extends properties.FormBuilder {
                     constructor(page, id, title, fillSpace = false, collapsedByDefault = false, tabSectionByDefault) {
+                        super();
                         this._page = page;
                         this._id = id;
                         this._title = title;
@@ -6439,34 +6853,12 @@ var colibri;
                         this._collapsedByDefault = collapsedByDefault;
                         this._updaters = [];
                         const localTabSection = localStorage.getItem(this.localStorageKey("tabSection"));
-                        if (localTabSection) {
-                            if (localTabSection !== "undefined") {
-                                this._tabSection = localTabSection;
-                            }
-                        }
-                        else {
-                            this._tabSection = tabSectionByDefault;
-                        }
                     }
-                    canShowInTabSection(tabSection) {
-                        return this._tabSection === tabSection;
-                    }
-                    setTabSection(tabSection) {
-                        this._tabSection = tabSection;
-                        localStorage.setItem(this.localStorageKey("tabSection"), tabSection || "undefined");
+                    canEditAll(selection) {
+                        return true;
                     }
                     localStorageKey(prop) {
                         return "PropertySection[" + this._id + "]." + prop;
-                    }
-                    createTabSectionMenuItem(menu, tabSection) {
-                        menu.addAction({
-                            text: "Show In " + tabSection,
-                            selected: this._tabSection === tabSection,
-                            callback: () => {
-                                this.setTabSection(this._tabSection === tabSection ? undefined : tabSection);
-                                this.getPage().updateWithSelection();
-                            }
-                        });
                     }
                     createMenu(menu) {
                         // empty by default
@@ -6567,178 +6959,7 @@ var colibri;
                         parent.appendChild(div);
                         return div;
                     }
-                    createLabel(parent, text = "", tooltip = "") {
-                        const label = document.createElement("label");
-                        label.classList.add("formLabel");
-                        label.innerText = text;
-                        if (tooltip) {
-                            controls.Tooltip.tooltip(label, tooltip);
-                        }
-                        parent.appendChild(label);
-                        return label;
-                    }
-                    createButton(parent, text, callback) {
-                        const btn = document.createElement("button");
-                        btn.innerText = text;
-                        btn.addEventListener("click", e => callback(e));
-                        parent.appendChild(btn);
-                        return btn;
-                    }
-                    createMenuButton(parent, text, items, callback) {
-                        const btn = this.createButton(parent, text, e => {
-                            const menu = new controls.Menu();
-                            for (const item of items) {
-                                menu.add(new controls.Action({
-                                    text: item.name,
-                                    icon: item.icon,
-                                    callback: () => {
-                                        callback(item.value);
-                                    }
-                                }));
-                            }
-                            menu.createWithEvent(e);
-                        });
-                        return btn;
-                    }
-                    createText(parent, readOnly = false) {
-                        const text = document.createElement("input");
-                        text.type = "text";
-                        text.classList.add("formText");
-                        text.readOnly = readOnly;
-                        parent.appendChild(text);
-                        return text;
-                    }
-                    createTextDialog(parent, dialogTitle, readOnly = false) {
-                        const text = this.createTextArea(parent, false);
-                        text.rows = 1;
-                        const btn = document.createElement("button");
-                        btn.textContent = "...";
-                        btn.addEventListener("click", () => {
-                            const dlg = new properties.StringDialog();
-                            dlg.create();
-                            dlg.setTitle(dialogTitle);
-                            dlg.addButton("Accept", () => {
-                                text.value = dlg.getValue();
-                                text.dispatchEvent(new Event("change"));
-                                dlg.close();
-                            });
-                            dlg.addCancelButton();
-                            dlg.setValue(text.value);
-                        });
-                        const container = document.createElement("div");
-                        container.classList.add("StringDialogField");
-                        container.appendChild(text);
-                        container.appendChild(btn);
-                        parent.appendChild(container);
-                        return { container, text, btn };
-                    }
-                    createColor(parent, readOnly = false, allowAlpha = true) {
-                        const text = document.createElement("input");
-                        text.type = "text";
-                        text.classList.add("formText");
-                        text.readOnly = readOnly;
-                        const btn = document.createElement("button");
-                        // btn.textContent = "...";
-                        btn.classList.add("ColorButton");
-                        btn.appendChild(new controls.IconControl(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_COLOR)).getCanvas());
-                        const colorElement = document.createElement("div");
-                        colorElement.style.display = "grid";
-                        colorElement.style.gridTemplateColumns = "1fr auto";
-                        colorElement.style.gridGap = "5px";
-                        colorElement.style.alignItems = "center";
-                        colorElement.appendChild(text);
-                        colorElement.appendChild(btn);
-                        parent.appendChild(colorElement);
-                        btn.addEventListener("mousedown", e => {
-                            if (text.readOnly) {
-                                return;
-                            }
-                            e.preventDefault();
-                            e.stopImmediatePropagation();
-                            if (controls.ColorPickerManager.isActivePicker()) {
-                                controls.ColorPickerManager.closeActive();
-                                return;
-                            }
-                            const picker = controls.ColorPickerManager.createPicker();
-                            btn["__picker"] = picker;
-                            picker.setOptions({
-                                popup: "left",
-                                editor: false,
-                                alpha: false,
-                                onClose: () => {
-                                    controls.ColorPickerManager.closeActive();
-                                },
-                                onDone: (color) => {
-                                    text.value = allowAlpha ? color.hex : color.hex.substring(0, 7);
-                                    btn.style.background = text.value;
-                                    text.dispatchEvent(new CustomEvent("change"));
-                                }
-                            });
-                            try {
-                                picker.setColour(text.value, false);
-                            }
-                            catch (e) {
-                                picker.setColour("#fff", false);
-                            }
-                            picker.show();
-                            const pickerElement = picker.domElement;
-                            const pickerBounds = pickerElement.getBoundingClientRect();
-                            const textBounds = text.getBoundingClientRect();
-                            pickerElement.getElementsByClassName("picker_arrow")[0].remove();
-                            let top = textBounds.top - pickerBounds.height;
-                            if (top + pickerBounds.height > window.innerHeight) {
-                                top = window.innerHeight - pickerBounds.height;
-                            }
-                            if (top < 0) {
-                                top = textBounds.bottom;
-                            }
-                            let left = textBounds.left;
-                            if (left + pickerBounds.width > window.innerWidth) {
-                                left = window.innerWidth - pickerBounds.width;
-                            }
-                            pickerElement.style.top = top + "px";
-                            pickerElement.style.left = left + "px";
-                        });
-                        return {
-                            element: colorElement,
-                            text: text,
-                            btn: btn
-                        };
-                    }
-                    createTextArea(parent, readOnly = false) {
-                        const text = document.createElement("textarea");
-                        text.classList.add("formText");
-                        text.readOnly = readOnly;
-                        parent.appendChild(text);
-                        return text;
-                    }
-                    createCheckbox(parent, label) {
-                        const check = document.createElement("input");
-                        if (label) {
-                            const id = (PropertySection.NEXT_ID++).toString();
-                            label.htmlFor = id;
-                            check.setAttribute("id", id);
-                        }
-                        check.type = "checkbox";
-                        check.classList.add("formCheckbox");
-                        parent.appendChild(check);
-                        return check;
-                    }
-                    createMenuIcon(parent, menuProvider, alignRight = true) {
-                        const icon = new controls.IconControl(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_SMALL_MENU));
-                        icon.getCanvas().classList.add("IconButton");
-                        parent.appendChild(icon.getCanvas());
-                        icon.getCanvas().addEventListener("click", e => {
-                            const menu = menuProvider();
-                            menu.createWithEvent(e);
-                        });
-                        if (alignRight) {
-                            icon.getCanvas().style.float = "right";
-                        }
-                        return icon;
-                    }
                 }
-                PropertySection.NEXT_ID = 0;
                 properties.PropertySection = PropertySection;
             })(properties = controls.properties || (controls.properties = {}));
         })(controls = ui.controls || (ui.controls = {}));
@@ -6755,29 +6976,6 @@ var colibri;
                 class PropertySectionProvider {
                     constructor(id) {
                         this._id = id;
-                        if (this._id) {
-                            this._selectedTabSection = localStorage.getItem(this.localStorageKey("selectedTabSection"));
-                        }
-                    }
-                    getSelectedTabSection() {
-                        return this._selectedTabSection;
-                    }
-                    localStorageKey(prop) {
-                        return `PropertySectionProvider[${this._id}].${prop}`;
-                    }
-                    setSelectedTabSection(tabSection) {
-                        this._selectedTabSection = tabSection;
-                        if (this._id) {
-                            if (tabSection) {
-                                localStorage.setItem(this.localStorageKey("selectedTabSection"), tabSection);
-                            }
-                            else {
-                                localStorage.removeItem(this.localStorageKey("selectedTabSection"));
-                            }
-                        }
-                    }
-                    getTabSections() {
-                        return [];
                     }
                     getEmptySelectionObject() {
                         return null;
@@ -7269,7 +7467,7 @@ var colibri;
                         const roots = contentProvider.getRoots(viewer.getInput());
                         const treeIconList = [];
                         const paintItems = [];
-                        this._contentHeight = Number.MIN_VALUE;
+                        this._contentHeight = Number.MIN_SAFE_INTEGER;
                         this.paintItems(roots, treeIconList, paintItems, null, x, y);
                         // for (const paintItem of paintItems) {
                         //     contentHeight = Math.max(paintItem.y + paintItem.h, contentHeight);
@@ -7354,7 +7552,7 @@ var colibri;
                             args2 = new viewers.RenderCellArgs(args.canvasContext, args.x, args.y, args.h, args.h, args.obj, args.viewer);
                             if (renderCell) {
                                 x += args.h + 4;
-                                y += args.h / 2 + controls.FONT_HEIGHT / 2;
+                                y += args.h / 2 + controls.getCanvasFontHeight() / 2;
                             }
                             else {
                                 y += 15;
@@ -7436,6 +7634,7 @@ var colibri;
                         // nothing by default
                     }
                     prepareContextForText(args) {
+                        args.canvasContext.font = controls.getCanvasFontHeight() + "px " + controls.FONT_FAMILY;
                         if (args.viewer.isSelected(args.obj)) {
                             args.canvasContext.fillStyle = controls.Controls.getTheme().viewerSelectionForeground;
                         }
@@ -7469,7 +7668,7 @@ var colibri;
                 class GridTreeViewerRenderer extends viewers.TreeViewerRenderer {
                     constructor(viewer, flat = false, center = false) {
                         super(viewer);
-                        viewer.setCellSize(128 * controls.DEVICE_PIXEL_RATIO);
+                        viewer.setCellSize(128);
                         viewer.restoreCellSize();
                         this._center = center;
                         this._flat = flat;
@@ -7488,7 +7687,7 @@ var colibri;
                     }
                     setPaintItemShadow(paintShadow) {
                         this._paintItemShadow = paintShadow;
-                        this.getViewer().setCellSize(64 * controls.DEVICE_PIXEL_RATIO, true);
+                        this.getViewer().setCellSize(64, true);
                         return this;
                     }
                     isPaintItemShadow() {
@@ -7523,7 +7722,7 @@ var colibri;
                         const viewer = this.getViewer();
                         let cellSize = viewer.getCellSize();
                         if (this._flat) {
-                            const limit = 64 * controls.DEVICE_PIXEL_RATIO;
+                            const limit = 64;
                             if (cellSize < limit) {
                                 cellSize = limit;
                                 viewer.setCellSize(cellSize);
@@ -7538,7 +7737,7 @@ var colibri;
                         const offset = this._center ?
                             Math.floor(b.width % (viewer.getCellSize() + viewers.TREE_RENDERER_GRID_PADDING) / 2)
                             : (this._isSectionCriteria === undefined ? viewers.TREE_RENDERER_GRID_PADDING : viewers.TREE_RENDERER_GRID_PADDING * 3);
-                        this._contentHeight = Number.MIN_VALUE;
+                        this._contentHeight = Number.MIN_SAFE_INTEGER;
                         this.paintGrid(objects, treeIconList, paintItems, null, x + offset, y + viewers.TREE_RENDERER_GRID_PADDING, offset, 0, undefined, undefined);
                     }
                     paintGrid(objects, treeIconList, paintItems, parentPaintItem, x, y, offset, depth, sectionStart, sectionEnd) {
@@ -7611,6 +7810,7 @@ var colibri;
                                         }
                                         x = offset;
                                     }
+                                    this._contentHeight = Math.max(this._contentHeight, y);
                                     // end drawing section
                                 }
                                 else {
@@ -8310,7 +8510,7 @@ var colibri;
                     return false;
                 }
                 createEditor() {
-                    return this._newEditor();
+                    return this._newEditor(this);
                 }
             }
             ide.ContentTypeEditorFactory = ContentTypeEditorFactory;
@@ -8633,7 +8833,7 @@ var colibri;
             class EditorArea extends ide.PartFolder {
                 constructor() {
                     super("EditorArea");
-                    this.setTabIconSize(ui.controls.ICON_SIZE * 3);
+                    this.setTabIconSize(ui.controls.RENDER_ICON_SIZE * 3);
                 }
                 activateEditor(editor) {
                     super.selectTabWithContent(editor);
@@ -9313,14 +9513,6 @@ var colibri;
                     const storage = ide.Workbench.getWorkbench().getFileStorage();
                     return await storage.copyFile(fromFile, toFile);
                 }
-                static async getProjects_async(workspacePath) {
-                    const storage = ide.Workbench.getWorkbench().getFileStorage();
-                    return storage.getProjects(workspacePath);
-                }
-                static async getProjectTemplates_async() {
-                    const storage = ide.Workbench.getWorkbench().getFileStorage();
-                    return storage.getProjectTemplates();
-                }
                 static async createProject_async(templatePath, projectName) {
                     const storage = ide.Workbench.getWorkbench().getFileStorage();
                     return storage.createProject(templatePath, projectName);
@@ -9559,7 +9751,7 @@ var colibri;
                     super("QuickEditorDialog");
                     this._file = file;
                     this._editorState = editorState;
-                    this.setSize(Math.floor(window.innerWidth * 0.5), Math.floor(window.innerHeight * 0.5));
+                    this.setSize(1100, 800, true);
                 }
                 goFront() {
                     this.layout();
@@ -9808,9 +10000,11 @@ var colibri;
                     this._created = true;
                     window.addEventListener("resize", () => this.layout());
                     colibri.Platform.getWorkbench().eventThemeChanged.addListener(() => this.layout());
-                    ide.FileUtils.getFileStorage().addChangeListener(e => {
-                        this.onStorageChanged(e);
-                    });
+                    if (colibri.CAPABILITY_FILE_STORAGE) {
+                        ide.FileUtils.getFileStorage().addChangeListener(e => {
+                            this.onStorageChanged(e);
+                        });
+                    }
                     this._toolbar = new ide.MainToolbar();
                     this._clientArea = new ui.controls.Control("div", "WindowClientArea");
                     this._clientArea.setLayout(new ui.controls.FillLayout());
@@ -9925,9 +10119,12 @@ var colibri;
                             keys.push("Alt");
                         }
                         if (this._key) {
-                            keys.push(this._key);
+                            keys.push(this.clearKeyCode(this._key));
                         }
                         return keys.join("+");
+                    }
+                    clearKeyCode(keyCode) {
+                        return keyCode.replace("Key", "").replace("Digit", "").replace("Arrow", "");
                     }
                     matchesKeys(event) {
                         return (event.ctrlKey || event.metaKey) === this._control
@@ -9979,6 +10176,9 @@ var colibri;
                 actions.CMD_PASTE = "colibri.ui.ide.actions.Paste";
                 actions.CMD_SHOW_COMMENT_DIALOG = "colibri.ui.ide.actions.ShowCommentDialog";
                 actions.CMD_CHANGE_THEME = "phasereditor2d.ide.ui.actions.SwitchTheme";
+                actions.CMD_INCR_CANVAS_FONT_HEIGHT = "phasereditor2d.ide.ui.actions.IncrementCanvasFontHeight";
+                actions.CMD_DECR_CANVAS_FONT_HEIGHT = "phasereditor2d.ide.ui.actions.DecrementCanvasFontHeight";
+                actions.CMD_RESET_CANVAS_FONT_HEIGHT = "phasereditor2d.ide.ui.actions.ResetCanvasFontHeight";
                 function isViewerScope(args) {
                     return getViewer(args) !== null;
                 }
@@ -10011,6 +10211,48 @@ var colibri;
                         ColibriCommands.initPalette(manager);
                         ColibriCommands.initCommentDialog(manager);
                         ColibriCommands.initTheme(manager);
+                        ColibriCommands.initFontSize(manager);
+                    }
+                    static initFontSize(manager) {
+                        manager.add({
+                            command: {
+                                id: actions.CMD_INCR_CANVAS_FONT_HEIGHT,
+                                category: actions.CAT_GENERAL,
+                                name: "Increment Viewer Font Size",
+                                tooltip: "Increments the font size of viewers"
+                            },
+                            handler: {
+                                executeFunc: args => {
+                                    ui.controls.incrementFontHeight(1);
+                                }
+                            }
+                        });
+                        manager.add({
+                            command: {
+                                id: actions.CMD_DECR_CANVAS_FONT_HEIGHT,
+                                category: actions.CAT_GENERAL,
+                                name: "Decrement Viewer Font Size",
+                                tooltip: "Decrement the font size of viewers"
+                            },
+                            handler: {
+                                executeFunc: args => {
+                                    ui.controls.incrementFontHeight(-1);
+                                }
+                            }
+                        });
+                        manager.add({
+                            command: {
+                                id: actions.CMD_RESET_CANVAS_FONT_HEIGHT,
+                                category: actions.CAT_GENERAL,
+                                name: "Reset Viewer Font Size",
+                                tooltip: "Reset the font size of viewers"
+                            },
+                            handler: {
+                                executeFunc: args => {
+                                    ui.controls.resetFontHeight();
+                                }
+                            }
+                        });
                     }
                     static initTheme(manager) {
                         // theme dialog
@@ -10080,7 +10322,7 @@ var colibri;
                             },
                             keys: {
                                 control: true,
-                                key: "K"
+                                key: "KeyK"
                             }
                         });
                     }
@@ -10102,11 +10344,13 @@ var colibri;
                         manager.addHandlerHelper(actions.CMD_EDITOR_TABS_SIZE_UP, e => true, args => colibri.Platform.getWorkbench().getActiveWindow().getEditorArea().incrementTabIconSize(5));
                         manager.addKeyBinding(actions.CMD_EDITOR_TABS_SIZE_DOWN, new ide.commands.KeyMatcher({
                             control: true,
-                            key: "3"
+                            key: "Digit3",
+                            keyLabel: "3",
                         }));
                         manager.addKeyBinding(actions.CMD_EDITOR_TABS_SIZE_UP, new ide.commands.KeyMatcher({
                             control: true,
-                            key: "4"
+                            key: "Digit4",
+                            keyLabel: "4",
                         }));
                         // close editor
                         manager.addCommandHelper({
@@ -10118,7 +10362,7 @@ var colibri;
                         manager.addHandlerHelper(actions.CMD_EDITOR_CLOSE, args => typeof args.activeEditor === "object", args => colibri.Platform.getWorkbench().getActiveWindow().getEditorArea().closeTab(args.activeEditor));
                         manager.addKeyBinding(actions.CMD_EDITOR_CLOSE, new KeyMatcher({
                             control: true,
-                            key: "Q"
+                            key: "KeyQ"
                         }));
                         // close all editors
                         manager.addCommandHelper({
@@ -10131,7 +10375,7 @@ var colibri;
                         manager.addKeyBinding(actions.CMD_EDITOR_CLOSE_ALL, new KeyMatcher({
                             control: true,
                             shift: true,
-                            key: "Q"
+                            key: "KeyQ"
                         }));
                     }
                     static initViewer(manager) {
@@ -10152,7 +10396,7 @@ var colibri;
                                 }
                             },
                             keys: {
-                                key: "C"
+                                key: "KeyC"
                             }
                         });
                         // select all
@@ -10169,7 +10413,7 @@ var colibri;
                         });
                         manager.addKeyBinding(actions.CMD_SELECT_ALL, new KeyMatcher({
                             control: true,
-                            key: "A"
+                            key: "KeyA"
                         }));
                         // collapse expand branch
                         manager.add({
@@ -10219,7 +10463,7 @@ var colibri;
                         manager.addHandlerHelper(actions.CMD_UNDO, args => args.activePart !== null, args => args.activePart.getUndoManager().undo());
                         manager.addKeyBinding(actions.CMD_UNDO, new KeyMatcher({
                             control: true,
-                            key: "Z"
+                            key: "KeyZ"
                         }));
                         // redo
                         manager.addCommandHelper({
@@ -10232,7 +10476,7 @@ var colibri;
                         manager.addKeyBinding(actions.CMD_REDO, new KeyMatcher({
                             control: true,
                             shift: true,
-                            key: "Z"
+                            key: "KeyZ"
                         }));
                         // update current editor
                         manager.addCommandHelper({
@@ -10241,11 +10485,6 @@ var colibri;
                             tooltip: "Refresh the current editor's content.",
                             category: actions.CAT_EDIT
                         });
-                        manager.addKeyBinding(actions.CMD_UPDATE_CURRENT_EDITOR, new KeyMatcher({
-                            control: true,
-                            alt: true,
-                            key: "U"
-                        }));
                     }
                     static initEdit(manager) {
                         // save
@@ -10268,7 +10507,7 @@ var colibri;
                             },
                             keys: {
                                 control: true,
-                                key: "S",
+                                key: "KeyS",
                                 filterInputElements: false
                             }
                         });
@@ -10305,7 +10544,7 @@ var colibri;
                             },
                             keys: {
                                 control: true,
-                                key: "C"
+                                key: "KeyC"
                             }
                         });
                         manager.add({
@@ -10317,7 +10556,7 @@ var colibri;
                             },
                             keys: {
                                 control: true,
-                                key: "X"
+                                key: "KeyX"
                             }
                         });
                         manager.add({
@@ -10329,7 +10568,7 @@ var colibri;
                             },
                             keys: {
                                 control: true,
-                                key: "V"
+                                key: "KeyV"
                             }
                         });
                     }
@@ -10790,14 +11029,13 @@ var colibri;
                         const filteredViewer = new ide.properties.FilteredViewerInPropertySection(this.getPage(), viewer, true);
                         parent.appendChild(filteredViewer.getElement());
                         this.addUpdater(async () => {
-                            console.log("update " + this.getId());
+                            // console.log("update " + this.getId());
                             const input = await this.getViewerInput();
-                            // clean the viewer first
-                            viewer.setInput([]);
-                            await viewer.repaint();
-                            viewer.setInput(input);
-                            viewer.repaint();
-                            // filteredViewer.resizeTo();
+                            // // clean the viewer first
+                            // viewer.setInput([]);
+                            // await viewer.repaint();
+                            viewer.setInput(input || []);
+                            filteredViewer.resizeTo();
                         });
                     }
                     canEditNumber(n) {
@@ -10949,15 +11187,22 @@ var colibri;
                             this._nameSet.add(name);
                         }
                     }
+                    trimNumbering(name) {
+                        return name.replace(/[0-9 _-]+$/, "");
+                    }
                     makeName(baseName) {
-                        let name;
-                        let i = 0;
-                        do {
-                            name = baseName + (i === 0 ? "" : "_" + i);
-                            i++;
-                        } while (this._nameSet.has(name));
-                        this._nameSet.add(name);
-                        return name;
+                        if (this._nameSet.has(baseName)) {
+                            baseName = this.trimNumbering(baseName);
+                            let name;
+                            let i = 0;
+                            do {
+                                name = baseName + (i === 0 ? "" : "_" + i);
+                                i++;
+                            } while (this._nameSet.has(name));
+                            this._nameSet.add(name);
+                            return name;
+                        }
+                        return baseName;
                     }
                 }
                 utils.NameMaker = NameMaker;

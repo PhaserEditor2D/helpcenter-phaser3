@@ -42,7 +42,7 @@ namespace helpcenter.main.ui {
             if (!(colibri.Platform.getWorkbench().getActivePart() instanceof views.FilesView)) {
 
                 menu.addAction({
-                    text: "Reveal In Phaser Files View",
+                    text: "Reveal In API Files View",
                     icon: colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_FOLDER),
                     callback: () => {
                         const view = (colibri.Platform.getWorkbench().getActiveWindow() as ui.MainWindow)

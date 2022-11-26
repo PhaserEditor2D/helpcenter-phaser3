@@ -145,7 +145,14 @@ namespace colibri.ui.controls {
                         }
 
                         {
-                            const iconControl = new controls.IconControl((item.getIcon() as IconImage).getNegativeThemeImage());
+                            let icon = item.getIcon();
+
+                            if (icon instanceof IconImage) {
+
+                                icon = icon.getNegativeThemeImage()
+                            }
+
+                            const iconControl = new controls.IconControl(icon);
                             iconControl.getCanvas().classList.add("MenuItemIcon", "NegativeMenuItemIcon");
                             itemElement.appendChild(iconControl.getCanvas());
                         }
@@ -343,7 +350,17 @@ namespace colibri.ui.controls {
 
                 if (menuRect.height > window.innerHeight - y) {
 
-                    this._element.style.top = targetRect.top - menuRect.height - 2 + "px";
+                    y = targetRect.top - menuRect.height;
+
+                    if (y < 0) {
+
+                        y = 10;
+                        this._element.style.maxHeight = targetRect.top - y - 4 + "px";
+                        this._element.style.overflowY = "auto";
+
+                    }
+
+                    this._element.style.top = y - 2 + "px";
                 }
             }
         }

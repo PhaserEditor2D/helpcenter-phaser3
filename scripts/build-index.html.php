@@ -1,12 +1,12 @@
 <?php
 
-$EDITOR_VER = file_get_contents("ver");
+$editorFolder = __DIR__ . "/../source/app";
+
+$EDITOR_VER = file_get_contents(__DIR__ . "/../source/ver");
 
 $renderInfoArray = array();
 
 // read plugins config
-
-$editorFolder = __DIR__ . "/app";
 
 $folders = scandir($editorFolder . "/plugins");
 
@@ -21,6 +21,8 @@ foreach ($folders as $pluginName) {
 
     if (file_exists($pluginFile)) {
 
+        $hash = filectime($pluginFile);
+
         $content = file_get_contents($pluginFile);
 
         $pluginData = json_decode($content);
@@ -31,14 +33,15 @@ foreach ($folders as $pluginName) {
             "id" => $id,
             "scripts" => array(),
             "styles" => array(),
-            "priority" => count($renderInfoArray) /* a hack to get a stable sorting */
+            "priority" => count($renderInfoArray) /* a hack to get a stable sorting */,
+            "hash" => $hash
         );
 
         if (isset($pluginData->styles)) {
 
             foreach ($pluginData->styles as $style) {
 
-                array_push($renderInfo["styles"], "<link href=\"app/plugins/$id/$style?v=$EDITOR_VER\" rel=\"stylesheet\">");
+                array_push($renderInfo["styles"], "<link href=\"app/plugins/$id/$style?v=$hash\" rel=\"stylesheet\">");
             }
         }
 
@@ -46,7 +49,7 @@ foreach ($folders as $pluginName) {
 
             foreach ($pluginData->scripts as $script) {
 
-                array_push($renderInfo["scripts"], "<script src=\"app/plugins/$id/$script?v=$EDITOR_VER\"></script>");
+                array_push($renderInfo["scripts"], "<script src=\"app/plugins/$id/$script?v=$hash\"></script>");
             }
         }
 

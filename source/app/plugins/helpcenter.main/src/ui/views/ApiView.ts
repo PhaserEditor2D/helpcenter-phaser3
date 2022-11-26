@@ -2,11 +2,13 @@ namespace helpcenter.main.ui.views {
 
     import controls = colibri.ui.controls;
 
+    type TSection = "Types" | "Events" | "Constants";
+
     export class ApiView extends AbstractPhaserView {
         static ID = "helpcenter.main.ui.views.classes.NamespaceView";
         private _flatLayout: boolean;
         private _showInherited: boolean;
-        private _section: "Type" | "Event" | "Constant";
+        private _section: TSection;
 
         constructor() {
             super(ApiView.ID, false);
@@ -76,29 +78,36 @@ namespace helpcenter.main.ui.views {
 
                     this.updateViewer();
                 }
-            })
+            });
+
+            for (const section of ["Types", "Constants", "Events"]) {
+
+                menu.addAction({
+                    text: `Show Only ${section}`,
+                    callback: () => {
+
+                        this._section = section as any;
+
+                        this.updateViewer();
+                    },
+                    selected: this._section === section
+                });
+            }
+
+            menu.addAction({
+                text: "Show All",
+                callback: () => {
+
+                    this._section = undefined;
+
+                    this.updateViewer();
+                },
+                selected: this._section === null || this._section === undefined
+            });
+
+            menu.addSeparator();
 
             super.fillContextMenu(menu);
-        }
-
-        onPartAdded() {
-
-            super.onPartAdded();
-
-            const folder = this.getPartFolder();
-
-            const label = folder.getLabelFromContent(this);
-
-            folder.addTabSection(label, "Type");
-            folder.addTabSection(label, "Constant");
-            folder.addTabSection(label, "Event");
-
-            folder.eventTabSectionSelected.addListener(section => {
-
-                this._section = section as any;
-
-                this.updateViewer();
-            });
         }
 
         updateViewer() {
@@ -146,11 +155,11 @@ namespace helpcenter.main.ui.views {
 
     export class ApiContentProvider implements controls.viewers.ITreeContentProvider {
 
-        private _section: "Type" | "Event" | "Constant";
+        private _section: TSection;
         private _flat: boolean;
         private _showInherited: boolean;
 
-        constructor(showInherited: boolean, flat: boolean, section?: "Type" | "Event" | "Constant") {
+        constructor(showInherited: boolean, flat: boolean, section?: TSection) {
 
             this._flat = flat;
             this._section = section;
@@ -195,7 +204,7 @@ namespace helpcenter.main.ui.views {
 
                 switch (this._section) {
 
-                    case "Type":
+                    case "Types":
 
                         result = result.filter(c => {
 
@@ -206,13 +215,13 @@ namespace helpcenter.main.ui.views {
 
                         break;
 
-                    case "Event":
+                    case "Events":
 
                         result = result.filter(c => c.getKind() === "event" || c.isNamespace());
 
                         break;
 
-                    case "Constant":
+                    case "Constants":
 
                         result = result.filter(c => c.getKind() === "constant" || c.isNamespace());
 

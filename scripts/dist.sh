@@ -1,17 +1,17 @@
 #!/bin/bash
 
-./make-sw-assets.js
+node make-sw-assets.js
+./update-index-html.sh
 
 cd ..
 
-rm -Rf dist/
-mkdir dist/
+rm -Rf docs/
+mkdir docs/
 npm run ts-clean
 npm run ts-build
 
-cp -R source/* dist/
-cp source/.htaccess dist/
+cp -R source/* docs/
 
-rm -R dist/app/node_modules dist/app/*.sh dist/app/*.json
-rm -R dist/app/plugins/**/src/
-rm -R dist/app/plugins/**/_out/*.ts*
+rm -R docs/app/*.sh docs/app/*.json
+rm -R docs/app/plugins/**/src/
+rm -R docs/app/plugins/**/_out/*.ts*
