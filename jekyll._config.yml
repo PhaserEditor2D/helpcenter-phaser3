@@ -1,15 +1,3 @@
-include:
+keep_files:
   - app
-  - app/plugins
-  - app/plugins/colibri
-  - app/plugins/colibri/_out/
-  - app/plugins/colibri.inspector
-  - app/plugins/colibri.inspector/_out
-  - app/plugins/helpcenter.codemirror
-  - app/plugins/helpcenter.codemirror/_out
-  - app/plugins/helpcenter.main
-  - app/plugins/helpcenter.main/_out
-  - app/plugins/helpcenter.phaser/
-  - app/plugins/helpcenter.phaser/_out
-  - app/plugins/helpcenter.showdown
-  - app/plugins/helpcenter.showdown/_out
+  - icons
