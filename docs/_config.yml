@@ -1,4 +1,8 @@
 include:
   - app
-  - icons
-  - **/_out
+  - app/plugins/colibri/_out
+  - app/plugins/colibri.inspector/_out
+  - app/plugins/helpcenter.codemirror/_out
+  - app/plugins/helpcenter.main/_out
+  - app/plugins/helpcenter.phaser/_out
+  - app/plugins/helpcenter.showdown/_out
