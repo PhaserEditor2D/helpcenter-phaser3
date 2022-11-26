@@ -6,6 +6,7 @@
 * Rename view Phaser Files to API Files.
 * Disables colibri file storage.
 * Migrates dynamic/PHP index to a static/generated index.
+* Migrates to GitHub Pages.
 
 ## v1.1.0 - May 26, 2021
 
