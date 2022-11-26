@@ -43,7 +43,7 @@ It uses Progressive Web Application (PWA) techniques, so you can install it in y
 
 Our recommendation is to use Google Chrome. This browser provides the best PWA support for the desktop.
 
-Also, you can download this repository and launch it locally. Just copy the content of the `dist/` folder in a directory served by Apache or any other PHP-compatible web server.
+Also, you can download this repository and launch it locally. Just copy the content of the `docs/` folder in a directory served by Apache or any other PHP-compatible web server.
 
 If you have PHP installed in your system, you can run:
 
