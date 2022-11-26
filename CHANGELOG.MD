@@ -4,6 +4,7 @@
 
 * Get latest version of Colibri framework.
 * Rename view Phaser Files to API Files.
+* Disables colibri file storage.
 
 ## v1.1.0 - May 26, 2021
 
