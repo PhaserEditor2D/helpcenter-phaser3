@@ -1,1 +1,2 @@
+include: [app/plugins/colibri/_out/colibri.js]
 keep_files: [app, icons]
