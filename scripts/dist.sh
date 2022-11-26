@@ -10,7 +10,7 @@ mkdir docs/
 npm run ts-clean
 npm run ts-build
 
-cp jekyll._config.yml docs/_config.yml
+cp .nojekyll docs/
 cp -R source/* docs/
 
 rm -R docs/app/*.sh docs/app/*.json
