@@ -130,7 +130,7 @@ The context menu shows the options to open the selected API element in a documen
 
 The **Versions** view shows all Phaser API members grouped by versions. This is other way to track progress in Phaser and get information about the latest releases.
 
-![Versions view](github/versions-view.png)
+![Ver view](github/versions-view.png)
 
 ## API Chains view
 
