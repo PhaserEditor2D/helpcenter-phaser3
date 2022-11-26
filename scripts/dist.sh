@@ -1,6 +1,7 @@
 #!/bin/bash
 
-./make-sw-assets.js
+node make-sw-assets.js
+./update-index-html.sh
 
 cd ..
 
@@ -12,6 +13,6 @@ npm run ts-build
 cp -R source/* dist/
 cp source/.htaccess dist/
 
-rm -R dist/app/node_modules dist/app/*.sh dist/app/*.json
+rm -R dist/app/*.sh dist/app/*.json
 rm -R dist/app/plugins/**/src/
 rm -R dist/app/plugins/**/_out/*.ts*

@@ -1,5 +1,3 @@
-#!/usr/bin/node
-
 const { execSync } = require("child_process");
 const { readFileSync, writeFileSync } = require("fs");
 

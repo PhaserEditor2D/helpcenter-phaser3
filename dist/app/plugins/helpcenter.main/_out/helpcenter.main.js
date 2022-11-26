@@ -95,6 +95,8 @@ var helpcenter;
             }
         }
         async function main() {
+            // disable file access layer
+            colibri.CAPABILITY_FILE_STORAGE = false;
             await initVersion();
             if (window.location.search === "?dev") {
                 console.log("Development mode activated.");
@@ -309,7 +311,7 @@ var helpcenter;
                     }
                     if (!(colibri.Platform.getWorkbench().getActivePart() instanceof ui.views.FilesView)) {
                         menu.addAction({
-                            text: "Reveal In Phaser Files View",
+                            text: "Reveal In API Files View",
                             icon: colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_FOLDER),
                             callback: () => {
                                 const view = colibri.Platform.getWorkbench().getActiveWindow()
@@ -1884,19 +1886,26 @@ var helpcenter;
                                 this.updateViewer();
                             }
                         });
-                        super.fillContextMenu(menu);
-                    }
-                    onPartAdded() {
-                        super.onPartAdded();
-                        const folder = this.getPartFolder();
-                        const label = folder.getLabelFromContent(this);
-                        folder.addTabSection(label, "Type");
-                        folder.addTabSection(label, "Constant");
-                        folder.addTabSection(label, "Event");
-                        folder.eventTabSectionSelected.addListener(section => {
-                            this._section = section;
-                            this.updateViewer();
+                        for (const section of ["Types", "Constants", "Events"]) {
+                            menu.addAction({
+                                text: `Show Only ${section}`,
+                                callback: () => {
+                                    this._section = section;
+                                    this.updateViewer();
+                                },
+                                selected: this._section === section
+                            });
+                        }
+                        menu.addAction({
+                            text: "Show All",
+                            callback: () => {
+                                this._section = undefined;
+                                this.updateViewer();
+                            },
+                            selected: this._section === null || this._section === undefined
                         });
+                        menu.addSeparator();
+                        super.fillContextMenu(menu);
                     }
                     updateViewer() {
                         const sel = this._viewer.getSelection();
@@ -1958,16 +1967,16 @@ var helpcenter;
                                 result = result.filter(c => !c.isInherited());
                             }
                             switch (this._section) {
-                                case "Type":
+                                case "Types":
                                     result = result.filter(c => {
                                         const k = c.getKind();
                                         return k === "class" || k === "typedef" || c.isNamespace();
                                     });
                                     break;
-                                case "Event":
+                                case "Events":
                                     result = result.filter(c => c.getKind() === "event" || c.isNamespace());
                                     break;
-                                case "Constant":
+                                case "Constants":
                                     result = result.filter(c => c.getKind() === "constant" || c.isNamespace());
                                     break;
                             }
@@ -2055,7 +2064,7 @@ var helpcenter;
                 class ChainsTreeRenderer extends controls.viewers.TreeViewerRenderer {
                     prepareContextForText(args) {
                         super.prepareContextForText(args);
-                        args.canvasContext.font = controls.FONT_HEIGHT + "px Monospace";
+                        args.canvasContext.font = controls.getCanvasFontHeight() + "px Monospace";
                     }
                 }
                 class ChainsStyledLabelProvider {
@@ -2303,7 +2312,7 @@ var helpcenter;
                             }];
                     }
                 }
-                const EXAMPLE_CHAIN_FONT = controls.FONT_HEIGHT + "px Monospace";
+                const EXAMPLE_CHAIN_FONT = controls.getCanvasFontHeight() + "px Monospace";
                 class ExampleChainTreeRenderer extends controls.viewers.TreeViewerRenderer {
                     prepareContextForText(args) {
                         super.prepareContextForText(args);
@@ -2353,7 +2362,7 @@ var helpcenter;
                 class FilesView extends views.AbstractPhaserView {
                     constructor() {
                         super(FilesView.ID, false);
-                        this.setTitle("Phaser Files");
+                        this.setTitle("API Files");
                         this.setIcon(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_FOLDER));
                     }
                     createViewer() {

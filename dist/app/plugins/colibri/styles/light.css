@@ -10,7 +10,7 @@ Important:
 
 */
 
-.light body {
+.light body, .light .Window {
     background: #a2a2a2;
     color: #0e0e0e;
 }
@@ -30,7 +30,7 @@ Important:
 .light input:focus,
 .light textarea:focus {
     background: #f6f6f6;
-    border-color: #4242ff;
+    border-color: #4242ff !important;
     outline-style: none;
 }
 
@@ -187,6 +187,12 @@ Important:
 
 .light .ProgressBar {
     background: #4242ff;
+}
+
+/* Pane */
+
+.light .Pane {
+    background: #cacaca;
 }
 
 /* Dialog */
