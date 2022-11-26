@@ -1,8 +1,9 @@
+/// <reference path="./FormBuilder.ts" />
 namespace colibri.ui.controls.properties {
 
     export declare type Updater = () => void;
 
-    export abstract class PropertySection<T> {
+    export abstract class PropertySection<T> extends FormBuilder {
 
         private _id: string;
         private _title: string;
@@ -10,9 +11,9 @@ namespace colibri.ui.controls.properties {
         private _updaters: Updater[];
         private _fillSpace: boolean;
         private _collapsedByDefault: boolean;
-        private _tabSection: string;
 
         constructor(page: PropertyPage, id: string, title: string, fillSpace = false, collapsedByDefault = false, tabSectionByDefault?: string) {
+            super();
 
             this._page = page;
             this._id = id;
@@ -22,55 +23,21 @@ namespace colibri.ui.controls.properties {
             this._updaters = [];
 
             const localTabSection = localStorage.getItem(this.localStorageKey("tabSection"));
-
-            if (localTabSection) {
-
-                if (localTabSection !== "undefined") {
-
-                    this._tabSection = localTabSection;
-                }
-
-            } else {
-
-                this._tabSection = tabSectionByDefault;
-            }
         }
 
         abstract createForm(parent: HTMLDivElement);
 
         abstract canEdit(obj: any, n: number): boolean;
 
-        canShowInTabSection(tabSection: string) {
+        canEditAll(selection: any[]) {
 
-            return this._tabSection === tabSection;
-        }
-
-        private setTabSection(tabSection: string) {
-
-            this._tabSection = tabSection;
-
-            localStorage.setItem(this.localStorageKey("tabSection"), tabSection || "undefined");
+            return true;
         }
 
         private localStorageKey(prop: string) {
 
             return "PropertySection[" + this._id + "]." + prop;
         }
-
-        protected createTabSectionMenuItem(menu: controls.Menu, tabSection: string) {
-
-            menu.addAction({
-                text: "Show In " + tabSection,
-                selected: this._tabSection === tabSection,
-                callback: () => {
-
-                    this.setTabSection(this._tabSection === tabSection ? undefined : tabSection);
-
-                    this.getPage().updateWithSelection();
-                }
-            });
-        }
-
 
         abstract canEditNumber(n: number): boolean;
 
@@ -220,10 +187,12 @@ namespace colibri.ui.controls.properties {
             div.classList.add("formGrid");
 
             if (cols > 0) {
+
                 div.classList.add("formGrid-cols-" + cols);
             }
 
             if (simpleProps) {
+
                 div.classList.add("formSimpleProps");
             }
 
@@ -232,278 +201,6 @@ namespace colibri.ui.controls.properties {
             return div;
         }
 
-        createLabel(parent: HTMLElement, text = "", tooltip = "") {
 
-            const label = document.createElement("label");
-
-            label.classList.add("formLabel");
-            label.innerText = text;
-
-            if (tooltip) {
-                Tooltip.tooltip(label, tooltip);
-            }
-
-            parent.appendChild(label);
-
-            return label;
-        }
-
-        createButton(parent: HTMLElement, text: string, callback: (e?: MouseEvent) => void) {
-
-            const btn = document.createElement("button");
-
-            btn.innerText = text;
-
-            btn.addEventListener("click", e => callback(e));
-
-            parent.appendChild(btn);
-
-            return btn;
-        }
-
-        createMenuButton(
-            parent: HTMLElement, text: string,
-            items: Array<{ name: string, value: any, icon?: controls.IImage }>,
-            callback: (value: any) => void) {
-
-            const btn = this.createButton(parent, text, e => {
-
-                const menu = new controls.Menu();
-
-                for (const item of items) {
-
-                    menu.add(new Action({
-                        text: item.name,
-                        icon: item.icon,
-                        callback: () => {
-                            callback(item.value);
-                        }
-                    }));
-                }
-
-                menu.createWithEvent(e);
-            });
-
-            return btn;
-        }
-
-        createText(parent: HTMLElement, readOnly = false) {
-
-            const text = document.createElement("input");
-
-            text.type = "text";
-            text.classList.add("formText");
-            text.readOnly = readOnly;
-
-            parent.appendChild(text);
-
-            return text;
-        }
-
-        createTextDialog(parent: HTMLElement, dialogTitle: string, readOnly = false) {
-
-            const text = this.createTextArea(parent, false);
-            text.rows = 1;
-
-            const btn = document.createElement("button");
-            btn.textContent = "...";
-            btn.addEventListener("click", () => {
-
-                const dlg = new StringDialog();
-
-                dlg.create();
-
-                dlg.setTitle(dialogTitle);
-
-                dlg.addButton("Accept", () => {
-
-                    text.value = dlg.getValue();
-                    text.dispatchEvent(new Event("change"));
-
-                    dlg.close();
-                });
-
-                dlg.addCancelButton();
-
-                dlg.setValue(text.value);
-            });
-
-            const container = document.createElement("div");
-            container.classList.add("StringDialogField")
-
-            container.appendChild(text);
-            container.appendChild(btn);
-
-            parent.appendChild(container);
-
-            return { container, text, btn };
-        }
-
-        createColor(parent: HTMLElement, readOnly = false, allowAlpha = true) {
-
-            const text = document.createElement("input");
-
-            text.type = "text";
-            text.classList.add("formText");
-            text.readOnly = readOnly;
-
-            const btn = document.createElement("button");
-            // btn.textContent = "...";
-            btn.classList.add("ColorButton");
-            btn.appendChild(
-                new IconControl(ColibriPlugin.getInstance().getIcon(colibri.ICON_COLOR)).getCanvas());
-
-            const colorElement = document.createElement("div");
-            colorElement.style.display = "grid";
-            colorElement.style.gridTemplateColumns = "1fr auto";
-            colorElement.style.gridGap = "5px";
-            colorElement.style.alignItems = "center";
-            colorElement.appendChild(text);
-            colorElement.appendChild(btn);
-
-            parent.appendChild(colorElement);
-
-            btn.addEventListener("mousedown", e => {
-
-                if (text.readOnly) {
-
-                    return;
-                }
-
-                e.preventDefault();
-                e.stopImmediatePropagation();
-
-                if (ColorPickerManager.isActivePicker()) {
-
-                    ColorPickerManager.closeActive();
-
-                    return;
-                }
-
-                const picker = ColorPickerManager.createPicker();
-
-                btn["__picker"] = picker;
-
-                picker.setOptions({
-                    popup: "left",
-                    editor: false,
-                    alpha: false,
-                    onClose: () => {
-
-                        ColorPickerManager.closeActive();
-                    },
-                    onDone: (color) => {
-
-                        text.value = allowAlpha ? color.hex : color.hex.substring(0, 7);
-                        btn.style.background = text.value;
-                        text.dispatchEvent(new CustomEvent("change"));
-                    }
-                });
-
-                try {
-
-                    picker.setColour(text.value, false);
-
-                } catch (e) {
-
-                    picker.setColour("#fff", false);
-                }
-
-                picker.show();
-
-                const pickerElement = picker.domElement as HTMLElement;
-                const pickerBounds = pickerElement.getBoundingClientRect();
-                const textBounds = text.getBoundingClientRect();
-
-                pickerElement.getElementsByClassName("picker_arrow")[0].remove();
-
-                let top = textBounds.top - pickerBounds.height;
-
-                if (top + pickerBounds.height > window.innerHeight) {
-
-                    top = window.innerHeight - pickerBounds.height;
-                }
-
-                if (top < 0) {
-
-                    top = textBounds.bottom;
-                }
-
-                let left = textBounds.left;
-
-                if (left + pickerBounds.width > window.innerWidth) {
-
-                    left = window.innerWidth - pickerBounds.width;
-                }
-
-                pickerElement.style.top = top + "px";
-                pickerElement.style.left = left + "px";
-
-            });
-
-            return {
-                element: colorElement,
-                text: text,
-                btn: btn
-            };
-        }
-
-        createTextArea(parent: HTMLElement, readOnly = false) {
-
-            const text = document.createElement("textarea");
-
-            text.classList.add("formText");
-            text.readOnly = readOnly;
-
-            parent.appendChild(text);
-
-            return text;
-        }
-
-        private static NEXT_ID = 0;
-
-        createCheckbox(parent: HTMLElement, label?: HTMLLabelElement) {
-
-            const check = document.createElement("input");
-
-            if (label) {
-
-                const id = (PropertySection.NEXT_ID++).toString();
-
-                label.htmlFor = id;
-
-                check.setAttribute("id", id);
-            }
-
-            check.type = "checkbox";
-            check.classList.add("formCheckbox");
-
-            parent.appendChild(check);
-
-            return check;
-        }
-
-        createMenuIcon(parent: HTMLElement, menuProvider: () => Menu, alignRight = true) {
-
-            const icon = new controls.IconControl(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_SMALL_MENU));
-
-            icon.getCanvas().classList.add("IconButton");
-
-            parent.appendChild(icon.getCanvas());
-
-            icon.getCanvas().addEventListener("click", e => {
-
-                const menu = menuProvider();
-
-                menu.createWithEvent(e);
-            });
-
-            if (alignRight) {
-
-                icon.getCanvas().style.float = "right";
-            }
-
-            return icon;
-        }
     }
 }

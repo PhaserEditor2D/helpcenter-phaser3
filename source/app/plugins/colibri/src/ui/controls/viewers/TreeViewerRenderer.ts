@@ -38,7 +38,7 @@ namespace colibri.ui.controls.viewers {
             const treeIconList: TreeIconInfo[] = [];
             const paintItems: PaintItem[] = [];
 
-            this._contentHeight = Number.MIN_VALUE;
+            this._contentHeight = Number.MIN_SAFE_INTEGER;
 
             this.paintItems(roots, treeIconList, paintItems, null, x, y);
 
@@ -185,7 +185,7 @@ namespace colibri.ui.controls.viewers {
                 if (renderCell) {
 
                     x += args.h + 4;
-                    y += args.h / 2 + FONT_HEIGHT / 2;
+                    y += args.h / 2 + controls.getCanvasFontHeight() / 2;
 
                 } else {
 
@@ -324,6 +324,8 @@ namespace colibri.ui.controls.viewers {
         }
 
         protected prepareContextForText(args: RenderCellArgs) {
+
+            args.canvasContext.font = getCanvasFontHeight() + "px " + FONT_FAMILY;
 
             if (args.viewer.isSelected(args.obj)) {
 

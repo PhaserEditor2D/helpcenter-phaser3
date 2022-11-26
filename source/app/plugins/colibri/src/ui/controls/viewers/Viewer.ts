@@ -358,18 +358,23 @@ namespace colibri.ui.controls.viewers {
 
         private onWheel(e: WheelEvent): void {
 
+            e.preventDefault();
+
             if (!e.shiftKey) {
+
                 return;
             }
 
-            if (e.deltaY < 0) {
+            this.setCellSize(this.getCellSize() - e.deltaY / 2);
 
-                this.setCellSize(this.getCellSize() + ROW_HEIGHT);
+            // if (e.deltaY < 0) {
 
-            } else if (this._cellSize > ICON_SIZE) {
+            //    this.setCellSize(this.getCellSize() + ROW_HEIGHT);
 
-                this.setCellSize(this.getCellSize() - ROW_HEIGHT);
-            }
+            // } else if (this._cellSize > ICON_SIZE) {
+
+            //     this.setCellSize(this.getCellSize() - ROW_HEIGHT);
+            // }
 
             this.saveCellSize();
 
@@ -417,14 +422,20 @@ namespace colibri.ui.controls.viewers {
 
                 const data = item.data;
 
-                if (e.button === 2) {
+                if (e.button === 2 && this._selectedObjects.size === 1) {
 
                     this._selectedObjects = new Set([data]);
                     selChanged = true;
 
                 } else {
 
-                    if (e.ctrlKey || e.metaKey) {
+                    if (e.button === 2) {
+
+                        this._selectedObjects.add(data);
+
+                        selChanged = true;
+
+                    } else if (e.ctrlKey || e.metaKey) {
 
                         if (this._selectedObjects.has(data)) {
 
@@ -477,7 +488,7 @@ namespace colibri.ui.controls.viewers {
 
             this._context = this.getCanvas().getContext("2d");
             this._context.imageSmoothingEnabled = false;
-            this._context.font = `${controls.FONT_HEIGHT}px sans-serif`;
+            this._context.font = `${controls.getCanvasFontHeight()}px sans-serif`;
 
             Controls.adjustCanvasDPI(this.getCanvas());
         }
@@ -783,8 +794,15 @@ namespace colibri.ui.controls.viewers {
             this._expandedObjects = state.expandedObjects;
             this._selectedObjects = state.selectedObjects;
 
-            this.setFilterText(state.filterText);
-            this.setCellSize(state.cellSize);
+            if (state.filterText !== this.getFilterText()) {
+
+                this.setFilterText(state.filterText);
+            }
+
+            if (state.cellSize !== this.getCellSize()) {
+
+                this.setCellSize(state.cellSize);
+            }
         }
 
         selectAll() {

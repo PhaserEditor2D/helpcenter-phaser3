@@ -6,7 +6,7 @@ namespace colibri.inspector.ui.views {
 
     export class InspectorView extends ide.ViewPart {
 
-        static VIEW_ID = "colibri.inspector.ui.views.InspectorView";
+        static VIEW_ID = "InspectorView";
 
         private _propertyPage: controls.properties.PropertyPage;
         private _currentPart: ide.Part;
@@ -17,6 +17,18 @@ namespace colibri.inspector.ui.views {
 
             this.setTitle("Inspector");
             this.setIcon(InspectorPlugin.getInstance().getIcon(ICON_INSPECTOR));
+        }
+
+        static updateInspectorView(selection: any[]) {
+
+            const win = Platform.getWorkbench().getActiveWindow();
+
+            const view = win.getView(InspectorView.VIEW_ID) as InspectorView;
+
+            if (view) {
+
+                view.getPropertyPage().setSelection(selection);
+            }
         }
 
         layout() {
@@ -39,26 +51,6 @@ namespace colibri.inspector.ui.views {
 
             ide.Workbench.getWorkbench()
                 .eventPartActivated.addListener(() => this.onWorkbenchPartActivate());
-        }
-
-        onPartAdded() {
-
-            super.onPartAdded();
-
-            this.getPartFolder().eventTabSectionSelected.addListener((tabSection: string) => {
-
-                if (this._propertyPage) {
-
-                    const provider = this._propertyPage.getSectionProvider();
-
-                    if (provider) {
-
-                        provider.setSelectedTabSection(tabSection);
-
-                        this._propertyPage.updateWithSelection();
-                    }
-                }
-            });
         }
 
         private onWorkbenchPartActivate() {
@@ -89,8 +81,6 @@ namespace colibri.inspector.ui.views {
 
                     this._propertyPage.setSectionProvider(null);
                 }
-
-                this.updateUpdateTabSections();
             }
         }
 
@@ -100,35 +90,15 @@ namespace colibri.inspector.ui.views {
 
             const provider = this._currentPart.getPropertyProvider();
 
+            this._propertyPage.setSelection(sel, false);
+
             this._propertyPage.setSectionProvider(provider);
 
-            this._propertyPage.setSelection(sel);
-        }
-
-        private updateUpdateTabSections() {
-
-            const partFolder = this.getPartFolder();
-            const tabLabel = partFolder.getLabelFromContent(this);
-
-            partFolder.removeAllSections(tabLabel, false);
-
-            if (this._currentPart) {
-
-                const provider = this._currentPart.getPropertyProvider();
-
-                if (provider) {
-
-                    const tabSections = provider.getTabSections();
-
-                    for (const tabSection of tabSections) {
-
-                        partFolder.addTabSection(tabLabel, tabSection, this.getId());
-                    }
-
-                    const selected = provider.getSelectedTabSection();
-                    partFolder.selectTabSection(tabLabel, selected);
-                }
-            }
+            // Commented on Sept 28, 2022. 
+            // The page.updateWithSelection() is always called
+            // the page.setSectionProvider(provider)
+            //
+            // this._propertyPage.setSelection(sel);
         }
 
         getUndoManager() {

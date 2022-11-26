@@ -130,7 +130,7 @@ namespace helpcenter.main.ui.views {
         }
     }
 
-    const EXAMPLE_CHAIN_FONT = controls.FONT_HEIGHT + "px Monospace";
+    const EXAMPLE_CHAIN_FONT = controls.getCanvasFontHeight() + "px Monospace";
 
     class ExampleChainTreeRenderer extends controls.viewers.TreeViewerRenderer {
 

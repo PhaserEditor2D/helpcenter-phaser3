@@ -29,7 +29,7 @@ namespace colibri.ui.controls.viewers {
         constructor(viewer: TreeViewer, flat: boolean = false, center: boolean = false) {
             super(viewer);
 
-            viewer.setCellSize(128 * controls.DEVICE_PIXEL_RATIO);
+            viewer.setCellSize(128);
 
             viewer.restoreCellSize();
 
@@ -60,7 +60,7 @@ namespace colibri.ui.controls.viewers {
 
             this._paintItemShadow = paintShadow;
 
-            this.getViewer().setCellSize(64 * controls.DEVICE_PIXEL_RATIO, true);
+            this.getViewer().setCellSize(64, true);
 
             return this;
         }
@@ -122,7 +122,7 @@ namespace colibri.ui.controls.viewers {
 
             if (this._flat) {
 
-                const limit = 64 * controls.DEVICE_PIXEL_RATIO;
+                const limit = 64;
 
                 if (cellSize < limit) {
 
@@ -145,7 +145,7 @@ namespace colibri.ui.controls.viewers {
                 Math.floor(b.width % (viewer.getCellSize() + TREE_RENDERER_GRID_PADDING) / 2)
                 : (this._isSectionCriteria === undefined ? TREE_RENDERER_GRID_PADDING : TREE_RENDERER_GRID_PADDING * 3);
 
-            this._contentHeight = Number.MIN_VALUE;
+            this._contentHeight = Number.MIN_SAFE_INTEGER;
 
             this.paintGrid(
                 objects, treeIconList, paintItems, null, x + offset, y + TREE_RENDERER_GRID_PADDING, offset, 0, undefined, undefined);
@@ -261,6 +261,8 @@ namespace colibri.ui.controls.viewers {
 
                             x = offset;
                         }
+
+                        this._contentHeight = Math.max(this._contentHeight, y);
 
                         // end drawing section
 

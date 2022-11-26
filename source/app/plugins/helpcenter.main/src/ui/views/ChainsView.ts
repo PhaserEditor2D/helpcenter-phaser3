@@ -93,7 +93,7 @@ namespace helpcenter.main.ui.views {
 
             super.prepareContextForText(args);
 
-            args.canvasContext.font = controls.FONT_HEIGHT + "px Monospace";
+            args.canvasContext.font = controls.getCanvasFontHeight() + "px Monospace";
         }
     }
 

@@ -25,13 +25,13 @@ namespace colibri.ui.controls.properties {
 
                 this._titleArea = document.createElement("div");
                 this._titleArea.classList.add("PropertyTitleArea");
-                this._titleArea.addEventListener("mouseup", () => this.toggleSection());
+                this._titleArea.addEventListener("click", () => this.toggleSection());
 
                 this._expandIconControl = new IconControl(colibri.ColibriPlugin.getInstance().getIcon(colibri.ICON_CONTROL_TREE_COLLAPSE));
 
                 this._expandIconControl.getCanvas().classList.add("expanded");
 
-                this._expandIconControl.getCanvas().addEventListener("mouseup", e => {
+                this._expandIconControl.getCanvas().addEventListener("click", e => {
 
                     e.stopImmediatePropagation();
 
@@ -47,8 +47,9 @@ namespace colibri.ui.controls.properties {
                 this._menuIcon = new IconControl(ColibriPlugin.getInstance().getIcon(ICON_SMALL_MENU));
                 this._menuIcon.getCanvas().classList.add("IconButton");
                 this._menuIcon.getCanvas().style.visibility = this._section.hasMenu() ? "visible" : "hidden";
-                this._menuIcon.getCanvas().addEventListener("mouseup", e => {
+                this._menuIcon.getCanvas().addEventListener("click", e => {
 
+                    e.stopPropagation();
                     e.stopImmediatePropagation();
 
                     if (this._section.hasMenu()) {
@@ -205,15 +206,16 @@ namespace colibri.ui.controls.properties {
             } else {
 
                 for (const pane of this._sectionPanes) {
+                    
                     pane.getElement().style.display = "none";
                 }
-
             }
         }
 
         public updateWithSelection(): void {
 
             if (!this._sectionProvider) {
+
                 return;
             }
 
@@ -255,13 +257,11 @@ namespace colibri.ui.controls.properties {
 
             this._selection = selection;
 
-            const tabSection = this._sectionProvider.getSelectedTabSection();
-
             for (const pane of this._sectionPanes) {
 
                 const section = pane.getSection();
 
-                let show = section.canShowInTabSection(tabSection) && section.canEditNumber(n);
+                let show = section.canEditNumber(n);
 
                 if (show) {
 
@@ -272,6 +272,11 @@ namespace colibri.ui.controls.properties {
                             show = false;
                             break;
                         }
+                    }
+
+                    if (show && !section.canEditAll(selection)) {
+
+                        show = false;
                     }
                 }
 
@@ -334,11 +339,14 @@ namespace colibri.ui.controls.properties {
             return this._selection;
         }
 
-        setSelection(sel: any[]): any {
+        setSelection(sel: any[], update = true): any {
 
             this._selection = sel;
 
-            this.updateWithSelection();
+            if (update) {
+
+                this.updateWithSelection();
+            }
         }
 
         setSectionProvider(provider: PropertySectionProvider): void {
