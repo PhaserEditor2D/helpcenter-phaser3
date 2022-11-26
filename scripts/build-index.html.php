@@ -21,7 +21,7 @@ foreach ($folders as $pluginName) {
 
     if (file_exists($pluginFile)) {
 
-        $hash = filectime($pluginFile);
+        $hash = filemtime($pluginFile);
 
         $content = file_get_contents($pluginFile);
 
