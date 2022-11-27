@@ -1,6 +1,6 @@
 # Change Log
 
-## dev
+## v1.2.0 - Nov 27, 2022
 
 * Get latest version of Colibri framework.
 * Rename view Phaser Files to API Files.
