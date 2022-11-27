@@ -1,10 +1,6 @@
---- 
+--- dev ---
 
-x- When focus on the app, it request for files changes. This is a feature from Phaser Editor I should remove from the Phaser Help Center.
-x- It is requesting phaser-docs.json file with a different URL each time.
-x- Update to the latest Phaser 3.55.2.
-x- Open in Official Phaser docs is not working.
-x- A script for generating the index.html file.
+- The class icon is yellow and doesn't look well in the light theme.
 
 ---
 
@@ -23,3 +19,13 @@ x- A script for generating the index.html file.
 And may help finding the examples associated with a particular asset?
 - Enable search in all files.
 - Enable minimap in the source file editor.
+
+--- DONE ---
+
+x- When focus on the app, it request for files changes. This is a feature from Phaser Editor I should remove from the Phaser Help Center.
+x- It is requesting phaser-docs.json file with a different URL each time.
+x- Update to the latest Phaser 3.55.2.
+x- Open in Official Phaser docs is not working.
+x- A script for generating the index.html file.
+
+---
