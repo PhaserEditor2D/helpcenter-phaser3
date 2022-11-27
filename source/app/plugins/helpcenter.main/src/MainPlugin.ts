@@ -118,7 +118,7 @@ namespace helpcenter.main {
 
             try {
 
-                navigator.serviceWorker.register("/sw.js").then(() => {
+                navigator.serviceWorker.register("./sw.js").then(() => {
 
                     console.log("Service worker registered");
                 }, () => {

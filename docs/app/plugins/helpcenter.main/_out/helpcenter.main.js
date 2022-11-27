@@ -77,7 +77,7 @@ var helpcenter;
         async function registerServiceWorker() {
             if ("serviceWorker" in navigator) {
                 try {
-                    navigator.serviceWorker.register("/sw.js").then(() => {
+                    navigator.serviceWorker.register("./sw.js").then(() => {
                         console.log("Service worker registered");
                     }, () => {
                         console.log("Cannot install service worker.");
