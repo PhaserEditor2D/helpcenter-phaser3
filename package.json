@@ -1,6 +1,6 @@
 {
   "name": "helpcenter-phaser3",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Integrated tool for browsing the Phaser docs and examples.",
   "main": "index.js",
   "scripts": {
