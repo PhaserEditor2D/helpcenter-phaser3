@@ -2,7 +2,7 @@ var helpcenter;
 (function (helpcenter) {
     var phaser;
     (function (phaser) {
-        phaser.PHASER_VER = "3.55.0";
+        phaser.PHASER_VER = "3.55.2";
         phaser.DEFAULT_PHASER_LABS_URL = "https://labs.phaser.io";
         phaser.DOC_ENTRY_KIND_LIST = ["namespace", "class", "typedef", "constant", "event", "member", "function"];
         class PhaserPlugin extends colibri.Plugin {
@@ -15,10 +15,10 @@ var helpcenter;
             registerExtensions(reg) {
                 // resource loaders
                 reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
-                    this._docsFile = await this.getJSON("data/phaser-docs.json");
+                    this._docsFile = await this.getJSON("data/phaser-docs.json", colibri.CACHE_VERSION);
                 }));
                 reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
-                    const data = await this.getJSON("data/phaser-code.json");
+                    const data = await this.getJSON("data/phaser-code.json", colibri.CACHE_VERSION);
                     this._sourceMap = new Map();
                     // tslint:disable-next-line:forin
                     for (const key in data) {
@@ -26,13 +26,13 @@ var helpcenter;
                     }
                 }));
                 reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
-                    const data = await this.getJSON("data/phaser-examples.json");
+                    const data = await this.getJSON("data/phaser-examples.json", colibri.CACHE_VERSION);
                     this._examples = data.children.map(child => new phaser.core.ExampleInfo(null, child));
                     this._exampleMap = new Map();
                     this.buildExamplesMap(this._examples);
                 }));
                 reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
-                    const data = await this.getJSON("data/phaser-examples-code.json");
+                    const data = await this.getJSON("data/phaser-examples-code.json", colibri.CACHE_VERSION);
                     // tslint:disable-next-line:forin
                     for (const path in data) {
                         const code = data[path];
@@ -613,7 +613,7 @@ var helpcenter;
                         const texUrl = phaser.PhaserPlugin.getInstance().getResourceURL(`data/examples-screenshots-atlas/texture-${i}.webp`);
                         const texImage = controls.Controls.getImage(texUrl, texUrl, false);
                         await texImage.preload();
-                        const atlasData = await phaser.PhaserPlugin.getInstance().getJSON(`data/examples-screenshots-atlas/texture-${i}.json`);
+                        const atlasData = await phaser.PhaserPlugin.getInstance().getJSON(`data/examples-screenshots-atlas/texture-${i}.json`, colibri.CACHE_VERSION);
                         let j = 0;
                         // tslint:disable-next-line:forin
                         for (const frameName in atlasData.frames) {
