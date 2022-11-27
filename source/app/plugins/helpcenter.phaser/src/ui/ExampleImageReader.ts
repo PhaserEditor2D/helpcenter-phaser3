@@ -32,7 +32,7 @@ namespace helpcenter.phaser.ui {
 
                 await texImage.preload();
 
-                const atlasData = await PhaserPlugin.getInstance().getJSON(`data/examples-screenshots-atlas/texture-${i}.json`) as IAtlasData;
+                const atlasData = await PhaserPlugin.getInstance().getJSON(`data/examples-screenshots-atlas/texture-${i}.json`, colibri.CACHE_VERSION) as IAtlasData;
 
                 let j = 0;
 

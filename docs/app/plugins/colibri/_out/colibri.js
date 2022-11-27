@@ -33,11 +33,15 @@ var colibri;
             this._iconCache.set(name, image);
             return image;
         }
-        getResourceURL(pathInPlugin) {
-            return `app/plugins/${this.getId()}/${pathInPlugin}?v=${Date.now()}`;
+        getResourceURL(pathInPlugin, version) {
+            if (version === undefined) {
+                version = Date.now().toString();
+            }
+            return `app/plugins/${this.getId()}/${pathInPlugin}?v=${version}`;
         }
-        async getJSON(pathInPlugin) {
-            const result = await fetch(this.getResourceURL(pathInPlugin));
+        async getJSON(pathInPlugin, version) {
+            const url = this.getResourceURL(pathInPlugin, version);
+            const result = await fetch(url);
             const data = await result.json();
             return data;
         }
