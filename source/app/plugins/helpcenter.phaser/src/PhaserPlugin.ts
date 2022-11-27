@@ -35,12 +35,12 @@ namespace helpcenter.phaser {
 
             reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
 
-                this._docsFile = await this.getJSON("data/phaser-docs.json");
+                this._docsFile = await this.getJSON("data/phaser-docs.json", colibri.CACHE_VERSION);
             }));
 
             reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
 
-                const data = await this.getJSON("data/phaser-code.json");
+                const data = await this.getJSON("data/phaser-code.json", colibri.CACHE_VERSION);
 
                 this._sourceMap = new Map();
 
@@ -53,7 +53,7 @@ namespace helpcenter.phaser {
 
             reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
 
-                const data = await this.getJSON("data/phaser-examples.json") as core.IExamplesData;
+                const data = await this.getJSON("data/phaser-examples.json", colibri.CACHE_VERSION) as core.IExamplesData;
 
                 this._examples = data.children.map(child => new core.ExampleInfo(null, child));
 
@@ -65,7 +65,7 @@ namespace helpcenter.phaser {
 
             reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
 
-                const data = await this.getJSON("data/phaser-examples-code.json");
+                const data = await this.getJSON("data/phaser-examples-code.json", colibri.CACHE_VERSION);
 
                 // tslint:disable-next-line:forin
                 for (const path in data) {
