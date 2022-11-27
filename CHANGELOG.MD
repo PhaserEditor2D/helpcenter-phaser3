@@ -3,7 +3,7 @@
 ## v1.2.1 - Nov 27, 2022
 
 * Updates to Phaser 3.55.2
-
+* Fixes plugin resources request.
 
 ## v1.2.0 - Nov 27, 2022
 
