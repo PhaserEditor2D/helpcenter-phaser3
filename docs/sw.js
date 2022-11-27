@@ -1,4 +1,4 @@
-const VER = "1.1.0";
+const VER = "1.2.0";
 
 // -- start here -- //
 
