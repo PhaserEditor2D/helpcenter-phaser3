@@ -1,6 +1,6 @@
 x- When focus on the app, it request for files changes. This is a feature from Phaser Editor I should remove from the Phaser Help Center.
-- It is requesting phaser-docs.json file with a different URL each time.
-- Update to the latest Phaser 3.55.2.
+x- It is requesting phaser-docs.json file with a different URL each time.
+x- Update to the latest Phaser 3.55.2.
 - Open in Official Phaser docs is not working.
 x- A script for generating the index.html file.
 
