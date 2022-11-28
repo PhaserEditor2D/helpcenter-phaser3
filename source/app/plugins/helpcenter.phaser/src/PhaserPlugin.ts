@@ -2,7 +2,7 @@ namespace helpcenter.phaser {
 
     export const PHASER_VER = "3.55.2";
 
-    export const DEFAULT_PHASER_LABS_URL = "https://labs.phaser.io";
+    export let DEFAULT_PHASER_LABS_URL = "https://labs.phaser.io";
 
     export const DOC_ENTRY_KIND_LIST = ["namespace", "class", "typedef", "constant", "event", "member", "function"];
 

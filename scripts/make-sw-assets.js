@@ -1,8 +1,11 @@
 const { readFileSync, writeFileSync } = require("fs");
 
-const version = JSON.parse(readFileSync("../package.json")).version;
+const data = JSON.parse(readFileSync("../package.json"));
+const version = data.version;
+const phaserVersion = data.phaserVersion;
 
 writeFileSync("../source/ver", version);
+writeFileSync("../source/phaserVer", phaserVersion);
 
 const lines = readFileSync("../source/sw.js").toString().split("\n");
 

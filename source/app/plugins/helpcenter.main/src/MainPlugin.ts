@@ -1,5 +1,14 @@
 namespace helpcenter.main {
 
+    export declare type IElectronMessage = { method: string, body?: any };
+
+    export interface IElectron {
+
+        sendMessage(msg: IElectronMessage): void;
+
+        sendMessageSync(msg: IElectronMessage): any;
+    }
+
     export const DOC_ENTRY_KIND_ICON_NAME = {
         "member": "symbol-variable",
         "function": "symbol-method",
@@ -94,6 +103,20 @@ namespace helpcenter.main {
                 phaserEditor.scrollToLine(entry.meta.lineno + entry.meta.commentLines, entry.meta.columnno);
             }
         }
+
+        onElectron(yesCallback: (electron: IElectron) => void, noCallback?: () => {}) {
+
+            const electron = window["electron"] as IElectron;
+
+            if (electron) {
+
+                yesCallback(electron);
+
+            } else if (noCallback) {
+
+                noCallback();
+            }
+        }
     }
 
     export let VER: string;
@@ -107,7 +130,6 @@ namespace helpcenter.main {
         colibri.Platform.addPlugin(MainPlugin.getInstance());
 
         document.title = `Unofficial Phaser Help Center v${VER} - Phaser v${phaser.PHASER_VER} - Phaser Editor 2D`;
-
 
         console.log("Phaser Editor 2D - Unofficial Phaser Help - v" + VER);
     }
@@ -163,8 +185,31 @@ namespace helpcenter.main {
 
         await colibri.Platform.start();
 
+        initElectron();
+
         await MainPlugin.getInstance().openFirstWindow();
     }
 
     window.addEventListener("load", main);
+}
+
+function initElectron() {
+
+    helpcenter.main.MainPlugin.getInstance().onElectron(e => {
+
+        (window as any).open = (url: string) => {
+
+            e.sendMessage({
+                method: "open-url",
+                body: { url }
+            });
+        };
+
+        const { url } = e.sendMessageSync({ method: "get-phaser-labs-url" });
+
+        if (url) {
+
+            helpcenter.phaser.DEFAULT_PHASER_LABS_URL = url;
+        }
+    });
 }

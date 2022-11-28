@@ -65,6 +65,15 @@ var helpcenter;
                     phaserEditor.scrollToLine(entry.meta.lineno + entry.meta.commentLines, entry.meta.columnno);
                 }
             }
+            onElectron(yesCallback, noCallback) {
+                const electron = window["electron"];
+                if (electron) {
+                    yesCallback(electron);
+                }
+                else if (noCallback) {
+                    noCallback();
+                }
+            }
         }
         main_1.MainPlugin = MainPlugin;
         async function initVersion() {
@@ -106,11 +115,26 @@ var helpcenter;
             }
             colibri.ui.controls.dialogs.AlertDialog.replaceConsoleAlert();
             await colibri.Platform.start();
+            initElectron();
             await MainPlugin.getInstance().openFirstWindow();
         }
         window.addEventListener("load", main);
     })(main = helpcenter.main || (helpcenter.main = {}));
 })(helpcenter || (helpcenter = {}));
+function initElectron() {
+    helpcenter.main.MainPlugin.getInstance().onElectron(e => {
+        window.open = (url) => {
+            e.sendMessage({
+                method: "open-url",
+                body: { url }
+            });
+        };
+        const { url } = e.sendMessageSync({ method: "get-phaser-labs-url" });
+        if (url) {
+            helpcenter.phaser.DEFAULT_PHASER_LABS_URL = url;
+        }
+    });
+}
 var helpcenter;
 (function (helpcenter) {
     var main;
