@@ -5,7 +5,7 @@ const version = data.version;
 const phaserVersion = data.phaserVersion;
 
 writeFileSync("../source/ver", version);
-writeFileSync("../source/phaserVer", phaserVersion);
+writeFileSync("../source/phaserVersion", phaserVersion);
 
 const lines = readFileSync("../source/sw.js").toString().split("\n");
 
