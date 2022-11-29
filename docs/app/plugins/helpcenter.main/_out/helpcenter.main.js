@@ -78,6 +78,7 @@ var helpcenter;
         main_1.MainPlugin = MainPlugin;
         async function initVersion() {
             main_1.VER = await (await fetch("./ver")).text();
+            helpcenter.phaser.PHASER_VER = await (await fetch("./phaserVersion")).text();
             colibri.CACHE_VERSION = main_1.VER;
             colibri.Platform.addPlugin(MainPlugin.getInstance());
             document.title = `Unofficial Phaser Help Center v${main_1.VER} - Phaser v${helpcenter.phaser.PHASER_VER} - Phaser Editor 2D`;

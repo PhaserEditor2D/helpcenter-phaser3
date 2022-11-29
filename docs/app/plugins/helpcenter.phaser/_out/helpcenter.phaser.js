@@ -2,7 +2,6 @@ var helpcenter;
 (function (helpcenter) {
     var phaser;
     (function (phaser) {
-        phaser.PHASER_VER = "3.55.2";
         phaser.DEFAULT_PHASER_LABS_URL = "https://labs.phaser.io";
         phaser.DOC_ENTRY_KIND_LIST = ["namespace", "class", "typedef", "constant", "event", "member", "function"];
         class PhaserPlugin extends colibri.Plugin {
