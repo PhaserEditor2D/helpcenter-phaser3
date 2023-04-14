@@ -26,9 +26,11 @@ var helpcenter;
                 }));
                 reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
                     const data = await this.getJSON("data/phaser-examples.json", colibri.CACHE_VERSION);
+                    this.addTypeToData(data);
                     this._examples = data.children.map(child => new phaser.core.ExampleInfo(null, child));
                     this._exampleMap = new Map();
                     this.buildExamplesMap(this._examples);
+                    console.log(this._exampleMap);
                 }));
                 reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
                     const data = await this.getJSON("data/phaser-examples-code.json", colibri.CACHE_VERSION);
@@ -68,6 +70,15 @@ var helpcenter;
                 reg.addExtension(new phaser.core.PhaserFileEditorInputExtension());
                 reg.addExtension(new phaser.core.JSDocEntryEditorInputExtension());
                 reg.addExtension(new phaser.core.ExampleFolderEditorInputExtension());
+            }
+            addTypeToData(data) {
+                data.type = data.path.endsWith(".js") ? "file" : "directory";
+                if (data.type === "directory") {
+                    data.children = data.children || [];
+                    for (const child of data.children) {
+                        this.addTypeToData(child);
+                    }
+                }
             }
             buildExamplesMap(examples) {
                 for (const e of examples) {
