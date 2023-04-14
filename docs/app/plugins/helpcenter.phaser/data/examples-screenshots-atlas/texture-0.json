@@ -1,6 +1,6 @@
 {
   "frames": {
-    "/actions/grid align.jpg": {
+    "/actions/align to base.jpg": {
       "frame": {
         "x": 0,
         "y": 0,
@@ -24,9 +24,273 @@
         "y": 0.5
       }
     },
-    "/actions/inc x layers.jpg": {
+    "/actions/align to offset.jpg": {
       "frame": {
         "x": 128,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/actions/align to.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/actions/angle with step.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/actions/angle.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/actions/get first.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/actions/grid align animations.jpg": {
+      "frame": {
+        "x": 768,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/actions/grid align group.jpg": {
+      "frame": {
+        "x": 896,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/actions/grid align overlap.jpg": {
+      "frame": {
+        "x": 1024,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/actions/grid align sprites.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/actions/inc x and y.jpg": {
+      "frame": {
+        "x": 1280,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/actions/inc x.jpg": {
+      "frame": {
+        "x": 1408,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/actions/inc y.jpg": {
+      "frame": {
+        "x": 1536,
         "y": 0,
         "w": 128,
         "h": 96
@@ -50,7 +314,7 @@
     },
     "/actions/place on a circle multi.jpg": {
       "frame": {
-        "x": 256,
+        "x": 1664,
         "y": 0,
         "w": 128,
         "h": 96
@@ -74,7 +338,7 @@
     },
     "/actions/place on a circle reversed.jpg": {
       "frame": {
-        "x": 384,
+        "x": 1792,
         "y": 0,
         "w": 128,
         "h": 96
@@ -98,7 +362,7 @@
     },
     "/actions/place on circle.jpg": {
       "frame": {
-        "x": 512,
+        "x": 1920,
         "y": 0,
         "w": 128,
         "h": 96
@@ -122,8 +386,8 @@
     },
     "/actions/place on ellipse.jpg": {
       "frame": {
-        "x": 640,
-        "y": 0,
+        "x": 0,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -146,8 +410,8 @@
     },
     "/actions/place on line.jpg": {
       "frame": {
-        "x": 768,
-        "y": 0,
+        "x": 0,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -170,8 +434,8 @@
     },
     "/actions/place on part of a circle.jpg": {
       "frame": {
-        "x": 896,
-        "y": 0,
+        "x": 0,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -194,8 +458,8 @@
     },
     "/actions/place on rectangle shift.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 0,
+        "x": 0,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -218,8 +482,8 @@
     },
     "/actions/place on rectangle.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 0,
+        "x": 0,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -242,8 +506,56 @@
     },
     "/actions/place on triangle.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 0,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
         "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/actions/place sprites on circle.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/actions/place sprites on part of a circle.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -266,8 +578,8 @@
     },
     "/actions/random circle.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 0,
+        "x": 0,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -290,8 +602,8 @@
     },
     "/actions/random ellipse.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 0,
+        "x": 0,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -314,8 +626,8 @@
     },
     "/actions/random line.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 0,
+        "x": 0,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -338,8 +650,8 @@
     },
     "/actions/random rectangle.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 0,
+        "x": 0,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -362,8 +674,8 @@
     },
     "/actions/random triangle.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 0,
+        "x": 0,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -387,7 +699,7 @@
     "/actions/rotate around distance.jpg": {
       "frame": {
         "x": 0,
-        "y": 96,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -411,7 +723,7 @@
     "/actions/rotate around x y.jpg": {
       "frame": {
         "x": 0,
-        "y": 192,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -435,7 +747,7 @@
     "/actions/rotate around.jpg": {
       "frame": {
         "x": 0,
-        "y": 288,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -459,7 +771,7 @@
     "/actions/rotate container facing point.jpg": {
       "frame": {
         "x": 0,
-        "y": 384,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -483,7 +795,7 @@
     "/actions/set alpha.jpg": {
       "frame": {
         "x": 0,
-        "y": 480,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -507,7 +819,31 @@
     "/actions/set x y.jpg": {
       "frame": {
         "x": 0,
-        "y": 576,
+        "y": 1824,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/actions/shift position snake.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -530,8 +866,8 @@
     },
     "/actions/shift position.jpg": {
       "frame": {
-        "x": 0,
-        "y": 672,
+        "x": 128,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -554,8 +890,8 @@
     },
     "/actions/spread.jpg": {
       "frame": {
-        "x": 0,
-        "y": 768,
+        "x": 256,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -578,8 +914,32 @@
     },
     "/actions/wrap in camera bounds.jpg": {
       "frame": {
+        "x": 384,
+        "y": 96,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
         "x": 0,
-        "y": 864,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/actions/wrap in rectangle with padding.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -602,8 +962,8 @@
     },
     "/actions/wrap in rectangle.jpg": {
       "frame": {
-        "x": 0,
-        "y": 960,
+        "x": 640,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -626,8 +986,8 @@
     },
     "/animation/60fps animation test.jpg": {
       "frame": {
-        "x": 0,
-        "y": 1056,
+        "x": 768,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -650,8 +1010,8 @@
     },
     "/animation/add animation event.jpg": {
       "frame": {
-        "x": 0,
-        "y": 1152,
+        "x": 896,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -674,8 +1034,8 @@
     },
     "/animation/add frames to existing animation.jpg": {
       "frame": {
-        "x": 0,
-        "y": 1248,
+        "x": 1024,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -698,8 +1058,8 @@
     },
     "/animation/animation from png sequence.jpg": {
       "frame": {
-        "x": 0,
-        "y": 1344,
+        "x": 1152,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -722,8 +1082,8 @@
     },
     "/animation/animation get progress.jpg": {
       "frame": {
-        "x": 0,
-        "y": 1440,
+        "x": 1280,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -746,8 +1106,8 @@
     },
     "/animation/animation repeat event.jpg": {
       "frame": {
-        "x": 0,
-        "y": 1536,
+        "x": 1408,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -770,8 +1130,8 @@
     },
     "/animation/aseprite animation.jpg": {
       "frame": {
-        "x": 0,
-        "y": 1632,
+        "x": 1536,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -794,8 +1154,8 @@
     },
     "/animation/chained animation.jpg": {
       "frame": {
-        "x": 0,
-        "y": 1728,
+        "x": 1664,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -818,8 +1178,8 @@
     },
     "/animation/create animation from canvas texture.jpg": {
       "frame": {
-        "x": 0,
-        "y": 1824,
+        "x": 1792,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -842,8 +1202,8 @@
     },
     "/animation/create animation from sprite sheet.jpg": {
       "frame": {
-        "x": 0,
-        "y": 1920,
+        "x": 1920,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -867,7 +1227,7 @@
     "/animation/create animation from texture atlas.jpg": {
       "frame": {
         "x": 128,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -891,7 +1251,7 @@
     "/animation/create animation on sprite.jpg": {
       "frame": {
         "x": 256,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -915,7 +1275,7 @@
     "/animation/create animation without frame names.jpg": {
       "frame": {
         "x": 384,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -939,7 +1299,7 @@
     "/animation/create from sprite config.jpg": {
       "frame": {
         "x": 512,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -963,7 +1323,7 @@
     "/animation/cubes.jpg": {
       "frame": {
         "x": 640,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -987,7 +1347,7 @@
     "/animation/export json.jpg": {
       "frame": {
         "x": 768,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -1011,7 +1371,7 @@
     "/animation/from animation json.jpg": {
       "frame": {
         "x": 896,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -1035,7 +1395,7 @@
     "/animation/from json.jpg": {
       "frame": {
         "x": 1024,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -1059,7 +1419,7 @@
     "/animation/generate frame names.jpg": {
       "frame": {
         "x": 1152,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -1083,7 +1443,7 @@
     "/animation/generate frame numbers.jpg": {
       "frame": {
         "x": 1280,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -1107,7 +1467,7 @@
     "/animation/gif to animation.jpg": {
       "frame": {
         "x": 1408,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -1131,7 +1491,7 @@
     "/animation/hide on complete.jpg": {
       "frame": {
         "x": 1536,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -1155,7 +1515,7 @@
     "/animation/mixed animation.jpg": {
       "frame": {
         "x": 1664,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -1179,7 +1539,7 @@
     "/animation/multi atlas animation.jpg": {
       "frame": {
         "x": 1792,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -1203,7 +1563,7 @@
     "/animation/muybridge.jpg": {
       "frame": {
         "x": 1920,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -1227,7 +1587,7 @@
     "/animation/on complete event.jpg": {
       "frame": {
         "x": 128,
-        "y": 192,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1250,8 +1610,8 @@
     },
     "/animation/on repeat event.jpg": {
       "frame": {
-        "x": 256,
-        "y": 192,
+        "x": 128,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -1274,8 +1634,8 @@
     },
     "/animation/on start event.jpg": {
       "frame": {
-        "x": 384,
-        "y": 192,
+        "x": 128,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -1298,8 +1658,8 @@
     },
     "/animation/on stop event.jpg": {
       "frame": {
-        "x": 512,
-        "y": 192,
+        "x": 128,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -1322,8 +1682,8 @@
     },
     "/animation/on update event.jpg": {
       "frame": {
-        "x": 640,
-        "y": 192,
+        "x": 128,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -1346,8 +1706,8 @@
     },
     "/animation/pause all animations.jpg": {
       "frame": {
-        "x": 768,
-        "y": 192,
+        "x": 128,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -1370,8 +1730,8 @@
     },
     "/animation/pause animation instances.jpg": {
       "frame": {
-        "x": 896,
-        "y": 192,
+        "x": 128,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -1394,8 +1754,8 @@
     },
     "/animation/play after delay.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 192,
+        "x": 128,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -1418,8 +1778,8 @@
     },
     "/animation/play after repeat.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 192,
+        "x": 128,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -1442,8 +1802,8 @@
     },
     "/animation/play animation with config.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 192,
+        "x": 128,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -1466,8 +1826,8 @@
     },
     "/animation/random delay.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 192,
+        "x": 128,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -1490,8 +1850,8 @@
     },
     "/animation/remove animation event.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 192,
+        "x": 128,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -1514,8 +1874,8 @@
     },
     "/animation/reverse animation.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 192,
+        "x": 128,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -1538,8 +1898,8 @@
     },
     "/animation/show animation play through.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 192,
+        "x": 128,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -1562,8 +1922,8 @@
     },
     "/animation/show on start.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 192,
+        "x": 128,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -1587,7 +1947,7 @@
     "/animation/sprite animation events.jpg": {
       "frame": {
         "x": 128,
-        "y": 288,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -1611,7 +1971,7 @@
     "/animation/stagger play 1.jpg": {
       "frame": {
         "x": 128,
-        "y": 384,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -1635,7 +1995,7 @@
     "/animation/stagger play 2.jpg": {
       "frame": {
         "x": 128,
-        "y": 480,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -1658,8 +2018,8 @@
     },
     "/animation/tween timescale.jpg": {
       "frame": {
-        "x": 128,
-        "y": 576,
+        "x": 256,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1682,8 +2042,8 @@
     },
     "/animation/yoyo.jpg": {
       "frame": {
-        "x": 128,
-        "y": 672,
+        "x": 384,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1706,8 +2066,8 @@
     },
     "/audio/html5 audio/audiosprite.jpg": {
       "frame": {
-        "x": 128,
-        "y": 768,
+        "x": 512,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1730,8 +2090,32 @@
     },
     "/audio/html5 audio/basic playback and events.jpg": {
       "frame": {
-        "x": 128,
-        "y": 864,
+        "x": 640,
+        "y": 288,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/audio/html5 audio/disable pause on blur.jpg": {
+      "frame": {
+        "x": 768,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1754,8 +2138,8 @@
     },
     "/audio/html5 audio/loop delay.jpg": {
       "frame": {
-        "x": 128,
-        "y": 960,
+        "x": 896,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1776,10 +2160,10 @@
         "y": 0.5
       }
     },
-    "/audio/html5 audio/markers pause, resume.jpg": {
+    "/audio/html5 audio/markers pause resume.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1056,
+        "x": 1024,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1802,32 +2186,8 @@
     },
     "/audio/html5 audio/play audio file.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1152,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/audio/html5 audio/play audio from child scene.jpg": {
-      "frame": {
-        "x": 128,
-        "y": 1248,
+        "x": 1152,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1850,8 +2210,8 @@
     },
     "/audio/html5 audio/seek.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1344,
+        "x": 1280,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1874,8 +2234,32 @@
     },
     "/audio/html5 audio/volume mute rate detune.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1440,
+        "x": 1408,
+        "y": 288,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/audio/no audio/basic playback and events.jpg": {
+      "frame": {
+        "x": 1536,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1898,8 +2282,32 @@
     },
     "/audio/no audio/loop delay.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1536,
+        "x": 1664,
+        "y": 288,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/audio/no audio/markers pause resume.jpg": {
+      "frame": {
+        "x": 1792,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1922,8 +2330,8 @@
     },
     "/audio/no audio/seek.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1632,
+        "x": 1920,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1944,10 +2352,10 @@
         "y": 0.5
       }
     },
-    "/audio/sid/test.jpg": {
+    "/audio/sid/c64 sid player.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1728,
+        "x": 256,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -1970,8 +2378,56 @@
     },
     "/audio/web audio/loop delay.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1824,
+        "x": 256,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/audio/web audio/play audio from child scene.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/audio/web audio/play movement sound.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -1994,8 +2450,8 @@
     },
     "/audio/web audio/play sound on keypress.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1920,
+        "x": 256,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -2019,7 +2475,7 @@
     "/audio/web audio/reuse audio context.jpg": {
       "frame": {
         "x": 256,
-        "y": 288,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -2042,8 +2498,80 @@
     },
     "/audio/web audio/seek.jpg": {
       "frame": {
-        "x": 384,
-        "y": 288,
+        "x": 256,
+        "y": 960,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/audio/web audio/spatial audio move with player.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1056,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/audio/web audio/spatial with destination coordinates.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1152,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/audio/web audio/using same audio file.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -2066,8 +2594,392 @@
     },
     "/audio/web audio/volume mute rate detune.jpg": {
       "frame": {
+        "x": 256,
+        "y": 1344,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/0000 char index.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1440,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/0000 container alpha.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1536,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/0000 drag scale.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1632,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/0000 frame cycle.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1728,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/0000 hex corners.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1824,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/0000 hex to world.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1920,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/0000 mask.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/0000 matter.jpg": {
+      "frame": {
         "x": 512,
-        "y": 288,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/0000 move dom.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/0000 move test.jpg": {
+      "frame": {
+        "x": 768,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/0000 multi atlas complete.jpg": {
+      "frame": {
+        "x": 896,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/4337 drag destroy.jpg": {
+      "frame": {
+        "x": 1024,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/4391 tilemap off.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/4793 tween restart.jpg": {
+      "frame": {
+        "x": 1280,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/4878 audio mute.jpg": {
+      "frame": {
+        "x": 1408,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/4905 hit area debug.jpg": {
+      "frame": {
+        "x": 1536,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2090,8 +3002,8 @@
     },
     "/bugs/5222 points.jpg": {
       "frame": {
-        "x": 640,
-        "y": 288,
+        "x": 1664,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2114,8 +3026,8 @@
     },
     "/bugs/5399 resize mask.jpg": {
       "frame": {
-        "x": 768,
-        "y": 288,
+        "x": 1792,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2138,8 +3050,8 @@
     },
     "/bugs/5420 plugin.jpg": {
       "frame": {
-        "x": 896,
-        "y": 288,
+        "x": 1920,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2162,8 +3074,8 @@
     },
     "/bugs/5423 rt to shader.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 288,
+        "x": 384,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -2186,8 +3098,32 @@
     },
     "/bugs/5426 rt canvas alpha.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 288,
+        "x": 384,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5429 stroke.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -2210,8 +3146,1136 @@
     },
     "/bugs/5445 rt snapshot.jpg": {
       "frame": {
+        "x": 384,
+        "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5452 light fill.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 864,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5454 tween play.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 960,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5456 memory.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 1056,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5464 scene restart.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 1152,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5464 text.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 1248,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5476 light depth.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 1344,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5483 layer input.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 1440,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5489 container input.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 1536,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5493 spine blue.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 1632,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5494 iso cull.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 1728,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5501 bitmap text.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 1824,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5507 always enabled.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 1920,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5508 input.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5509 rt tint.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5522 lights.jpg": {
+      "frame": {
+        "x": 768,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5538 dom input.jpg": {
+      "frame": {
+        "x": 896,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5538 ios input.jpg": {
+      "frame": {
+        "x": 1024,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5563 fbo.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5570 mesh.jpg": {
+      "frame": {
         "x": 1280,
-        "y": 288,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5576 destroy group.jpg": {
+      "frame": {
+        "x": 1408,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5592 pointer move.jpg": {
+      "frame": {
+        "x": 1536,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5596 spine canvas.jpg": {
+      "frame": {
+        "x": 1664,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5603 rt mac os.jpg": {
+      "frame": {
+        "x": 1792,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5608 hex tile.jpg": {
+      "frame": {
+        "x": 1920,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5617 debug 1.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5617 debug 2.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5617 push circle.jpg": {
+      "frame": {
+        "x": 768,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5627 spine mask.jpg": {
+      "frame": {
+        "x": 896,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5667 ios blend.jpg": {
+      "frame": {
+        "x": 1024,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5680 anim delay.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5699 rend list.jpg": {
+      "frame": {
+        "x": 1280,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5707 rt beyond canvas.jpg": {
+      "frame": {
+        "x": 1408,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5720 fill.jpg": {
+      "frame": {
+        "x": 1536,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5774 canvas.jpg": {
+      "frame": {
+        "x": 1664,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5781 iso tile.jpg": {
+      "frame": {
+        "x": 1792,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5802 geom post.jpg": {
+      "frame": {
+        "x": 1920,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5803 update list.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5830 rtl.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5873 video.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 864,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5883 layer camera.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 960,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5884 bounds.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 1056,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5924 ios.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 1152,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5939 snapshot fringe.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 1248,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5952 game config.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 1344,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5974 headless.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 1440,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5976 shape mask.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 1536,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5986 tween.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -2234,8 +4298,944 @@
     },
     "/bugs/6000 rt resize.jpg": {
       "frame": {
+        "x": 512,
+        "y": 1728,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6001 json datakey.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 1824,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6005 tween play.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 1920,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6006 input over.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6009 tween update to.jpg": {
+      "frame": {
+        "x": 768,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6016 kill tweens nested.jpg": {
+      "frame": {
+        "x": 896,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6022 spine atlas.jpg": {
+      "frame": {
+        "x": 1024,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6033 retina graphics.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6040 move scene.jpg": {
+      "frame": {
+        "x": 1280,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6041 drag container.jpg": {
+      "frame": {
         "x": 1408,
-        "y": 288,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6052 anim in container.jpg": {
+      "frame": {
+        "x": 1536,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6091 go duplication.jpg": {
+      "frame": {
+        "x": 1664,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6093 graphics canvas.jpg": {
+      "frame": {
+        "x": 1792,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6097 render config.jpg": {
+      "frame": {
+        "x": 1920,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6120 post fx.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6121 rtl.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 864,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6123 interactive load.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 960,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6126 physics light.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 1056,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6133 zone angle.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 1152,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6169 tween pause.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 1248,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6173 kill tweens of.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 1344,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6178 matter polygon.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 1440,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6180 cam zoom snapshot.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 1536,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6187 word wrap.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 1632,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6188 map copy.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 1728,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6253 tween restart.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 1824,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6268 layer destroy.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 1920,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6282 scene restart.jpg": {
+      "frame": {
+        "x": 768,
+        "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6283 ios16.jpg": {
+      "frame": {
+        "x": 896,
+        "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6293 physics.jpg": {
+      "frame": {
+        "x": 1024,
+        "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6327 aseprite.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6362 spine atlas.jpg": {
+      "frame": {
+        "x": 1280,
+        "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6367 text.jpg": {
+      "frame": {
+        "x": 1408,
+        "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6380 spine.jpg": {
+      "frame": {
+        "x": 1536,
+        "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6407 post fx mask.jpg": {
+      "frame": {
+        "x": 1664,
+        "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6411 rt resize.jpg": {
+      "frame": {
+        "x": 1792,
+        "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6425 particles.jpg": {
+      "frame": {
+        "x": 1920,
+        "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6434 aseprite.jpg": {
+      "frame": {
+        "x": 768,
+        "y": 864,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6440 clear fx.jpg": {
+      "frame": {
+        "x": 768,
+        "y": 960,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/polygon rays.jpg": {
+      "frame": {
+        "x": 768,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -2258,8 +5258,56 @@
     },
     "/cache/json file.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 768,
+        "y": 1152,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/cache/text file.jpg": {
+      "frame": {
+        "x": 768,
+        "y": 1248,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/cache/xml file.jpg": {
+      "frame": {
+        "x": 768,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -2282,8 +5330,8 @@
     },
     "/camera/16 camera shader test.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 288,
+        "x": 768,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -2306,8 +5354,8 @@
     },
     "/camera/16 camera test.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 288,
+        "x": 768,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -2330,8 +5378,8 @@
     },
     "/camera/32 camera test.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 288,
+        "x": 768,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -2354,8 +5402,8 @@
     },
     "/camera/add camera on click.jpg": {
       "frame": {
-        "x": 256,
-        "y": 384,
+        "x": 768,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -2378,8 +5426,8 @@
     },
     "/camera/background color interpolate.jpg": {
       "frame": {
-        "x": 256,
-        "y": 480,
+        "x": 768,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -2402,8 +5450,8 @@
     },
     "/camera/background color.jpg": {
       "frame": {
-        "x": 256,
-        "y": 576,
+        "x": 768,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -2426,8 +5474,8 @@
     },
     "/camera/basics.jpg": {
       "frame": {
-        "x": 256,
-        "y": 672,
+        "x": 896,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -2450,8 +5498,8 @@
     },
     "/camera/bounds at zero.jpg": {
       "frame": {
-        "x": 256,
-        "y": 768,
+        "x": 1024,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -2474,7 +5522,7 @@
     },
     "/camera/camera alpha.jpg": {
       "frame": {
-        "x": 256,
+        "x": 1152,
         "y": 864,
         "w": 128,
         "h": 96
@@ -2498,8 +5546,8 @@
     },
     "/camera/camera blur shader.jpg": {
       "frame": {
-        "x": 256,
-        "y": 960,
+        "x": 1280,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -2522,8 +5570,32 @@
     },
     "/camera/camera center on.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1056,
+        "x": 1408,
+        "y": 864,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/camera/camera effect callbacks.jpg": {
+      "frame": {
+        "x": 1536,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -2546,8 +5618,8 @@
     },
     "/camera/camera effects.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1152,
+        "x": 1664,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -2570,8 +5642,8 @@
     },
     "/camera/camera fade in and out.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1248,
+        "x": 1792,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -2594,8 +5666,8 @@
     },
     "/camera/camera fade out and in.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1344,
+        "x": 1920,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -2618,8 +5690,8 @@
     },
     "/camera/camera filter.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1440,
+        "x": 896,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -2642,8 +5714,8 @@
     },
     "/camera/cameras from state config.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1536,
+        "x": 1024,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -2666,8 +5738,8 @@
     },
     "/camera/change camera shader.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1632,
+        "x": 1152,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -2690,8 +5762,8 @@
     },
     "/camera/cross scene object placement.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1728,
+        "x": 1280,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -2714,8 +5786,8 @@
     },
     "/camera/fade.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1824,
+        "x": 1408,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -2738,8 +5810,32 @@
     },
     "/camera/fixed to camera.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1920,
+        "x": 1536,
+        "y": 960,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/camera/flash.jpg": {
+      "frame": {
+        "x": 1664,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -2762,8 +5858,8 @@
     },
     "/camera/follow offset.jpg": {
       "frame": {
-        "x": 384,
-        "y": 384,
+        "x": 1792,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -2786,8 +5882,8 @@
     },
     "/camera/follow sprite small bounds.jpg": {
       "frame": {
-        "x": 512,
-        "y": 384,
+        "x": 1920,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -2810,8 +5906,8 @@
     },
     "/camera/follow sprite with deadzone.jpg": {
       "frame": {
-        "x": 640,
-        "y": 384,
+        "x": 896,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -2834,8 +5930,8 @@
     },
     "/camera/follow sprite.jpg": {
       "frame": {
-        "x": 768,
-        "y": 384,
+        "x": 896,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -2859,7 +5955,7 @@
     "/camera/follow user controlled sprite.jpg": {
       "frame": {
         "x": 896,
-        "y": 384,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -2882,8 +5978,8 @@
     },
     "/camera/follow zoom tilemap.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 384,
+        "x": 896,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -2906,8 +6002,8 @@
     },
     "/camera/follow zoom.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 384,
+        "x": 896,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -2930,8 +6026,8 @@
     },
     "/camera/game shader test 1.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 384,
+        "x": 896,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -2954,8 +6050,8 @@
     },
     "/camera/game shader test 2.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 384,
+        "x": 896,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -2978,8 +6074,8 @@
     },
     "/camera/game shader test 3.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 384,
+        "x": 896,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -3002,8 +6098,8 @@
     },
     "/camera/get world point.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 384,
+        "x": 896,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -3026,8 +6122,8 @@
     },
     "/camera/graphics landscape.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 384,
+        "x": 896,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -3050,8 +6146,8 @@
     },
     "/camera/ignore container.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 384,
+        "x": 1024,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -3074,8 +6170,8 @@
     },
     "/camera/ignore gameobjects in containers.jpg": {
       "frame": {
-        "x": 384,
-        "y": 480,
+        "x": 1152,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -3098,8 +6194,8 @@
     },
     "/camera/ignore group children.jpg": {
       "frame": {
-        "x": 384,
-        "y": 576,
+        "x": 1280,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -3122,8 +6218,8 @@
     },
     "/camera/ignore.jpg": {
       "frame": {
-        "x": 384,
-        "y": 672,
+        "x": 1408,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -3146,8 +6242,8 @@
     },
     "/camera/minimap camera.jpg": {
       "frame": {
-        "x": 384,
-        "y": 768,
+        "x": 1536,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -3170,8 +6266,8 @@
     },
     "/camera/move camera with keys.jpg": {
       "frame": {
-        "x": 384,
-        "y": 864,
+        "x": 1664,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -3194,8 +6290,8 @@
     },
     "/camera/multi camera/boot.jpg": {
       "frame": {
-        "x": 384,
-        "y": 960,
+        "x": 1792,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -3218,7 +6314,7 @@
     },
     "/camera/multiple cameras.jpg": {
       "frame": {
-        "x": 384,
+        "x": 1920,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -3242,7 +6338,7 @@
     },
     "/camera/origin.jpg": {
       "frame": {
-        "x": 384,
+        "x": 1024,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -3266,7 +6362,7 @@
     },
     "/camera/overlap.jpg": {
       "frame": {
-        "x": 384,
+        "x": 1024,
         "y": 1248,
         "w": 128,
         "h": 96
@@ -3290,7 +6386,7 @@
     },
     "/camera/pan to.jpg": {
       "frame": {
-        "x": 384,
+        "x": 1024,
         "y": 1344,
         "w": 128,
         "h": 96
@@ -3314,7 +6410,7 @@
     },
     "/camera/remove camera on click.jpg": {
       "frame": {
-        "x": 384,
+        "x": 1024,
         "y": 1440,
         "w": 128,
         "h": 96
@@ -3338,7 +6434,7 @@
     },
     "/camera/render to texture shader 2.jpg": {
       "frame": {
-        "x": 384,
+        "x": 1024,
         "y": 1536,
         "w": 128,
         "h": 96
@@ -3362,7 +6458,7 @@
     },
     "/camera/render to texture shader 3.jpg": {
       "frame": {
-        "x": 384,
+        "x": 1024,
         "y": 1632,
         "w": 128,
         "h": 96
@@ -3386,7 +6482,7 @@
     },
     "/camera/render to texture shader 4.jpg": {
       "frame": {
-        "x": 384,
+        "x": 1024,
         "y": 1728,
         "w": 128,
         "h": 96
@@ -3410,7 +6506,7 @@
     },
     "/camera/render to texture shader 5.jpg": {
       "frame": {
-        "x": 384,
+        "x": 1024,
         "y": 1824,
         "w": 128,
         "h": 96
@@ -3434,7 +6530,7 @@
     },
     "/camera/render to texture shader 6.jpg": {
       "frame": {
-        "x": 384,
+        "x": 1024,
         "y": 1920,
         "w": 128,
         "h": 96
@@ -3458,8 +6554,8 @@
     },
     "/camera/render to texture shader.jpg": {
       "frame": {
-        "x": 512,
-        "y": 480,
+        "x": 1152,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -3482,8 +6578,8 @@
     },
     "/camera/render to texture.jpg": {
       "frame": {
-        "x": 640,
-        "y": 480,
+        "x": 1280,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -3506,8 +6602,8 @@
     },
     "/camera/rotate camera.jpg": {
       "frame": {
-        "x": 768,
-        "y": 480,
+        "x": 1408,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -3530,8 +6626,8 @@
     },
     "/camera/round pixels.jpg": {
       "frame": {
-        "x": 896,
-        "y": 480,
+        "x": 1536,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -3554,8 +6650,8 @@
     },
     "/camera/scroll view.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 480,
+        "x": 1664,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -3578,8 +6674,8 @@
     },
     "/camera/select shader test.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 480,
+        "x": 1792,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -3602,8 +6698,8 @@
     },
     "/camera/set bounds.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 480,
+        "x": 1920,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -3626,8 +6722,8 @@
     },
     "/camera/set scroll factor.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 480,
+        "x": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -3650,8 +6746,8 @@
     },
     "/camera/set small bounds.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 480,
+        "x": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -3674,8 +6770,8 @@
     },
     "/camera/set viewport.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 480,
+        "x": 1152,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -3698,8 +6794,8 @@
     },
     "/camera/shader multi cam test.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 480,
+        "x": 1152,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -3722,8 +6818,8 @@
     },
     "/camera/single small camera.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 480,
+        "x": 1152,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -3746,8 +6842,8 @@
     },
     "/camera/tile map with camera shake.jpg": {
       "frame": {
-        "x": 512,
-        "y": 576,
+        "x": 1152,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -3770,8 +6866,8 @@
     },
     "/camera/world camera.jpg": {
       "frame": {
-        "x": 640,
-        "y": 576,
+        "x": 1152,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -3794,8 +6890,8 @@
     },
     "/camera/world coordinate from another scene.jpg": {
       "frame": {
-        "x": 768,
-        "y": 576,
+        "x": 1152,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -3818,8 +6914,8 @@
     },
     "/camera/world view.jpg": {
       "frame": {
-        "x": 896,
-        "y": 576,
+        "x": 1280,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -3842,8 +6938,8 @@
     },
     "/camera/zoom to.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 576,
+        "x": 1408,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -3866,8 +6962,8 @@
     },
     "/components/data/change data event.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 576,
+        "x": 1536,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -3890,32 +6986,8 @@
     },
     "/components/data/data values.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 576,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/components/data/get and set data values.jpg": {
-      "frame": {
-        "x": 1408,
-        "y": 576,
+        "x": 1664,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -3938,8 +7010,8 @@
     },
     "/components/data/query data.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 576,
+        "x": 1792,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -3962,8 +7034,8 @@
     },
     "/components/data/set data event.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 576,
+        "x": 1920,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -3986,8 +7058,8 @@
     },
     "/components/data/set multiple values.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 576,
+        "x": 1280,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4010,32 +7082,8 @@
     },
     "/components/data/store scene data.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 576,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/demoscene/birdy nam nam.jpg": {
-      "frame": {
-        "x": 512,
-        "y": 672,
+        "x": 1408,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4058,8 +7106,8 @@
     },
     "/demoscene/chunky raster bars.jpg": {
       "frame": {
-        "x": 512,
-        "y": 768,
+        "x": 1536,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4082,8 +7130,8 @@
     },
     "/demoscene/raster carpet.jpg": {
       "frame": {
-        "x": 512,
-        "y": 864,
+        "x": 1664,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4106,8 +7154,8 @@
     },
     "/demoscene/raster wave.jpg": {
       "frame": {
-        "x": 512,
-        "y": 960,
+        "x": 1792,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4130,8 +7178,8 @@
     },
     "/demoscene/vertical raster wave.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1056,
+        "x": 1920,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4154,8 +7202,8 @@
     },
     "/depth sorting/3d depth sort.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1152,
+        "x": 1280,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4178,8 +7226,8 @@
     },
     "/depth sorting/bring to top.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1248,
+        "x": 1280,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4202,8 +7250,8 @@
     },
     "/depth sorting/depth sorting.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1344,
+        "x": 1280,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4226,8 +7274,8 @@
     },
     "/depth sorting/get top object.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1440,
+        "x": 1280,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4250,8 +7298,8 @@
     },
     "/depth sorting/isometric blocks.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1536,
+        "x": 1280,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4274,8 +7322,8 @@
     },
     "/depth sorting/isometric map.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1632,
+        "x": 1280,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -4298,8 +7346,8 @@
     },
     "/depth sorting/remove from display list.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1728,
+        "x": 1408,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4322,8 +7370,8 @@
     },
     "/depth sorting/z index.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1824,
+        "x": 1536,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4346,8 +7394,8 @@
     },
     "/display/align/in bottom center.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1920,
+        "x": 1664,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4370,8 +7418,8 @@
     },
     "/display/align/in bottom left.jpg": {
       "frame": {
-        "x": 640,
-        "y": 672,
+        "x": 1792,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4394,8 +7442,8 @@
     },
     "/display/align/in bottom right.jpg": {
       "frame": {
-        "x": 768,
-        "y": 672,
+        "x": 1920,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4418,8 +7466,8 @@
     },
     "/display/align/in center.jpg": {
       "frame": {
-        "x": 896,
-        "y": 672,
+        "x": 1408,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4442,8 +7490,8 @@
     },
     "/display/align/in left center.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 672,
+        "x": 1408,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4466,8 +7514,8 @@
     },
     "/display/align/in right center.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 672,
+        "x": 1408,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4490,8 +7538,8 @@
     },
     "/display/align/in top center.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 672,
+        "x": 1408,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4515,7 +7563,7 @@
     "/display/align/in top left.jpg": {
       "frame": {
         "x": 1408,
-        "y": 672,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -4539,7 +7587,7 @@
     "/display/align/in top right.jpg": {
       "frame": {
         "x": 1536,
-        "y": 672,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4563,7 +7611,7 @@
     "/display/alpha/bottom alpha.jpg": {
       "frame": {
         "x": 1664,
-        "y": 672,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4587,7 +7635,7 @@
     "/display/alpha/single alpha.jpg": {
       "frame": {
         "x": 1792,
-        "y": 672,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4611,7 +7659,7 @@
     "/display/alpha/top alpha.jpg": {
       "frame": {
         "x": 1920,
-        "y": 672,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4634,8 +7682,8 @@
     },
     "/display/alpha/top left alpha.jpg": {
       "frame": {
-        "x": 640,
-        "y": 768,
+        "x": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4658,8 +7706,8 @@
     },
     "/display/alpha/tween alpha.jpg": {
       "frame": {
-        "x": 640,
-        "y": 864,
+        "x": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4682,8 +7730,8 @@
     },
     "/display/blend modes/blend mode tester.jpg": {
       "frame": {
-        "x": 640,
-        "y": 960,
+        "x": 1536,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4706,8 +7754,8 @@
     },
     "/display/blend modes/circle cut out.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1056,
+        "x": 1536,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -4730,8 +7778,8 @@
     },
     "/display/blend modes/custom blend mode with graphics.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1152,
+        "x": 1664,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4754,8 +7802,8 @@
     },
     "/display/blend modes/custom blend mode.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1248,
+        "x": 1792,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4778,8 +7826,8 @@
     },
     "/display/blend modes/custom separate blend mode.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1344,
+        "x": 1920,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4802,8 +7850,8 @@
     },
     "/display/blend modes/difference.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1440,
+        "x": 1664,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4826,8 +7874,8 @@
     },
     "/display/blend modes/graphics blend mode.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1536,
+        "x": 1792,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4850,8 +7898,8 @@
     },
     "/display/blend modes/overlay.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1632,
+        "x": 1920,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4874,8 +7922,8 @@
     },
     "/display/blend modes/particle.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1728,
+        "x": 1664,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4898,8 +7946,8 @@
     },
     "/display/color/brighten.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1824,
+        "x": 1664,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -4922,8 +7970,8 @@
     },
     "/display/color/darken.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1920,
+        "x": 1792,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4946,8 +7994,8 @@
     },
     "/display/color/lighten.jpg": {
       "frame": {
-        "x": 768,
-        "y": 768,
+        "x": 1920,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4970,8 +8018,8 @@
     },
     "/display/color/random color.jpg": {
       "frame": {
-        "x": 896,
-        "y": 768,
+        "x": 1792,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -4993,3054 +8041,6 @@
       }
     },
     "/display/color/random gray.jpg": {
-      "frame": {
-        "x": 1024,
-        "y": 768,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/effects/fractal terrain.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 768,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/bitmap mask alpha.jpg": {
-      "frame": {
-        "x": 1280,
-        "y": 768,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/bitmap mask bitmap font.jpg": {
-      "frame": {
-        "x": 1408,
-        "y": 768,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/bitmap mask bitmap font2.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 768,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/bitmap mask example 2.jpg": {
-      "frame": {
-        "x": 1664,
-        "y": 768,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/bitmap mask example.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 768,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/bitmap mask masked particles.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 768,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/bitmap mask particles.jpg": {
-      "frame": {
-        "x": 768,
-        "y": 864,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/bitmap mask text masking text.jpg": {
-      "frame": {
-        "x": 768,
-        "y": 960,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/bitmap mask text.jpg": {
-      "frame": {
-        "x": 768,
-        "y": 1056,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/bitmap mask text2.jpg": {
-      "frame": {
-        "x": 768,
-        "y": 1152,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/camera inversed mask test 1.jpg": {
-      "frame": {
-        "x": 768,
-        "y": 1248,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/camera mask test 1.jpg": {
-      "frame": {
-        "x": 768,
-        "y": 1344,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/camera mask test 2.jpg": {
-      "frame": {
-        "x": 768,
-        "y": 1440,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/camera mask test 3.jpg": {
-      "frame": {
-        "x": 768,
-        "y": 1536,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/camera mask test 4.jpg": {
-      "frame": {
-        "x": 768,
-        "y": 1632,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/camera mask test 5.jpg": {
-      "frame": {
-        "x": 768,
-        "y": 1728,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/component/add mask to sprite.jpg": {
-      "frame": {
-        "x": 768,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/container mask test 1.jpg": {
-      "frame": {
-        "x": 768,
-        "y": 1920,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/container mask test 2.jpg": {
-      "frame": {
-        "x": 896,
-        "y": 864,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/container mask test 3.jpg": {
-      "frame": {
-        "x": 1024,
-        "y": 864,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/flickering spotlight.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 864,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/geometry mask example.jpg": {
-      "frame": {
-        "x": 1280,
-        "y": 864,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/geometry mask/graphics mask.jpg": {
-      "frame": {
-        "x": 1408,
-        "y": 864,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/geometry mask/image mask arc.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 864,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/geometry mask/image mask multiple circles.jpg": {
-      "frame": {
-        "x": 1664,
-        "y": 864,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/geometry mask/image mask.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 864,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/geometry mask/multiple image mask.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 864,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/logo shine.jpg": {
-      "frame": {
-        "x": 896,
-        "y": 960,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/magnify glass.jpg": {
-      "frame": {
-        "x": 1024,
-        "y": 960,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/mask perf test.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 960,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/spotlight rect.jpg": {
-      "frame": {
-        "x": 1280,
-        "y": 960,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/masks/spotlight.jpg": {
-      "frame": {
-        "x": 1408,
-        "y": 960,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/shaders/shader test 1.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 960,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/shaders/shader test 2.jpg": {
-      "frame": {
-        "x": 1664,
-        "y": 960,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/shaders/shader test 3.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 960,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/shaders/shader test 4.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 960,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/shaders/shader test 5.jpg": {
-      "frame": {
-        "x": 896,
-        "y": 1056,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/shaders/shader test 6.jpg": {
-      "frame": {
-        "x": 896,
-        "y": 1152,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/shaders/shader test 7.jpg": {
-      "frame": {
-        "x": 896,
-        "y": 1248,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/shaders/shader test 8.jpg": {
-      "frame": {
-        "x": 896,
-        "y": 1344,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/tint/atlas frame tint.jpg": {
-      "frame": {
-        "x": 896,
-        "y": 1440,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/tint/corner tint.jpg": {
-      "frame": {
-        "x": 896,
-        "y": 1536,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/tint/multiple images.jpg": {
-      "frame": {
-        "x": 896,
-        "y": 1632,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/tint/per vertex tint.jpg": {
-      "frame": {
-        "x": 896,
-        "y": 1728,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/tint/pixel wave.jpg": {
-      "frame": {
-        "x": 896,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/tint/rainbow text.jpg": {
-      "frame": {
-        "x": 896,
-        "y": 1920,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/tint/rasters.jpg": {
-      "frame": {
-        "x": 1024,
-        "y": 1056,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/tint/single color tint.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1056,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/tint/text tint.jpg": {
-      "frame": {
-        "x": 1280,
-        "y": 1056,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/tint/tile sprite tint.jpg": {
-      "frame": {
-        "x": 1408,
-        "y": 1056,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/tint/tint and alpha.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 1056,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/tint/tint fill effect.jpg": {
-      "frame": {
-        "x": 1664,
-        "y": 1056,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/tint/tint fill.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 1056,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/tint/tween tint.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 1056,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/dwitter/5475.jpg": {
-      "frame": {
-        "x": 1024,
-        "y": 1152,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/dwitter/5479.jpg": {
-      "frame": {
-        "x": 1024,
-        "y": 1248,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/dwitter/5500.jpg": {
-      "frame": {
-        "x": 1024,
-        "y": 1344,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/dwitter/test.jpg": {
-      "frame": {
-        "x": 1024,
-        "y": 1440,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/events/create event emitter.jpg": {
-      "frame": {
-        "x": 1024,
-        "y": 1536,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/events/emit scene event.jpg": {
-      "frame": {
-        "x": 1024,
-        "y": 1632,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/events/emit using symbols.jpg": {
-      "frame": {
-        "x": 1024,
-        "y": 1728,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/events/game object events.jpg": {
-      "frame": {
-        "x": 1024,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/events/listen to game object event.jpg": {
-      "frame": {
-        "x": 1024,
-        "y": 1920,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/events/once event.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1152,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/events/turn off anonymous event handler.jpg": {
-      "frame": {
-        "x": 1280,
-        "y": 1152,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/events/turn off event handler.jpg": {
-      "frame": {
-        "x": 1408,
-        "y": 1152,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/banner colors.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 1152,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/custom canvas.jpg": {
-      "frame": {
-        "x": 1664,
-        "y": 1152,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/custom webgl canvas.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 1152,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/game destroy with multi scenes.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 1152,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/game destroy.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1248,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/game rng.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1344,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/game title.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1440,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/game url.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1536,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/game version.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1632,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/headless renderer.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1728,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/hide banner.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/hide phaser from banner.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1920,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/multiple game instances.jpg": {
-      "frame": {
-        "x": 1280,
-        "y": 1248,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/pixel art mode.jpg": {
-      "frame": {
-        "x": 1408,
-        "y": 1248,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/round pixels.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 1248,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/transparent.jpg": {
-      "frame": {
-        "x": 1664,
-        "y": 1248,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/dynamic/canvas text.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 1248,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/dynamic/display callback index effect.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 1248,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/dynamic/display callback rotation effect.jpg": {
-      "frame": {
-        "x": 1280,
-        "y": 1344,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/dynamic/display callback scale effect.jpg": {
-      "frame": {
-        "x": 1408,
-        "y": 1344,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/dynamic/display callback wibble effect.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 1344,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/dynamic/text follow path.jpg": {
-      "frame": {
-        "x": 1664,
-        "y": 1344,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/dynamic/tinted text.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 1344,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/dynamic/vertical scroller.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 1344,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/retro font/retro text 1.jpg": {
-      "frame": {
-        "x": 1280,
-        "y": 1440,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/retro font/retro text 2.jpg": {
-      "frame": {
-        "x": 1280,
-        "y": 1536,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/retro font/retro text mega scroll.jpg": {
-      "frame": {
-        "x": 1280,
-        "y": 1632,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/retro font/retro text scroll callback.jpg": {
-      "frame": {
-        "x": 1280,
-        "y": 1728,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/retro font/retro text scroll.jpg": {
-      "frame": {
-        "x": 1280,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/retro font/scrolling retro text.jpg": {
-      "frame": {
-        "x": 1280,
-        "y": 1920,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/retro font/tinted retro text.jpg": {
-      "frame": {
-        "x": 1408,
-        "y": 1440,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/bitmaptext blend mode.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 1440,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/bitmaptext origin and scale.jpg": {
-      "frame": {
-        "x": 1664,
-        "y": 1440,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/bitmaptext rotation.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 1440,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/bitmaptext scale.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 1440,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/bitmaptext-atlas.jpg": {
-      "frame": {
-        "x": 1408,
-        "y": 1536,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/bitmaptext-canvas.jpg": {
-      "frame": {
-        "x": 1408,
-        "y": 1632,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/bitmaptext.jpg": {
-      "frame": {
-        "x": 1408,
-        "y": 1728,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/change font size.jpg": {
-      "frame": {
-        "x": 1408,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/change font.jpg": {
-      "frame": {
-        "x": 1408,
-        "y": 1920,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/drop shadow.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 1536,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/get text size multiline.jpg": {
-      "frame": {
-        "x": 1664,
-        "y": 1536,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/get text size scaled.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 1536,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/get text size.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 1536,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/large-text.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 1632,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/max width change content.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 1728,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/max width.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/multi line alignment.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 1920,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/multi line.jpg": {
-      "frame": {
-        "x": 1664,
-        "y": 1632,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/origin and scale.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 1632,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/padding.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 1632,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/text origin.jpg": {
-      "frame": {
-        "x": 1664,
-        "y": 1728,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/bitmaptext/static/tinted text.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 1728,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/blitter/benchmark test 1.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 1728,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/blitter/benchmark test 2.jpg": {
-      "frame": {
-        "x": 1664,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/blitter/benchmark test 3.jpg": {
-      "frame": {
-        "x": 1664,
-        "y": 1920,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/blitter/blitter alpha.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/blitter/blitter camera test canvas.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/blitter/blitter camera test.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 1920,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/blitter/blitter global alpha.jpg": {
       "frame": {
         "x": 1920,
         "y": 1920,
@@ -8067,7 +8067,7 @@
     "/game objects/group/create child.jpg": {
       "frame": {
         "x": 0,
-        "y": 576,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -8090,8 +8090,8 @@
     },
     "/audio/html5 audio/markers play.jpg": {
       "frame": {
-        "x": 128,
-        "y": 768,
+        "x": 512,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -8114,8 +8114,8 @@
     },
     "/audio/no audio/audiosprite.jpg": {
       "frame": {
-        "x": 128,
-        "y": 768,
+        "x": 512,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -8138,8 +8138,8 @@
     },
     "/audio/no audio/markers play.jpg": {
       "frame": {
-        "x": 128,
-        "y": 768,
+        "x": 512,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -8162,8 +8162,8 @@
     },
     "/audio/web audio/audiosprite.jpg": {
       "frame": {
-        "x": 128,
-        "y": 768,
+        "x": 512,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -8186,32 +8186,8 @@
     },
     "/audio/web audio/markers play.jpg": {
       "frame": {
-        "x": 128,
-        "y": 768,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/audio/no audio/basic playback and events.jpg": {
-      "frame": {
-        "x": 128,
-        "y": 864,
+        "x": 512,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -8234,8 +8210,8 @@
     },
     "/audio/web audio/basic playback and events.jpg": {
       "frame": {
-        "x": 128,
-        "y": 864,
+        "x": 640,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -8256,34 +8232,10 @@
         "y": 0.5
       }
     },
-    "/audio/no audio/markers pause, resume.jpg": {
+    "/audio/html5 audio/play audio from child scene.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1056,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/audio/web audio/markers pause, resume.jpg": {
-      "frame": {
-        "x": 128,
-        "y": 1056,
+        "x": 1152,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -8306,8 +8258,8 @@
     },
     "/audio/web audio/play audio file.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1152,
+        "x": 1152,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -8328,10 +8280,10 @@
         "y": 0.5
       }
     },
-    "/audio/web audio/play audio from child scene.jpg": {
+    "/audio/web audio/play audio from file pack.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1248,
+        "x": 1152,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -8354,31 +8306,7 @@
     },
     "/audio/no audio/volume mute rate detune.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1440,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/cache/text file.jpg": {
-      "frame": {
-        "x": 1536,
+        "x": 1408,
         "y": 288,
         "w": 128,
         "h": 96
@@ -8400,9 +8328,9 @@
         "y": 0.5
       }
     },
-    "/cache/xml file.jpg": {
+    "/audio/web audio/markers pause resume.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 288,
         "w": 128,
         "h": 96
@@ -8424,10 +8352,106 @@
         "y": 0.5
       }
     },
-    "/camera/camera effect callbacks.jpg": {
+    "/bugs/4644 container.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/4704 scene time.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1248,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5571 line to line.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1248,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5970 scale mode.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1248,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/demoscene/birdy nam nam.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8450,8 +8474,8 @@
     },
     "/display/color/hex string to color.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8474,8 +8498,8 @@
     },
     "/display/color/rgb string to color.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8498,8 +8522,8 @@
     },
     "/display/color/value to color.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8520,10 +8544,10 @@
         "y": 0.5
       }
     },
-    "/game objects/bitmaptext/static/width and height.jpg": {
+    "/game objects/graphics/circle spin.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8544,10 +8568,10 @@
         "y": 0.5
       }
     },
-    "/game objects/dom element/video element.jpg": {
+    "/game objects/graphics/draw triangles.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8568,10 +8592,10 @@
         "y": 0.5
       }
     },
-    "/game objects/graphics/primitives/line filled.jpg": {
+    "/game objects/graphics/obj viewer.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8592,34 +8616,10 @@
         "y": 0.5
       }
     },
-    "/game objects/graphics/primitives/rectangle filled texture.jpg": {
+    "/game objects/graphics/single obj viewer.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/graphics/primitives/rectangle stroked.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8642,8 +8642,8 @@
     },
     "/game objects/graphics/trail.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8664,10 +8664,10 @@
         "y": 0.5
       }
     },
-    "/game objects/particle emitter/emit from shape.jpg": {
+    "/game objects/lights/light follow pointer.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8690,8 +8690,8 @@
     },
     "/games/firstgame/part1.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8714,8 +8714,8 @@
     },
     "/games/firstgame/part2.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8738,8 +8738,8 @@
     },
     "/geom/line/inverse line.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8762,8 +8762,8 @@
     },
     "/input/keyboard/create key combo.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8786,8 +8786,8 @@
     },
     "/input/keyboard/global keydown event.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8810,8 +8810,8 @@
     },
     "/input/keyboard/key combo max key delay.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8834,8 +8834,8 @@
     },
     "/input/keyboard/key modifier.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8858,8 +8858,8 @@
     },
     "/input/keyboard/keydown.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8882,8 +8882,8 @@
     },
     "/input/keyboard/konami code key combo.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8906,8 +8906,104 @@
     },
     "/input/keyboard/reset key combo on match.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/input/pointer/drag rectangle.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1248,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/input/pointer/draw sprites.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1248,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/input/pointer/move event.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1248,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/input/pointer/pointer buttons.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8930,8 +9026,8 @@
     },
     "/loader/audio/load audio sprite resources.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8954,56 +9050,8 @@
     },
     "/loader/audio/load audio sprite.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/loader/loader events/file complete event with key.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 288,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/loader/loader events/load from external url.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -9026,32 +9074,8 @@
     },
     "/plugins/global scene plugin.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/scenes/add plugin at runtime.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -9074,32 +9098,8 @@
     },
     "/scenes/change scene from objects.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/scenes/load external plugin.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -9122,56 +9122,632 @@
     },
     "/textures/get pixel from image.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/utils/array/range.jpg": {
-      "frame": {
-        "x": 1536,
-        "y": 288,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/camera/flash.jpg": {
-      "frame": {
         "x": 256,
-        "y": 1824,
+        "y": 1248,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/textures/multi atlas.jpg": {
+      "frame": {
+        "x": 896,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/4910 video oncomplete.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5478 display none.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5572 ff audio.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5847 step particles.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6057 rt frame.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/game objects/graphics/obj world cam.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/game objects/graphics/obj world.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/games/top down shooter/topdown_averagefocus.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/games/top down shooter/topdown_combatmechanics.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/games/top down shooter/topdown_playerfocus.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/games/top down shooter/topdown_targetfocus.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/input/gamepad/twin stick shooter.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine3/spine preloader test.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/spine preloader test.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/tilemap/tests/semi automated tests.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5867 pointer out.jpg": {
+      "frame": {
+        "x": 1536,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5818 container update.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/5846 container move.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/bugs/6078 scene remove.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/game objects/container/add tilesprite to container.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/game objects/container/nested container visibility.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/game objects/images/destroy an image.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 864,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/game objects/layer/depth sort layer children.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 864,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/game config/headless renderer.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 1440,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/tilemap/mario map scroller.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -9194,8 +9770,8 @@
     },
     "/camera/shake.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1824,
+        "x": 1664,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -9218,8 +9794,8 @@
     },
     "/camera/ignore gameobjects.jpg": {
       "frame": {
-        "x": 384,
-        "y": 480,
+        "x": 1152,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -9242,56 +9818,8 @@
     },
     "/loader/tile maps/load tile map from local json.jpg": {
       "frame": {
-        "x": 512,
-        "y": 576,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/loader/tile maps/load tile map json from object.jpg": {
-      "frame": {
-        "x": 512,
-        "y": 576,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/loader/tile maps/load tile map json from scene payload.jpg": {
-      "frame": {
-        "x": 512,
-        "y": 576,
+        "x": 1152,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -9314,8 +9842,8 @@
     },
     "/loader/tile maps/load tile map json.jpg": {
       "frame": {
-        "x": 512,
-        "y": 576,
+        "x": 1152,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -9336,34 +9864,10 @@
         "y": 0.5
       }
     },
-    "/events/event arguments.jpg": {
+    "/components/data/get and set data values.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 1536,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game config/custom webgl2 canvas.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 1152,
+        "x": 1536,
+        "y": 1248,
         "w": 128,
         "h": 96
       },

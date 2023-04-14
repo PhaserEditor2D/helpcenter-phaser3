@@ -55,11 +55,15 @@ namespace helpcenter.phaser {
 
                 const data = await this.getJSON("data/phaser-examples.json", colibri.CACHE_VERSION) as core.IExamplesData;
 
+                this.addTypeToData(data);
+
                 this._examples = data.children.map(child => new core.ExampleInfo(null, child));
 
                 this._exampleMap = new Map();
 
                 this.buildExamplesMap(this._examples);
+
+                console.log(this._exampleMap);
 
             }));
 
@@ -128,6 +132,21 @@ namespace helpcenter.phaser {
             reg.addExtension(new core.ExampleFolderEditorInputExtension());
         }
 
+        private addTypeToData(data: core.IExamplesData) {
+
+            data.type = data.path.endsWith(".js") ? "file" : "directory";
+
+            if (data.type === "directory") {
+
+                data.children = data.children || [];
+                
+                for (const child of data.children) {
+
+                    this.addTypeToData(child);
+                }
+            }
+        }
+
         private buildExamplesMap(examples: core.ExampleInfo[]) {
 
             for (const e of examples) {
@@ -173,7 +192,7 @@ namespace helpcenter.phaser {
 
             if (example.getData().type === "file") {
 
-                return phaser.PhaserPlugin.getInstance().getPhaserLabsUrl("/" + page +".html?src=src/" + example.getPath());
+                return phaser.PhaserPlugin.getInstance().getPhaserLabsUrl("/" + page + ".html?src=src/" + example.getPath());
 
             } else if (example.isMultiFile()) {
 

@@ -4,8 +4,6 @@ namespace helpcenter.phaser.core {
         path: string;
         name: string;
         children: IExamplesData[],
-        size?: number;
-        extension?: string;
         type?: "file" | "directory";
     }
 }

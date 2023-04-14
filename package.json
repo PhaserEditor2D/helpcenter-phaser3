@@ -1,7 +1,7 @@
 {
   "name": "helpcenter-phaser3",
   "version": "1.2.1",
-  "phaserVersion": "3.55.2",
+  "phaserVersion": "3.60.0",
   "description": "Integrated tool for browsing the Phaser docs and examples.",
   "main": "index.js",
   "scripts": {
@@ -11,11 +11,11 @@
     "build": "cd scripts/ && ./dist.sh",
     "watch": "cd source/app/ && tsc -b -w",
     "build-examples-atlas": "free-tex-packer-cli --project scripts/texture-packer-project.ftpp --output source/app/plugins/helpcenter.phaser/data/examples-screenshots-atlas",
-    "get-phaser-examples": "cd scripts && ./get-phaser-examples.js",
+    "get-phaser-examples": "cd scripts && node get-phaser-examples.js",
     "update-pwa": "cd scripts/ && node make-sw-assets.js",
     "get-phaser": "cd scripts/ && ./get-all-metadata.sh",
     "dev-server": "http-server ./source -p 9090 -d",
-    "dist-server": "http-server ./dist -p 9091 -d"
+    "dist-server": "http-server ./docs -p 9091 -d"
   },
   "author": "Arian Fornaris <developers@phasereditor2d.com> (https://phasereditor2d.com)",
   "license": "MIT",
