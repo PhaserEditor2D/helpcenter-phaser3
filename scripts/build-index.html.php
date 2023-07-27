@@ -1,6 +1,6 @@
 <?php
 
-$editorFolder = __DIR__ . "/../source/editor/app";
+$editorFolder = $argv[1];
 
 $json = file_get_contents(__DIR__ . "/../package.json");
 $EDITOR_VER = json_decode($json)->version;
@@ -76,10 +76,7 @@ usort($renderInfoArray, function ($a, $b) {
     return $a1 < $b1 ? -1 : 1;
 });
 
-header("Content-Type: text/html; charset=UTF-8");
-
 ?>
-
 <!DOCTYPE html>
 
 <html lang="en">

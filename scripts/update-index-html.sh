@@ -1,3 +1,3 @@
 #!/bin/bash
 
-php build-index.html.php > ../source/index.html
+php build-index.html.php ../source/editor/app > ../source/index.html

@@ -1,0 +1,1956 @@
+    /*
+
+    Rules to layout controls.
+
+    Important:
+        - Don't provide colors here. The colors are provided by the dark.css and light.css files.
+
+    */
+
+    body,
+    html {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body,
+    button {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+
+    input,
+    textarea {
+        min-width: 0px;
+        border-radius: 3px;
+        padding: 3px;
+        outline: none;
+        border-style: none;
+    }
+
+    label {
+        /* min-width: 0px; */
+    }
+
+    * {
+        user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .UserSelectText * {
+        user-select: text !important;
+        -webkit-touch-callout: text !important;
+        -webkit-user-select: text !important;
+        -khtml-user-select: text !important;
+        -moz-user-select: text !important;
+        -ms-user-select: text !important;
+    }
+
+    body {
+        overflow-y: hidden;
+    }
+
+    input, textarea {
+        -webkit-user-select: text !important;
+        -khtml-user-select: text !important;
+        -moz-user-select: text !important;
+        -o-user-select: text !important;
+        user-select: text !important;
+        box-sizing: border-box;
+    }
+
+    button {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        height: 2em;
+        min-height: 2em;
+    }
+
+    button:active,
+    button:focus {
+        outline-width: 1px;
+        outline-color: rgba(255, 255, 255, 0.1);
+    }
+
+    button.alignLeft {
+        text-align: left;
+    }
+
+    canvas {
+        outline: none;
+        image-rendering: crisp-edges;
+    }
+
+    .Control {
+        position: absolute;
+        box-sizing: border-box;
+    }
+
+    .ImageControl {
+        position: fixed;
+    }
+
+    /* Tooltip */
+
+    .Tooltip {
+        position: fixed;
+        border-width: 1px;
+        border-style: solid;
+        padding: 5px;
+    }
+
+    .TooltipKeyString {
+        font-family: monospace;
+    }
+
+    /* TabPane */
+
+    .TabPane {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    .TabPaneTitleBar {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    div.TabPaneTitleBar::-webkit-scrollbar {
+        height: 7px;
+    }
+
+    .TabPaneLabel {
+        float: left;
+        display: grid;
+        align-items: center;
+        box-sizing: border-box;
+        grid-template-columns: min-content 1fr auto min-content;
+        border-radius: 2px 2px 0 0;
+        /* padding: 5px 10px 5px 5px; */
+        padding: 8px;
+        padding-bottom: 5px;
+    }
+
+
+    .TabPaneLabel span {
+        margin: 3px 0px 0px 3px;
+        align-self: center;
+        cursor: default;
+    }
+
+    .TabPaneLabelSections {
+        display: flex;
+    }
+
+    .TabPaneLabelSections .IconControlCanvas {
+        margin-top: 3px;
+        padding: 0 5px 0 5px;
+    }
+
+    .TabPaneLabelSection {
+        margin-left: 10px;
+        margin-top: 3px;
+        margin-bottom: -1px;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: transparent;
+    }
+
+    .TabPaneLabelSection:nth-child(2) {
+        margin-left: 0px;
+    }
+
+    .TabPaneLabelSection.selected {
+        border-bottom-color: black;
+    }
+
+    .TabPaneContentArea {
+        border-radius: 0 3px 3px 3px;
+    }
+
+    .TabPaneContentArea .ContentArea {
+        display: none;
+    }
+
+    .TabPaneContentArea .ContentArea.selected {
+        display: block;
+    }
+
+    .TabPaneContentArea,
+    .TabPaneContentArea .ContentArea {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* ScrollPane */
+
+    .ScrollPane {
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr 0px;
+        grid-template-rows: 1fr;
+    }
+
+    .ScrollHandler {
+        display: block;
+        opacity: 0;
+    }
+
+    /*.ScrollPane */.FilteredViewer:hover .ScrollHandler:not(:active) {
+        opacity: 1;
+    }
+
+    .ScrollHandler:active {
+        opacity: 1 !important;
+    }
+
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    .ScrollBar,
+    .ScrollHandler {
+        position: relative;
+        width: 15px;
+    }
+
+    .ScrollBar {
+        left: -15px;
+    }
+
+    .ScrollHandler,
+    ::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+    }
+
+    .ScrollPane.hideScrollBar .ScrollBar {
+        opacity: 0;
+    }
+
+    /* Zoom */
+
+    .ZoomControl {
+        position: absolute;
+        right: 20px;
+        bottom: 5px;
+        padding: 2px;
+        border-radius: 3px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 2px;
+        opacity: 0.3;
+        z-index: 3;
+    }
+
+    .ZoomControl:hover {
+        opacity: 0.9;
+    }
+
+    /* Viewer */
+
+    .FilteredViewer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    .FilterControl {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        grid-template-rows: 1fr;
+        align-items: center;
+        column-gap: 0px;
+        box-sizing: border-box;
+        padding: 5px 0px 5px 6px;
+    }
+
+    .FilterControl input {
+        width: 100%;
+    }
+
+    .FilterControlInputIcon {
+        margin-left: -20px;
+        opacity: 0.5;
+        display: none;
+    }
+
+    .FilterControlInputIcon:hover {
+        opacity: 1;
+    }
+
+    .FilteredViewer .FilterControl {
+        position: relative;
+        width: 100%;
+    }
+
+    .FilteredViewer .ViewerContainer {
+        position: static;
+    }
+
+    .ViewerContainer .Viewer {
+        position: fixed;
+    }
+
+    /* PropertyPage */
+
+    .PropertyPage {
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: start;
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        height: 100%;
+        row-gap: 6px;
+        overflow-y: auto;
+    }
+
+    .PropertySectionPane {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        position: initial;
+        height: 100%;
+        margin: 0px;
+        border-radius: 3px;
+    }
+
+    .PropertyTitleArea {
+        display: inline-grid;
+        grid-template-columns: 20px 1fr auto;
+        padding: 5px;
+    }
+
+    .PropertyTitleAreaWithIcon {
+        grid-template-columns: 20px 20px 1fr auto !important;
+    }
+
+    .PropertyTitleArea .PropertySectionIcon {
+        margin-right: 5px;
+    }
+
+    .PropertyTitleArea .IconControlCanvas {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .PropertyTitleArea label {
+        overflow: hidden;
+        white-space: nowrap;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        align-self: center;
+    }
+
+    .PropertyFormArea {
+        display: grid;
+        padding: 2px 0px 10px 0px;
+    }
+
+    .PropertyButtonPanel {
+        width: 100%;
+        display: block;
+    }
+
+    .PropertyButtonPanel button {
+        float: right;
+        margin-left: 5px;
+        font-size: small;
+    }
+
+    .PropertySubTitlePanel {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-column: 1 / span 4;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 3px;
+        border-radius: 3px;
+    }
+
+    .PropertySubTitleLabel {
+        width: 100%;
+    }
+
+    .formSimpleProps {
+        padding: 5px;
+    }
+
+    .formLabel {
+        justify-self: self-start;
+    }
+
+    .formSeparator {
+        opacity: 0.5;
+        font-size: smaller;
+        justify-self: start;
+        text-transform: uppercase;
+        margin: 5px;
+    }
+
+    .StringDialogField {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .StringDialogField textarea {
+        resize: none;
+        overflow: hidden;
+    }
+
+    /* Toolbar */
+
+    .IconButton {
+        border-radius: 3px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0);
+        border-width: 1px;
+    }
+
+    .IconButton:hover {
+        border-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .ToolbarItem {
+        display: flex;
+        float: left;
+        margin-right: 5px;
+        padding: 5px;
+        border-radius: 3px;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .ToolbarItemHasTextAndIcon canvas {
+        margin-right: 3px;
+    }
+
+    .ToolbarItemHideText .ToolbarItemText {
+        display: none;
+    }
+
+    /* ProgressBar */
+
+    .ProgressBar {
+        height: 10px;
+    }
+
+    /* Dialog & Notification */
+
+    .Notification {
+        z-index: 10000;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        padding: 20px;
+        border-radius: 3px;
+        background: inherit;
+    }
+
+    .Dialog,
+    .Notification {
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.5);
+        box-shadow:
+            -12px -5px 22px rgba(0, 0, 0, 0.2),
+            12px 12px 22px rgba(0, 0, 0, 0.2),
+            -12px 12px 22px rgba(0, 0, 0, 0.2),
+            12px -5px 22px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .DialogContainer {
+        position: absolute;
+        z-index: 1000;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Dialog {
+        position: absolute;
+        z-index: 1001;
+    }
+
+    .Dialog {
+        display: grid;
+        grid-template-columns: 5px 1fr 5px;
+        grid-template-rows: 5px auto 5px 1fr 5px auto 5px;
+    }
+
+    .DialogHalfScreenHeight {
+        height: 50%;
+    }
+
+    .Dialog .DialogTitlePane {
+        width: 100%;
+        grid-column-start: 2;
+        grid-row-start: 2;
+        font-size: small;
+        text-align: center;
+    }
+
+    .Dialog .DialogClientArea {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        grid-column-start: 2;
+        grid-row-start: 4;
+        box-sizing: content-box;
+    }
+
+    .Dialog .FilteredViewer,
+    .Dialog .DialogSection {
+        border-radius: 3px;
+    }
+
+    .Dialog .DialogSection {
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .Dialog .DialogButtonPane {
+        grid-row-start: 6;
+        grid-column-start: 2;
+        display: block;
+    }
+
+    .Dialog .DialogButtonPane button {
+        float: right;
+        margin-left: 5px;
+    }
+
+    .WizardDialog .DialogClientArea {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        row-gap: 5px;
+    }
+
+    .WizardDialog .PageTitleLabel {
+        font-weight: bold;
+        margin-left: 5px;
+    }
+
+    .WizardDialog .PageDescArea {
+        padding: 0.5em 0 0.5em 0;
+        font-style: italic;
+        margin-left: 5px;
+    }
+
+    .WizardDialog .PageArea {
+        height: 100%;
+    }
+
+    /* AlertDialog */
+
+    .AlertDialog,
+    .ConfirmDialog {
+        height: auto !important;
+    }
+
+    .AlertDialog .DialogClientArea,
+    .ConfirmDialog .DialogClientArea {
+        padding: 10px;
+    }
+
+    .AlertDialog .DialogClientArea pre,
+    .ConfirmDialog .DialogClientArea pre {
+        overflow-x: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        margin: 5px 0px;
+    }
+
+    /* InputDialog */
+
+    .InputDialog {
+        height: auto !important;
+    }
+
+    .InputDialogLabel {
+        padding: 1em 0px;
+    }
+
+    /* ProgressDialog */
+
+    .ProgressDialog {
+        height: auto !important;
+    }
+
+    .ProgressDialog .ProgressBar {
+        border-radius: 3px;
+    }
+
+    /* Upload Dialog */
+
+    .FilesDragEnter {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    /* Menu */
+
+    .Menu {
+        position: fixed;
+        z-index: 2001;
+    }
+
+    .MenuItem {
+        display: grid;
+        grid-template-columns: 30px 20px 1fr auto;
+        padding: 5px 10px 5px 0px;
+    }
+
+    .MenuNoIcon .MenuItem {
+        grid-template-columns: 30px 0px 1fr auto;
+    }
+
+    .MenuItemCheckedIcon {
+        grid-column-start: 1;
+        justify-self: center;
+    }
+
+    .MenuItemIcon {
+        grid-column-start: 2;
+        justify-self: center;
+        margin-right: 5px;
+    }
+
+    .NegativeMenuItemIcon {
+        display: none;
+    }
+
+    .MenuItem:hover .NegativeMenuItemIcon {
+        display: block;
+    }
+
+    .MenuItem:hover .ThemeMenuItemIcon {
+        display: none;
+    }
+
+    .MenuItemText {
+        grid-column-start: 3;
+    }
+
+    .MenuItemKeyString {
+        font-family: monospace;
+        margin-left: 3em;
+        grid-column-start: 4;
+    }
+
+    .MenuContainer {
+        z-index: 2000;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .MenuItemSeparator {
+        height: 1px;
+    }
+
+    /* Effects */
+
+    .FadeInEffect {
+        animation: fadein 2s;
+    }
+
+    .FadeOutEffect {
+        animation: fadeout 2s;
+        opacity: 0;
+    }
+
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeout {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }/*
+
+Rules to provide the dark colors
+
+Important:   
+    - No layout information should be provided.
+    - To layout a control, see controls.css.
+    - To layout a workbench UI, see workbench.css
+
+*/
+
+.dark body, .dark .Window {
+    background: #202020 !important;
+    color: #e0e0e0;
+}
+
+/* a */
+
+.dark a {
+    color: white;
+}
+
+/* input */
+
+.dark input,
+.dark textarea {
+    background: #2e2e2e;
+    color: #f0f0f0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff20;
+}
+
+.dark input[type="file"] {
+    display: none;
+}
+
+.dark input:focus,
+.dark textarea:focus {
+    background: #2a2a2a;
+    border-color: #f59c5c !important;
+    outline-style: none;
+}
+
+.dark input:read-only,
+.dark textarea:read-only {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* button */
+
+.dark button,
+.dark input[type="submit"]
+
+/* , .dark .ToolbarItem */
+    {
+    background: #5f5f5f;
+    border-color: #646464;
+    color: #f0f0f0;
+    text-shadow: 1px 1px #0e0e0e;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.dark button[disabled] {
+    color: rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+.dark button:hover,
+.dark .ToolbarItem:hover {
+    background: #747474;
+}
+
+.dark button[disabled]:hover {
+    background: #5f5f5f;
+}
+
+.dark button:active,
+.dark .ToolbarItem.active {
+    background: #4f4f4f;
+}
+
+.dark .ColorButton canvas {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Tooltip */
+
+.dark .Tooltip {
+    background: #151515;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+}
+
+/* TabPane */
+
+.dark .TabPaneContentArea,
+.dark .TabPaneLabel.selected {
+    background: #343434;
+}
+
+.dark .TabPaneContentArea:empty {
+    background: transparent !important;
+}
+
+.dark .TabPaneLabel.selected {
+    text-shadow: 1px 1px #0e0e0e;
+}
+
+.dark .TabPaneLabelSection.selected {
+    border-bottom-color: inherit;
+    color: inherit;
+}
+
+.dark .TabPane.activePart .TabPaneLabelSection.selected {
+    border-bottom-color: #f59c5c !important;
+    color: #f59c5c;
+}
+
+/* Part */
+
+.dark .TabPane.activePart .TabPaneLabel.selected {
+    box-shadow: inset 0px 2px 0px #f0a050;
+}
+
+.dark .TabPane.activePart .TabPaneContentArea,
+.dark .TabPane.activePart .TabPaneLabel.selected {
+    background: #3f3f3f;
+}
+
+.dark .ViewerPart .FilteredViewer {
+    background: transparent;
+}
+
+/* ViewerPart */
+
+.dark .ViewerPart {
+    display: grid;
+    grid-template-columns: 2px 1fr 2px;
+    grid-template-rows: 0px 1fr 0px;
+}
+
+/* Scroll Bar */
+
+.dark {
+    /* firefox */
+    scrollbar-color: #858585 #4b4b4b;
+}
+
+.dark .ScrollBar,
+.dark ::-webkit-scrollbar-track {
+    /*background: #ffffff08;*/
+}
+
+.dark .ScrollHandler,
+.dark ::-webkit-scrollbar-thumb {
+    background: #606060;
+}
+
+.dark .ScrollHandler:hover,
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #656565;
+}
+
+.dark .ScrollHandler:active,
+.dark ::-webkit-scrollbar-thumb:active {
+    background: #767676;
+}
+
+/* Property Page */
+
+.dark .PropertySectionPane {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.dark .PropertyTitleArea {
+    color: #b0b0b0;
+}
+
+.dark .PropertyTitleArea label,
+.dark .PropertySubTitleLabel {
+    /* text-shadow: 1px 1px #0e0e0e; */
+}
+
+/* Toolbar */
+
+.dark .ToolbarItem {
+    text-shadow: 1px 1px #0e0e0e;
+    border-color: transparent;
+}
+
+
+.dark .ToolbarItem.ActionSelected {
+    background: #3f3f3f;
+    border-color: #858585;
+}
+
+/* Icon buttons */
+
+.dark .IconButton:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ProgressBar */
+
+.dark .ProgressBar {
+    background: #f0a050;
+}
+
+/* Pane */
+
+.dark .Pane {
+    background: #2f2f2f;
+}
+
+/* Dialog */
+
+.dark .darkDialogContainer {
+    background: #202020;
+}
+
+.dark .Dialog {
+    background: #3f3f3f;
+}
+
+.dark .Dialog .DialogTitlePane {
+    text-shadow: 1px 1px #0e0e0e;
+}
+
+/* Menu */
+
+.dark .Menu {
+    list-style-type: none;
+    background: #525252;
+    padding: 0px;
+    margin: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6f6f6f;
+    padding: 1px;
+}
+
+.dark .MenuItemSeparator {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.dark .MenuItem:hover,
+.dark .MenuItemSelected {
+    background: #f0a050;
+    color: #0e0e0e;
+}
+
+.dark .MenuItemDisabled {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.dark .MenuItemDisabled:hover {
+    color: #3e3e3e;
+}/*
+
+Rules to provide the theme colors
+
+Important:   
+
+    - No layout information should be provided.
+    - To layout a control, see controls.css.
+    - To layout a workbench UI, see workbench.css
+
+*/
+
+.light body, .light .Window {
+    background: #a2a2a2;
+    color: #0e0e0e;
+}
+
+/* input */
+
+.light input,
+.light textarea {
+    background: #f0f0f0;
+    border: solid 1px #a0a0a0;
+}
+
+.light input[type="file"] {
+    display: none;
+}
+
+.light input:focus,
+.light textarea:focus {
+    background: #f6f6f6;
+    border-color: #4242ff !important;
+    outline-style: none;
+}
+
+.light input:read-only,
+.light textarea:read-only {
+    background: #d6d6d6;
+}
+
+/* button */
+
+.light button,
+.light input[type="submit"] {
+    background: #dadada;
+    border-color: #808080;
+    text-shadow: 1px 1px #ffffff;
+    color: #0f0f0f;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.light button[disabled] {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.light button:hover {
+    background: #eaeaea;
+}
+
+.light button:hover[disabled] {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.light button:active {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Tooltip */
+
+.light .Tooltip {
+    background: #f0f0f0;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+
+/* TabPane */
+
+.light .TabPaneContentArea,
+.light .TabPaneLabel.selected {
+    background: #bdbdbd;
+}
+
+.light .TabPaneContentArea:empty {
+    background: transparent !important;
+}
+
+.light .TabPaneLabel.selected {
+    text-shadow: 1px 1px #f0f0f0;
+}
+
+/* Part */
+
+.light .TabPane.activePart .TabPaneLabel.selected {
+    box-shadow: inset 0px 2px 0px #4242ff;
+}
+
+.light .TabPane.activePart .TabPaneContentArea,
+.light .TabPane.activePart .TabPaneLabel.selected {
+    background: #cacaca;
+}
+
+.light .TabPane.activePart .TabPaneLabelSection.selected {
+    border-bottom-color: #4242ff !important;
+    color: #4242ff;
+}
+
+.light .ViewerPart .FilteredViewer {
+    background: #dadada;
+}
+
+/* Viewer */
+
+.light .FilteredViewer {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Scroll Bar */
+
+.light {
+    /* firefox */
+    scrollbar-color: #b7b7b7 #e5e5e5;
+}
+
+.light .ScrollBar,
+.light ::-webkit-scrollbar-track {
+    /* background: #e5e5e5; */
+}
+
+.light .ScrollHandler,
+.light ::-webkit-scrollbar-thumb {
+    background: #a7a7a7;
+}
+
+.light .ScrollHandler:hover,
+.light ::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
+}
+
+.light .ScrollHandler:active,
+.light ::-webkit-scrollbar-thumb:active {
+    background: #979797;
+}
+
+/* Property Page */
+
+/* 
+.light .PropertyTitleArea {
+} */
+
+/* .light .PropertyTitleArea label {
+    color: rgba(0, 0, 0, 0.75);
+} */
+
+.light .PropertySectionPane {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+/* Toolbar */
+
+.light .ToolbarItem {
+    background: #dadada;
+    border-color: #808080;
+    text-shadow: 1px 1px #f0f0f0;
+}
+
+.light .ToolbarItem:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.light .ToolbarItem:active {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.light .ToolbarItem.ActionSelected {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ProgressBar */
+
+.light .ProgressBar {
+    background: #4242ff;
+}
+
+/* Pane */
+
+.light .Pane {
+    background: #cacaca;
+}
+
+/* Dialog */
+
+.light .DarkDialogContainer {
+    background: #a2a2a2;
+}
+
+.light .Dialog {
+    background: #cacaca;
+}
+
+.light .Dialog .DialogTitlePane {
+    text-shadow: 1px 1px #f0f0f0;
+}
+
+.light .Dialog .FilteredViewer {
+    background: #dadada;
+}
+
+/* Menu */
+
+.light .Menu {
+    list-style-type: none;
+    background: #e0e0e0;
+    padding: 0px;
+    margin: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a0a0a0;
+}
+
+.light .MenuItemSeparator {
+    background: #b0b0b0;
+}
+
+.light .MenuItem:hover,
+.light .MenuItemSelected {
+    background: #4242ff;
+    color: #f0f0f0;
+}
+
+.light .MenuItemDisabled {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.light .MenuItemDisabled:hover {
+    color: rgba(255, 255, 255, 0.5);
+}/*
+
+Rules to layout the Workbench.
+
+Important:
+    - Don't use colors here.
+    - To layout controls, see controls.css
+
+*/
+
+/* Part */
+
+.Part {
+    width: 100%;
+    height: 100%;
+}
+
+.ViewerPart {
+    display: grid;
+    grid-template-columns: 5px 1fr 5px;
+    grid-template-rows: 5px 1fr 5px;
+}
+
+.ViewerPart .FilteredViewer {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border-radius: 3px;
+}
+
+.Part>.FilteredViewer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* toolbar */
+
+.MainToolbar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto;
+    padding: 3px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+.MainToolbarLeftArea {}
+
+.MainToolbarCenterArea {}
+
+.MainToolbarRightArea {}
+
+
+.MainToolbarRightArea .ToolbarItem {
+    float: right !important;
+}
+
+/* AlertDialog */
+
+.AlertDialog pre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}#InspectorView .PropertyPage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.formGrid {
+    display: grid;
+    align-items: center;
+    grid-gap: 5px;
+}
+
+.formGrid-cols-1 {
+    grid-template-columns: 1fr;
+}
+
+.formGrid-cols-2 {
+    grid-template-columns: auto 1fr;
+}
+
+.formGrid-cols-3 {
+    grid-template-columns: auto auto 1fr;
+}
+
+.formGrid-cols-4 {
+    grid-template-columns: auto 1fr auto 1fr;
+}
+
+.formGrid-cols-5 {
+    grid-template-columns: auto auto 1fr auto 1fr;
+}
+
+.formCheckbox {
+    justify-self: start;
+    margin: 0px;
+}
+
+.label-axis-x,
+.label-axis-y {
+    justify-self: self-end;
+    padding: 5px;
+    margin-right: -5px;
+    border-radius: 3px 0px 0px 3px;
+    font-size: smaller;
+    color: #fff;
+    text-shadow: -1px 1px 1px #0005;
+}
+
+.input-axis-x,
+.input-axis-y {
+    border-radius: 0px 3px 3px 0px;
+}
+
+.input-axis-x {
+    border-color: darkred !important;
+}
+
+.input-axis-y {
+    border-color: green !important;
+}
+
+.label-axis-x {
+    background-color: darkred;
+}
+
+.label-axis-y {
+    background-color: green;
+}
+
+.ImagePreviewFormArea {
+    padding: 10px;
+}/* BASICS */
+
+.CodeMirror {
+  /* Set height, width, borders, and global font properties here */
+  font-family: monospace;
+  height: 300px;
+  color: black;
+  direction: ltr;
+}
+
+/* PADDING */
+
+.CodeMirror-lines {
+  padding: 4px 0; /* Vertical padding around content */
+}
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror pre.CodeMirror-line-like {
+  padding: 0 4px; /* Horizontal padding of content */
+}
+
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  background-color: transparent; /* The little square between H and V scrollbars */
+}
+
+/* GUTTER */
+
+.CodeMirror-gutters {
+  border-right: 1px solid #ddd;
+  background-color: #f7f7f7;
+  white-space: nowrap;
+}
+.CodeMirror-linenumbers {}
+.CodeMirror-linenumber {
+  padding: 0 3px 0 5px;
+  min-width: 20px;
+  text-align: right;
+  color: #999;
+  white-space: nowrap;
+}
+
+.CodeMirror-guttermarker { color: black; }
+.CodeMirror-guttermarker-subtle { color: #999; }
+
+/* CURSOR */
+
+.CodeMirror-cursor {
+  border-left: 1px solid black;
+  border-right: none;
+  width: 0;
+}
+/* Shown when moving in bi-directional text */
+.CodeMirror div.CodeMirror-secondarycursor {
+  border-left: 1px solid silver;
+}
+.cm-fat-cursor .CodeMirror-cursor {
+  width: auto;
+  border: 0 !important;
+  background: #7e7;
+}
+.cm-fat-cursor div.CodeMirror-cursors {
+  z-index: 1;
+}
+.cm-fat-cursor-mark {
+  background-color: rgba(20, 255, 20, 0.5);
+  -webkit-animation: blink 1.06s steps(1) infinite;
+  -moz-animation: blink 1.06s steps(1) infinite;
+  animation: blink 1.06s steps(1) infinite;
+}
+.cm-animate-fat-cursor {
+  width: auto;
+  border: 0;
+  -webkit-animation: blink 1.06s steps(1) infinite;
+  -moz-animation: blink 1.06s steps(1) infinite;
+  animation: blink 1.06s steps(1) infinite;
+  background-color: #7e7;
+}
+@-moz-keyframes blink {
+  0% {}
+  50% { background-color: transparent; }
+  100% {}
+}
+@-webkit-keyframes blink {
+  0% {}
+  50% { background-color: transparent; }
+  100% {}
+}
+@keyframes blink {
+  0% {}
+  50% { background-color: transparent; }
+  100% {}
+}
+
+/* Can style cursor different in overwrite (non-insert) mode */
+.CodeMirror-overwrite .CodeMirror-cursor {}
+
+.cm-tab { display: inline-block; text-decoration: inherit; }
+
+.CodeMirror-rulers {
+  position: absolute;
+  left: 0; right: 0; top: -50px; bottom: 0;
+  overflow: hidden;
+}
+.CodeMirror-ruler {
+  border-left: 1px solid #ccc;
+  top: 0; bottom: 0;
+  position: absolute;
+}
+
+/* DEFAULT THEME */
+
+.cm-s-default .cm-header {color: blue;}
+.cm-s-default .cm-quote {color: #090;}
+.cm-negative {color: #d44;}
+.cm-positive {color: #292;}
+.cm-header, .cm-strong {font-weight: bold;}
+.cm-em {font-style: italic;}
+.cm-link {text-decoration: underline;}
+.cm-strikethrough {text-decoration: line-through;}
+
+.cm-s-default .cm-keyword {color: #708;}
+.cm-s-default .cm-atom {color: #219;}
+.cm-s-default .cm-number {color: #164;}
+.cm-s-default .cm-def {color: #00f;}
+.cm-s-default .cm-variable,
+.cm-s-default .cm-punctuation,
+.cm-s-default .cm-property,
+.cm-s-default .cm-operator {}
+.cm-s-default .cm-variable-2 {color: #05a;}
+.cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: #085;}
+.cm-s-default .cm-comment {color: #a50;}
+.cm-s-default .cm-string {color: #a11;}
+.cm-s-default .cm-string-2 {color: #f50;}
+.cm-s-default .cm-meta {color: #555;}
+.cm-s-default .cm-qualifier {color: #555;}
+.cm-s-default .cm-builtin {color: #30a;}
+.cm-s-default .cm-bracket {color: #997;}
+.cm-s-default .cm-tag {color: #170;}
+.cm-s-default .cm-attribute {color: #00c;}
+.cm-s-default .cm-hr {color: #999;}
+.cm-s-default .cm-link {color: #00c;}
+
+.cm-s-default .cm-error {color: #f00;}
+.cm-invalidchar {color: #f00;}
+
+.CodeMirror-composing { border-bottom: 2px solid; }
+
+/* Default styles for common addons */
+
+div.CodeMirror span.CodeMirror-matchingbracket {color: #0b0;}
+div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #a22;}
+.CodeMirror-matchingtag { background: rgba(255, 150, 0, .3); }
+.CodeMirror-activeline-background {background: #e8f2ff;}
+
+/* STOP */
+
+/* The rest of this file contains styles related to the mechanics of
+   the editor. You probably shouldn't touch them. */
+
+.CodeMirror {
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+
+.CodeMirror-scroll {
+  overflow: scroll !important; /* Things will break if this is overridden */
+  /* 50px is the magic margin used to hide the element's real scrollbars */
+  /* See overflow: hidden in .CodeMirror */
+  margin-bottom: -50px; margin-right: -50px;
+  padding-bottom: 50px;
+  height: 100%;
+  outline: none; /* Prevent dragging from highlighting the element */
+  position: relative;
+}
+.CodeMirror-sizer {
+  position: relative;
+  border-right: 50px solid transparent;
+}
+
+/* The fake, visible scrollbars. Used to force redraw during scrolling
+   before actual scrolling happens, thus preventing shaking and
+   flickering artifacts. */
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {
+  position: absolute;
+  z-index: 6;
+  display: none;
+  outline: none;
+}
+.CodeMirror-vscrollbar {
+  right: 0; top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.CodeMirror-hscrollbar {
+  bottom: 0; left: 0;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.CodeMirror-scrollbar-filler {
+  right: 0; bottom: 0;
+}
+.CodeMirror-gutter-filler {
+  left: 0; bottom: 0;
+}
+
+.CodeMirror-gutters {
+  position: absolute; left: 0; top: 0;
+  min-height: 100%;
+  z-index: 3;
+}
+.CodeMirror-gutter {
+  white-space: normal;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: -50px;
+}
+.CodeMirror-gutter-wrapper {
+  position: absolute;
+  z-index: 4;
+  background: none !important;
+  border: none !important;
+}
+.CodeMirror-gutter-background {
+  position: absolute;
+  top: 0; bottom: 0;
+  z-index: 4;
+}
+.CodeMirror-gutter-elt {
+  position: absolute;
+  cursor: default;
+  z-index: 4;
+}
+.CodeMirror-gutter-wrapper ::selection { background-color: transparent }
+.CodeMirror-gutter-wrapper ::-moz-selection { background-color: transparent }
+
+.CodeMirror-lines {
+  cursor: text;
+  min-height: 1px; /* prevents collapsing before first draw */
+}
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror pre.CodeMirror-line-like {
+  /* Reset some styles that the rest of the page might have set */
+  -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+  border-width: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  white-space: pre;
+  word-wrap: normal;
+  line-height: inherit;
+  color: inherit;
+  z-index: 2;
+  position: relative;
+  overflow: visible;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-variant-ligatures: contextual;
+  font-variant-ligatures: contextual;
+}
+.CodeMirror-wrap pre.CodeMirror-line,
+.CodeMirror-wrap pre.CodeMirror-line-like {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: normal;
+}
+
+.CodeMirror-linebackground {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  z-index: 0;
+}
+
+.CodeMirror-linewidget {
+  position: relative;
+  z-index: 2;
+  padding: 0.1px; /* Force widget margins to stay inside of the container */
+}
+
+.CodeMirror-widget {}
+
+.CodeMirror-rtl pre { direction: rtl; }
+
+.CodeMirror-code {
+  outline: none;
+}
+
+/* Force content-box sizing for the elements where we expect it */
+.CodeMirror-scroll,
+.CodeMirror-sizer,
+.CodeMirror-gutter,
+.CodeMirror-gutters,
+.CodeMirror-linenumber {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.CodeMirror-measure {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.CodeMirror-cursor {
+  position: absolute;
+  pointer-events: none;
+}
+.CodeMirror-measure pre { position: static; }
+
+div.CodeMirror-cursors {
+  visibility: hidden;
+  position: relative;
+  z-index: 3;
+}
+div.CodeMirror-dragcursors {
+  visibility: visible;
+}
+
+.CodeMirror-focused div.CodeMirror-cursors {
+  visibility: visible;
+}
+
+.CodeMirror-selected { background: #d9d9d9; }
+.CodeMirror-focused .CodeMirror-selected { background: #d7d4f0; }
+.CodeMirror-crosshair { cursor: crosshair; }
+.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #d7d4f0; }
+.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: #d7d4f0; }
+
+.cm-searching {
+  background-color: #ffa;
+  background-color: rgba(255, 255, 0, .4);
+}
+
+/* Used to force a border model for a node */
+.cm-force-border { padding-right: .1px; }
+
+@media print {
+  /* Hide the cursor when printing */
+  .CodeMirror div.CodeMirror-cursors {
+    visibility: hidden;
+  }
+}
+
+/* See issue #2901 */
+.cm-tab-wrap-hack:after { content: ''; }
+
+/* Help users use markselection to safely style text background */
+span.CodeMirror-selectedtext { background: none; }
+/**
+    Name: IntelliJ IDEA darcula theme
+    From IntelliJ IDEA by JetBrains
+ */
+
+.cm-s-darcula  { font-family: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;}
+.cm-s-darcula.CodeMirror { background: #2B2B2B; color: #A9B7C6; }
+
+.cm-s-darcula span.cm-meta { color: #BBB529; }
+.cm-s-darcula span.cm-number { color: #6897BB; }
+.cm-s-darcula span.cm-keyword { color: #CC7832; line-height: 1em; font-weight: bold; }
+.cm-s-darcula span.cm-def { color: #A9B7C6; font-style: italic; }
+.cm-s-darcula span.cm-variable { color: #A9B7C6; }
+.cm-s-darcula span.cm-variable-2 { color: #A9B7C6; }
+.cm-s-darcula span.cm-variable-3 { color: #9876AA; }
+.cm-s-darcula span.cm-type { color: #AABBCC; font-weight: bold; }
+.cm-s-darcula span.cm-property { color: #FFC66D; }
+.cm-s-darcula span.cm-operator { color: #A9B7C6; }
+.cm-s-darcula span.cm-string { color: #6A8759; }
+.cm-s-darcula span.cm-string-2 { color: #6A8759; }
+.cm-s-darcula span.cm-comment { color: #61A151; font-style: italic; }
+.cm-s-darcula span.cm-link { color: #CC7832; }
+.cm-s-darcula span.cm-atom { color: #CC7832; }
+.cm-s-darcula span.cm-error { color: #BC3F3C; }
+.cm-s-darcula span.cm-tag { color: #629755; font-weight: bold; font-style: italic; text-decoration: underline; }
+.cm-s-darcula span.cm-attribute { color: #6897bb; }
+.cm-s-darcula span.cm-qualifier { color: #6A8759; }
+.cm-s-darcula span.cm-bracket { color: #A9B7C6; }
+.cm-s-darcula span.cm-builtin { color: #FF9E59; }
+.cm-s-darcula span.cm-special { color: #FF9E59; }
+.cm-s-darcula span.cm-matchhighlight { color: #FFFFFF; background-color: rgba(50, 89, 48, .7); font-weight: normal;}
+.cm-s-darcula span.cm-searching { color: #FFFFFF; background-color: rgba(61, 115, 59, .7); font-weight: normal;}
+
+.cm-s-darcula .CodeMirror-cursor { border-left: 1px solid #A9B7C6; }
+.cm-s-darcula .CodeMirror-activeline-background { background: #323232; }
+.cm-s-darcula .CodeMirror-gutters { background: #313335; border-right: 1px solid #313335; }
+.cm-s-darcula .CodeMirror-guttermarker { color: #FFEE80; }
+.cm-s-darcula .CodeMirror-guttermarker-subtle { color: #D0D0D0; }
+.cm-s-darcula .CodeMirrir-linenumber { color: #606366; }
+.cm-s-darcula .CodeMirror-matchingbracket { background-color: #3B514D; color: #FFEF28 !important; font-weight: bold; }
+
+.cm-s-darcula div.CodeMirror-selected { background: #214283; }
+
+.CodeMirror-hints.darcula {
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: #9C9E9E;
+  background-color: #3B3E3F !important;
+}
+
+.CodeMirror-hints.darcula .CodeMirror-hint-active {
+  background-color: #494D4E !important;
+  color: #9C9E9E !important;
+}
+.CodeMirror-dialog {
+  position: absolute;
+  left: 0; right: 0;
+  background: inherit;
+  z-index: 15;
+  padding: .1em .8em;
+  overflow: hidden;
+  color: inherit;
+}
+
+.CodeMirror-dialog-top {
+  border-bottom: 1px solid #eee;
+  top: 0;
+}
+
+.CodeMirror-dialog-bottom {
+  border-top: 1px solid #eee;
+  bottom: 0;
+}
+
+.CodeMirror-dialog input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 20em;
+  color: inherit;
+  font-family: monospace;
+}
+
+.CodeMirror-dialog button {
+  font-size: 70%;
+}
+.jsdocArea {
+    font-size: medium;
+    padding-left: 0.5em;
+    overflow: auto;
+    user-select: text !important;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+.jsdocArea * {
+    white-space: pre-wrap;
+    word-break: break-word;
+    -webkit-touch-callout: text !important;
+    -webkit-user-select: text !important;
+    -khtml-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+}
+
+.JSDocEntryEditorArea .jsdocArea {
+    border-radius: 0px !important;
+    background: transparent !important;
+}
+
+.JSDocEntryEditorArea {
+    overflow: auto;
+}
+
+.PlayExampleEditorFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.SmallScrollBar::-webkit-scrollbar {
+    width: 5px !important;
+    height: 5px !important;
+}
+
+.SmallScrollBar {
+    scrollbar-width: thin;
+}
+
+.MarkCodeLine {
+    display: inline;
+    background: rgba(0, 0, 255, 0.2);
+}/*
+
+Visual Studio-like style based on original C# coloring by Jason Diamond <jason@diamond.name>
+
+*/
+.light .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: white;
+  color: black;
+}
+
+.light .hljs-comment,
+.light .hljs-quote,
+.light .hljs-variable {
+  color: #008000;
+}
+
+.light .hljs-keyword,
+.light .hljs-selector-tag,
+.light .hljs-built_in,
+.light .hljs-name,
+.light .hljs-tag {
+  color: #00f;
+}
+
+.light .hljs-string,
+.light .hljs-title,
+.light .hljs-section,
+.light .hljs-attribute,
+.light .hljs-literal,
+.light .hljs-template-tag,
+.light .hljs-template-variable,
+.light .hljs-type,
+.light .hljs-addition {
+  color: #a31515;
+}
+
+.light .hljs-deletion,
+.light .hljs-selector-attr,
+.light .hljs-selector-pseudo,
+.light .hljs-meta {
+  color: #2b91af;
+}
+
+.light .hljs-doctag {
+  color: #808080;
+}
+
+.light .hljs-attr {
+  color: #f00;
+}
+
+.light .hljs-symbol,
+.light .hljs-bullet,
+.light .hljs-link {
+  color: #00b0e8;
+}
+
+
+.light .hljs-emphasis {
+  font-style: italic;
+}
+
+.light .hljs-strong {
+  font-weight: bold;
+}
+/*
+
+Darcula color scheme from the JetBrains family of IDEs
+
+*/
+
+
+.dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #2b2b2b;
+  color: #bababa;
+}
+
+.dark .hljs-strong,
+.dark .hljs-emphasis {
+  color: #a8a8a2;
+}
+
+.dark .hljs-bullet,
+.dark .hljs-quote,
+.dark .hljs-link,
+.dark .hljs-number,
+.dark .hljs-regexp,
+.dark .hljs-literal {
+  color: #6896ba;
+}
+
+.dark .hljs-code,
+.dark .hljs-selector-class {
+  color: #a6e22e;
+}
+
+.dark .hljs-emphasis {
+  font-style: italic;
+}
+
+.dark .hljs-keyword,
+.dark .hljs-selector-tag,
+.dark .hljs-section,
+.dark .hljs-attribute,
+.dark .hljs-name,
+.dark .hljs-variable {
+  color: #cb7832;
+}
+
+.dark .hljs-params {
+  color: #b9b9b9;
+}
+
+.dark .hljs-string {
+  color: #6a8759;
+}
+
+.dark .hljs-subst,
+.dark .hljs-type,
+.dark .hljs-built_in,
+.dark .hljs-symbol,
+.dark .hljs-selector-id,
+.dark .hljs-selector-attr,
+.dark .hljs-selector-pseudo,
+.dark .hljs-template-tag,
+.dark .hljs-template-variable,
+.dark .hljs-addition {
+  color: #e0c46c;
+}
+
+.dark .hljs-comment,
+.dark .hljs-deletion,
+.dark .hljs-meta {
+  color: #7f7f7f;
+}
+.hljs-attr {
+    color: teal;
+}

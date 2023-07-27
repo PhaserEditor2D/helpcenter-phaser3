@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "target": "es2019",
+        "composite": true,
+        "declaration": true,
+        "declarationMap": true,
+        "disableSourceOfProjectReferenceRedirect": true
+    },
+   
+}

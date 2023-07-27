@@ -1,0 +1,9 @@
+{
+    "id": "product.all",
+    "scripts": [
+        "product.all.js"
+    ],
+    "styles": [
+        "product.all.css"
+    ]
+}

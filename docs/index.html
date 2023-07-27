@@ -11,50 +11,31 @@
 
     <title>Unofficial Phaser Help Center | Phaser Editor 2D</title>
 
-    <link rel="icon" type="image/png" href="app/favicon.png">
+    <link rel="icon" type="image/png" href="/editor/static/favicon.png">
 
     <link rel="manifest" href="./manifest.json" />
     <!-- ios support -->
-    <link rel="apple-touch-icon" href="icons/icon-72.png" />
-    <link rel="apple-touch-icon" href="icons/icon-96.png" />
-    <link rel="apple-touch-icon" href="icons/icon-128.png" />
-    <link rel="apple-touch-icon" href="icons/icon-144.png" />
-    <link rel="apple-touch-icon" href="icons/icon-152.png" />
-    <link rel="apple-touch-icon" href="icons/icon-192.png" />
-    <link rel="apple-touch-icon" href="icons/icon-384.png" />
-    <link rel="apple-touch-icon" href="icons/icon-512.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-72.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-96.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-128.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-144.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-152.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-384.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-512.png" />
     <meta name="apple-mobile-web-app-status-bar" content="#242424" />
     <meta name="theme-color" content="#242424" />
 
     <!-- open-graph card -->
     <meta name="og:title" content="Unofficial Phaser Help Center v<? echo $EDITOR_VER ?> | Phaser Editor 2D">
     <meta name="og:description" content="Integrated tool for browsing the Phaser docs and examples.">
-    <meta name="og:image" content="https://helpcenter.phasereditor2d.com/app/screenshot.png">
+    <meta name="og:image" content="https://helpcenter.phasereditor2d.com/editor/app/screenshot.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@PhaserEditor2D">
     <meta name="twitter:creator" content="@PhaserEditor2D">
     
-    	<!-- colibri -->
-	<link href="app/plugins/colibri/styles/controls.css?v=1669557819" rel="stylesheet">
-	<link href="app/plugins/colibri/styles/dark.css?v=1669557819" rel="stylesheet">
-	<link href="app/plugins/colibri/styles/light.css?v=1669557819" rel="stylesheet">
-	<link href="app/plugins/colibri/styles/workbench.css?v=1669557819" rel="stylesheet">
-
-	<!-- colibri.inspector -->
-	<link href="app/plugins/colibri.inspector/styles/InspectorView.css?v=1669557819" rel="stylesheet">
-
-	<!-- helpcenter.codemirror -->
-	<link href="app/plugins/helpcenter.codemirror/codemirror-5.59.0/lib/codemirror.css?v=1647837223" rel="stylesheet">
-	<link href="app/plugins/helpcenter.codemirror/codemirror-5.59.0/themes/darcula.css?v=1647837223" rel="stylesheet">
-	<link href="app/plugins/helpcenter.codemirror/codemirror-5.59.0/addon/dialog/dialog.css?v=1647837223" rel="stylesheet">
-
-	<!-- helpcenter.main -->
-	<link href="app/plugins/helpcenter.main/styles/styles.css?v=1647837223" rel="stylesheet">
-
-	<!-- helpcenter.showdown -->
-	<link href="app/plugins/helpcenter.showdown/highlight/styles/vs.css?v=1647837223" rel="stylesheet">
-	<link href="app/plugins/helpcenter.showdown/highlight/styles/darcula.css?v=1647837223" rel="stylesheet">
-	<link href="app/plugins/helpcenter.showdown/highlight/custom.css?v=1647837223" rel="stylesheet">
+    	<!-- product.all -->
+	<link href="/editor/app/plugins/product.all/product.all.css?v=1690491788" rel="stylesheet">
 
 
     <style>
@@ -89,39 +70,14 @@
 <body>
 
     <div id="splash-container">
-        <img id="splash" src="app/splash.svg" width="128" style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%)">
+        <img id="splash" src="/editor/static/splash.svg" width="128" style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%)">
     </div>
 
     <script>
     </script>
 
-    	<!-- colibri -->
-	<script src="app/plugins/colibri/scripts/vanilla-picker/vanilla-picker.js?v=1669557819"></script>
-	<script src="app/plugins/colibri/scripts/expr-eval/expr-eval.js?v=1669557819"></script>
-	<script src="app/plugins/colibri/_out/colibri.js?v=1669557819"></script>
-
-	<!-- colibri.inspector -->
-	<script src="app/plugins/colibri.inspector/_out/colibri.inspector.js?v=1669557819"></script>
-
-	<!-- helpcenter.codemirror -->
-	<script src="app/plugins/helpcenter.codemirror/codemirror-5.59.0/lib/codemirror.js?v=1647837223"></script>
-	<script src="app/plugins/helpcenter.codemirror/codemirror-5.59.0/mode/javascript/javascript.js?v=1647837223"></script>
-	<script src="app/plugins/helpcenter.codemirror/codemirror-5.59.0/addon/dialog/dialog.js?v=1647837223"></script>
-	<script src="app/plugins/helpcenter.codemirror/codemirror-5.59.0/addon/search/search.js?v=1647837223"></script>
-	<script src="app/plugins/helpcenter.codemirror/codemirror-5.59.0/addon/search/searchcursor.js?v=1647837223"></script>
-	<script src="app/plugins/helpcenter.codemirror/codemirror-5.59.0/addon/search/jump-to-line.js?v=1647837223"></script>
-	<script src="app/plugins/helpcenter.codemirror/_out/helpcenter.codemirror.js?v=1647837223"></script>
-
-	<!-- helpcenter.main -->
-	<script src="app/plugins/helpcenter.main/_out/helpcenter.main.js?v=1647837223"></script>
-
-	<!-- helpcenter.phaser -->
-	<script src="app/plugins/helpcenter.phaser/_out/helpcenter.phaser.js?v=1647837223"></script>
-
-	<!-- helpcenter.showdown -->
-	<script src="app/plugins/helpcenter.showdown/showdown/showdown.min.js?v=1647837223"></script>
-	<script src="app/plugins/helpcenter.showdown/highlight/highlight.pack.js?v=1647837223"></script>
-	<script src="app/plugins/helpcenter.showdown/_out/helpcenter.showdown.js?v=1647837223"></script>
+    	<!-- product.all -->
+	<script src="/editor/app/plugins/product.all/product.all.js?v=1690491788"></script>
 
 </body>
 
