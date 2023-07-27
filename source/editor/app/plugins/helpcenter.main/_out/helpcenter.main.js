@@ -18,7 +18,9 @@ var helpcenter;
         main_1.ICON_TIME = "time";
         class MainPlugin extends colibri.Plugin {
             constructor() {
-                super("helpcenter.main");
+                super("helpcenter.main", {
+                    loadIconsFromAtlas: true
+                });
             }
             static getInstance() {
                 var _a;

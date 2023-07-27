@@ -35,7 +35,9 @@ namespace helpcenter.main {
         }
 
         constructor() {
-            super("helpcenter.main")
+            super("helpcenter.main", {
+                loadIconsFromAtlas: true
+            });
         }
 
         registerExtensions(reg: colibri.ExtensionRegistry) {
