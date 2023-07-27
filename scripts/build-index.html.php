@@ -107,7 +107,7 @@ usort($renderInfoArray, function ($a, $b) {
     <!-- open-graph card -->
     <meta name="og:title" content="Unofficial Phaser Help Center v<? echo $EDITOR_VER ?> | Phaser Editor 2D">
     <meta name="og:description" content="Integrated tool for browsing the Phaser docs and examples.">
-    <meta name="og:image" content="https://helpcenter.phasereditor2d.com/editor/app/screenshot.png">
+    <meta name="og:image" content="https://helpcenter.phasereditor2d.com/editor/static/screenshot.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@PhaserEditor2D">
     <meta name="twitter:creator" content="@PhaserEditor2D">
