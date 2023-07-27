@@ -4,6 +4,8 @@
 - Get latest colibri.
 - Use colibri-packer for all json data.
 - Pack all icons into atlas.
+- Get the version from product.json.
+- Get phaserVersion form product.json
 
 ---
 

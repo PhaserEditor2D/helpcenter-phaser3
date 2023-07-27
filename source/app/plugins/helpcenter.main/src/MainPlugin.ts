@@ -123,11 +123,9 @@ namespace helpcenter.main {
 
     async function initVersion() {
 
-        VER = await (await fetch("./ver")).text();
+        VER = colibri.Platform.getProduct().version;
 
         helpcenter.phaser.PHASER_VER = await (await fetch("./phaserVersion")).text();
-
-        colibri.CACHE_VERSION = VER;
 
         colibri.Platform.addPlugin(MainPlugin.getInstance());
 

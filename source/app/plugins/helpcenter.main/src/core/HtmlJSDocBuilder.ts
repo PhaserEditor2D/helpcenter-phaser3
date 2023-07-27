@@ -120,9 +120,9 @@ namespace helpcenter.main.core {
 
         private renderMemberIcon(child: phaser.core.DocEntry, rowContent?: string) {
 
-            const icon = MainPlugin.getInstance().getDocEntryKindIcon(child.getKind());
+            const iconName = DOC_ENTRY_KIND_ICON_NAME[child.getKind()];
 
-            const html = `<span class='IconDiv' icon-name='${icon.getName()}' style='margin-right:5px'></span>`;
+            const html = `<span class='IconDiv' icon-name='${iconName}' style='margin-right:5px'></span>`;
 
             if (rowContent) {
 
