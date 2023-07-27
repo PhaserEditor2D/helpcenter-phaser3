@@ -134,6 +134,7 @@ namespace helpcenter.main {
         );
 
         const product = colibri.Platform.getProduct();
+
         helpcenter.phaser.PHASER_VER = product["phaserVersion"];
 
         document.title = `Unofficial Phaser Help Center v${colibri.PRODUCT_VERSION} - Phaser v${phaser.PHASER_VER} - Phaser Editor 2D`;
@@ -177,7 +178,9 @@ namespace helpcenter.main {
         // disable file access layer
         colibri.CAPABILITY_FILE_STORAGE = false;
 
-        await colibri.Platform.loadProduct();
+        // let's allow caching the product.json file,
+        // this is a PWA, the sw.js file handles the new versions.
+        await colibri.Platform.loadProduct(false);
 
         if (window.location.search === "?dev") {
 
@@ -190,7 +193,7 @@ namespace helpcenter.main {
 
         colibri.ui.controls.dialogs.AlertDialog.replaceConsoleAlert();
 
-        await colibri.Platform.start();
+        await colibri.Platform.loadProduct();
 
         await initVersion();
 

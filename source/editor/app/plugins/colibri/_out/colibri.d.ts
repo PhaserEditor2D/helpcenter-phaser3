@@ -42,7 +42,7 @@ declare namespace colibri {
         static getExtensions<T extends Extension>(point: string): T[];
         static addExtension(...extensions: Extension[]): void;
         static getWorkbench(): ui.ide.Workbench;
-        static loadProduct(): Promise<void>;
+        static loadProduct(bypassCache?: boolean): Promise<void>;
         static start(): Promise<void>;
         static getProduct(): IProduct;
         static getProductOption(key: string): any;

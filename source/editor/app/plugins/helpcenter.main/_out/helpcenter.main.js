@@ -109,7 +109,9 @@ var helpcenter;
         async function main() {
             // disable file access layer
             colibri.CAPABILITY_FILE_STORAGE = false;
-            await colibri.Platform.loadProduct();
+            // let's allow caching the product.json file,
+            // this is a PWA, the sw.js file handles the new versions.
+            await colibri.Platform.loadProduct(false);
             if (window.location.search === "?dev") {
                 console.log("Development mode activated.");
             }
@@ -117,7 +119,7 @@ var helpcenter;
                 registerServiceWorker();
             }
             colibri.ui.controls.dialogs.AlertDialog.replaceConsoleAlert();
-            await colibri.Platform.start();
+            await colibri.Platform.loadProduct();
             await initVersion();
             initElectron();
             await MainPlugin.getInstance().openFirstWindow();
