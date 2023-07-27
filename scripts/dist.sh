@@ -1,6 +1,6 @@
 #!/bin/bash
 
-node make-sw-assets.js
+node make-product.js
 ./update-index-html.sh
 
 cd ..
@@ -14,6 +14,6 @@ cp .nojekyll docs/
 cp CNAME docs/
 cp -R source/* docs/
 
-rm -R docs/app/*.sh docs/app/*.json
-rm -R docs/app/plugins/**/src/
-rm -R docs/app/plugins/**/_out/*.ts*
+rm -R docs/editor/app/*.sh docs/app/*.json
+rm -R docs/editor/app/plugins/**/src/
+rm -R docs/editor/app/plugins/**/_out/*.ts*

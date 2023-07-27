@@ -1,8 +1,9 @@
 <?php
 
-$editorFolder = __DIR__ . "/../source/app";
+$editorFolder = __DIR__ . "/../source/editor/app";
 
-$EDITOR_VER = file_get_contents(__DIR__ . "/../source/ver");
+$json = file_get_contents(__DIR__ . "/../package.json");
+$EDITOR_VER = json_decode($json)->version;
 
 $renderInfoArray = array();
 
@@ -41,7 +42,7 @@ foreach ($folders as $pluginName) {
 
             foreach ($pluginData->styles as $style) {
 
-                array_push($renderInfo["styles"], "<link href=\"app/plugins/$id/$style?v=$hash\" rel=\"stylesheet\">");
+                array_push($renderInfo["styles"], "<link href=\"/editor/app/plugins/$id/$style?v=$hash\" rel=\"stylesheet\">");
             }
         }
 
@@ -49,7 +50,7 @@ foreach ($folders as $pluginName) {
 
             foreach ($pluginData->scripts as $script) {
 
-                array_push($renderInfo["scripts"], "<script src=\"app/plugins/$id/$script?v=$hash\"></script>");
+                array_push($renderInfo["scripts"], "<script src=\"/editor/app/plugins/$id/$script?v=$hash\"></script>");
             }
         }
 
@@ -91,25 +92,25 @@ header("Content-Type: text/html; charset=UTF-8");
 
     <title>Unofficial Phaser Help Center | Phaser Editor 2D</title>
 
-    <link rel="icon" type="image/png" href="app/favicon.png">
+    <link rel="icon" type="image/png" href="/editor/static/favicon.png">
 
     <link rel="manifest" href="./manifest.json" />
     <!-- ios support -->
-    <link rel="apple-touch-icon" href="icons/icon-72.png" />
-    <link rel="apple-touch-icon" href="icons/icon-96.png" />
-    <link rel="apple-touch-icon" href="icons/icon-128.png" />
-    <link rel="apple-touch-icon" href="icons/icon-144.png" />
-    <link rel="apple-touch-icon" href="icons/icon-152.png" />
-    <link rel="apple-touch-icon" href="icons/icon-192.png" />
-    <link rel="apple-touch-icon" href="icons/icon-384.png" />
-    <link rel="apple-touch-icon" href="icons/icon-512.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-72.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-96.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-128.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-144.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-152.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-384.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-512.png" />
     <meta name="apple-mobile-web-app-status-bar" content="#242424" />
     <meta name="theme-color" content="#242424" />
 
     <!-- open-graph card -->
     <meta name="og:title" content="Unofficial Phaser Help Center v<? echo $EDITOR_VER ?> | Phaser Editor 2D">
     <meta name="og:description" content="Integrated tool for browsing the Phaser docs and examples.">
-    <meta name="og:image" content="https://helpcenter.phasereditor2d.com/app/screenshot.png">
+    <meta name="og:image" content="https://helpcenter.phasereditor2d.com/editor/app/screenshot.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@PhaserEditor2D">
     <meta name="twitter:creator" content="@PhaserEditor2D">
@@ -167,7 +168,7 @@ header("Content-Type: text/html; charset=UTF-8");
 <body>
 
     <div id="splash-container">
-        <img id="splash" src="app/splash.svg" width="128" style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%)">
+        <img id="splash" src="/editor/static/splash.svg" width="128" style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%)">
     </div>
 
     <script>

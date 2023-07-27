@@ -6,10 +6,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ts-build": "cd source/app/ && tsc -b",
-    "ts-clean": "cd source/app/ && tsc -b -clean",
+    "ts-build": "cd source/editor/app/ && tsc -b",
+    "ts-clean": "cd source/editor/app/ && tsc -b -clean",
     "build": "cd scripts/ && ./dist.sh",
-    "watch": "cd source/app/ && tsc -b -w",
+    "watch": "cd source/editor/app/ && tsc -b -w",
     "build-examples-atlas": "free-tex-packer-cli --project scripts/texture-packer-project.ftpp --output source/app/plugins/helpcenter.phaser/data/examples-screenshots-atlas",
     "get-phaser-examples": "cd scripts && node get-phaser-examples.js",
     "update-pwa": "cd scripts/ && node make-sw-assets.js",
