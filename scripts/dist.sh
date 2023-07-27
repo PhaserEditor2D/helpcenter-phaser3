@@ -16,4 +16,5 @@ cp -R source/* docs/
 
 rm -R docs/editor/app/*.sh docs/app/*.json
 rm -R docs/editor/app/plugins/**/src/
+rm -R docs/editor/app/plugins/**/_res/
 rm -R docs/editor/app/plugins/**/_out/*.ts*

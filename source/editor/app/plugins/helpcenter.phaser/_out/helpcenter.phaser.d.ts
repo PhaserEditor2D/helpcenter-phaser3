@@ -17,6 +17,10 @@ declare namespace helpcenter.phaser {
         static getInstance(): PhaserPlugin;
         constructor();
         registerExtensions(reg: colibri.ExtensionRegistry): void;
+        private readPhaserExamplesCode;
+        private readPhaserExamples;
+        private readPhaserCode;
+        private readPhaserDocs;
         private addTypeToData;
         private buildExamplesMap;
         getPhaserLabsUrl(path?: string): string;

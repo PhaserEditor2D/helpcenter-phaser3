@@ -6,61 +6,14 @@ var helpcenter;
         phaser.DOC_ENTRY_KIND_LIST = ["namespace", "class", "typedef", "constant", "event", "member", "function"];
         class PhaserPlugin extends colibri.Plugin {
             constructor() {
-                super("helpcenter.phaser");
+                super("helpcenter.phaser", {
+                    loadResources: true
+                });
             }
             static getInstance() {
                 return this._instance ? this._instance : this._instance = new PhaserPlugin();
             }
             registerExtensions(reg) {
-                // resource loaders
-                reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
-                    this._docsFile = await this.getJSON("data/phaser-docs.json");
-                }));
-                reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
-                    const data = await this.getJSON("data/phaser-code.json");
-                    this._sourceMap = new Map();
-                    // tslint:disable-next-line:forin
-                    for (const key in data) {
-                        this._sourceMap.set(key, data[key]);
-                    }
-                }));
-                reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
-                    const data = await this.getJSON("data/phaser-examples.json");
-                    this.addTypeToData(data);
-                    this._examples = data.children.map(child => new phaser.core.ExampleInfo(null, child));
-                    this._exampleMap = new Map();
-                    this.buildExamplesMap(this._examples);
-                }));
-                reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
-                    const data = await this.getJSON("data/phaser-examples-code.json");
-                    // tslint:disable-next-line:forin
-                    for (const path in data) {
-                        const code = data[path];
-                        const example = this.getExampleByPath(path);
-                        if (example) {
-                            example.setSource(code);
-                        }
-                        else {
-                            console.error("Missing example for " + path);
-                        }
-                    }
-                    this._exampleChains = [];
-                    const re = /[a-zA-Z]/;
-                    for (const example of this._exampleMap.values()) {
-                        if (example.getData().type === "file" && example.getSource()) {
-                            const lines = example.getSource().split("\n");
-                            let n = 1;
-                            for (const line of lines) {
-                                const line2 = line.trim();
-                                // TODO: just check the line has a letter
-                                if (re.test(line2) && !line2.startsWith("//") && !line2.startsWith("*")) {
-                                    this._exampleChains.push(new phaser.core.ExampleChain(line2, n, example));
-                                }
-                                n++;
-                            }
-                        }
-                    }
-                }));
                 reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
                     this._exampleImageReader = new phaser.ui.ExampleImageReader();
                     await this._exampleImageReader.preload();
@@ -69,6 +22,55 @@ var helpcenter;
                 reg.addExtension(new phaser.core.PhaserFileEditorInputExtension());
                 reg.addExtension(new phaser.core.JSDocEntryEditorInputExtension());
                 reg.addExtension(new phaser.core.ExampleFolderEditorInputExtension());
+            }
+            readPhaserExamplesCode() {
+                const data = this.getResources().getResData("phaser-examples-code.json");
+                // tslint:disable-next-line:forin
+                for (const path in data) {
+                    const code = data[path];
+                    const example = this.getExampleByPath(path);
+                    if (example) {
+                        example.setSource(code);
+                    }
+                    else {
+                        console.error("Missing example for " + path);
+                    }
+                }
+                this._exampleChains = [];
+                const re = /[a-zA-Z]/;
+                for (const example of this._exampleMap.values()) {
+                    if (example.getData().type === "file" && example.getSource()) {
+                        const lines = example.getSource().split("\n");
+                        let n = 1;
+                        for (const line of lines) {
+                            const line2 = line.trim();
+                            // TODO: just check the line has a letter
+                            if (re.test(line2) && !line2.startsWith("//") && !line2.startsWith("*")) {
+                                this._exampleChains.push(new phaser.core.ExampleChain(line2, n, example));
+                            }
+                            n++;
+                        }
+                    }
+                }
+            }
+            readPhaserExamples() {
+                const data = this.getResources().getResData("phaser-examples.json");
+                this.addTypeToData(data);
+                this._examples = data.children.map(child => new phaser.core.ExampleInfo(null, child));
+                this._exampleMap = new Map();
+                this.buildExamplesMap(this._examples);
+            }
+            readPhaserCode() {
+                const data = this.getResources().getResData("phaser-code.json");
+                this._sourceMap = new Map();
+                // tslint:disable-next-line:forin
+                for (const key in data) {
+                    this._sourceMap.set(key, data[key]);
+                }
+            }
+            readPhaserDocs() {
+                console.log(this.getResources());
+                this._docsFile = this.getResources().getResData("phaser-docs.json");
             }
             addTypeToData(data) {
                 data.type = data.path.endsWith(".js") ? "file" : "directory";
@@ -149,6 +151,10 @@ var helpcenter;
                 return file;
             }
             async started() {
+                this.readPhaserDocs();
+                this.readPhaserCode();
+                this.readPhaserExamples();
+                this.readPhaserExamplesCode();
                 this.buildModel();
             }
             static cleanApiName(name) {

@@ -26,93 +26,12 @@ namespace helpcenter.phaser {
         }
 
         constructor() {
-            super("helpcenter.phaser")
+            super("helpcenter.phaser", {
+                loadResources: true
+            });
         }
 
         registerExtensions(reg: colibri.ExtensionRegistry) {
-
-            // resource loaders
-
-            reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
-
-                this._docsFile = await this.getJSON("data/phaser-docs.json");
-            }));
-
-            reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
-
-                const data = await this.getJSON("data/phaser-code.json");
-
-                this._sourceMap = new Map();
-
-                // tslint:disable-next-line:forin
-                for (const key in data) {
-
-                    this._sourceMap.set(key, data[key]);
-                }
-            }));
-
-            reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
-
-                const data = await this.getJSON("data/phaser-examples.json") as core.IExamplesData;
-
-                this.addTypeToData(data);
-
-                this._examples = data.children.map(child => new core.ExampleInfo(null, child));
-
-                this._exampleMap = new Map();
-
-                this.buildExamplesMap(this._examples);
-            }));
-
-            reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
-
-                const data = await this.getJSON("data/phaser-examples-code.json");
-
-                // tslint:disable-next-line:forin
-                for (const path in data) {
-
-                    const code = data[path] as string;
-
-                    const example = this.getExampleByPath(path);
-
-                    if (example) {
-
-                        example.setSource(code);
-
-                    } else {
-
-                        console.error("Missing example for " + path);
-                    }
-                }
-
-                this._exampleChains = [];
-
-                const re = /[a-zA-Z]/;
-
-                for (const example of this._exampleMap.values()) {
-
-                    if (example.getData().type === "file" && example.getSource()) {
-
-                        const lines = example.getSource().split("\n");
-
-                        let n = 1;
-
-                        for (const line of lines) {
-
-                            const line2 = line.trim();
-
-                            // TODO: just check the line has a letter
-                            if (re.test(line2) && !line2.startsWith("//") && !line2.startsWith("*")) {
-
-                                this._exampleChains.push(new core.ExampleChain(line2, n, example));
-                            }
-
-                            n++;
-                        }
-                    }
-                }
-            }));
-
 
             reg.addExtension(new colibri.ui.ide.PluginResourceLoaderExtension(async () => {
 
@@ -121,12 +40,92 @@ namespace helpcenter.phaser {
                 await this._exampleImageReader.preload();
             }));
 
-
             // editor input
 
             reg.addExtension(new core.PhaserFileEditorInputExtension());
             reg.addExtension(new core.JSDocEntryEditorInputExtension());
             reg.addExtension(new core.ExampleFolderEditorInputExtension());
+        }
+
+        private readPhaserExamplesCode() {
+            const data = this.getResources().getResData("phaser-examples-code.json");
+
+            // tslint:disable-next-line:forin
+            for (const path in data) {
+
+                const code = data[path] as string;
+
+                const example = this.getExampleByPath(path);
+
+                if (example) {
+
+                    example.setSource(code);
+
+                } else {
+
+                    console.error("Missing example for " + path);
+                }
+            }
+
+            this._exampleChains = [];
+
+            const re = /[a-zA-Z]/;
+
+            for (const example of this._exampleMap.values()) {
+
+                if (example.getData().type === "file" && example.getSource()) {
+
+                    const lines = example.getSource().split("\n");
+
+                    let n = 1;
+
+                    for (const line of lines) {
+
+                        const line2 = line.trim();
+
+                        // TODO: just check the line has a letter
+                        if (re.test(line2) && !line2.startsWith("//") && !line2.startsWith("*")) {
+
+                            this._exampleChains.push(new core.ExampleChain(line2, n, example));
+                        }
+
+                        n++;
+                    }
+                }
+            }
+        }
+
+        private readPhaserExamples() {
+
+            const data = this.getResources().getResData("phaser-examples.json") as core.IExamplesData;
+
+            this.addTypeToData(data);
+
+            this._examples = data.children.map(child => new core.ExampleInfo(null, child));
+
+            this._exampleMap = new Map();
+
+            this.buildExamplesMap(this._examples);
+        }
+
+        private readPhaserCode() {
+
+            const data = this.getResources().getResData("phaser-code.json");
+
+            this._sourceMap = new Map();
+
+            // tslint:disable-next-line:forin
+            for (const key in data) {
+
+                this._sourceMap.set(key, data[key]);
+            }
+        }
+
+        private readPhaserDocs() {
+
+            console.log(this.getResources());
+
+            this._docsFile = this.getResources().getResData("phaser-docs.json");
         }
 
         private addTypeToData(data: core.IExamplesData) {
@@ -136,7 +135,7 @@ namespace helpcenter.phaser {
             if (data.type === "directory") {
 
                 data.children = data.children || [];
-                
+
                 for (const child of data.children) {
 
                     this.addTypeToData(child);
@@ -262,6 +261,14 @@ namespace helpcenter.phaser {
         }
 
         async started() {
+
+            this.readPhaserDocs();
+
+            this.readPhaserCode();
+
+            this.readPhaserExamples();
+
+            this.readPhaserExamplesCode();
 
             this.buildModel();
         }
