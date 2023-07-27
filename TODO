@@ -1,6 +1,9 @@
 --- dev ---
 
 - The class icon is yellow and doesn't look well in the light theme.
+- Get latest colibri.
+- Use colibri-packer for all json data.
+- Pack all icons into atlas.
 
 ---
 

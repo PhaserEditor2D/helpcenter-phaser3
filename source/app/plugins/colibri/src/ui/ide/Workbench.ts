@@ -121,9 +121,17 @@ namespace colibri.ui.ide {
             {
                 const plugins = Platform.getPlugins();
 
+                const registry = Platform.getExtensionRegistry();
+
                 for (const plugin of plugins) {
 
-                    plugin.registerExtensions(Platform.getExtensionRegistry());
+                    // register default extensions
+                    registry.addExtension(new IconAtlasLoaderExtension(plugin));
+
+                    registry.addExtension(new PluginResourceLoaderExtension(
+                        () => plugin.preloadResources()));
+
+                    plugin.registerExtensions(registry);
                 }
 
                 for (const plugin of plugins) {
@@ -227,30 +235,26 @@ namespace colibri.ui.ide {
             const extensions = Platform
                 .getExtensions<PreloadProjectResourcesExtension>(PreloadProjectResourcesExtension.POINT_ID);
 
-            let total = 0;
+            const total = { i: 0 };
 
-            for (const extension of extensions) {
+            await Promise.all(extensions.map(async e => {
 
-                const n = await extension.computeTotal();
+                await e.computeTotal();
 
-                total += n;
-            }
+                total.i ++;
+            }));
 
-            monitor.addTotal(total);
+            monitor.addTotal(total.i);
 
-            for (const extension of extensions) {
+            try {
 
-                try {
+                await Promise.all(extensions.map(e => e.preload(monitor)));
 
-                    await extension.preload(monitor);
+            } catch (e) {
 
-                } catch (e) {
-
-                    console.log("Error with extension:")
-                    console.log(extension);
-                    console.error(e);
-                    alert(`[${extension.constructor.name}] Preload error: ${(e.message || e)}`);
-                }
+                console.log("Error loading PreloadProjectResourcesExtension extensions")
+                console.error(e);
+                alert(`Preload error: ${(e.message || e)}`);
             }
         }
 
@@ -276,6 +280,7 @@ namespace colibri.ui.ide {
         }
 
         getWindows() {
+
             return this._windows;
         }
 
@@ -311,9 +316,12 @@ namespace colibri.ui.ide {
             dlg.setCloseWithEscapeKey(false);
             dlg.setProgress(0);
 
-            let resCount = 0;
-
             // count icon extensions
+
+            const iconAtlasExtensions: IconAtlasLoaderExtension[] = Platform
+                .getExtensionRegistry()
+                .getExtensions(IconAtlasLoaderExtension.POINT_ID);
+
 
             const icons: controls.IconImage[] = [];
             {
@@ -324,38 +332,31 @@ namespace colibri.ui.ide {
 
                     icons.push(...extension.getIcons());
                 }
-
-                resCount = icons.length;
             }
 
             // count resource extensions
+
             const resExtensions = Platform
                 .getExtensions<PluginResourceLoaderExtension>(PluginResourceLoaderExtension.POINT_ID);
 
-            resCount += resExtensions.length;
+            // start preload
 
+            const preloads = [
+                ...iconAtlasExtensions,
+                ...icons,
+                ...resExtensions
+            ];
 
-            let i = 0;
+            const counter = { i: 0 };
 
-            for (const icon of icons) {
+            await Promise.all(preloads.map(async p => {
 
-                await icon.preload();
+                await p.preload();
 
-                i++;
+                counter.i++;
 
-                dlg.setProgress(i / resCount);
-            }
-
-            for (const resExt of resExtensions) {
-
-                await resExt.preload();
-
-                i++;
-
-                dlg.setProgress(i / resCount);
-            }
-
-            // resources
+                dlg.setProgress(counter.i / preloads.length);
+            }));
 
             dlg.close();
         }
@@ -376,11 +377,13 @@ namespace colibri.ui.ide {
         }
 
         private initCommands() {
+
             this._commandManager = new commands.CommandManager();
 
             const extensions = Platform.getExtensions<commands.CommandExtension>(commands.CommandExtension.POINT_ID);
 
             for (const extension of extensions) {
+
                 extension.getConfigurer()(this._commandManager);
             }
         }
