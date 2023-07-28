@@ -69,7 +69,6 @@ var helpcenter;
                 }
             }
             readPhaserDocs() {
-                console.log(this.getResources());
                 this._docsFile = this.getResources().getResData("phaser-docs.json");
             }
             addTypeToData(data) {

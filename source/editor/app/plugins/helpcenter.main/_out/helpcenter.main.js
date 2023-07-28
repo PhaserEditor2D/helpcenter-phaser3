@@ -39,7 +39,6 @@ var helpcenter;
                     main_1.ICON_TIME
                 ], false));
                 // windows
-                console.log("add main window");
                 reg.addExtension(new colibri.ui.ide.WindowExtension(() => new main_1.ui.MainWindow()));
                 // editor
                 reg.addExtension(new colibri.ui.ide.EditorExtension([
@@ -79,7 +78,6 @@ var helpcenter;
             }
         }
         main_1.MainPlugin = MainPlugin;
-        console.log("add plugin");
         colibri.Platform.addPlugin(MainPlugin.getInstance());
         async function initVersion() {
             console.log(`%c %c Phaser Editor 2D - Unofficial Phaser Help Center %c v${colibri.PRODUCT_VERSION} %c %c https://helpcenter.phasereditor2d.com `, "background-color:red", "background-color:#3f3f3f;color:whitesmoke", "background-color:orange;color:black", "background-color:red", "background-color:silver");
