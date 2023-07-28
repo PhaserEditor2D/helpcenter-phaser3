@@ -3336,9 +3336,15 @@ var colibri;
         static getWorkbench() {
             return colibri.ui.ide.Workbench.getWorkbench();
         }
-        static async loadProduct() {
+        static async loadProduct(bypassCache = true) {
             try {
-                const resp = await fetch(`/editor/product.json?v=${Date.now()}`);
+                const url = bypassCache ?
+                    `/editor/product.json?v=${Date.now()}` :
+                    `/editor/product.json}`;
+                const resp = await fetch(url, {
+                    method: "GET",
+                    cache: "no-cache"
+                });
                 this._product = await resp.json();
                 colibri.PRODUCT_VERSION = this._product.version;
             }
@@ -3903,19 +3909,22 @@ var colibri;
                 async preloadProjectResources(monitor) {
                     const extensions = colibri.Platform
                         .getExtensions(ide.PreloadProjectResourcesExtension.POINT_ID);
-                    const total = { i: 0 };
-                    await Promise.all(extensions.map(async (e) => {
-                        await e.computeTotal();
-                        total.i++;
-                    }));
-                    monitor.addTotal(total.i);
-                    try {
-                        await Promise.all(extensions.map(e => e.preload(monitor)));
+                    let total = 0;
+                    for (const extension of extensions) {
+                        const n = await extension.computeTotal();
+                        total += n;
                     }
-                    catch (e) {
-                        console.log("Error loading PreloadProjectResourcesExtension extensions");
-                        console.error(e);
-                        alert(`Preload error: ${(e.message || e)}`);
+                    monitor.addTotal(total);
+                    for (const extension of extensions) {
+                        try {
+                            await extension.preload(monitor);
+                        }
+                        catch (e) {
+                            console.log("Error with extension:");
+                            console.log(extension);
+                            console.error(e);
+                            alert(`[${extension.constructor.name}] Preload error: ${(e.message || e)}`);
+                        }
                     }
                 }
                 registerWindows() {
@@ -3975,12 +3984,12 @@ var colibri;
                         ...icons,
                         ...resExtensions
                     ];
-                    const counter = { i: 0 };
-                    await Promise.all(preloads.map(async (p) => {
-                        await p.preload();
-                        counter.i++;
-                        dlg.setProgress(counter.i / preloads.length);
-                    }));
+                    let i = 0;
+                    for (const preloader of preloads) {
+                        await preloader.preload();
+                        i++;
+                        dlg.setProgress(i / preloads.length);
+                    }
                     dlg.close();
                 }
                 registerContentTypeIcons() {
@@ -26434,7 +26443,9 @@ var helpcenter;
         async function main() {
             // disable file access layer
             colibri.CAPABILITY_FILE_STORAGE = false;
-            await colibri.Platform.loadProduct();
+            // let's allow caching the product.json file,
+            // this is a PWA, the sw.js file handles the new versions.
+            await colibri.Platform.loadProduct(false);
             if (window.location.search === "?dev") {
                 console.log("Development mode activated.");
             }
@@ -26442,7 +26453,7 @@ var helpcenter;
                 registerServiceWorker();
             }
             colibri.ui.controls.dialogs.AlertDialog.replaceConsoleAlert();
-            await colibri.Platform.start();
+            await colibri.Platform.loadProduct();
             await initVersion();
             initElectron();
             await MainPlugin.getInstance().openFirstWindow();
