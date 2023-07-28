@@ -58,7 +58,6 @@ namespace helpcenter.main {
 
             // windows
 
-            console.log("add main window");
             reg.addExtension(
                 new colibri.ui.ide.WindowExtension(
                     () => new ui.MainWindow()
@@ -122,8 +121,6 @@ namespace helpcenter.main {
         }
     }
     
-    console.log("add plugin");
-
     colibri.Platform.addPlugin(MainPlugin.getInstance());
 
     async function initVersion() {
