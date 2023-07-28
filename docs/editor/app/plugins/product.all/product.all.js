@@ -3340,7 +3340,7 @@ var colibri;
             try {
                 const url = bypassCache ?
                     `/editor/product.json?v=${Date.now()}` :
-                    `/editor/product.json}`;
+                    `/editor/product.json`;
                 const resp = await fetch(url, {
                     method: "GET",
                     cache: "no-cache"
