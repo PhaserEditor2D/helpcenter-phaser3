@@ -127,7 +127,7 @@ namespace colibri.ui.ide {
 
                     // register default extensions
                     registry.addExtension(new IconAtlasLoaderExtension(plugin));
-
+                    
                     registry.addExtension(new PluginResourceLoaderExtension(
                         () => plugin.preloadResources()));
 
@@ -235,26 +235,30 @@ namespace colibri.ui.ide {
             const extensions = Platform
                 .getExtensions<PreloadProjectResourcesExtension>(PreloadProjectResourcesExtension.POINT_ID);
 
-            const total = { i: 0 };
+            let total = 0;
 
-            await Promise.all(extensions.map(async e => {
+            for (const extension of extensions) {
 
-                await e.computeTotal();
+                const n = await extension.computeTotal();
 
-                total.i ++;
-            }));
+                total += n;
+            }
 
-            monitor.addTotal(total.i);
+            monitor.addTotal(total);
 
-            try {
+            for (const extension of extensions) {
 
-                await Promise.all(extensions.map(e => e.preload(monitor)));
+                try {
 
-            } catch (e) {
+                    await extension.preload(monitor);
 
-                console.log("Error loading PreloadProjectResourcesExtension extensions")
-                console.error(e);
-                alert(`Preload error: ${(e.message || e)}`);
+                } catch (e) {
+
+                    console.log("Error with extension:")
+                    console.log(extension);
+                    console.error(e);
+                    alert(`[${extension.constructor.name}] Preload error: ${(e.message || e)}`);
+                }
             }
         }
 
@@ -280,7 +284,6 @@ namespace colibri.ui.ide {
         }
 
         getWindows() {
-
             return this._windows;
         }
 
@@ -347,16 +350,16 @@ namespace colibri.ui.ide {
                 ...resExtensions
             ];
 
-            const counter = { i: 0 };
+            let i = 0;
 
-            await Promise.all(preloads.map(async p => {
+            for (const preloader of preloads) {
 
-                await p.preload();
+                await preloader.preload();
 
-                counter.i++;
+                i++;
 
-                dlg.setProgress(counter.i / preloads.length);
-            }));
+                dlg.setProgress(i / preloads.length);
+            }
 
             dlg.close();
         }

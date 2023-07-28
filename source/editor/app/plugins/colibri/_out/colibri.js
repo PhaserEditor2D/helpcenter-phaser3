@@ -1,10 +1,17 @@
 var colibri;
 (function (colibri) {
     class Plugin {
+        _id;
+        _iconCache;
+        _loadIconsFromAtlas;
+        _loadResources;
+        _atlasImage;
+        _atlasData;
+        _resources;
         constructor(id, config) {
             this._id = id;
-            this._loadIconsFromAtlas = Boolean(config === null || config === void 0 ? void 0 : config.loadIconsFromAtlas);
-            this._loadResources = Boolean(config === null || config === void 0 ? void 0 : config.loadResources);
+            this._loadIconsFromAtlas = Boolean(config?.loadIconsFromAtlas);
+            this._loadResources = Boolean(config?.loadResources);
             this._iconCache = new Map();
         }
         getId() {
@@ -129,6 +136,9 @@ var colibri;
 (function (colibri) {
     colibri.PRODUCT_VERSION = "1";
     class Platform {
+        static _plugins = [];
+        static _extensionRegistry;
+        static _product;
         static addPlugin(plugin) {
             this._plugins.push(plugin);
         }
@@ -150,15 +160,9 @@ var colibri;
         static getWorkbench() {
             return colibri.ui.ide.Workbench.getWorkbench();
         }
-        static async loadProduct(bypassCache = true) {
+        static async loadProduct() {
             try {
-                const url = bypassCache ?
-                    `/editor/product.json?v=${Date.now()}` :
-                    `/editor/product.json}`;
-                const resp = await fetch(url, {
-                    method: "GET",
-                    cache: "no-cache"
-                });
+                const resp = await fetch(`/editor/product.json?v=${Date.now()}`);
                 this._product = await resp.json();
                 colibri.PRODUCT_VERSION = this._product.version;
             }
@@ -191,7 +195,6 @@ var colibri;
             return Boolean(this.getElectron());
         }
     }
-    Platform._plugins = [];
     colibri.Platform = Platform;
 })(colibri || (colibri = {}));
 var colibri;
@@ -201,11 +204,17 @@ var colibri;
         var controls;
         (function (controls) {
             class Control {
+                eventControlLayout = new controls.ListenerList();
+                eventSelectionChanged = new controls.ListenerList();
+                _bounds = { x: 0, y: 0, width: 0, height: 0 };
+                _element;
+                _children;
+                _layout;
+                _container;
+                _scrollY;
+                _layoutChildren;
+                _handlePosition = true;
                 constructor(tagName = "div", ...classList) {
-                    this.eventControlLayout = new controls.ListenerList();
-                    this.eventSelectionChanged = new controls.ListenerList();
-                    this._bounds = { x: 0, y: 0, width: 0, height: 0 };
-                    this._handlePosition = true;
                     this._children = [];
                     this._element = document.createElement(tagName);
                     this._element["__control"] = this;
@@ -373,6 +382,10 @@ var colibri;
             controls.ICON_SIZE = controls.DEVICE_PIXEL_RATIO_x2 ? 32 : 16;
             controls.RENDER_ICON_SIZE = 16;
             class Controls {
+                static _images = new Map();
+                static _applicationDragData = null;
+                static _mouseDownElement;
+                static _dragCanvas;
                 static init() {
                     window.addEventListener("mousedown", e => {
                         this._mouseDownElement = e.target;
@@ -407,6 +420,8 @@ var colibri;
                     ctx.scale(dpr, dpr);
                     return ctx;
                 }
+                static _charWidthMap = new Map();
+                static _textWidthMap = new Map();
                 static measureTextWidth(context, label) {
                     const font = controls.FONT_FAMILY + controls.getCanvasFontHeight();
                     const textKey = font + "@" + label;
@@ -451,6 +466,7 @@ var colibri;
                     document.body.appendChild(canvas);
                     this._dragCanvas = canvas;
                 }
+                static _isSafari = navigator.vendor.toLowerCase().indexOf("apple") >= 0;
                 static isSafariBrowser() {
                     return this._isSafari;
                 }
@@ -500,6 +516,26 @@ var colibri;
                     element.click();
                     element.remove();
                 }
+                static LIGHT_THEME = {
+                    id: "light",
+                    displayName: "Light",
+                    classList: ["light"],
+                    dark: false,
+                    viewerSelectionBackground: "#4242ff",
+                    viewerSelectionForeground: "#f0f0f0",
+                    viewerForeground: "#2f2f2f",
+                };
+                static DARK_THEME = {
+                    id: "dark",
+                    displayName: "Dark",
+                    classList: ["dark"],
+                    dark: true,
+                    viewerSelectionBackground: "#f0a050",
+                    viewerSelectionForeground: "#0e0e0e",
+                    viewerForeground: "#f0f0f0",
+                };
+                static DEFAULT_THEME = Controls.DARK_THEME;
+                static _theme = Controls.DEFAULT_THEME;
                 static switchTheme() {
                     const newTheme = this._theme === this.LIGHT_THEME ? this.DARK_THEME : this.LIGHT_THEME;
                     this.setTheme(newTheme);
@@ -536,7 +572,7 @@ var colibri;
                             .map(e => e.getTheme())
                             .find(t => t.id === id);
                     }
-                    controls.Controls.setTheme(theme !== null && theme !== void 0 ? theme : controls.Controls.DEFAULT_THEME);
+                    controls.Controls.setTheme(theme ?? controls.Controls.DEFAULT_THEME);
                 }
                 static getTheme() {
                     return this._theme;
@@ -560,31 +596,6 @@ var colibri;
                     ctx.restore();
                 }
             }
-            Controls._images = new Map();
-            Controls._applicationDragData = null;
-            Controls._charWidthMap = new Map();
-            Controls._textWidthMap = new Map();
-            Controls._isSafari = navigator.vendor.toLowerCase().indexOf("apple") >= 0;
-            Controls.LIGHT_THEME = {
-                id: "light",
-                displayName: "Light",
-                classList: ["light"],
-                dark: false,
-                viewerSelectionBackground: "#4242ff",
-                viewerSelectionForeground: "#f0f0f0",
-                viewerForeground: "#2f2f2f",
-            };
-            Controls.DARK_THEME = {
-                id: "dark",
-                displayName: "Dark",
-                classList: ["dark"],
-                dark: true,
-                viewerSelectionBackground: "#f0a050",
-                viewerSelectionForeground: "#0e0e0e",
-                viewerForeground: "#f0f0f0",
-            };
-            Controls.DEFAULT_THEME = Controls.DARK_THEME;
-            Controls._theme = Controls.DEFAULT_THEME;
             controls.Controls = Controls;
         })(controls = ui.controls || (ui.controls = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -597,14 +608,37 @@ var colibri;
         var ide;
         (function (ide) {
             class Workbench {
+                static _workbench;
+                static getWorkbench() {
+                    if (!Workbench._workbench) {
+                        Workbench._workbench = new Workbench();
+                    }
+                    return this._workbench;
+                }
+                eventPartDeactivated = new ui.controls.ListenerList();
+                eventPartActivated = new ui.controls.ListenerList();
+                eventEditorDeactivated = new ui.controls.ListenerList();
+                eventEditorActivated = new ui.controls.ListenerList();
+                eventBeforeOpenProject = new ui.controls.ListenerList();
+                eventProjectOpened = new ui.controls.ListenerList();
+                eventThemeChanged = new ui.controls.ListenerList();
+                _fileStringCache;
+                _fileImageCache;
+                _fileImageSizeCache;
+                _activeWindow;
+                _contentType_icon_Map;
+                _fileStorage;
+                _contentTypeRegistry;
+                _activePart;
+                _activeEditor;
+                _activeElement;
+                _editorRegistry;
+                _commandManager;
+                _windows;
+                _globalPreferences;
+                _projectPreferences;
+                _editorSessionStateRegistry;
                 constructor() {
-                    this.eventPartDeactivated = new ui.controls.ListenerList();
-                    this.eventPartActivated = new ui.controls.ListenerList();
-                    this.eventEditorDeactivated = new ui.controls.ListenerList();
-                    this.eventEditorActivated = new ui.controls.ListenerList();
-                    this.eventBeforeOpenProject = new ui.controls.ListenerList();
-                    this.eventProjectOpened = new ui.controls.ListenerList();
-                    this.eventThemeChanged = new ui.controls.ListenerList();
                     this._editorRegistry = new ide.EditorRegistry();
                     this._windows = [];
                     this._activePart = null;
@@ -619,12 +653,6 @@ var colibri;
                     this._globalPreferences = new colibri.core.preferences.Preferences("__global__");
                     this._projectPreferences = null;
                     this._editorSessionStateRegistry = new Map();
-                }
-                static getWorkbench() {
-                    if (!Workbench._workbench) {
-                        Workbench._workbench = new Workbench();
-                    }
-                    return this._workbench;
                 }
                 getEditorSessionStateRegistry() {
                     return this._editorSessionStateRegistry;
@@ -1084,12 +1112,12 @@ var colibri;
     colibri.ICON_CONTROL_DIRTY = "dirty";
     colibri.ICON_INSPECTOR = "inspector";
     class ColibriPlugin extends colibri.Plugin {
+        static _instance;
+        static getInstance() {
+            return this._instance ?? (this._instance = new ColibriPlugin());
+        }
         constructor() {
             super("colibri", { loadIconsFromAtlas: true });
-        }
-        static getInstance() {
-            var _a;
-            return (_a = this._instance) !== null && _a !== void 0 ? _a : (this._instance = new ColibriPlugin());
         }
         registerExtensions(reg) {
             // themes
@@ -1108,6 +1136,9 @@ var colibri;
 var colibri;
 (function (colibri) {
     class Extension {
+        static DEFAULT_PRIORITY;
+        _extensionPoint;
+        _priority;
         constructor(extensionPoint, priority = 10) {
             this._extensionPoint = extensionPoint;
             this._priority = priority;
@@ -1127,6 +1158,7 @@ var colibri;
 var colibri;
 (function (colibri) {
     class ExtensionRegistry {
+        _map;
         constructor() {
             this._map = new Map();
         }
@@ -1165,6 +1197,8 @@ var colibri;
     var core;
     (function (core) {
         class ContentTypeExtension extends colibri.Extension {
+            static POINT_ID = "colibri.ContentTypeExtension";
+            _resolvers;
             constructor(resolvers, priority = 10) {
                 super(ContentTypeExtension.POINT_ID, priority);
                 this._resolvers = resolvers;
@@ -1173,7 +1207,6 @@ var colibri;
                 return this._resolvers;
             }
         }
-        ContentTypeExtension.POINT_ID = "colibri.ContentTypeExtension";
         core.ContentTypeExtension = ContentTypeExtension;
     })(core = colibri.core || (colibri.core = {}));
 })(colibri || (colibri = {}));
@@ -1184,6 +1217,10 @@ var colibri;
         var io;
         (function (io) {
             class FileContentCache {
+                _backendGetContent;
+                _backendSetContent;
+                _map;
+                _preloadMap;
                 constructor(getContent, setContent) {
                     this._backendGetContent = getContent;
                     this._backendSetContent = setContent;
@@ -1246,6 +1283,8 @@ var colibri;
             }
             io.FileContentCache = FileContentCache;
             class ContentEntry {
+                content;
+                modTime;
                 constructor(content, modTime) {
                     this.content = content;
                     this.modTime = modTime;
@@ -1287,6 +1326,8 @@ var colibri;
     var core;
     (function (core) {
         class ContentTypeRegistry {
+            _resolvers;
+            _cache;
             constructor() {
                 this._resolvers = [];
                 this._cache = new core.ContentTypeFileCache(this);
@@ -1319,6 +1360,7 @@ var colibri;
     var core;
     (function (core) {
         class ContentTypeResolver {
+            _id;
             constructor(id) {
                 this._id = id;
             }
@@ -1334,6 +1376,7 @@ var colibri;
     var core;
     (function (core) {
         class ContentTypeResolverByExtension extends colibri.core.ContentTypeResolver {
+            _map;
             constructor(id, defs) {
                 super(id);
                 this._map = new Map();
@@ -1365,6 +1408,7 @@ var colibri;
     (function (core) {
         core.CONTENT_TYPE_PUBLIC_ROOT = "colibri.core.PublicRootContentType";
         class PublicRootContentTypeResolver extends core.ContentTypeResolver {
+            static ID = "colibri.core.PublicRootContentTypeResolver";
             constructor() {
                 super(PublicRootContentTypeResolver.ID);
             }
@@ -1372,7 +1416,6 @@ var colibri;
                 return file.getName() === "publicroot" ? core.CONTENT_TYPE_PUBLIC_ROOT : core.CONTENT_TYPE_ANY;
             }
         }
-        PublicRootContentTypeResolver.ID = "colibri.core.PublicRootContentTypeResolver";
         core.PublicRootContentTypeResolver = PublicRootContentTypeResolver;
     })(core = colibri.core || (colibri.core = {}));
 })(colibri || (colibri = {}));
@@ -1405,6 +1448,15 @@ var colibri;
         var io;
         (function (io) {
             class FilePath {
+                _parent;
+                _name;
+                _nameWithoutExtension;
+                _isFile;
+                _files;
+                _ext;
+                _modTime;
+                _fileSize;
+                _alive;
                 constructor(parent, fileData) {
                     this._parent = parent;
                     this._isFile = fileData.isFile;
@@ -1618,6 +1670,13 @@ var colibri;
         var io;
         (function (io) {
             class FileStorageChange {
+                _renameRecords_fromPath;
+                _renameRecords_toPath;
+                _renameFromToMap;
+                _deletedRecords;
+                _addedRecords;
+                _modifiedRecords;
+                _fullProjectReload;
                 constructor() {
                     this._renameRecords_fromPath = new Set();
                     this._renameRecords_toPath = new Set();
@@ -1736,6 +1795,9 @@ var colibri;
             }
             io.apiRequest = apiRequest;
             class FileStorage_HTTPServer {
+                _root;
+                _changeListeners;
+                _hash;
                 constructor() {
                     this._root = null;
                     this._hash = "";
@@ -2181,6 +2243,8 @@ var colibri;
         var io;
         (function (io) {
             class SyncFileContentCache {
+                _getContent;
+                _map;
                 constructor(builder) {
                     this._getContent = builder;
                     this.reset();
@@ -2271,6 +2335,7 @@ var colibri;
         var preferences;
         (function (preferences) {
             class Preferences {
+                _preferencesSpace;
                 constructor(preferencesSpace) {
                     this._preferencesSpace = preferencesSpace;
                 }
@@ -2300,9 +2365,8 @@ var colibri;
                     }
                 }
                 getValue(key, defaultValue = null) {
-                    var _a;
                     const data = this.readData();
-                    return (_a = data[key]) !== null && _a !== void 0 ? _a : defaultValue;
+                    return data[key] ?? defaultValue;
                 }
             }
             preferences.Preferences = Preferences;
@@ -2316,17 +2380,24 @@ var colibri;
         var controls;
         (function (controls) {
             class Action {
+                _text;
+                _tooltip;
+                _commandId;
+                _icon;
+                _enabled;
+                _showText;
+                _selected;
+                _callback;
+                eventActionChanged = new controls.ListenerList();
                 constructor(config) {
-                    var _a, _b, _c, _d, _e, _f;
-                    this.eventActionChanged = new controls.ListenerList();
-                    this._text = (_a = config.text) !== null && _a !== void 0 ? _a : "";
-                    this._tooltip = (_b = config.tooltip) !== null && _b !== void 0 ? _b : "";
+                    this._text = config.text ?? "";
+                    this._tooltip = config.tooltip ?? "";
                     this._showText = config.showText !== false;
-                    this._icon = (_c = config.icon) !== null && _c !== void 0 ? _c : null;
+                    this._icon = config.icon ?? null;
                     this._enabled = config.enabled === undefined || config.enabled;
-                    this._callback = (_d = config.callback) !== null && _d !== void 0 ? _d : null;
-                    this._commandId = (_e = config.commandId) !== null && _e !== void 0 ? _e : null;
-                    this._selected = (_f = config.selected) !== null && _f !== void 0 ? _f : false;
+                    this._callback = config.callback ?? null;
+                    this._commandId = config.commandId ?? null;
+                    this._selected = config.selected ?? false;
                     if (this._commandId) {
                         const manager = colibri.Platform.getWorkbench().getCommandManager();
                         const command = manager.getCommand(this._commandId);
@@ -2396,6 +2467,8 @@ var colibri;
              * Reads an image from an atlas. The atlas is in the JSON (Hash) format.
              */
             class AtlasImage {
+                _plugin;
+                _frame;
                 constructor(plugin, frame) {
                     this._plugin = plugin;
                     this._frame = frame;
@@ -2447,6 +2520,9 @@ var colibri;
         var controls;
         (function (controls) {
             class CanvasControl extends controls.Control {
+                _canvas;
+                _context;
+                _padding;
                 constructor(padding = 0, ...classList) {
                     super("canvas", "CanvasControl", ...classList);
                     this._padding = padding;
@@ -2498,6 +2574,10 @@ var colibri;
         var controls;
         (function (controls) {
             class CanvasProgressMonitor {
+                _canvas;
+                _total;
+                _progress;
+                _ctx;
                 constructor(canvas) {
                     this._canvas = canvas;
                     this._progress = 0;
@@ -2542,6 +2622,8 @@ var colibri;
         var controls;
         (function (controls) {
             class ColorPickerManager {
+                static _currentPicker;
+                static _set = false;
                 static createPicker() {
                     this.setupPicker();
                     const pickerClass = window["Picker"];
@@ -2582,7 +2664,6 @@ var colibri;
                     });
                 }
             }
-            ColorPickerManager._set = false;
             controls.ColorPickerManager = ColorPickerManager;
         })(controls = ui.controls || (ui.controls = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -2619,6 +2700,11 @@ var colibri;
         var controls;
         (function (controls) {
             class DefaultImage {
+                _ready;
+                _error;
+                _url;
+                _imageElement;
+                _requestPromise;
                 constructor(img, url) {
                     this._imageElement = img;
                     this._url = url;
@@ -2758,8 +2844,8 @@ var colibri;
         var controls;
         (function (controls) {
             class FillLayout {
+                _padding = 0;
                 constructor(padding = 0) {
-                    this._padding = 0;
                     this._padding = padding;
                 }
                 getPadding() {
@@ -2792,6 +2878,10 @@ var colibri;
         var controls;
         (function (controls) {
             class FrameData {
+                index;
+                src;
+                dst;
+                srcSize;
                 constructor(index, src, dst, srcSize) {
                     this.index = index;
                     this.src = src;
@@ -2813,6 +2903,10 @@ var colibri;
         var controls;
         (function (controls) {
             class IconControl {
+                _icon;
+                _context;
+                _canvas;
+                static _themeListenerRegistered = false;
                 constructor(icon, isButtonStyle = false) {
                     const size = controls.RENDER_ICON_SIZE;
                     this._canvas = document.createElement("canvas");
@@ -2862,7 +2956,6 @@ var colibri;
                     }
                 }
             }
-            IconControl._themeListenerRegistered = false;
             controls.IconControl = IconControl;
         })(controls = ui.controls || (ui.controls = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -2874,6 +2967,8 @@ var colibri;
         var controls;
         (function (controls) {
             class IconDescriptor {
+                iconPlugin;
+                iconName;
                 constructor(iconPlugin, iconName) {
                     this.iconPlugin = iconPlugin;
                     this.iconName = iconName;
@@ -2893,6 +2988,8 @@ var colibri;
         var controls;
         (function (controls) {
             class IconImage {
+                _darkImage;
+                _lightImage;
                 constructor(lightImage, darkImage) {
                     this._lightImage = lightImage;
                     this._darkImage = darkImage;
@@ -2949,6 +3046,7 @@ var colibri;
         var controls;
         (function (controls) {
             class ImageControl extends controls.CanvasControl {
+                _image;
                 constructor(padding = 0, ...classList) {
                     super(padding, "ImageControl", ...classList);
                 }
@@ -2987,6 +3085,9 @@ var colibri;
         var controls;
         (function (controls) {
             class ImageFrame {
+                _name;
+                _image;
+                _frameData;
                 constructor(name, image, frameData) {
                     this._name = name;
                     this._image = image;
@@ -3059,6 +3160,7 @@ var colibri;
         var controls;
         (function (controls) {
             class ImageWrapper {
+                _imageElement;
                 constructor(imageElement) {
                     this._imageElement = imageElement;
                 }
@@ -3118,6 +3220,7 @@ var colibri;
         (function (controls) {
             controls.CANCEL_EVENT = "colibri.ui.controls.CANCEL_EVENT";
             class ListenerList {
+                _listeners;
                 constructor() {
                     this._listeners = [];
                 }
@@ -3151,6 +3254,15 @@ var colibri;
         var controls;
         (function (controls) {
             class Menu {
+                _text;
+                _items;
+                _element;
+                _bgElement;
+                _menuCloseCallback;
+                static _activeMenu = null;
+                _subMenu;
+                _parentMenu;
+                _lastItemElementSelected;
                 constructor(text) {
                     this._items = [];
                     this._text = text;
@@ -3399,7 +3511,6 @@ var colibri;
                     this.close();
                 }
             }
-            Menu._activeMenu = null;
             controls.Menu = Menu;
         })(controls = ui.controls || (ui.controls = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -3411,6 +3522,9 @@ var colibri;
         var controls;
         (function (controls) {
             class MenuExtension extends colibri.Extension {
+                static POINT_ID = "colibri.ui.controls.menus";
+                _menuId;
+                _configList;
                 constructor(menuId, ...configs) {
                     super(MenuExtension.POINT_ID);
                     this._menuId = menuId;
@@ -3430,7 +3544,6 @@ var colibri;
                     }
                 }
             }
-            MenuExtension.POINT_ID = "colibri.ui.controls.menus";
             controls.MenuExtension = MenuExtension;
         })(controls = ui.controls || (ui.controls = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -3442,6 +3555,9 @@ var colibri;
         var controls;
         (function (controls) {
             class MultiImage {
+                _width;
+                _height;
+                _images;
                 constructor(images, width, height) {
                     this._images = images;
                     this._width = width;
@@ -3508,6 +3624,8 @@ var colibri;
         var controls;
         (function (controls) {
             class Point {
+                x;
+                y;
                 constructor(x, y) {
                     this.x = x;
                     this.y = y;
@@ -3524,6 +3642,10 @@ var colibri;
         var controls;
         (function (controls) {
             class Rect {
+                x;
+                y;
+                w;
+                h;
                 constructor(x = 0, y = 0, w = 0, h = 0) {
                     this.x = x;
                     this.y = y;
@@ -3554,11 +3676,12 @@ var colibri;
         var controls;
         (function (controls) {
             class ScrollPane extends controls.Control {
+                _clientControl;
+                _scrollBar;
+                _scrollHandler;
+                _clientContentHeight = 0;
                 constructor(clientControl) {
                     super("div", "ScrollPane");
-                    this._clientContentHeight = 0;
-                    this._startDragY = -1;
-                    this._startScrollY = 0;
                     this._clientControl = clientControl;
                     this.add(this._clientControl);
                     this._scrollBar = document.createElement("div");
@@ -3627,6 +3750,8 @@ var colibri;
                     this.getViewer().setScrollY(y);
                     this.layout();
                 }
+                _startDragY = -1;
+                _startScrollY = 0;
                 onMouseDown(e) {
                     if (e.target === this._scrollHandler) {
                         e.stopImmediatePropagation();
@@ -3686,9 +3811,16 @@ var colibri;
         var controls;
         (function (controls) {
             class SplitPanel extends controls.Control {
+                _leftControl;
+                _rightControl;
+                _horizontal;
+                _splitPosition;
+                _splitFactor;
+                _splitWidth;
+                _startDrag = -1;
+                _startPos;
                 constructor(left, right, horizontal = true) {
                     super("div", "split");
-                    this._startDrag = -1;
                     this._horizontal = horizontal;
                     this._splitPosition = 50;
                     this._splitFactor = 0.5;
@@ -3836,6 +3968,9 @@ var colibri;
         var controls;
         (function (controls) {
             class CloseIconManager {
+                _iconControl;
+                _icon;
+                _overIcon;
                 constructor() {
                     this._iconControl = new controls.IconControl();
                     this._iconControl.getCanvas().classList.add("TabPaneLabelCloseIcon");
@@ -3867,6 +4002,8 @@ var colibri;
                 }
             }
             class TabIconManager {
+                _icon;
+                _canvas;
                 constructor(canvas, icon) {
                     this._canvas = canvas;
                     this._icon = icon;
@@ -3921,12 +4058,17 @@ var colibri;
             // export const EVENT_TAB_SELECTED = "tabSelected";
             // export const EVENT_TAB_LABEL_RESIZED = "tabResized";
             class TabPane extends controls.Control {
+                eventTabClosed = new controls.ListenerList();
+                eventTabSelected = new controls.ListenerList();
+                eventTabLabelResized = new controls.ListenerList();
+                eventTabSectionSelected = new controls.ListenerList();
+                _titleBarElement;
+                _contentAreaElement;
+                _iconSize;
+                static _selectedTimeCounter = 0;
+                _themeListener;
                 constructor(...classList) {
                     super("div", "TabPane", ...classList);
-                    this.eventTabClosed = new controls.ListenerList();
-                    this.eventTabSelected = new controls.ListenerList();
-                    this.eventTabLabelResized = new controls.ListenerList();
-                    this.eventTabSectionSelected = new controls.ListenerList();
                     this._titleBarElement = document.createElement("div");
                     this._titleBarElement.classList.add("TabPaneTitleBar");
                     this.getElement().appendChild(this._titleBarElement);
@@ -4271,7 +4413,6 @@ var colibri;
                     return undefined;
                 }
             }
-            TabPane._selectedTimeCounter = 0;
             controls.TabPane = TabPane;
         })(controls = ui.controls || (ui.controls = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -4283,6 +4424,8 @@ var colibri;
         var controls;
         (function (controls) {
             class ToolbarManager {
+                _toolbarElement;
+                _actionDataMap;
                 constructor(toolbarElement) {
                     this._toolbarElement = toolbarElement;
                     this._actionDataMap = new Map();
@@ -4372,6 +4515,11 @@ var colibri;
         var controls;
         (function (controls) {
             class TooltipManager {
+                _element;
+                _enterTime;
+                _token;
+                _tooltip;
+                _mousePosition;
                 constructor(element, tooltip) {
                     this._element = element;
                     this._tooltip = tooltip;
@@ -4416,6 +4564,7 @@ var colibri;
                         }
                     }, 1000);
                 }
+                static _tooltipElement;
                 static showTooltip(mouseX, mouseY, html) {
                     this.closeTooltip();
                     this._tooltipElement = document.createElement("div");
@@ -4475,6 +4624,8 @@ var colibri;
         var controls;
         (function (controls) {
             class ZoomControl {
+                _element;
+                _callback;
                 constructor(args) {
                     this._element = document.createElement("div");
                     this._element.classList.add("ZoomControl");
@@ -4591,9 +4742,18 @@ var colibri;
             var dialogs;
             (function (dialogs) {
                 class Dialog extends controls.Control {
+                    eventDialogClose = new controls.ListenerList();
+                    _containerElement;
+                    _buttonPaneElement;
+                    _titlePaneElement;
+                    _width;
+                    _height;
+                    static _dialogs = [];
+                    static _firstTime = true;
+                    _parentDialog;
+                    _closeWithEscapeKey;
                     constructor(...classList) {
                         super("div", "Dialog", ...classList);
-                        this.eventDialogClose = new controls.ListenerList();
                         this._closeWithEscapeKey = true;
                         this.setSize(400, 300, true);
                         this._parentDialog = Dialog._dialogs.length === 0 ?
@@ -4764,8 +4924,6 @@ var colibri;
                         }
                     }
                 }
-                Dialog._dialogs = [];
-                Dialog._firstTime = true;
                 dialogs.Dialog = Dialog;
             })(dialogs = controls.dialogs || (controls.dialogs = {}));
         })(controls = ui.controls || (ui.controls = {}));
@@ -4781,6 +4939,9 @@ var colibri;
             var dialogs;
             (function (dialogs) {
                 class AbstractViewerDialog extends dialogs.Dialog {
+                    _viewer;
+                    _filteredViewer;
+                    _showZoomControls;
                     constructor(viewer, showZoomControls) {
                         super("AbstractViewerDialog");
                         this._viewer = viewer;
@@ -4866,6 +5027,8 @@ var colibri;
             var dialogs;
             (function (dialogs) {
                 class AlertDialog extends dialogs.Dialog {
+                    _messageElement;
+                    static _currentDialog;
                     constructor() {
                         super("AlertDialog");
                     }
@@ -5062,6 +5225,9 @@ var colibri;
             var dialogs;
             (function (dialogs) {
                 class ConfirmDialog extends dialogs.Dialog {
+                    _messageElement;
+                    _confirmBtn;
+                    _confirmCallback;
                     constructor() {
                         super("ConfirmDialog");
                     }
@@ -5121,6 +5287,8 @@ var colibri;
             var dialogs;
             (function (dialogs) {
                 class FormDialog extends dialogs.Dialog {
+                    _formElement;
+                    _formBuilder;
                     constructor() {
                         super();
                     }
@@ -5162,6 +5330,11 @@ var colibri;
             var dialogs;
             (function (dialogs) {
                 class InputDialog extends dialogs.Dialog {
+                    _textElement;
+                    _messageElement;
+                    _acceptButton;
+                    _validator;
+                    _resultCallback;
                     constructor() {
                         super("InputDialog");
                     }
@@ -5230,6 +5403,7 @@ var colibri;
             var dialogs;
             (function (dialogs) {
                 class ProgressDialog extends dialogs.Dialog {
+                    _progressElement;
                     constructor() {
                         super("ProgressDialog");
                     }
@@ -5264,6 +5438,9 @@ var colibri;
             var dialogs;
             (function (dialogs) {
                 class ProgressDialogMonitor {
+                    _dialog;
+                    _total;
+                    _step;
                     constructor(dialog) {
                         this._dialog = dialog;
                         this._total = 0;
@@ -5325,6 +5502,7 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class ImageCellRenderer {
+                    _singleImage;
                     constructor(singleImage) {
                         this._singleImage = singleImage;
                     }
@@ -5372,15 +5550,30 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class Viewer extends controls.Control {
+                    eventOpenItem = new controls.ListenerList();
+                    eventDeletePressed = new controls.ListenerList();
+                    _contentProvider;
+                    _cellRendererProvider;
+                    _labelProvider = null;
+                    _styledLabelProvider;
+                    _input;
+                    _cellSize;
+                    _expandedObjects;
+                    _selectedObjects;
+                    _context;
+                    _paintItems;
+                    _lastSelectedItemIndex = -1;
+                    _contentHeight = 0;
+                    _filterText;
+                    _filterIncludeSet;
+                    _filterMatches;
+                    _highlightMatches;
+                    _viewerId;
+                    _preloadEnabled = true;
+                    _filterOnRepaintEnabled = true;
+                    _searchEngine;
                     constructor(id, ...classList) {
                         super("canvas", "Viewer");
-                        this.eventOpenItem = new controls.ListenerList();
-                        this.eventDeletePressed = new controls.ListenerList();
-                        this._labelProvider = null;
-                        this._lastSelectedItemIndex = -1;
-                        this._contentHeight = 0;
-                        this._preloadEnabled = true;
-                        this._filterOnRepaintEnabled = true;
                         this._viewerId = id;
                         this._filterText = "";
                         this._cellSize = 48;
@@ -5727,8 +5920,7 @@ var colibri;
                         this.updateScrollPane();
                     }
                     updateScrollPane() {
-                        var _a;
-                        const pane = (_a = this.getContainer()) === null || _a === void 0 ? void 0 : _a.getContainer();
+                        const pane = this.getContainer()?.getContainer();
                         if (pane instanceof controls.ScrollPane) {
                             pane.updateScroll(this._contentHeight);
                         }
@@ -5908,13 +6100,10 @@ var colibri;
                 viewers.TREE_ICON_SIZE = controls.RENDER_ICON_SIZE;
                 viewers.LABEL_MARGIN = viewers.TREE_ICON_SIZE + 0;
                 class TreeViewer extends viewers.Viewer {
+                    _treeRenderer;
+                    _treeIconList;
                     constructor(id, ...classList) {
                         super(id, "TreeViewer", ...classList);
-                        this._filterTime = 0;
-                        this._token = 0;
-                        this._delayOnManyChars = 100;
-                        this._delayOnFewChars = 200;
-                        this._howMuchIsFewChars = 3;
                         this.getCanvas().addEventListener("click", e => this.onClick(e));
                         this._treeRenderer = new viewers.TreeViewerRenderer(this);
                         this._treeIconList = [];
@@ -6110,6 +6299,11 @@ var colibri;
                         super.setFilterText(filter);
                         this.maybeFilter();
                     }
+                    _filterTime = 0;
+                    _token = 0;
+                    _delayOnManyChars = 100;
+                    _delayOnFewChars = 200;
+                    _howMuchIsFewChars = 3;
                     setFilterDelay(delayOnManyChars, delayOnFewChars, howMuchIsFewChars) {
                         this._delayOnManyChars = delayOnManyChars;
                         this._delayOnFewChars = delayOnFewChars;
@@ -6189,6 +6383,7 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class LabelProvider {
+                    _getLabel;
                     constructor(getLabel) {
                         this._getLabel = getLabel;
                     }
@@ -6311,6 +6506,16 @@ var colibri;
             var dialogs;
             (function (dialogs) {
                 class WizardDialog extends dialogs.Dialog {
+                    _pageDescArea;
+                    _pageArea;
+                    _clientArea;
+                    _pageTitleLabel;
+                    _pages;
+                    _activePageIndex;
+                    _finishButton;
+                    _cancelButton;
+                    _nextButton;
+                    _backButton;
                     constructor(...classList) {
                         super("WizardDialog", ...classList);
                         this._pages = [];
@@ -6419,6 +6624,9 @@ var colibri;
             var dialogs;
             (function (dialogs) {
                 class WizardPage {
+                    _title;
+                    _description;
+                    _wizard;
                     constructor(title, description) {
                         this._title = title;
                         this._description = description;
@@ -6471,8 +6679,9 @@ var colibri;
             var properties;
             (function (properties) {
                 class EasyFormBuilder {
+                    _formBuilder = new properties.FormBuilder();
+                    _parent;
                     constructor(parent) {
-                        this._formBuilder = new properties.FormBuilder();
                         this._parent = parent;
                     }
                     createLabel(text, tooltip) {
@@ -6698,6 +6907,7 @@ var colibri;
                         parent.appendChild(text);
                         return text;
                     }
+                    static NEXT_ID = 0;
                     createCheckbox(parent, label) {
                         const check = document.createElement("input");
                         if (label) {
@@ -6726,7 +6936,6 @@ var colibri;
                         return icon;
                     }
                 }
-                FormBuilder.NEXT_ID = 0;
                 properties.FormBuilder = FormBuilder;
             })(properties = controls.properties || (controls.properties = {}));
         })(controls = ui.controls || (ui.controls = {}));
@@ -6741,6 +6950,10 @@ var colibri;
             var properties;
             (function (properties) {
                 class PropertyPage extends controls.Control {
+                    _sectionProvider;
+                    _sectionPanes;
+                    _sectionPaneMap;
+                    _selection;
                     constructor() {
                         super("div");
                         this.addClass("PropertyPage");
@@ -6901,6 +7114,14 @@ var colibri;
             var properties;
             (function (properties) {
                 class PropertySection extends properties.FormBuilder {
+                    _id;
+                    _title;
+                    _page;
+                    _updaters;
+                    _fillSpace;
+                    _collapsedByDefault;
+                    _icon;
+                    _typeHash;
                     constructor(page, id, title, fillSpace = false, collapsedByDefault = false, icon, typeHash) {
                         super();
                         this._page = page;
@@ -7042,6 +7263,13 @@ var colibri;
             var properties;
             (function (properties) {
                 class PropertySectionPane extends controls.Control {
+                    _section;
+                    _titleArea;
+                    _formArea;
+                    _page;
+                    _menuIcon;
+                    _expandIconControl;
+                    _titleLabel;
                     constructor(page, section) {
                         super();
                         this._page = page;
@@ -7158,6 +7386,7 @@ var colibri;
             var properties;
             (function (properties) {
                 class PropertySectionProvider {
+                    _id;
                     constructor(id) {
                         this._id = id;
                     }
@@ -7182,6 +7411,7 @@ var colibri;
             var properties;
             (function (properties) {
                 class StringDialog extends controls.dialogs.Dialog {
+                    _textArea;
                     createDialogArea() {
                         this._textArea = document.createElement("textarea");
                         this._textArea.classList.add("DialogClientArea");
@@ -7235,6 +7465,7 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class DefaultViewerMenuProvider {
+                    builder;
                     constructor(builder) {
                         this.builder = builder;
                     }
@@ -7267,6 +7498,8 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class EmptyCellRenderer {
+                    static instance = new EmptyCellRenderer(false);
+                    _variableSize;
                     constructor(variableSize = true) {
                         this._variableSize = variableSize;
                     }
@@ -7283,7 +7516,6 @@ var colibri;
                         return controls.Controls.resolveNothingLoaded();
                     }
                 }
-                EmptyCellRenderer.instance = new EmptyCellRenderer(false);
                 viewers.EmptyCellRenderer = EmptyCellRenderer;
             })(viewers = controls.viewers || (controls.viewers = {}));
         })(controls = ui.controls || (ui.controls = {}));
@@ -7298,11 +7530,12 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class EmptyCellRendererProvider {
-                    constructor(getRenderer) {
-                        this._getRenderer = getRenderer !== null && getRenderer !== void 0 ? getRenderer : ((e) => new viewers.EmptyCellRenderer());
-                    }
+                    _getRenderer;
                     static withIcon(icon) {
                         return new EmptyCellRendererProvider(() => new viewers.IconImageCellRenderer(icon));
+                    }
+                    constructor(getRenderer) {
+                        this._getRenderer = getRenderer ?? ((e) => new viewers.EmptyCellRenderer());
                     }
                     getCellRenderer(element) {
                         return this._getRenderer(element);
@@ -7325,6 +7558,10 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class FilterControl extends controls.Control {
+                    _filterElement;
+                    _menuIcon;
+                    _filteredViewer;
+                    _inputIcon;
                     constructor(filterViewer) {
                         super("div", "FilterControl");
                         this._filteredViewer = filterViewer;
@@ -7360,6 +7597,9 @@ var colibri;
                 }
                 viewers.FilterControl = FilterControl;
                 class ViewerContainer extends controls.Control {
+                    _viewer;
+                    _zoomControl;
+                    _filteredViewer;
                     constructor(filteredViewer, zoom = true) {
                         super("div", "ViewerContainer");
                         this._viewer = filteredViewer.getViewer();
@@ -7392,6 +7632,11 @@ var colibri;
                 }
                 viewers.ViewerContainer = ViewerContainer;
                 class FilteredViewer extends controls.Control {
+                    _viewer;
+                    _viewerContainer;
+                    _filterControl;
+                    _scrollPane;
+                    _menuProvider;
                     constructor(viewer, showZoomControls, ...classList) {
                         super("div", "FilteredViewer", ...classList);
                         this._viewer = viewer;
@@ -7534,6 +7779,7 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class FolderCellRenderer {
+                    _maxCount;
                     constructor(maxCount = 8) {
                         this._maxCount = maxCount;
                     }
@@ -7633,6 +7879,10 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class TreeViewerRenderer {
+                    _viewer;
+                    _contentHeight;
+                    _fullPaint;
+                    _itemIndex;
                     constructor(viewer, cellSize = controls.ROW_HEIGHT) {
                         this._viewer = viewer;
                         this._viewer.setCellSize(cellSize);
@@ -7859,6 +8109,11 @@ var colibri;
                 const LIGHT_CHILD_SHADOW_COLOR = "rgba(0, 0, 0, 0.2)";
                 const LIGHT_CHILD_SHADOW_BORDER_COLOR = "rgba(255, 255, 255, 1)";
                 class GridTreeViewerRenderer extends viewers.TreeViewerRenderer {
+                    _center;
+                    _flat;
+                    _isSectionCriteria;
+                    _isShadowChildCriteria;
+                    _paintItemShadow;
                     constructor(viewer, flat = false, center = false) {
                         super(viewer);
                         viewer.setCellSize(128);
@@ -8328,6 +8583,7 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class IconImageCellRenderer {
+                    _icon;
                     constructor(icon) {
                         this._icon = icon;
                     }
@@ -8373,6 +8629,7 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class IconGridCellRenderer {
+                    _icon;
                     constructor(icon) {
                         this._icon = icon;
                     }
@@ -8426,6 +8683,11 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class ImageFromCellRenderer {
+                    _renderer;
+                    _obj;
+                    _width;
+                    _height;
+                    _dummyViewer;
                     constructor(obj, renderer, width, height) {
                         this._obj = obj;
                         this._renderer = renderer;
@@ -8466,6 +8728,7 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class LabelProviderFromStyledLabelProvider {
+                    _styledLabelProvider;
                     constructor(styledLabelProvider) {
                         this._styledLabelProvider = styledLabelProvider;
                     }
@@ -8488,6 +8751,7 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class MultiWordSearchEngine {
+                    _words;
                     prepare(pattern) {
                         this._words = pattern.split(" ").map(w => w.trim().toLowerCase()).filter(w => w.length > 0);
                     }
@@ -8537,6 +8801,7 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class OneCharCellRenderer {
+                    _iconSize;
                     constructor(iconSize) {
                         this._iconSize = iconSize;
                     }
@@ -8570,6 +8835,10 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class PaintItem extends controls.Rect {
+                    index;
+                    data;
+                    parent;
+                    visible;
                     constructor(index, data, parent = null, visible) {
                         super();
                         this.index = index;
@@ -8592,6 +8861,8 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class PreloadCellArgs {
+                    obj;
+                    viewer;
                     constructor(obj, viewer) {
                         this.obj = obj;
                         this.viewer = viewer;
@@ -8614,6 +8885,14 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class RenderCellArgs {
+                    canvasContext;
+                    x;
+                    y;
+                    w;
+                    h;
+                    obj;
+                    viewer;
+                    center;
                     constructor(canvasContext, x, y, w, h, obj, viewer, center = false) {
                         this.canvasContext = canvasContext;
                         this.x = x;
@@ -8642,6 +8921,7 @@ var colibri;
             var viewers;
             (function (viewers) {
                 class SingleWordSearchEngine {
+                    _pattern;
                     prepare(pattern) {
                         this._pattern = pattern.toLowerCase();
                     }
@@ -8692,6 +8972,9 @@ var colibri;
         (function (ide) {
             var io = colibri.core.io;
             class ContentTypeEditorFactory extends ide.EditorFactory {
+                _name;
+                _contentType;
+                _newEditor;
                 constructor(name, contentType, newEditor) {
                     super();
                     this._name = name;
@@ -8724,10 +9007,8 @@ var colibri;
         var ide;
         (function (ide) {
             class ContentTypeIconExtension extends colibri.Extension {
-                constructor(config) {
-                    super(ContentTypeIconExtension.POINT_ID, 10);
-                    this._config = config;
-                }
+                static POINT_ID = "colibri.ui.ide.ContentTypeIconExtension";
+                _config;
                 static withPluginIcons(plugin, config) {
                     return new ContentTypeIconExtension(config.map(item => {
                         return {
@@ -8736,11 +9017,14 @@ var colibri;
                         };
                     }));
                 }
+                constructor(config) {
+                    super(ContentTypeIconExtension.POINT_ID, 10);
+                    this._config = config;
+                }
                 getConfig() {
                     return this._config;
                 }
             }
-            ContentTypeIconExtension.POINT_ID = "colibri.ui.ide.ContentTypeIconExtension";
             ide.ContentTypeIconExtension = ContentTypeIconExtension;
         })(ide = ui.ide || (ui.ide = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -8753,9 +9037,17 @@ var colibri;
         var ide;
         (function (ide) {
             class Part extends ui.controls.Control {
+                eventPartTitleChanged = new ui.controls.ListenerList();
+                _id;
+                _title;
+                _selection;
+                _partCreated;
+                _icon;
+                _folder;
+                _undoManager;
+                _restoreState;
                 constructor(id) {
                     super();
-                    this.eventPartTitleChanged = new ui.controls.ListenerList();
                     this._id = id;
                     this._title = "";
                     this._selection = [];
@@ -8864,9 +9156,13 @@ var colibri;
         var ide;
         (function (ide) {
             class EditorPart extends ide.Part {
+                eventDirtyStateChanged = new ui.controls.ListenerList();
+                _input;
+                _dirty;
+                _embeddedMode;
+                _editorFactory;
                 constructor(id, factory) {
                     super(id);
-                    this.eventDirtyStateChanged = new ui.controls.ListenerList();
                     this.addClass("EditorPart");
                     this._dirty = false;
                     this._embeddedMode = false;
@@ -9031,6 +9327,7 @@ var colibri;
         var ide;
         (function (ide) {
             class EditorArea extends ide.PartFolder {
+                _tabsToBeClosed;
                 constructor() {
                     super("EditorArea");
                     this.setTabIconSize(ui.controls.RENDER_ICON_SIZE * 3);
@@ -9152,6 +9449,8 @@ var colibri;
         var ide;
         (function (ide) {
             class EditorExtension extends colibri.Extension {
+                static POINT_ID = "colibri.ui.ide.EditorExtension";
+                _factories;
                 constructor(factories) {
                     super(EditorExtension.POINT_ID);
                     this._factories = factories;
@@ -9160,7 +9459,6 @@ var colibri;
                     return this._factories;
                 }
             }
-            EditorExtension.POINT_ID = "colibri.ui.ide.EditorExtension";
             ide.EditorExtension = EditorExtension;
         })(ide = ui.ide || (ui.ide = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -9172,6 +9470,8 @@ var colibri;
         var ide;
         (function (ide) {
             class EditorInputExtension extends colibri.Extension {
+                static POINT_ID = "colibri.ui.ide.EditorInputExtension";
+                _id;
                 constructor(id) {
                     super(EditorInputExtension.POINT_ID);
                     this._id = id;
@@ -9180,7 +9480,6 @@ var colibri;
                     return this._id;
                 }
             }
-            EditorInputExtension.POINT_ID = "colibri.ui.ide.EditorInputExtension";
             ide.EditorInputExtension = EditorInputExtension;
         })(ide = ui.ide || (ui.ide = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -9192,6 +9491,8 @@ var colibri;
         var ide;
         (function (ide) {
             class EditorRegistry {
+                _factories;
+                _defaultFactory;
                 constructor() {
                     this._factories = [];
                 }
@@ -9230,6 +9531,9 @@ var colibri;
         var ide;
         (function (ide) {
             class EditorViewerProvider {
+                _viewer;
+                _initialSelection;
+                _selectedTabSection;
                 constructor() {
                     this._viewer = null;
                     this._initialSelection = null;
@@ -9322,6 +9626,9 @@ var colibri;
         var ide;
         (function (ide) {
             class ViewerView extends ide.ViewPart {
+                _filteredViewer;
+                _viewer;
+                _showZoomControls;
                 constructor(id, showZoomControls = true) {
                     super(id);
                     this._showZoomControls = showZoomControls;
@@ -9371,6 +9678,10 @@ var colibri;
         (function (ide) {
             var viewers = ui.controls.viewers;
             class EditorViewerView extends ide.ViewerView {
+                _currentEditor;
+                _currentViewerProvider;
+                _viewerStateMap;
+                _tabSectionListener;
                 constructor(id) {
                     super(id);
                     this._viewerStateMap = new Map();
@@ -9492,6 +9803,8 @@ var colibri;
         var ide;
         (function (ide) {
             class FileEditor extends ide.EditorPart {
+                _onFileStorageListener;
+                _savingThisEditor;
                 constructor(id, factory) {
                     super(id, factory);
                     this._onFileStorageListener = change => {
@@ -9573,6 +9886,7 @@ var colibri;
         var ide;
         (function (ide) {
             class FileEditorInputExtension extends ide.EditorInputExtension {
+                static ID = "colibri.ui.ide.FileEditorInputExtension";
                 constructor() {
                     super(FileEditorInputExtension.ID);
                 }
@@ -9588,7 +9902,6 @@ var colibri;
                     return input.getFullName();
                 }
             }
-            FileEditorInputExtension.ID = "colibri.ui.ide.FileEditorInputExtension";
             ide.FileEditorInputExtension = FileEditorInputExtension;
         })(ide = ui.ide || (ui.ide = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -9600,6 +9913,7 @@ var colibri;
         var ide;
         (function (ide) {
             class FileImage extends ui.controls.DefaultImage {
+                _file;
                 constructor(file) {
                     super(new Image(), file.getUrl());
                     this._file = file;
@@ -9794,6 +10108,8 @@ var colibri;
         var ide;
         (function (ide) {
             class IconAtlasLoaderExtension extends colibri.Extension {
+                static POINT_ID = "colibri.ui.ide.IconAtlasLoaderExtension";
+                _plugin;
                 constructor(plugin) {
                     super(IconAtlasLoaderExtension.POINT_ID);
                     this._plugin = plugin;
@@ -9802,7 +10118,6 @@ var colibri;
                     await this._plugin.preloadAtlasIcons();
                 }
             }
-            IconAtlasLoaderExtension.POINT_ID = "colibri.ui.ide.IconAtlasLoaderExtension";
             ide.IconAtlasLoaderExtension = IconAtlasLoaderExtension;
         })(ide = ui.ide || (ui.ide = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -9814,19 +10129,20 @@ var colibri;
         var ide;
         (function (ide) {
             class IconLoaderExtension extends colibri.Extension {
-                constructor(icons) {
-                    super(IconLoaderExtension.POINT_ID);
-                    this._icons = icons;
-                }
+                static POINT_ID = "colibri.ui.ide.IconLoaderExtension";
                 static withPluginFiles(plugin, iconNames, common = false) {
                     const icons = iconNames.map(name => plugin.getIcon(name, common));
                     return new IconLoaderExtension(icons);
+                }
+                _icons;
+                constructor(icons) {
+                    super(IconLoaderExtension.POINT_ID);
+                    this._icons = icons;
                 }
                 getIcons() {
                     return this._icons;
                 }
             }
-            IconLoaderExtension.POINT_ID = "colibri.ui.ide.IconLoaderExtension";
             ide.IconLoaderExtension = IconLoaderExtension;
         })(ide = ui.ide || (ui.ide = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -9870,6 +10186,10 @@ var colibri;
         var ide;
         (function (ide) {
             class MainToolbar extends ui.controls.Control {
+                _leftArea;
+                _centerArea;
+                _rightArea;
+                _currentManager;
                 constructor() {
                     super("div", "MainToolbar");
                     this._currentManager = null;
@@ -9920,6 +10240,8 @@ var colibri;
         var ide;
         (function (ide) {
             class PluginResourceLoaderExtension extends colibri.Extension {
+                static POINT_ID = "colibri.ui.ide.PluginResourceLoaderExtension";
+                _loader;
                 constructor(loader) {
                     super(PluginResourceLoaderExtension.POINT_ID);
                     this._loader = loader;
@@ -9930,7 +10252,6 @@ var colibri;
                     }
                 }
             }
-            PluginResourceLoaderExtension.POINT_ID = "colibri.ui.ide.PluginResourceLoaderExtension";
             ide.PluginResourceLoaderExtension = PluginResourceLoaderExtension;
         })(ide = ui.ide || (ui.ide = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -9942,11 +10263,11 @@ var colibri;
         var ide;
         (function (ide) {
             class PreloadProjectResourcesExtension extends colibri.Extension {
+                static POINT_ID = "colibri.ui.ide.PreloadProjectResourcesExtension";
                 constructor() {
                     super(PreloadProjectResourcesExtension.POINT_ID);
                 }
             }
-            PreloadProjectResourcesExtension.POINT_ID = "colibri.ui.ide.PreloadProjectResourcesExtension";
             ide.PreloadProjectResourcesExtension = PreloadProjectResourcesExtension;
         })(ide = ui.ide || (ui.ide = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -9967,6 +10288,10 @@ var colibri;
                 }
             }
             class QuickEditorDialog extends ui.controls.dialogs.Dialog {
+                _file;
+                _editor;
+                _saveButton;
+                _editorState;
                 constructor(file, editorState) {
                     super("QuickEditorDialog");
                     this._file = file;
@@ -10031,6 +10356,8 @@ var colibri;
         var ide;
         (function (ide) {
             class Resources {
+                _plugin;
+                _res;
                 constructor(plugin) {
                     this._plugin = plugin;
                 }
@@ -10071,6 +10398,8 @@ var colibri;
         var ide;
         (function (ide) {
             class ViewerFileEditor extends ide.FileEditor {
+                _filteredViewer;
+                _viewer;
                 constructor(id, editorFactory) {
                     super(id, editorFactory);
                 }
@@ -10112,6 +10441,8 @@ var colibri;
         var ide;
         (function (ide) {
             class WindowExtension extends colibri.Extension {
+                static POINT_ID = "colibri.ui.ide.WindowExtension";
+                _createWindowFunc;
                 constructor(createWindowFunc) {
                     super(WindowExtension.POINT_ID, 10);
                     this._createWindowFunc = createWindowFunc;
@@ -10120,7 +10451,6 @@ var colibri;
                     return this._createWindowFunc();
                 }
             }
-            WindowExtension.POINT_ID = "colibri.ui.ide.WindowExtension";
             ide.WindowExtension = WindowExtension;
         })(ide = ui.ide || (ui.ide = {}));
     })(ui = colibri.ui || (colibri.ui = {}));
@@ -10133,6 +10463,10 @@ var colibri;
         var ide;
         (function (ide) {
             class WorkbenchWindow extends ui.controls.Control {
+                _toolbar;
+                _clientArea;
+                _id;
+                _created;
                 constructor(id) {
                     super("div", "Window");
                     this.getElement().id = id;
@@ -10363,6 +10697,11 @@ var colibri;
             var commands;
             (function (commands) {
                 class KeyMatcher {
+                    _control;
+                    _shift;
+                    _alt;
+                    _key;
+                    _filterInputElements;
                     constructor(config) {
                         this._control = config.control === undefined ? false : config.control;
                         this._shift = config.shift === undefined ? false : config.shift;
@@ -10850,6 +11189,7 @@ var colibri;
             var actions;
             (function (actions) {
                 class PartAction extends ui.controls.Action {
+                    _part;
                     constructor(part, config) {
                         super(config);
                         this._part = part;
@@ -10896,12 +11236,16 @@ var colibri;
             var commands;
             (function (commands) {
                 class Command {
+                    _id;
+                    _name;
+                    _tooltip;
+                    _icon;
+                    _categoryId;
                     constructor(config) {
-                        var _a;
                         this._id = config.id;
                         this._name = config.name;
                         this._tooltip = config.tooltip;
-                        this._icon = (_a = config.icon) !== null && _a !== void 0 ? _a : null;
+                        this._icon = config.icon ?? null;
                         this._categoryId = config.category;
                     }
                     getCategoryId() {
@@ -10934,6 +11278,12 @@ var colibri;
             var commands;
             (function (commands) {
                 class HandlerArgs {
+                    activePart;
+                    activeEditor;
+                    activeElement;
+                    activeMenu;
+                    activeWindow;
+                    activeDialog;
                     constructor(activePart, activeEditor, activeElement, activeMenu, activeWindow, activeDialog) {
                         this.activePart = activePart;
                         this.activeEditor = activeEditor;
@@ -10957,6 +11307,8 @@ var colibri;
             var commands;
             (function (commands) {
                 class CommandExtension extends colibri.Extension {
+                    static POINT_ID = "colibri.ui.ide.commands";
+                    _configurer;
                     constructor(configurer) {
                         super(CommandExtension.POINT_ID);
                         this._configurer = configurer;
@@ -10965,7 +11317,6 @@ var colibri;
                         return this._configurer;
                     }
                 }
-                CommandExtension.POINT_ID = "colibri.ui.ide.commands";
                 commands.CommandExtension = CommandExtension;
             })(commands = ide.commands || (ide.commands = {}));
         })(ide = ui.ide || (ui.ide = {}));
@@ -10980,6 +11331,8 @@ var colibri;
             var commands;
             (function (commands) {
                 class CommandHandler {
+                    _testFunc;
+                    _executeFunc;
                     constructor(config) {
                         this._testFunc = config.testFunc;
                         this._executeFunc = config.executeFunc;
@@ -11007,6 +11360,12 @@ var colibri;
             var commands;
             (function (commands_1) {
                 class CommandManager {
+                    _commandIdMap;
+                    _commands;
+                    _commandMatcherMap;
+                    _commandHandlerMap;
+                    _categoryMap;
+                    _categories;
                     constructor() {
                         this._commands = [];
                         this._commandIdMap = new Map();
@@ -11357,6 +11716,8 @@ var colibri;
             var themes;
             (function (themes) {
                 class ThemeExtension extends colibri.Extension {
+                    static POINT_ID = "colibri.ui.ide.ThemeExtension";
+                    _theme;
                     constructor(theme) {
                         super(ThemeExtension.POINT_ID);
                         this._theme = theme;
@@ -11365,7 +11726,6 @@ var colibri;
                         return this._theme;
                     }
                 }
-                ThemeExtension.POINT_ID = "colibri.ui.ide.ThemeExtension";
                 themes.ThemeExtension = ThemeExtension;
             })(themes = ide.themes || (ide.themes = {}));
         })(ide = ui.ide || (ui.ide = {}));
@@ -11398,6 +11758,8 @@ var colibri;
             var undo;
             (function (undo) {
                 class UndoManager {
+                    _undoList;
+                    _redoList;
                     constructor() {
                         this._undoList = [];
                         this._redoList = [];
@@ -11440,6 +11802,8 @@ var colibri;
             var utils;
             (function (utils) {
                 class NameMaker {
+                    _getName;
+                    _nameSet;
                     constructor(getName) {
                         this._getName = getName;
                         this._nameSet = new Set();

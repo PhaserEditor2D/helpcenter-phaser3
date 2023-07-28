@@ -3,14 +3,14 @@ var colibri;
     var inspector;
     (function (inspector) {
         class InspectorPlugin extends colibri.Plugin {
-            constructor() {
-                super("colibri.inspector");
-            }
+            static _instance = new InspectorPlugin();
             static getInstance() {
                 return this._instance;
             }
+            constructor() {
+                super("colibri.inspector");
+            }
         }
-        InspectorPlugin._instance = new InspectorPlugin();
         inspector.InspectorPlugin = InspectorPlugin;
         colibri.Platform.addPlugin(InspectorPlugin.getInstance());
     })(inspector = colibri.inspector || (colibri.inspector = {}));
@@ -26,6 +26,10 @@ var colibri;
                 var controls = colibri.ui.controls;
                 var ide = colibri.ui.ide;
                 class InspectorView extends ide.ViewPart {
+                    static VIEW_ID = "InspectorView";
+                    _propertyPage;
+                    _currentPart;
+                    _selectionListener;
                     constructor() {
                         super(InspectorView.VIEW_ID);
                         this.setTitle("Inspector");
@@ -95,7 +99,6 @@ var colibri;
                         return this._propertyPage;
                     }
                 }
-                InspectorView.VIEW_ID = "InspectorView";
                 views.InspectorView = InspectorView;
             })(views = ui.views || (ui.views = {}));
         })(ui = inspector.ui || (inspector.ui = {}));

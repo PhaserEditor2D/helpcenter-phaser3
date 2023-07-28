@@ -2,6 +2,8 @@
 
 - The class icon is yellow and doesn't look well in the light theme.
 - Hey! Maybe it should use jsdelivr! https://cdn.jsdelivr.net/gh/PhaserEditor2D/helpcenter-phaser3@latest/docs/icons/icon-72.png
+- Maybe we should embedd product info in the index.html file,
+for better caching in a PWA distribution.
 x- Use colibri-packer for all json data.
 x- Pack all icons into atlas.
 x- Get latest colibri.
