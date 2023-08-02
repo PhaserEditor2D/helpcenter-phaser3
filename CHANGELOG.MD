@@ -1,6 +1,8 @@
 # Change Log
 
-## dev
+## v1.3.1 - Jul 28, 2023
+
+* Improves loading size.
 
 ## v1.3.0 - Apr 14, 2023
 
