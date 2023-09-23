@@ -1,5 +1,8 @@
 --- dev ---
 
+- Check the spine examples. It should support only the official v4 examples.
+- Include official spine examples provided by Esoteric Softwares.
+
 - The class icon is yellow and doesn't look well in the light theme.
 - Hey! Maybe it should use jsdelivr! https://cdn.jsdelivr.net/gh/PhaserEditor2D/helpcenter-phaser3@latest/docs/icons/icon-72.png
 - Maybe we should embedd product info in the index.html file,
