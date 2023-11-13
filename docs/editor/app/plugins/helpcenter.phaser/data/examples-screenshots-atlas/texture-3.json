@@ -1,8 +1,32 @@
 {
   "frames": {
-    "/geom/line/offset.jpg": {
+    "/geom/line/normal xy.jpg": {
       "frame": {
         "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/geom/line/offset.jpg": {
+      "frame": {
+        "x": 128,
         "y": 0,
         "w": 128,
         "h": 96
@@ -26,7 +50,7 @@
     },
     "/geom/line/perp slope.jpg": {
       "frame": {
-        "x": 128,
+        "x": 256,
         "y": 0,
         "w": 128,
         "h": 96
@@ -50,7 +74,7 @@
     },
     "/geom/line/point on line.jpg": {
       "frame": {
-        "x": 256,
+        "x": 384,
         "y": 0,
         "w": 128,
         "h": 96
@@ -74,7 +98,7 @@
     },
     "/geom/line/properties.jpg": {
       "frame": {
-        "x": 384,
+        "x": 512,
         "y": 0,
         "w": 128,
         "h": 96
@@ -98,7 +122,7 @@
     },
     "/geom/line/reflect angle.jpg": {
       "frame": {
-        "x": 512,
+        "x": 640,
         "y": 0,
         "w": 128,
         "h": 96
@@ -122,7 +146,7 @@
     },
     "/geom/line/rotate around point.jpg": {
       "frame": {
-        "x": 640,
+        "x": 768,
         "y": 0,
         "w": 128,
         "h": 96
@@ -146,7 +170,7 @@
     },
     "/geom/line/rotate around xy.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 0,
         "w": 128,
         "h": 96
@@ -170,7 +194,7 @@
     },
     "/geom/line/rotate.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 0,
         "w": 128,
         "h": 96
@@ -194,7 +218,7 @@
     },
     "/geom/line/set to angle.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 0,
         "w": 128,
         "h": 96
@@ -218,7 +242,7 @@
     },
     "/geom/line/set to.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 0,
         "w": 128,
         "h": 96
@@ -242,7 +266,7 @@
     },
     "/geom/line/slope.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 0,
         "w": 128,
         "h": 96
@@ -266,7 +290,7 @@
     },
     "/geom/line/width.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 0,
         "w": 128,
         "h": 96
@@ -290,7 +314,7 @@
     },
     "/geom/point/ceil.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 0,
         "w": 128,
         "h": 96
@@ -314,7 +338,7 @@
     },
     "/geom/point/clone.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 0,
         "w": 128,
         "h": 96
@@ -338,7 +362,7 @@
     },
     "/geom/point/copy from.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 0,
         "w": 128,
         "h": 96
@@ -362,8 +386,8 @@
     },
     "/geom/point/create.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 0,
+        "x": 0,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -387,7 +411,7 @@
     "/geom/point/cross.jpg": {
       "frame": {
         "x": 0,
-        "y": 96,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -411,7 +435,7 @@
     "/geom/point/equals.jpg": {
       "frame": {
         "x": 0,
-        "y": 192,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -435,7 +459,7 @@
     "/geom/point/floor.jpg": {
       "frame": {
         "x": 0,
-        "y": 288,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -459,7 +483,7 @@
     "/geom/point/get centroid.jpg": {
       "frame": {
         "x": 0,
-        "y": 384,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -483,7 +507,7 @@
     "/geom/point/get magnitude sq.jpg": {
       "frame": {
         "x": 0,
-        "y": 480,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -507,7 +531,7 @@
     "/geom/point/get magnitude.jpg": {
       "frame": {
         "x": 0,
-        "y": 576,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -531,7 +555,7 @@
     "/geom/point/get rectangle from points.jpg": {
       "frame": {
         "x": 0,
-        "y": 672,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -555,7 +579,7 @@
     "/geom/point/interpolate.jpg": {
       "frame": {
         "x": 0,
-        "y": 768,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -579,7 +603,7 @@
     "/geom/point/invert.jpg": {
       "frame": {
         "x": 0,
-        "y": 864,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -603,7 +627,7 @@
     "/geom/point/negative 2.jpg": {
       "frame": {
         "x": 0,
-        "y": 960,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -627,7 +651,7 @@
     "/geom/point/negative.jpg": {
       "frame": {
         "x": 0,
-        "y": 1056,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -651,7 +675,7 @@
     "/geom/point/project unit.jpg": {
       "frame": {
         "x": 0,
-        "y": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -675,7 +699,7 @@
     "/geom/point/project.jpg": {
       "frame": {
         "x": 0,
-        "y": 1248,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -699,7 +723,7 @@
     "/geom/point/set to.jpg": {
       "frame": {
         "x": 0,
-        "y": 1344,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -723,7 +747,7 @@
     "/geom/polygon/area.jpg": {
       "frame": {
         "x": 0,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -747,7 +771,7 @@
     "/geom/polygon/basic polygon.jpg": {
       "frame": {
         "x": 0,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -771,7 +795,7 @@
     "/geom/polygon/clone.jpg": {
       "frame": {
         "x": 0,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -795,7 +819,7 @@
     "/geom/polygon/complex polygon.jpg": {
       "frame": {
         "x": 0,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -819,7 +843,7 @@
     "/geom/polygon/contains point.jpg": {
       "frame": {
         "x": 0,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -842,8 +866,8 @@
     },
     "/geom/polygon/contains.jpg": {
       "frame": {
-        "x": 0,
-        "y": 1920,
+        "x": 128,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -866,7 +890,7 @@
     },
     "/geom/polygon/get aabb.jpg": {
       "frame": {
-        "x": 128,
+        "x": 256,
         "y": 96,
         "w": 128,
         "h": 96
@@ -890,7 +914,7 @@
     },
     "/geom/polygon/get number array.jpg": {
       "frame": {
-        "x": 256,
+        "x": 384,
         "y": 96,
         "w": 128,
         "h": 96
@@ -914,7 +938,7 @@
     },
     "/geom/polygon/get points.jpg": {
       "frame": {
-        "x": 384,
+        "x": 512,
         "y": 96,
         "w": 128,
         "h": 96
@@ -938,7 +962,7 @@
     },
     "/geom/polygon/polygon edge rays.jpg": {
       "frame": {
-        "x": 512,
+        "x": 640,
         "y": 96,
         "w": 128,
         "h": 96
@@ -962,7 +986,7 @@
     },
     "/geom/polygon/set to.jpg": {
       "frame": {
-        "x": 640,
+        "x": 768,
         "y": 96,
         "w": 128,
         "h": 96
@@ -986,7 +1010,7 @@
     },
     "/geom/rectangle/area.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1010,7 +1034,7 @@
     },
     "/geom/rectangle/ceil all.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1034,7 +1058,7 @@
     },
     "/geom/rectangle/ceil.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1058,7 +1082,7 @@
     },
     "/geom/rectangle/center on.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1082,7 +1106,7 @@
     },
     "/geom/rectangle/clone.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1106,7 +1130,7 @@
     },
     "/geom/rectangle/contains point.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1130,7 +1154,7 @@
     },
     "/geom/rectangle/contains rect.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1154,7 +1178,7 @@
     },
     "/geom/rectangle/contains.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1178,7 +1202,7 @@
     },
     "/geom/rectangle/copy from.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1202,8 +1226,8 @@
     },
     "/geom/rectangle/create.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 96,
+        "x": 128,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -1226,7 +1250,7 @@
     },
     "/geom/rectangle/decompose.jpg": {
       "frame": {
-        "x": 128,
+        "x": 256,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1250,7 +1274,7 @@
     },
     "/geom/rectangle/deflate.jpg": {
       "frame": {
-        "x": 256,
+        "x": 384,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1274,7 +1298,7 @@
     },
     "/geom/rectangle/equals.jpg": {
       "frame": {
-        "x": 384,
+        "x": 512,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1298,7 +1322,7 @@
     },
     "/geom/rectangle/fit inside.jpg": {
       "frame": {
-        "x": 512,
+        "x": 640,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1322,7 +1346,7 @@
     },
     "/geom/rectangle/fit outside.jpg": {
       "frame": {
-        "x": 640,
+        "x": 768,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1346,7 +1370,7 @@
     },
     "/geom/rectangle/floor all.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1370,7 +1394,7 @@
     },
     "/geom/rectangle/floor.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1394,7 +1418,7 @@
     },
     "/geom/rectangle/from points.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1418,7 +1442,7 @@
     },
     "/geom/rectangle/get aspect ratio.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1442,7 +1466,7 @@
     },
     "/geom/rectangle/get center.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1466,7 +1490,7 @@
     },
     "/geom/rectangle/get line.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1490,7 +1514,7 @@
     },
     "/geom/rectangle/get point.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1514,7 +1538,7 @@
     },
     "/geom/rectangle/get points.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1538,7 +1562,7 @@
     },
     "/geom/rectangle/get random point outside.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1562,8 +1586,8 @@
     },
     "/geom/rectangle/get random point.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 192,
+        "x": 128,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1587,7 +1611,7 @@
     "/geom/rectangle/get size.jpg": {
       "frame": {
         "x": 128,
-        "y": 288,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -1611,7 +1635,7 @@
     "/geom/rectangle/inflate.jpg": {
       "frame": {
         "x": 128,
-        "y": 384,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -1635,7 +1659,7 @@
     "/geom/rectangle/intersection.jpg": {
       "frame": {
         "x": 128,
-        "y": 480,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -1659,7 +1683,7 @@
     "/geom/rectangle/is empty.jpg": {
       "frame": {
         "x": 128,
-        "y": 576,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -1683,7 +1707,7 @@
     "/geom/rectangle/marching ants.jpg": {
       "frame": {
         "x": 128,
-        "y": 672,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -1707,7 +1731,7 @@
     "/geom/rectangle/merge points.jpg": {
       "frame": {
         "x": 128,
-        "y": 768,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -1731,7 +1755,7 @@
     "/geom/rectangle/merge rect.jpg": {
       "frame": {
         "x": 128,
-        "y": 864,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -1755,7 +1779,7 @@
     "/geom/rectangle/merge xy.jpg": {
       "frame": {
         "x": 128,
-        "y": 960,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -1779,7 +1803,7 @@
     "/geom/rectangle/offset point.jpg": {
       "frame": {
         "x": 128,
-        "y": 1056,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -1803,7 +1827,7 @@
     "/geom/rectangle/offset.jpg": {
       "frame": {
         "x": 128,
-        "y": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -1827,7 +1851,7 @@
     "/geom/rectangle/overlaps.jpg": {
       "frame": {
         "x": 128,
-        "y": 1248,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -1851,7 +1875,7 @@
     "/geom/rectangle/perimeter point.jpg": {
       "frame": {
         "x": 128,
-        "y": 1344,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -1875,7 +1899,7 @@
     "/geom/rectangle/perimeter.jpg": {
       "frame": {
         "x": 128,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -1899,7 +1923,7 @@
     "/geom/rectangle/properties.jpg": {
       "frame": {
         "x": 128,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -1923,7 +1947,7 @@
     "/geom/rectangle/scale.jpg": {
       "frame": {
         "x": 128,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -1947,7 +1971,7 @@
     "/geom/rectangle/set empty.jpg": {
       "frame": {
         "x": 128,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -1971,7 +1995,7 @@
     "/geom/rectangle/set position.jpg": {
       "frame": {
         "x": 128,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -1994,8 +2018,8 @@
     },
     "/geom/rectangle/set size.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1920,
+        "x": 256,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -2018,7 +2042,7 @@
     },
     "/geom/rectangle/set to.jpg": {
       "frame": {
-        "x": 256,
+        "x": 384,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2042,7 +2066,7 @@
     },
     "/geom/rectangle/sprite to perimeter.jpg": {
       "frame": {
-        "x": 384,
+        "x": 512,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2066,7 +2090,7 @@
     },
     "/geom/rectangle/union.jpg": {
       "frame": {
-        "x": 512,
+        "x": 640,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2090,7 +2114,7 @@
     },
     "/geom/triangle/area.jpg": {
       "frame": {
-        "x": 640,
+        "x": 768,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2114,7 +2138,7 @@
     },
     "/geom/triangle/bottom.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2138,7 +2162,7 @@
     },
     "/geom/triangle/build equilateral.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2162,7 +2186,7 @@
     },
     "/geom/triangle/build from polygon.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2186,7 +2210,7 @@
     },
     "/geom/triangle/build right.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2210,7 +2234,7 @@
     },
     "/geom/triangle/center on.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2234,7 +2258,7 @@
     },
     "/geom/triangle/centroid.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2258,7 +2282,7 @@
     },
     "/geom/triangle/circumcenter.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2282,7 +2306,7 @@
     },
     "/geom/triangle/circumcircle.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2306,7 +2330,7 @@
     },
     "/geom/triangle/clone.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2330,8 +2354,8 @@
     },
     "/geom/triangle/contains array.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 288,
+        "x": 256,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2355,7 +2379,7 @@
     "/geom/triangle/contains point.jpg": {
       "frame": {
         "x": 256,
-        "y": 384,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -2379,7 +2403,7 @@
     "/geom/triangle/contains.jpg": {
       "frame": {
         "x": 256,
-        "y": 480,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -2403,7 +2427,7 @@
     "/geom/triangle/copy from.jpg": {
       "frame": {
         "x": 256,
-        "y": 576,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -2427,7 +2451,7 @@
     "/geom/triangle/create triangle.jpg": {
       "frame": {
         "x": 256,
-        "y": 672,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -2451,7 +2475,7 @@
     "/geom/triangle/decompose.jpg": {
       "frame": {
         "x": 256,
-        "y": 768,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -2475,7 +2499,7 @@
     "/geom/triangle/equals.jpg": {
       "frame": {
         "x": 256,
-        "y": 864,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -2499,7 +2523,7 @@
     "/geom/triangle/get line.jpg": {
       "frame": {
         "x": 256,
-        "y": 960,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -2523,7 +2547,7 @@
     "/geom/triangle/get point.jpg": {
       "frame": {
         "x": 256,
-        "y": 1056,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -2547,7 +2571,7 @@
     "/geom/triangle/get points.jpg": {
       "frame": {
         "x": 256,
-        "y": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -2571,7 +2595,7 @@
     "/geom/triangle/get random point.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -2595,7 +2619,7 @@
     "/geom/triangle/in center.jpg": {
       "frame": {
         "x": 256,
-        "y": 1344,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -2619,7 +2643,7 @@
     "/geom/triangle/left.jpg": {
       "frame": {
         "x": 256,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -2643,7 +2667,7 @@
     "/geom/triangle/offset.jpg": {
       "frame": {
         "x": 256,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -2667,7 +2691,7 @@
     "/geom/triangle/perimeter.jpg": {
       "frame": {
         "x": 256,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -2691,7 +2715,7 @@
     "/geom/triangle/random.jpg": {
       "frame": {
         "x": 256,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -2715,7 +2739,7 @@
     "/geom/triangle/rotate around point.jpg": {
       "frame": {
         "x": 256,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -2738,8 +2762,8 @@
     },
     "/geom/triangle/rotate around xy.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1920,
+        "x": 384,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2762,7 +2786,7 @@
     },
     "/geom/triangle/rotate from center.jpg": {
       "frame": {
-        "x": 384,
+        "x": 512,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2786,7 +2810,7 @@
     },
     "/geom/triangle/set to.jpg": {
       "frame": {
-        "x": 512,
+        "x": 640,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2810,7 +2834,7 @@
     },
     "/geom/triangle/top.jpg": {
       "frame": {
-        "x": 640,
+        "x": 768,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2834,7 +2858,7 @@
     },
     "/input/camera/camera container ignore.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2858,7 +2882,7 @@
     },
     "/input/camera/graphics contains.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2882,7 +2906,7 @@
     },
     "/input/camera/large world high res.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2906,7 +2930,7 @@
     },
     "/input/camera/multi cam sprite.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2930,7 +2954,7 @@
     },
     "/input/camera/stacked camera test.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2954,7 +2978,7 @@
     },
     "/input/camera/world coordinates.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2978,7 +3002,7 @@
     },
     "/input/cursors/custom cursor.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 384,
         "w": 128,
         "h": 96
@@ -3002,7 +3026,7 @@
     },
     "/input/cursors/cute cursor.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 384,
         "w": 128,
         "h": 96
@@ -3026,7 +3050,7 @@
     },
     "/input/cursors/sc2 cursors.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 384,
         "w": 128,
         "h": 96
@@ -3050,8 +3074,8 @@
     },
     "/input/dom events/on canvas out.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 384,
+        "x": 384,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3075,7 +3099,7 @@
     "/input/dom events/pointer button status.jpg": {
       "frame": {
         "x": 384,
-        "y": 480,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3099,7 +3123,7 @@
     "/input/dragging/bring dragged item to top.jpg": {
       "frame": {
         "x": 384,
-        "y": 576,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -3123,7 +3147,7 @@
     "/input/dragging/camera move and rotate.jpg": {
       "frame": {
         "x": 384,
-        "y": 672,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -3147,7 +3171,7 @@
     "/input/dragging/drag container.jpg": {
       "frame": {
         "x": 384,
-        "y": 768,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -3171,7 +3195,7 @@
     "/input/dragging/drag distance threshold.jpg": {
       "frame": {
         "x": 384,
-        "y": 864,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -3195,7 +3219,7 @@
     "/input/dragging/drag horizontally.jpg": {
       "frame": {
         "x": 384,
-        "y": 960,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -3219,7 +3243,7 @@
     "/input/dragging/drag on a fixed axis.jpg": {
       "frame": {
         "x": 384,
-        "y": 1056,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -3243,7 +3267,7 @@
     "/input/dragging/drag time threshold.jpg": {
       "frame": {
         "x": 384,
-        "y": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -3267,7 +3291,7 @@
     "/input/dragging/drag vertically.jpg": {
       "frame": {
         "x": 384,
-        "y": 1248,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -3291,7 +3315,7 @@
     "/input/dragging/drag with multiple scenes.jpg": {
       "frame": {
         "x": 384,
-        "y": 1344,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -3315,7 +3339,7 @@
     "/input/dragging/enable for drag test 2.jpg": {
       "frame": {
         "x": 384,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -3339,7 +3363,7 @@
     "/input/dragging/enable for drag.jpg": {
       "frame": {
         "x": 384,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -3363,7 +3387,7 @@
     "/input/dragging/multi camera stack of cards.jpg": {
       "frame": {
         "x": 384,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -3387,7 +3411,7 @@
     "/input/dragging/multiple draggables.jpg": {
       "frame": {
         "x": 384,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -3411,7 +3435,7 @@
     "/input/dragging/multiple rotated and scaled.jpg": {
       "frame": {
         "x": 384,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -3434,8 +3458,8 @@
     },
     "/input/dragging/multiple scene drag.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1920,
+        "x": 512,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3458,7 +3482,7 @@
     },
     "/input/dragging/retain index after drag.jpg": {
       "frame": {
-        "x": 512,
+        "x": 640,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3482,7 +3506,7 @@
     },
     "/input/dragging/rotated and scaled.jpg": {
       "frame": {
-        "x": 640,
+        "x": 768,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3506,7 +3530,7 @@
     },
     "/input/dragging/scale during drag.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3530,7 +3554,7 @@
     },
     "/input/dragging/scroll factor drag.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3554,7 +3578,7 @@
     },
     "/input/dragging/scrolling text box.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3578,7 +3602,7 @@
     },
     "/input/dragging/snap to grid on drag.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3602,7 +3626,7 @@
     },
     "/input/dragging/stack of cards.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3626,7 +3650,7 @@
     },
     "/input/game object/change sprite hitarea size.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3650,7 +3674,7 @@
     },
     "/input/game object/custom shape hit area.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3674,7 +3698,7 @@
     },
     "/input/game object/debug hitarea.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3698,7 +3722,7 @@
     },
     "/input/game object/destroy sprite on down event.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3722,8 +3746,8 @@
     },
     "/input/game object/multiple down.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 480,
+        "x": 512,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3746,7 +3770,7 @@
     },
     "/input/game object/multiple over out.jpg": {
       "frame": {
-        "x": 512,
+        "x": 640,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3770,7 +3794,7 @@
     },
     "/input/game object/multiple up.jpg": {
       "frame": {
-        "x": 640,
+        "x": 768,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3794,7 +3818,7 @@
     },
     "/input/game object/on down event.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3818,7 +3842,31 @@
     },
     "/input/game object/on move event.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/input/game object/select and deselect.jpg": {
+      "frame": {
+        "x": 1152,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3842,7 +3890,7 @@
     },
     "/input/game object/sprite example.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3866,7 +3914,7 @@
     },
     "/input/game object/tilesprite on down.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3890,7 +3938,7 @@
     },
     "/input/game object/top only over out events.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3914,7 +3962,7 @@
     },
     "/input/game object/top only up down events.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3938,7 +3986,7 @@
     },
     "/input/game object/world game objects.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3962,7 +4010,7 @@
     },
     "/input/gamepad/axes.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3986,8 +4034,8 @@
     },
     "/input/gamepad/gamepad across scenes.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 576,
+        "x": 512,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4010,8 +4058,8 @@
     },
     "/input/gamepad/gamepad debug.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 576,
+        "x": 512,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4035,7 +4083,7 @@
     "/input/gamepad/move sprite.jpg": {
       "frame": {
         "x": 512,
-        "y": 672,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -4059,7 +4107,7 @@
     "/input/gamepad/select gamepad.jpg": {
       "frame": {
         "x": 512,
-        "y": 768,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -4083,7 +4131,7 @@
     "/input/keyboard/add key using string.jpg": {
       "frame": {
         "x": 512,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -4107,7 +4155,7 @@
     "/input/keyboard/add key.jpg": {
       "frame": {
         "x": 512,
-        "y": 960,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -4131,7 +4179,7 @@
     "/input/keyboard/add single key.jpg": {
       "frame": {
         "x": 512,
-        "y": 1056,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -4155,7 +4203,7 @@
     "/input/keyboard/cross scene keys.jpg": {
       "frame": {
         "x": 512,
-        "y": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4179,7 +4227,7 @@
     "/input/keyboard/cursor keys.jpg": {
       "frame": {
         "x": 512,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4203,7 +4251,7 @@
     "/input/keyboard/cursors time.jpg": {
       "frame": {
         "x": 512,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4227,7 +4275,7 @@
     "/input/keyboard/enter name.jpg": {
       "frame": {
         "x": 512,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4251,7 +4299,7 @@
     "/input/keyboard/just down.jpg": {
       "frame": {
         "x": 512,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4275,7 +4323,7 @@
     "/input/keyboard/key down delay.jpg": {
       "frame": {
         "x": 512,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4299,7 +4347,7 @@
     "/input/keyboard/key down duration.jpg": {
       "frame": {
         "x": 512,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -4322,8 +4370,8 @@
     },
     "/input/keyboard/keydown multi scene test.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1824,
+        "x": 640,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4346,8 +4394,8 @@
     },
     "/input/keyboard/numpad.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1920,
+        "x": 768,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4370,7 +4418,7 @@
     },
     "/input/keyboard/retro leaderboard.jpg": {
       "frame": {
-        "x": 640,
+        "x": 896,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4394,7 +4442,7 @@
     },
     "/input/keyboard/single keydown event.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1024,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4418,7 +4466,7 @@
     },
     "/input/keyboard/text entry.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1152,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4442,7 +4490,7 @@
     },
     "/input/mouse/check button released.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4466,7 +4514,7 @@
     },
     "/input/mouse/circle hit area.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4490,7 +4538,7 @@
     },
     "/input/mouse/ellipse hit area.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4514,7 +4562,7 @@
     },
     "/input/mouse/mass scrolling sprite test no cull.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4538,7 +4586,7 @@
     },
     "/input/mouse/mass scrolling sprite test.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4562,7 +4610,7 @@
     },
     "/input/mouse/mass sprite test.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4586,8 +4634,8 @@
     },
     "/input/mouse/mouse down.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 672,
+        "x": 640,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4610,8 +4658,8 @@
     },
     "/input/mouse/mouse wheel over gameobject.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 672,
+        "x": 640,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -4635,7 +4683,7 @@
     "/input/mouse/mouse wheel.jpg": {
       "frame": {
         "x": 640,
-        "y": 768,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -4659,7 +4707,7 @@
     "/input/mouse/move event.jpg": {
       "frame": {
         "x": 640,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -4683,7 +4731,7 @@
     "/input/mouse/origin tests.jpg": {
       "frame": {
         "x": 640,
-        "y": 960,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -4707,7 +4755,7 @@
     "/input/mouse/over and out events.jpg": {
       "frame": {
         "x": 640,
-        "y": 1056,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -4731,7 +4779,7 @@
     "/input/mouse/pointer lock.jpg": {
       "frame": {
         "x": 640,
-        "y": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4755,7 +4803,7 @@
     "/input/mouse/poll always.jpg": {
       "frame": {
         "x": 640,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4779,7 +4827,7 @@
     "/input/mouse/polygon hit area.jpg": {
       "frame": {
         "x": 640,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4803,7 +4851,7 @@
     "/input/mouse/right mouse button.jpg": {
       "frame": {
         "x": 640,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4827,7 +4875,7 @@
     "/input/mouse/shape hit tests.jpg": {
       "frame": {
         "x": 640,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4851,7 +4899,7 @@
     "/input/mouse/single sprite.jpg": {
       "frame": {
         "x": 640,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4875,7 +4923,7 @@
     "/input/mouse/text input test.jpg": {
       "frame": {
         "x": 640,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -4898,8 +4946,8 @@
     },
     "/input/mouse/top only.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1824,
+        "x": 768,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4922,8 +4970,8 @@
     },
     "/input/mouse/triangle hit area.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1920,
+        "x": 896,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4946,7 +4994,7 @@
     },
     "/input/multitouch/multi down test.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1024,
         "y": 768,
         "w": 128,
         "h": 96
@@ -4970,7 +5018,7 @@
     },
     "/input/multitouch/multi drag.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1152,
         "y": 768,
         "w": 128,
         "h": 96
@@ -4994,7 +5042,7 @@
     },
     "/input/multitouch/multi over test.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5018,7 +5066,7 @@
     },
     "/input/multitouch/multi touch test.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5042,7 +5090,7 @@
     },
     "/input/multitouch/two touch inputs.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5066,7 +5114,7 @@
     },
     "/input/pixel perfect/atlas frame.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5090,7 +5138,7 @@
     },
     "/input/pixel perfect/image with lots of alpha.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5114,7 +5162,7 @@
     },
     "/input/pixel perfect/on down.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5138,8 +5186,8 @@
     },
     "/input/pixel perfect/on drag.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 768,
+        "x": 768,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5162,8 +5210,8 @@
     },
     "/input/pixel perfect/transformed.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 768,
+        "x": 768,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5187,7 +5235,7 @@
     "/input/pointer/cards.jpg": {
       "frame": {
         "x": 768,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5211,7 +5259,7 @@
     "/input/pointer/down event.jpg": {
       "frame": {
         "x": 768,
-        "y": 960,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -5235,7 +5283,7 @@
     "/input/pointer/event list.jpg": {
       "frame": {
         "x": 768,
-        "y": 1056,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -5259,7 +5307,7 @@
     "/input/pointer/external link.jpg": {
       "frame": {
         "x": 768,
-        "y": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -5283,7 +5331,7 @@
     "/input/pointer/multi camera cards.jpg": {
       "frame": {
         "x": 768,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -5307,7 +5355,7 @@
     "/input/pointer/multiple scene down event.jpg": {
       "frame": {
         "x": 768,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -5331,7 +5379,7 @@
     "/input/pointer/pointer buttons debug.jpg": {
       "frame": {
         "x": 768,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -5355,7 +5403,7 @@
     "/input/pointer/pointer debug.jpg": {
       "frame": {
         "x": 768,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -5379,7 +5427,7 @@
     "/input/zones/basic input zone.jpg": {
       "frame": {
         "x": 768,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -5403,7 +5451,7 @@
     "/input/zones/circular drop zone.jpg": {
       "frame": {
         "x": 768,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -5426,8 +5474,8 @@
     },
     "/input/zones/drop zone.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1824,
+        "x": 896,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5450,8 +5498,8 @@
     },
     "/input/zones/resize zone.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1920,
+        "x": 1024,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5474,7 +5522,7 @@
     },
     "/input/zones/sprite drop zone.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1152,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5498,7 +5546,7 @@
     },
     "/loader/animation json/load animation json.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5522,7 +5570,7 @@
     },
     "/loader/audio/load audio stream.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5546,7 +5594,7 @@
     },
     "/loader/base64/bitmap text.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5570,7 +5618,7 @@
     },
     "/loader/binary/load binary data from object.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5594,7 +5642,7 @@
     },
     "/loader/binary/load binary data parse after load.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5618,7 +5666,7 @@
     },
     "/loader/binary/load binary data.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5642,8 +5690,8 @@
     },
     "/loader/bitmap text/load bitmap text from pack.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 864,
+        "x": 896,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5666,8 +5714,8 @@
     },
     "/loader/file pack/load file pack from json.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 864,
+        "x": 1024,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5690,7 +5738,7 @@
     },
     "/loader/file pack/load file pack test 2.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1152,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5714,7 +5762,7 @@
     },
     "/loader/file pack/load file pack test 3.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5738,7 +5786,7 @@
     },
     "/loader/file pack/load file pack test 4.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5762,7 +5810,7 @@
     },
     "/loader/file pack/load file pack test 5.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5786,7 +5834,7 @@
     },
     "/loader/game load config.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5810,7 +5858,7 @@
     },
     "/loader/html/load html to texture.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5834,7 +5882,7 @@
     },
     "/loader/image/load image from object.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5858,8 +5906,8 @@
     },
     "/loader/image/load image on click.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 960,
+        "x": 896,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5882,8 +5930,8 @@
     },
     "/loader/image/load normal map from object.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 960,
+        "x": 896,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -5907,7 +5955,7 @@
     "/loader/image/load normal map with light.jpg": {
       "frame": {
         "x": 896,
-        "y": 1056,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -5931,7 +5979,7 @@
     "/loader/load config tests.jpg": {
       "frame": {
         "x": 896,
-        "y": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -5955,7 +6003,7 @@
     "/loader/load from 404.jpg": {
       "frame": {
         "x": 896,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -5979,7 +6027,7 @@
     "/loader/loader events/add files during load.jpg": {
       "frame": {
         "x": 896,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -6003,7 +6051,7 @@
     "/loader/loader events/destroy game during load.jpg": {
       "frame": {
         "x": 896,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -6027,7 +6075,7 @@
     "/loader/loader events/display file as loaded.jpg": {
       "frame": {
         "x": 896,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -6051,7 +6099,7 @@
     "/loader/loader events/file complete event with key.jpg": {
       "frame": {
         "x": 896,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -6075,7 +6123,7 @@
     "/loader/loader events/file complete event.jpg": {
       "frame": {
         "x": 896,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -6098,8 +6146,8 @@
     },
     "/loader/loader events/file progress event.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1824,
+        "x": 1024,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -6122,8 +6170,8 @@
     },
     "/loader/loader events/load 200 image files.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1920,
+        "x": 1152,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -6146,7 +6194,7 @@
     },
     "/loader/loader events/load from external url.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6170,7 +6218,7 @@
     },
     "/loader/loader events/load progress.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6194,7 +6242,7 @@
     },
     "/loader/loader events/multi file progress event.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6218,7 +6266,7 @@
     },
     "/loader/loader events/play animation during load.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6242,7 +6290,7 @@
     },
     "/loader/loader events/start loader manually.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6266,7 +6314,7 @@
     },
     "/loader/loader events/test loading files already loaded.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6290,8 +6338,8 @@
     },
     "/loader/plugin/load plugin.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1056,
+        "x": 1024,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6314,8 +6362,8 @@
     },
     "/loader/scene payload/scene files payload.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1056,
+        "x": 1024,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -6339,7 +6387,7 @@
     "/loader/scene/load scene.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -6363,7 +6411,7 @@
     "/loader/script/load script.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -6387,7 +6435,7 @@
     "/loader/sprite sheet/load sprite sheet from object array.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -6411,7 +6459,7 @@
     "/loader/sprite sheet/load sprite sheet from object.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -6435,7 +6483,7 @@
     "/loader/sprite sheet/load sprite sheet.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -6459,7 +6507,7 @@
     "/loader/svg/load svg with fixed size.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -6483,7 +6531,7 @@
     "/loader/svg/load svg with scale.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -6506,8 +6554,8 @@
     },
     "/loader/svg/load svg.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 1824,
+        "x": 1152,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6530,8 +6578,8 @@
     },
     "/loader/texture atlas json/get atlas custom frame data.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 1920,
+        "x": 1280,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6554,7 +6602,7 @@
     },
     "/loader/texture atlas json/get atlas meta data.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6578,7 +6626,7 @@
     },
     "/loader/texture atlas json/load atlas with local json.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6602,7 +6650,7 @@
     },
     "/loader/texture atlas json/load remove and reload atlas.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6626,7 +6674,7 @@
     },
     "/loader/texture atlas json/load texture atlas from object.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6650,7 +6698,7 @@
     },
     "/loader/texture atlas json/load texture atlas from pack.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6674,8 +6722,8 @@
     },
     "/loader/texture atlas json/load texture atlas from payload.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1152,
+        "x": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -6698,8 +6746,8 @@
     },
     "/loader/texture atlas json/load texture atlas with normal map from object.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1152,
+        "x": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -6723,7 +6771,7 @@
     "/loader/texture atlas json/load texture atlas with normal map.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -6747,7 +6795,7 @@
     "/loader/texture atlas json/load texture atlas.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -6771,7 +6819,7 @@
     "/loader/texture atlas json/mixed json test.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -6795,7 +6843,7 @@
     "/loader/texture atlas multi/load multi texture atlas with normal maps.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -6819,7 +6867,7 @@
     "/loader/texture atlas multi/load multi texture atlas.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -6843,7 +6891,7 @@
     "/loader/texture atlas unity/load unity spritesheet animation.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -6866,8 +6914,8 @@
     },
     "/loader/texture atlas unity/load unity spritesheet.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 1824,
+        "x": 1280,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -6890,8 +6938,8 @@
     },
     "/loader/texture atlas xml/load xml texture atlas.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 1920,
+        "x": 1408,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -6914,7 +6962,7 @@
     },
     "/loader/tile maps/load tile map json from object.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 1248,
         "w": 128,
         "h": 96
@@ -6938,7 +6986,7 @@
     },
     "/loader/tile maps/load tile map json from scene payload.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 1248,
         "w": 128,
         "h": 96
@@ -6962,7 +7010,7 @@
     },
     "/loader/tile maps/load tile map json with normal map.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 1248,
         "w": 128,
         "h": 96
@@ -6986,7 +7034,7 @@
     },
     "/loading.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1248,
         "w": 128,
         "h": 96
@@ -7010,8 +7058,8 @@
     },
     "/math/distance/distance between points.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1248,
+        "x": 1280,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -7034,8 +7082,8 @@
     },
     "/math/distance/get chebyshev distance.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1248,
+        "x": 1408,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -7058,7 +7106,7 @@
     },
     "/math/distance/snake distance.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 1344,
         "w": 128,
         "h": 96
@@ -7082,7 +7130,7 @@
     },
     "/math/vec2/add.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 1344,
         "w": 128,
         "h": 96
@@ -7106,7 +7154,7 @@
     },
     "/math/vec2/divide.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 1344,
         "w": 128,
         "h": 96
@@ -7130,7 +7178,7 @@
     },
     "/math/vec2/dot.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1344,
         "w": 128,
         "h": 96
@@ -7154,8 +7202,8 @@
     },
     "/math/vec2/multiply.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1344,
+        "x": 1280,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -7178,8 +7226,8 @@
     },
     "/math/vec2/normalize.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1344,
+        "x": 1280,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7203,7 +7251,7 @@
     "/math/vec2/perp.jpg": {
       "frame": {
         "x": 1280,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7227,7 +7275,7 @@
     "/math/vec2/rperp.jpg": {
       "frame": {
         "x": 1280,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7251,7 +7299,7 @@
     "/math/vec2/set magnitude.jpg": {
       "frame": {
         "x": 1280,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7275,7 +7323,7 @@
     "/math/vec2/subtract.jpg": {
       "frame": {
         "x": 1280,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7298,8 +7346,8 @@
     },
     "/paths/all types.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1824,
+        "x": 1408,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -7322,8 +7370,8 @@
     },
     "/paths/circle loop path.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1920,
+        "x": 1536,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -7346,7 +7394,7 @@
     },
     "/paths/circle path.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 1440,
         "w": 128,
         "h": 96
@@ -7370,7 +7418,7 @@
     },
     "/paths/complex path bounds.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 1440,
         "w": 128,
         "h": 96
@@ -7394,7 +7442,7 @@
     },
     "/paths/curves/cubic bezier bounds.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1440,
         "w": 128,
         "h": 96
@@ -7418,8 +7466,8 @@
     },
     "/paths/curves/cubic bezier curve debug.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1440,
+        "x": 1408,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7442,8 +7490,8 @@
     },
     "/paths/curves/cubic bezier curve.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1440,
+        "x": 1408,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7467,7 +7515,7 @@
     "/paths/curves/drag cubic bezier curve.jpg": {
       "frame": {
         "x": 1408,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7491,7 +7539,7 @@
     "/paths/curves/drag ellipse curve.jpg": {
       "frame": {
         "x": 1408,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7515,7 +7563,7 @@
     "/paths/curves/drag line curve.jpg": {
       "frame": {
         "x": 1408,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7538,8 +7586,8 @@
     },
     "/paths/curves/drag quadratic bezier curve.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 1824,
+        "x": 1536,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7562,8 +7610,8 @@
     },
     "/paths/curves/drag spline curve.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 1920,
+        "x": 1664,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7586,7 +7634,7 @@
     },
     "/paths/curves/ellipse curve bounds.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 1536,
         "w": 128,
         "h": 96
@@ -7610,7 +7658,7 @@
     },
     "/paths/curves/ellipse curve.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1536,
         "w": 128,
         "h": 96
@@ -7634,8 +7682,8 @@
     },
     "/paths/curves/get distance on line curve.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1536,
+        "x": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7658,8 +7706,8 @@
     },
     "/paths/curves/get point from spline curve.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1536,
+        "x": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7683,7 +7731,7 @@
     "/paths/curves/get points on cubic bezier curve.jpg": {
       "frame": {
         "x": 1536,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7707,7 +7755,7 @@
     "/paths/curves/get points on line curve.jpg": {
       "frame": {
         "x": 1536,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7730,8 +7778,8 @@
     },
     "/paths/curves/get spaced points on cubic bezier curve.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 1824,
+        "x": 1664,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7754,8 +7802,8 @@
     },
     "/paths/curves/get spaced points vs get points.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 1920,
+        "x": 1792,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7778,7 +7826,7 @@
     },
     "/paths/curves/get tangent vectors on cubic bezier curve.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1632,
         "w": 128,
         "h": 96
@@ -7802,8 +7850,8 @@
     },
     "/paths/curves/line curve bounds.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1632,
+        "x": 1664,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7826,8 +7874,8 @@
     },
     "/paths/curves/line curve.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1632,
+        "x": 1792,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7850,7 +7898,7 @@
     },
     "/paths/curves/point types.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1728,
         "w": 128,
         "h": 96
@@ -7874,8 +7922,8 @@
     },
     "/paths/curves/quadratic bezier curve.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1728,
+        "x": 1664,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7898,8 +7946,8 @@
     },
     "/paths/curves/rectangle spline intersection.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1728,
+        "x": 1664,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7922,7 +7970,7 @@
     },
     "/paths/curves/spline between points.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 1824,
         "w": 128,
         "h": 96
@@ -7946,8 +7994,8 @@
     },
     "/paths/curves/spline builder.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 1920,
+        "x": 1920,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7971,54 +8019,6 @@
     "/paths/curves/spline curve bounds.jpg": {
       "frame": {
         "x": 1792,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/paths/curves/spline curve distance points.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/paths/curves/spline curve from array.jpg": {
-      "frame": {
-        "x": 1792,
         "y": 1920,
         "w": 128,
         "h": 96
@@ -8040,7 +8040,7 @@
         "y": 0.5
       }
     },
-    "/paths/curves/spline curve.jpg": {
+    "/paths/curves/spline curve distance points.jpg": {
       "frame": {
         "x": 1920,
         "y": 1920,
@@ -8067,7 +8067,7 @@
     "/geom/triangle/right.jpg": {
       "frame": {
         "x": 256,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -8090,7 +8090,7 @@
     },
     "/input/camera/camera ignore.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 384,
         "w": 128,
         "h": 96
@@ -8114,7 +8114,7 @@
     },
     "/input/game object/use hand cursor.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 384,
         "w": 128,
         "h": 96
@@ -8138,7 +8138,7 @@
     },
     "/input/game object/on up event.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 576,
         "w": 128,
         "h": 96
@@ -8162,7 +8162,7 @@
     },
     "/input/game object/over and out events.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 576,
         "w": 128,
         "h": 96
@@ -8186,7 +8186,7 @@
     },
     "/input/mouse/click sprite.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 576,
         "w": 128,
         "h": 96
@@ -8211,7 +8211,7 @@
     "/input/mouse/top only over and out events.jpg": {
       "frame": {
         "x": 640,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -8235,7 +8235,7 @@
     "/input/mouse/top only up and down events.jpg": {
       "frame": {
         "x": 640,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -8259,7 +8259,7 @@
     "/input/mouse/poll only on move.jpg": {
       "frame": {
         "x": 640,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8282,7 +8282,7 @@
     },
     "/input/pixel perfect/large trimmed atlas frame.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 768,
         "w": 128,
         "h": 96
@@ -8306,8 +8306,8 @@
     },
     "/input/pixel perfect/on move.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 768,
+        "x": 768,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -8330,7 +8330,7 @@
     },
     "/loader/audio/load audio.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 864,
         "w": 128,
         "h": 96
@@ -8354,7 +8354,7 @@
     },
     "/loader/audio/load html5 audio.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 864,
         "w": 128,
         "h": 96
@@ -8378,8 +8378,8 @@
     },
     "/loader/bitmap text/load bitmap text.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 864,
+        "x": 896,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -8402,8 +8402,8 @@
     },
     "/loader/file pack/load file pack.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 864,
+        "x": 1024,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -8426,8 +8426,8 @@
     },
     "/loader/image/load image.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 864,
+        "x": 1024,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -8450,8 +8450,8 @@
     },
     "/physics/arcade/restart physics scene.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 960,
+        "x": 896,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -8474,8 +8474,8 @@
     },
     "/physics/matterjs/restart physics scene.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 960,
+        "x": 896,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -8498,8 +8498,8 @@
     },
     "/loader/image/load normal map.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 960,
+        "x": 896,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -8523,7 +8523,7 @@
     "/scenes/change scene from create.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -8547,7 +8547,7 @@
     "/scenes/multiple scenes from classes.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -8571,7 +8571,7 @@
     "/plugins/scene plugin test 2.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8595,7 +8595,7 @@
     "/loader/sprite sheet/load sprite sheet from scene payload.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -8618,8 +8618,8 @@
     },
     "/math/distance/distance.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1248,
+        "x": 1280,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -8643,7 +8643,7 @@
     "/paths/curves/get spaced points on line curve.jpg": {
       "frame": {
         "x": 1536,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },

@@ -1,8 +1,56 @@
 {
   "frames": {
-    "/paths/followers/basic follower.jpg": {
+    "/paths/curves/spline curve from array.jpg": {
       "frame": {
         "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/paths/curves/spline curve.jpg": {
+      "frame": {
+        "x": 128,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/paths/followers/basic follower.jpg": {
+      "frame": {
+        "x": 256,
         "y": 0,
         "w": 128,
         "h": 96
@@ -26,7 +74,7 @@
     },
     "/paths/followers/change path.jpg": {
       "frame": {
-        "x": 128,
+        "x": 384,
         "y": 0,
         "w": 128,
         "h": 96
@@ -50,7 +98,7 @@
     },
     "/paths/followers/mass followers.jpg": {
       "frame": {
-        "x": 256,
+        "x": 512,
         "y": 0,
         "w": 128,
         "h": 96
@@ -74,7 +122,7 @@
     },
     "/paths/followers/multi curve path.jpg": {
       "frame": {
-        "x": 384,
+        "x": 640,
         "y": 0,
         "w": 128,
         "h": 96
@@ -98,7 +146,7 @@
     },
     "/paths/followers/path from json all types.jpg": {
       "frame": {
-        "x": 512,
+        "x": 768,
         "y": 0,
         "w": 128,
         "h": 96
@@ -122,7 +170,7 @@
     },
     "/paths/followers/path from json.jpg": {
       "frame": {
-        "x": 640,
+        "x": 896,
         "y": 0,
         "w": 128,
         "h": 96
@@ -146,7 +194,7 @@
     },
     "/paths/followers/pause and resume.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1024,
         "y": 0,
         "w": 128,
         "h": 96
@@ -170,7 +218,7 @@
     },
     "/paths/followers/rotate to path.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1152,
         "y": 0,
         "w": 128,
         "h": 96
@@ -194,7 +242,7 @@
     },
     "/paths/followers/rotation offset.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 0,
         "w": 128,
         "h": 96
@@ -218,7 +266,7 @@
     },
     "/paths/followers/sparkle trail.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 0,
         "w": 128,
         "h": 96
@@ -242,7 +290,7 @@
     },
     "/paths/followers/wave path.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 0,
         "w": 128,
         "h": 96
@@ -266,7 +314,7 @@
     },
     "/paths/followers/yoyo follower.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 0,
         "w": 128,
         "h": 96
@@ -290,7 +338,7 @@
     },
     "/paths/landscape path.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 0,
         "w": 128,
         "h": 96
@@ -314,7 +362,7 @@
     },
     "/paths/line to ellipse.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 0,
         "w": 128,
         "h": 96
@@ -338,8 +386,8 @@
     },
     "/paths/move to.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 0,
+        "x": 0,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -362,8 +410,8 @@
     },
     "/paths/path add line curve.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 0,
+        "x": 0,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -387,7 +435,7 @@
     "/paths/path bounds.jpg": {
       "frame": {
         "x": 0,
-        "y": 96,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -411,7 +459,7 @@
     "/paths/path editor/boot.jpg": {
       "frame": {
         "x": 0,
-        "y": 192,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -435,7 +483,7 @@
     "/paths/path line and bezier.jpg": {
       "frame": {
         "x": 0,
-        "y": 288,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -459,7 +507,7 @@
     "/paths/simple path.jpg": {
       "frame": {
         "x": 0,
-        "y": 384,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -483,7 +531,7 @@
     "/paths/velocity from tangent vectors.jpg": {
       "frame": {
         "x": 0,
-        "y": 480,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -507,7 +555,7 @@
     "/paths/zig zag path.jpg": {
       "frame": {
         "x": 0,
-        "y": 576,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -531,7 +579,7 @@
     "/physics/arcade/100 world bodies.jpg": {
       "frame": {
         "x": 0,
-        "y": 672,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -555,7 +603,7 @@
     "/physics/arcade/1000 world bodies.jpg": {
       "frame": {
         "x": 0,
-        "y": 768,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -579,7 +627,7 @@
     "/physics/arcade/10000 world bodies.jpg": {
       "frame": {
         "x": 0,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -603,7 +651,7 @@
     "/physics/arcade/40000 world bodies.jpg": {
       "frame": {
         "x": 0,
-        "y": 960,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -627,7 +675,7 @@
     "/physics/arcade/500 colliding bodies.jpg": {
       "frame": {
         "x": 0,
-        "y": 1056,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -651,7 +699,7 @@
     "/physics/arcade/accelerate to.jpg": {
       "frame": {
         "x": 0,
-        "y": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -675,7 +723,7 @@
     "/physics/arcade/add body to shape.jpg": {
       "frame": {
         "x": 0,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -699,7 +747,7 @@
     "/physics/arcade/add body to tilesprite.jpg": {
       "frame": {
         "x": 0,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -723,7 +771,7 @@
     "/physics/arcade/angle from velocity.jpg": {
       "frame": {
         "x": 0,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -747,7 +795,7 @@
     "/physics/arcade/angular acceleration.jpg": {
       "frame": {
         "x": 0,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -771,7 +819,7 @@
     "/physics/arcade/angular velocity.jpg": {
       "frame": {
         "x": 0,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -795,7 +843,7 @@
     "/physics/arcade/apply force.jpg": {
       "frame": {
         "x": 0,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -818,8 +866,8 @@
     },
     "/physics/arcade/asteroids movement.jpg": {
       "frame": {
-        "x": 0,
-        "y": 1824,
+        "x": 128,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -842,8 +890,8 @@
     },
     "/physics/arcade/basic platform.jpg": {
       "frame": {
-        "x": 0,
-        "y": 1920,
+        "x": 256,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -866,7 +914,7 @@
     },
     "/physics/arcade/blocked faces.jpg": {
       "frame": {
-        "x": 128,
+        "x": 384,
         "y": 96,
         "w": 128,
         "h": 96
@@ -890,7 +938,7 @@
     },
     "/physics/arcade/blocked touching and embedded.jpg": {
       "frame": {
-        "x": 256,
+        "x": 512,
         "y": 96,
         "w": 128,
         "h": 96
@@ -914,7 +962,7 @@
     },
     "/physics/arcade/body controls.jpg": {
       "frame": {
-        "x": 384,
+        "x": 640,
         "y": 96,
         "w": 128,
         "h": 96
@@ -938,7 +986,7 @@
     },
     "/physics/arcade/body follow path.jpg": {
       "frame": {
-        "x": 512,
+        "x": 768,
         "y": 96,
         "w": 128,
         "h": 96
@@ -962,7 +1010,31 @@
     },
     "/physics/arcade/body on a path.jpg": {
       "frame": {
-        "x": 640,
+        "x": 896,
+        "y": 96,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/physics/arcade/body push blocks.jpg": {
+      "frame": {
+        "x": 1024,
         "y": 96,
         "w": 128,
         "h": 96
@@ -986,7 +1058,7 @@
     },
     "/physics/arcade/bounce test.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1152,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1010,7 +1082,7 @@
     },
     "/physics/arcade/bullets group.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1280,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1034,7 +1106,7 @@
     },
     "/physics/arcade/circular body.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1408,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1058,7 +1130,7 @@
     },
     "/physics/arcade/circular collisions 2.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1536,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1082,7 +1154,7 @@
     },
     "/physics/arcade/circular collisions 3.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1664,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1106,7 +1178,7 @@
     },
     "/physics/arcade/circular collisions.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1792,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1130,7 +1202,7 @@
     },
     "/physics/arcade/closest furthest.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1920,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1154,8 +1226,8 @@
     },
     "/physics/arcade/collide event.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 96,
+        "x": 128,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -1178,8 +1250,8 @@
     },
     "/physics/arcade/collider 1.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 96,
+        "x": 256,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -1202,8 +1274,8 @@
     },
     "/physics/arcade/collider process callback.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 96,
+        "x": 384,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -1226,7 +1298,7 @@
     },
     "/physics/arcade/collision direction.jpg": {
       "frame": {
-        "x": 128,
+        "x": 512,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1250,7 +1322,7 @@
     },
     "/physics/arcade/custom bounds.jpg": {
       "frame": {
-        "x": 256,
+        "x": 640,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1274,7 +1346,7 @@
     },
     "/physics/arcade/custom debug colors.jpg": {
       "frame": {
-        "x": 384,
+        "x": 768,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1298,7 +1370,7 @@
     },
     "/physics/arcade/custom separate.jpg": {
       "frame": {
-        "x": 512,
+        "x": 896,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1322,7 +1394,7 @@
     },
     "/physics/arcade/custom update.jpg": {
       "frame": {
-        "x": 640,
+        "x": 1024,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1346,7 +1418,7 @@
     },
     "/physics/arcade/custom world bounds.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1152,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1370,7 +1442,103 @@
     },
     "/physics/arcade/destroy body.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1280,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/physics/arcade/direct control follow mouse.jpg": {
+      "frame": {
+        "x": 1408,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/physics/arcade/direct control follow path.jpg": {
+      "frame": {
+        "x": 1536,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/physics/arcade/direct control platforms.jpg": {
+      "frame": {
+        "x": 1664,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/physics/arcade/direct control.jpg": {
+      "frame": {
+        "x": 1792,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1394,7 +1562,7 @@
     },
     "/physics/arcade/disable collider.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1920,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1418,8 +1586,8 @@
     },
     "/physics/arcade/drag on both axes.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 192,
+        "x": 128,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1442,8 +1610,8 @@
     },
     "/physics/arcade/drag scalar.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 192,
+        "x": 128,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -1466,8 +1634,8 @@
     },
     "/physics/arcade/drag with damping on both axes.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 192,
+        "x": 128,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -1490,8 +1658,8 @@
     },
     "/physics/arcade/drag with damping.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 192,
+        "x": 128,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -1514,8 +1682,8 @@
     },
     "/physics/arcade/drag.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 192,
+        "x": 128,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -1538,8 +1706,8 @@
     },
     "/physics/arcade/draggable body.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 192,
+        "x": 128,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -1562,8 +1730,8 @@
     },
     "/physics/arcade/dragon movement.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 192,
+        "x": 128,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -1587,7 +1755,7 @@
     "/physics/arcade/extending arcade sprite.jpg": {
       "frame": {
         "x": 128,
-        "y": 288,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -1611,7 +1779,7 @@
     "/physics/arcade/final delta.jpg": {
       "frame": {
         "x": 128,
-        "y": 384,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -1635,7 +1803,7 @@
     "/physics/arcade/fps test.jpg": {
       "frame": {
         "x": 128,
-        "y": 480,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -1659,7 +1827,7 @@
     "/physics/arcade/friction.jpg": {
       "frame": {
         "x": 128,
-        "y": 576,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -1683,7 +1851,7 @@
     "/physics/arcade/get bodies within circle.jpg": {
       "frame": {
         "x": 128,
-        "y": 672,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -1707,7 +1875,7 @@
     "/physics/arcade/get bodies within rectangle.jpg": {
       "frame": {
         "x": 128,
-        "y": 768,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -1731,7 +1899,7 @@
     "/physics/arcade/gravity.jpg": {
       "frame": {
         "x": 128,
-        "y": 864,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -1755,7 +1923,7 @@
     "/physics/arcade/group set velocity x.jpg": {
       "frame": {
         "x": 128,
-        "y": 960,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -1779,7 +1947,7 @@
     "/physics/arcade/group set velocity y.jpg": {
       "frame": {
         "x": 128,
-        "y": 1056,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -1803,7 +1971,7 @@
     "/physics/arcade/group vs group.jpg": {
       "frame": {
         "x": 128,
-        "y": 1152,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -1827,7 +1995,7 @@
     "/physics/arcade/group vs self.jpg": {
       "frame": {
         "x": 128,
-        "y": 1248,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -1850,8 +2018,8 @@
     },
     "/physics/arcade/group world bounds event.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1344,
+        "x": 256,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1874,8 +2042,8 @@
     },
     "/physics/arcade/immovable body.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1440,
+        "x": 384,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1898,8 +2066,8 @@
     },
     "/physics/arcade/interpolate velocity 2.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1536,
+        "x": 512,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1922,8 +2090,8 @@
     },
     "/physics/arcade/interpolate velocity.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1632,
+        "x": 640,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1946,8 +2114,8 @@
     },
     "/physics/arcade/larger bounding box.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1728,
+        "x": 768,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1970,8 +2138,8 @@
     },
     "/physics/arcade/mass collision test.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1824,
+        "x": 896,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1994,8 +2162,8 @@
     },
     "/physics/arcade/mass debug 2.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1920,
+        "x": 1024,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -2018,7 +2186,7 @@
     },
     "/physics/arcade/mass debug.jpg": {
       "frame": {
-        "x": 256,
+        "x": 1152,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2042,7 +2210,7 @@
     },
     "/physics/arcade/mass.jpg": {
       "frame": {
-        "x": 384,
+        "x": 1280,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2066,7 +2234,7 @@
     },
     "/physics/arcade/max speed.jpg": {
       "frame": {
-        "x": 512,
+        "x": 1408,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2090,7 +2258,7 @@
     },
     "/physics/arcade/move and stop at position.jpg": {
       "frame": {
-        "x": 640,
+        "x": 1536,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2114,7 +2282,7 @@
     },
     "/physics/arcade/move to pointer.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1664,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2138,7 +2306,7 @@
     },
     "/physics/arcade/move to position by duration.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1792,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2162,7 +2330,7 @@
     },
     "/physics/arcade/move to.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1920,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2186,8 +2354,8 @@
     },
     "/physics/arcade/non pushable bodies.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 288,
+        "x": 256,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2210,8 +2378,8 @@
     },
     "/physics/arcade/overlap collider.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 288,
+        "x": 256,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -2234,8 +2402,8 @@
     },
     "/physics/arcade/overlap event.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 288,
+        "x": 256,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -2258,8 +2426,8 @@
     },
     "/physics/arcade/overlap process callback 2.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 256,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -2282,8 +2450,8 @@
     },
     "/physics/arcade/overlap process callback.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 288,
+        "x": 256,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -2306,8 +2474,8 @@
     },
     "/physics/arcade/overlap zone static body.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 288,
+        "x": 256,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -2330,8 +2498,8 @@
     },
     "/physics/arcade/overlap zone.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 288,
+        "x": 256,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -2355,7 +2523,7 @@
     "/physics/arcade/physics body without sprite.jpg": {
       "frame": {
         "x": 256,
-        "y": 384,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -2379,7 +2547,7 @@
     "/physics/arcade/pushable body debug 1.jpg": {
       "frame": {
         "x": 256,
-        "y": 480,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -2403,7 +2571,7 @@
     "/physics/arcade/pushable body debug 2.jpg": {
       "frame": {
         "x": 256,
-        "y": 576,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -2427,7 +2595,7 @@
     "/physics/arcade/racecar.jpg": {
       "frame": {
         "x": 256,
-        "y": 672,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -2451,7 +2619,7 @@
     "/physics/arcade/random velocity.jpg": {
       "frame": {
         "x": 256,
-        "y": 768,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -2475,7 +2643,7 @@
     "/physics/arcade/recycle physics body.jpg": {
       "frame": {
         "x": 256,
-        "y": 864,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -2499,7 +2667,7 @@
     "/physics/arcade/remove collider.jpg": {
       "frame": {
         "x": 256,
-        "y": 960,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -2523,7 +2691,7 @@
     "/physics/arcade/rolling body.jpg": {
       "frame": {
         "x": 256,
-        "y": 1056,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -2547,7 +2715,7 @@
     "/physics/arcade/rotate to pointer.jpg": {
       "frame": {
         "x": 256,
-        "y": 1152,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -2571,7 +2739,7 @@
     "/physics/arcade/rtree test.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -2594,8 +2762,8 @@
     },
     "/physics/arcade/scene config.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1344,
+        "x": 384,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2618,8 +2786,8 @@
     },
     "/physics/arcade/set world bounds.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1440,
+        "x": 512,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2642,8 +2810,8 @@
     },
     "/physics/arcade/simple group.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1536,
+        "x": 640,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2666,8 +2834,8 @@
     },
     "/physics/arcade/smaller bounding box.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1632,
+        "x": 768,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2690,8 +2858,8 @@
     },
     "/physics/arcade/smooth stop.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1728,
+        "x": 896,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2714,8 +2882,8 @@
     },
     "/physics/arcade/space battle.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1824,
+        "x": 1024,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2738,8 +2906,8 @@
     },
     "/physics/arcade/space.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1920,
+        "x": 1152,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2762,7 +2930,7 @@
     },
     "/physics/arcade/sprite follow physics body.jpg": {
       "frame": {
-        "x": 384,
+        "x": 1280,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2786,7 +2954,7 @@
     },
     "/physics/arcade/sprite overlap group.jpg": {
       "frame": {
-        "x": 512,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2810,7 +2978,7 @@
     },
     "/physics/arcade/sprite vs group.jpg": {
       "frame": {
-        "x": 640,
+        "x": 1536,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2834,7 +3002,7 @@
     },
     "/physics/arcade/sprite vs immovable.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1664,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2858,7 +3026,7 @@
     },
     "/physics/arcade/sprite vs multiple groups.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1792,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2882,7 +3050,7 @@
     },
     "/physics/arcade/sprite vs sprite.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1920,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2906,8 +3074,8 @@
     },
     "/physics/arcade/static body update.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 384,
+        "x": 384,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -2930,8 +3098,8 @@
     },
     "/physics/arcade/static body.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 384,
+        "x": 384,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -2954,8 +3122,8 @@
     },
     "/physics/arcade/sticky platform.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 384,
+        "x": 384,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -2978,8 +3146,8 @@
     },
     "/physics/arcade/topdown shooter average focus.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 384,
+        "x": 384,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -3002,8 +3170,8 @@
     },
     "/physics/arcade/topdown shooter combat mechanics.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 384,
+        "x": 384,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -3026,8 +3194,8 @@
     },
     "/physics/arcade/topdown shooter player focus.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 384,
+        "x": 384,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -3050,8 +3218,8 @@
     },
     "/physics/arcade/topdown shooter target focus.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 384,
+        "x": 384,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -3075,7 +3243,7 @@
     "/physics/arcade/trick platforms.jpg": {
       "frame": {
         "x": 384,
-        "y": 480,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -3099,7 +3267,7 @@
     "/physics/arcade/tween body.jpg": {
       "frame": {
         "x": 384,
-        "y": 576,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -3123,7 +3291,7 @@
     "/physics/arcade/tween velocity 2.jpg": {
       "frame": {
         "x": 384,
-        "y": 672,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -3147,7 +3315,7 @@
     "/physics/arcade/tween velocity.jpg": {
       "frame": {
         "x": 384,
-        "y": 768,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -3171,7 +3339,7 @@
     "/physics/arcade/using collide directly.jpg": {
       "frame": {
         "x": 384,
-        "y": 864,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -3195,7 +3363,7 @@
     "/physics/arcade/variable step.jpg": {
       "frame": {
         "x": 384,
-        "y": 960,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -3219,7 +3387,7 @@
     "/physics/arcade/velocity from angle 2.jpg": {
       "frame": {
         "x": 384,
-        "y": 1056,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -3243,7 +3411,7 @@
     "/physics/arcade/velocity from angle.jpg": {
       "frame": {
         "x": 384,
-        "y": 1152,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -3267,7 +3435,7 @@
     "/physics/arcade/vertical friction.jpg": {
       "frame": {
         "x": 384,
-        "y": 1248,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -3290,8 +3458,8 @@
     },
     "/physics/arcade/world bounds event custom.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1344,
+        "x": 512,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3314,8 +3482,8 @@
     },
     "/physics/arcade/world bounds event.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1440,
+        "x": 640,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3338,8 +3506,8 @@
     },
     "/physics/arcade/world controls.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1536,
+        "x": 768,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3362,8 +3530,8 @@
     },
     "/physics/arcade/world step event.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1632,
+        "x": 896,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3386,8 +3554,8 @@
     },
     "/physics/arcade/wrap group.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1728,
+        "x": 1024,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3410,8 +3578,8 @@
     },
     "/physics/arcade/wrap sprite.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1824,
+        "x": 1152,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3434,8 +3602,8 @@
     },
     "/physics/matterjs/100 world bodies.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1920,
+        "x": 1280,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3458,7 +3626,7 @@
     },
     "/physics/matterjs/add body to bitmap text.jpg": {
       "frame": {
-        "x": 512,
+        "x": 1408,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3482,7 +3650,7 @@
     },
     "/physics/matterjs/add body to text.jpg": {
       "frame": {
-        "x": 640,
+        "x": 1536,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3506,7 +3674,7 @@
     },
     "/physics/matterjs/add body to tilesprite.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1664,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3530,7 +3698,7 @@
     },
     "/physics/matterjs/add body to world.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1792,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3554,7 +3722,7 @@
     },
     "/physics/matterjs/advanced shape creation.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1920,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3578,8 +3746,8 @@
     },
     "/physics/matterjs/attractors.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 480,
+        "x": 512,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3602,8 +3770,8 @@
     },
     "/physics/matterjs/balls.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 480,
+        "x": 640,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3626,8 +3794,8 @@
     },
     "/physics/matterjs/basic constraint.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 480,
+        "x": 768,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3650,8 +3818,8 @@
     },
     "/physics/matterjs/body follow path.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 480,
+        "x": 896,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3674,8 +3842,8 @@
     },
     "/physics/matterjs/body scale.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 480,
+        "x": 1024,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3698,8 +3866,8 @@
     },
     "/physics/matterjs/body to json.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 480,
+        "x": 1152,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3722,8 +3890,8 @@
     },
     "/physics/matterjs/body velocity.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 480,
+        "x": 1280,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3746,7 +3914,7 @@
     },
     "/physics/matterjs/bridge.jpg": {
       "frame": {
-        "x": 512,
+        "x": 1408,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3770,7 +3938,7 @@
     },
     "/physics/matterjs/chain.jpg": {
       "frame": {
-        "x": 640,
+        "x": 1536,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3794,7 +3962,7 @@
     },
     "/physics/matterjs/chamfer body.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1664,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3818,7 +3986,7 @@
     },
     "/physics/matterjs/circle body.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1792,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3842,7 +4010,7 @@
     },
     "/physics/matterjs/circle stack.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1920,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3866,8 +4034,8 @@
     },
     "/physics/matterjs/circular body.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 576,
+        "x": 512,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -3890,8 +4058,8 @@
     },
     "/physics/matterjs/cloth.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 576,
+        "x": 512,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -3914,8 +4082,8 @@
     },
     "/physics/matterjs/collision event.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 576,
+        "x": 512,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -3938,8 +4106,8 @@
     },
     "/physics/matterjs/collision filter.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 576,
+        "x": 512,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -3962,8 +4130,8 @@
     },
     "/physics/matterjs/collision group.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 576,
+        "x": 512,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -3986,8 +4154,8 @@
     },
     "/physics/matterjs/compound body from physics editor.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 576,
+        "x": 512,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -4010,8 +4178,8 @@
     },
     "/physics/matterjs/compound body.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 576,
+        "x": 512,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -4035,7 +4203,7 @@
     "/physics/matterjs/compound sensors.jpg": {
       "frame": {
         "x": 512,
-        "y": 672,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4059,7 +4227,7 @@
     "/physics/matterjs/container collision.jpg": {
       "frame": {
         "x": 512,
-        "y": 768,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4083,7 +4251,7 @@
     "/physics/matterjs/debug options.jpg": {
       "frame": {
         "x": 512,
-        "y": 864,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4107,7 +4275,7 @@
     "/physics/matterjs/destroy body.jpg": {
       "frame": {
         "x": 512,
-        "y": 960,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4131,7 +4299,7 @@
     "/physics/matterjs/drag filter with pointer.jpg": {
       "frame": {
         "x": 512,
-        "y": 1056,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4155,7 +4323,7 @@
     "/physics/matterjs/drag through balls.jpg": {
       "frame": {
         "x": 512,
-        "y": 1152,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4179,7 +4347,7 @@
     "/physics/matterjs/drag with pointer.jpg": {
       "frame": {
         "x": 512,
-        "y": 1248,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -4202,8 +4370,8 @@
     },
     "/physics/matterjs/draw chain.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1344,
+        "x": 640,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4226,8 +4394,8 @@
     },
     "/physics/matterjs/draw smoother stiff line.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1440,
+        "x": 768,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4250,8 +4418,8 @@
     },
     "/physics/matterjs/draw stiff line.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1536,
+        "x": 896,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4274,8 +4442,8 @@
     },
     "/physics/matterjs/draw triangles.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1632,
+        "x": 1024,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4298,8 +4466,8 @@
     },
     "/physics/matterjs/fixed rotation.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1728,
+        "x": 1152,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4322,8 +4490,8 @@
     },
     "/physics/matterjs/get bodies below point.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1824,
+        "x": 1280,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4346,8 +4514,8 @@
     },
     "/physics/matterjs/get shape bounds.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1920,
+        "x": 1408,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4370,7 +4538,7 @@
     },
     "/physics/matterjs/ignore gravity.jpg": {
       "frame": {
-        "x": 640,
+        "x": 1536,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4394,7 +4562,7 @@
     },
     "/physics/matterjs/is point within body.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1664,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4418,7 +4586,7 @@
     },
     "/physics/matterjs/mixed bodies.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1792,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4442,7 +4610,7 @@
     },
     "/physics/matterjs/move body with cursors.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1920,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4466,8 +4634,8 @@
     },
     "/physics/matterjs/multiple physics scenes.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 672,
+        "x": 640,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4490,8 +4658,8 @@
     },
     "/physics/matterjs/offset body.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 672,
+        "x": 640,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -4514,8 +4682,8 @@
     },
     "/physics/matterjs/particles follow body.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 672,
+        "x": 640,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -4538,8 +4706,8 @@
     },
     "/physics/matterjs/physics editor.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 672,
+        "x": 640,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -4562,8 +4730,8 @@
     },
     "/physics/matterjs/polygon body.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 672,
+        "x": 640,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -4586,8 +4754,8 @@
     },
     "/physics/matterjs/rectangle body.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 672,
+        "x": 640,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -4610,8 +4778,8 @@
     },
     "/physics/matterjs/rotate body with cursors.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 672,
+        "x": 640,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4635,7 +4803,7 @@
     "/physics/matterjs/scene restart.jpg": {
       "frame": {
         "x": 640,
-        "y": 768,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4659,7 +4827,7 @@
     "/physics/matterjs/scene transition.jpg": {
       "frame": {
         "x": 640,
-        "y": 864,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4683,7 +4851,7 @@
     "/physics/matterjs/simple body.jpg": {
       "frame": {
         "x": 640,
-        "y": 960,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4707,7 +4875,7 @@
     "/physics/matterjs/sleep events.jpg": {
       "frame": {
         "x": 640,
-        "y": 1056,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4731,7 +4899,7 @@
     "/physics/matterjs/snake.jpg": {
       "frame": {
         "x": 640,
-        "y": 1152,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4755,7 +4923,7 @@
     "/physics/matterjs/thrust.jpg": {
       "frame": {
         "x": 640,
-        "y": 1248,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -4778,8 +4946,8 @@
     },
     "/physics/matterjs/top down car body.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1344,
+        "x": 768,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4802,8 +4970,8 @@
     },
     "/physics/matterjs/trapezoid body.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1440,
+        "x": 896,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4826,8 +4994,8 @@
     },
     "/physics/matterjs/vertices body.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1536,
+        "x": 1024,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4850,8 +5018,8 @@
     },
     "/physics/matterjs/wrap plugin.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1632,
+        "x": 1152,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4874,8 +5042,8 @@
     },
     "/physics/matterjs/wrecking ball.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1728,
+        "x": 1280,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4898,8 +5066,8 @@
     },
     "/physics/multi/arcade and matter.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1824,
+        "x": 1408,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4922,8 +5090,8 @@
     },
     "/plugins/add global plugin.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1920,
+        "x": 1536,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4946,7 +5114,7 @@
     },
     "/plugins/add scene plugin in config.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1664,
         "y": 768,
         "w": 128,
         "h": 96
@@ -4970,7 +5138,7 @@
     },
     "/plugins/custom file type.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1792,
         "y": 768,
         "w": 128,
         "h": 96
@@ -4994,7 +5162,7 @@
     },
     "/plugins/custom game object.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1920,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5018,8 +5186,8 @@
     },
     "/plugins/destroy game with plugin.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 768,
+        "x": 768,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5042,8 +5210,8 @@
     },
     "/plugins/global plugin test 1.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 768,
+        "x": 768,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5066,8 +5234,8 @@
     },
     "/plugins/install global plugin at runtime.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 768,
+        "x": 768,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5090,8 +5258,8 @@
     },
     "/plugins/load plugin test 1.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 768,
+        "x": 768,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -5114,8 +5282,8 @@
     },
     "/plugins/load plugin test 2.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 768,
+        "x": 768,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -5138,8 +5306,8 @@
     },
     "/plugins/load scene plugin test 1.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 768,
+        "x": 768,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -5162,8 +5330,8 @@
     },
     "/plugins/load scene plugin test 2.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 768,
+        "x": 768,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -5187,7 +5355,7 @@
     "/plugins/multiple global plugin instances.jpg": {
       "frame": {
         "x": 768,
-        "y": 864,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -5211,7 +5379,7 @@
     "/plugins/scene plugin test 1.jpg": {
       "frame": {
         "x": 768,
-        "y": 960,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -5235,7 +5403,7 @@
     "/plugins/scene plugin test 3.jpg": {
       "frame": {
         "x": 768,
-        "y": 1056,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -5259,7 +5427,7 @@
     "/plugins/start and stop a plugin.jpg": {
       "frame": {
         "x": 768,
-        "y": 1152,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -5283,7 +5451,7 @@
     "/pools/bullets.jpg": {
       "frame": {
         "x": 768,
-        "y": 1248,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -5306,8 +5474,8 @@
     },
     "/pools/create pool.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1344,
+        "x": 896,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5330,8 +5498,8 @@
     },
     "/pools/max size.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1440,
+        "x": 1024,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5354,8 +5522,8 @@
     },
     "/pools/multi pools.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1536,
+        "x": 1152,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5378,8 +5546,8 @@
     },
     "/pools/pool using a custom class.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1632,
+        "x": 1280,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5402,8 +5570,8 @@
     },
     "/pools/seeded pool.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1728,
+        "x": 1408,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5426,8 +5594,8 @@
     },
     "/renderer/32 texture test.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1824,
+        "x": 1536,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5450,8 +5618,8 @@
     },
     "/renderer/batch size.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1920,
+        "x": 1664,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5474,7 +5642,7 @@
     },
     "/renderer/batch test.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1792,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5498,7 +5666,7 @@
     },
     "/renderer/bend pipeline.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1920,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5522,8 +5690,8 @@
     },
     "/renderer/color post fx pipeline.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 864,
+        "x": 896,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5546,8 +5714,8 @@
     },
     "/renderer/container pipeline.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 864,
+        "x": 1024,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5570,8 +5738,8 @@
     },
     "/renderer/custom pipeline multi texture es6.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 864,
+        "x": 1152,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5594,8 +5762,8 @@
     },
     "/renderer/custom pipeline multi texture.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 864,
+        "x": 1280,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5618,8 +5786,8 @@
     },
     "/renderer/custom pipeline single texture es6.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 864,
+        "x": 1408,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5642,8 +5810,8 @@
     },
     "/renderer/grayscale pipeline added locally.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 864,
+        "x": 1536,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5666,8 +5834,8 @@
     },
     "/renderer/grayscale pipeline.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 864,
+        "x": 1664,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5690,7 +5858,7 @@
     },
     "/renderer/hue rotation pipeline.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1792,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5714,7 +5882,7 @@
     },
     "/renderer/multi color pipeline.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1920,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5738,8 +5906,8 @@
     },
     "/renderer/set pipeline data.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 960,
+        "x": 896,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5762,8 +5930,8 @@
     },
     "/renderer/swirl sprite fx pipeline.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 960,
+        "x": 896,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -5786,8 +5954,8 @@
     },
     "/renderer/webgl debug.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 960,
+        "x": 896,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -5810,8 +5978,8 @@
     },
     "/renderer/webgl info.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 960,
+        "x": 896,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -5834,8 +6002,8 @@
     },
     "/scalemanager/envelop min max.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 960,
+        "x": 896,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -5858,8 +6026,8 @@
     },
     "/scalemanager/fit running game.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 960,
+        "x": 896,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -5882,8 +6050,8 @@
     },
     "/scalemanager/fit with auto center.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 960,
+        "x": 896,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -5907,7 +6075,7 @@
     "/scalemanager/full screen game.jpg": {
       "frame": {
         "x": 896,
-        "y": 1056,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -5931,7 +6099,7 @@
     "/scalemanager/manually resize with zoom.jpg": {
       "frame": {
         "x": 896,
-        "y": 1152,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -5955,7 +6123,7 @@
     "/scalemanager/manually resize.jpg": {
       "frame": {
         "x": 896,
-        "y": 1248,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -5978,8 +6146,8 @@
     },
     "/scalemanager/mobile game example.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1344,
+        "x": 1024,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -6002,8 +6170,8 @@
     },
     "/scalemanager/no scale with auto center.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1440,
+        "x": 1152,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -6026,8 +6194,8 @@
     },
     "/scalemanager/orientation check.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1536,
+        "x": 1280,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -6050,8 +6218,8 @@
     },
     "/scalemanager/resize and fit.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1632,
+        "x": 1408,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -6074,8 +6242,8 @@
     },
     "/scalemanager/resize on click.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1728,
+        "x": 1536,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -6098,8 +6266,8 @@
     },
     "/scalemanager/world input.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1824,
+        "x": 1664,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -6122,8 +6290,8 @@
     },
     "/scalemanager/zoom manual resize.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1920,
+        "x": 1792,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -6146,7 +6314,7 @@
     },
     "/scalemanager/zoom with fit.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1920,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6170,8 +6338,8 @@
     },
     "/scalemanager/zoom with no scale.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 1056,
+        "x": 1024,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6194,8 +6362,8 @@
     },
     "/scenes/add scene after game.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1056,
+        "x": 1024,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -6218,8 +6386,8 @@
     },
     "/scenes/boot data.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 1056,
+        "x": 1024,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -6242,8 +6410,8 @@
     },
     "/scenes/bring to top.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 1056,
+        "x": 1024,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -6266,8 +6434,8 @@
     },
     "/scenes/call function in another scene es6.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 1056,
+        "x": 1024,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -6290,8 +6458,8 @@
     },
     "/scenes/call function in another scene.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1056,
+        "x": 1024,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -6314,8 +6482,8 @@
     },
     "/scenes/change scene from create es6.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1056,
+        "x": 1024,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -6339,7 +6507,7 @@
     "/scenes/changing large scene.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1152,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -6363,7 +6531,7 @@
     "/scenes/changing scene es6.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1248,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -6386,8 +6554,8 @@
     },
     "/scenes/changing scene.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 1344,
+        "x": 1152,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6410,8 +6578,8 @@
     },
     "/scenes/copies of the same scene.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 1440,
+        "x": 1280,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6434,8 +6602,8 @@
     },
     "/scenes/drag scenes demo.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 1536,
+        "x": 1408,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6458,8 +6626,8 @@
     },
     "/scenes/extend scene from object.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 1632,
+        "x": 1536,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6482,8 +6650,8 @@
     },
     "/scenes/external scene/boot.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 1728,
+        "x": 1664,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6506,8 +6674,8 @@
     },
     "/scenes/launch parallel scene.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 1824,
+        "x": 1792,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6530,8 +6698,8 @@
     },
     "/scenes/move down list.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 1920,
+        "x": 1920,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6555,7 +6723,7 @@
     "/scenes/moving scenes demo/boot.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -6578,8 +6746,8 @@
     },
     "/scenes/multi demo/boot.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1152,
+        "x": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -6602,8 +6770,8 @@
     },
     "/scenes/multiple scenes from instances.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 1152,
+        "x": 1152,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -6626,8 +6794,8 @@
     },
     "/scenes/multiple scenes from objects.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 1152,
+        "x": 1152,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -6650,8 +6818,8 @@
     },
     "/scenes/multiple scenes with multiple cameras.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 1152,
+        "x": 1152,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -6674,8 +6842,8 @@
     },
     "/scenes/parallel scenes.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1152,
+        "x": 1152,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -6698,8 +6866,8 @@
     },
     "/scenes/passing data to a scene.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1152,
+        "x": 1152,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -6723,174 +6891,6 @@
     "/scenes/pause and resume.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1248,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/scenes/registry data exchange es6.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1344,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/scenes/registry data exchange.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1440,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/scenes/restart a scene.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1536,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/scenes/scene config object.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1632,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/scenes/scene files payload.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1728,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/scenes/send to back.jpg": {
-      "frame": {
-        "x": 1152,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/scenes/sleep and wake.jpg": {
-      "frame": {
-        "x": 1152,
         "y": 1920,
         "w": 128,
         "h": 96
@@ -6912,7 +6912,7 @@
         "y": 0.5
       }
     },
-    "/scenes/sub game demo/boot.jpg": {
+    "/scenes/registry data exchange es6.jpg": {
       "frame": {
         "x": 1280,
         "y": 1248,
@@ -6936,7 +6936,7 @@
         "y": 0.5
       }
     },
-    "/scenes/swap position.jpg": {
+    "/scenes/registry data exchange.jpg": {
       "frame": {
         "x": 1408,
         "y": 1248,
@@ -6960,7 +6960,7 @@
         "y": 0.5
       }
     },
-    "/scenes/swapping scenes.jpg": {
+    "/scenes/restart a scene.jpg": {
       "frame": {
         "x": 1536,
         "y": 1248,
@@ -6984,7 +6984,7 @@
         "y": 0.5
       }
     },
-    "/scenes/transition test 1.jpg": {
+    "/scenes/scene config object.jpg": {
       "frame": {
         "x": 1664,
         "y": 1248,
@@ -7008,7 +7008,7 @@
         "y": 0.5
       }
     },
-    "/scenes/transition test 2.jpg": {
+    "/scenes/scene files payload.jpg": {
       "frame": {
         "x": 1792,
         "y": 1248,
@@ -7032,10 +7032,178 @@
         "y": 0.5
       }
     },
-    "/scenes/tutorial/change scene order.jpg": {
+    "/scenes/send to back.jpg": {
       "frame": {
         "x": 1920,
         "y": 1248,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/scenes/sleep and wake.jpg": {
+      "frame": {
+        "x": 1280,
+        "y": 1344,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/scenes/sub game demo/boot.jpg": {
+      "frame": {
+        "x": 1408,
+        "y": 1344,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/scenes/swap position.jpg": {
+      "frame": {
+        "x": 1536,
+        "y": 1344,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/scenes/swapping scenes.jpg": {
+      "frame": {
+        "x": 1664,
+        "y": 1344,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/scenes/transition test 1.jpg": {
+      "frame": {
+        "x": 1792,
+        "y": 1344,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/scenes/transition test 2.jpg": {
+      "frame": {
+        "x": 1920,
+        "y": 1344,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/scenes/tutorial/change scene order.jpg": {
+      "frame": {
+        "x": 1280,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -7059,7 +7227,7 @@
     "/scenes/tutorial/scene controller.jpg": {
       "frame": {
         "x": 1280,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7082,8 +7250,8 @@
     },
     "/scenes/tutorial/scene order.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 1344,
+        "x": 1280,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7106,8 +7274,8 @@
     },
     "/scenes/ui scene es6.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 1344,
+        "x": 1280,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7130,8 +7298,8 @@
     },
     "/scenes/ui scene.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 1344,
+        "x": 1280,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7154,8 +7322,8 @@
     },
     "/snapshot/snapshot area.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1344,
+        "x": 1280,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7178,8 +7346,8 @@
     },
     "/snapshot/snapshot game.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1344,
+        "x": 1408,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -7202,7 +7370,7 @@
     },
     "/snapshot/snapshot pixel.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 1440,
         "w": 128,
         "h": 96
@@ -7226,8 +7394,8 @@
     },
     "/snapshot/snapshot to base64.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1536,
+        "x": 1664,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -7250,8 +7418,8 @@
     },
     "/spine3/add hit area.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1632,
+        "x": 1792,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -7274,8 +7442,8 @@
     },
     "/spine3/add spine object to group.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1728,
+        "x": 1920,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -7298,8 +7466,8 @@
     },
     "/spine3/alpha test.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1824,
+        "x": 1408,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7322,8 +7490,8 @@
     },
     "/spine3/arcade physics spine body.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1920,
+        "x": 1408,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7347,7 +7515,7 @@
     "/spine3/basic spineboy.jpg": {
       "frame": {
         "x": 1408,
-        "y": 1440,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7370,8 +7538,8 @@
     },
     "/spine3/batch test.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 1440,
+        "x": 1408,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7394,8 +7562,8 @@
     },
     "/spine3/blend mode test.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 1440,
+        "x": 1408,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7418,8 +7586,8 @@
     },
     "/spine3/camera pipeline test.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1440,
+        "x": 1536,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7442,8 +7610,8 @@
     },
     "/spine3/canvas test 1.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1440,
+        "x": 1664,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7466,7 +7634,7 @@
     },
     "/spine3/container batch test pre35.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1792,
         "y": 1536,
         "w": 128,
         "h": 96
@@ -7490,8 +7658,8 @@
     },
     "/spine3/container batch test.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 1632,
+        "x": 1920,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7514,8 +7682,8 @@
     },
     "/spine3/control bones.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 1728,
+        "x": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7538,8 +7706,8 @@
     },
     "/spine3/destroy test.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 1824,
+        "x": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7562,8 +7730,8 @@
     },
     "/spine3/draw debug bounds.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 1920,
+        "x": 1536,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7587,7 +7755,7 @@
     "/spine3/extend spine gameobject.jpg": {
       "frame": {
         "x": 1536,
-        "y": 1536,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7611,7 +7779,7 @@
     "/spine3/extended class.jpg": {
       "frame": {
         "x": 1664,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7635,7 +7803,7 @@
     "/spine3/image changes.jpg": {
       "frame": {
         "x": 1792,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7659,7 +7827,7 @@
     "/spine3/invisible test with spine containers.jpg": {
       "frame": {
         "x": 1920,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7682,8 +7850,8 @@
     },
     "/spine3/invisible test.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 1632,
+        "x": 1664,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7706,7 +7874,7 @@
     },
     "/spine3/last visible.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 1728,
         "w": 128,
         "h": 96
@@ -7730,8 +7898,8 @@
     },
     "/spine3/owl.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 1824,
+        "x": 1920,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7754,8 +7922,8 @@
     },
     "/spine3/spine inside container.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 1920,
+        "x": 1664,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7779,7 +7947,7 @@
     "/spine3/spine parallel scene test.jpg": {
       "frame": {
         "x": 1664,
-        "y": 1632,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7803,7 +7971,7 @@
     "/spine3/spine rotation test.jpg": {
       "frame": {
         "x": 1792,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7827,7 +7995,7 @@
     "/spine3/spine scene test.jpg": {
       "frame": {
         "x": 1920,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7850,8 +8018,8 @@
     },
     "/spine3/spine set depth test.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 1728,
+        "x": 1792,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7873,174 +8041,6 @@
       }
     },
     "/spine3/spine to render texture.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 1728,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine3/webgl test 1.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 1728,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine3/webgl test 2.jpg": {
-      "frame": {
-        "x": 1664,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine3/webgl test 3.jpg": {
-      "frame": {
-        "x": 1664,
-        "y": 1920,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine3/webgl test 4.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine3/webgl test 5.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/add hit area.jpg": {
-      "frame": {
-        "x": 1792,
-        "y": 1920,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/add spine object to group.jpg": {
       "frame": {
         "x": 1920,
         "y": 1920,
@@ -8066,7 +8066,7 @@
     },
     "/paths/followers/start at.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1024,
         "y": 0,
         "w": 128,
         "h": 96
@@ -8090,7 +8090,7 @@
     },
     "/physics/arcade/touching faces.jpg": {
       "frame": {
-        "x": 128,
+        "x": 384,
         "y": 96,
         "w": 128,
         "h": 96
@@ -8114,8 +8114,8 @@
     },
     "/physics/arcade/simple body.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 192,
+        "x": 128,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -8139,7 +8139,7 @@
     "/physics/arcade/static group.jpg": {
       "frame": {
         "x": 256,
-        "y": 960,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -8162,7 +8162,7 @@
     },
     "/physics/arcade/sprite follow physics sprite.jpg": {
       "frame": {
-        "x": 384,
+        "x": 1280,
         "y": 384,
         "w": 128,
         "h": 96
@@ -8186,8 +8186,8 @@
     },
     "/physics/matterjs/increase body scale.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 480,
+        "x": 1024,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -8210,8 +8210,8 @@
     },
     "/physics/matterjs/no gravity.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 480,
+        "x": 1152,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -8234,8 +8234,8 @@
     },
     "/renderer/custom pipeline single texture.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 864,
+        "x": 1280,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -8258,8 +8258,8 @@
     },
     "/scalemanager/envelop.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 960,
+        "x": 896,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8282,8 +8282,8 @@
     },
     "/scalemanager/fit min max.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 960,
+        "x": 896,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8306,8 +8306,8 @@
     },
     "/scalemanager/fit.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 960,
+        "x": 896,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8330,8 +8330,8 @@
     },
     "/scalemanager/height controls width.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 960,
+        "x": 896,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8354,8 +8354,8 @@
     },
     "/scalemanager/no scale.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 960,
+        "x": 896,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8378,8 +8378,8 @@
     },
     "/scalemanager/width controls height.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 960,
+        "x": 896,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8403,7 +8403,7 @@
     "/scalemanager/resize min max.jpg": {
       "frame": {
         "x": 896,
-        "y": 1248,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -8427,7 +8427,7 @@
     "/scalemanager/resize.jpg": {
       "frame": {
         "x": 896,
-        "y": 1248,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -8450,8 +8450,8 @@
     },
     "/scenes/add scene from another scene.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1056,
+        "x": 1024,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8474,8 +8474,8 @@
     },
     "/scenes/scene add manual start.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1056,
+        "x": 1024,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8498,8 +8498,8 @@
     },
     "/scenes/scene add.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1056,
+        "x": 1024,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8522,8 +8522,8 @@
     },
     "/scenes/scene from class.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1056,
+        "x": 1024,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8546,8 +8546,8 @@
     },
     "/scenes/scene from es6 class.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1056,
+        "x": 1024,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8570,8 +8570,8 @@
     },
     "/scenes/scene from function.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1056,
+        "x": 1024,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8594,8 +8594,8 @@
     },
     "/scenes/scene from instance.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1056,
+        "x": 1024,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8618,8 +8618,8 @@
     },
     "/scenes/scene from object.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1056,
+        "x": 1024,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8642,8 +8642,8 @@
     },
     "/scenes/scene injection map utf8.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1056,
+        "x": 1024,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8666,8 +8666,8 @@
     },
     "/scenes/scene injection map.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1056,
+        "x": 1024,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8690,8 +8690,8 @@
     },
     "/scenes/test plugin.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1056,
+        "x": 1024,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -8714,8 +8714,8 @@
     },
     "/scenes/move up list.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 1920,
+        "x": 1920,
+        "y": 1152,
         "w": 128,
         "h": 96
       },

@@ -552,10 +552,34 @@
         "y": 0.5
       }
     },
-    "/game objects/particle emitter/emitter alpha.jpg": {
+    "/game objects/particle emitter/emit zone loop.jpg": {
       "frame": {
         "x": 0,
         "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/game objects/particle emitter/emitter alpha.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -579,7 +603,7 @@
     "/game objects/particle emitter/emitter duration.jpg": {
       "frame": {
         "x": 0,
-        "y": 864,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -603,7 +627,7 @@
     "/game objects/particle emitter/emitter events.jpg": {
       "frame": {
         "x": 0,
-        "y": 960,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -627,7 +651,7 @@
     "/game objects/particle emitter/emitter zone total.jpg": {
       "frame": {
         "x": 0,
-        "y": 1056,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -651,7 +675,7 @@
     "/game objects/particle emitter/explode emitter.jpg": {
       "frame": {
         "x": 0,
-        "y": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -675,7 +699,7 @@
     "/game objects/particle emitter/fire effects.jpg": {
       "frame": {
         "x": 0,
-        "y": 1248,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -699,7 +723,7 @@
     "/game objects/particle emitter/get emitter bounds.jpg": {
       "frame": {
         "x": 0,
-        "y": 1344,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -723,7 +747,7 @@
     "/game objects/particle emitter/get particle bounds.jpg": {
       "frame": {
         "x": 0,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -747,7 +771,7 @@
     "/game objects/particle emitter/gravity processor.jpg": {
       "frame": {
         "x": 0,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -771,7 +795,7 @@
     "/game objects/particle emitter/hold particle.jpg": {
       "frame": {
         "x": 0,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -795,7 +819,7 @@
     "/game objects/particle emitter/interpolation ease.jpg": {
       "frame": {
         "x": 0,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -819,7 +843,7 @@
     "/game objects/particle emitter/min max.jpg": {
       "frame": {
         "x": 0,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -842,8 +866,8 @@
     },
     "/game objects/particle emitter/move to dynamic.jpg": {
       "frame": {
-        "x": 0,
-        "y": 1920,
+        "x": 128,
+        "y": 96,
         "w": 128,
         "h": 96
       },
@@ -866,7 +890,7 @@
     },
     "/game objects/particle emitter/move to.jpg": {
       "frame": {
-        "x": 128,
+        "x": 256,
         "y": 96,
         "w": 128,
         "h": 96
@@ -890,7 +914,7 @@
     },
     "/game objects/particle emitter/multiple death zones.jpg": {
       "frame": {
-        "x": 256,
+        "x": 384,
         "y": 96,
         "w": 128,
         "h": 96
@@ -914,7 +938,7 @@
     },
     "/game objects/particle emitter/onemit and onupdate.jpg": {
       "frame": {
-        "x": 384,
+        "x": 512,
         "y": 96,
         "w": 128,
         "h": 96
@@ -938,7 +962,7 @@
     },
     "/game objects/particle emitter/particle bounds.jpg": {
       "frame": {
-        "x": 512,
+        "x": 640,
         "y": 96,
         "w": 128,
         "h": 96
@@ -962,7 +986,7 @@
     },
     "/game objects/particle emitter/particle overlap.jpg": {
       "frame": {
-        "x": 640,
+        "x": 768,
         "y": 96,
         "w": 128,
         "h": 96
@@ -986,7 +1010,7 @@
     },
     "/game objects/particle emitter/particle physics body overlap.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1010,7 +1034,7 @@
     },
     "/game objects/particle emitter/random array.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1034,7 +1058,7 @@
     },
     "/game objects/particle emitter/random object.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1058,7 +1082,7 @@
     },
     "/game objects/particle emitter/random tint.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1082,7 +1106,7 @@
     },
     "/game objects/particle emitter/set emitter zone by instance.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1106,7 +1130,7 @@
     },
     "/game objects/particle emitter/set emitter zone.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1130,7 +1154,7 @@
     },
     "/game objects/particle emitter/sort order.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1154,7 +1178,7 @@
     },
     "/game objects/particle emitter/start end ease.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1178,7 +1202,7 @@
     },
     "/game objects/particle emitter/start end random.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 96,
         "w": 128,
         "h": 96
@@ -1202,8 +1226,8 @@
     },
     "/game objects/particle emitter/start end.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 96,
+        "x": 128,
+        "y": 192,
         "w": 128,
         "h": 96
       },
@@ -1226,7 +1250,7 @@
     },
     "/game objects/particle emitter/stepped emitter with yoyo.jpg": {
       "frame": {
-        "x": 128,
+        "x": 256,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1250,7 +1274,7 @@
     },
     "/game objects/particle emitter/stepped emitter.jpg": {
       "frame": {
-        "x": 256,
+        "x": 384,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1274,7 +1298,7 @@
     },
     "/game objects/particle emitter/stop after.jpg": {
       "frame": {
-        "x": 384,
+        "x": 512,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1298,7 +1322,7 @@
     },
     "/game objects/particle emitter/tween alpha.jpg": {
       "frame": {
-        "x": 512,
+        "x": 640,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1322,7 +1346,7 @@
     },
     "/game objects/particle emitter/tween speed x.jpg": {
       "frame": {
-        "x": 640,
+        "x": 768,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1346,7 +1370,7 @@
     },
     "/game objects/particle emitter/tween speed y.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1370,7 +1394,7 @@
     },
     "/game objects/particle emitter/tween speed.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1394,7 +1418,7 @@
     },
     "/game objects/particle emitter/tween xy.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1418,7 +1442,7 @@
     },
     "/game objects/particle emitter/view bounds.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1442,7 +1466,7 @@
     },
     "/game objects/plane/animated sprite plane.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1466,7 +1490,7 @@
     },
     "/game objects/plane/checkerboard plane.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1490,7 +1514,7 @@
     },
     "/game objects/plane/click plane.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1514,7 +1538,7 @@
     },
     "/game objects/plane/create plane from atlas frame.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1538,7 +1562,7 @@
     },
     "/game objects/plane/create plane.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 192,
         "w": 128,
         "h": 96
@@ -1562,8 +1586,8 @@
     },
     "/game objects/plane/plane pop-up effect.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 192,
+        "x": 128,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1587,7 +1611,7 @@
     "/game objects/plane/plane with normal map.jpg": {
       "frame": {
         "x": 128,
-        "y": 288,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -1611,7 +1635,7 @@
     "/game objects/plane/tile plane texture.jpg": {
       "frame": {
         "x": 128,
-        "y": 384,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -1635,7 +1659,7 @@
     "/game objects/plane/uv scale plane texture.jpg": {
       "frame": {
         "x": 128,
-        "y": 480,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -1659,7 +1683,7 @@
     "/game objects/plane/uv scroll plane texture.jpg": {
       "frame": {
         "x": 128,
-        "y": 576,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -1683,7 +1707,7 @@
     "/game objects/plane/walls.jpg": {
       "frame": {
         "x": 128,
-        "y": 672,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -1707,7 +1731,7 @@
     "/game objects/render texture/atlas frame to render texture.jpg": {
       "frame": {
         "x": 128,
-        "y": 768,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -1731,7 +1755,7 @@
     "/game objects/render texture/batch draw frame.jpg": {
       "frame": {
         "x": 128,
-        "y": 864,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -1755,7 +1779,7 @@
     "/game objects/render texture/batch draw sprite.jpg": {
       "frame": {
         "x": 128,
-        "y": 960,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -1779,7 +1803,7 @@
     "/game objects/render texture/blitter to render texture.jpg": {
       "frame": {
         "x": 128,
-        "y": 1056,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -1803,7 +1827,7 @@
     "/game objects/render texture/brute force.jpg": {
       "frame": {
         "x": 128,
-        "y": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -1827,7 +1851,7 @@
     "/game objects/render texture/change frame.jpg": {
       "frame": {
         "x": 128,
-        "y": 1248,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -1851,7 +1875,7 @@
     "/game objects/render texture/container to render texture.jpg": {
       "frame": {
         "x": 128,
-        "y": 1344,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -1875,7 +1899,7 @@
     "/game objects/render texture/destroy game with render texture.jpg": {
       "frame": {
         "x": 128,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -1899,7 +1923,7 @@
     "/game objects/render texture/destroy render texture.jpg": {
       "frame": {
         "x": 128,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -1923,7 +1947,7 @@
     "/game objects/render texture/draw game objects to render texture.jpg": {
       "frame": {
         "x": 128,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -1947,7 +1971,7 @@
     "/game objects/render texture/draw on texture.jpg": {
       "frame": {
         "x": 128,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -1971,7 +1995,7 @@
     "/game objects/render texture/dynamic bitmap text to render texture.jpg": {
       "frame": {
         "x": 128,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -1994,8 +2018,8 @@
     },
     "/game objects/render texture/dynamic tilemap to render texture.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1920,
+        "x": 256,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -2018,7 +2042,7 @@
     },
     "/game objects/render texture/erase part of render texture canvas.jpg": {
       "frame": {
-        "x": 256,
+        "x": 384,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2042,7 +2066,7 @@
     },
     "/game objects/render texture/erase part of render texture.jpg": {
       "frame": {
-        "x": 384,
+        "x": 512,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2066,7 +2090,7 @@
     },
     "/game objects/render texture/frame fill.jpg": {
       "frame": {
-        "x": 512,
+        "x": 640,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2090,7 +2114,7 @@
     },
     "/game objects/render texture/graphics to render texture.jpg": {
       "frame": {
-        "x": 640,
+        "x": 768,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2114,7 +2138,7 @@
     },
     "/game objects/render texture/group to render texture.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2138,7 +2162,7 @@
     },
     "/game objects/render texture/paint interpolated shadow.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2162,7 +2186,7 @@
     },
     "/game objects/render texture/paint interpolated.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2186,7 +2210,7 @@
     },
     "/game objects/render texture/paint tinted.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2210,7 +2234,7 @@
     },
     "/game objects/render texture/paint.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2234,7 +2258,7 @@
     },
     "/game objects/render texture/particle emitter to render texture.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2258,7 +2282,7 @@
     },
     "/game objects/render texture/pixel art test.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2282,7 +2306,7 @@
     },
     "/game objects/render texture/render texture as a mask.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2306,7 +2330,7 @@
     },
     "/game objects/render texture/render texture larger than camera.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2330,8 +2354,8 @@
     },
     "/game objects/render texture/render texture to render texture.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 288,
+        "x": 256,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2355,7 +2379,7 @@
     "/game objects/render texture/resize render texture.jpg": {
       "frame": {
         "x": 256,
-        "y": 384,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -2379,7 +2403,7 @@
     "/game objects/render texture/resize rendertexture.jpg": {
       "frame": {
         "x": 256,
-        "y": 480,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -2403,7 +2427,7 @@
     "/game objects/render texture/save texture.jpg": {
       "frame": {
         "x": 256,
-        "y": 576,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -2427,7 +2451,7 @@
     "/game objects/render texture/scene to render texture quad.jpg": {
       "frame": {
         "x": 256,
-        "y": 672,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -2451,7 +2475,7 @@
     "/game objects/render texture/scene to render texture with crop.jpg": {
       "frame": {
         "x": 256,
-        "y": 768,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -2475,7 +2499,7 @@
     "/game objects/render texture/scene to render texture.jpg": {
       "frame": {
         "x": 256,
-        "y": 864,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -2499,7 +2523,7 @@
     "/game objects/render texture/scratch.jpg": {
       "frame": {
         "x": 256,
-        "y": 960,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -2523,7 +2547,7 @@
     "/game objects/render texture/shape to render texture.jpg": {
       "frame": {
         "x": 256,
-        "y": 1056,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -2547,7 +2571,7 @@
     "/game objects/render texture/sparks.jpg": {
       "frame": {
         "x": 256,
-        "y": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -2571,7 +2595,7 @@
     "/game objects/render texture/sprite to render texture.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -2595,7 +2619,7 @@
     "/game objects/render texture/static bitmap text to render texture.jpg": {
       "frame": {
         "x": 256,
-        "y": 1344,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -2619,7 +2643,7 @@
     "/game objects/render texture/static tilemap to render texture.jpg": {
       "frame": {
         "x": 256,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -2643,7 +2667,7 @@
     "/game objects/render texture/text to render texture.jpg": {
       "frame": {
         "x": 256,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -2667,7 +2691,7 @@
     "/game objects/render texture/texture key to render texture.jpg": {
       "frame": {
         "x": 256,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -2691,7 +2715,7 @@
     "/game objects/render texture/trail.jpg": {
       "frame": {
         "x": 256,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -2715,7 +2739,7 @@
     "/game objects/render texture/trail2.jpg": {
       "frame": {
         "x": 256,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -2738,8 +2762,8 @@
     },
     "/game objects/render texture/transform draw.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1920,
+        "x": 384,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2762,7 +2786,7 @@
     },
     "/game objects/rope/animated rope.jpg": {
       "frame": {
-        "x": 384,
+        "x": 512,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2786,7 +2810,7 @@
     },
     "/game objects/rope/draw rope gradient.jpg": {
       "frame": {
-        "x": 512,
+        "x": 640,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2810,7 +2834,7 @@
     },
     "/game objects/rope/draw rope.jpg": {
       "frame": {
-        "x": 640,
+        "x": 768,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2834,7 +2858,7 @@
     },
     "/game objects/rope/flip rope xy.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2858,7 +2882,7 @@
     },
     "/game objects/rope/horizontal rope.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2882,7 +2906,7 @@
     },
     "/game objects/rope/rope as a mask.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2906,7 +2930,7 @@
     },
     "/game objects/rope/rope with a mask.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2930,7 +2954,7 @@
     },
     "/game objects/rope/rope with shader texture.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2954,7 +2978,7 @@
     },
     "/game objects/rope/single alpha rope.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2978,7 +3002,7 @@
     },
     "/game objects/rope/split alpha rope.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 384,
         "w": 128,
         "h": 96
@@ -3002,7 +3026,7 @@
     },
     "/game objects/rope/vertex tint rope.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 384,
         "w": 128,
         "h": 96
@@ -3026,7 +3050,7 @@
     },
     "/game objects/rope/vertical rope.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 384,
         "w": 128,
         "h": 96
@@ -3050,8 +3074,8 @@
     },
     "/game objects/shaders/basic texture shader.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 384,
+        "x": 384,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3075,7 +3099,7 @@
     "/game objects/shaders/buffer a.jpg": {
       "frame": {
         "x": 384,
-        "y": 480,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3099,7 +3123,7 @@
     "/game objects/shaders/buffer b.jpg": {
       "frame": {
         "x": 384,
-        "y": 576,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -3123,7 +3147,7 @@
     "/game objects/shaders/change shader texture.jpg": {
       "frame": {
         "x": 384,
-        "y": 672,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -3147,7 +3171,7 @@
     "/game objects/shaders/load shader.jpg": {
       "frame": {
         "x": 384,
-        "y": 768,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -3171,7 +3195,7 @@
     "/game objects/shaders/save shader as texture.jpg": {
       "frame": {
         "x": 384,
-        "y": 864,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -3195,7 +3219,7 @@
     "/game objects/shaders/shader arcade physics.jpg": {
       "frame": {
         "x": 384,
-        "y": 960,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -3219,7 +3243,7 @@
     "/game objects/shaders/shader as a mask.jpg": {
       "frame": {
         "x": 384,
-        "y": 1056,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -3243,7 +3267,7 @@
     "/game objects/shaders/shader bundle.jpg": {
       "frame": {
         "x": 384,
-        "y": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -3267,7 +3291,7 @@
     "/game objects/shaders/shader mass texture test.jpg": {
       "frame": {
         "x": 384,
-        "y": 1248,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -3291,7 +3315,7 @@
     "/game objects/shaders/shader transforms.jpg": {
       "frame": {
         "x": 384,
-        "y": 1344,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -3315,7 +3339,7 @@
     "/game objects/shaders/shader using a dynamic texture.jpg": {
       "frame": {
         "x": 384,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -3339,7 +3363,7 @@
     "/game objects/shaders/shader using a render texture.jpg": {
       "frame": {
         "x": 384,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -3363,7 +3387,7 @@
     "/game objects/shaders/shader using an updating dynamic texture.jpg": {
       "frame": {
         "x": 384,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -3387,7 +3411,7 @@
     "/game objects/shaders/using a shader as a buffer.jpg": {
       "frame": {
         "x": 384,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -3411,7 +3435,7 @@
     "/game objects/shapes/arc.jpg": {
       "frame": {
         "x": 384,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -3434,8 +3458,8 @@
     },
     "/game objects/shapes/blend modes.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1920,
+        "x": 512,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3458,7 +3482,7 @@
     },
     "/game objects/shapes/circle.jpg": {
       "frame": {
-        "x": 512,
+        "x": 640,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3482,7 +3506,7 @@
     },
     "/game objects/shapes/curve.jpg": {
       "frame": {
-        "x": 640,
+        "x": 768,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3506,7 +3530,7 @@
     },
     "/game objects/shapes/draw.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3530,7 +3554,7 @@
     },
     "/game objects/shapes/ellipse.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3554,7 +3578,7 @@
     },
     "/game objects/shapes/grid.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3578,7 +3602,7 @@
     },
     "/game objects/shapes/iso birdie.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3602,7 +3626,7 @@
     },
     "/game objects/shapes/iso box.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3626,7 +3650,7 @@
     },
     "/game objects/shapes/iso draw.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3650,7 +3674,7 @@
     },
     "/game objects/shapes/iso image.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3674,7 +3698,7 @@
     },
     "/game objects/shapes/iso landscape.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3698,7 +3722,7 @@
     },
     "/game objects/shapes/iso triangle.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3722,8 +3746,8 @@
     },
     "/game objects/shapes/line.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 480,
+        "x": 512,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3746,7 +3770,7 @@
     },
     "/game objects/shapes/polygon with matter physics.jpg": {
       "frame": {
-        "x": 512,
+        "x": 640,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3770,7 +3794,7 @@
     },
     "/game objects/shapes/polygon.jpg": {
       "frame": {
-        "x": 640,
+        "x": 768,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3794,7 +3818,7 @@
     },
     "/game objects/shapes/rectangle with arcade physics.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3818,7 +3842,7 @@
     },
     "/game objects/shapes/rectangle.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3842,7 +3866,7 @@
     },
     "/game objects/shapes/spline.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3866,7 +3890,7 @@
     },
     "/game objects/shapes/stacker es6.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3890,7 +3914,7 @@
     },
     "/game objects/shapes/stacker.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3914,7 +3938,7 @@
     },
     "/game objects/shapes/star.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3938,7 +3962,7 @@
     },
     "/game objects/shapes/triangle.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3962,7 +3986,7 @@
     },
     "/game objects/sprites/create from config.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3986,7 +4010,7 @@
     },
     "/game objects/sprites/custom sprite class es6.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 576,
         "w": 128,
         "h": 96
@@ -4010,8 +4034,8 @@
     },
     "/game objects/sprites/moving sprite.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 576,
+        "x": 512,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4035,7 +4059,7 @@
     "/game objects/sprites/multiple sprites.jpg": {
       "frame": {
         "x": 512,
-        "y": 672,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4059,7 +4083,7 @@
     "/game objects/sprites/rotate around a sprite.jpg": {
       "frame": {
         "x": 512,
-        "y": 768,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -4083,7 +4107,7 @@
     "/game objects/sprites/single sprite.jpg": {
       "frame": {
         "x": 512,
-        "y": 864,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -4107,7 +4131,7 @@
     "/game objects/sprites/sprite rotation.jpg": {
       "frame": {
         "x": 512,
-        "y": 960,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -4131,7 +4155,7 @@
     "/game objects/sprites/to json.jpg": {
       "frame": {
         "x": 512,
-        "y": 1056,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -4155,7 +4179,7 @@
     "/game objects/tests/dynamic bitmap text.jpg": {
       "frame": {
         "x": 512,
-        "y": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -4179,7 +4203,7 @@
     "/game objects/tests/image.jpg": {
       "frame": {
         "x": 512,
-        "y": 1248,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4203,7 +4227,7 @@
     "/game objects/tests/single tilesprite.jpg": {
       "frame": {
         "x": 512,
-        "y": 1344,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4227,7 +4251,7 @@
     "/game objects/tests/static bitmap text.jpg": {
       "frame": {
         "x": 512,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4251,7 +4275,7 @@
     "/game objects/tests/text.jpg": {
       "frame": {
         "x": 512,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4275,7 +4299,7 @@
     "/game objects/tests/tilesprite.jpg": {
       "frame": {
         "x": 512,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4299,7 +4323,7 @@
     "/game objects/text/align text.jpg": {
       "frame": {
         "x": 512,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4323,7 +4347,7 @@
     "/game objects/text/basic text.jpg": {
       "frame": {
         "x": 512,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -4346,8 +4370,8 @@
     },
     "/game objects/text/change text.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1920,
+        "x": 640,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4370,7 +4394,7 @@
     },
     "/game objects/text/create from config.jpg": {
       "frame": {
-        "x": 640,
+        "x": 768,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4394,7 +4418,7 @@
     },
     "/game objects/text/custom webfont.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4418,7 +4442,7 @@
     },
     "/game objects/text/emojis.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4442,7 +4466,7 @@
     },
     "/game objects/text/google webfont.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4466,7 +4490,7 @@
     },
     "/game objects/text/italic text.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4490,7 +4514,7 @@
     },
     "/game objects/text/line spacing.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4514,7 +4538,7 @@
     },
     "/game objects/text/multi line text with alignment.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4538,7 +4562,7 @@
     },
     "/game objects/text/multi line text.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4562,7 +4586,7 @@
     },
     "/game objects/text/padding from config.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4586,7 +4610,7 @@
     },
     "/game objects/text/right origin.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4610,8 +4634,8 @@
     },
     "/game objects/text/right to left text.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 672,
+        "x": 640,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4635,7 +4659,7 @@
     "/game objects/text/set test string.jpg": {
       "frame": {
         "x": 640,
-        "y": 768,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -4659,7 +4683,7 @@
     "/game objects/text/shadow stroke styles.jpg": {
       "frame": {
         "x": 640,
-        "y": 864,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -4683,7 +4707,7 @@
     "/game objects/text/speech bubble.jpg": {
       "frame": {
         "x": 640,
-        "y": 960,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -4707,7 +4731,7 @@
     "/game objects/text/tests/word wrap.jpg": {
       "frame": {
         "x": 640,
-        "y": 1056,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -4731,7 +4755,7 @@
     "/game objects/text/text bounds.jpg": {
       "frame": {
         "x": 640,
-        "y": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -4755,7 +4779,7 @@
     "/game objects/text/text gradient.jpg": {
       "frame": {
         "x": 640,
-        "y": 1248,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4779,7 +4803,7 @@
     "/game objects/text/text key.jpg": {
       "frame": {
         "x": 640,
-        "y": 1344,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4803,7 +4827,7 @@
     "/game objects/text/text metrics.jpg": {
       "frame": {
         "x": 640,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4827,7 +4851,7 @@
     "/game objects/text/text origin.jpg": {
       "frame": {
         "x": 640,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4851,7 +4875,7 @@
     "/game objects/text/text padding.jpg": {
       "frame": {
         "x": 640,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4875,7 +4899,7 @@
     "/game objects/text/text with fallback font.jpg": {
       "frame": {
         "x": 640,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4899,7 +4923,7 @@
     "/game objects/text/to json.jpg": {
       "frame": {
         "x": 640,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -4922,8 +4946,8 @@
     },
     "/game objects/text/word wrap by callback.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1920,
+        "x": 768,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4946,7 +4970,7 @@
     },
     "/game objects/text/word wrap by width.jpg": {
       "frame": {
-        "x": 768,
+        "x": 896,
         "y": 768,
         "w": 128,
         "h": 96
@@ -4970,7 +4994,7 @@
     },
     "/game objects/tile sprite/atlas - canvas.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 768,
         "w": 128,
         "h": 96
@@ -4994,7 +5018,7 @@
     },
     "/game objects/tile sprite/atlas.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5018,7 +5042,7 @@
     },
     "/game objects/tile sprite/change frame and size.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5042,7 +5066,7 @@
     },
     "/game objects/tile sprite/change frame.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5066,7 +5090,7 @@
     },
     "/game objects/tile sprite/change single frame.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5090,7 +5114,7 @@
     },
     "/game objects/tile sprite/create from frame.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5114,7 +5138,7 @@
     },
     "/game objects/tile sprite/example - canvas.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5138,7 +5162,7 @@
     },
     "/game objects/tile sprite/example 2 - canvas.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5162,8 +5186,8 @@
     },
     "/game objects/tile sprite/example 2.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 768,
+        "x": 768,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5187,7 +5211,7 @@
     "/game objects/tile sprite/example.jpg": {
       "frame": {
         "x": 768,
-        "y": 864,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5211,7 +5235,7 @@
     "/game objects/tile sprite/flipped.jpg": {
       "frame": {
         "x": 768,
-        "y": 960,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5235,7 +5259,7 @@
     "/game objects/tile sprite/tilesprite pixel art test.jpg": {
       "frame": {
         "x": 768,
-        "y": 1056,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -5259,7 +5283,7 @@
     "/game objects/video/change video source.jpg": {
       "frame": {
         "x": 768,
-        "y": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -5283,7 +5307,7 @@
     "/game objects/video/load video from stream.jpg": {
       "frame": {
         "x": 768,
-        "y": 1248,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -5307,7 +5331,7 @@
     "/game objects/video/load video from url.jpg": {
       "frame": {
         "x": 768,
-        "y": 1344,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -5331,7 +5355,7 @@
     "/game objects/video/loop video.jpg": {
       "frame": {
         "x": 768,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -5355,7 +5379,7 @@
     "/game objects/video/multiple video instances.jpg": {
       "frame": {
         "x": 768,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -5379,7 +5403,7 @@
     "/game objects/video/multiple videos.jpg": {
       "frame": {
         "x": 768,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -5403,7 +5427,7 @@
     "/game objects/video/on complete event.jpg": {
       "frame": {
         "x": 768,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -5427,7 +5451,7 @@
     "/game objects/video/play video.jpg": {
       "frame": {
         "x": 768,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -5450,8 +5474,8 @@
     },
     "/game objects/video/stream video from webcam.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1920,
+        "x": 896,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5474,7 +5498,7 @@
     },
     "/game objects/video/transparent video.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5498,7 +5522,7 @@
     },
     "/game objects/video/video as shader texture.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5522,7 +5546,7 @@
     },
     "/game objects/video/video controls.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5546,7 +5570,7 @@
     },
     "/game objects/video/video set current time.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5570,7 +5594,7 @@
     },
     "/game objects/video/video snapshot area.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5594,7 +5618,7 @@
     },
     "/game objects/video/video snapshot.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5618,7 +5642,7 @@
     },
     "/game objects/video/video to sprites.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5642,7 +5666,7 @@
     },
     "/game objects/video/video transition.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5666,8 +5690,8 @@
     },
     "/games/avoid the germs/boot.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 864,
+        "x": 896,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5690,7 +5714,7 @@
     },
     "/games/bank panic/boot.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1024,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5714,7 +5738,7 @@
     },
     "/games/breakout/breakout.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5738,7 +5762,7 @@
     },
     "/games/card memory/boot.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5762,7 +5786,7 @@
     },
     "/games/emoji match/boot.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5786,7 +5810,7 @@
     },
     "/games/firstgame/part10.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5810,7 +5834,7 @@
     },
     "/games/firstgame/part3.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5834,7 +5858,7 @@
     },
     "/games/firstgame/part4.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5858,7 +5882,7 @@
     },
     "/games/firstgame/part5.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5882,8 +5906,8 @@
     },
     "/games/firstgame/part6.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 960,
+        "x": 896,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5907,7 +5931,7 @@
     "/games/firstgame/part7.jpg": {
       "frame": {
         "x": 896,
-        "y": 1056,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -5931,7 +5955,7 @@
     "/games/firstgame/part8.jpg": {
       "frame": {
         "x": 896,
-        "y": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -5955,7 +5979,7 @@
     "/games/firstgame/part9.jpg": {
       "frame": {
         "x": 896,
-        "y": 1248,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -5979,7 +6003,7 @@
     "/games/flood fill/flood-fill.jpg": {
       "frame": {
         "x": 896,
-        "y": 1344,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -6003,7 +6027,7 @@
     "/games/minesweeper/minesweeper.jpg": {
       "frame": {
         "x": 896,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -6027,7 +6051,7 @@
     "/games/sliding puzzle/boot.jpg": {
       "frame": {
         "x": 896,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -6051,7 +6075,7 @@
     "/games/snake/part1.jpg": {
       "frame": {
         "x": 896,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -6075,7 +6099,7 @@
     "/games/snake/part2.jpg": {
       "frame": {
         "x": 896,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -6099,7 +6123,7 @@
     "/games/snake/part3.jpg": {
       "frame": {
         "x": 896,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -6122,8 +6146,8 @@
     },
     "/games/snowmen attack/boot.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1920,
+        "x": 1024,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -6146,7 +6170,7 @@
     },
     "/games/stacker/stacker.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1152,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6170,7 +6194,7 @@
     },
     "/games/tom/boot.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6194,7 +6218,7 @@
     },
     "/geom/circle/area.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6218,7 +6242,7 @@
     },
     "/geom/circle/change size.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6242,7 +6266,7 @@
     },
     "/geom/circle/circumference point.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6266,7 +6290,7 @@
     },
     "/geom/circle/circumference.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6290,7 +6314,7 @@
     },
     "/geom/circle/clone.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6314,8 +6338,8 @@
     },
     "/geom/circle/contains point.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1056,
+        "x": 1024,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6339,7 +6363,7 @@
     "/geom/circle/contains rect.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -6363,7 +6387,7 @@
     "/geom/circle/contains.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1248,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -6387,7 +6411,7 @@
     "/geom/circle/copy from.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1344,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -6411,7 +6435,7 @@
     "/geom/circle/create.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -6435,7 +6459,7 @@
     "/geom/circle/equals.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -6459,7 +6483,7 @@
     "/geom/circle/get bounds.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -6483,7 +6507,7 @@
     "/geom/circle/get point at.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -6507,7 +6531,7 @@
     "/geom/circle/get points.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -6530,8 +6554,8 @@
     },
     "/geom/circle/get random point.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 1920,
+        "x": 1152,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6554,7 +6578,7 @@
     },
     "/geom/circle/is empty.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1280,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6578,7 +6602,7 @@
     },
     "/geom/circle/offset point.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6602,7 +6626,7 @@
     },
     "/geom/circle/offset.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6626,7 +6650,7 @@
     },
     "/geom/circle/properties.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6650,7 +6674,7 @@
     },
     "/geom/circle/set empty.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6674,7 +6698,7 @@
     },
     "/geom/circle/set position.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6698,8 +6722,8 @@
     },
     "/geom/circle/set to.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1152,
+        "x": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -6723,7 +6747,7 @@
     "/geom/ellipse/adjust size.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1248,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -6747,7 +6771,7 @@
     "/geom/ellipse/area.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1344,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -6771,7 +6795,7 @@
     "/geom/ellipse/circumference point.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -6795,7 +6819,7 @@
     "/geom/ellipse/circumference.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -6819,7 +6843,7 @@
     "/geom/ellipse/clone.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -6843,7 +6867,7 @@
     "/geom/ellipse/contains point.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -6867,7 +6891,7 @@
     "/geom/ellipse/contains rect.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -6890,8 +6914,8 @@
     },
     "/geom/ellipse/contains.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 1920,
+        "x": 1280,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -6914,7 +6938,7 @@
     },
     "/geom/ellipse/copy from.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 1248,
         "w": 128,
         "h": 96
@@ -6938,7 +6962,7 @@
     },
     "/geom/ellipse/create ellipse.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 1248,
         "w": 128,
         "h": 96
@@ -6962,7 +6986,7 @@
     },
     "/geom/ellipse/equals.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 1248,
         "w": 128,
         "h": 96
@@ -6986,7 +7010,7 @@
     },
     "/geom/ellipse/get bounds.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 1248,
         "w": 128,
         "h": 96
@@ -7010,7 +7034,7 @@
     },
     "/geom/ellipse/get major radius.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 1248,
         "w": 128,
         "h": 96
@@ -7034,8 +7058,8 @@
     },
     "/geom/ellipse/get minor radius.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1248,
+        "x": 1280,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -7058,7 +7082,7 @@
     },
     "/geom/ellipse/get point at.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1408,
         "y": 1344,
         "w": 128,
         "h": 96
@@ -7082,7 +7106,7 @@
     },
     "/geom/ellipse/get points.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 1344,
         "w": 128,
         "h": 96
@@ -7106,7 +7130,7 @@
     },
     "/geom/ellipse/get random point.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 1344,
         "w": 128,
         "h": 96
@@ -7130,7 +7154,7 @@
     },
     "/geom/ellipse/is empty.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 1344,
         "w": 128,
         "h": 96
@@ -7154,7 +7178,7 @@
     },
     "/geom/ellipse/move ellipse.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 1344,
         "w": 128,
         "h": 96
@@ -7178,8 +7202,8 @@
     },
     "/geom/ellipse/offset point.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1344,
+        "x": 1280,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -7203,7 +7227,7 @@
     "/geom/ellipse/offset.jpg": {
       "frame": {
         "x": 1280,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7227,7 +7251,7 @@
     "/geom/ellipse/properties.jpg": {
       "frame": {
         "x": 1280,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7251,7 +7275,7 @@
     "/geom/ellipse/set empty.jpg": {
       "frame": {
         "x": 1280,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7275,7 +7299,7 @@
     "/geom/ellipse/set position.jpg": {
       "frame": {
         "x": 1280,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7299,7 +7323,7 @@
     "/geom/ellipse/set size.jpg": {
       "frame": {
         "x": 1280,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7322,8 +7346,8 @@
     },
     "/geom/ellipse/set to.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1920,
+        "x": 1408,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -7346,7 +7370,7 @@
     },
     "/geom/intersects/circle to circle.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1536,
         "y": 1440,
         "w": 128,
         "h": 96
@@ -7370,7 +7394,7 @@
     },
     "/geom/intersects/get rectangle intersection.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 1440,
         "w": 128,
         "h": 96
@@ -7394,7 +7418,7 @@
     },
     "/geom/intersects/line to circle.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 1440,
         "w": 128,
         "h": 96
@@ -7418,7 +7442,7 @@
     },
     "/geom/intersects/line to line.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 1440,
         "w": 128,
         "h": 96
@@ -7442,8 +7466,8 @@
     },
     "/geom/intersects/line to rectangle.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1440,
+        "x": 1408,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7467,7 +7491,7 @@
     "/geom/intersects/point to line segment.jpg": {
       "frame": {
         "x": 1408,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7491,7 +7515,7 @@
     "/geom/intersects/rectangle to circle.jpg": {
       "frame": {
         "x": 1408,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7515,7 +7539,7 @@
     "/geom/intersects/rectangle to rectangle.jpg": {
       "frame": {
         "x": 1408,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7539,7 +7563,7 @@
     "/geom/intersects/rectangle to triangle.jpg": {
       "frame": {
         "x": 1408,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7562,8 +7586,8 @@
     },
     "/geom/intersects/rectangle to values.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 1920,
+        "x": 1536,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7586,7 +7610,7 @@
     },
     "/geom/intersects/triangle to circle.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1664,
         "y": 1536,
         "w": 128,
         "h": 96
@@ -7610,7 +7634,7 @@
     },
     "/geom/intersects/triangle to line.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 1536,
         "w": 128,
         "h": 96
@@ -7634,7 +7658,7 @@
     },
     "/geom/intersects/triangle to triangle.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 1536,
         "w": 128,
         "h": 96
@@ -7658,8 +7682,8 @@
     },
     "/geom/line/angle.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1536,
+        "x": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7683,7 +7707,7 @@
     "/geom/line/bresenham points.jpg": {
       "frame": {
         "x": 1536,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7707,7 +7731,7 @@
     "/geom/line/center on.jpg": {
       "frame": {
         "x": 1536,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7731,7 +7755,7 @@
     "/geom/line/clone.jpg": {
       "frame": {
         "x": 1536,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7754,8 +7778,8 @@
     },
     "/geom/line/copy from.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 1920,
+        "x": 1664,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7778,7 +7802,7 @@
     },
     "/geom/line/create.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 1632,
         "w": 128,
         "h": 96
@@ -7802,7 +7826,7 @@
     },
     "/geom/line/equals.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 1632,
         "w": 128,
         "h": 96
@@ -7826,8 +7850,8 @@
     },
     "/geom/line/get mid point.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1632,
+        "x": 1664,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7850,7 +7874,7 @@
     },
     "/geom/line/get normal.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 1728,
         "w": 128,
         "h": 96
@@ -7874,7 +7898,7 @@
     },
     "/geom/line/get point ab.jpg": {
       "frame": {
-        "x": 1792,
+        "x": 1920,
         "y": 1728,
         "w": 128,
         "h": 96
@@ -7898,8 +7922,8 @@
     },
     "/geom/line/get point at.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1728,
+        "x": 1664,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7923,30 +7947,6 @@
     "/geom/line/get points.jpg": {
       "frame": {
         "x": 1664,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/geom/line/get random point.jpg": {
-      "frame": {
-        "x": 1664,
         "y": 1920,
         "w": 128,
         "h": 96
@@ -7968,7 +7968,7 @@
         "y": 0.5
       }
     },
-    "/geom/line/height.jpg": {
+    "/geom/line/get random point.jpg": {
       "frame": {
         "x": 1792,
         "y": 1824,
@@ -7992,7 +7992,7 @@
         "y": 0.5
       }
     },
-    "/geom/line/length.jpg": {
+    "/geom/line/height.jpg": {
       "frame": {
         "x": 1920,
         "y": 1824,
@@ -8016,7 +8016,7 @@
         "y": 0.5
       }
     },
-    "/geom/line/normal angle.jpg": {
+    "/geom/line/length.jpg": {
       "frame": {
         "x": 1792,
         "y": 1920,
@@ -8040,7 +8040,7 @@
         "y": 0.5
       }
     },
-    "/geom/line/normal xy.jpg": {
+    "/geom/line/normal angle.jpg": {
       "frame": {
         "x": 1920,
         "y": 1920,
@@ -8067,7 +8067,7 @@
     "/games/snake/part4.jpg": {
       "frame": {
         "x": 896,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -8091,7 +8091,7 @@
     "/games/snake/part5.jpg": {
       "frame": {
         "x": 896,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -8115,7 +8115,7 @@
     "/games/snake/part6.jpg": {
       "frame": {
         "x": 896,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -8139,7 +8139,7 @@
     "/games/snake/part7.jpg": {
       "frame": {
         "x": 896,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -8163,7 +8163,7 @@
     "/geom/intersects/point to line.jpg": {
       "frame": {
         "x": 1408,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },

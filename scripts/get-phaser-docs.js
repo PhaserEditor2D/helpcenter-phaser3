@@ -59,4 +59,4 @@ for (const entry of inputData.docs) {
     outputData.docs.push(entry);
 }
 
-fs.writeFileSync(path.join("../source/app/plugins/helpcenter.phaser/data/phaser-docs.json"), JSON.stringify(outputData, null, 2));
+fs.writeFileSync(path.join("../source/editor/app/plugins/helpcenter.phaser/_res/phaser-docs.json"), JSON.stringify(outputData, null, 2));

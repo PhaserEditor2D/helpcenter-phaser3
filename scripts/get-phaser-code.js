@@ -45,4 +45,4 @@ function readDir(folder) {
 readDir(path.join(phaserHome, "phaser/src"));
 readDir(path.join(phaserHome, "phaser/plugins/fbinstant/src"));
 
-fs.writeFileSync(path.join("../source/app/plugins/helpcenter.phaser/data/phaser-code.json"), JSON.stringify(data, null, 2));
+fs.writeFileSync(path.join("../source/editor/app/plugins/helpcenter.phaser/_res/phaser-code.json"), JSON.stringify(data, null, 2));

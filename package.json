@@ -10,7 +10,7 @@
     "ts-clean": "cd source/editor/app/ && tsc -b -clean",
     "build": "cd scripts/ && ./dist.sh",
     "watch": "cd source/editor/app/ && tsc -b -w",
-    "build-examples-atlas": "free-tex-packer-cli --project scripts/texture-packer-project.ftpp --output source/app/plugins/helpcenter.phaser/data/examples-screenshots-atlas",
+    "build-examples-atlas": "free-tex-packer-cli --project scripts/texture-packer-project.ftpp --output source/editor/app/plugins/helpcenter.phaser/data/examples-screenshots-atlas",
     "get-phaser-examples": "cd scripts && node get-phaser-examples.js",
     "update-pwa": "cd scripts/ && node make-sw-assets.js",
     "get-phaser": "cd scripts/ && ./get-all-metadata.sh",
@@ -20,7 +20,7 @@
   "author": "Arian Fornaris <developers@phasereditor2d.com> (https://phasereditor2d.com)",
   "license": "MIT",
   "devDependencies": {
-    "colibri-packer": "file:../colibri-packer",
+    "colibri-packer": "^1.1.2",
     "free-tex-packer-cli": "^0.2.8",
     "tslint": "^6.1.3",
     "typescript": "^4.1.2"

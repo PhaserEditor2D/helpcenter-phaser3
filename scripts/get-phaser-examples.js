@@ -5,15 +5,15 @@ const path = require("path");
 const fs = require("fs");
 
 const phaserHome = process.env["PHASER_PATH"];
-const plugin = "../source/app/plugins/helpcenter.phaser/data";
+const plugin = "../source/editor/app/plugins/helpcenter.phaser/";
 
-child_process.execSync(`cp -r ${path.join(phaserHome, "phaser3-examples/public/examples.json")} ${path.join(plugin, "phaser-examples.json")}`);
-child_process.execSync(`rm -Rf ${path.join(plugin, "phaser3-examples/")}`);
-child_process.execSync(`mkdir -p ${path.join(plugin, "phaser3-examples/screenshots")}`);
+child_process.execSync(`cp -r ${path.join(phaserHome, "phaser3-examples/public/examples.json")} ${path.join(plugin, "_res", "phaser-examples.json")}`);
+child_process.execSync(`rm -Rf ${path.join(plugin, "data", "phaser3-examples/")}`);
+child_process.execSync(`mkdir -p ${path.join(plugin, "data", "phaser3-examples/screenshots")}`);
 
 child_process.execSync("cp -Rf "
     + path.join(phaserHome, "phaser3-examples/public/screenshots/") + " "
-    + path.join(plugin, "phaser3-examples/screenshots/"));
+    + path.join(plugin, "data", "phaser3-examples/screenshots/"));
 
 function resizeImage(dir) {
 
@@ -51,13 +51,14 @@ function resizeImage(dir) {
 
 function processScreenshots() {
 
-    resizeImage(path.join(plugin, "phaser3-examples/screenshots"));
+    resizeImage(path.join(plugin, "data", "phaser3-examples/screenshots"));
 
-    const atlasFolder = path.join(plugin, "examples-screenshots-atlas/");
+    const atlasFolder = path.join(plugin, "data", "examples-screenshots-atlas/");
 
     child_process.execSync("mkdir -p " + atlasFolder);
     child_process.execSync("cd ..; npm run build-examples-atlas");
-    child_process.execSync("rm -Rf " + path.join(plugin, "phaser3-examples/"));
+    child_process.execSync("rm -Rf " + path.join(plugin, "data", "phaser3-examples/"));
+
     child_process.execSync('cd ' + atlasFolder + '; for i in *.jpg; do ffmpeg -i "$i" "${i%.*}.webp"; done; rm *.jpg');
 }
 
@@ -107,7 +108,7 @@ function processCode() {
 
     processCode2(root);
 
-    fs.writeFileSync(path.join(plugin, "phaser-examples-code.json"), JSON.stringify(data, null, 2));
+    fs.writeFileSync(path.join(plugin, "_res", "phaser-examples-code.json"), JSON.stringify(data, null, 2));
 }
 
 processScreenshots();

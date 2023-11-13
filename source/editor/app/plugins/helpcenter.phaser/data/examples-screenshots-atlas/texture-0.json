@@ -7200,7 +7200,7 @@
         "y": 0.5
       }
     },
-    "/depth sorting/3d depth sort.jpg": {
+    "/depth sorting/ball mesh depth sort.jpg": {
       "frame": {
         "x": 1280,
         "y": 1440,
@@ -7248,7 +7248,7 @@
         "y": 0.5
       }
     },
-    "/depth sorting/depth sorting.jpg": {
+    "/depth sorting/get top object.jpg": {
       "frame": {
         "x": 1280,
         "y": 1632,
@@ -7272,7 +7272,7 @@
         "y": 0.5
       }
     },
-    "/depth sorting/get top object.jpg": {
+    "/depth sorting/isometric blocks.jpg": {
       "frame": {
         "x": 1280,
         "y": 1728,
@@ -7296,7 +7296,7 @@
         "y": 0.5
       }
     },
-    "/depth sorting/isometric blocks.jpg": {
+    "/depth sorting/isometric map.jpg": {
       "frame": {
         "x": 1280,
         "y": 1824,
@@ -7320,7 +7320,7 @@
         "y": 0.5
       }
     },
-    "/depth sorting/isometric map.jpg": {
+    "/depth sorting/remove from display list.jpg": {
       "frame": {
         "x": 1280,
         "y": 1920,
@@ -7344,7 +7344,7 @@
         "y": 0.5
       }
     },
-    "/depth sorting/remove from display list.jpg": {
+    "/depth sorting/sprite depth index.jpg": {
       "frame": {
         "x": 1408,
         "y": 1440,
@@ -8472,7 +8472,7 @@
         "y": 0.5
       }
     },
-    "/display/color/hex string to color.jpg": {
+    "/display/color/hex to color.jpg": {
       "frame": {
         "x": 256,
         "y": 1248,
@@ -8496,7 +8496,7 @@
         "y": 0.5
       }
     },
-    "/display/color/rgb string to color.jpg": {
+    "/display/color/integer to color.jpg": {
       "frame": {
         "x": 256,
         "y": 1248,
@@ -8520,7 +8520,7 @@
         "y": 0.5
       }
     },
-    "/display/color/value to color.jpg": {
+    "/display/color/rgb to color.jpg": {
       "frame": {
         "x": 256,
         "y": 1248,

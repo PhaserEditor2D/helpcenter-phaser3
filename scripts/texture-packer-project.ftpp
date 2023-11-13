@@ -2,10 +2,10 @@
   "meta": {
     "version": "0.6.6"
   },
-  "savePath": "/Users/arian/Documents/PhaserEditor2D/helpcenter-phaser3/source/app/plugins/helpcenter.phaser/data/examples-screenshots-atlas",
+  "savePath": "/Users/arian/Documents/PhaserEditor2D/helpcenter-phaser3/source/editor/app/plugins/helpcenter.phaser/data/examples-screenshots-atlas",
   "images": [],
   "folders": [
-    "/Users/arian/Documents/PhaserEditor2D/helpcenter-phaser3/source/app/plugins/helpcenter.phaser/data/phaser3-examples/screenshots/"
+    "/Users/arian/Documents/PhaserEditor2D/helpcenter-phaser3/source/editor/app/plugins/helpcenter.phaser/data/phaser3-examples/screenshots/"
   ],
   "packOptions": {
     "textureName": "texture",
@@ -20,7 +20,7 @@
     "filter": "none",
     "exporter": "JSON (hash)",
     "fileName": "pack-result",
-    "savePath": "/home/arian/Documents/PhaserEditor-3/helpcenter/source/app/plugins/helpcenter.phaser/data/examples-screenshots-atlas",
+    "savePath": "/home/arian/Documents/PhaserEditor-3/helpcenter/source/editor/app/plugins/helpcenter.phaser/data/examples-screenshots-atlas",
     "width": 2048,
     "height": 2048,
     "fixedSize": false,

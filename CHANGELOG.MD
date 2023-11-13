@@ -1,5 +1,9 @@
 # Change Log
 
+## v1.3.2 - Nov 13, 2023
+
+* Adds support to Phaser v3.70.
+
 ## v1.3.1 - Jul 28, 2023
 
 * Improves loading size.
