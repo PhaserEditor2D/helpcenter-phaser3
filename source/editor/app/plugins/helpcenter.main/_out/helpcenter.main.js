@@ -630,7 +630,7 @@ var helpcenter;
                         clientArea.style.overflowY = "scroll";
                         clientArea.innerHTML = `
             <center>
-                <img src="app/favicon.png">
+                <img src="editor/static/favicon.png">
                 <h4>Unofficial Phaser Help Center</h4>
                 <small><b>v${colibri.PRODUCT_VERSION} - Phaser ${helpcenter.phaser.PHASER_VER}</small></b>
                 <p>Developed by the <a href="https://phasereditor2d.com" target="_blank">Phaser Editor 2D team</a></p>
