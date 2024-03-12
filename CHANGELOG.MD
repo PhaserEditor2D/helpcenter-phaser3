@@ -1,5 +1,9 @@
 # Change Log
 
+## v1.3.3 - Mar 12, 2024
+
+* Adds support to Phaser v3.80.1.
+
 ## v1.3.2 - Nov 13, 2023
 
 * Adds support to Phaser v3.70.
