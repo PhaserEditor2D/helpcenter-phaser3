@@ -9,7 +9,7 @@
         {
           "path": "src\\actions\\align to base.js",
           "name": "align to base.js",
-          "birthtimeMs": 1681468686297.133
+          "birthtimeMs": 1706718664494.773
         },
         {
           "path": "src\\actions\\align to offset.js",
@@ -666,6 +666,11 @@
       "name": "bugs",
       "children": [
         {
+          "path": "src\\bugs\\0000 audio play.js",
+          "name": "0000 audio play.js",
+          "birthtimeMs": 1708450237601.2473
+        },
+        {
           "path": "src\\bugs\\0000 big load 1024 canvas.js",
           "name": "0000 big load 1024 canvas.js",
           "birthtimeMs": 1690891577658.6875
@@ -766,9 +771,14 @@
           "birthtimeMs": 1689351345489.9456
         },
         {
+          "path": "src\\bugs\\0000 put tile at.js",
+          "name": "0000 put tile at.js",
+          "birthtimeMs": 1708452116049.2246
+        },
+        {
           "path": "src\\bugs\\0000 round pixels.js",
           "name": "0000 round pixels.js",
-          "birthtimeMs": 1699382772693.7903
+          "birthtimeMs": 1706718746190.0066
         },
         {
           "path": "src\\bugs\\0000 rp test.js",
@@ -849,6 +859,11 @@
           "path": "src\\bugs\\5429 stroke.js",
           "name": "5429 stroke.js",
           "birthtimeMs": 1668780723633.0815
+        },
+        {
+          "path": "src\\bugs\\5441 poly bounds.js",
+          "name": "5441 poly bounds.js",
+          "birthtimeMs": 1706800209128.9475
         },
         {
           "path": "src\\bugs\\5445 rt snapshot.js",
@@ -1376,6 +1391,36 @@
           "birthtimeMs": 1699539124618.4812
         },
         {
+          "path": "src\\bugs\\6674 resize.js",
+          "name": "6674 resize.js",
+          "birthtimeMs": 1708360673778.6284
+        },
+        {
+          "path": "src\\bugs\\6677 bloom.js",
+          "name": "6677 bloom.js",
+          "birthtimeMs": 1706725929343.5146
+        },
+        {
+          "path": "src\\bugs\\6681 fx frame.js",
+          "name": "6681 fx frame.js",
+          "birthtimeMs": 1706731480619.2341
+        },
+        {
+          "path": "src\\bugs\\6682 dyn can.js",
+          "name": "6682 dyn can.js",
+          "birthtimeMs": 1706722276289.134
+        },
+        {
+          "path": "src\\bugs\\6691 trim tile.js",
+          "name": "6691 trim tile.js",
+          "birthtimeMs": 1708524159393.3452
+        },
+        {
+          "path": "src\\bugs\\6724 layer.js",
+          "name": "6724 layer.js",
+          "birthtimeMs": 1706718746135.3435
+        },
+        {
           "path": "src\\bugs\\polygon rays.js",
           "name": "polygon rays.js",
           "birthtimeMs": 1675444282700.5122
@@ -1542,7 +1587,7 @@
         {
           "path": "src\\camera\\follow user controlled sprite.js",
           "name": "follow user controlled sprite.js",
-          "birthtimeMs": 1681468686334.3901
+          "birthtimeMs": 1706815476271.333
         },
         {
           "path": "src\\camera\\follow zoom tilemap.js",
@@ -2136,6 +2181,11 @@
               "birthtimeMs": 1681468686356.4707
             },
             {
+              "path": "src\\display\\masks\\geometry mask from shape.js",
+              "name": "geometry mask from shape.js",
+              "birthtimeMs": 1708611639797.0747
+            },
+            {
               "path": "src\\display\\masks\\graphics bitmap mask.js",
               "name": "graphics bitmap mask.js",
               "birthtimeMs": 1681468686357.47
@@ -2382,7 +2432,7 @@
             {
               "path": "src\\fx\\blur\\blur fx.js",
               "name": "blur fx.js",
-              "birthtimeMs": 1681468686363.5405
+              "birthtimeMs": 1706718746135.3435
             },
             {
               "path": "src\\fx\\blur\\container blur.js",
@@ -3494,7 +3544,7 @@
             {
               "path": "src\\game objects\\dom element\\move camera.js",
               "name": "move camera.js",
-              "birthtimeMs": 1681468686397.282
+              "birthtimeMs": 1706718587095.9844
             },
             {
               "path": "src\\game objects\\dom element\\physics element.js",
@@ -4053,7 +4103,7 @@
             {
               "path": "src\\game objects\\layer\\add sprite to layer.js",
               "name": "add sprite to layer.js",
-              "birthtimeMs": 1606473234199.6675
+              "birthtimeMs": 1706718593055.4797
             },
             {
               "path": "src\\game objects\\layer\\create layer.js",
@@ -4210,6 +4260,11 @@
           "name": "mesh",
           "children": [
             {
+              "path": "src\\game objects\\mesh\\mesh drag input.js",
+              "name": "mesh drag input.js",
+              "birthtimeMs": 1707490172681.083
+            },
+            {
               "path": "src\\game objects\\mesh\\mesh from array.js",
               "name": "mesh from array.js",
               "birthtimeMs": 1604939822376.5889
@@ -4228,6 +4283,11 @@
               "path": "src\\game objects\\mesh\\mesh input.js",
               "name": "mesh input.js",
               "birthtimeMs": 1681468686420.4678
+            },
+            {
+              "path": "src\\game objects\\mesh\\mesh pointer input.js",
+              "name": "mesh pointer input.js",
+              "birthtimeMs": 1707490172681.083
             },
             {
               "path": "src\\game objects\\mesh\\race track.js",
@@ -4990,6 +5050,11 @@
               "path": "src\\game objects\\plane\\create plane.js",
               "name": "create plane.js",
               "birthtimeMs": 1681468686445.3843
+            },
+            {
+              "path": "src\\game objects\\plane\\plane drag input.js",
+              "name": "plane drag input.js",
+              "birthtimeMs": 1708360673698.7002
             },
             {
               "path": "src\\game objects\\plane\\plane pop-up effect.js",
@@ -5854,7 +5919,7 @@
             {
               "path": "src\\game objects\\tile sprite\\tilesprite pixel art test.js",
               "name": "tilesprite pixel art test.js",
-              "birthtimeMs": 1681468686481.9036
+              "birthtimeMs": 1708360672003.1638
             }
           ],
           "birthtimeMs": 1493216634892.0383
@@ -6095,6 +6160,43 @@
             }
           ],
           "birthtimeMs": 1681468686488.7283
+        },
+        {
+          "path": "src\\games\\coin clicker",
+          "name": "coin clicker",
+          "children": [
+            {
+              "path": "src\\games\\coin clicker\\Boot.js",
+              "name": "Boot.js",
+              "birthtimeMs": 1706718746136.3428
+            },
+            {
+              "path": "src\\games\\coin clicker\\ClickerGame.js",
+              "name": "ClickerGame.js",
+              "birthtimeMs": 1706718746136.3428
+            },
+            {
+              "path": "src\\games\\coin clicker\\GameOver.js",
+              "name": "GameOver.js",
+              "birthtimeMs": 1706718746137.343
+            },
+            {
+              "path": "src\\games\\coin clicker\\main.js",
+              "name": "main.js",
+              "birthtimeMs": 1706718746138.3423
+            },
+            {
+              "path": "src\\games\\coin clicker\\MainMenu.js",
+              "name": "MainMenu.js",
+              "birthtimeMs": 1706718746137.343
+            },
+            {
+              "path": "src\\games\\coin clicker\\Preloader.js",
+              "name": "Preloader.js",
+              "birthtimeMs": 1706718746138.3423
+            }
+          ],
+          "birthtimeMs": 1706718746135.3435
         },
         {
           "path": "src\\games\\emoji match",
@@ -6780,7 +6882,7 @@
             {
               "path": "src\\geom\\line\\angle.js",
               "name": "angle.js",
-              "birthtimeMs": 1681468686507.85
+              "birthtimeMs": 1706718605177.3037
             },
             {
               "path": "src\\geom\\line\\bresenham points.js",
@@ -6811,6 +6913,11 @@
               "path": "src\\geom\\line\\equals.js",
               "name": "equals.js",
               "birthtimeMs": 1681468686508.8499
+            },
+            {
+              "path": "src\\geom\\line\\get eased points.js",
+              "name": "get eased points.js",
+              "birthtimeMs": 1706720787768.0173
             },
             {
               "path": "src\\geom\\line\\get mid point.js",
@@ -8320,6 +8427,21 @@
           "name": "base64",
           "children": [
             {
+              "path": "src\\loader\\base64\\base64 bitmap font.js",
+              "name": "base64 bitmap font.js",
+              "birthtimeMs": 1706811587144.7039
+            },
+            {
+              "path": "src\\loader\\base64\\base64 image.js",
+              "name": "base64 image.js",
+              "birthtimeMs": 1706809382856.2856
+            },
+            {
+              "path": "src\\loader\\base64\\base64 texture atlas.js",
+              "name": "base64 texture atlas.js",
+              "birthtimeMs": 1706813759269.2083
+            },
+            {
               "path": "src\\loader\\base64\\bitmap text.js",
               "name": "bitmap text.js",
               "birthtimeMs": 1681468686558.0305
@@ -9068,7 +9190,7 @@
             {
               "path": "src\\paths\\followers\\leave path.js",
               "name": "leave path.js",
-              "birthtimeMs": 1690477379893.2249
+              "birthtimeMs": 1708524159393.3452
             },
             {
               "path": "src\\paths\\followers\\mass followers.js",
@@ -10472,6 +10594,11 @@
           "birthtimeMs": 1681468686623.5737
         },
         {
+          "path": "src\\scalemanager\\fit and snap.js",
+          "name": "fit and snap.js",
+          "birthtimeMs": 1708360673778.6284
+        },
+        {
           "path": "src\\scalemanager\\fit min max.js",
           "name": "fit min max.js",
           "birthtimeMs": 1681468686623.5737
@@ -10661,7 +10788,7 @@
         {
           "path": "src\\scenes\\extend scene from object.js",
           "name": "extend scene from object.js",
-          "birthtimeMs": 1681468686627.5967
+          "birthtimeMs": 1706718746191.008
         },
         {
           "path": "src\\scenes\\external scene",
@@ -11237,7 +11364,7 @@
         {
           "path": "src\\spine4\\basic spineboy.js",
           "name": "basic spineboy.js",
-          "birthtimeMs": 1681468686639.1062
+          "birthtimeMs": 1706797332593.2395
         },
         {
           "path": "src\\spine4\\batch test.js",
@@ -11660,7 +11787,7 @@
         {
           "path": "src\\textures\\texture packer atlas.js",
           "name": "texture packer atlas.js",
-          "birthtimeMs": 1681468686650.6155
+          "birthtimeMs": 1706718640037.4106
         },
         {
           "path": "src\\textures\\trimmed frame from multi atlas.js",
@@ -11682,7 +11809,7 @@
         {
           "path": "src\\tilemap\\base tile size.js",
           "name": "base tile size.js",
-          "birthtimeMs": 1681468686651.6143
+          "birthtimeMs": 1708524159393.3452
         },
         {
           "path": "src\\tilemap\\collision",
@@ -11731,7 +11858,7 @@
             {
               "path": "src\\tilemap\\collision\\multiple tile sizes.js",
               "name": "multiple tile sizes.js",
-              "birthtimeMs": 1681468686652.6143
+              "birthtimeMs": 1708524159394.3481
             },
             {
               "path": "src\\tilemap\\collision\\simple map.js",
@@ -11746,7 +11873,7 @@
             {
               "path": "src\\tilemap\\collision\\tilemap spotlight.js",
               "name": "tilemap spotlight.js",
-              "birthtimeMs": 1655130604370.1963
+              "birthtimeMs": 1708524159394.3481
             }
           ],
           "birthtimeMs": 1604062602931.6265
@@ -11765,6 +11892,11 @@
           "path": "src\\tilemap\\create from objects.js",
           "name": "create from objects.js",
           "birthtimeMs": 1681468686653.615
+        },
+        {
+          "path": "src\\tilemap\\create from tiles.js",
+          "name": "create from tiles.js",
+          "birthtimeMs": 1708524159394.3481
         },
         {
           "path": "src\\tilemap\\creating blank layers.js",
@@ -11814,7 +11946,7 @@
         {
           "path": "src\\tilemap\\grid movement.js",
           "name": "grid movement.js",
-          "birthtimeMs": 1681468686654.615
+          "birthtimeMs": 1708360673699.7039
         },
         {
           "path": "src\\tilemap\\isometric",
@@ -12127,6 +12259,11 @@
               "birthtimeMs": 1681468686664.1282
             },
             {
+              "path": "src\\time\\timeline\\repeat timeline.js",
+              "name": "repeat timeline.js",
+              "birthtimeMs": 1708360673699.7039
+            },
+            {
               "path": "src\\time\\timeline\\run timed events.js",
               "name": "run timed events.js",
               "birthtimeMs": 1681468686664.1282
@@ -12314,7 +12451,7 @@
             {
               "path": "src\\tweens\\chains\\basic tween chain.js",
               "name": "basic tween chain.js",
-              "birthtimeMs": 1663330528424.8682
+              "birthtimeMs": 1706718626047.1309
             },
             {
               "path": "src\\tweens\\chains\\bat tween.js",
@@ -12499,7 +12636,7 @@
         {
           "path": "src\\tweens\\loop.js",
           "name": "loop.js",
-          "birthtimeMs": 1681468686677.1392
+          "birthtimeMs": 1706718636661.2493
         },
         {
           "path": "src\\tweens\\remove tween.js",

@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!node
 const child_process = require("child_process");
 const process = require("process");
 const path = require("path");

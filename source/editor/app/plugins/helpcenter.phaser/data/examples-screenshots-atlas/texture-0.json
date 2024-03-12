@@ -1776,10 +1776,34 @@
         "y": 0.5
       }
     },
-    "/animation/play after repeat.jpg": {
+    "/animation/play after random delay.jpg": {
       "frame": {
         "x": 128,
         "y": 1056,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/animation/play after repeat.jpg": {
+      "frame": {
+        "x": 128,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -1803,7 +1827,7 @@
     "/animation/play animation with config.jpg": {
       "frame": {
         "x": 128,
-        "y": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -1827,7 +1851,7 @@
     "/animation/random delay.jpg": {
       "frame": {
         "x": 128,
-        "y": 1248,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -1851,7 +1875,7 @@
     "/animation/remove animation event.jpg": {
       "frame": {
         "x": 128,
-        "y": 1344,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -1875,7 +1899,7 @@
     "/animation/reverse animation.jpg": {
       "frame": {
         "x": 128,
-        "y": 1440,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -1899,7 +1923,7 @@
     "/animation/show animation play through.jpg": {
       "frame": {
         "x": 128,
-        "y": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -1923,7 +1947,7 @@
     "/animation/show on start.jpg": {
       "frame": {
         "x": 128,
-        "y": 1632,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -1947,7 +1971,7 @@
     "/animation/sprite animation events.jpg": {
       "frame": {
         "x": 128,
-        "y": 1728,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -1971,7 +1995,7 @@
     "/animation/stagger play 1.jpg": {
       "frame": {
         "x": 128,
-        "y": 1824,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -1994,8 +2018,32 @@
     },
     "/animation/stagger play 2.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1920,
+        "x": 256,
+        "y": 288,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/animation/start from random frame.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -2018,7 +2066,7 @@
     },
     "/animation/tween timescale.jpg": {
       "frame": {
-        "x": 256,
+        "x": 512,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2042,7 +2090,7 @@
     },
     "/animation/yoyo.jpg": {
       "frame": {
-        "x": 384,
+        "x": 640,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2066,7 +2114,7 @@
     },
     "/audio/html5 audio/audiosprite.jpg": {
       "frame": {
-        "x": 512,
+        "x": 768,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2090,7 +2138,7 @@
     },
     "/audio/html5 audio/basic playback and events.jpg": {
       "frame": {
-        "x": 640,
+        "x": 896,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2114,7 +2162,7 @@
     },
     "/audio/html5 audio/disable pause on blur.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1024,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2138,7 +2186,7 @@
     },
     "/audio/html5 audio/loop delay.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1152,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2162,7 +2210,7 @@
     },
     "/audio/html5 audio/markers pause resume.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2186,7 +2234,7 @@
     },
     "/audio/html5 audio/play audio file.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2210,7 +2258,7 @@
     },
     "/audio/html5 audio/seek.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2234,7 +2282,7 @@
     },
     "/audio/html5 audio/volume mute rate detune.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2258,7 +2306,7 @@
     },
     "/audio/no audio/basic playback and events.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2282,7 +2330,7 @@
     },
     "/audio/no audio/loop delay.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 288,
         "w": 128,
         "h": 96
@@ -2306,8 +2354,8 @@
     },
     "/audio/no audio/markers pause resume.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 288,
+        "x": 256,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2330,8 +2378,8 @@
     },
     "/audio/no audio/seek.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 288,
+        "x": 256,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -2355,7 +2403,7 @@
     "/audio/sid/c64 sid player.jpg": {
       "frame": {
         "x": 256,
-        "y": 384,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -2379,7 +2427,7 @@
     "/audio/web audio/loop delay.jpg": {
       "frame": {
         "x": 256,
-        "y": 480,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -2403,7 +2451,7 @@
     "/audio/web audio/play audio from child scene.jpg": {
       "frame": {
         "x": 256,
-        "y": 576,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -2427,7 +2475,7 @@
     "/audio/web audio/play movement sound.jpg": {
       "frame": {
         "x": 256,
-        "y": 672,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -2451,7 +2499,7 @@
     "/audio/web audio/play sound on keypress.jpg": {
       "frame": {
         "x": 256,
-        "y": 768,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -2475,7 +2523,7 @@
     "/audio/web audio/reuse audio context.jpg": {
       "frame": {
         "x": 256,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -2499,7 +2547,7 @@
     "/audio/web audio/seek.jpg": {
       "frame": {
         "x": 256,
-        "y": 960,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -2523,7 +2571,7 @@
     "/audio/web audio/spatial audio move with player.jpg": {
       "frame": {
         "x": 256,
-        "y": 1056,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -2547,7 +2595,7 @@
     "/audio/web audio/spatial with destination coordinates.jpg": {
       "frame": {
         "x": 256,
-        "y": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -2571,7 +2619,7 @@
     "/audio/web audio/using same audio file.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -2595,7 +2643,7 @@
     "/audio/web audio/volume mute rate detune.jpg": {
       "frame": {
         "x": 256,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -2619,7 +2667,7 @@
     "/bugs/0000 char index.jpg": {
       "frame": {
         "x": 256,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -2643,7 +2691,7 @@
     "/bugs/0000 container alpha.jpg": {
       "frame": {
         "x": 256,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -2667,7 +2715,7 @@
     "/bugs/0000 drag scale.jpg": {
       "frame": {
         "x": 256,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -2691,7 +2739,7 @@
     "/bugs/0000 frame cycle.jpg": {
       "frame": {
         "x": 256,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -2714,8 +2762,8 @@
     },
     "/bugs/0000 hex corners.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1824,
+        "x": 384,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2738,8 +2786,8 @@
     },
     "/bugs/0000 hex to world.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1920,
+        "x": 512,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2762,7 +2810,7 @@
     },
     "/bugs/0000 mask.jpg": {
       "frame": {
-        "x": 384,
+        "x": 640,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2786,7 +2834,7 @@
     },
     "/bugs/0000 matter.jpg": {
       "frame": {
-        "x": 512,
+        "x": 768,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2810,7 +2858,7 @@
     },
     "/bugs/0000 move dom.jpg": {
       "frame": {
-        "x": 640,
+        "x": 896,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2834,7 +2882,7 @@
     },
     "/bugs/0000 move test.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1024,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2858,7 +2906,7 @@
     },
     "/bugs/0000 multi atlas complete.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1152,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2882,7 +2930,7 @@
     },
     "/bugs/4337 drag destroy.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2906,7 +2954,7 @@
     },
     "/bugs/4391 tilemap off.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2930,7 +2978,7 @@
     },
     "/bugs/4793 tween restart.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2954,7 +3002,7 @@
     },
     "/bugs/4878 audio mute.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2978,7 +3026,7 @@
     },
     "/bugs/4905 hit area debug.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 384,
         "w": 128,
         "h": 96
@@ -3002,7 +3050,7 @@
     },
     "/bugs/5222 points.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 384,
         "w": 128,
         "h": 96
@@ -3026,8 +3074,8 @@
     },
     "/bugs/5399 resize mask.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 384,
+        "x": 384,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3050,8 +3098,8 @@
     },
     "/bugs/5420 plugin.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 384,
+        "x": 384,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3075,7 +3123,7 @@
     "/bugs/5423 rt to shader.jpg": {
       "frame": {
         "x": 384,
-        "y": 480,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -3099,7 +3147,7 @@
     "/bugs/5426 rt canvas alpha.jpg": {
       "frame": {
         "x": 384,
-        "y": 576,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -3123,7 +3171,7 @@
     "/bugs/5429 stroke.jpg": {
       "frame": {
         "x": 384,
-        "y": 672,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -3147,7 +3195,7 @@
     "/bugs/5445 rt snapshot.jpg": {
       "frame": {
         "x": 384,
-        "y": 768,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -3171,7 +3219,7 @@
     "/bugs/5452 light fill.jpg": {
       "frame": {
         "x": 384,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -3195,7 +3243,7 @@
     "/bugs/5454 tween play.jpg": {
       "frame": {
         "x": 384,
-        "y": 960,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -3219,7 +3267,7 @@
     "/bugs/5456 memory.jpg": {
       "frame": {
         "x": 384,
-        "y": 1056,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -3243,7 +3291,7 @@
     "/bugs/5464 scene restart.jpg": {
       "frame": {
         "x": 384,
-        "y": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -3267,7 +3315,7 @@
     "/bugs/5464 text.jpg": {
       "frame": {
         "x": 384,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -3291,7 +3339,7 @@
     "/bugs/5476 light depth.jpg": {
       "frame": {
         "x": 384,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -3315,7 +3363,7 @@
     "/bugs/5483 layer input.jpg": {
       "frame": {
         "x": 384,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -3339,7 +3387,7 @@
     "/bugs/5489 container input.jpg": {
       "frame": {
         "x": 384,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -3363,7 +3411,7 @@
     "/bugs/5493 spine blue.jpg": {
       "frame": {
         "x": 384,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -3387,7 +3435,7 @@
     "/bugs/5494 iso cull.jpg": {
       "frame": {
         "x": 384,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -3410,8 +3458,8 @@
     },
     "/bugs/5501 bitmap text.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1824,
+        "x": 512,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3434,8 +3482,8 @@
     },
     "/bugs/5507 always enabled.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1920,
+        "x": 640,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3458,7 +3506,7 @@
     },
     "/bugs/5508 input.jpg": {
       "frame": {
-        "x": 512,
+        "x": 768,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3482,7 +3530,7 @@
     },
     "/bugs/5509 rt tint.jpg": {
       "frame": {
-        "x": 640,
+        "x": 896,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3506,7 +3554,7 @@
     },
     "/bugs/5522 lights.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1024,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3530,7 +3578,7 @@
     },
     "/bugs/5538 dom input.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1152,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3554,7 +3602,7 @@
     },
     "/bugs/5538 ios input.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3578,7 +3626,7 @@
     },
     "/bugs/5563 fbo.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3602,7 +3650,7 @@
     },
     "/bugs/5570 mesh.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3626,7 +3674,7 @@
     },
     "/bugs/5576 destroy group.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3650,7 +3698,7 @@
     },
     "/bugs/5592 pointer move.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3674,7 +3722,7 @@
     },
     "/bugs/5596 spine canvas.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3698,8 +3746,8 @@
     },
     "/bugs/5603 rt mac os.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 480,
+        "x": 512,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3722,8 +3770,8 @@
     },
     "/bugs/5608 hex tile.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 480,
+        "x": 640,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3746,7 +3794,7 @@
     },
     "/bugs/5617 debug 1.jpg": {
       "frame": {
-        "x": 512,
+        "x": 768,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3770,7 +3818,7 @@
     },
     "/bugs/5617 debug 2.jpg": {
       "frame": {
-        "x": 640,
+        "x": 896,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3794,7 +3842,7 @@
     },
     "/bugs/5617 push circle.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1024,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3818,7 +3866,7 @@
     },
     "/bugs/5627 spine mask.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1152,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3842,7 +3890,7 @@
     },
     "/bugs/5667 ios blend.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3866,7 +3914,7 @@
     },
     "/bugs/5680 anim delay.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3890,7 +3938,7 @@
     },
     "/bugs/5699 rend list.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3914,7 +3962,7 @@
     },
     "/bugs/5707 rt beyond canvas.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3938,7 +3986,7 @@
     },
     "/bugs/5720 fill.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3962,7 +4010,7 @@
     },
     "/bugs/5774 canvas.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 576,
         "w": 128,
         "h": 96
@@ -3986,8 +4034,8 @@
     },
     "/bugs/5781 iso tile.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 576,
+        "x": 512,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4010,8 +4058,8 @@
     },
     "/bugs/5802 geom post.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 576,
+        "x": 512,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4035,7 +4083,7 @@
     "/bugs/5803 update list.jpg": {
       "frame": {
         "x": 512,
-        "y": 672,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -4059,7 +4107,7 @@
     "/bugs/5830 rtl.jpg": {
       "frame": {
         "x": 512,
-        "y": 768,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -4083,7 +4131,7 @@
     "/bugs/5873 video.jpg": {
       "frame": {
         "x": 512,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -4107,7 +4155,7 @@
     "/bugs/5883 layer camera.jpg": {
       "frame": {
         "x": 512,
-        "y": 960,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -4131,7 +4179,7 @@
     "/bugs/5884 bounds.jpg": {
       "frame": {
         "x": 512,
-        "y": 1056,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -4155,7 +4203,7 @@
     "/bugs/5924 ios.jpg": {
       "frame": {
         "x": 512,
-        "y": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4179,7 +4227,7 @@
     "/bugs/5939 snapshot fringe.jpg": {
       "frame": {
         "x": 512,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4203,7 +4251,7 @@
     "/bugs/5952 game config.jpg": {
       "frame": {
         "x": 512,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4227,7 +4275,7 @@
     "/bugs/5974 headless.jpg": {
       "frame": {
         "x": 512,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4251,7 +4299,7 @@
     "/bugs/5976 shape mask.jpg": {
       "frame": {
         "x": 512,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4275,7 +4323,7 @@
     "/bugs/5986 tween.jpg": {
       "frame": {
         "x": 512,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4299,7 +4347,7 @@
     "/bugs/6000 rt resize.jpg": {
       "frame": {
         "x": 512,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -4322,8 +4370,8 @@
     },
     "/bugs/6001 json datakey.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1824,
+        "x": 640,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4346,8 +4394,8 @@
     },
     "/bugs/6005 tween play.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1920,
+        "x": 768,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4370,7 +4418,7 @@
     },
     "/bugs/6006 input over.jpg": {
       "frame": {
-        "x": 640,
+        "x": 896,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4394,7 +4442,7 @@
     },
     "/bugs/6009 tween update to.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1024,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4418,7 +4466,7 @@
     },
     "/bugs/6016 kill tweens nested.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1152,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4442,7 +4490,7 @@
     },
     "/bugs/6022 spine atlas.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4466,7 +4514,7 @@
     },
     "/bugs/6033 retina graphics.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4490,7 +4538,7 @@
     },
     "/bugs/6040 move scene.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4514,7 +4562,7 @@
     },
     "/bugs/6041 drag container.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4538,7 +4586,7 @@
     },
     "/bugs/6052 anim in container.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4562,7 +4610,7 @@
     },
     "/bugs/6091 go duplication.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 672,
         "w": 128,
         "h": 96
@@ -4586,8 +4634,8 @@
     },
     "/bugs/6093 graphics canvas.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 672,
+        "x": 640,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4610,8 +4658,8 @@
     },
     "/bugs/6097 render config.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 672,
+        "x": 640,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -4635,7 +4683,7 @@
     "/bugs/6120 post fx.jpg": {
       "frame": {
         "x": 640,
-        "y": 768,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -4659,7 +4707,7 @@
     "/bugs/6121 rtl.jpg": {
       "frame": {
         "x": 640,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -4683,7 +4731,7 @@
     "/bugs/6123 interactive load.jpg": {
       "frame": {
         "x": 640,
-        "y": 960,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -4707,7 +4755,7 @@
     "/bugs/6126 physics light.jpg": {
       "frame": {
         "x": 640,
-        "y": 1056,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -4731,7 +4779,7 @@
     "/bugs/6133 zone angle.jpg": {
       "frame": {
         "x": 640,
-        "y": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4755,7 +4803,7 @@
     "/bugs/6169 tween pause.jpg": {
       "frame": {
         "x": 640,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4779,7 +4827,7 @@
     "/bugs/6173 kill tweens of.jpg": {
       "frame": {
         "x": 640,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4803,7 +4851,7 @@
     "/bugs/6178 matter polygon.jpg": {
       "frame": {
         "x": 640,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4827,7 +4875,7 @@
     "/bugs/6180 cam zoom snapshot.jpg": {
       "frame": {
         "x": 640,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4851,7 +4899,7 @@
     "/bugs/6187 word wrap.jpg": {
       "frame": {
         "x": 640,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4875,7 +4923,7 @@
     "/bugs/6188 map copy.jpg": {
       "frame": {
         "x": 640,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -4898,8 +4946,8 @@
     },
     "/bugs/6253 tween restart.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1824,
+        "x": 768,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4922,8 +4970,8 @@
     },
     "/bugs/6268 layer destroy.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1920,
+        "x": 896,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4946,7 +4994,7 @@
     },
     "/bugs/6282 scene restart.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1024,
         "y": 768,
         "w": 128,
         "h": 96
@@ -4970,7 +5018,7 @@
     },
     "/bugs/6283 ios16.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1152,
         "y": 768,
         "w": 128,
         "h": 96
@@ -4994,7 +5042,7 @@
     },
     "/bugs/6293 physics.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5018,7 +5066,7 @@
     },
     "/bugs/6327 aseprite.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5042,7 +5090,7 @@
     },
     "/bugs/6362 spine atlas.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5066,7 +5114,7 @@
     },
     "/bugs/6367 text.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5090,7 +5138,7 @@
     },
     "/bugs/6380 spine.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5114,7 +5162,7 @@
     },
     "/bugs/6407 post fx mask.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 768,
         "w": 128,
         "h": 96
@@ -5138,8 +5186,8 @@
     },
     "/bugs/6411 rt resize.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 768,
+        "x": 768,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5162,8 +5210,8 @@
     },
     "/bugs/6425 particles.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 768,
+        "x": 768,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5187,7 +5235,7 @@
     "/bugs/6434 aseprite.jpg": {
       "frame": {
         "x": 768,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5211,7 +5259,7 @@
     "/bugs/6440 clear fx.jpg": {
       "frame": {
         "x": 768,
-        "y": 960,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -5235,7 +5283,7 @@
     "/bugs/polygon rays.jpg": {
       "frame": {
         "x": 768,
-        "y": 1056,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -5259,7 +5307,7 @@
     "/cache/json file.jpg": {
       "frame": {
         "x": 768,
-        "y": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -5283,7 +5331,7 @@
     "/cache/text file.jpg": {
       "frame": {
         "x": 768,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -5307,7 +5355,7 @@
     "/cache/xml file.jpg": {
       "frame": {
         "x": 768,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -5331,7 +5379,7 @@
     "/camera/16 camera shader test.jpg": {
       "frame": {
         "x": 768,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -5355,7 +5403,7 @@
     "/camera/16 camera test.jpg": {
       "frame": {
         "x": 768,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -5379,7 +5427,7 @@
     "/camera/32 camera test.jpg": {
       "frame": {
         "x": 768,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -5403,7 +5451,7 @@
     "/camera/add camera on click.jpg": {
       "frame": {
         "x": 768,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -5426,8 +5474,8 @@
     },
     "/camera/background color interpolate.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1824,
+        "x": 896,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5450,8 +5498,8 @@
     },
     "/camera/background color.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1920,
+        "x": 1024,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5474,7 +5522,7 @@
     },
     "/camera/basics.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1152,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5498,7 +5546,7 @@
     },
     "/camera/bounds at zero.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5522,7 +5570,7 @@
     },
     "/camera/camera alpha.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5546,7 +5594,7 @@
     },
     "/camera/camera blur shader.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5570,7 +5618,7 @@
     },
     "/camera/camera center on.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5594,7 +5642,7 @@
     },
     "/camera/camera effect callbacks.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5618,7 +5666,7 @@
     },
     "/camera/camera effects.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 864,
         "w": 128,
         "h": 96
@@ -5642,8 +5690,8 @@
     },
     "/camera/camera fade in and out.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 864,
+        "x": 896,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5666,8 +5714,8 @@
     },
     "/camera/camera fade out and in.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 864,
+        "x": 1024,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5690,7 +5738,7 @@
     },
     "/camera/camera filter.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1152,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5714,7 +5762,7 @@
     },
     "/camera/cameras from state config.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5738,7 +5786,7 @@
     },
     "/camera/change camera shader.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5762,7 +5810,7 @@
     },
     "/camera/cross scene object placement.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5786,7 +5834,7 @@
     },
     "/camera/fade.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5810,7 +5858,7 @@
     },
     "/camera/fixed to camera.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5834,7 +5882,7 @@
     },
     "/camera/flash.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5858,8 +5906,8 @@
     },
     "/camera/follow offset.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 960,
+        "x": 896,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5882,8 +5930,8 @@
     },
     "/camera/follow sprite small bounds.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 960,
+        "x": 896,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -5907,7 +5955,7 @@
     "/camera/follow sprite with deadzone.jpg": {
       "frame": {
         "x": 896,
-        "y": 1056,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -5931,7 +5979,7 @@
     "/camera/follow sprite.jpg": {
       "frame": {
         "x": 896,
-        "y": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -5955,7 +6003,7 @@
     "/camera/follow user controlled sprite.jpg": {
       "frame": {
         "x": 896,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -5979,7 +6027,7 @@
     "/camera/follow zoom tilemap.jpg": {
       "frame": {
         "x": 896,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -6003,7 +6051,7 @@
     "/camera/follow zoom.jpg": {
       "frame": {
         "x": 896,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -6027,7 +6075,7 @@
     "/camera/game shader test 1.jpg": {
       "frame": {
         "x": 896,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -6051,7 +6099,7 @@
     "/camera/game shader test 2.jpg": {
       "frame": {
         "x": 896,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -6075,7 +6123,7 @@
     "/camera/game shader test 3.jpg": {
       "frame": {
         "x": 896,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -6098,8 +6146,8 @@
     },
     "/camera/get world point.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1824,
+        "x": 1024,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -6122,8 +6170,8 @@
     },
     "/camera/graphics landscape.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1920,
+        "x": 1152,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -6146,7 +6194,7 @@
     },
     "/camera/ignore container.jpg": {
       "frame": {
-        "x": 1024,
+        "x": 1280,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6170,7 +6218,7 @@
     },
     "/camera/ignore gameobjects in containers.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6194,7 +6242,7 @@
     },
     "/camera/ignore group children.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6218,7 +6266,7 @@
     },
     "/camera/ignore.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6242,7 +6290,7 @@
     },
     "/camera/minimap camera.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6266,7 +6314,7 @@
     },
     "/camera/move camera with keys.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -6290,8 +6338,8 @@
     },
     "/camera/multi camera/boot.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1056,
+        "x": 1024,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6314,8 +6362,8 @@
     },
     "/camera/multiple cameras.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1056,
+        "x": 1024,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -6339,7 +6387,7 @@
     "/camera/origin.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -6363,7 +6411,7 @@
     "/camera/overlap.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -6387,7 +6435,7 @@
     "/camera/pan to.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -6411,7 +6459,7 @@
     "/camera/remove camera on click.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -6435,7 +6483,7 @@
     "/camera/render to texture shader 2.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -6459,7 +6507,7 @@
     "/camera/render to texture shader 3.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -6483,7 +6531,7 @@
     "/camera/render to texture shader 4.jpg": {
       "frame": {
         "x": 1024,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -6506,8 +6554,8 @@
     },
     "/camera/render to texture shader 5.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 1824,
+        "x": 1152,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6530,8 +6578,8 @@
     },
     "/camera/render to texture shader 6.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 1920,
+        "x": 1280,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6554,7 +6602,7 @@
     },
     "/camera/render to texture shader.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6578,7 +6626,7 @@
     },
     "/camera/render to texture.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6602,7 +6650,7 @@
     },
     "/camera/rotate camera.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6626,7 +6674,7 @@
     },
     "/camera/round pixels.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6650,7 +6698,7 @@
     },
     "/camera/scroll view.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -6674,8 +6722,8 @@
     },
     "/camera/select shader test.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1152,
+        "x": 1152,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -6698,8 +6746,8 @@
     },
     "/camera/set bounds.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1152,
+        "x": 1152,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -6723,7 +6771,7 @@
     "/camera/set scroll factor.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -6747,7 +6795,7 @@
     "/camera/set small bounds.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1344,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -6771,7 +6819,7 @@
     "/camera/set viewport.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -6795,7 +6843,7 @@
     "/camera/shader multi cam test.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -6819,7 +6867,7 @@
     "/camera/single small camera.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -6843,7 +6891,7 @@
     "/camera/tile map with camera shake.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -6866,8 +6914,8 @@
     },
     "/camera/world camera.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 1824,
+        "x": 1280,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -6890,8 +6938,8 @@
     },
     "/camera/world coordinate from another scene.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 1920,
+        "x": 1408,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -6914,7 +6962,7 @@
     },
     "/camera/world view.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 1248,
         "w": 128,
         "h": 96
@@ -6938,7 +6986,7 @@
     },
     "/camera/zoom to.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 1248,
         "w": 128,
         "h": 96
@@ -6962,7 +7010,7 @@
     },
     "/components/data/change data event.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 1248,
         "w": 128,
         "h": 96
@@ -6986,7 +7034,7 @@
     },
     "/components/data/data values.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1248,
         "w": 128,
         "h": 96
@@ -7010,8 +7058,8 @@
     },
     "/components/data/query data.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1248,
+        "x": 1280,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -7034,8 +7082,8 @@
     },
     "/components/data/set data event.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1248,
+        "x": 1408,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -7058,7 +7106,7 @@
     },
     "/components/data/set multiple values.jpg": {
       "frame": {
-        "x": 1280,
+        "x": 1536,
         "y": 1344,
         "w": 128,
         "h": 96
@@ -7082,7 +7130,7 @@
     },
     "/components/data/store scene data.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 1344,
         "w": 128,
         "h": 96
@@ -7106,7 +7154,7 @@
     },
     "/demoscene/chunky raster bars.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 1344,
         "w": 128,
         "h": 96
@@ -7130,7 +7178,7 @@
     },
     "/demoscene/raster carpet.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1344,
         "w": 128,
         "h": 96
@@ -7154,8 +7202,8 @@
     },
     "/demoscene/raster wave.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1344,
+        "x": 1280,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -7178,8 +7226,8 @@
     },
     "/demoscene/vertical raster wave.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1344,
+        "x": 1280,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7203,7 +7251,7 @@
     "/depth sorting/ball mesh depth sort.jpg": {
       "frame": {
         "x": 1280,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7227,7 +7275,7 @@
     "/depth sorting/bring to top.jpg": {
       "frame": {
         "x": 1280,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7251,7 +7299,7 @@
     "/depth sorting/get top object.jpg": {
       "frame": {
         "x": 1280,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7275,7 +7323,7 @@
     "/depth sorting/isometric blocks.jpg": {
       "frame": {
         "x": 1280,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7298,8 +7346,8 @@
     },
     "/depth sorting/isometric map.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1824,
+        "x": 1408,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -7322,8 +7370,8 @@
     },
     "/depth sorting/remove from display list.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 1920,
+        "x": 1536,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -7346,7 +7394,7 @@
     },
     "/depth sorting/sprite depth index.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 1440,
         "w": 128,
         "h": 96
@@ -7370,7 +7418,7 @@
     },
     "/depth sorting/z index.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 1440,
         "w": 128,
         "h": 96
@@ -7394,7 +7442,7 @@
     },
     "/display/align/in bottom center.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1440,
         "w": 128,
         "h": 96
@@ -7418,8 +7466,8 @@
     },
     "/display/align/in bottom left.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1440,
+        "x": 1408,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7442,8 +7490,8 @@
     },
     "/display/align/in bottom right.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1440,
+        "x": 1408,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7467,7 +7515,7 @@
     "/display/align/in center.jpg": {
       "frame": {
         "x": 1408,
-        "y": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7491,7 +7539,7 @@
     "/display/align/in left center.jpg": {
       "frame": {
         "x": 1408,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7515,7 +7563,7 @@
     "/display/align/in right center.jpg": {
       "frame": {
         "x": 1408,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7538,8 +7586,8 @@
     },
     "/display/align/in top center.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 1824,
+        "x": 1536,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7562,8 +7610,8 @@
     },
     "/display/align/in top left.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 1920,
+        "x": 1664,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -7586,7 +7634,7 @@
     },
     "/display/align/in top right.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 1536,
         "w": 128,
         "h": 96
@@ -7610,7 +7658,7 @@
     },
     "/display/alpha/bottom alpha.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1536,
         "w": 128,
         "h": 96
@@ -7634,8 +7682,8 @@
     },
     "/display/alpha/single alpha.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1536,
+        "x": 1536,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7658,8 +7706,8 @@
     },
     "/display/alpha/top alpha.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1536,
+        "x": 1536,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7683,7 +7731,7 @@
     "/display/alpha/top left alpha.jpg": {
       "frame": {
         "x": 1536,
-        "y": 1632,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7707,7 +7755,7 @@
     "/display/alpha/tween alpha.jpg": {
       "frame": {
         "x": 1536,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7730,8 +7778,8 @@
     },
     "/display/blend modes/blend mode tester.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 1824,
+        "x": 1664,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7754,8 +7802,8 @@
     },
     "/display/blend modes/circle cut out.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 1920,
+        "x": 1792,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -7778,7 +7826,7 @@
     },
     "/display/blend modes/custom blend mode with graphics.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1632,
         "w": 128,
         "h": 96
@@ -7802,8 +7850,8 @@
     },
     "/display/blend modes/custom blend mode.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1632,
+        "x": 1664,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7826,8 +7874,8 @@
     },
     "/display/blend modes/custom separate blend mode.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1632,
+        "x": 1792,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -7850,7 +7898,7 @@
     },
     "/display/blend modes/difference.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 1728,
         "w": 128,
         "h": 96
@@ -7874,8 +7922,8 @@
     },
     "/display/blend modes/graphics blend mode.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 1728,
+        "x": 1664,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7898,8 +7946,8 @@
     },
     "/display/blend modes/overlay.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 1728,
+        "x": 1664,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -7922,7 +7970,7 @@
     },
     "/display/blend modes/particle.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1792,
         "y": 1824,
         "w": 128,
         "h": 96
@@ -7946,8 +7994,8 @@
     },
     "/display/color/brighten.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 1920,
+        "x": 1920,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -7971,54 +8019,6 @@
     "/display/color/darken.jpg": {
       "frame": {
         "x": 1792,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/color/lighten.jpg": {
-      "frame": {
-        "x": 1920,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/display/color/random color.jpg": {
-      "frame": {
-        "x": 1792,
         "y": 1920,
         "w": 128,
         "h": 96
@@ -8040,7 +8040,7 @@
         "y": 0.5
       }
     },
-    "/display/color/random gray.jpg": {
+    "/display/color/lighten.jpg": {
       "frame": {
         "x": 1920,
         "y": 1920,
@@ -8090,7 +8090,7 @@
     },
     "/audio/html5 audio/markers play.jpg": {
       "frame": {
-        "x": 512,
+        "x": 768,
         "y": 288,
         "w": 128,
         "h": 96
@@ -8114,7 +8114,7 @@
     },
     "/audio/no audio/audiosprite.jpg": {
       "frame": {
-        "x": 512,
+        "x": 768,
         "y": 288,
         "w": 128,
         "h": 96
@@ -8138,7 +8138,7 @@
     },
     "/audio/no audio/markers play.jpg": {
       "frame": {
-        "x": 512,
+        "x": 768,
         "y": 288,
         "w": 128,
         "h": 96
@@ -8162,7 +8162,7 @@
     },
     "/audio/web audio/audiosprite.jpg": {
       "frame": {
-        "x": 512,
+        "x": 768,
         "y": 288,
         "w": 128,
         "h": 96
@@ -8186,7 +8186,7 @@
     },
     "/audio/web audio/markers play.jpg": {
       "frame": {
-        "x": 512,
+        "x": 768,
         "y": 288,
         "w": 128,
         "h": 96
@@ -8210,7 +8210,7 @@
     },
     "/audio/web audio/basic playback and events.jpg": {
       "frame": {
-        "x": 640,
+        "x": 896,
         "y": 288,
         "w": 128,
         "h": 96
@@ -8234,7 +8234,7 @@
     },
     "/audio/html5 audio/play audio from child scene.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 288,
         "w": 128,
         "h": 96
@@ -8258,7 +8258,7 @@
     },
     "/audio/web audio/play audio file.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 288,
         "w": 128,
         "h": 96
@@ -8282,7 +8282,7 @@
     },
     "/audio/web audio/play audio from file pack.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 288,
         "w": 128,
         "h": 96
@@ -8306,7 +8306,7 @@
     },
     "/audio/no audio/volume mute rate detune.jpg": {
       "frame": {
-        "x": 1408,
+        "x": 1664,
         "y": 288,
         "w": 128,
         "h": 96
@@ -8330,8 +8330,8 @@
     },
     "/audio/web audio/markers pause resume.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 288,
+        "x": 256,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -8355,7 +8355,7 @@
     "/bugs/4644 container.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8379,7 +8379,7 @@
     "/bugs/4704 scene time.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8403,7 +8403,7 @@
     "/bugs/5571 line to line.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8427,7 +8427,7 @@
     "/bugs/5970 scale mode.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8451,7 +8451,7 @@
     "/demoscene/birdy nam nam.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8475,7 +8475,7 @@
     "/display/color/hex to color.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8499,7 +8499,7 @@
     "/display/color/integer to color.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8523,7 +8523,7 @@
     "/display/color/rgb to color.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8547,7 +8547,7 @@
     "/game objects/graphics/circle spin.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8571,7 +8571,7 @@
     "/game objects/graphics/draw triangles.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8595,7 +8595,7 @@
     "/game objects/graphics/obj viewer.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8619,7 +8619,7 @@
     "/game objects/graphics/single obj viewer.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8643,31 +8643,7 @@
     "/game objects/graphics/trail.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/game objects/lights/light follow pointer.jpg": {
-      "frame": {
-        "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8691,7 +8667,7 @@
     "/games/firstgame/part1.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8715,7 +8691,7 @@
     "/games/firstgame/part2.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8739,7 +8715,7 @@
     "/geom/line/inverse line.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8763,7 +8739,7 @@
     "/input/keyboard/create key combo.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8787,7 +8763,7 @@
     "/input/keyboard/global keydown event.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8811,7 +8787,7 @@
     "/input/keyboard/key combo max key delay.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8835,7 +8811,7 @@
     "/input/keyboard/key modifier.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8859,7 +8835,7 @@
     "/input/keyboard/keydown.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8883,7 +8859,7 @@
     "/input/keyboard/konami code key combo.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8907,7 +8883,7 @@
     "/input/keyboard/reset key combo on match.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8931,7 +8907,7 @@
     "/input/pointer/drag rectangle.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8955,7 +8931,7 @@
     "/input/pointer/draw sprites.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -8979,7 +8955,7 @@
     "/input/pointer/move event.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -9003,7 +8979,7 @@
     "/input/pointer/pointer buttons.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -9027,7 +9003,7 @@
     "/loader/audio/load audio sprite resources.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -9051,7 +9027,7 @@
     "/loader/audio/load audio sprite.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -9075,7 +9051,7 @@
     "/plugins/global scene plugin.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -9099,7 +9075,7 @@
     "/scenes/change scene from objects.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -9123,7 +9099,7 @@
     "/textures/get pixel from image.jpg": {
       "frame": {
         "x": 256,
-        "y": 1248,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -9146,7 +9122,7 @@
     },
     "/textures/multi atlas.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1152,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9170,7 +9146,7 @@
     },
     "/bugs/4910 video oncomplete.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9194,7 +9170,7 @@
     },
     "/bugs/5478 display none.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9218,7 +9194,7 @@
     },
     "/bugs/5572 ff audio.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9242,7 +9218,7 @@
     },
     "/bugs/5847 step particles.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9266,7 +9242,7 @@
     },
     "/bugs/6057 rt frame.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9290,7 +9266,7 @@
     },
     "/game objects/graphics/obj world cam.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9314,7 +9290,7 @@
     },
     "/game objects/graphics/obj world.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9338,7 +9314,7 @@
     },
     "/games/top down shooter/topdown_averagefocus.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9362,7 +9338,7 @@
     },
     "/games/top down shooter/topdown_combatmechanics.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9386,7 +9362,7 @@
     },
     "/games/top down shooter/topdown_playerfocus.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9410,7 +9386,7 @@
     },
     "/games/top down shooter/topdown_targetfocus.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9434,7 +9410,7 @@
     },
     "/input/gamepad/twin stick shooter.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9458,7 +9434,7 @@
     },
     "/spine3/spine preloader test.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9482,7 +9458,7 @@
     },
     "/spine4/spine preloader test.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9506,7 +9482,7 @@
     },
     "/tilemap/tests/semi automated tests.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 384,
         "w": 128,
         "h": 96
@@ -9530,7 +9506,7 @@
     },
     "/bugs/5867 pointer out.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 480,
         "w": 128,
         "h": 96
@@ -9555,7 +9531,7 @@
     "/bugs/5818 container update.jpg": {
       "frame": {
         "x": 512,
-        "y": 672,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -9579,7 +9555,7 @@
     "/bugs/5846 container move.jpg": {
       "frame": {
         "x": 512,
-        "y": 672,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -9603,7 +9579,7 @@
     "/bugs/6078 scene remove.jpg": {
       "frame": {
         "x": 512,
-        "y": 672,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -9627,7 +9603,7 @@
     "/game objects/container/add tilesprite to container.jpg": {
       "frame": {
         "x": 512,
-        "y": 672,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -9651,7 +9627,7 @@
     "/game objects/container/nested container visibility.jpg": {
       "frame": {
         "x": 512,
-        "y": 672,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -9675,7 +9651,7 @@
     "/game objects/images/destroy an image.jpg": {
       "frame": {
         "x": 512,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -9699,7 +9675,7 @@
     "/game objects/layer/depth sort layer children.jpg": {
       "frame": {
         "x": 512,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -9723,7 +9699,7 @@
     "/game config/headless renderer.jpg": {
       "frame": {
         "x": 512,
-        "y": 1440,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -9746,8 +9722,8 @@
     },
     "/tilemap/mario map scroller.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1920,
+        "x": 896,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -9770,7 +9746,7 @@
     },
     "/camera/shake.jpg": {
       "frame": {
-        "x": 1664,
+        "x": 1920,
         "y": 960,
         "w": 128,
         "h": 96
@@ -9794,7 +9770,7 @@
     },
     "/camera/ignore gameobjects.jpg": {
       "frame": {
-        "x": 1152,
+        "x": 1408,
         "y": 1056,
         "w": 128,
         "h": 96
@@ -9819,7 +9795,7 @@
     "/loader/tile maps/load tile map from local json.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -9843,7 +9819,7 @@
     "/loader/tile maps/load tile map json.jpg": {
       "frame": {
         "x": 1152,
-        "y": 1728,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -9866,7 +9842,7 @@
     },
     "/components/data/get and set data values.jpg": {
       "frame": {
-        "x": 1536,
+        "x": 1792,
         "y": 1248,
         "w": 128,
         "h": 96

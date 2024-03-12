@@ -1,6 +1,6 @@
 {
   "frames": {
-    "/spine3/webgl test 1.jpg": {
+    "/spine3/basic spineboy.jpg": {
       "frame": {
         "x": 0,
         "y": 0,
@@ -24,7 +24,7 @@
         "y": 0.5
       }
     },
-    "/spine3/webgl test 2.jpg": {
+    "/spine3/batch test.jpg": {
       "frame": {
         "x": 128,
         "y": 0,
@@ -48,7 +48,7 @@
         "y": 0.5
       }
     },
-    "/spine3/webgl test 3.jpg": {
+    "/spine3/blend mode test.jpg": {
       "frame": {
         "x": 256,
         "y": 0,
@@ -72,7 +72,7 @@
         "y": 0.5
       }
     },
-    "/spine3/webgl test 4.jpg": {
+    "/spine3/camera pipeline test.jpg": {
       "frame": {
         "x": 384,
         "y": 0,
@@ -96,7 +96,7 @@
         "y": 0.5
       }
     },
-    "/spine3/webgl test 5.jpg": {
+    "/spine3/canvas test 1.jpg": {
       "frame": {
         "x": 512,
         "y": 0,
@@ -120,7 +120,7 @@
         "y": 0.5
       }
     },
-    "/spine4/add hit area.jpg": {
+    "/spine3/container batch test pre35.jpg": {
       "frame": {
         "x": 640,
         "y": 0,
@@ -144,7 +144,7 @@
         "y": 0.5
       }
     },
-    "/spine4/add spine object to group.jpg": {
+    "/spine3/container batch test.jpg": {
       "frame": {
         "x": 768,
         "y": 0,
@@ -168,7 +168,7 @@
         "y": 0.5
       }
     },
-    "/spine4/alpha test.jpg": {
+    "/spine3/control bones.jpg": {
       "frame": {
         "x": 896,
         "y": 0,
@@ -192,7 +192,7 @@
         "y": 0.5
       }
     },
-    "/spine4/arcade physics spine body.jpg": {
+    "/spine3/destroy test.jpg": {
       "frame": {
         "x": 1024,
         "y": 0,
@@ -216,7 +216,7 @@
         "y": 0.5
       }
     },
-    "/spine4/basic spineboy.jpg": {
+    "/spine3/draw debug bounds.jpg": {
       "frame": {
         "x": 1152,
         "y": 0,
@@ -240,7 +240,7 @@
         "y": 0.5
       }
     },
-    "/spine4/batch test.jpg": {
+    "/spine3/extend spine gameobject.jpg": {
       "frame": {
         "x": 1280,
         "y": 0,
@@ -264,7 +264,7 @@
         "y": 0.5
       }
     },
-    "/spine4/blend mode test.jpg": {
+    "/spine3/extended class.jpg": {
       "frame": {
         "x": 1408,
         "y": 0,
@@ -288,7 +288,7 @@
         "y": 0.5
       }
     },
-    "/spine4/camera pipeline test.jpg": {
+    "/spine3/image changes.jpg": {
       "frame": {
         "x": 1536,
         "y": 0,
@@ -312,7 +312,7 @@
         "y": 0.5
       }
     },
-    "/spine4/canvas test 1.jpg": {
+    "/spine3/invisible test with spine containers.jpg": {
       "frame": {
         "x": 1664,
         "y": 0,
@@ -336,7 +336,7 @@
         "y": 0.5
       }
     },
-    "/spine4/container batch test pre35.jpg": {
+    "/spine3/invisible test.jpg": {
       "frame": {
         "x": 1792,
         "y": 0,
@@ -360,7 +360,7 @@
         "y": 0.5
       }
     },
-    "/spine4/container batch test.jpg": {
+    "/spine3/last visible.jpg": {
       "frame": {
         "x": 1920,
         "y": 0,
@@ -384,9 +384,561 @@
         "y": 0.5
       }
     },
-    "/spine4/control bones.jpg": {
+    "/spine3/owl.jpg": {
       "frame": {
         "x": 0,
+        "y": 96,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine3/spine inside container.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine3/spine parallel scene test.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 288,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine3/spine rotation test.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine3/spine scene test.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine3/spine set depth test.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine3/spine to render texture.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine3/webgl test 1.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine3/webgl test 2.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 864,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine3/webgl test 3.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 960,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine3/webgl test 4.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 1056,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine3/webgl test 5.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 1152,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/add hit area.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 1248,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/add spine object to group.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 1344,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/alpha test.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 1440,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/arcade physics spine body.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 1536,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/basic spineboy.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 1632,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/batch test.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 1728,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/blend mode test.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 1824,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/camera pipeline test.jpg": {
+      "frame": {
+        "x": 0,
+        "y": 1920,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/canvas test 1.jpg": {
+      "frame": {
+        "x": 128,
+        "y": 96,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/container batch test pre35.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 96,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/container batch test.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 96,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/control bones.jpg": {
+      "frame": {
+        "x": 512,
         "y": 96,
         "w": 128,
         "h": 96
@@ -410,558 +962,6 @@
     },
     "/spine4/destroy test.jpg": {
       "frame": {
-        "x": 0,
-        "y": 192,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/draw debug bounds.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 288,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/extend spine gameobject.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 384,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/extended class.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 480,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/image changes.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 576,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/invisible test with spine containers.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 672,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/invisible test.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 768,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/last visible.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 864,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/owl.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 960,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/spine inside container.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 1056,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/spine parallel scene test.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 1152,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/spine rotation test.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 1248,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/spine scene test.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 1344,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/spine set depth test.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 1440,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/spine to render texture.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 1536,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/webgl test 1.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 1632,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/webgl test 2.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 1728,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/webgl test 3.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 1824,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/webgl test 4.jpg": {
-      "frame": {
-        "x": 0,
-        "y": 1920,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/spine4/webgl test 5.jpg": {
-      "frame": {
-        "x": 128,
-        "y": 96,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/textures/avif test.jpg": {
-      "frame": {
-        "x": 256,
-        "y": 96,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/textures/batch texture.jpg": {
-      "frame": {
-        "x": 384,
-        "y": 96,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/textures/canvas textures/canvas texture composite op.jpg": {
-      "frame": {
-        "x": 512,
-        "y": 96,
-        "w": 128,
-        "h": 96
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 128,
-        "h": 96
-      },
-      "sourceSize": {
-        "w": 128,
-        "h": 96
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "/textures/canvas textures/canvas texture rotation.jpg": {
-      "frame": {
         "x": 640,
         "y": 96,
         "w": 128,
@@ -984,7 +984,7 @@
         "y": 0.5
       }
     },
-    "/textures/canvas textures/create canvas.jpg": {
+    "/spine4/draw debug bounds.jpg": {
       "frame": {
         "x": 768,
         "y": 96,
@@ -1008,7 +1008,7 @@
         "y": 0.5
       }
     },
-    "/textures/canvas textures/dwitter/5475.jpg": {
+    "/spine4/extend spine gameobject.jpg": {
       "frame": {
         "x": 896,
         "y": 96,
@@ -1032,7 +1032,7 @@
         "y": 0.5
       }
     },
-    "/textures/canvas textures/dwitter/5479.jpg": {
+    "/spine4/extended class.jpg": {
       "frame": {
         "x": 1024,
         "y": 96,
@@ -1056,7 +1056,7 @@
         "y": 0.5
       }
     },
-    "/textures/canvas textures/dwitter/5500.jpg": {
+    "/spine4/image changes.jpg": {
       "frame": {
         "x": 1152,
         "y": 96,
@@ -1080,7 +1080,7 @@
         "y": 0.5
       }
     },
-    "/textures/canvas textures/dwitter/test.jpg": {
+    "/spine4/invisible test with spine containers.jpg": {
       "frame": {
         "x": 1280,
         "y": 96,
@@ -1104,7 +1104,7 @@
         "y": 0.5
       }
     },
-    "/textures/compressed multi texture atlas.jpg": {
+    "/spine4/invisible test.jpg": {
       "frame": {
         "x": 1408,
         "y": 96,
@@ -1128,7 +1128,7 @@
         "y": 0.5
       }
     },
-    "/textures/compressed texture atlas from file config.jpg": {
+    "/spine4/last visible.jpg": {
       "frame": {
         "x": 1536,
         "y": 96,
@@ -1152,7 +1152,7 @@
         "y": 0.5
       }
     },
-    "/textures/compressed texture atlas.jpg": {
+    "/spine4/owl.jpg": {
       "frame": {
         "x": 1664,
         "y": 96,
@@ -1176,7 +1176,7 @@
         "y": 0.5
       }
     },
-    "/textures/compressed texture from file config.jpg": {
+    "/spine4/spine inside container.jpg": {
       "frame": {
         "x": 1792,
         "y": 96,
@@ -1200,10 +1200,562 @@
         "y": 0.5
       }
     },
-    "/textures/crop animated sprite.jpg": {
+    "/spine4/spine parallel scene test.jpg": {
       "frame": {
         "x": 1920,
         "y": 96,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/spine rotation test.jpg": {
+      "frame": {
+        "x": 128,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/spine scene test.jpg": {
+      "frame": {
+        "x": 256,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/spine set depth test.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/spine to render texture.jpg": {
+      "frame": {
+        "x": 512,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/webgl test 1.jpg": {
+      "frame": {
+        "x": 640,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/webgl test 2.jpg": {
+      "frame": {
+        "x": 768,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/webgl test 3.jpg": {
+      "frame": {
+        "x": 896,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/webgl test 4.jpg": {
+      "frame": {
+        "x": 1024,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/spine4/webgl test 5.jpg": {
+      "frame": {
+        "x": 1152,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/textures/avif test.jpg": {
+      "frame": {
+        "x": 1280,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/textures/batch texture.jpg": {
+      "frame": {
+        "x": 1408,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/textures/canvas textures/canvas texture composite op.jpg": {
+      "frame": {
+        "x": 1536,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/textures/canvas textures/canvas texture rotation.jpg": {
+      "frame": {
+        "x": 1664,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/textures/canvas textures/create canvas.jpg": {
+      "frame": {
+        "x": 1792,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/textures/canvas textures/dwitter/5475.jpg": {
+      "frame": {
+        "x": 1920,
+        "y": 192,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/textures/canvas textures/dwitter/5479.jpg": {
+      "frame": {
+        "x": 128,
+        "y": 288,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/textures/canvas textures/dwitter/5500.jpg": {
+      "frame": {
+        "x": 128,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/textures/canvas textures/dwitter/test.jpg": {
+      "frame": {
+        "x": 128,
+        "y": 480,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/textures/compressed multi texture atlas.jpg": {
+      "frame": {
+        "x": 128,
+        "y": 576,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/textures/compressed texture atlas from file config.jpg": {
+      "frame": {
+        "x": 128,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/textures/compressed texture atlas.jpg": {
+      "frame": {
+        "x": 128,
+        "y": 768,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/textures/compressed texture from file config.jpg": {
+      "frame": {
+        "x": 128,
+        "y": 864,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/textures/crop animated sprite.jpg": {
+      "frame": {
+        "x": 128,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -1227,7 +1779,7 @@
     "/textures/crop multi frames.jpg": {
       "frame": {
         "x": 128,
-        "y": 192,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -1250,8 +1802,8 @@
     },
     "/textures/crop render texture.jpg": {
       "frame": {
-        "x": 256,
-        "y": 192,
+        "x": 128,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -1274,8 +1826,8 @@
     },
     "/textures/crop text.jpg": {
       "frame": {
-        "x": 384,
-        "y": 192,
+        "x": 128,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -1298,8 +1850,8 @@
     },
     "/textures/crop texture atlas frame flip.jpg": {
       "frame": {
-        "x": 512,
-        "y": 192,
+        "x": 128,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -1322,8 +1874,8 @@
     },
     "/textures/crop texture atlas frame trimmed flip.jpg": {
       "frame": {
-        "x": 640,
-        "y": 192,
+        "x": 128,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -1346,8 +1898,8 @@
     },
     "/textures/crop texture atlas frame trimmed.jpg": {
       "frame": {
-        "x": 768,
-        "y": 192,
+        "x": 128,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -1370,8 +1922,8 @@
     },
     "/textures/crop texture atlas frame.jpg": {
       "frame": {
-        "x": 896,
-        "y": 192,
+        "x": 128,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -1394,8 +1946,8 @@
     },
     "/textures/crop texture image flip.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 192,
+        "x": 128,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -1418,8 +1970,8 @@
     },
     "/textures/crop texture image scaled.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 192,
+        "x": 128,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -1442,8 +1994,8 @@
     },
     "/textures/crop texture image.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 192,
+        "x": 128,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -1466,8 +2018,8 @@
     },
     "/textures/crop tilesprite.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 192,
+        "x": 256,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1490,8 +2042,8 @@
     },
     "/textures/dynamic textures/copy image.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 192,
+        "x": 384,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1514,8 +2066,8 @@
     },
     "/textures/dynamic textures/create dynamic texture.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 192,
+        "x": 512,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1538,8 +2090,8 @@
     },
     "/textures/dynamic textures/dynamic texture camera test.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 192,
+        "x": 640,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1562,8 +2114,8 @@
     },
     "/textures/dynamic textures/get pixel from dynamic texture.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 192,
+        "x": 768,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1586,7 +2138,7 @@
     },
     "/textures/dynamic textures/masked sprite to dynamic texture.jpg": {
       "frame": {
-        "x": 128,
+        "x": 896,
         "y": 288,
         "w": 128,
         "h": 96
@@ -1610,8 +2162,8 @@
     },
     "/textures/dynamic textures/multiple dynamic textures.jpg": {
       "frame": {
-        "x": 128,
-        "y": 384,
+        "x": 1024,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1634,8 +2186,8 @@
     },
     "/textures/dynamic textures/nine slice dynamic texture.jpg": {
       "frame": {
-        "x": 128,
-        "y": 480,
+        "x": 1152,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1658,8 +2210,8 @@
     },
     "/textures/edit texture hue shift.jpg": {
       "frame": {
-        "x": 128,
-        "y": 576,
+        "x": 1280,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1682,8 +2234,8 @@
     },
     "/textures/edit texture silhouette.jpg": {
       "frame": {
-        "x": 128,
-        "y": 672,
+        "x": 1408,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1706,8 +2258,8 @@
     },
     "/textures/frames from single atlas.jpg": {
       "frame": {
-        "x": 128,
-        "y": 768,
+        "x": 1536,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1730,8 +2282,8 @@
     },
     "/textures/generate more textures.jpg": {
       "frame": {
-        "x": 128,
-        "y": 864,
+        "x": 1664,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1754,8 +2306,8 @@
     },
     "/textures/generate texture.jpg": {
       "frame": {
-        "x": 128,
-        "y": 960,
+        "x": 1792,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1778,8 +2330,8 @@
     },
     "/textures/get pixel dynamic.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1056,
+        "x": 1920,
+        "y": 288,
         "w": 128,
         "h": 96
       },
@@ -1802,8 +2354,8 @@
     },
     "/textures/get pixels.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1152,
+        "x": 256,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -1826,8 +2378,8 @@
     },
     "/textures/set mipmap filter.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1248,
+        "x": 256,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -1850,8 +2402,8 @@
     },
     "/textures/sprite sheet from atlas.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1344,
+        "x": 256,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -1874,8 +2426,8 @@
     },
     "/textures/sprite sheet.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1440,
+        "x": 256,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -1898,8 +2450,8 @@
     },
     "/textures/sprite using tilemap texture.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1536,
+        "x": 256,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -1922,8 +2474,8 @@
     },
     "/textures/text texture.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1632,
+        "x": 256,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -1946,8 +2498,8 @@
     },
     "/textures/texture from base64.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1728,
+        "x": 256,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -1970,8 +2522,8 @@
     },
     "/textures/texture packer atlas.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1824,
+        "x": 256,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -1994,8 +2546,8 @@
     },
     "/textures/trimmed frame from multi atlas.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1920,
+        "x": 256,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -2019,7 +2571,7 @@
     "/tilemap/base tile size.jpg": {
       "frame": {
         "x": 256,
-        "y": 288,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -2042,8 +2594,8 @@
     },
     "/tilemap/collision/csv map arcade physics.jpg": {
       "frame": {
-        "x": 384,
-        "y": 288,
+        "x": 256,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -2066,8 +2618,8 @@
     },
     "/tilemap/collision/custom collide call.jpg": {
       "frame": {
-        "x": 512,
-        "y": 288,
+        "x": 256,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -2090,8 +2642,8 @@
     },
     "/tilemap/collision/matter destroy tile bodies.jpg": {
       "frame": {
-        "x": 640,
-        "y": 288,
+        "x": 256,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -2114,8 +2666,8 @@
     },
     "/tilemap/collision/matter detect collision with tile.jpg": {
       "frame": {
-        "x": 768,
-        "y": 288,
+        "x": 256,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -2138,8 +2690,8 @@
     },
     "/tilemap/collision/matter ghost collisions.jpg": {
       "frame": {
-        "x": 896,
-        "y": 288,
+        "x": 256,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -2162,8 +2714,8 @@
     },
     "/tilemap/collision/matter platformer modify map.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 288,
+        "x": 256,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -2186,8 +2738,8 @@
     },
     "/tilemap/collision/matter platformer with wall jumping.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 288,
+        "x": 256,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -2210,8 +2762,8 @@
     },
     "/tilemap/collision/matter.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 288,
+        "x": 384,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2234,8 +2786,8 @@
     },
     "/tilemap/collision/multiple tile sizes.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 288,
+        "x": 512,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2258,8 +2810,8 @@
     },
     "/tilemap/collision/simple map.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 288,
+        "x": 640,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2282,8 +2834,8 @@
     },
     "/tilemap/collision/tile callbacks.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 288,
+        "x": 768,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2306,8 +2858,8 @@
     },
     "/tilemap/collision/tilemap spotlight.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 288,
+        "x": 896,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2330,8 +2882,8 @@
     },
     "/tilemap/copy tiles.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 288,
+        "x": 1024,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2354,7 +2906,7 @@
     },
     "/tilemap/create from array.jpg": {
       "frame": {
-        "x": 256,
+        "x": 1152,
         "y": 384,
         "w": 128,
         "h": 96
@@ -2378,8 +2930,32 @@
     },
     "/tilemap/create from objects.jpg": {
       "frame": {
-        "x": 256,
-        "y": 480,
+        "x": 1280,
+        "y": 384,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/tilemap/create from tiles.jpg": {
+      "frame": {
+        "x": 1408,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2402,8 +2978,8 @@
     },
     "/tilemap/creating blank layers.jpg": {
       "frame": {
-        "x": 256,
-        "y": 576,
+        "x": 1536,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2426,8 +3002,8 @@
     },
     "/tilemap/csv map.jpg": {
       "frame": {
-        "x": 256,
-        "y": 672,
+        "x": 1664,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2450,8 +3026,8 @@
     },
     "/tilemap/danger.jpg": {
       "frame": {
-        "x": 256,
-        "y": 768,
+        "x": 1792,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2474,8 +3050,8 @@
     },
     "/tilemap/debug colliding tiles.jpg": {
       "frame": {
-        "x": 256,
-        "y": 864,
+        "x": 1920,
+        "y": 384,
         "w": 128,
         "h": 96
       },
@@ -2498,8 +3074,8 @@
     },
     "/tilemap/dungeon generator.jpg": {
       "frame": {
-        "x": 256,
-        "y": 960,
+        "x": 384,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -2522,8 +3098,8 @@
     },
     "/tilemap/endless map.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1056,
+        "x": 384,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -2546,8 +3122,8 @@
     },
     "/tilemap/fill tiles.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1152,
+        "x": 384,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -2570,8 +3146,8 @@
     },
     "/tilemap/get chebyshev distance.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1248,
+        "x": 384,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -2594,8 +3170,8 @@
     },
     "/tilemap/get tiles in shape.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1344,
+        "x": 384,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -2618,8 +3194,8 @@
     },
     "/tilemap/grid movement.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1440,
+        "x": 384,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -2642,8 +3218,8 @@
     },
     "/tilemap/isometric/create isometric manually.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1536,
+        "x": 384,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -2666,8 +3242,8 @@
     },
     "/tilemap/isometric/hexagonal test.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1632,
+        "x": 384,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -2690,8 +3266,8 @@
     },
     "/tilemap/isometric/isometric test.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1728,
+        "x": 384,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -2714,8 +3290,8 @@
     },
     "/tilemap/layer size.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1824,
+        "x": 384,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -2738,8 +3314,8 @@
     },
     "/tilemap/light map.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1920,
+        "x": 384,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -2763,7 +3339,7 @@
     "/tilemap/map vs layer with multiple layers.jpg": {
       "frame": {
         "x": 384,
-        "y": 384,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -2786,8 +3362,32 @@
     },
     "/tilemap/map vs layer with one layer.jpg": {
       "frame": {
-        "x": 512,
-        "y": 384,
+        "x": 384,
+        "y": 1632,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/tilemap/mouse wheel zoom.jpg": {
+      "frame": {
+        "x": 384,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -2810,8 +3410,8 @@
     },
     "/tilemap/multi camera map.jpg": {
       "frame": {
-        "x": 640,
-        "y": 384,
+        "x": 384,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -2834,8 +3434,8 @@
     },
     "/tilemap/multiple tilesets.jpg": {
       "frame": {
-        "x": 768,
-        "y": 384,
+        "x": 384,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -2858,8 +3458,8 @@
     },
     "/tilemap/paint tiles.jpg": {
       "frame": {
-        "x": 896,
-        "y": 384,
+        "x": 512,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -2882,8 +3482,8 @@
     },
     "/tilemap/pixel art test.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 384,
+        "x": 640,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -2906,8 +3506,8 @@
     },
     "/tilemap/put tiles.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 384,
+        "x": 768,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -2930,8 +3530,8 @@
     },
     "/tilemap/randomize tiles.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 384,
+        "x": 896,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -2954,8 +3554,8 @@
     },
     "/tilemap/replace tiles.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 384,
+        "x": 1024,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -2978,8 +3578,8 @@
     },
     "/tilemap/set colliding by collision data.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 384,
+        "x": 1152,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3002,8 +3602,8 @@
     },
     "/tilemap/set colliding by property.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 384,
+        "x": 1280,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3026,8 +3626,8 @@
     },
     "/tilemap/set colliding tiles.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 384,
+        "x": 1408,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3050,8 +3650,8 @@
     },
     "/tilemap/set map size.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 384,
+        "x": 1536,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3074,7 +3674,7 @@
     },
     "/tilemap/shuffle tiles.jpg": {
       "frame": {
-        "x": 384,
+        "x": 1664,
         "y": 480,
         "w": 128,
         "h": 96
@@ -3098,8 +3698,8 @@
     },
     "/tilemap/snake distance.jpg": {
       "frame": {
-        "x": 384,
-        "y": 576,
+        "x": 1792,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3122,8 +3722,8 @@
     },
     "/tilemap/swap tiles.jpg": {
       "frame": {
-        "x": 384,
-        "y": 672,
+        "x": 1920,
+        "y": 480,
         "w": 128,
         "h": 96
       },
@@ -3146,8 +3746,8 @@
     },
     "/tilemap/switching tilesets.jpg": {
       "frame": {
-        "x": 384,
-        "y": 768,
+        "x": 512,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3170,8 +3770,8 @@
     },
     "/tilemap/tests/visual culling check.jpg": {
       "frame": {
-        "x": 384,
-        "y": 864,
+        "x": 640,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3194,8 +3794,8 @@
     },
     "/tilemap/tests/visual face test.jpg": {
       "frame": {
-        "x": 384,
-        "y": 960,
+        "x": 768,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3218,8 +3818,8 @@
     },
     "/tilemap/tests/visual flipping test.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1056,
+        "x": 896,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3242,8 +3842,8 @@
     },
     "/tilemap/tests/visual tile bleed test.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1152,
+        "x": 1024,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3266,8 +3866,8 @@
     },
     "/tilemap/tests/visual tile coords test.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1248,
+        "x": 1152,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3290,8 +3890,8 @@
     },
     "/tilemap/tests/visual worldxy test.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1344,
+        "x": 1280,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3314,8 +3914,8 @@
     },
     "/tilemap/tile draw order.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1440,
+        "x": 1408,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3338,8 +3938,8 @@
     },
     "/tilemap/tile overlap.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1536,
+        "x": 1536,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3362,8 +3962,8 @@
     },
     "/tilemap/tile properties.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1632,
+        "x": 1664,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3386,8 +3986,8 @@
     },
     "/tilemap/tiled json map.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1728,
+        "x": 1792,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3410,8 +4010,8 @@
     },
     "/tilemap/tilelayer pipeline.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1824,
+        "x": 1920,
+        "y": 576,
         "w": 128,
         "h": 96
       },
@@ -3434,8 +4034,8 @@
     },
     "/tilemap/tileset collision shapes.jpg": {
       "frame": {
-        "x": 384,
-        "y": 1920,
+        "x": 512,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -3459,7 +4059,7 @@
     "/tilemap/tileset with spacing.jpg": {
       "frame": {
         "x": 512,
-        "y": 480,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -3482,8 +4082,8 @@
     },
     "/tilemap/tint tiles.jpg": {
       "frame": {
-        "x": 640,
-        "y": 480,
+        "x": 512,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -3506,8 +4106,8 @@
     },
     "/tilemap/weighted randomize.jpg": {
       "frame": {
-        "x": 768,
-        "y": 480,
+        "x": 512,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -3530,8 +4130,8 @@
     },
     "/tilemap/zoom.jpg": {
       "frame": {
-        "x": 896,
-        "y": 480,
+        "x": 512,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -3554,8 +4154,8 @@
     },
     "/time/clock.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 480,
+        "x": 512,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -3578,8 +4178,8 @@
     },
     "/time/draw clocks.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 480,
+        "x": 512,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -3602,8 +4202,8 @@
     },
     "/time/looped event.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 480,
+        "x": 512,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -3626,8 +4226,8 @@
     },
     "/time/multiple timers.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 480,
+        "x": 512,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -3650,8 +4250,8 @@
     },
     "/time/pause and resume.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 480,
+        "x": 512,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -3674,8 +4274,8 @@
     },
     "/time/remove timer event.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 480,
+        "x": 512,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -3698,8 +4298,8 @@
     },
     "/time/repeat count.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 480,
+        "x": 512,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -3722,8 +4322,8 @@
     },
     "/time/reuse a timer event.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 480,
+        "x": 512,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -3747,7 +4347,7 @@
     "/time/start at.jpg": {
       "frame": {
         "x": 512,
-        "y": 576,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -3771,7 +4371,7 @@
     "/time/time scale.jpg": {
       "frame": {
         "x": 640,
-        "y": 576,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -3795,7 +4395,7 @@
     "/time/timeline/add event in.jpg": {
       "frame": {
         "x": 768,
-        "y": 576,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -3819,7 +4419,7 @@
     "/time/timeline/create timeline.jpg": {
       "frame": {
         "x": 896,
-        "y": 576,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -3843,7 +4443,7 @@
     "/time/timeline/from times.jpg": {
       "frame": {
         "x": 1024,
-        "y": 576,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -3867,7 +4467,31 @@
     "/time/timeline/play timeline on click.jpg": {
       "frame": {
         "x": 1152,
-        "y": 576,
+        "y": 672,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/time/timeline/repeat timeline.jpg": {
+      "frame": {
+        "x": 1280,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -3890,8 +4514,8 @@
     },
     "/time/timeline/run timed events.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 576,
+        "x": 1408,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -3914,8 +4538,8 @@
     },
     "/time/timeline/set action.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 576,
+        "x": 1536,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -3938,8 +4562,8 @@
     },
     "/time/timeline/sound action.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 576,
+        "x": 1664,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -3962,8 +4586,8 @@
     },
     "/time/timeline/timeline event.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 576,
+        "x": 1792,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -3986,8 +4610,8 @@
     },
     "/time/timeline/tween action.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 576,
+        "x": 1920,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -4010,8 +4634,8 @@
     },
     "/time/timer event.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 576,
+        "x": 640,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4034,8 +4658,8 @@
     },
     "/time/timestep/delta history.jpg": {
       "frame": {
-        "x": 512,
-        "y": 672,
+        "x": 640,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -4058,8 +4682,8 @@
     },
     "/time/timestep/split timestep.jpg": {
       "frame": {
-        "x": 512,
-        "y": 768,
+        "x": 640,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -4082,8 +4706,8 @@
     },
     "/time/timestep/ticker loop.jpg": {
       "frame": {
-        "x": 512,
-        "y": 864,
+        "x": 640,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -4106,8 +4730,8 @@
     },
     "/time/timestep/variable smooth step.jpg": {
       "frame": {
-        "x": 512,
-        "y": 960,
+        "x": 640,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -4130,8 +4754,8 @@
     },
     "/time/timestep/world time.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1056,
+        "x": 640,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -4154,8 +4778,8 @@
     },
     "/transform/angle.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1152,
+        "x": 640,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4178,8 +4802,8 @@
     },
     "/transform/display size.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1248,
+        "x": 640,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4202,8 +4826,8 @@
     },
     "/transform/flip x.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1344,
+        "x": 640,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4226,8 +4850,8 @@
     },
     "/transform/flip y.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1440,
+        "x": 640,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4250,8 +4874,8 @@
     },
     "/transform/originx.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1536,
+        "x": 640,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4274,8 +4898,8 @@
     },
     "/transform/originxy.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1632,
+        "x": 640,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4298,8 +4922,8 @@
     },
     "/transform/originy.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1728,
+        "x": 640,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -4322,8 +4946,8 @@
     },
     "/transform/position.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1824,
+        "x": 768,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4346,8 +4970,8 @@
     },
     "/transform/rotation and origin.jpg": {
       "frame": {
-        "x": 512,
-        "y": 1920,
+        "x": 896,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4370,8 +4994,8 @@
     },
     "/transform/rotation.jpg": {
       "frame": {
-        "x": 640,
-        "y": 672,
+        "x": 1024,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4394,8 +5018,8 @@
     },
     "/transform/scalex.jpg": {
       "frame": {
-        "x": 768,
-        "y": 672,
+        "x": 1152,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4418,8 +5042,8 @@
     },
     "/transform/scalexy.jpg": {
       "frame": {
-        "x": 896,
-        "y": 672,
+        "x": 1280,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4442,8 +5066,8 @@
     },
     "/transform/scaley.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 672,
+        "x": 1408,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4466,8 +5090,8 @@
     },
     "/tweens/ball circle.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 672,
+        "x": 1536,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4490,8 +5114,8 @@
     },
     "/tweens/callbacks.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 672,
+        "x": 1664,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4514,8 +5138,8 @@
     },
     "/tweens/chains/basic tween chain.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 672,
+        "x": 1792,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4538,8 +5162,8 @@
     },
     "/tweens/chains/bat tween.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 672,
+        "x": 1920,
+        "y": 768,
         "w": 128,
         "h": 96
       },
@@ -4562,8 +5186,8 @@
     },
     "/tweens/chains/chest sequence.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 672,
+        "x": 768,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -4586,8 +5210,8 @@
     },
     "/tweens/chains/multi target chain.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 672,
+        "x": 768,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -4610,8 +5234,8 @@
     },
     "/tweens/change texture after scale.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 672,
+        "x": 768,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -4634,8 +5258,8 @@
     },
     "/tweens/change texture.jpg": {
       "frame": {
-        "x": 640,
-        "y": 768,
+        "x": 768,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -4658,8 +5282,8 @@
     },
     "/tweens/checkerboard 1.jpg": {
       "frame": {
-        "x": 640,
-        "y": 864,
+        "x": 768,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -4682,8 +5306,8 @@
     },
     "/tweens/checkerboard 2.jpg": {
       "frame": {
-        "x": 640,
-        "y": 960,
+        "x": 768,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -4706,8 +5330,8 @@
     },
     "/tweens/checkerboard 3.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1056,
+        "x": 768,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -4730,8 +5354,8 @@
     },
     "/tweens/checkerboard rotate.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1152,
+        "x": 768,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -4754,8 +5378,8 @@
     },
     "/tweens/counter tween.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1248,
+        "x": 768,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -4778,8 +5402,8 @@
     },
     "/tweens/delay function.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1344,
+        "x": 768,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -4802,8 +5426,8 @@
     },
     "/tweens/eases/back graph.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1440,
+        "x": 768,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -4826,8 +5450,8 @@
     },
     "/tweens/eases/back.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1536,
+        "x": 768,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -4850,8 +5474,8 @@
     },
     "/tweens/eases/bounce graph.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1632,
+        "x": 896,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -4874,8 +5498,8 @@
     },
     "/tweens/eases/bounce.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1728,
+        "x": 1024,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -4898,8 +5522,8 @@
     },
     "/tweens/eases/circular graph.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1824,
+        "x": 1152,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -4922,8 +5546,8 @@
     },
     "/tweens/eases/circular.jpg": {
       "frame": {
-        "x": 640,
-        "y": 1920,
+        "x": 1280,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -4946,8 +5570,8 @@
     },
     "/tweens/eases/cubic graph.jpg": {
       "frame": {
-        "x": 768,
-        "y": 768,
+        "x": 1408,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -4970,8 +5594,8 @@
     },
     "/tweens/eases/cubic.jpg": {
       "frame": {
-        "x": 896,
-        "y": 768,
+        "x": 1536,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -4994,8 +5618,8 @@
     },
     "/tweens/eases/ease mixer.jpg": {
       "frame": {
-        "x": 1024,
-        "y": 768,
+        "x": 1664,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5018,8 +5642,8 @@
     },
     "/tweens/eases/exponential graph.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 768,
+        "x": 1792,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5042,8 +5666,8 @@
     },
     "/tweens/eases/exponential.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 768,
+        "x": 1920,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -5066,8 +5690,8 @@
     },
     "/tweens/eases/linear.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 768,
+        "x": 896,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5090,8 +5714,8 @@
     },
     "/tweens/eases/quad graph.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 768,
+        "x": 1024,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5114,8 +5738,8 @@
     },
     "/tweens/eases/quad.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 768,
+        "x": 1152,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5138,8 +5762,8 @@
     },
     "/tweens/eases/quartic graph.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 768,
+        "x": 1280,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5162,8 +5786,8 @@
     },
     "/tweens/eases/quartic.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 768,
+        "x": 1408,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5186,8 +5810,8 @@
     },
     "/tweens/eases/quintic graph.jpg": {
       "frame": {
-        "x": 768,
-        "y": 864,
+        "x": 1536,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5210,7 +5834,7 @@
     },
     "/tweens/eases/quintic.jpg": {
       "frame": {
-        "x": 768,
+        "x": 1664,
         "y": 960,
         "w": 128,
         "h": 96
@@ -5234,8 +5858,8 @@
     },
     "/tweens/eases/sine graph.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1056,
+        "x": 1792,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5258,8 +5882,8 @@
     },
     "/tweens/eases/sine.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1152,
+        "x": 1920,
+        "y": 960,
         "w": 128,
         "h": 96
       },
@@ -5282,8 +5906,8 @@
     },
     "/tweens/flip x.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1248,
+        "x": 896,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5306,8 +5930,8 @@
     },
     "/tweens/flip y.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1344,
+        "x": 896,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -5330,8 +5954,8 @@
     },
     "/tweens/global time scale.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1440,
+        "x": 896,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -5354,8 +5978,32 @@
     },
     "/tweens/loop.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1536,
+        "x": 896,
+        "y": 1344,
+        "w": 128,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 128,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 128,
+        "h": 96
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "/tweens/remove tween.jpg": {
+      "frame": {
+        "x": 896,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -5378,8 +6026,8 @@
     },
     "/tweens/seek to point in tween.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1632,
+        "x": 896,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -5402,8 +6050,8 @@
     },
     "/tweens/sprite angle between.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1728,
+        "x": 896,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -5426,8 +6074,8 @@
     },
     "/tweens/stagger delay.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1824,
+        "x": 896,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -5450,8 +6098,8 @@
     },
     "/tweens/stagger showcase.jpg": {
       "frame": {
-        "x": 768,
-        "y": 1920,
+        "x": 896,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -5475,7 +6123,7 @@
     "/tweens/tween gauge.jpg": {
       "frame": {
         "x": 896,
-        "y": 864,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -5499,7 +6147,7 @@
     "/tweens/tween sprite angle.jpg": {
       "frame": {
         "x": 1024,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5523,7 +6171,7 @@
     "/tweens/tween text size.jpg": {
       "frame": {
         "x": 1152,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5547,7 +6195,7 @@
     "/utils/array/bring to top.jpg": {
       "frame": {
         "x": 1280,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5571,7 +6219,7 @@
     "/utils/array/range.jpg": {
       "frame": {
         "x": 1408,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5595,7 +6243,7 @@
     "/utils/array/reverse matrix columns.jpg": {
       "frame": {
         "x": 1536,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5619,7 +6267,7 @@
     "/utils/array/reverse matrix rows.jpg": {
       "frame": {
         "x": 1664,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5643,7 +6291,7 @@
     "/utils/array/rotate matrix 180.jpg": {
       "frame": {
         "x": 1792,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5667,7 +6315,7 @@
     "/utils/array/rotate matrix left.jpg": {
       "frame": {
         "x": 1920,
-        "y": 864,
+        "y": 1056,
         "w": 128,
         "h": 96
       },
@@ -5690,8 +6338,8 @@
     },
     "/utils/array/rotate matrix right.jpg": {
       "frame": {
-        "x": 896,
-        "y": 960,
+        "x": 1024,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -5715,7 +6363,7 @@
     "/utils/array/rotate matrix.jpg": {
       "frame": {
         "x": 1024,
-        "y": 960,
+        "y": 1248,
         "w": 128,
         "h": 96
       },
@@ -5738,8 +6386,8 @@
     },
     "/utils/array/translate matrix.jpg": {
       "frame": {
-        "x": 1152,
-        "y": 960,
+        "x": 1024,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -5762,8 +6410,8 @@
     },
     "/utils/array/transpose matrix.jpg": {
       "frame": {
-        "x": 1280,
-        "y": 960,
+        "x": 1024,
+        "y": 1440,
         "w": 128,
         "h": 96
       },
@@ -5786,8 +6434,8 @@
     },
     "/utils/rbush/rbush 1.jpg": {
       "frame": {
-        "x": 1408,
-        "y": 960,
+        "x": 1024,
+        "y": 1536,
         "w": 128,
         "h": 96
       },
@@ -5810,8 +6458,8 @@
     },
     "/utils/rbush/rbush 2.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 960,
+        "x": 1024,
+        "y": 1632,
         "w": 128,
         "h": 96
       },
@@ -5834,8 +6482,8 @@
     },
     "/utils/size/aspect mode envelop.jpg": {
       "frame": {
-        "x": 1664,
-        "y": 960,
+        "x": 1024,
+        "y": 1728,
         "w": 128,
         "h": 96
       },
@@ -5858,8 +6506,8 @@
     },
     "/utils/size/aspect mode fit.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 960,
+        "x": 1024,
+        "y": 1824,
         "w": 128,
         "h": 96
       },
@@ -5882,8 +6530,8 @@
     },
     "/utils/size/aspect mode height controls width.jpg": {
       "frame": {
-        "x": 1920,
-        "y": 960,
+        "x": 1024,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
@@ -5906,8 +6554,8 @@
     },
     "/utils/size/aspect mode none.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1056,
+        "x": 1152,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -5930,7 +6578,7 @@
     },
     "/utils/size/aspect mode width controls height.jpg": {
       "frame": {
-        "x": 896,
+        "x": 1280,
         "y": 1152,
         "w": 128,
         "h": 96
@@ -5954,8 +6602,8 @@
     },
     "/utils/size/max size.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1248,
+        "x": 1408,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -5978,8 +6626,8 @@
     },
     "/utils/size/min max size.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1344,
+        "x": 1536,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6002,8 +6650,8 @@
     },
     "/utils/size/min size.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1440,
+        "x": 1664,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6026,8 +6674,8 @@
     },
     "/utils/size/snap child.jpg": {
       "frame": {
-        "x": 896,
-        "y": 1536,
+        "x": 1792,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6050,8 +6698,8 @@
     },
     "/textures/compressed texture atlas from file pack.jpg": {
       "frame": {
-        "x": 1536,
-        "y": 96,
+        "x": 128,
+        "y": 672,
         "w": 128,
         "h": 96
       },
@@ -6074,8 +6722,8 @@
     },
     "/textures/compressed texture from file pack.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 96,
+        "x": 128,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -6098,8 +6746,8 @@
     },
     "/textures/compressed texture.jpg": {
       "frame": {
-        "x": 1792,
-        "y": 96,
+        "x": 128,
+        "y": 864,
         "w": 128,
         "h": 96
       },
@@ -6122,8 +6770,8 @@
     },
     "/textures/trimmed frame from single atlas.jpg": {
       "frame": {
-        "x": 128,
-        "y": 1920,
+        "x": 256,
+        "y": 1152,
         "w": 128,
         "h": 96
       },
@@ -6146,8 +6794,8 @@
     },
     "/tilemap/layer transform.jpg": {
       "frame": {
-        "x": 256,
-        "y": 1824,
+        "x": 384,
+        "y": 1344,
         "w": 128,
         "h": 96
       },
@@ -6170,8 +6818,8 @@
     },
     "/tilemap/tiled  multi tileset.jpg": {
       "frame": {
-        "x": 768,
-        "y": 384,
+        "x": 384,
+        "y": 1920,
         "w": 128,
         "h": 96
       },
