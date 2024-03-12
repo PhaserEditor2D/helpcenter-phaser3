@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!node
 const fs = require("fs");
 const path = require("path");
 const process = require("process");
@@ -7,11 +7,11 @@ const phaserHome = process.env["PHASER_PATH"];
 
 console.log("Phaser Home: " + phaserHome)
 
-const inputData = JSON.parse(fs.readFileSync(path.join(phaserHome, "phaser3-docs", "json", "phaser.json")));
+const inputData = JSON.parse(fs.readFileSync(path.join(phaserHome, "phaser", "types", "phaser.json")));
 
 const outputData = { docs: [] };
 
-for (const entry of inputData.docs) {
+for (const entry of inputData) {
 
     if (!entry.meta) {
 
